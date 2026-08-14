@@ -92,7 +92,7 @@
       soon.innerHTML =
         '<div class="cover-wrap">🌙…</div>' +
         '<div class="card-body"><h3>The next adventure</h3>' +
-        '<p class="sub">Castle Everstair, Book Two — coming soon.</p>' +
+        '<p class="sub">Castle Everstair, Book Three — coming soon.</p>' +
         '<span class="badge">Shhh, it’s still a dream</span></div>';
       shelf.appendChild(soon);
     })

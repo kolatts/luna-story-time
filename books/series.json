@@ -12,6 +12,13 @@
           "subtitle": "Book One of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/princess-moon-and-the-nevershine-lantern/images/cover.webp"
+        },
+        {
+          "slug": "baby-jag-cottontail-and-the-deep-dark-sea",
+          "title": "Baby Jag Cottontail and the Deep Dark Sea",
+          "subtitle": "Book Two of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/baby-jag-cottontail-and-the-deep-dark-sea/images/cover.webp"
         }
       ]
     }

@@ -1,0 +1,208 @@
+{
+  "slug": "baby-jag-cottontail-and-the-deep-dark-sea",
+  "series": "castle-everstair",
+  "bookNumber": 2,
+  "title": "Baby Jag Cottontail and the Deep Dark Sea",
+  "subtitle": "Book Two of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "But the deep can't keep what was always yours.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail; tiny gold crescent charm on a pearl collar." },
+    { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover: Baby Jag Cottontail front and center riding her driftwood-log boat over a moonlit wave, pink hair flying, seashell bracelet catching the light — Moon flying and Baby Lady swimming joyfully alongside — the lavender castle small and far behind, the sea below deep and dark. Open sky in the upper third for the title."
+  },
+  "questions": [
+    "Moon and Baby Lady gave Cottontail everything they had, even though they had just met her. Why do you think they did? Would you have?",
+    "The magic powers slipped away, but Cottontail's claws worked. What do you have that is just yours, that nobody gave you?",
+    "Cheeblest stood in the middle, between her sisters and her friends. Have you ever felt stuck in the middle? What did she choose?",
+    "At the very end, Moon's reflection waved a moment too late. What do you think is down there in the deep dark sea?"
+  ],
+  "lookAndFind": "There is a crescent moon hiding in almost every picture. And on the last page, look very, very closely at Moon's reflection — can you spot what's different?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The castle sea",
+      "text": "The stair goes up. You know about the stair.\nBut turn around backward, and look — over there.\nThe sea starts right where the bottom step ends,\nand it goes out forever, and never pretends.\n\nAnd cupped in the rocks, where the seafoam lies flat,\nthere's a pool, round and warm as a windowsill cat,\nwhere the sea comes to rest when it's done being wide.\nThe pool is the sea with the wildness outside.",
+      "image": "images/01.webp",
+      "imagePrompt": "Wide horizontal seascape at night: a lavender fairy-tale castle on cliffs at the right edge with the bottom steps of a grand stair meeting the water, a vast calm indigo sea stretching left to the horizon, a small round rock pool glowing warm in the foreground, full moon low over the water. No characters. Calm, wide, deep.",
+      "textPosition": "bottom",
+      "characters": [],
+      "vocab": [{ "word": "seafoam", "definition": "the white bubbly froth on top of waves" }]
+    },
+    {
+      "number": 2,
+      "title": "Summer of three",
+      "text": "All summer they floated: a girl and a pup,\ntails down in the water and faces tipped up,\nand Cheeblest beside them, with bows in her hair,\nlearning that summer is something you share.\n\nBut sometimes she'd look past the waves, past the spray,\nat a tower she used to live in, far away,\nand her face would go quiet, the way faces do\nwhen the old thing still lives in the middle of you.",
+      "image": "images/02.webp",
+      "imagePrompt": "The rock pool in golden evening light: Moon and Baby Lady floating happily, tails in the water, faces tipped up; Cheeblest sitting on the pool's stone rim with her feet in, laughing — but her eyes drifting toward a tiny dark tower far across the sea.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "cheeblest"],
+      "vocab": [{ "word": "spray", "definition": "tiny drops of seawater that waves toss into the air" }]
+    },
+    {
+      "number": 3,
+      "title": "The visitor",
+      "text": "Then one bright blue morning the sea brought a guest:\na jaguar — gold, with black spots on her chest,\nwith pink hair blown sideways from riding the gale\non a driftwood-log boat with a green-leaf sail.\n\nShe hopped off and bowed, with her bracelet of shell.\n\"I'm Baby Jag Cottontail. I sail. And I'm well.\"",
+      "image": "images/03.webp",
+      "imagePrompt": "Bright blue morning: Cottontail arriving on a driftwood-log boat with a green-leaf sail, hopping ashore mid-bow, pink hair windblown; Moon, Baby Lady and Cheeblest at the pool's edge looking up delighted.",
+      "textPosition": "bottom",
+      "characters": ["cottontail", "moon", "babylady", "cheeblest"],
+      "vocab": [{ "word": "driftwood", "definition": "old wood that floated on the sea until it washed ashore" }]
+    },
+    {
+      "number": 4,
+      "title": "Zero",
+      "text": "\"How old are you two?\" she asked. \"Zero,\" said Moon.\n\"We were born when the moon was. We're new as the moon.\"\n\"Well,\" said Cottontail, \"I'm older than that.\nI know things you don't. I'm that kind of cat.\n\nI know which waves bite. I know where it's deep.\nI know how to sing a rough sea back to sleep.\"\nAnd she stretched out her paw, and her claws, small and bare:\n\"No magic,\" she said. \"Just the things that I wear.\"",
+      "image": "images/04.webp",
+      "imagePrompt": "Warm close-up at the moonlit pool edge: Cottontail gently holding up one paw showing small ordinary claws; Moon and Baby Lady leaning in fascinated; friendship, curiosity, no fear.",
+      "textPosition": "top",
+      "characters": ["cottontail", "moon", "babylady"],
+      "vocab": [{ "word": "zero", "definition": "the number before one — none at all!" }]
+    },
+    {
+      "number": 5,
+      "title": "The far shore",
+      "text": "But across the wide water, on wet black sand,\nthe tower had come down to the sea to stand.\nEvilest, crowned, was hollering things.\nThe water near her made rages and rings —\n\nbut beside her stood somebody new. Somebody small.\nAll black. And all quiet. And no crown at all.\nBeedlist. The still one. As deep as the deep.\nThe sea around Beedlist lay flat as sleep.\n\nAnd Cheeblest went cold, though the day was still warm:\n\"They're coming. I know them. And this time's a new form.\"",
+      "image": "images/05.webp",
+      "imagePrompt": "The far shore, wet black sand: Evilest mid-holler, fists up, water making angry rings around her — and beside her Beedlist standing utterly still, hands folded, the sea around Beedlist flat as glass; grim tower behind them.",
+      "textPosition": "bottom",
+      "characters": ["evilest", "beedlist"],
+      "vocab": [{ "word": "still", "definition": "not moving at all — quiet as a held breath" }]
+    },
+    {
+      "number": 6,
+      "title": "The gathering",
+      "text": "They came in the morning. They stood on their shore.\nNo lantern. No present. No trick at the door.\nBeedlist knelt down and looked into the sea,\nand the sea started giving up things that aren't free:\n\nreflections. The girls watched their own faces rise\nup out of the water, to their surprise,\nand walk on the waves to the black sister's hands.\nYou can't stop the water from holding your glance.",
+      "refrain": true,
+      "image": "images/06.webp",
+      "imagePrompt": "Beedlist kneeling at the water's mirror-calm edge as glowing translucent reflections of Moon and Baby Lady rise off the water's surface and walk across the sea toward her folded hands; far across the water the real Moon and Baby Lady hold each other at the pool, watching. Eerie but gentle.",
+      "textPosition": "top",
+      "characters": ["beedlist", "moon", "babylady"],
+      "vocab": [{ "word": "reflection", "definition": "the picture of you that looks back from water or a mirror" }]
+    },
+    {
+      "number": 7,
+      "title": "The following",
+      "text": "For wherever your reflection goes, powers go too.\nThat's a rule of the water. It's old, and it's true.\nFirst swimming-like-silver. Then turning-time-gold.\nThen warm went away, and the pool went cold.\n\nMoon reached for her fire and caught only air.\nIt had followed her face. It was over there.",
+      "image": "images/07.webp",
+      "imagePrompt": "The pool gone grey and cold: Moon reaching out over the water, her open hand making no fire, only air; Baby Lady drooping beside her; the water where their reflections should be showing only empty sky. Quiet loss.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady"],
+      "vocab": [{ "word": "rule", "definition": "something that is always true, like a law" }]
+    },
+    {
+      "number": 8,
+      "title": "The gift",
+      "text": "Cottontail said, \"Give the rest to me.\nMy face is my own. It's not in their sea.\nThey never once gathered a copy of mine.\nI'll carry your shine across the brine.\"\n\nAnd here's what is heavy, and here's what is true:\nthey gave her everything. Somebody new.\nA friend of one morning, one swim, one shore —\nthey poured out their pockets, and gave, and gave more.",
+      "image": "images/08.webp",
+      "imagePrompt": "The gift, solemn and beautiful: Moon and Baby Lady pouring long streams of gold, silver and pink light from their hands and paws into Cottontail, who begins to glow all over; night pool, hushed faces, weight and trust.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "cottontail"],
+      "vocab": [{ "word": "brine", "definition": "a salty old word for the sea" }]
+    },
+    {
+      "number": 9,
+      "title": "The failing",
+      "text": "She ran on the water with borrowed-bright feet,\nglowing like lighthouses, hard to unseat.\nBut out on the waves your face shows below,\nand Beedlist just gathered it, gentle and slow.\n\nThe powers slid off her like rain off a leaf,\nand the deep dark sea pulled her down underneath.",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "Cottontail running across the wave-tops glowing with borrowed light, mid-stride, light streaming off her like rain — far ahead on the shore, a small perfectly still black figure kneels at the water; the glow guttering at Cottontail's paws.",
+      "textPosition": "bottom",
+      "characters": ["cottontail", "beedlist"],
+      "vocab": [{ "word": "gathered", "definition": "collected gently, picked up bit by bit" }]
+    },
+    {
+      "number": 10,
+      "title": "The deep dark sea",
+      "text": "Down is a country with nothing to see.\nDown went the jaguar. Down went she.\nNo fire to warm her. No time to turn gold.\nNo borrowed shine left her. Just dark. Just cold.\n\nAnd there at the bottom of all of the blue,\nshe opened her paw. And her claws came through.\nNot given. Not taken. Not shiny. Not new.\nJust hers. They had grown there. They'd grown as she grew.",
+      "image": "images/10.webp",
+      "imagePrompt": "Deep underwater, blue-black and vast: Cottontail sinking small through the dark with tiny bubbles, one thin shaft of moonlight reaching her — her eyes open, calm, looking at her own outstretched paw where small claws catch the light.",
+      "textPosition": "top",
+      "characters": ["cottontail"],
+      "vocab": [{ "word": "grew", "definition": "got bigger little by little, all by itself" }]
+    },
+    {
+      "number": 11,
+      "title": "The girl in the middle",
+      "text": "On the shore stood Cheeblest, one heart, two lands:\nher sisters behind her with hands full of strands,\nher friends' empty pool on the opposite side,\nand nothing to stand on between them but tide.\n\nAnd she shouted the thing that a little one knows,\nloud enough that it rattled her bows:\n\"You can hold every face in the sea in your fist —\nit still won't be you that the faces have missed!\"",
+      "image": "images/11.webp",
+      "imagePrompt": "Cheeblest alone on a narrow stone causeway between two shores, wind pulling her bows sideways, small fists clenched, shouting bravely across the water; the dark tower far on one side, the warm pool-glow far on the other. The middle of everything.",
+      "textPosition": "bottom",
+      "characters": ["cheeblest"],
+      "vocab": [{ "word": "tide", "definition": "the sea's slow breathing — in and out, up the shore and back" }]
+    },
+    {
+      "number": 12,
+      "title": "Claws",
+      "text": "Claws are not magic. Claws are just claws.\nThey don't follow reflections. They don't follow laws.\nThey gripped the wet rock that no power could hold,\nand up climbed the jaguar, out of the cold.\n\nAt the top sat the basin of gathered-up glass,\nof faces and firelight, quiet as grass.\nOne paw. One claw. One thin little line —\nand the dark shell split open, and out poured the shine.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "Cottontail climbing a sheer wet black rock face out of the crashing sea, claws dug in, soaked and determined; above her at the summit a wide black basin glinting with gathered faces and firelight.",
+      "textPosition": "top",
+      "characters": ["cottontail"],
+      "vocab": [
+        { "word": "gripped", "definition": "held on tight and didn't let go" },
+        { "word": "basin", "definition": "a big wide bowl" }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Home across the water",
+      "text": "Reflections ran home over waves, like light,\neach face to its owner, each shine to its right.\nThe pool filled back up with two faces it knew,\nand the sea went from grey into ordinary blue.\n\nAnd high on the rock stood a soggy young cat,\nwho had saved them with nothing but claws. Only that.\n(Only that! says the sea. As if that were small.\nThe thing that was hers was the biggest of all.)",
+      "image": "images/13.webp",
+      "imagePrompt": "Triumphant flood of light: the black basin split by one thin bright scratch, reflections pouring out as ribbons of light streaming home in every direction across the night sea; Cottontail silhouetted small and proud against the flood.",
+      "textPosition": "bottom",
+      "characters": ["cottontail"],
+      "vocab": [{ "word": "soggy", "definition": "soaked with water all the way through" }]
+    },
+    {
+      "number": 14,
+      "title": "The still one",
+      "text": "Evilest yelled fit to crumble the shore.\n(She'd been mad once. Never this mad before.)\nBut Beedlist stood still in her black, in her quiet,\nand looked at the jaguar. Just looked. Didn't try it.\n\nThen Beedlist did something she'd never once done:\nshe smiled — very small, like a wintertime sun —\nand she wrote something down in a book with no name.\nAnd the sea, for a moment, went still as a frame.",
+      "image": "images/14.webp",
+      "imagePrompt": "Night shore: Evilest raging comically, crown askew, fists balled — while Beedlist stands perfectly still all in black beside her with a very small calm smile, writing in a small black book; the sea behind them unnaturally flat.",
+      "textPosition": "top",
+      "characters": ["evilest", "beedlist"],
+      "vocab": [{ "word": "crumble", "definition": "to break apart into little pieces" }]
+    },
+    {
+      "number": 15,
+      "title": "Soup, again",
+      "text": "They paddled home slow, and they dripped up the stair,\nand they set out the table with room and to spare:\nfour bowls for four friends, all steaming and bright,\nand a fifth bowl set extra, in front of a chair,\nfor anyone stormy who might not be there.\n\nThe powers trickled home the same way as before —\nslowly, and mostly. Moon minded it less than before.\nAnd Cottontail yawned, and she didn't sail on.\nSome friends, once they find you, are never quite gone.",
+      "image": "images/15.webp",
+      "imagePrompt": "Cozy interior at night: the round wooden table under lamplight with five bowls of steaming soup — Moon, Baby Lady, Cheeblest and Cottontail seated warm and tired, and one empty chair with a full bowl waiting in front of it; crescent moon carved above the door.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "cheeblest", "cottontail"],
+      "vocab": [{ "word": "trickled", "definition": "came back a tiny bit at a time, like slow dripping water" }]
+    },
+    {
+      "number": 16,
+      "title": "The pool, after",
+      "text": "Later that night, when the lamps were all low,\nMoon went to the pool, just to tell it hello.\nHer face looked back up at her, pink hair and crown,\nthe moon up above, and the moon looking down.\n\nShe waved at herself, like you do, like you do.\n\nAnd her reflection waved back.\n\nA moment too late.",
+      "refrain": true,
+      "theEnd": "The End — of the second one.",
+      "image": "images/16.webp",
+      "imagePrompt": "Quiet night close-up at the pool: Moon leaning over the still water saying goodnight, the full moon overhead — and in the water her reflection looks up with one arm raised in a wave, while the real Moon's arms are lowered. Beautiful, hushed, just slightly wrong.",
+      "textPosition": "top",
+      "characters": ["moon"],
+      "vocab": [{ "word": "late", "definition": "after the right time — not when it should have been" }]
+    }
+  ]
+}
