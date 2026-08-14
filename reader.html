@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story Time — Luna's Story Time</title>
+<meta name="description" content="Read-aloud storybook reader with word highlighting, tappable words, and sparkle-word definitions.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="reader-body">
+
+<header class="reader-top">
+  <a class="home-link" href="index.html" aria-label="Back to the bookshelf">🏠</a>
+  <div class="reader-title" id="readerTitle">Loading story…</div>
+  <button class="top-btn" id="bigTextBtn" aria-pressed="false" title="Bigger letters" aria-label="Toggle bigger letters">Aa</button>
+  <button class="top-btn" id="speedBtn" aria-pressed="false" title="Read slowly" aria-label="Toggle slow reading">🐢</button>
+  <button class="top-btn" id="autoBtn" aria-pressed="false" title="Storytime mode: read every page for me" aria-label="Toggle storytime mode">📖✨</button>
+</header>
+
+<nav class="progress-moons" id="progressMoons" aria-label="Pages"></nav>
+
+<main class="stage">
+  <div id="spreadHost" aria-live="polite"></div>
+</main>
+
+<div class="reader-controls">
+  <button class="ctrl-btn" id="prevBtn" aria-label="Previous page">◀</button>
+  <button class="ctrl-btn primary" id="playBtn" aria-label="Read this page to me">🔊</button>
+  <button class="ctrl-btn" id="nextBtn" aria-label="Next page">▶</button>
+</div>
+
+<script src="js/reader.js"></script>
+</body>
+</html>

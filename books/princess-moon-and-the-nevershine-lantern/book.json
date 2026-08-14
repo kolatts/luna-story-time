@@ -1,0 +1,204 @@
+{
+  "slug": "princess-moon-and-the-nevershine-lantern",
+  "series": "castle-everstair",
+  "bookNumber": 1,
+  "title": "Princess Moon and the Nevershine Lantern",
+  "subtitle": "Book One of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "But dreams slip through the smallest crack.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail; tiny gold crescent charm on a pearl collar." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "pim", "name": "Captain Pim", "sheet": "Captain Pim: palm-sized silver moth-knight with moth wings and a tiny lantern-shaped helm." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: Moon and Baby Lady together on a castle balcony, a sparkle trail spiraling up from the girl's hand, lavender castle spires and an enormous glowing full moon behind them — and tiny in the far bottom corner, a dark tower where two small figures watch."
+  },
+  "questions": [
+    "Why couldn't the lantern take Moon's favorite power, dreams of hope?",
+    "What did Cheeblest want more than crowns or magic?",
+    "The Guardians never fell asleep. How do you think Moon's hope reached them?",
+    "If you made four bowls of soup, who would you share them with?"
+  ],
+  "lookAndFind": "There is a crescent moon hiding somewhere in almost every picture. Can you find them all?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Castle Everstair",
+      "text": "There is a castle with a stair that never stops,\nthat starts in the sea and climbs past the treetops,\npast the clouds, past the wind, past the last bit of blue —\nall the way to the moon, and the moon climbs too.",
+      "image": "images/01.webp",
+      "imagePrompt": "Wide establishing shot from below: a lavender fairy-tale castle whose grand spiral stair climbs out of a moonlit sea, past clouds, into an enormous glowing full moon. No characters. Awe, scale, quiet wonder.",
+      "textPosition": "bottom",
+      "characters": [],
+      "vocab": [{ "word": "treetops", "definition": "the very tops of tall, tall trees" }]
+    },
+    {
+      "number": 2,
+      "title": "Princess Moon",
+      "text": "Princess Moon has wings of gold and a tail of silver light,\npink hair like the sky at the soft edge of night.\nShe has every power a person could hold:\nshe can bend the fire, she can turn the time gold.\n\nBut the one that she loves, the one she picks first,\nisn't the strongest, the loudest, the fastest, the worst —\nit's dreams of hope. She can look, and she'll see\nwhat somebody's dreaming of wanting to be.",
+      "image": "images/02.webp",
+      "imagePrompt": "Portrait spread: Princess Moon leaning on a balcony rail, chin in hand, sparkle trail spiraling from her hand into the night. Castle spires and full moon behind.",
+      "textPosition": "bottom",
+      "characters": ["moon"],
+      "vocab": [{ "word": "power", "definition": "something special and magical you can do" }]
+    },
+    {
+      "number": 3,
+      "title": "Baby Lady",
+      "text": "Her sister is small. Her sister is fluff.\nPearl wings, silver tail, and a bark like a huff.\nBaby Lady's a puppy. Baby Lady can talk,\nand everyone hears her — the fish and the hawk.\n\nShe has all of Moon's powers, the whole shining set,\nand the two of them never once argue. Not yet.",
+      "image": "images/03.webp",
+      "imagePrompt": "Baby Lady curled on the balcony stone beside Moon's tail, wings half-open and catching light, looking directly at the viewer. Warm, close, cozy.",
+      "textPosition": "top",
+      "characters": ["babylady", "moon"],
+      "vocab": [{ "word": "huff", "definition": "a small puff of air, like a tiny grumpy breath" }]
+    },
+    {
+      "number": 4,
+      "title": "The dark tower",
+      "text": "But across from the stair, where the moonlight goes thin,\nthere's a tower of stone with the shutters pulled in.\nTwo sisters live there. Two sisters, alone.\nEvilest, crowned. And Cheeblest, in bows.\n\nAnd what the two want, more than gold, more than land,\nis a power that fits in a stolen-shut hand.",
+      "image": "images/04.webp",
+      "imagePrompt": "Composition split: the shining stair on the left, a squat grim black-stone tower on the right. Evilest and Cheeblest standing on its battlement, small against the sky, moonlight refusing to reach them.",
+      "textPosition": "bottom",
+      "characters": ["evilest", "cheeblest"],
+      "vocab": [{ "word": "shutters", "definition": "little wooden doors that close over windows" }]
+    },
+    {
+      "number": 5,
+      "title": "The gift",
+      "text": "So they left them a lantern. They left it out front.\nIt was pretty. It was quiet. It didn't look blunt.\n\"A present,\" said Evilest. \"For the girls on the stair.\"\nAnd Cheeblest said nothing. Cheeblest just stared.",
+      "image": "images/05.webp",
+      "imagePrompt": "Foreground: a beautiful black-glass lantern with an upside-down crescent, sitting alone on a moonlit step, faint sinister shine. Background: two small figures retreating into shadow.",
+      "textPosition": "top",
+      "characters": ["evilest", "cheeblest"],
+      "vocab": [{ "word": "lantern", "definition": "a little house for a light, with a handle to carry it" }]
+    },
+    {
+      "number": 6,
+      "title": "The trap",
+      "text": "Moon lifted the latch. Baby Lady leaned near —\nand the black glass went hungry. The night disappeared.\nNo stair. No sky. No silver. No gold.\nJust a lantern that swallows whatever you hold.",
+      "refrain": true,
+      "image": "images/06.webp",
+      "imagePrompt": "Dramatic: the lantern's mouth open and pulling in ribbons of gold, silver, and pink light; Moon and Baby Lady caught mid-swirl, surprised not gory. Motion, spiral, not frightening.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady"],
+      "vocab": [{ "word": "latch", "definition": "a small lock that keeps a door or lid closed" }]
+    },
+    {
+      "number": 7,
+      "title": "The draining, part one",
+      "text": "First went the fire, a red thread pulled loose.\nThen went the water. Then went the use\nof the wind, and the growing, and the making-things-mend.\nMoon felt them go out like a light at the end.",
+      "image": "images/07.webp",
+      "imagePrompt": "Interior of the lantern: near-total blackness, Moon and Baby Lady tiny and huddled, a single red thread of fire unspooling away from them upward.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady"],
+      "vocab": [{ "word": "thread", "definition": "one thin, thin string — like one hair from a sweater" }]
+    },
+    {
+      "number": 8,
+      "title": "The draining, part two",
+      "text": "Then time. Oh, the time. It went last and went slow,\nthe way that a very big thing has to go.\nAnd Evilest laughed with her hands full of shine.\n\"Whatever was hers,\" she said, \"now it is mine.\"",
+      "image": "images/08.webp",
+      "imagePrompt": "Exterior: Evilest on the tower with stolen light pooled in her cupped hands, colors sitting in her palms like water. Cheeblest slightly behind, not reaching for any of it.",
+      "textPosition": "bottom",
+      "characters": ["evilest", "cheeblest"],
+      "vocab": [{ "word": "shine", "definition": "bright, glowy light" }]
+    },
+    {
+      "number": 9,
+      "title": "The one they can't take",
+      "text": "Moon was scared. Moon was small in the dark.\nMoon had one power left over. One spark.\n\nBecause dreams of hope was never inside her —\nit lives in other people. That's why it's wider.\nYou can't take a thing from a girl who won't keep it.",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "Inside the lantern, almost fully dark: Moon's face lit by one small warm point of light held between her hands. Baby Lady's eyes reflecting it. Intimate, hushed.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady"],
+      "vocab": [{ "word": "spark", "definition": "one tiny bit of light, like the very start of a fire" }]
+    },
+    {
+      "number": 10,
+      "title": "What Evilest dreams",
+      "text": "\"Then look,\" said Baby Lady. \"Look out. Look through.\"\nSo Moon closed her eyes, and she looked, and she knew:\n\nEvilest dreamed of a room made of crowns,\nand a hundred bowed heads in a hundred bowed gowns,\nand a throne, and a shine, and a very tall chair —\nand nobody, nobody, nobody there.",
+      "image": "images/10.webp",
+      "imagePrompt": "Dream-vision panel with soft dissolving edges: a vast hall of crowns, a hundred bowed figures in gowns, an enormous empty throne. Cold, gold, echoing, no faces visible.",
+      "textPosition": "bottom",
+      "characters": [],
+      "vocab": [{ "word": "throne", "definition": "a big fancy chair where a king or queen sits" }]
+    },
+    {
+      "number": 11,
+      "title": "What Cheeblest dreams",
+      "text": "And Cheeblest — oh, Cheeblest — Cheeblest dreamed small.\nTwo sisters. One blanket. One wall.\nNo crowns and no thrones and no swallowing glass.\nJust somebody near her. Just that. Just that.",
+      "image": "images/11.webp",
+      "imagePrompt": "Dream-vision panel, soft and small: two little girls on a low wall under one shared blanket, backs to the viewer, stars above. Warm, plain, tender.",
+      "textPosition": "top",
+      "characters": [],
+      "vocab": [{ "word": "blanket", "definition": "a big soft cloth that keeps you warm and cozy" }]
+    },
+    {
+      "number": 12,
+      "title": "The crack",
+      "text": "So Moon didn't fight. Moon didn't shout.\nMoon took Cheeblest's own dream and she sent it back out,\nthrough the black, through the glass, through the lock, through the seam —\n\nand outside in the cold, a girl felt her own dream.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "The dream escaping the lantern as a thin ribbon of pink-gold light slipping through a hairline crack in black glass, out into the night — and outside, Cheeblest lifting her face as it reaches her.",
+      "textPosition": "bottom",
+      "characters": ["cheeblest"],
+      "vocab": [{ "word": "seam", "definition": "the thin line where two pieces are joined together" }]
+    },
+    {
+      "number": 13,
+      "title": "Opened",
+      "text": "Cheeblest looked at the lantern. Cheeblest looked at her sister.\nCheeblest thought about blankets. And then she unlatched it.\n\nOut came a puppy. Out came a girl.\nOut came a small and a startled hello.",
+      "image": "images/13.webp",
+      "imagePrompt": "Cheeblest's hands unlatching the lantern; light bursting out; a puppy and a girl tumbling free onto the stone. Relief, movement, a startled little hello in the body language.",
+      "textPosition": "top",
+      "characters": ["cheeblest", "moon", "babylady"],
+      "vocab": [{ "word": "unlatched", "definition": "opened the little lock so the door could swing free" }]
+    },
+    {
+      "number": 14,
+      "title": "The long way home",
+      "text": "The stair was so long with no powers to fly.\nThey walked it. They walked it. They walked the whole sky.\nBaby Lady went first, with her nose to the stone,\nand she said, the whole way, \"You are not walking alone.\"",
+      "image": "images/14.webp",
+      "imagePrompt": "Long vertical view of the endless stair from far away: two very small figures walking up it, no wings glowing, Baby Lady leading. Sky enormous around them. Determination, tiredness, love.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady"],
+      "vocab": [{ "word": "alone", "definition": "all by yourself, with nobody near" }]
+    },
+    {
+      "number": 15,
+      "title": "The hundred",
+      "text": "And there at the top — every window alight,\nevery lamp lit and burning, all through the whole night —\nstood the Guardians. All hundred. Small, silver, awake.\nCaptain Pim at the front with her wings all ashake.\n\n\"We never once slept,\" said the Captain. \"Not one.\nYour hope came right through. So we waited. It's done.\"",
+      "image": "images/15.webp",
+      "imagePrompt": "Reveal spread: the top of the stair blazing with a hundred lit windows and lamps; a hundred small silver moth-knights arrayed in ranks; Captain Pim in front, wings trembling. Overwhelming warmth after the cold.",
+      "textPosition": "bottom",
+      "characters": ["pim"],
+      "vocab": [{ "word": "guardians", "definition": "friends whose job is to watch over you and keep you safe" }]
+    },
+    {
+      "number": 16,
+      "title": "Home",
+      "text": "The powers came back, but they came back slow —\nthe fire on Tuesday, the time weeks ago,\nand Moon found she reached for them less than before,\nnow she knew what was hers when she had nothing more.\n\nAnd that night at the table, set out in the light,\nwere four bowls of soup. Four. That's right.\n\nTwo for two sisters with gold wings and pearl,\nand two for two others. One crown. One curl.",
+      "refrain": true,
+      "theEnd": "The End — of the first one.",
+      "image": "images/16.webp",
+      "imagePrompt": "Interior, night: a round table under lamplight with four bowls of soup. Moon and Baby Lady on one side, Evilest and Cheeblest seated across, awkward and small and staying. Crescent motif carved above the door.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "evilest", "cheeblest"],
+      "vocab": [{ "word": "curl", "definition": "hair that twists round and round like a spring" }]
+    }
+  ]
+}

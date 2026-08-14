@@ -1,0 +1,19 @@
+{
+  "site": "Luna's Story Time",
+  "tagline": "Magical read-aloud storybooks for little dreamers",
+  "series": [
+    {
+      "id": "castle-everstair",
+      "name": "The Castle Everstair Stories",
+      "books": [
+        {
+          "slug": "princess-moon-and-the-nevershine-lantern",
+          "title": "Princess Moon and the Nevershine Lantern",
+          "subtitle": "Book One of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/princess-moon-and-the-nevershine-lantern/images/cover.webp"
+        }
+      ]
+    }
+  ]
+}
