@@ -52,7 +52,7 @@ export SPEECH_KEY=$(az cognitiveservices account keys list -n imagile-speech -g 
 uv run --with azure-cognitiveservices-speech python scripts/generate-narration.py <book-slug>
 ```
 
-- Produces `books/<slug>/narration/cover.mp3`, `01.mp3`…`16.mp3` + `timings.json` (word boundaries → reader highlight sync). Commit them all.
+- Produces `books/<slug>/narration/cover.mp3`, `01.mp3`…`16.mp3` + `timings.json` (word boundaries → reader highlight sync), plus `words.mp3`+`words.json` (per-word audio sprite for tap-a-word) and `vocab/<word>.mp3` (spoken "word + definition" for sparkle-word popups). Commit them all. Page MP3s are skipped if present; delete to force regeneration after text edits.
 - `imagile-speech` is the shared org resource (F0, 0.5M chars/month) provisioned via kolatts/imagile-organization Bicep. Voice: `en-US-AnaNeural`.
 - **The script mirrors reader.js's speakText composition exactly** (cover sentence; spread text + " … " + refrain). If reader.js changes how it composes page text, change the script the same way and regenerate, or highlights drift.
 - After changing any spread's text, regenerate that book's narration.

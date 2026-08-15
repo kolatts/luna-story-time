@@ -26,6 +26,10 @@
   var narration = null;   // { pageId: [[ms, charOffset, wordLen], ...] }
   var audio = null;       // single reusable <audio> element (autoplay-friendly)
   var rafId = null;
+  var wordSprite = null;  // { word: [startMs, durMs] } into narration/words.mp3
+  var spriteAudio = null; // <audio> for word-sprite segments
+  var vocabAudio = null;  // <audio> for vocab definition clips
+  var segTimer = null;
 
   /* ---------- Speech ---------- */
   var synth = window.speechSynthesis;
@@ -53,6 +57,9 @@
     if (synth) synth.cancel();
     if (audio) { audio.pause(); audio.removeAttribute("src"); audio.load(); }
     if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    if (segTimer) { clearTimeout(segTimer); segTimer = null; }
+    if (spriteAudio) spriteAudio.pause();
+    if (vocabAudio) vocabAudio.pause();
     speaking = false;
     playBtn.textContent = "🔊";
     playBtn.setAttribute("aria-label", "Read this page to me");
@@ -186,6 +193,37 @@
     u.pitch = 1.1;
     u.onend = function () { autoMode = wasAuto; };
     synth.speak(u);
+  }
+
+  /* Say one word with the Ana voice via the word sprite; browser voice fallback. */
+  function sayWord(word) {
+    if (speaking) stopSpeaking();
+    var seg = wordSprite && wordSprite[word];
+    if (!seg) { speakWord(word); return; }
+    if (!spriteAudio) {
+      spriteAudio = new Audio(base + "narration/words.mp3");
+      spriteAudio.preload = "auto";
+    }
+    if (segTimer) { clearTimeout(segTimer); segTimer = null; }
+    var start = function () {
+      spriteAudio.currentTime = seg[0] / 1000;
+      var p = spriteAudio.play();
+      if (p && p.catch) p.catch(function () { speakWord(word); });
+      segTimer = setTimeout(function () { spriteAudio.pause(); segTimer = null; }, seg[1] + 120);
+    };
+    if (spriteAudio.readyState >= 1) start();
+    else spriteAudio.addEventListener("loadedmetadata", start, { once: true });
+  }
+
+  /* Say a sparkle word plus its definition with the Ana voice; fallback to browser voice. */
+  function sayVocab(entry) {
+    if (speaking) stopSpeaking();
+    if (!vocabAudio) { vocabAudio = new Audio(); vocabAudio.preload = "auto"; }
+    var key = stripPunct(entry.word);
+    vocabAudio.onerror = function () { speakWord(entry.word + ". " + entry.definition); };
+    vocabAudio.src = base + "narration/vocab/" + key + ".mp3";
+    var p = vocabAudio.play();
+    if (p && p.catch) p.catch(function () { speakWord(entry.word + ". " + entry.definition); });
   }
 
   /* ---------- Page building ---------- */
@@ -412,9 +450,9 @@
     pop.style.left = left + "px";
     pop.querySelector(".vp-close").addEventListener("click", closePop);
     pop.querySelector(".vp-say").addEventListener("click", function () {
-      speakWord(entry.word + ". " + entry.definition);
+      sayVocab(entry);
     });
-    speakWord(entry.word);
+    sayVocab(entry);
   }
 
   /* ---------- Events ---------- */
@@ -451,7 +489,7 @@
       if (w) {
         t.classList.add("speaking");
         setTimeout(function () { t.classList.remove("speaking"); }, 900);
-        speakWord(w);
+        sayWord(w);
       }
     }
   });
@@ -550,6 +588,10 @@
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (t) { narration = t; })
         .catch(function () { narration = null; });
+      fetch(base + "narration/words.json")
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (w) { wordSprite = w; })
+        .catch(function () { wordSprite = null; });
     })
     .catch(function (err) {
       host.innerHTML = '<div class="text-panel"><h2 class="spread-title">Oh no!</h2>' +
