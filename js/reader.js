@@ -22,6 +22,11 @@
   var prevBtn = document.getElementById("prevBtn");
   var nextBtn = document.getElementById("nextBtn");
 
+  /* ---------- Narration audio (pre-generated Azure "Ana" voice) ---------- */
+  var narration = null;   // { pageId: [[ms, charOffset, wordLen], ...] }
+  var audio = null;       // single reusable <audio> element (autoplay-friendly)
+  var rafId = null;
+
   /* ---------- Speech ---------- */
   var synth = window.speechSynthesis;
   var chosenVoice = null;
@@ -46,6 +51,8 @@
 
   function stopSpeaking() {
     if (synth) synth.cancel();
+    if (audio) { audio.pause(); audio.removeAttribute("src"); audio.load(); }
+    if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
     speaking = false;
     playBtn.textContent = "🔊";
     playBtn.setAttribute("aria-label", "Read this page to me");
@@ -53,8 +60,72 @@
   }
 
   function clearHighlights() {
-    var lit = host.querySelectorAll(".w.speaking");
+    var lit = host.querySelectorAll(".w.speaking, .refrain-line.speaking");
     for (var i = 0; i < lit.length; i++) lit[i].classList.remove("speaking");
+  }
+
+  /* Highlight the word span covering charIdx of the page's speakText (or the
+     refrain callout for offsets beyond it), scrolling it into view. */
+  function highlightAt(page, charIdx) {
+    clearHighlights();
+    var el = null;
+    if (charIdx >= page.speakText.length) {
+      el = host.querySelector(".refrain-line");
+    } else if (page.spans) {
+      for (var i = 0; i < page.spans.length; i++) {
+        if (page.spans[i].start <= charIdx && charIdx < page.spans[i].end + 1) { el = page.spans[i].el; break; }
+        if (page.spans[i].start > charIdx) { el = page.spans[i > 0 ? i - 1 : 0].el; break; }
+      }
+      if (!el && page.spans.length) el = page.spans[page.spans.length - 1].el;
+    }
+    if (el) {
+      el.classList.add("speaking");
+      var r = el.getBoundingClientRect();
+      if (r.top < 70 || r.bottom > window.innerHeight - 120) {
+        el.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+    }
+  }
+
+  /* Play pre-generated narration with timing-synced highlights. */
+  function playNarration(page, onDone) {
+    if (!audio) { audio = new Audio(); audio.preload = "auto"; }
+    var bounds = narration[page.audioId];
+    audio.src = base + "narration/" + page.audioId + ".mp3";
+    audio.playbackRate = slow ? 0.75 : 1;
+
+    var fellBack = false;
+    audio.onerror = function () {
+      // Missing/broken audio: fall back to the browser voice.
+      fellBack = true;
+      speaking = false;
+      speakText(page.speakText + (page.refrain ? " … " + book.refrain : ""), onDone, page.spans);
+    };
+    audio.onended = function () {
+      if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+      speaking = false;
+      playBtn.textContent = "🔊";
+      clearHighlights();
+      if (onDone) onDone();
+    };
+
+    function tick() {
+      if (fellBack || audio.paused) { rafId = null; return; }
+      var ms = audio.currentTime * 1000;
+      var current = null;
+      for (var i = 0; i < bounds.length; i++) {
+        if (bounds[i][0] <= ms) current = bounds[i]; else break;
+      }
+      if (current) highlightAt(page, current[1]);
+      rafId = requestAnimationFrame(tick);
+    }
+
+    var p = audio.play();
+    if (p && p.catch) p.catch(function () { audio.onerror(); });
+    speaking = true;
+    playBtn.textContent = "⏸";
+    playBtn.setAttribute("aria-label", "Stop reading");
+    rafId = requestAnimationFrame(tick);
   }
 
   function speakText(text, onDone, wordSpans) {
@@ -307,11 +378,16 @@
     var page = pages[current];
     if (page.kind === "finale") return;
     if (speaking) { stopSpeaking(); return; }
-    speakText(page.speakText + (page.refrain ? " … " + book.refrain : ""), function () {
+    var onDone = function () {
       if (autoMode && current < pages.length - 1) {
         setTimeout(function () { if (autoMode) go(1); }, 900);
       }
-    }, page.spans);
+    };
+    if (narration && page.audioId && narration[page.audioId]) {
+      playNarration(page, onDone);
+    } else {
+      speakText(page.speakText + (page.refrain ? " … " + book.refrain : ""), onDone, page.spans);
+    }
   }
 
   /* ---------- Vocab popup ---------- */
@@ -353,6 +429,7 @@
   document.getElementById("speedBtn").addEventListener("click", function () {
     slow = !slow;
     this.setAttribute("aria-pressed", String(slow));
+    if (audio && !audio.paused) audio.playbackRate = slow ? 0.75 : 1;
   });
   document.getElementById("autoBtn").addEventListener("click", function () {
     autoMode = !autoMode;
@@ -415,6 +492,7 @@
 
       pages.push({
         kind: "cover",
+        audioId: "cover",
         title: b.title,
         kicker: b.subtitle,
         speakText: b.title + ". " + b.subtitle + ". Written with love by " + b.authors.join(" and ") + ".",
@@ -438,6 +516,7 @@
         });
         pages.push({
           kind: "spread",
+          audioId: (s.number < 10 ? "0" : "") + s.number,
           number: s.number,
           title: s.title,
           kicker: "Page " + s.number + " of " + b.spreads.length,
@@ -465,6 +544,12 @@
       });
 
       renderPage(0, 0);
+
+      // Pre-generated narration is optional; the Web Speech voice covers its absence.
+      fetch(base + "narration/timings.json")
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (t) { narration = t; })
+        .catch(function () { narration = null; });
     })
     .catch(function (err) {
       host.innerHTML = '<div class="text-panel"><h2 class="spread-title">Oh no!</h2>' +

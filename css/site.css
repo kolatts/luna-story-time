@@ -245,6 +245,10 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
   border-radius: 0 12px 12px 0;
   font-style: italic; color: #6d4fa0; font-size: calc(var(--story-size) * .98);
 }
+.refrain-line.speaking {
+  background: rgba(232, 196, 106, .35);
+  box-shadow: 0 0 0 3px rgba(232, 196, 106, .35);
+}
 .refrain-line .say-with-me {
   display: block; font-style: normal; font-size: .78rem;
   letter-spacing: .1em; text-transform: uppercase; color: #b58ac2; margin-bottom: .25rem;

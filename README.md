@@ -5,7 +5,7 @@ Magical, read-aloud children's storybooks for little dreamers — a static site,
 **Live site:** https://kolatts.github.io/luna-story-time/
 
 ## Features
-- 🔊 **Read to me** — Web Speech API narration with per-word highlighting
+- 🔊 **Read to me** — warm neural narration (Azure "Ana" voice, pre-generated per page) with per-word highlighting synced from word-boundary timings; Web Speech API fallback when narration files are absent
 - 👆 **Tap any word** to hear it spoken
 - ✨ **Sparkle words** — tappable vocabulary with kid-friendly definitions
 - 📖✨ **Storytime mode** — reads every page and turns them automatically

@@ -43,11 +43,25 @@ Use the `imagile-dev-tools:image-generation` skill (OpenAI Images API). The glob
 - **Prompt pitfalls learned the hard way**: character names that are animal words get literalized (a "Cottontail" became a rabbit — say "the young jaguar cub" in prompts, and add "no rabbits/no other animals" when burned); very dark scenes can come back as a solid black frame (reword to make the light sources explicit); the model loves adding uninvited background animals to nature scenes. `.claude/image-generation/make-prompts.py` builds prompt files straight from a book.json (imagePrompt + sheets).
 - Cover art should leave open sky/space in the upper third (site may overlay the title later).
 
-## 3. Register the book
+## 3. Narration (Azure "Ana" voice)
+
+Every page gets a pre-generated MP3 + word timings so the reader uses a warm neural voice instead of the robotic browser default (Web Speech stays as fallback and still powers tap-a-word/vocab).
+
+```bash
+export SPEECH_KEY=$(az cognitiveservices account keys list -n imagile-speech -g imagile-organization --query key1 -o tsv)
+uv run --with azure-cognitiveservices-speech python scripts/generate-narration.py <book-slug>
+```
+
+- Produces `books/<slug>/narration/cover.mp3`, `01.mp3`…`16.mp3` + `timings.json` (word boundaries → reader highlight sync). Commit them all.
+- `imagile-speech` is the shared org resource (F0, 0.5M chars/month) provisioned via kolatts/imagile-organization Bicep. Voice: `en-US-AnaNeural`.
+- **The script mirrors reader.js's speakText composition exactly** (cover sentence; spread text + " … " + refrain). If reader.js changes how it composes page text, change the script the same way and regenerate, or highlights drift.
+- After changing any spread's text, regenerate that book's narration.
+
+## 4. Register the book
 
 Append to `books/series.json` under the right series (create a new series entry if needed): `slug`, `title`, `subtitle`, `ageRange`, `cover` path. Remove/keep the "coming soon" card logic alone — it's generated in `js/main.js`.
 
-## 4. Playtest
+## 5. Playtest
 
 Serve locally (`python -m http.server 8080`) and check with browser tools, at mobile (375px), tablet (768px), and desktop widths:
 
@@ -57,7 +71,7 @@ Serve locally (`python -m http.server 8080`) and check with browser tools, at mo
 - Storytime mode auto-advances; prev/next, moons nav, swipe, arrow keys work.
 - Nothing overflows horizontally on mobile.
 
-## 5. Deploy
+## 6. Deploy
 
 ```bash
 git add -A && git commit -m "Add <title> (book N)" && git push
