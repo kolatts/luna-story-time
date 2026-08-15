@@ -63,7 +63,7 @@ Append to `books/series.json` under the right series (create a new series entry 
 
 ## 5. Playtest
 
-Serve locally (`python -m http.server 8080`) and check with browser tools, at mobile (375px), tablet (768px), and desktop widths:
+Serve locally (`uv run --with rangehttpserver python -m RangeHTTPServer 8080` — NOT plain `python -m http.server`, which lacks HTTP Range support, so narration/word-sprite audio seeking silently fails locally while working fine on GitHub Pages) and check with browser tools, at mobile (375px), tablet (768px), and desktop widths:
 
 - Bookshelf shows the new cover; card links to `reader.html?book=<slug>`.
 - Every page renders: art loads (no 🌙 placeholder), text matches, sparkle words glow and pop definitions, refrain callout appears on the right spreads.

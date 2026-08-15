@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "luna-story-time",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8123", "--bind", "127.0.0.1"],
+      "runtimeExecutable": "uv",
+      "runtimeArgs": ["run", "--with", "rangehttpserver", "python", "-m", "RangeHTTPServer", "8123"],
       "port": 8123
     }
   ]
