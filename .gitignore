@@ -1,4 +1,5 @@
 # archival generated art stays local (prompts + scripts are committed; site serves books/**/images/*.webp)
 .claude/image-generation/*/*.png
+.claude/image-generation/*/*.webp
 .playwright-cli/
 books/**/images/*.png

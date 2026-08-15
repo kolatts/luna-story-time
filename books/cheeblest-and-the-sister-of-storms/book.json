@@ -1,0 +1,209 @@
+{
+  "slug": "cheeblest-and-the-sister-of-storms",
+  "series": "castle-everstair",
+  "bookNumber": 3,
+  "title": "Cheeblest and the Sister of Storms",
+  "subtitle": "Book Three of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "Even storms were little once.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail; tiny gold crescent charm on a pearl collar." },
+    { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." },
+    { "id": "shock", "name": "Shock", "sheet": "Shock: a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature, with round dark eye-holes, a thin hairline crack down one cheek, and a small tipped-sideways crescent moon scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover: Cheeblest small and brave in the foreground, standing on the great glowing castle stair with her purple dress and black bows caught in the wind, looking out across a deep dark sea at a vast soft grey storm swirling above the distant tall black tower — and faint within the storm-swirl, the barest suggestion of a dark mask shape; warm gold light from the castle windows behind her. Open sky in the upper third for the title."
+  },
+  "questions": [
+    "Shock wears a mask all the time, even when nobody is looking. Why do you think somebody might want to hide?",
+    "Evilest saw the shiny new world Shock wanted to build, and she didn't want it. What was missing from it?",
+    "Moon didn't fight the storm. She just looked at Shock's dream — and didn't look away. Why do you think that made the storm stop?",
+    "The friends keep a bowl of warm soup waiting for the stormy sister. If she ever knocked on the door, what would you say to her?"
+  ],
+  "lookAndFind": "Shock's mask has a tiny tipped-over crescent moon scratched above the brow — can you find it? And keep watch for doors in places where doors don't belong.",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The silence",
+      "text": "Nobody spoke when the summer was done.\nNobody spoke — not a single one.\nFor out on the water, as still as a stone,\nstood somebody masked, and she stood all alone.\n\nShe looked at them once through the holes in her mask.\nShe didn't want soup. She had nothing to ask.\nShe turned, and she walked on the sea like a floor,\nand the tower — their tower — swung open its door.",
+      "image": "images/01.webp",
+      "imagePrompt": "Quiet night at the rock pool moments after summer's end: far out on the flat moonlit sea, the tall masked sister walking away across the water's surface toward the distant black tower, whose main door stands open glowing faint violet; in the foreground at the pool's edge, Moon, Baby Lady, the young jaguar cub and Cheeblest stand close together, very still, watching her go. Full bright moon, calm sea, hushed.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "cottontail", "cheeblest", "shock"],
+      "vocab": [{ "word": "mask", "definition": "a pretend face someone wears over their real one" }]
+    },
+    {
+      "number": 2,
+      "title": "Locked out",
+      "text": "By morning the tower was taller. It's true.\nAnd it hadn't asked anyone. Towers don't do\nthe things this one did: it had grown, overnight,\na crown of new doors at a dizzying height.\n\nAnd down on the sand stood the sisters, locked out —\nlocked out of the home they'd been scary about.\nEvilest hammered and hollered, \"IT'S ME!\"\nThe door didn't budge. It was waiting, you see.",
+      "image": "images/02.webp",
+      "imagePrompt": "Soft grey morning on wet black sand: the dark stone tower grown strangely taller overnight, sprouting a crown of many small mismatched doors where its windows used to be; at its base Evilest hammering on the big shut main door, crown askew, mid-holler, while Beedlist stands perfectly still beside her, hands folded. Silver morning light, unsettling but gentle.",
+      "textPosition": "top",
+      "characters": ["evilest", "beedlist"],
+      "vocab": [{ "word": "budge", "definition": "move even the tiniest bit" }]
+    },
+    {
+      "number": 3,
+      "title": "Doors don't open for strangers",
+      "text": "Across the wide water the friends saw it all:\nthe mask on the sea, and the tower grown tall.\n\"Who is she?\" asked Moon. Cottontail didn't know:\n\"I've sailed every somewhere a sailboat can go,\n\nand nobody, nowhere, wears masks on the sea.\"\nThen Cheeblest said, quietly, \"Listen to me.\nDoors don't open for strangers. It knew her. It did.\nI lived my whole life there —\n\nand it never swung open like that once for me.\"",
+      "image": "images/03.webp",
+      "imagePrompt": "Morning at the warm rock pool: Moon, Baby Lady and the young jaguar cub gathered close around Cheeblest, who looks out across the wide grey-blue sea toward the distant grim black stone tower silhouetted dark against the sky, its many new doors faintly visible; worried small faces, warm golden light from the castle behind them, the pool glowing gently.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "cottontail", "cheeblest"],
+      "vocab": [{ "word": "strangers", "definition": "people you haven't met yet" }]
+    },
+    {
+      "number": 4,
+      "title": "The secret the tower kept",
+      "text": "Inside, up a stairway as new as the day,\nthe sisters found halls that had not been that way,\nand there stood the masked one, so still and so tall,\nand her voice, when it came, was like snow. That was all.\n\n\"Sisters,\" she said. \"I'm your sister. I'm Shock.\nI was born in this tower. I'm older than talk.\nAnd nobody told you. Not once. Not a peep.\nI'm the secret this tower was built here to keep.\"\n\nAnd Evilest lit up spike after spike:\na BIGGER, more terrible sister! Her like!\nShe bowed till her crown nearly swept at the floor:\n\"Whatever you're planning — I'm yours. Tell me more.\"\n\nBut Beedlist said nothing. She stayed in the black.\nShe looked at the mask. And the mask looked back.",
+      "image": "images/04.webp",
+      "imagePrompt": "Inside the tower, a vast new hall of pale grey stone lit warmly by tall candelabras: the tall masked sister standing very straight at the center; Evilest delighted, grinning wide, mid-bow with her spiky crown nearly sweeping the floor; Beedlist far back in soft shadow, perfectly still, watching the mask. Unsettling but gentle, warm candlelight against grey stone.",
+      "textPosition": "top",
+      "characters": ["shock", "evilest", "beedlist"],
+      "vocab": [{ "word": "secret", "definition": "something you know but keep hidden away" }]
+    },
+    {
+      "number": 5,
+      "title": "The un-stitching",
+      "text": "Then Shock climbed her tower and stood at the crown,\nand the sky went the grey of a storm sitting down,\nand she reached up and pinched, very gently, like thread —\nand a stone of the stair floated up from its bed.\n\nThen two stones. Then ten. Like puzzle-bits, slow,\nthey drifted up out of the place stones should go.\nAnd thin as an eyelash, far up past the blue,\na crack crossed the moon. And the crack was new.\n\n\"I'll stop,\" said the mask, in her snowfall voice,\n\"when you bring me the shines. All three. It's a choice.\nThis world came out wrong. I will take it apart,\nand build a new world in the shape of my heart.\"",
+      "image": "images/05.webp",
+      "imagePrompt": "The tall masked sister completely alone — no other people or children anywhere in the scene — standing at the very top of the tower beneath a huge, slow, soft grey storm-swirl; far across the water, glowing golden stones of the great castle stair drifting gently up into the sky like floating puzzle pieces; high above, a thin hairline crack across the bright full moon. The scene stays luminous: moonlight, warm stair-glow, soft violet sky.",
+      "textPosition": "bottom",
+      "characters": ["shock"],
+      "vocab": [{ "word": "crack", "definition": "a thin line where something has started to break" }]
+    },
+    {
+      "number": 6,
+      "title": "Coming loose",
+      "text": "How do you fight with the weather? You don't.\nYou can ask it to stop, but it probably won't.\nThey watched their dear stair come undone, bit by bit,\nlike somebody slowly unbuttoning it.\n\nThe stones didn't fall. Nobody was hurt.\nThey rose, soft as bubbles, away from the dirt,\nand they hung in the sky, and they didn't make sound.\nAnd a quiet that's wrong is the loudest thing round.",
+      "refrain": true,
+      "image": "images/06.webp",
+      "imagePrompt": "Seen from the castle side: Moon, Baby Lady, the young jaguar cub and Cheeblest small at the foot of the great stair as several of its glowing stones float calmly upward around them like golden bubbles; the children holding each other and gazing up; grey sea, heavy soft sky, everything lit warm gold by the floating stones.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "cottontail", "cheeblest"],
+      "vocab": [{ "word": "unbuttoning", "definition": "opening something slowly, one little button at a time" }]
+    },
+    {
+      "number": 7,
+      "title": "The storm and the cat",
+      "text": "Then the storm came for Cottontail's power. It pried.\nIt circled her, sniffing. It hunted. It tried.\nIt turned out her pockets — no pockets. It blew\nthrough her fur and her whiskers. No magic came through.\n\n\"I keep telling everyone,\" said the wet cat,\n\"there isn't a shine under this, under that.\nMy claws are just claws. They grew where they stay.\nYou can't take a thing that won't come away.\"\n\nAnd the storm went quite still, for it didn't know what\nto do with a something that couldn't be got.",
+      "image": "images/07.webp",
+      "imagePrompt": "On the wet sand in the wind: the young jaguar cub standing firm and unbothered as soft ribbons of grey storm-wind curl all around her, ruffling her fur and pink hair and finding nothing to take; she holds up one paw showing small ordinary claws, her face calm and almost amused; warm moonlight breaking through the grey. No other animals.",
+      "textPosition": "bottom",
+      "characters": ["cottontail"],
+      "vocab": [
+        { "word": "whiskers", "definition": "the long soft hairs on an animal's cheeks" },
+        { "word": "pried", "definition": "poked and pulled, trying to get something open" }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "The givers",
+      "text": "But Moon and her sister sat close on the stair,\nby the space where a step had gone off in the air,\nand they thought the same thought, and they thought it as one\n(they have never once argued — not ever, not yet):\n\"She can have every shine. She can have every sun.\nA world full of friends is the best you can get.\"\n\nSo they filled up their arms with their shimmer and glow\nand set off for the tower to give it away.\nAnd the storm, up above, watched them come. And you know\nthat a storm shouldn't smile. But it did, in its grey.",
+      "image": "images/08.webp",
+      "imagePrompt": "Night: Moon and Baby Lady walking together along the shore toward the distant tower, arms and paws full of glowing gold, silver and pink light, faces gentle and determined; ahead, the grim black stone tower, its big door slowly opening; grey storm sky above, the carried light glowing warm around them like lanterns.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady"],
+      "vocab": [{ "word": "shimmer", "definition": "a soft, sparkly, dancing shine" }]
+    },
+    {
+      "number": 9,
+      "title": "The world she would build",
+      "text": "Meanwhile the sisters, inside, on their own,\nwent poking through hallways the tower had grown,\npast a small dusty room where five little beds slept,\nall made, very neat, like a promise half-kept,\n\nto a door standing open a crack, silver-grey,\nwith the world Shock would build when this world went away:\nit was tidy. It shone. It was rowed. And it gleamed.\nAnd Evilest stopped. For she knew it. She'd dreamed:\n\na room full of crowns and a very tall chair,\nand nobody, nobody, nobody there.\nShe looked a long look. Then she said, very small,\n\"I don't think I want to be queen, after all.\"",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "Inside the tower: Evilest and Beedlist at a tall grey doorway glowing silver, looking into a dream-like vision of a perfectly tidy, shining, empty world — neat rows of crowns and one very tall empty throne, beautiful and cold, nobody in it; Evilest's face fallen and small; behind them in the dim candlelit hallway, a small dusty room with exactly five little neat beds in a row just visible, five beds, no more. Unsettling but gentle.",
+      "textPosition": "bottom",
+      "characters": ["evilest", "beedlist"],
+      "vocab": [{ "word": "gleamed", "definition": "shone softly, like something polished" }]
+    },
+    {
+      "number": 10,
+      "title": "She won't stop",
+      "text": "They ran. Down the stairways, down two at a time,\nout the door, down the sand, to the edge of the brine,\nand stood in the path of the glow coming near.\n\"STOP,\" puffed out Evilest. \"Keep your shine here.\n\nShe's our sister. Our oldest. And nobody knew.\nNot us. Not our whole lives. I promise it's true.\nAnd I've seen the new world she would build when it's done —\nthere's nobody in it. Not us. Not anyone.\"\n\nAnd Beedlist, who never says anything, wrote\nthree small words in her book, and held up the note,\nand the three words were these, in her smallest black pen:\n\"SHE WON'T STOP.\" And the sea went flat again.",
+      "image": "images/10.webp",
+      "imagePrompt": "On the wet black shore before the tower door: Evilest with arms flung wide, blocking the path of Moon and Baby Lady who carry armfuls of glowing light; beside her Beedlist holds up a small open black book, its page showing only tiny unreadable pen marks; urgent but tender faces, storm-grey sky, the children lit warm by the carried glow.",
+      "textPosition": "top",
+      "characters": ["evilest", "beedlist", "moon", "babylady"],
+      "vocab": [{ "word": "note", "definition": "a little written message" }]
+    },
+    {
+      "number": 11,
+      "title": "The girl who knew towers",
+      "text": "Then Cheeblest walked forward, alone, up the sand,\npast sisters, past friends, holding nobody's hand,\nand she stood at the foot of the tower, head high,\nin her bows, very small, looking up at the sky,\n\nand she called to the mask at the top of it all:\n\"I know about towers! I lived in one too!\nYou hide till the hiding is all that you do!\n\nI had a small dream and I hid it away —\nand somebody looked at it anyway. SEE?\nMoon! Do the thing that you once did for me!\nDon't run! Don't give! Don't fight her! Just LOOK!\"",
+      "image": "images/11.webp",
+      "imagePrompt": "Small brave Cheeblest standing alone at the foot of the huge tower, bows and purple dress tugged sideways by the wind, head high, calling up toward the tiny masked figure at the tower's distant top far above — Cheeblest is completely alone on the shore, no other people or children anywhere in the scene except the tiny masked figure far above; grey storm light warmed by gold from the castle far across the sea.",
+      "textPosition": "bottom",
+      "characters": ["cheeblest", "shock"],
+      "vocab": [{ "word": "alone", "definition": "all by yourself, with nobody beside you" }]
+    },
+    {
+      "number": 12,
+      "title": "The looking",
+      "text": "So Moon set her armful of shine on the sand,\nand took Baby Lady's soft paw in her hand,\nand she closed her eyes gently, and looked the long way —\npast the mask, past the storm, past the grey, past the grey.\n\nAnd deep at the middle of all of that weather\nshe found one small dream, folded up like a letter,\nand the dream wasn't thunder, and it wasn't rain,\nand it wasn't a world crumbled small. It was plain:\n\nsomebody looking at her, and then —\nnot looking away. Just looking again.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "Dream-vision spread with soft dissolving edges, framed in swirling gentle storm-grey clouds: inside a hushed grey room where all the mirrors are draped with white sheets, a small girl seen only from behind as a soft dark silhouette, face never visible, standing before a door open just a crack with warm golden light spilling through toward her. Tender, hushed, glowing, kind.",
+      "textPosition": "top",
+      "characters": [],
+      "vocab": [{ "word": "letter", "definition": "a written message you fold up and send to someone" }]
+    },
+    {
+      "number": 13,
+      "title": "Not beaten, not finished",
+      "text": "And high on the tower, the storm lost its spin,\nand the stones hung as still as the night they were in.\n\"Stop looking at me,\" said the mask, low and thin.\nAnd Moon said, quite gently, \"I already did.\n\nI can't see your face, and I won't even try.\nBut I saw you. I saw you. You're not very hid.\"\n\nAnd Shock — who could crumble a world into sand —\ntook one step away, like a wave leaves the land,\nand stepped through a door that was suddenly there,\nand the door closed behind her. And storm became air.\n\nNot beaten. Not finished. Not sorry. Not done —\njust gone for tonight, like a storm. Or a sun.",
+      "image": "images/13.webp",
+      "imagePrompt": "The storm holding its breath at first pale gold of dawn: floating golden stair stones hanging motionless in the sky; on the tower top, the tall masked sister stepping backward through a tall grey freestanding door, her cloak trailing into mist, the door half closed behind her; far below, Moon watches gently with one hand slightly raised. Quiet, soft, luminous.",
+      "textPosition": "bottom",
+      "characters": ["shock", "moon"],
+      "vocab": [{ "word": "suddenly", "definition": "all at once, when you weren't expecting it" }]
+    },
+    {
+      "number": 14,
+      "title": "The missing step",
+      "text": "The stones settled home like slow flakes of snow,\neach back into place in the stair's even row —\nall but one step, near the ninety-ninth bend,\nthat never came down. There's a gap there, my friend.\nThey hop it. You'd hop it. It isn't so far.\nBut it's how they remember that somewhere, storms are.\n\nAnd the crack on the moon knitted shut, thin and slow,\nthe way that a scrape on your knee learns to go —\nthough on some very clear nights, you can find a faint line,\nlike the moon has a secret. (It does. It's fine.)\n\nAnd the tower shrank back to its everyday frown,\nand it kept one new door that it didn't take down.",
+      "image": "images/14.webp",
+      "imagePrompt": "Soft pink dawn: the great glowing stair rebuilt as the last golden stones settle down into place like slow snowflakes — one single gap where a step is missing, and Moon, Baby Lady, the young jaguar cub and Cheeblest all hopping over the gap together mid-step, laughing; above, the fading moon with the faintest thin healed line across its face. Joyful, warm, light.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "cottontail", "cheeblest"],
+      "vocab": [{ "word": "knitted", "definition": "grew back together, bit by bit, like stitches" }]
+    },
+    {
+      "number": 15,
+      "title": "Soup, crowded",
+      "text": "That night at the table there wasn't much room.\nTwo extras had followed them home through the gloom:\none girl with a crown, sitting cross-armed and proud,\nwho said that the soup was \"just fine\" — but quite loud;\n\none girl all in black, who said nothing at all,\nwho wrote in her book with her back to the wall,\none word at a time, very neat, in between\nsmall sips of her soup. (What it said, we've not seen.)\n\nAnd the bowl for the stormy one? Full. Set. Still there,\nwith its steam going up by the one empty chair.\nNobody talked of it. Everyone knew.\nSome bowls you keep setting. It's just what you do.",
+      "image": "images/15.webp",
+      "imagePrompt": "Cozy warm interior at night: a round wooden table crowded with seven bowls of steaming soup under golden lamplight — Moon, Baby Lady, Cheeblest and the young jaguar cub squeezed in happily, Evilest — a little girl the same size and age as the other children, not an adult — seated with arms crossed but staying, and Beedlist, also a small girl, writing in a small black book between sips; every character is a small child — and one empty chair with a full steaming bowl waiting in front of it; crescent moon carved above the door.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "cheeblest", "cottontail", "evilest", "beedlist"],
+      "vocab": [{ "word": "proud", "definition": "feeling big and pleased about yourself" }]
+    },
+    {
+      "number": 16,
+      "title": "The storm on the horizon",
+      "text": "And later, at bedtime, when lamps were all low,\nMoon looked from her window, out where the waves go,\nand there on the line where the sky meets the foam,\na little grey storm paced. It didn't come home.\n\nIt didn't come closer. It didn't quite go.\nIt walked the horizon, slow, to and fro,\nthe way you might pace at a door in the night\nwhen you almost could knock. When you can't. When you might.\n\nAnd Moon raised her hand to the glass. And it's true:\nshe waved at the storm. Like you do. Like you do.\nThe storm didn't wave back. (A storm has no hand.)\nBut it stopped its slow pacing, out there past the land,\n\nand it stayed, very still, all the rest of the night.",
+      "refrain": true,
+      "theEnd": "The End — of the third one.",
+      "image": "images/16.webp",
+      "imagePrompt": "Quiet night, seen from inside a warm dim candlelit room: Moon at a tall arched castle window, one hand raised to the glass in a small wave toward the sea — and far out on the moonlit horizon, a small soft grey storm-swirl standing perfectly still on the water. Hushed, tender, silver sea, one warm candle.",
+      "textPosition": "top",
+      "characters": ["moon"],
+      "vocab": [{ "word": "horizon", "definition": "the far-away line where the sky touches the sea" }]
+    }
+  ]
+}

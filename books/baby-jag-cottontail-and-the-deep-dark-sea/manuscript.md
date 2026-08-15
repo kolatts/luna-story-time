@@ -13,7 +13,7 @@ You said decide, so here they are in one place — easy to overrule:
 - **Beedlist is the still one.** She never speaks in the whole book. She never hurries. Even Evilest whispers around her. She is not more of Evilest — she is deep where Evilest is loud.
 - **Cottontail arrives by driftwood log** from "an island of somewheres," wears a woven seashell bracelet, and her claws are ordinary claws — that's the point.
 - **The refrain:** *"But the deep can't keep what was always yours."* It appears four times — early, mid, at the turn, at the close — and the last time it appears, it is no longer entirely comforting.
-- **The cliffhanger:** the powers come home, the table is warm — and on the last page Moon's reflection waves back *a moment too late*. Something in the deep kept a copy. Nothing is resolved.
+- **The cliffhanger:** the powers come home, the table is warm — and on the last page Moon's reflection waves back *a moment too late*. Something in the deep kept a copy. And when Moon looks up from the water, somebody new is standing far out on the sea: masked, tall, perfectly still. Nobody fights her. Nobody speaks to her. Nothing is resolved.
 - **The fifth bowl** — soup for four friends, and one bowl set out anyway, for anyone stormy who might not come.
 - **Beedlist's book** — on spread 14 she writes something in a small black book with no name on it. This is Book Three's door, left open.
 
@@ -218,6 +218,18 @@ And her reflection waved back.
 
 A moment too late.
 
+And when Moon looked up from the water — out there,
+where the moonlight lies flat on the top of the sea,
+stood somebody tall. Very still. In a mask.
+Not Evilest. Not Beedlist. Who could she be?
+
+Nobody spoke to her. Nobody could.
+The sea held its breath, and the moon held it too.
+And the masked one stood on the deep dark water,
+and watched them, and watched them.
+
+And that was the summer.
+
 *But the deep can't keep what was always yours.*
 
 **The End** — *of the second one.*
@@ -236,6 +248,7 @@ A moment too late.
 - **Evilest** — pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile.
 - **Cheeblest** — pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower.
 - **Beedlist** — pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her.
+- **Shock** *(final spread only)* — a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature, with round dark eye-holes, a thin hairline crack down one cheek, and a small tipped-sideways crescent moon scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific.
 - **Recurring motif** — the crescent moon, plus (new this book) small seashells tucked into scenes.
 
 ### Per-spread prompts
@@ -255,6 +268,6 @@ A moment too late.
 13. Triumphant flood of light: the black basin split by one thin bright scratch, reflections pouring out as ribbons of light streaming home in every direction across the night sea; Cottontail silhouetted small and proud against the flood.
 14. Night shore: Evilest raging comically, crown askew, fists balled — while Beedlist stands perfectly still all in black beside her with a very small calm smile, writing in a small black book; the sea behind them unnaturally flat.
 15. Cozy interior at night: the round wooden table under lamplight with five bowls of steaming soup — Moon, Baby Lady, Cheeblest and Cottontail seated warm and tired, and one empty chair with a full bowl waiting in front of it; crescent moon carved above the door.
-16. Quiet night close-up at the pool: Moon leaning over the still water saying goodnight, the full moon overhead — and in the water her reflection looks up with one arm raised in a wave, while the real Moon's arms are lowered. Beautiful, hushed, just slightly wrong.
+16. Quiet night at the pool: Moon leaning over the still water saying goodnight, the full moon overhead — in the water her reflection looks up with one arm raised in a wave, while the real Moon's arms are lowered — and far behind her, out on the flat moonlit sea, a tall masked figure standing perfectly still on the water's surface, small in the distance. Beautiful, hushed, just slightly wrong; unsettling but gentle.
 
 **Cover:** Baby Jag Cottontail front and center riding her driftwood-log boat over a moonlit wave, pink hair flying, seashell bracelet catching the light — Moon flying and Baby Lady swimming joyfully alongside — the lavender castle small and far behind, the sea below deep and dark. Open sky in the upper third for the title.

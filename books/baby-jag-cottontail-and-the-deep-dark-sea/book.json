@@ -22,7 +22,8 @@
     { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
     { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
     { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
-    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." }
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." },
+    { "id": "shock", "name": "Shock", "sheet": "Shock: a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature, with round dark eye-holes, a thin hairline crack down one cheek, and a small tipped-sideways crescent moon scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific." }
   ],
   "cover": {
     "image": "images/cover.webp",
@@ -32,7 +33,7 @@
     "Moon and Baby Lady gave Cottontail everything they had, even though they had just met her. Why do you think they did? Would you have?",
     "The magic powers slipped away, but Cottontail's claws worked. What do you have that is just yours, that nobody gave you?",
     "Cheeblest stood in the middle, between her sisters and her friends. Have you ever felt stuck in the middle? What did she choose?",
-    "At the very end, Moon's reflection waved a moment too late. What do you think is down there in the deep dark sea?"
+    "At the very end, Moon's reflection waved a moment too late — and somebody new was standing on the sea, wearing a mask. Who do you think she is? What do you think she wants?"
   ],
   "lookAndFind": "There is a crescent moon hiding in almost every picture. And on the last page, look very, very closely at Moon's reflection — can you spot what's different?",
   "spreads": [
@@ -195,14 +196,17 @@
     {
       "number": 16,
       "title": "The pool, after",
-      "text": "Later that night, when the lamps were all low,\nMoon went to the pool, just to tell it hello.\nHer face looked back up at her, pink hair and crown,\nthe moon up above, and the moon looking down.\n\nShe waved at herself, like you do, like you do.\n\nAnd her reflection waved back.\n\nA moment too late.",
+      "text": "Later that night, when the lamps were all low,\nMoon went to the pool, just to tell it hello.\nHer face looked back up at her, pink hair and crown,\nthe moon up above, and the moon looking down.\n\nShe waved at herself, like you do, like you do.\n\nAnd her reflection waved back.\n\nA moment too late.\n\nAnd when Moon looked up from the water — out there,\nwhere the moonlight lies flat on the top of the sea,\nstood somebody tall. Very still. In a mask.\nNot Evilest. Not Beedlist. Who could she be?\n\nNobody spoke to her. Nobody could.\nThe sea held its breath, and the moon held it too.\nAnd the masked one stood on the deep dark water,\nand watched them, and watched them.\n\nAnd that was the summer.",
       "refrain": true,
       "theEnd": "The End — of the second one.",
       "image": "images/16.webp",
-      "imagePrompt": "Quiet night close-up at the pool: Moon leaning over the still water saying goodnight, the full moon overhead — and in the water her reflection looks up with one arm raised in a wave, while the real Moon's arms are lowered. Beautiful, hushed, just slightly wrong.",
+      "imagePrompt": "Quiet night at the pool: Moon leaning over the still water saying goodnight, the full moon overhead — in the water her reflection looks up with one arm raised in a wave, while the real Moon's arms are lowered — and far behind her, out on the flat moonlit sea, a tall masked figure standing perfectly still on the water's surface, small in the distance. Beautiful, hushed, just slightly wrong; unsettling but gentle.",
       "textPosition": "top",
-      "characters": ["moon"],
-      "vocab": [{ "word": "late", "definition": "after the right time — not when it should have been" }]
+      "characters": ["moon", "shock"],
+      "vocab": [
+        { "word": "late", "definition": "after the right time — not when it should have been" },
+        { "word": "mask", "definition": "a pretend face someone wears over their real one" }
+      ]
     }
   ]
 }

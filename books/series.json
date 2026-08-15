@@ -19,6 +19,13 @@
           "subtitle": "Book Two of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/baby-jag-cottontail-and-the-deep-dark-sea/images/cover.webp"
+        },
+        {
+          "slug": "cheeblest-and-the-sister-of-storms",
+          "title": "Cheeblest and the Sister of Storms",
+          "subtitle": "Book Three of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/cheeblest-and-the-sister-of-storms/images/cover.webp"
         }
       ]
     }
