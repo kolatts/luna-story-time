@@ -26,6 +26,7 @@ Canon for the Castle Everstair stories. This file outranks any single book promp
 8. Danger stays bedtime-safe: the scary things are masks, silence, and doors. Nobody is hurt. Nothing is gory.
 9. Voice: soft rhyme with strong cadence — **storytelling first, rhyme second**. 16 spreads. A new refrain each book, placed four times (spreads 6, 9, 12, 16: early, mid, at the turn, at the close).
 10. Same painterly watercolor style, same indigo/lavender/gold palette, same crescent motif, every book. Character sheets are reused **verbatim**, never paraphrased.
+11. **Art consistency, checked across every book's images during review** (not just per-image): the SKY moon is always round and full — in Book Three it carries a hairline crack from spread 5 until it heals by spread 14. Crescent moons appear only as the motif (crowns, masks, carvings, decor), never in the sky. Also check continuity of time of day, the tower's look (grim black stone), recurring props, and every character's sheet details from image to image.
 
 ## The family
 
@@ -48,7 +49,7 @@ Five sisters were born in the tower. The books have shown four.
 
 1. **Princess Moon and the Nevershine Lantern** — the trick. The black-glass lantern swallows the powers; hope can't be stolen because it isn't inside her. Refrain: *"But dreams slip through the smallest crack."* Ends with four bowls of soup.
 2. **Baby Jag Cottontail and the Deep Dark Sea** — the theft. Beedlist gathers reflections off the water and the powers follow; the borrowed magic fails Cottontail and her own claws save everyone. Refrain: *"But the deep can't keep what was always yours."* Ends with five bowls (one "for anyone stormy who might not be there"), a reflection that waves a moment too late — and Shock, masked and silent, standing on the sea. Nobody fights her. Nobody speaks to her.
-3. **Cheeblest and the Sister of Storms** — the bargain. The tower opens for Shock and locks its own sisters out; the sister reveal; the storm un-stitches the world (floating stair stones, a crack on the moon) against the price of all three shines; Evilest and Beedlist join her, then turn; Moon stops her by *seeing* her, not beating her. Refrain: *"Even storms were little once."* Ends with seven bowls — six drinkers and the stormy one's, full, set, waiting — the storm pacing the horizon all night, and, on the very last page, Cottontail's first shine flickering in on the tip of one claw while she sleeps. Grown, not given. Nobody saw.
+3. **Cheeblest and the Sister of Storms** — the bargain. The tower opens for Shock and locks its own sisters out; the sister reveal; the storm un-stitches the world (floating stair stones, a crack on the moon) against the price of all three shines; Evilest and Beedlist join her, then turn; Moon stops her by *seeing* her, not beating her. Refrain: *"Even storms were little once."* Ends with seven bowls — six drinkers and the stormy one's, full, set, waiting — the storm pacing the horizon all night, and, on the very last page, Cottontail's first shine flickering in on the tip of one claw while she sleeps — visible in the art and named in the text ("A shine of her own. Her very first one."). Grown, not given. No character saw; every reader did.
 
 ## Open threads (doors left open on purpose)
 
