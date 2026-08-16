@@ -53,12 +53,14 @@ def pages_for(book):
     yield "cover", (
         f"{book['title']}. {book['subtitle']}. "
         f"Written with love by {' and '.join(book['authors'])}."
-    )
+    ), {}
     for s in book["spreads"]:
         text = s["text"]
         if s.get("refrain"):
             text += " … " + book["refrain"]
-        yield f"{s['number']:02d}", text
+        # Optional per-spread heteronym fixes, e.g. {"read": "rɛd"} (IPA) to force
+        # past tense. Applied to narration only; displayed text is untouched.
+        yield f"{s['number']:02d}", text, s.get("pronunciations", {})
 
 
 def strip_punct(w):
@@ -66,18 +68,50 @@ def strip_punct(w):
     return re.sub(r"^[^A-Za-z']+|[^A-Za-z']+$", "", w).lower()
 
 
-def synthesize_page(text, out_path):
-    """Full-page narration to file, returning [[ms, charOffset, wordLen], ...]."""
+def synthesize_page(text, out_path, prons=None):
+    """Full-page narration to file, returning [[ms, charOffset, wordLen], ...].
+
+    Without pronunciation overrides this speaks plain text and trusts Azure's
+    text_offset (offsets into `text`, which reader.js highlights against).
+    With overrides it speaks SSML (phoneme tags), where text_offset would point
+    into the SSML string instead — so offsets are rebuilt by matching each
+    boundary's word to the next occurrence in the plain text, in order.
+    """
     audio_cfg = speechsdk.audio.AudioOutputConfig(filename=str(out_path))
     synth = speechsdk.SpeechSynthesizer(speech_config=make_config(), audio_config=audio_cfg)
     words = []
+    if not prons:
+        def on_boundary(evt):
+            if evt.boundary_type == speechsdk.SpeechSynthesisBoundaryType.Word:
+                words.append([round(evt.audio_offset / 10000), evt.text_offset, evt.word_length])
 
-    def on_boundary(evt):
+        synth.synthesis_word_boundary.connect(on_boundary)
+        check(synth.speak_text_async(text).get())
+        return words
+
+    inner = html.escape(text)
+    for word, ipa in prons.items():
+        inner = re.sub(
+            r"\b" + re.escape(html.escape(word)) + r"\b",
+            f'<phoneme alphabet="ipa" ph="{ipa}">{html.escape(word)}</phoneme>',
+            inner,
+        )
+    bounds = []
+
+    def on_ssml_boundary(evt):
         if evt.boundary_type == speechsdk.SpeechSynthesisBoundaryType.Word:
-            words.append([round(evt.audio_offset / 10000), evt.text_offset, evt.word_length])
+            bounds.append([round(evt.audio_offset / 10000), evt.text])
 
-    synth.synthesis_word_boundary.connect(on_boundary)
-    check(synth.speak_text_async(text).get())
+    synth.synthesis_word_boundary.connect(on_ssml_boundary)
+    check(synth.speak_ssml_async(ssml_wrap(inner)).get())
+
+    cursor = 0
+    for ms, w in bounds:
+        idx = text.find(w, cursor)
+        if idx < 0:  # paranoia: never leave a highlight gap silently
+            raise RuntimeError(f"boundary word {w!r} not found after offset {cursor} in page text")
+        words.append([ms, idx, len(w)])
+        cursor = idx + len(w)
     return words
 
 
@@ -117,7 +151,7 @@ def ssml_wrap(inner):
 
 def unique_words(book):
     seen, ordered = set(), []
-    for _, text in pages_for(book):
+    for _, text, _prons in pages_for(book):
         for token in re.findall(r"\S+", text):
             w = strip_punct(token)
             if w and w not in seen:
@@ -174,11 +208,11 @@ def main():
 
         timings_path = out_dir / "timings.json"
         timings = json.loads(timings_path.read_text(encoding="utf-8")) if timings_path.exists() else {}
-        for page_id, text in pages_for(book):
+        for page_id, text, prons in pages_for(book):
             mp3 = out_dir / f"{page_id}.mp3"
             if mp3.exists() and page_id in timings:
                 continue
-            timings[page_id] = synthesize_page(text, mp3)
+            timings[page_id] = synthesize_page(text, mp3, prons)
             print(f"  {slug}/{page_id}: {mp3.stat().st_size // 1024}KB, {len(timings[page_id])} words")
         timings_path.write_text(json.dumps(timings, separators=(",", ":")), encoding="utf-8")
 
