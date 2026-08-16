@@ -26,6 +26,13 @@
           "subtitle": "Book Three of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/cheeblest-and-the-sister-of-storms/images/cover.webp"
+        },
+        {
+          "slug": "winds-and-the-witch-of-the-deep-cave",
+          "title": "Winds and the Witch of the Deep Cave",
+          "subtitle": "Book Four of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/winds-and-the-witch-of-the-deep-cave/images/cover.webp"
         }
       ]
     }

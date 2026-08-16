@@ -87,12 +87,15 @@
           shelf.appendChild(card);
         });
       });
+      var ordinals = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+      var bookCount = data.series.reduce(function (n, s) { return n + s.books.length; }, 0);
+      var nextOrdinal = ordinals[bookCount] || (bookCount + 1);
       var soon = document.createElement("article");
       soon.className = "book-card coming-soon";
       soon.innerHTML =
         '<div class="cover-wrap">🌙…</div>' +
         '<div class="card-body"><h3>The next adventure</h3>' +
-        '<p class="sub">Castle Everstair, Book Four — coming soon.</p>' +
+        '<p class="sub">Castle Everstair, Book ' + nextOrdinal + ' — coming soon.</p>' +
         '<span class="badge">Shhh, it’s still a dream</span></div>';
       shelf.appendChild(soon);
     })

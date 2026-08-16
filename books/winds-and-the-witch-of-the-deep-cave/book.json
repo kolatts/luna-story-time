@@ -1,0 +1,225 @@
+{
+  "slug": "winds-and-the-witch-of-the-deep-cave",
+  "series": "castle-everstair",
+  "bookNumber": 4,
+  "title": "Winds and the Witch of the Deep Cave",
+  "subtitle": "Book Four of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "But nobody picks how they started.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "winds", "name": "Winds", "sheet": "Winds: young jaguar cub the same size and age as Cottontail; pale grey-blue coat with cloud-white rosette spots, a tuft of bright wavy blue hair exactly the shape of Cottontail's pink tuft, very wide-open sky-blue eyes, a huge cheerful grin; sturdy ordinary paws; no wings, no mermaid tail, no magic, no sparkle; a woven pale-blue grass bracelet on one front leg." },
+    { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar." },
+    { "id": "elysian", "name": "Elysian", "sheet": "Elysian: very old witch, one hundred and five years old, small and hunched like a hook; deeply wrinkled pale grey-lavender face with a long nose and heavy-lidded eyes; floor-length black hair that, when light shines through it, drapes into the unmistakable shape of a skull — two round sockets, a jaw, a grin — made only of falling hair, never a real skull, and it shifts when she moves; plain ragged high-collared black robe; carries a thin black wand; her cave holds a round black cauldron glowing sick green, a worn twig broom, and an enormous open spell book; no pet and no helper; ugly-scary but calm and certain, never gleeful, never gory or horrific." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: the grey-blue sky jaguar cub sliding down a visible ribbon of wind out of tall moonlit clouds, grinning hugely, about to bump foreheads with the pink-haired jaguar cub who stands braced and delighted on the bottom steps of the great glowing castle stair where it meets the sea — and beneath that bottom step, a thin dark seam in the stone leaks a faint sick-green glow that neither of them has noticed. Moon flying small and joyful behind them. Perfectly round full moon (never a crescent). Open sky in the upper third for the title. No rabbits, no other animals."
+  },
+  "questions": [
+    "Elysian never yelled and never cackled. She was calm, and kind-sounding, and completely sure — and completely wrong. Can somebody be wrong even when they are very, very sure? How can you tell the difference between being sure and being right?",
+    "Moon and Baby Lady never argued for three whole books — and their silly argument in the rain was the happiest moment in this one. Why can a little argument be a sign that everything is safe?",
+    "Winds and Cottontail have no magic at all, and that is exactly what saved everyone. What can you do that isn't magic, but is all yours?",
+    "Moon offered Elysian the plain rain, and she wouldn't stand in it — because letting the old mix-up wash away would mean it really was a mistake, and not a finishing. Why do you think that is so hard, even for grownups? Do you think she will ever stand in the rain?"
+  ],
+  "lookAndFind": "There's a crescent moon hiding in almost every picture — even down in the deep cave, where the moon can't reach. Can you find them all? And whenever you see Elysian, look closely at her long black hair: can you spot the skull hiding in it before it moves?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Under the bottom step",
+      "text": "The stair goes up. You know about up.\nYou've climbed it with princess and jaguar and pup,\npast the gap near the ninety-ninth bend (you hop over),\npast the clouds, past the wind, past the last bit of blue.\n\nBut here is a question three books never asked\n(and questions, like puddles, can hide something vast):\nwhat's under the bottom step? Under. Below.\nNobody wondered. Not once. Would you know?\n\nFor under the bottom step, deeper than deep,\nlower down than the dark where the sea goes to sleep,\nthere's a cave. And it's old. And it's quiet. And listen:\nit's been there this whole entire time.",
+      "image": "images/01.webp",
+      "imagePrompt": "Wide establishing shot, vertical drama: the grand glowing spiral stair rising from the moonlit sea toward the lavender castle and an enormous perfectly round full moon (never a crescent) — but the weight of the image is at the bottom, where beneath the water line, revealed like a storybook cutaway through rock, a vast hidden cave of wet black stone sits directly under the stair's first step, utterly dark except for one tiny far-off sick-green glow. No characters. Awe, scale, and a held-breath secret; gentle, not frightening.",
+      "textPosition": "bottom",
+      "characters": [],
+      "vocab": [{ "word": "cave", "definition": "a big hollow room inside the rock, down under the ground" }]
+    },
+    {
+      "number": 2,
+      "title": "The yes-dear autumn",
+      "text": "That autumn the grownups went quiet. All through.\nThe cook. The lamplighter. The guard-captain too.\nThey smiled and they nodded, and all that they said\nwas \"Yes, dear.\" \"That's fine, dear.\" \"Of course.\" \"Go ahead.\"\n\nNobody shooed anyone out of the kitchen.\nNobody grumped about sand on the floor.\nNobody hollered out \"Careful!\" or \"DON'T!\"\nThey didn't say don't anymore.\n\nAnd the kids saw it first, and the kids saw it only.\n(You can't tell a grownup a grownup's gone wrong\nwhen all that the grownup will answer is \"Yes, dear.\")\nSomething was missing. Something was gone.",
+      "image": "images/02.webp",
+      "imagePrompt": "Warm castle kitchen interior at evening: a plump cook, a thin lamplighter and a round guard-captain all wearing the exact same small calm smile, standing oddly still and looking pleasantly at nothing; in the foreground Moon and Baby Lady exchange a worried glance with each other. Cozy golden lamplight, steam and copper pots, and something faintly wrong in the stillness. Unsettling but gentle.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady"],
+      "vocab": [
+        { "word": "lamplighter", "definition": "a person whose job is lighting all the lamps" },
+        { "word": "grumped", "definition": "complained in a growly, grouchy way" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The word in the book",
+      "text": "They sent for the sisters. All three of them came.\nAnd Evilest tested the grownups. She stomped.\nShe hollered. She tracked in the mud of the shore.\n\"Yes, dear,\" said the grownups. \"That's fine, dear.\" \"Of course.\"\n\n(And here's a strange thing that she found on the way:\nwhen nobody stops you, it's lonely to play.)\n\nThen Cheeblest spoke up, and her voice was all small:\n\"When I was quite little, I heard the word aunt.\nI asked who she was. Just the once. That was all.\nAnd they went very still, and said, Don't. And I didn't.\nBut I can't stop remembering how they said don't —\nlike the word was a door they were leaning against.\"\n\nAnd Beedlist said nothing, the way that she does.\nBut she opened her book, and she wrote one small word,\nand she did a thing Beedlist has never once done:\nshe showed them the page.\n\nAnd the word was: BELOW.",
+      "image": "images/03.webp",
+      "imagePrompt": "Lamplit castle hall at night: Evilest mid-stomp in muddy boots being answered by a serenely smiling guard who should be scolding her; Cheeblest standing small, hugging her own arms, speaking; and at the center Beedlist holding up her small black book, open to one page bearing tiny unreadable pen marks, while Moon and Baby Lady lean in to look. Warm gold lamplight against deep indigo shadow, worried small faces.",
+      "textPosition": "bottom",
+      "characters": ["evilest", "cheeblest", "beedlist", "moon", "babylady"],
+      "vocab": [{ "word": "aunt", "definition": "your mom or dad's sister" }]
+    },
+    {
+      "number": 4,
+      "title": "Winds",
+      "text": "\"If we're going below,\" said the cat with pink hair,\n\"then we need my best friend. He's the finder of air.\"\nAnd she climbed the tall rock where the seabirds all sit,\nand she whistled a whistle with wind inside it.\n\nAnd down through the clouds, on a slide made of breeze,\ncame a jaguar the grey-blue of faraway seas,\nwith rosettes like clouds and a tuft of blue hair\n(the same as her pink one — the sky's version — there),\n\nand he hollered the whole way down: \"COTTONTAIL!\"\nand she hollered up \"WINDS!\" and they bonked heads. Twice.\nShe sails on the water. He sails on the air.\nSince always, they've met at the one place they share:\n\nthe horizon — that line, thin as thread, far from land,\nwhere the sea and the sky lean their heads on each other —\nthe only place both of them ever can stand.\nHe's loud where she's dry. He's a friend like a brother.\n\nAnd Winds has no magic. No shine. Not a drop.\nWhat Winds has: a nose that can always smell OUT.\nYou can bury that jaguar. Blindfold him. Spin him.\nWherever the out is, the out is deep in him.",
+      "image": "images/04.webp",
+      "imagePrompt": "Bright windy morning over the sea: the grey-blue sky jaguar cub sliding down a long visible ribbon of breeze from tall sunlit clouds, mid-holler with joy, while the pink-haired jaguar cub stands on a tall empty seabird rock whistling up at him, pink hair blown sideways; behind them the horizon line bright and thin where sea and sky meet. Sparkling spray, wind-blown fur, pure delight. No rabbits, no birds, no other animals.",
+      "textPosition": "top",
+      "characters": ["winds", "cottontail"],
+      "vocab": [
+        { "word": "rosettes", "definition": "the flower-shaped spots on a jaguar's coat" },
+        { "word": "blindfold", "definition": "a cloth tied over your eyes so you can't peek" }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The down-stair",
+      "text": "Four girls and a pup and two jaguars went down\nto the very first step, where the seafoam goes round,\nand Winds put his nose to the seam of the stone,\nand everyone hushed.\n\n\"There's air under this one,\" he said. \"Moving air.\nOld air. But moving. There's a somewhere down there.\"\nSo Cottontail hooked in one claw, like a key,\nand the bottom step opened.\n\nIt swung like the lid of a chest, and beneath it: stairs.\nA down-stair. A dark one. Steep, narrow, and old,\nwith no moon and no sea and no silver and gold,\nand away at the bottom, a little green glow,\na green that no garden would ever let grow.\n\nThe children held hands, and the jaguars went first.\nSome stairs you go up. This was one in reverse.",
+      "image": "images/05.webp",
+      "imagePrompt": "At the foot of the great glowing stair where it meets the seafoam: the bottom step swung open like the lid of a chest, revealing narrow stone stairs descending into blackness with a faint sick-green glow far below; the blue-haired sky jaguar sniffing at the dark opening, the pink-haired jaguar cub with one claw still hooked under the step's edge, and behind them the four pale girls and the small winged puppy holding hands in a chain, all lit warm gold by moonlight. Perfectly round full moon (never a crescent). Courage and wonder, not terror.",
+      "textPosition": "bottom",
+      "characters": ["winds", "cottontail", "moon", "babylady", "cheeblest", "evilest", "beedlist"],
+      "vocab": [{ "word": "reverse", "definition": "the backwards way — down instead of up" }]
+    },
+    {
+      "number": 6,
+      "title": "Elysian",
+      "text": "The down-stair went down for a very long time,\nand ended at last in a cave like a hall:\na cauldron, mid-bubble, all green in the black;\na broom, standing patient; a wand by the wall;\na spell book, spread open to spells.\n\nAnd her.\n\nShe was bent like a hook. She was hundred-and-five.\nNo cat and no crow and no helper. No friend.\nJust her and her four things, alone in the dark,\nfor years upon years upon years, with no end —\nand here is the sad part: she'd never once noticed.\n\nHer voice, when it came, came out deep and came slow,\nlike it had a long way to climb up from below.\nAnd her hair — her long hair — was as black as the pot,\nand when the green light came through it, it fell\nin a shape that hair shouldn't:\ntwo sockets. A jaw. A grin, made of hair.\nNot a real skull. It's only the way that it falls.\nBut it moved when she moved.\nWhich is worse.\n\n\"Hello,\" said the witch, and the cave said it after.\n\"I am your aunt Elysian. Family. True —\nfrom the side of the family nobody speaks of.\nCome closer. You look so unfinished. Come through.\"",
+      "image": "images/06.webp",
+      "imagePrompt": "Deep beneath the castle: a vast cave hall of wet black stone lit by the strong sick-green glow of a bubbling cauldron that keeps the whole scene clearly visible — beside it a worn twig broom standing against the wall, a thin black wand, and an enormous open spell book on a stone ledge; at the cauldron the ancient hunched witch stirs slowly, her floor-length black hair catching the green light so it drapes into the clear shape of a skull — two sockets, a jaw, a grin made only of hair; at the far cave mouth, the children tiny and huddled in the glowing stair doorway. Bone-white highlights on wet stone; unsettling but gentle, never gory.",
+      "textPosition": "top",
+      "characters": ["elysian"],
+      "vocab": [{ "word": "cauldron", "definition": "a witch's big round cooking pot" }]
+    },
+    {
+      "number": 7,
+      "title": "The Zapping",
+      "text": "\"The Zapping,\" she said, \"is a beautiful thing.\"\n(She stirred as she spoke. She was smiling. It's worse\nwhen they smile.) \"Ink and shadow and water, all mixed\nin a basin. You're dipped. And you rise. And you're finished.\nComplete. Not a thing left to fix or to chase.\nIt happened to me when I was in college,\nand ever since then, I've been done. I've been through.\nAnd everyone else is so sadly unfinished.\nI zap whom I can. It's a kindness I do.\"\n\nBut here's what is true, and she never was told:\non the day of her Zapping, a long time ago,\nsomebody filling her basin picked wrong —\ntwo jars on a shelf, and a hand in a hurry.\nNot wicked. Just wrong, the way socks can be wrong.\nNobody noticed. Nobody said.\n\nAnd some part of Elysian stopped at that basin,\nand stood there, and waited, and eighty years passed,\nand the rest of her aged, and the stopped part just stood there.\nShe thinks she was finished.\nShe froze.",
+      "refrain": true,
+      "image": "images/07.webp",
+      "imagePrompt": "Dream-memory vision with soft dissolving edges, in faded sepia-lavender tones, framed by curling green cauldron steam: a candlelit stone hall of a college long ago, a young woman in simple ceremonial robes stepping down into a wide stone basin of dark water, gowned attendants pouring gracefully from two tall jars — and one of the jars, subtly, is the wrong one, its liquid a shade too dark, and nobody in the picture has noticed. Tender, sad, softly lit; the young woman's face hopeful, nothing frightening.",
+      "textPosition": "bottom",
+      "characters": [],
+      "vocab": [
+        { "word": "college", "definition": "a school for grownups, after all the other schools" },
+        { "word": "wicked", "definition": "very, very bad on purpose" }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "The brewing",
+      "text": "Then she opened her book to the heaviest page,\nand she lifted her wand, and she read, deep and slow,\nand the cauldron leaned hungry, and greener, and wide —\nand out of Moon, gently, like steam out of bread,\ncame the fire. The water. The gold-turning thread.\nThe growing. The mending. The swimming-like-silver.\nAnd out of her sister, the same, every shine,\nall swirling away in a long silver line,\n\ndown into the cauldron. And there, in the pot,\nthe powers went black. They went thick. They went ink.\n\n(All but the one that she couldn't brew out,\nthe one that was never inside Moon at all.\nIt lives in other people. You remember.\nEven a cauldron can't reach everyone.)\n\nNo almost. No rescue. No trick up a sleeve.\nThe witch won. She properly won.\nThe ink settled, thick, in the pot, like a night.\nAnd Elysian nodded, and warmed up her thumb.",
+      "image": "images/08.webp",
+      "imagePrompt": "The witch winning, seen wide in the green-lit cave: long ribbons of gold, silver, rose-pink and flame-red light streaming gently out of Moon and the small winged puppy, arcing bright through the dark and pouring down into the cauldron, where the colors sink and turn to thick glossy black like ink; the ribbons of stolen light are the brightest thing in the scene and light the witch's calm face from below, the skull-shape plain in her hair; Moon and the puppy sag, held upright by the pink-haired jaguar cub. Moon appears exactly once and the puppy appears exactly once — no duplicate characters. The scene is entirely inside the closed cave: no moon, no sky, no openings anywhere. Dramatic, flowing, sorrowful — never gory.",
+      "textPosition": "top",
+      "characters": ["elysian", "moon", "babylady", "cottontail"],
+      "vocab": [{ "word": "swirling", "definition": "spinning round and round, like water going down a drain" }]
+    },
+    {
+      "number": 9,
+      "title": "One line",
+      "text": "She dipped in her thumb, to the knuckle. She lifted\nit, dripping with black that was blacker than black.\nShe was gentle. That's true. She was terribly gentle.\nShe painted one line on the pup. Just one line.\n\n\"There,\" said the witch, in her voice from the cellar.\n\"Finished. Now nothing can ever go wrong for her.\nNothing can ever go anything for her.\"\n\nAnd Baby Lady opened her eyes. And they'd changed.\nNot scary. Just flat. Like a pond with no wind in it.\nAnd Moon reached out for her paw, like always —\nthree books of always —\n\nand her sister looked at Moon's hand, and said, cold:\n\"You can stop looking at me now. I'm finished.\nFinished things don't need sisters.\"\n\nAnd of everything down in the dark of that cave —\nthe cauldron, the grin made of hair, all of it —\nthat was the worst thing.\nThat.",
+      "image": "images/09.webp",
+      "imagePrompt": "Quiet, terrible, tender moment in the green-lit cave: the ancient witch bending gently down with one thumb extended, painting a single thin black line on the brow of the small winged puppy, who sits perfectly still and calm; Moon one step away with her hand stopped mid-reach, her face beginning to break; the puppy's round eyes gone flat and glassy-calm like a windless pond. Soft green light with bone-white accents; sad, hushed, never gory, no wounds, nothing physical wrong with the puppy.",
+      "textPosition": "bottom",
+      "characters": ["elysian", "babylady", "moon"],
+      "vocab": [{ "word": "knuckle", "definition": "one of the bendy bumps in the middle of your fingers" }]
+    },
+    {
+      "number": 10,
+      "title": "Nothing to brew",
+      "text": "Then she turned to the jaguars, and readied her wand,\nand read the page slower, to get it just right,\nand the cauldron leaned hungry, and pulled at them, pulled —\n\nand nothing came out.\n\nFor down in a cave there's no sea and no sky:\nno water for her, and no weather for him.\nAnd you can't brew a shine out of somebody shineless.\nYou can't pour a power from claws or a nose.\nThe spell slid right off them, like rain off a sail.\n\nWell — one thing she found. In the cat. One small light,\ngrown out on the tip of one ordinary claw.\nShe pulled at it. Pulled. But a grown thing holds on.\nIt grew there, like whiskers. You can't pour a claw.\n\n\"Impossible,\" said the witch, slow, in the green.\n\"Everyone has something to take.\"\n\"Not us,\" said Cottontail, dry as the moon.\nAnd Winds, in the dark, started smiling.",
+      "refrain": true,
+      "image": "images/10.webp",
+      "imagePrompt": "In the green-lit cave: the witch aiming her thin black wand at the two young jaguar cubs as visible ripples of green spell-light wash over them and slide off like rain off a sail, taking nothing; the pink-haired cub stands planted and calm, one tiny warm gold spark glowing stubbornly on the tip of one small claw; beside her the grey-blue sky jaguar is beginning to grin, nose tilting up toward the dark ceiling. Green and black scene with three warm notes: the gold spark, pink hair, blue hair. Defiant, calm, not frightening.",
+      "textPosition": "top",
+      "characters": ["elysian", "cottontail", "winds"],
+      "vocab": [
+        { "word": "shineless", "definition": "having no shine at all — none, not even a little" },
+        { "word": "impossible", "definition": "something that just can't happen (or so people say)" }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "The hugest sniff",
+      "text": "Now a cave is a box with the lid shut down tight.\nNo sea for a sailor. No sky. And no weather.\nBut Winds stood stone-still in the blackest of black,\nand his nose gave a twitch. Then a bigger one. Then —\n\nhis hugest sniff ever. And Winds started laughing.\n\n\"AIR!\" hollered Winds, and it rang round the walls.\n\"MOVING air! I can smell it! The night! The outside!\nThe weather! It's THERE!\" And he pointed his nose\nat the roof of the deep, where nobody looks.\n\nFor you can bury that jaguar. Blindfold him. Spin him.\nWherever the out is, the out is deep in him.\nAnd high in the roof was a crack, thin as eyelash,\nwhere one drop of rain, every year, had been knocking —\npolitely, forever — and no one had heard.",
+      "image": "images/11.webp",
+      "imagePrompt": "In the deepest black corner of the cave, away from the green glow: the grey-blue sky jaguar standing stone-still with his eyes closed and chin lifted in an enormous joyful sniff, grinning; one thin thread of silver moonlit air, the only silver in the whole scene, curling down from a hairline crack far up in the dark cave roof, with a single falling water drop catching the light; the pink-haired cub beside him following his gaze upward. The green cauldron-glow faint in the far background keeps the scene readable. Hope arriving as one thin silver line.",
+      "textPosition": "bottom",
+      "characters": ["winds", "cottontail"],
+      "vocab": [
+        { "word": "politely", "definition": "in a kind, good-manners way" },
+        { "word": "hugest", "definition": "the very biggest of all" }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "The roof opens",
+      "text": "Cottontail climbed. It's the thing that she does.\nWet stone, straight up, in the dark, just because\nclaws are not magic. Claws are just claws.\n(You've heard that before. It was true then. It was.)\n\nShe reached the thin crack, and she hooked it, and pulled,\nwith Winds calling up through the dark, \"TO YOUR LEFT!\"\nand the crack became wider. And wider. And then —\n\nthe roof of the cave opened up like a window.\n\nAnd in came the night. The plain, ordinary night.\nPlain rain. And plain moonlight. Plain silver-blue air.\nThe moon leaned in over the hole for a look —\nthe moon with its faint little line, from before —\nand down came the rain into eighty years' dark,\nand the cave, for the first time in anyone's ever,\nhad weather.\n\nAnd here is a thing that the witch never learned,\nfor it isn't in spell books. It's plainer than they are:\nink is just ink.\nAnd rain washes ink.",
+      "image": "images/12.webp",
+      "imagePrompt": "The rescue, looking up: high on the wet black cave wall the pink-haired jaguar cub clings by her claws beside a crack she has pulled wide, and the cave roof stands open like a window to the night — deep indigo sky pouring through, sheets of plain silver rain falling all the way down into the dark, and a perfectly round full moon (never a crescent, bearing the faintest thin healed line) looking in through the opening; below, the sick green glow drowning under honest silver-blue light as small figures lift their faces to the rain. The ordinary night flooding back in like rescue.",
+      "textPosition": "bottom",
+      "characters": ["cottontail", "winds", "moon", "babylady"],
+      "vocab": [{ "word": "weather", "definition": "what the sky is doing — rain, wind, sun, or snow" }]
+    },
+    {
+      "number": 13,
+      "title": "The argument",
+      "text": "The rain found the pup where she stood, flat and quiet,\nand washed at the one little line on her brow,\nand the ink let go, and slid off like a shadow,\nand her eyes filled back up, like a pool when the tide comes in.\n\nAnd the very first thing that she did — the first thing —\nwas argue with Moon. About nothing. About RAIN.\n\"You're dripping on me,\" she said. \"Move your wing over.\"\n\"It's raining on EVERYONE, Baby Lady.\"\n\"Well, your rain,\" she said, \"is the drippiest rain.\"\n\nAnd they argued! They argued! Their first one! Their EVER!\nThree books full of never — and there, in the wet,\nMoon laughed so hard that she cried, and the crying\ngot mixed with the rain till nobody could tell,\nand she hugged her wet sister, who grumbled, \"You're SOAKING,\"\nand hugged her right back, and grumbled some more.\n\nAnd that dumb little argument, there in the rain,\nwas the happiest thing in this book. It just was.",
+      "image": "images/13.webp",
+      "imagePrompt": "Joy in the silver rain inside the opened cave, warm gold and indigo flooding back over the fading green: the small winged puppy, soaked and bright-eyed again, mid-argument with Moon — both of them grinning through it — Moon's golden wing held over the puppy while rain streams off it, the last grey trickle of ink washing off the puppy's brow; around them the pink-haired cub, the blue-haired sky jaguar and the three pale sisters laugh in the downpour. Wet fur, wet hair, shining puddles, pure relief and happiness.",
+      "textPosition": "top",
+      "characters": ["babylady", "moon", "cottontail", "winds", "cheeblest", "evilest", "beedlist"],
+      "vocab": [{ "word": "drippiest", "definition": "the most drippy — dripping more than anything else" }]
+    },
+    {
+      "number": 14,
+      "title": "The rain she wouldn't stand in",
+      "text": "Then Moon — being Moon — turned around to the witch,\nwho stood at the edge of the silver, in shadow,\njust out of the reach of the rain. And Moon said:\n\"It's only plain water. It isn't a magic.\nIt washes things off. Even old things. Even\neighty-year things.\nYou could stand in it too.\"\n\nAnd Elysian looked at the rain a long time.\nAnd the grin in her hair held terribly still.\n\nHere is why she said no. (I'll say this part softly.)\nIf she stood in the rain, and the wrong washed away,\nthen the wrong was just wrong. A mix-up. A spill.\nTwo jars on a shelf, and a hand in a hurry.\nNot a finishing. Never a finishing. Only\na thing that went wrong for a girl at a basin —\nand eighty years out is a long way to walk back.\n\n\"I am finished,\" she said, in her voice like the deep.\nAnd she gathered her wand and her book and her broom,\nand she stepped from the silver and into the black,\nwhere the rain hadn't reached, and would probably never,\nand the dark of that cave goes a long, long way down,\nand she knows every step.\n\nNot beaten. Not sorry. Not fixed. And not done.\nGone deeper.\nThat's all.\nLike a storm. Or a sun.",
+      "refrain": true,
+      "image": "images/14.webp",
+      "imagePrompt": "At the boundary between silver rain-light and old black dark: Moon, small and gentle, holds one open hand out into the falling rain toward the ancient witch, who stands just beyond the rain's reach with her broom and wand and great book gathered in her arms, half turned away toward the deep of the cave; the skull-shape in her long hair holding perfectly still; behind her the cave floor slopes down into layer after layer of deeper dark. Rain-silver on one side, black on the other, one thin bright line between them. Dignified, sad, quiet; never gory.",
+      "textPosition": "top",
+      "characters": ["moon", "elysian"],
+      "vocab": [
+        { "word": "mix-up", "definition": "when two things get swapped by accident" },
+        { "word": "finished", "definition": "all done, with nothing left to add or fix" }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "The gift",
+      "text": "It rained all that night on the castle as well,\nand the grownups came out and stood still in the pour,\nand the quiet washed off them like ink. (It was ink.)\nBy breakfast the cook was out shooing the seagulls,\nthe guards were both grumping at mud on the stair,\nand nobody ever, in any book ever,\nwas gladder to hear it. So there.\n\nAnd that night, at the table (there's always a table;\nthere's always the soup, going round, going round),\nMoon stood on her chair, with her sister beside her,\nand they gave — to the jaguars — a gift. A forever one:\na great deal of power. To keep. Theirs. For good.\nNot borrowed, like once on the deep dark sea —\ngiven. On purpose. Freely. Out loud.\n\nAnd it settled right into them. Settled, and stayed.\nFor a thing that is given sits deeper than poured,\nand besides — in the cat, there was already a shine,\na small one, a grown one, her own, like a root,\nand the gift wrapped around it and held.\n\nAnd Winds stared down at his glowing paws.\n\"For ME?\" said the wind-cat. \"But all I did was SMELL!\"\nAnd Cottontail shrugged, with her spoon in her soup:\n\"Of course they did. Obviously.\nThat's what they're like.\"",
+      "image": "images/15.webp",
+      "imagePrompt": "Cozy warm castle interior at night: the round wooden table crowded with steaming soup bowls under golden lamplight; Moon standing on her chair with the small winged puppy hovering beside her, the two of them pouring gentle streams of gold, silver and rose light down into the two young jaguar cubs — the grey-blue sky jaguar staring at his own faintly glowing front paws in open-mouthed astonishment, the pink-haired cub calmly mid-shrug with a spoon in her soup; around the table the three pale sisters, the girl in black writing in her small black book; and one extra empty chair with a full steaming bowl waiting in front of it. Crescent moon carved above the door; through the window a small perfectly round full moon in the sky (never a crescent). Every character is a small child. Warm, crowded, golden, safe.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "winds", "cottontail", "evilest", "cheeblest", "beedlist"],
+      "vocab": [{ "word": "obviously", "definition": "so easy to see that you don't even need to ask" }]
+    },
+    {
+      "number": 16,
+      "title": "The bowl",
+      "text": "And the bowl?\n\nYou remember the bowl. By the chair. Set each evening,\nkept full for the stormy one, steam going up,\nuntouched every night since the end of the summer,\nthrough autumn, through witch-times, through everything. Well.\n\nNext morning the chair was pushed back. Just a little.\nThe spoon had been moved. And the bowl —\n\nthe bowl had been drunk from.\n\nNobody saw her. No door made a sound.\nNo wet mask, no grey cloak, no storm hanging round.\nThe window was latched and the lamps were all out.\nBut somebody came, in the quiet, alone,\nand sat at the table, and drank the warm soup,\nand left before morning could catch her.\n\nAnd nobody said very much at all.\nWhat is there to say? You already know.\n\nThey washed it.\nThey filled it.\nThey set it back down.",
+      "refrain": true,
+      "theEnd": "The End — of the fourth one.",
+      "image": "images/16.webp",
+      "imagePrompt": "Very quiet dawn interior, no characters anywhere: the round wooden table in pale early silver-gold light, chairs all tucked in except one pushed back a little; in front of that chair, a soup bowl clearly drunk from — half empty, spoon resting moved beside it — with the faintest last curl of steam; a few small drying rain-drops on the stone floor near the chair; the window latched, the lamps out, and through the window the perfectly round full moon (never a crescent, with the faintest thin healed line) setting pale over the sea. Crescent moon carved above the door. Stillness, tenderness, gentle mystery.",
+      "textPosition": "bottom",
+      "characters": [],
+      "vocab": [{ "word": "untouched", "definition": "left alone — nobody touched it at all" }]
+    }
+  ]
+}
