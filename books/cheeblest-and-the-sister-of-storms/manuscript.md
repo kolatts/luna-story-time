@@ -19,6 +19,7 @@ You said decide, so here they are in one place — easy to overrule:
 - **Five little beds**, spread 9, in a small dusty room. Nobody counts them. That's on purpose.
 - **The refrain:** *"Even storms were little once."* It appears four times — early, mid, at the turn, at the close.
 - **The last spread:** the stormy bowl stays set, and the storm paces the horizon like someone outside a door who almost knocks. Moon waves at it, like you do. It doesn't wave back. It stays all night.
+- **Cottontail's shine** — on the very last page, asleep in her chair, a tiny shine flickers on the tip of one claw. Not borrowed, not gifted: grown, the way her claws grew. Nobody in the story sees it. (This is Book Four's door: Shock came for a power that didn't exist. Now it does.)
 
 ---
 
@@ -282,6 +283,14 @@ But it stopped its slow pacing, out there past the land,
 
 and it stayed, very still, all the rest of the night.
 
+And down in the warm room, asleep in her chair,
+the jaguar was dreaming of salt and sea air,
+and out on the tip of one ordinary claw,
+a tiny shine flickered that nobody saw.
+
+Not borrowed. Not gifted. Not stolen. Not new.
+It grew there, the way that her claws had grown too.
+
 *Even storms were little once.*
 
 **The End** — *of the third one.*
@@ -295,12 +304,12 @@ and it stayed, very still, all the rest of the night.
 
 ### Character sheet (repeat verbatim in every prompt)
 - **Princess Moon** — young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant.
-- **Baby Lady** — small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail; tiny gold crescent charm on a pearl collar.
+- **Baby Lady** — small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar.
 - **Baby Jag Cottontail** — young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg.
 - **Evilest** — pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile.
 - **Cheeblest** — pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower.
 - **Beedlist** — pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her.
-- **Shock** *(new)* — a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature, with round dark eye-holes, a thin hairline crack down one cheek, and a small tipped-sideways crescent moon scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific.
+- **Shock** *(new)* — a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature with two small carved fangs at its frown, round dark eye-holes, a thin hairline crack down one cheek, and a small tipped-sideways crescent moon scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific.
 - **Recurring motif** — the crescent moon, plus (new this book) doors in places doors don't belong.
 
 ### Per-spread prompts
@@ -313,7 +322,7 @@ and it stayed, very still, all the rest of the night.
 6. Seen from the castle side: Moon, Baby Lady, the young jaguar cub and Cheeblest small at the foot of the great stair as several of its glowing stones float calmly upward around them like golden bubbles; the children holding each other and gazing up; grey sea, heavy soft sky, everything lit warm gold by the floating stones.
 7. On the wet sand in the wind: the young jaguar cub standing firm and unbothered as soft ribbons of grey storm-wind curl all around her, ruffling her fur and pink hair and finding nothing to take; she holds up one paw showing small ordinary claws, her face calm and almost amused; warm moonlight breaking through the grey. No other animals.
 8. Night: Moon and Baby Lady walking together along the shore toward the distant tower, arms and paws full of glowing gold, silver and pink light, faces gentle and determined; ahead, the grim black stone tower, its big door slowly opening; grey storm sky above, the carried light glowing warm around them like lanterns.
-9. Inside the tower: Evilest and Beedlist at a tall grey doorway glowing silver, looking into a dream-like vision of a perfectly tidy, shining, empty world — neat rows of crowns and one very tall empty throne, beautiful and cold, nobody in it; Evilest's face fallen and small; behind them in the dim candlelit hallway, a small dusty room with exactly five little neat beds in a row just visible, five beds, no more. Unsettling but gentle.
+9. Inside the tower: Evilest and Beedlist at a tall grey doorway glowing silver, looking into a dream-like vision of a perfectly tidy, shining, empty world — neat rows of crowns and one very tall empty throne, beautiful and cold, nobody in it; Evilest's face fallen and small; behind them in the dim candlelit hallway, a small dusty room with exactly five little neat black beds in a row just visible — black wooden bed frames, black blankets — five beds, no more. Unsettling but gentle.
 10. On the wet black shore before the tower door: Evilest with arms flung wide, blocking the path of Moon and Baby Lady who carry armfuls of glowing light; beside her Beedlist holds up a small open black book, its page showing only tiny unreadable pen marks; urgent but tender faces, storm-grey sky, the children lit warm by the carried glow.
 11. Small brave Cheeblest standing alone at the foot of the huge tower, bows and purple dress tugged sideways by the wind, head high, calling up toward the tiny masked figure at the tower's distant top far above — Cheeblest is completely alone on the shore, no other people or children anywhere in the scene except the tiny masked figure far above; grey storm light warmed by gold from the castle far across the sea.
 12. Dream-vision spread with soft dissolving edges, framed in swirling gentle storm-grey clouds: inside a hushed grey room where all the mirrors are draped with white sheets, a small girl seen only from behind as a soft dark silhouette, face never visible, standing before a door open just a crack with warm golden light spilling through toward her. Tender, hushed, glowing, kind.

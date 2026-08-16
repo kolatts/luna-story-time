@@ -17,7 +17,7 @@ Canon for the Castle Everstair stories. This file outranks any single book promp
 ## Rules of the world (never break these)
 
 1. **Moon and Baby Lady are zero years old.** Born with the moon. This is a real fact, not a joke. They **never argue**.
-2. **Cottontail fights with her claws, not with borrowed powers.** Forever. The thing that saves her is always the thing that was already hers.
+2. **Cottontail fights with her claws, and borrowed magic always fails her.** She had no powers of her own before the last page of Book Three (in Book Two she briefly carried Moon's and Baby Lady's gifted shine, but it slid off her in the deep and went home; her claws did the saving). Any magic that is truly hers must *grow*, never be given — and at the very end of Book Three, her first tiny shine grew in, on the tip of one claw, seen by nobody.
 3. **Dreams of hope** is Moon's favorite power and it can't be stolen, because it doesn't live inside her — it lives in other people.
 4. **Shock's mask never comes off.** No part of her face is ever visible, on any page, in any book.
 5. **What's under the mask is never stated**: a pretty face with a small pink blotch she can't remove. She hid her whole self behind something monstrous rather than let one mark be seen. This is *felt*, never said.
@@ -31,7 +31,7 @@ Canon for the Castle Everstair stories. This file outranks any single book promp
 
 Five sisters were born in the tower. The books have shown four.
 
-- **Shock** — the oldest, and the secret. Evilest and Beedlist did not know she existed until Book Three; she is "the secret the tower was built here to keep." Tall, storm-grey hair, charcoal cloak fading to mist, carved storm-creature mask with a hairline crack down one cheek and a tipped-sideways crescent scratched above the brow. Her voice is like snowfall. She wants all three sets of powers — Moon's, Baby Lady's, Cottontail's — to crumble the world into pieces and rebuild it evil; she believes the world deserves it. In Book Three she was *seen* (Moon looked at her dream and didn't look away), hated it, and left. Not beaten. Not finished. She paces the horizon. A bowl of soup stays set for her.
+- **Shock** — the oldest, and the secret. Evilest and Beedlist did not know she existed until Book Three; she is "the secret the tower was built here to keep." Tall, storm-grey hair, charcoal cloak fading to mist, carved storm-creature mask with two small carved fangs at its frown, a hairline crack down one cheek and a tipped-sideways crescent scratched above the brow. Her voice is like snowfall. She wants all three sets of powers — Moon's, Baby Lady's, Cottontail's — to crumble the world into pieces and rebuild it evil; she believes the world deserves it. In Book Three she was *seen* (Moon looked at her dream and didn't look away), hated it, and left. Not beaten. Not finished. She paces the horizon. A bowl of soup stays set for her.
 - **Evilest** — spiky black crown, loud, wants power. Softening arc: in Book Three she recognized Shock's empty rebuilt world as her own Book One dream (the throne room with nobody there) and said "I don't think I want to be queen, after all." Now sits at the soup table, arms crossed, staying.
 - **Cheeblest** — bows and pigtails, the lonely one; turned good at the end of Book One and never went back. The only one who has stood on both sides. The tower never once opened its door for her the way it did for Shock. Carries Book Three: "Do the thing that you once did for me! Just LOOK!"
 - **Beedlist** — the still one, all black, never speaks. Deep where Evilest is loud. Even the sea goes flat around her. Keeps a small black book with no name; in Book Three she "spoke" for the first time — three written words: *SHE WON'T STOP.* Now writes at the soup table between sips.
@@ -40,15 +40,15 @@ Five sisters were born in the tower. The books have shown four.
 ## The friends
 
 - **Princess Moon** — pink hair, gold wings, silver tail, crescent crown. Every power, but reaches for them less than she used to. Favorite: dreams of hope.
-- **Baby Lady** — Moon's sister, a talking puppy with pearl wings and all the same powers. Everyone hears her — the fish and the hawk.
-- **Baby Jag Cottontail** — a jaguar cub from "an island of somewheres," older than Moon and Baby Lady, arrived by driftwood log with a green-leaf sail. No powers, ordinary claws, seashell bracelet. A friend, not a sister. Stayed after Book Two.
+- **Baby Lady** — Moon's sister, a talking puppy with pearl wings and all the same powers. Everyone hears her — the fish and the hawk. **In art she has no back legs and no back paws, ever** — her puppy body ends in her mermaid tail; front paws only.
+- **Baby Jag Cottontail** — a jaguar cub from "an island of somewheres," older than Moon and Baby Lady, arrived by driftwood log with a green-leaf sail. Ordinary claws, seashell bracelet. A friend, not a sister. Stayed after Book Two. As of the last page of Book Three, a first tiny shine of her own has grown in on the tip of one claw — nobody in the story knows yet.
 - **Captain Pim and the 100 Guardians** — palm-sized silver moth-knights of the Stair. Book One only, so far. No cavalry since.
 
 ## The books
 
 1. **Princess Moon and the Nevershine Lantern** — the trick. The black-glass lantern swallows the powers; hope can't be stolen because it isn't inside her. Refrain: *"But dreams slip through the smallest crack."* Ends with four bowls of soup.
 2. **Baby Jag Cottontail and the Deep Dark Sea** — the theft. Beedlist gathers reflections off the water and the powers follow; the borrowed magic fails Cottontail and her own claws save everyone. Refrain: *"But the deep can't keep what was always yours."* Ends with five bowls (one "for anyone stormy who might not be there"), a reflection that waves a moment too late — and Shock, masked and silent, standing on the sea. Nobody fights her. Nobody speaks to her.
-3. **Cheeblest and the Sister of Storms** — the bargain. The tower opens for Shock and locks its own sisters out; the sister reveal; the storm un-stitches the world (floating stair stones, a crack on the moon) against the price of all three shines; Evilest and Beedlist join her, then turn; Moon stops her by *seeing* her, not beating her. Refrain: *"Even storms were little once."* Ends with seven bowls — six drinkers and the stormy one's, full, set, waiting — and the storm pacing the horizon all night.
+3. **Cheeblest and the Sister of Storms** — the bargain. The tower opens for Shock and locks its own sisters out; the sister reveal; the storm un-stitches the world (floating stair stones, a crack on the moon) against the price of all three shines; Evilest and Beedlist join her, then turn; Moon stops her by *seeing* her, not beating her. Refrain: *"Even storms were little once."* Ends with seven bowls — six drinkers and the stormy one's, full, set, waiting — the storm pacing the horizon all night, and, on the very last page, Cottontail's first shine flickering in on the tip of one claw while she sleeps. Grown, not given. Nobody saw.
 
 ## Open threads (doors left open on purpose)
 
@@ -59,6 +59,7 @@ Five sisters were born in the tower. The books have shown four.
 - **The stormy bowl** — set at every meal, never yet claimed. If Shock ever knocks, this is how she comes in.
 - **The missing step and the moon's faint line** — the world remembers the storm.
 - **Shock is still out there**, pacing the horizon like someone who almost knocks.
+- **Cottontail's shine** — it began on the last page of Book Three and nobody in the story has seen it yet. Shock came for a power that didn't exist; now it does.
 
 ## Production canon
 
