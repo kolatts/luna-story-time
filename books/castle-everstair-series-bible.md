@@ -39,6 +39,12 @@ Five sisters were born in the tower. The books have shown four.
 - **Beedlist** — the still one, all black, never speaks. Deep where Evilest is loud. Even the sea goes flat around her. Keeps a small black book with no name; in Book Three she "spoke" for the first time — three written words: *SHE WON'T STOP.* Now writes at the soup table between sips.
 - **The fifth** — unnamed, unshown, unknown even to the reader. See Open threads.
 
+## The parents (as of Book Five)
+
+- **Purple Shine** — a small all-purple cat, half fairy half mermaid (lavender wings, amethyst mermaid tail, no back legs — same "recipe" as Baby Lady). Moon and Baby Lady's **mama**. Came from the future with Pink Shine to find their daughters; the way back closed behind them and can never unclose. When she transforms she becomes poofy and normal-sized. Warm, watchful, steps in front of the twins before she thinks.
+- **Pink Shine** — a fluffy rose-pink dog, half fairy half mermaid (pearl-pink wings, rose-gold mermaid tail, no back legs). The twins' **papa**. Woolly deep bark; started the everybody-song. Steady and gentle.
+- They live at the castle now. The twins' half-fairy-half-mermaid nature comes from them; this was the clue hiding in plain sight all of Book Five.
+
 ## The friends
 
 - **Princess Moon** — pink hair, gold wings, silver tail, crescent crown. Every power, but reaches for them less than she used to. Favorite: dreams of hope.
@@ -52,6 +58,9 @@ Five sisters were born in the tower. The books have shown four.
 2. **Baby Jag Cottontail and the Deep Dark Sea** — the theft. Beedlist gathers reflections off the water and the powers follow; the borrowed magic fails Cottontail and her own claws save everyone. Refrain: *"But the deep can't keep what was always yours."* Ends with five bowls (one "for anyone stormy who might not be there"), a reflection that waves a moment too late — and Shock, masked and silent, standing on the sea. Nobody fights her. Nobody speaks to her.
 3. **Cheeblest and the Sister of Storms** — the bargain. The tower opens for Shock and locks its own sisters out; the sister reveal; the storm un-stitches the world (floating stair stones, a crack on the moon) against the price of all three shines; Evilest and Beedlist join her, then turn; Moon stops her by *seeing* her, not beating her. Refrain: *"Even storms were little once."* Ends with seven bowls — six drinkers and the stormy one's, full, set, waiting — the storm pacing the horizon all night, and, on the very last page, Cottontail's first shine flickering in on the tip of one claw while she sleeps — visible in the art and named in the text ("A shine of her own. Her very first one."). Grown, not given. No character saw; every reader did.
 
+4. **Winds and the Witch of the Deep Cave** — the ink. Elysian, the family's secret aunt under the bottom step, brews out the twins' powers and paints Baby Lady "finished"; plain rain through the opened cave roof washes the ink away; the shineless jaguars (nose and claws) save everyone. Refrain: *"But nobody picks how they started."* Ends with the twins gifting the jaguars powers of their own — given, not borrowed — and the stormy bowl drunk from at dawn, by nobody anyone saw.
+5. **Purple Shine and the Unicorn Who Screams** — the parents. Two strangers who already know everything arrive from the future: the twins' mama and papa, the way home closed behind them. A nameless black unicorn whose scream pushes people too far apart to hear each other tears the family away and reveals the truth as blackmail. The twins power up each with her own parent — purple crowns, all-gold wings and tails, necklaces unchanged; **crowns can't fight, but crowns can find**. She is beaten by the everybody-song: one loud warm sound with no apart in it and no quiet to tear at. Refrain: *"But the song always knows its way home."* Ends with the twins' birthday (they turn zero again), the parents' first one there — and, far out where the dark begins, the unicorn humming one bad note.
+
 ## Open threads (doors left open on purpose)
 
 - **The deep kept a copy.** Moon's reflection waved back a moment too late (Book Two) and no book has explained it. Something is still down there.
@@ -61,7 +70,11 @@ Five sisters were born in the tower. The books have shown four.
 - **The stormy bowl** — set at every meal, never yet claimed. If Shock ever knocks, this is how she comes in.
 - **The missing step and the moon's faint line** — the world remembers the storm.
 - **Shock is still out there**, pacing the horizon like someone who almost knocks.
-- **Cottontail's shine** — it began on the last page of Book Three and nobody in the story has seen it yet. Shock came for a power that didn't exist; now it does.
+- **Cottontail's shine** — it began on the last page of Book Three and nobody in the story has seen it yet. Shock came for a power that didn't exist; now it does. As of Book Four the jaguars also carry given powers of their own.
+- **The unicorn is still out there.** Her scream faded to nothing against the everybody-song and she walked back down the bare sea road — but far out where the dark begins she hummed one note, badly. Moon's invitation ("There's always room in a song this size") stands. She never said her name.
+- **Shock sang.** In Book Five a voice soft as snowfall joined the everybody-song from behind, and nobody turned; she stood at the birthday doorway, present and unremarked, and the stormy bowl was drunk from early. Nobody has yet spoken to her.
+- **The voice nobody placed** — in the everybody-song there was one more voice, high and small, from nowhere that anyone looked. Nobody counted the voices. *This is a fifth-sister hint — do not draw attention to it.*
+- **The future the Shines came from** — they traded a whole world for their girls and it can never unclose. What world? No book has said.
 
 ## Production canon
 

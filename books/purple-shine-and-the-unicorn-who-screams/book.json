@@ -1,0 +1,256 @@
+{
+  "slug": "purple-shine-and-the-unicorn-who-screams",
+  "series": "castle-everstair",
+  "bookNumber": 5,
+  "title": "Purple Shine and the Unicorn Who Screams",
+  "subtitle": "Book Five of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "But the song always knows its way home.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "purpleshine", "name": "Purple Shine", "sheet": "Purple Shine: small sleek cat, purple all over — plum-purple fur, deeper violet ears; large gentle violet eyes; delicate translucent lavender fairy wings, small and fine; her cat body ends in a shimmering amethyst-purple mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver necklace with a tiny purple star charm; calm, warm, watchful, like someone who already knows you." },
+    { "id": "pinkshine", "name": "Pink Shine", "sheet": "Pink Shine: fluffy grown dog, warm rose-pink all over, long soft curly ears; kind dark round eyes; iridescent pearl-pink fairy wings; his dog body ends in a rose-gold mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver collar with a tiny pink star charm; steady and gentle, with a woolly deep bark." },
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar." },
+    { "id": "unicorn", "name": "The Unicorn", "sheet": "The unicorn: a slender unicorn, black all over — black coat, long black mane and tail, long black spiral horn — always edged in cold silver moonlight rim-light so she reads clearly against the night; large pale silver eyes; beautiful and wrong at once, like a hole shaped like a unicorn; when she screams, thin white glassy rings of sound ripple visibly outward from her; frightening only the way a storm is frightening, never gory, never bloody." },
+    { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
+    { "id": "winds", "name": "Winds", "sheet": "Winds: young jaguar cub the same size and age as Cottontail; pale grey-blue coat with cloud-white rosette spots, a tuft of bright wavy blue hair exactly the shape of Cottontail's pink tuft, very wide-open sky-blue eyes, a huge cheerful grin; sturdy ordinary paws; no wings, no mermaid tail, no magic, no sparkle; a woven pale-blue grass bracelet on one front leg." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." },
+    { "id": "shock", "name": "Shock", "sheet": "Shock: a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature with two small carved fangs at its frown, round dark eye-holes, a thin hairline crack down one cheek, and a small simple tipped-sideways crescent moon — one clean thin C-shaped curve — scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: climbing the great glowing castle stair out of the moonlit sea, two dripping newcomers — a small all-purple cat mid-step and a fluffy rose-pink dog beside her, fairy wings folded, mermaid tails trailing seawater — looking up with warm knowing smiles at Moon, who hovers above the steps in delight with the small winged puppy beside her; far out at the dark horizon behind them, tiny, a black unicorn silhouette edged in silver watches, one thin white ring of sound around her. Perfectly round full moon (never a crescent). Open sky in the upper third for the title. No rabbits, no other animals."
+  },
+  "questions": [
+    "Purple Shine and Pink Shine gave up their whole world — and the way back closed forever — just to be with Moon and Baby Lady. Baby Lady says, \"This one has soup. And us.\" What do you think makes a place home: the place, or the people in it?",
+    "The clues were there the whole time — the lullaby, the tea stirred nine times, the stepping-in-front, the wings and the mermaid tail. Did you figure out the secret before the unicorn said it? Which clue almost told you?",
+    "The unicorn's scream only works when everyone is apart and quiet. Why do you think a song with everybody in it — even the off-key parts — was stronger than the loudest scream in the world?",
+    "Moon told the unicorn, \"There's room. There's always room in a song this size.\" The unicorn didn't come sing — but far away, she hummed one note. Just one. Do you think she'll come closer someday? What would you do if she knocked?"
+  ],
+  "lookAndFind": "There's a crescent moon hiding somewhere in almost every picture — and after the purple crowns appear, the twins' necklaces never change, not even once. Can you find the crescents, and check on the necklaces too?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "From somewhere",
+      "text": "Everyone comes from a somewhere. It's true.\nCottontail sailed from an island of somewheres.\nWinds slid down from a sky-colored one.\nEven the sisters came out of the tower\n(which counts, though nobody goes there on purpose).\n\nBut Moon and her sister were born with the moon —\nzero years old, and they liked it that way —\nand in four whole books, nobody asked,\nnot once, not even quietly:\nborn of whom?",
+      "image": "images/01.webp",
+      "imagePrompt": "Wide warm establishing shot at dusk: the lavender castle Everstair and its great glowing stair climbing from the calm starry sea toward an enormous perfectly round full moon (never a crescent); scattered small and happy on the steps, Moon flying with the small winged puppy beside her, and the two young jaguar cubs mid-play farther down; across the water the grim black stone tower with one warm lit window. Cozy, safe, storybook scale. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "cottontail", "winds"],
+      "vocab": [
+        { "word": "somewhere", "definition": "a real place — you just don't know where it is yet" },
+        { "word": "zero", "definition": "the number for none at all — even less than one" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Two circles of ripples",
+      "pronunciations": { "bow": "baʊ" },
+      "text": "One morning the sea made two circles of ripples,\nand up the wet steps, dripping, came strangers:\na cat, purple all over, purple as plums,\nand a dog, pink as morning, with sea in his fur.\n\nBoth had fairy wings, folded and fine.\nBoth had the tail of a mermaid. Both smiled.\n\"I'm Purple Shine,\" said the cat, with a bow.\n\"Pink Shine,\" woofed the dog.\nAnd then, very strangely: \"We're home.\"",
+      "image": "images/02.webp",
+      "imagePrompt": "At the foot of the great glowing stair where it meets the sea, soft gold morning light: two newcomers climbing dripping out of the water onto the bottom steps — a small all-purple cat mid-bow and a fluffy rose-pink dog beside her, both with folded fairy wings and mermaid tails trailing seawater, both smiling warm and certain; above them on the steps Moon and the small winged puppy lean down, curious and delighted; two rings of ripples widening on the sea behind. Sparkling spray. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["purpleshine", "pinkshine", "moon", "babylady"],
+      "vocab": [
+        { "word": "ripples", "definition": "the little rings that spread across water when something moves in it" },
+        { "word": "strangers", "definition": "people you haven't met yet" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The strangers who knew",
+      "text": "Now, strangers know nothing. That's how strangers work.\nBut these two knew things there's no way to know.\nThey knew the twins' hide-spot (third stair from nowhere).\nThey knew Baby Lady takes tea with the honey\nstirred nine times exactly — and never, never eight.\n\nWinds gave them his carefullest, hugest sniff.\n\"They smell far,\" he said. \"Not sea-far. Not sky-far.\nA far I can't point at.\"\nAnd Cottontail squinted her yellowest squint:\n\"Wings and a mermaid tail. Hmm.\nNow where have I seen that recipe before?\"",
+      "image": "images/03.webp",
+      "imagePrompt": "Cozy castle room in warm gold lamplight: the fluffy rose-pink dog carefully stirring a tiny teacup of honeyed tea for the small winged puppy, who watches astonished; nearby the small all-purple cat points one front paw at a hidden alcove behind a stair; the blue-haired sky jaguar gives the purple cat an enormous concentrating sniff while the pink-haired jaguar cub squints suspiciously at the newcomers' wings and mermaid tails. Warm indigo shadows, gentle humor. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["purpleshine", "pinkshine", "babylady", "winds", "cottontail"],
+      "vocab": [
+        { "word": "recipe", "definition": "the list of what something is made of and how" },
+        { "word": "carefullest", "definition": "the most careful anyone can possibly be (a made-up word, but a good one)" }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "The lullaby",
+      "text": "That night, Purple Shine forgot to be careful.\nShe hummed. Just a hum, soft and low in the lamplight.\nAnd the hum was the twins' own lullaby. Theirs.\nThe one with the verse that they made up themselves —\nthe secret verse. Nobody knows it. Nobody.\n\nShe sang every word to the very last \"sleep.\"\nThen she saw the twins staring.\n\"...Lucky guess,\" said the cat.\nAnd she looked at them long, and too soft, and away.",
+      "refrain": true,
+      "image": "images/04.webp",
+      "imagePrompt": "Night nursery scene inside the castle: the small all-purple cat sitting in a window seat mid-hum, eyes half closed, caught in warm lamplight, soft gold music-sparkles drifting from her like fireflies; on the rug Moon and the small winged puppy are frozen mid-play, staring at her with wide eyes; through the window a perfectly round full moon (never a crescent) over the dark sea. Tender, hushed, golden.",
+      "textPosition": "top",
+      "characters": ["purpleshine", "moon", "babylady"],
+      "vocab": [
+        { "word": "lullaby", "definition": "a soft slow song that helps you fall asleep" },
+        { "word": "hum", "definition": "singing with your mouth closed, so only the tune comes out" }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The sound",
+      "text": "Baby Lady heard it first. Her ears stood up.\nA sound from the top of the top of all sounds,\nso high that it hurt like a light in your eyes.\n\nOut on the water, the waves pulled apart —\na road of bare seafloor from here to the dark —\nand down that bare road came a clip and a clop.\n\nAnd Purple Shine moved. Quick, like she'd practiced forever,\nshe stepped in front of the twins. Both of them.\nPink Shine stepped in front of her.",
+      "image": "images/05.webp",
+      "imagePrompt": "Night on the castle shore: the sea pulled apart into a long road of bare glistening seafloor running from the bottom step toward the far dark horizon, wet shells and seaweed shining; at the far end of the road a tiny black horse-shape with a spiral horn, edged in silver; in the foreground the small all-purple cat stands protectively in front of Moon and the small winged puppy, and the fluffy rose-pink dog stands in front of all three, while the puppy's long curly spaniel ears lift alert (she is a dog, never a rabbit). Perfectly round full moon (never a crescent). Tense but gentle, never gory. No rabbits, no other animals besides the unicorn.",
+      "textPosition": "top",
+      "characters": ["purpleshine", "pinkshine", "moon", "babylady", "unicorn"],
+      "vocab": [
+        { "word": "seafloor", "definition": "the ground at the very bottom of the sea" },
+        { "word": "practiced", "definition": "did something over and over until you're ready for it" }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "The unicorn",
+      "text": "She was black. All-over black, like a hole in the night:\nblack coat and black mane and black spiraling horn,\nwith eyes like two coins of cold silver.\nShe never did say what her name was.\n(Maybe she screamed it away, long ago.)\n\n\"Powers,\" she said, and her voice was a needle,\npitched higher than hearing would rather have gone.\n\"The moon-girl's. The pup's. Every shine in this castle.\nBring them to me — or I'll show you my scream.\"",
+      "image": "images/06.webp",
+      "imagePrompt": "The black unicorn standing close at the near end of the bare sea road, in full moonlight: black all over, coat and long mane and spiral horn, edged in cold silver rim-light so she reads clearly against the indigo night, large pale silver eyes; her head lowered to speak, one thin white glassy ring of sound just beginning around her; before her on the glowing bottom steps, Moon and the small winged puppy stand small but unbowed. Perfectly round full moon (never a crescent). Beautiful and frightening like a storm, never gory.",
+      "textPosition": "bottom",
+      "characters": ["unicorn", "moon", "babylady"],
+      "vocab": [
+        { "word": "spiraling", "definition": "twisting round and round, like a corkscrew" },
+        { "word": "needle", "definition": "a thin sharp pin — the thinnest, pointiest thing there is" }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Torn",
+      "text": "Nobody brought her anything. So.\n\nShe planted four hooves, and she opened her mouth,\nand the scream came out white — you could see it — in rings,\nand the rings wanted things to be far from each other:\nstones slid from stones; the foam flew off the sea.\n\nAnd the rings caught the Shines like two kites with cut strings —\npurple one way, pink the other — and gone.\nNot hurt. Never hurt. Just away. So away\nthat no calling, no howling, no whistling could reach.",
+      "image": "images/07.webp",
+      "imagePrompt": "The scream made visible: the black unicorn mid-scream with her head thrown skyward, huge white glassy rings of sound rippling out across the whole night scene, bending sea-foam and small loose stones away from each other; high against the sky the small all-purple cat and the fluffy rose-pink dog are swept away through the air in opposite directions like two kites with cut strings, reaching back toward each other; below on the steps Moon and the small winged puppy reach up, wind-whipped. Each character appears exactly once — no duplicate characters. Perfectly round full moon (never a crescent). Dramatic and sorrowful, never gory — nobody is hurt, only carried away.",
+      "textPosition": "bottom",
+      "characters": ["unicorn", "purpleshine", "pinkshine", "moon", "babylady"],
+      "vocab": [
+        { "word": "hooves", "definition": "the hard feet of a horse or a unicorn" },
+        { "word": "foam", "definition": "the white fluffy bubbles on top of waves" }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "What the unicorn knew",
+      "pronunciations": { "unclose": "ʌnˈkloʊz" },
+      "text": "\"Scream for them, then,\" said the unicorn, sweetly.\n\"Scream till your voices wear down to a whisper.\nNobody is coming for them.\nAnd besides, little moonlings — you don't even know\nwho it is you've been losing, do you?\n\nThey came from tomorrow. They broke the way back.\nIt can't ever unclose. They knew, and they came.\nYour mama. Your papa. They traded a world for you.\nAnd now they are nowhere, calling your names —\n\nand every power you have, handed to me,\nis the price of your hearing them ever again.\"",
+      "image": "images/08.webp",
+      "imagePrompt": "Close, quiet menace on the moonlit shore: the black unicorn leaning her long neck down until her pale silver eyes are level with Moon and the small winged puppy, one soft white ring of sound drifting off her like smoke; the twins' faces caught at the exact moment of understanding — eyes going wide, the gasp, moonlight on tears just starting. Deep indigo and silver, very still; the fear lives in the stillness, never gory.",
+      "textPosition": "top",
+      "characters": ["unicorn", "moon", "babylady"],
+      "vocab": [
+        { "word": "tomorrow", "definition": "the day after today — the part of time that hasn't happened yet" },
+        { "word": "traded", "definition": "gave one thing away to get a different thing" }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "The click",
+      "text": "And oh — it clicked, like a key in a lock.\nThe lullaby. The tea. The stepping-in-front.\nThe wings and the mermaid tail — Baby Lady's own recipe —\n\"I said that!\" said Cottontail. \"I said recipe!\"\n\nMoon sat down on the step. All the powers in the world,\nand not one for a hole where your family was.\nHer mama. Her papa. One evening of having them.\n\nThen Baby Lady spoke, and she didn't speak big:\n\"We are zero years old. We are brand new at this.\nBut nobody loses our parents on birthday-week.\nUp, sister. We're going to go find them.\"",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "On the glowing bottom steps at night: Moon sitting down small with her wings drooping, while the small winged puppy stands square in front of her, chest out, one front paw raised mid-speech, tiny and utterly determined; beside them the pink-haired jaguar cub gestures at her own back with both front paws mid-realization, and the blue-haired sky jaguar nods hard. Warm gold lamplight from the castle above against the indigo night. Perfectly round full moon (never a crescent). Grief turning into courage; never gory.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "cottontail", "winds"],
+      "vocab": [
+        { "word": "clicked", "definition": "snapped into place — like when a puzzle piece fits and suddenly you understand" }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "The finding song",
+      "text": "But how do you find what you cannot hear?\nYou sing. You sing what your family sings.\n\nSo the twins stood together on the very bottom step,\nand they sang the secret verse of their lullaby\nout into all of the quiet at once.\n\nAnd far in one faraway, something purple stopped crying.\nAnd far in another, something pink raised his ears.\nAnd between four hearts — daughter, daughter, mama, papa —\na thread pulled tight.\nAnd the thread began to glow.",
+      "image": "images/10.webp",
+      "imagePrompt": "The twins singing side by side on the very bottom step at night, eyes closed, heads tilted up, soft gold music-sparkles rising from them like fireflies; from their chests two thin threads of light run out low across the dark calm sea toward opposite horizons — one thread glowing violet-purple, one glowing rose-pink — vanishing into the far distance; the sea holding its breath. Perfectly round full moon (never a crescent). Hushed, hopeful, luminous.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady"],
+      "vocab": [
+        { "word": "faraway", "definition": "a place a long, long way from here" },
+        { "word": "thread", "definition": "a thin, thin string" }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Purple crowns",
+      "text": "Moon's thread ran to Purple Shine; down it came everything —\nall that her mama was, meeting all that Moon was.\nAnd Baby Lady's ran to Pink Shine, just the same.\nAnd pop — on each twin's head — a crown. A purple crown.\n\nAnd gold poured over them, wingtip to tail-tip:\ngold wings! Gold tails! Every feather, every scale —\neverything gold but their necklaces,\nwhich stayed exactly as they were.\n(Some things are already exactly right.)\n\nAnd the world went loud with family. They could hear.\nA purple hum, west. A woolly bark, east.\nThey flew, and they found, and they fell on their parents —\nthe first hug that knew what a hug it was.\n\nCrowns can't fight, you know.\nBut crowns can find.",
+      "image": "images/11.webp",
+      "imagePrompt": "Transformation blaze at night above the bottom step: Moon and the small winged puppy lifting into the air as gold light pours over them from wingtip to tail-tip, the two glowing threads of violet and rose light spiraling up around them. In this image both twins are transformed: their wings and tails are gleaming solid gold (overriding their usual wing and tail colors), each twin wears a small purple crown (Moon's crown is purple in this image, not gold), and only their necklaces stay unchanged — Moon's pearl necklace with its gold crescent pendant, the puppy's pearl collar with its tiny gold crescent charm. Each twin appears exactly once — no duplicate characters. Perfectly round full moon (never a crescent). Radiant, triumphant, warm.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady"],
+      "vocab": [
+        { "word": "wingtip", "definition": "the very end point of a wing" }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "The hugest scream",
+      "text": "\"How sweet,\" said the voice from the top of all voices.\n\"Found each other. Then I'll scream you apart again —\nfarther this time. Forever this time —\nunless somebody hands me those powers.\"\n\nAnd she opened her mouth, and the white rings came\nbigger than ever, and even the crowns\ndug in like anchors, and started to slide.\n\nBecause here's what a scream like that needs, to win.\nTwo things. Only two.\nEveryone apart. Everyone quiet.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "Out over the dark sea at night: the transformed twins — each wearing a small purple crown, wings and tails gleaming solid gold (overriding their usual colors), necklaces unchanged — holding on tight to the small all-purple cat and the fluffy rose-pink dog in mid-air as enormous white glassy rings of sound wash over the family from the black unicorn standing on the bare sea road below; their gold glow streams sideways like hair in wind, the four of them sliding apart an inch and gripping tighter. Each character appears exactly once — no duplicate characters. Perfectly round full moon (never a crescent). Peril without harm, never gory.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "purpleshine", "pinkshine", "unicorn"],
+      "vocab": [
+        { "word": "anchors", "definition": "the heavy hooks ships drop into the sea to stay put" }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Everybody comes",
+      "pronunciations": { "bows": "boʊz" },
+      "text": "And nobody planned what came next. That's the good part.\n\nCottontail came claws-first, hollering.\nWinds surfed in riding a shout of a wind.\nEvilest stomped up, already yelling,\nCheeblest came running, bows coming loose,\nand Beedlist came quietly, book to her chest.\n\nAnd the parents and twins stood up in the middle,\nand everyone grabbed onto everyone else.\n\n\"Apart isn't working,\" said Moon, \"exactly.\"\n\"So,\" said her sister. \"Nobody be that.\"",
+      "image": "images/13.webp",
+      "imagePrompt": "The night shore filling with friends: the pink-haired jaguar cub charging in claws-out mid-holler, the blue-haired sky jaguar surfing down a visible ribbon of wind, Evilest stomping up mid-yell, Cheeblest running with her hair bows coming loose, and Beedlist walking calm with her small black book held to her chest; at the center Moon — the ONLY human girl with pink hair in the whole image, wearing a small purple crown, her wings and tail solid gold, pearl necklace unchanged — beside the small winged puppy, who also wears a small purple crown with solid gold wings and tail, pearl collar unchanged, together with the small all-purple cat and the fluffy rose-pink dog, all standing in a tight circle with arms and paws and wings linked. Every sister is a small child, not an adult. Each character appears exactly once — no duplicate characters, exactly one pink-haired girl. Perfectly round full moon (never a crescent). Gathering, defiant, warm. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["cottontail", "winds", "evilest", "cheeblest", "beedlist", "moon", "babylady", "purpleshine", "pinkshine"],
+      "vocab": [
+        { "word": "hollering", "definition": "shouting in your biggest, loudest voice" }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "The everybody song",
+      "pronunciations": { "tear": "tɛr" },
+      "text": "It was Pink Shine who started it — one woolly note —\nand the lullaby rose with everybody in it:\nMoon high and clear, and her sister beneath her,\nthe jaguars roaring it, wildly off-key\n(off-key doesn't matter; together does),\nEvilest belting, Cheeblest sweet,\nand Beedlist — Beedlist held her book open\nto the words, and mouthed every single one.\n\nThen a voice joined in, soft as snowfall,\nfrom somewhere behind. And nobody turned.\nAnd one more voice, high and small,\nfrom nowhere that anyone looked.\n\nAnd the scream hit the song, and could not get in.\nA scream needs a quiet to tear at. An apart.\nAnd there wasn't any. There wasn't any at all.",
+      "image": "images/14.webp",
+      "imagePrompt": "The everybody-song on the moonlit shore: the whole crowd singing at once in a loose ring — the transformed twins (small purple crowns, solid gold wings and tails, necklaces unchanged) highest in the middle, the small all-purple cat and the fluffy rose-pink dog beside them, both young jaguar cubs howling joyfully, Evilest belting with her fists clenched, Cheeblest singing sweetly, and Beedlist holding her small black book open and mouthing the words; warm gold music-sparkles pour up out of everyone and weave into one wide golden braid of light that meets the black unicorn's thin white scream-rings and does not break; the unicorn small and dim beyond the golden glow; and at the far dark edge of the picture, behind everyone and unnoticed, the tall masked sister in her grey cloak stands singing too. Every sister is a small child except the tall masked one. Each character appears exactly once — no duplicate characters. Perfectly round full moon (never a crescent). Overwhelming warmth against thin cold; never gory.",
+      "textPosition": "top",
+      "characters": ["pinkshine", "purpleshine", "moon", "babylady", "cottontail", "winds", "evilest", "cheeblest", "beedlist", "shock", "unicorn"],
+      "vocab": [
+        { "word": "off-key", "definition": "singing the notes a little bit wrong" },
+        { "word": "snowfall", "definition": "snow coming down, soft and quiet" }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "One note",
+      "text": "The scream went thin. Then the scream went thread.\nThen the scream was a kettle, far off. Then nothing.\nAnd the unicorn stood in the nothing she'd made,\nblack as a hole in the night. But smaller.\n\n\"You could sing too,\" offered Moon. \"There's room.\nThere's always room in a song this size.\"\n\nThe unicorn looked a long look at them all —\nat everyone holding on to everyone.\nThen she turned down the bare sea road, and was gone,\nand the water closed gently behind her.\n\nAnd far, far out, where the dark begins:\none note. Hummed. Badly.\nJust one.",
+      "image": "images/15.webp",
+      "imagePrompt": "Quiet after the song: the black unicorn walking away alone down the long road of bare seafloor toward the far dark horizon, small now, her silver edge-light gentle, the sea closing softly behind her in low glassy walls of water; on the shore behind her, seen from behind in a warm gold cluster of light, Moon sits with one hand still half-raised in invitation, the small winged puppy beside her, and with them the small all-purple cat, the fluffy rose-pink dog, and the two young jaguar cubs, all watching her go. No rabbits, no bears, no penguins, no other animals besides the unicorn. Perfectly round full moon (never a crescent, bearing the faintest thin healed line) low over the sea. Melancholy, gentle, peaceful; never gory.",
+      "textPosition": "bottom",
+      "characters": ["unicorn", "moon", "babylady", "purpleshine", "pinkshine", "cottontail", "winds"],
+      "vocab": [
+        { "word": "kettle", "definition": "the pot that whistles when the water inside gets hot" }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "The birthday",
+      "text": "The birthday came two mornings later.\nOne birthday, two twins — that's the deal with twins —\nand they turned zero again, the way that they do,\nand nobody questioned the math.\n\n(The purple crowns had gone when the singing was done —\nfinding-crowns do that — and that was all right.)\n\nThe whole of everybody came. The table groaned.\n(Somebody drank from the stormy bowl early.\nNobody minded at all.)\n\n\"Our world is gone,\" said Purple Shine, softly.\n\"This one has soup,\" said Baby Lady. \"And us.\"\n\nAnd when it was time for the birthday song,\ntwo voices sang loudest of all — their first birthday\nof being right there. And the song, as you know —\nas you knew all along —\nwas the same song that won.",
+      "refrain": true,
+      "theEnd": "The End — of the fifth one.",
+      "image": "images/16.webp",
+      "imagePrompt": "Golden birthday morning in the castle hall: the round wooden table crowded with a tall slightly-crooked cake, steaming soup bowls, and one bowl already drunk from beside a pushed-back chair; Moon and the small winged puppy side by side on one chair being sung to, back to their usual crowns and colors; the small all-purple cat and the fluffy rose-pink dog singing biggest of all with shining eyes; the two young jaguar cubs mid-song, the three pale sisters around the table with the girl in black writing in her small book — and far at the edge of the doorway, half in shadow, the tall masked sister in her grey cloak, present and unremarked. Every sister is a small child except the tall masked one. Crescent moon carved above the door; through the window a perfectly round full moon (never a crescent) setting pale over the sea. Warm, crowded, golden, safe. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "purpleshine", "pinkshine", "cottontail", "winds", "evilest", "cheeblest", "beedlist", "shock"],
+      "vocab": [
+        { "word": "groaned", "definition": "made a low creaky sound, like something carrying too much" }
+      ]
+    }
+  ]
+}

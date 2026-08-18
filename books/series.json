@@ -33,6 +33,13 @@
           "subtitle": "Book Four of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/winds-and-the-witch-of-the-deep-cave/images/cover.webp"
+        },
+        {
+          "slug": "purple-shine-and-the-unicorn-who-screams",
+          "title": "Purple Shine and the Unicorn Who Screams",
+          "subtitle": "Book Five of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/purple-shine-and-the-unicorn-who-screams/images/cover.webp"
         }
       ]
     }
