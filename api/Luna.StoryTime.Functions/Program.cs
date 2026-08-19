@@ -16,7 +16,9 @@ builder.Services.AddSingleton(_ =>
 {
     var connectionString = Environment.GetEnvironmentVariable("AzureWebJobsStorage")
         ?? throw new InvalidOperationException("AzureWebJobsStorage is not configured.");
-    return new TableClient(connectionString, "StorySuggestions");
+    var client = new TableClient(connectionString, "StorySuggestions");
+    client.CreateIfNotExists();
+    return client;
 });
 
 builder.Build().Run();

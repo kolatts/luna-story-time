@@ -72,7 +72,25 @@
   fetch("books/series.json")
     .then(function (r) { if (!r.ok) throw new Error("series.json " + r.status); return r.json(); })
     .then(function (data) {
+      var ordinals = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
       data.series.forEach(function (series) {
+        var block = document.createElement("section");
+        block.className = "series-block";
+
+        var title = document.createElement("h3");
+        title.className = "series-title";
+        title.textContent = series.name;
+        block.appendChild(title);
+
+        if (series.description) {
+          var sub = document.createElement("p");
+          sub.className = "series-sub";
+          sub.textContent = series.description;
+          block.appendChild(sub);
+        }
+
+        var row = document.createElement("div");
+        row.className = "shelf-row";
         series.books.forEach(function (book) {
           var card = document.createElement("article");
           card.className = "book-card";
@@ -84,20 +102,35 @@
             '<span class="badge">Ages ' + book.ageRange + "</span>" +
             '<a class="read-btn" href="reader.html?book=' + encodeURIComponent(book.slug) + '">Read this story 🔊</a>' +
             "</div>";
-          shelf.appendChild(card);
+          row.appendChild(card);
         });
+
+        if (series.id === "castle-everstair") {
+          var nextOrdinal = ordinals[series.books.length] || (series.books.length + 1);
+          var soon = document.createElement("article");
+          soon.className = "book-card coming-soon";
+          soon.innerHTML =
+            '<div class="cover-wrap">🌙…</div>' +
+            '<div class="card-body"><h3>The next adventure</h3>' +
+            '<p class="sub">Castle Everstair, Book ' + nextOrdinal + ' — coming soon.</p>' +
+            '<span class="badge">Shhh, it’s still a dream</span></div>';
+          row.appendChild(soon);
+        }
+
+        if (series.id === "dreamed-up-by-you") {
+          var invite = document.createElement("article");
+          invite.className = "book-card coming-soon";
+          invite.innerHTML =
+            '<div class="cover-wrap">💭</div>' +
+            '<div class="card-body"><h3>Your idea could be the next story</h3>' +
+            '<p class="sub">Tell us what should happen, and it might become a book right here.</p>' +
+            '<a class="read-btn" href="#suggest">Dream up a story ✨</a></div>';
+          row.appendChild(invite);
+        }
+
+        block.appendChild(row);
+        shelf.appendChild(block);
       });
-      var ordinals = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
-      var bookCount = data.series.reduce(function (n, s) { return n + s.books.length; }, 0);
-      var nextOrdinal = ordinals[bookCount] || (bookCount + 1);
-      var soon = document.createElement("article");
-      soon.className = "book-card coming-soon";
-      soon.innerHTML =
-        '<div class="cover-wrap">🌙…</div>' +
-        '<div class="card-body"><h3>The next adventure</h3>' +
-        '<p class="sub">Castle Everstair, Book ' + nextOrdinal + ' — coming soon.</p>' +
-        '<span class="badge">Shhh, it’s still a dream</span></div>';
-      shelf.appendChild(soon);
     })
     .catch(function (err) {
       shelf.innerHTML = "<p>The bookshelf is napping (" + err.message + "). Please try again.</p>";

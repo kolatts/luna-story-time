@@ -119,7 +119,17 @@ section.band { position: relative; padding: 4.5rem 1.4rem; }
   text-shadow: 0 2px 14px rgba(0,0,0,.5);
 }
 
-.shelf { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 340px)); gap: 2rem; justify-content: center; }
+.shelf-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 340px)); gap: 2rem; justify-content: center; }
+.series-block { margin-bottom: 3.5rem; }
+.series-block:last-child { margin-bottom: 0; }
+.series-title {
+  font-family: "Berkshire Swash", cursive;
+  color: var(--gold-soft);
+  font-size: 1.7rem;
+  margin-bottom: .3rem;
+  text-align: center;
+}
+.series-sub { color: var(--stone); text-align: center; margin-bottom: 1.4rem; font-size: .98rem; }
 .book-card {
   background: linear-gradient(180deg, #262150, #1d1a3e);
   border: 1px solid #3d3670; border-radius: var(--radius);
@@ -154,6 +164,33 @@ section.band { position: relative; padding: 4.5rem 1.4rem; }
 .feature .icon { font-size: 2.4rem; display: block; margin-bottom: .6rem; }
 .feature h3 { color: var(--gold-soft); font-size: 1.25rem; margin-bottom: .45rem; }
 .feature p { color: var(--scale); font-size: .98rem; line-height: 1.5; }
+
+/* --- Suggest a story --- */
+.series-block .shelf-row { margin-top: 1.1rem; }
+.suggest-intro { color: var(--scale); text-align: center; max-width: 34rem; margin: 0 auto 1.6rem; line-height: 1.55; }
+.suggest-form { max-width: 34rem; margin: 0 auto; display: grid; gap: 1rem; }
+.suggest-form textarea,
+.suggest-form input {
+  font-family: "Andika", system-ui, sans-serif;
+  font-size: 1rem;
+  color: var(--paper);
+  background: rgba(183,167,212,.1);
+  border: 1px solid rgba(183,167,212,.25);
+  border-radius: var(--radius);
+  padding: .9rem 1.1rem;
+  width: 100%;
+}
+.suggest-form textarea { min-height: 7.5rem; resize: vertical; }
+.suggest-form textarea::placeholder,
+.suggest-form input::placeholder { color: var(--stone); opacity: .8; }
+.suggest-form textarea:focus,
+.suggest-form input:focus { outline: 2px solid var(--gold); outline-offset: 2px; border-color: var(--gold); }
+.suggest-form .cta { border: none; cursor: pointer; font-size: 1.05rem; justify-self: center; }
+.form-status { text-align: center; min-height: 1.4em; font-size: .98rem; }
+.form-status.ok { color: var(--gold-soft); }
+.form-status.error { color: var(--pink); }
+.suggest-thanks { text-align: center; color: var(--gold-soft); font-size: 1.15rem; line-height: 1.6; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 footer.site-footer {
   text-align: center; padding: 2.6rem 1rem 3rem; color: var(--stone); font-size: .95rem;

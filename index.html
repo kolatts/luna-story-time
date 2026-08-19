@@ -29,7 +29,7 @@
   <section class="band" id="books">
     <div class="band-inner">
       <h2>The Bookshelf</h2>
-      <div class="shelf" id="shelf">
+      <div id="shelf">
         <noscript><p>Luna's Story Time needs JavaScript to open its storybooks.</p></noscript>
       </div>
     </div>
@@ -62,6 +62,23 @@
       </div>
     </div>
   </section>
+
+  <section class="band" id="suggest">
+    <div class="band-inner">
+      <h2>Dream Up a Story</h2>
+      <p class="suggest-intro">What should happen in the next adventure? A brave snail? A cloud that lost its rain? Send your idea to the castle — it might become a real storybook on this very shelf.</p>
+      <form id="suggestForm" class="suggest-form" novalidate>
+        <textarea id="suggestIdea" maxlength="500" required placeholder="Once upon a time…"></textarea>
+        <input id="suggestName" type="text" maxlength="50" autocomplete="off" placeholder="Your first name (optional)">
+        <input id="suggestLocation" type="text" maxlength="100" autocomplete="off" placeholder="Where are you reading from? (optional)">
+        <div class="visually-hidden" aria-hidden="true">
+          <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <button type="submit" class="cta">🌠 Send it to the castle</button>
+        <p id="suggestStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -71,5 +88,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/suggest.js"></script>
 </body>
 </html>

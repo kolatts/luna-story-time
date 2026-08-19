@@ -386,8 +386,13 @@
     home.className = "cta ghost";
     home.href = "index.html";
     home.textContent = "🏠 Back to the bookshelf";
+    var dream = document.createElement("a");
+    dream.className = "cta ghost";
+    dream.href = "index.html#suggest";
+    dream.textContent = "💡 Dream up the next story";
     actions.appendChild(again);
     actions.appendChild(home);
+    actions.appendChild(dream);
     panel.appendChild(actions);
 
     wrap.appendChild(panel);

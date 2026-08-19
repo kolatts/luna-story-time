@@ -49,6 +49,12 @@
           "cover": "books/dirt-and-the-blue-sisters-pot/images/cover.webp"
         }
       ]
+    },
+    {
+      "id": "dreamed-up-by-you",
+      "name": "Dreamed Up By You",
+      "description": "Stories grown from ideas readers sent to the castle.",
+      "books": []
     }
   ]
 }
