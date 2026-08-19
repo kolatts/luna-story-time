@@ -82,5 +82,6 @@ GitHub Pages serves `main` @ `/ (root)` — no build step, no action needed. Wai
 ## Voice & content guardrails
 
 - Stories are for ages 4–8: dramatic is fine, frightening/gory is not.
+- **Every story must carry a positive moral** — one that resonates equally with children and the adults reading aloud. The child should feel it ("being scared and going anyway is what brave means"); the grown-up should recognize it in their own life too. Weave it through the story and let the ending land it; never state it as a tacked-on lesson line. At least one of the `questions` should invite the family to talk about it.
 - Definitions and questions address the child directly, warm and simple.
 - Keep the manuscript's line breaks and stanza structure exactly — the rhythm is the point.

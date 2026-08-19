@@ -56,7 +56,8 @@ jobs:
                  * The submitter's first name and location if given (e.g. "— Maya, Boise, Idaho")
                  * Your brief take in one sentence: age fit, canon fit (could it work in the
                    Castle Everstair world or better as a standalone?), freshness vs existing
-                   books, and flag any guardrail concerns
+                   books, what positive moral the idea could carry (one that lands for both
+                   kids and the adults reading aloud), and flag any guardrail concerns
                  * The row key in an HTML comment on its own line: <!-- rowkey: <RowKey> -->
                - End the body with: "Comment your thoughts, then tag @claude with the family's
                  pick to finalize."
