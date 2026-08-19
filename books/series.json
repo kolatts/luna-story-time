@@ -42,6 +42,12 @@
           "cover": "books/purple-shine-and-the-unicorn-who-screams/images/cover.webp"
         }
       ]
+    },
+    {
+      "id": "dreamed-up-by-you",
+      "name": "Dreamed Up By You",
+      "description": "Stories grown from ideas readers sent to the castle.",
+      "books": []
     }
   ]
 }
