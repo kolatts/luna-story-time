@@ -3,3 +3,8 @@
 .claude/image-generation/*/*.webp
 .playwright-cli/
 books/**/images/*.png
+
+# Azure Functions API (api/)
+api/**/bin/
+api/**/obj/
+**/local.settings.json
