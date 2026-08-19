@@ -40,6 +40,13 @@
           "subtitle": "Book Five of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/purple-shine-and-the-unicorn-who-screams/images/cover.webp"
+        },
+        {
+          "slug": "dirt-and-the-blue-sisters-pot",
+          "title": "Dirt and the Blue Sister's Pot",
+          "subtitle": "Book Six of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/dirt-and-the-blue-sisters-pot/images/cover.webp"
         }
       ]
     }

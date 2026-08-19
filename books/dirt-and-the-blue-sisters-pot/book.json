@@ -1,0 +1,257 @@
+{
+  "slug": "dirt-and-the-blue-sisters-pot",
+  "series": "castle-everstair",
+  "bookNumber": 6,
+  "title": "Dirt and the Blue Sister's Pot",
+  "subtitle": "Book Six of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "But the growing happens while you sleep.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "dirt", "name": "Dirt", "sheet": "Dirt: young jaguar cub the same size and age as Cottontail; warm soil-brown coat with dark chocolate-brown rosette spots, a tuft of bright wavy leaf-green hair exactly the shape of Cottontail's pink tuft, calm friendly moss-green eyes, half-lidded and unhurried, a wide slow easy smile; sturdy ordinary paws lightly dusted with garden soil; no wings, no mermaid tail; a woven green-vine bracelet on one front leg." },
+    { "id": "leeblebeest", "name": "Leeblebeest", "sheet": "Leeblebeest: a girl the same size as the other small sisters; every bit of her skin is a smooth soft matte blue — face, ears, hands, all of it, like a girl painted gently blue — strange and calm but never frightening, never gory; long straight deep-blue hair; plain long midnight-blue high-collared dress; a quiet patient face with a small unreadable smile; she carries a little round clay pot of plain unglazed brown clay, small as a teacup, cupped carefully in both hands." },
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar." },
+    { "id": "purpleshine", "name": "Purple Shine", "sheet": "Purple Shine: small sleek cat, purple all over — plum-purple fur, deeper violet ears; large gentle violet eyes; delicate translucent lavender fairy wings, small and fine; her cat body ends in a shimmering amethyst-purple mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver necklace with a tiny purple star charm; calm, warm, watchful, like someone who already knows you." },
+    { "id": "pinkshine", "name": "Pink Shine", "sheet": "Pink Shine: fluffy grown dog, warm rose-pink all over, long soft curly ears; kind dark round eyes; iridescent pearl-pink fairy wings; his dog body ends in a rose-gold mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver collar with a tiny pink star charm; steady and gentle, with a woolly deep bark." },
+    { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
+    { "id": "winds", "name": "Winds", "sheet": "Winds: young jaguar cub the same size and age as Cottontail; pale grey-blue coat with cloud-white rosette spots, a tuft of bright wavy blue hair exactly the shape of Cottontail's pink tuft, very wide-open sky-blue eyes, a huge cheerful grin; sturdy ordinary paws; no wings, no mermaid tail, no magic, no sparkle; a woven pale-blue grass bracelet on one front leg." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." },
+    { "id": "shock", "name": "Shock", "sheet": "Shock: a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature with two small carved fangs at its frown, round dark eye-holes, a thin hairline crack down one cheek, and a small simple tipped-sideways crescent moon — one clean thin C-shaped curve — scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: a moonlit castle garden in the foreground — beds of warm brown soil, leafy green bean rows, gold sparkle-fireflies drifting low — where a soil-brown jaguar cub with leaf-green hair sits proudly patting the earth beside a glowing new seedling while Moon hovers just above the rows, delighted, mid-yawn behind one hand; behind the garden the lavender castle Everstair and its great glowing stair rise toward a perfectly round full moon (never a crescent); at the garden's shadowed edge, small and half-lit, an all-blue girl in a midnight-blue dress watches quietly, cupping a tiny clay pot in both hands, one thin gold drip of light falling into it. Warm earth browns and garden greens woven into the indigo night. Open sky in the upper third for the title. No rabbits, no other animals."
+  },
+  "questions": [
+    "Dirt loves dirt — gardens and worms and seeds and all of it — and he doesn't mind one bit that everyone finds his garden boring. Is there something you love that other people don't understand yet? What would you show them first?",
+    "Leeblebeest's pot only filled up when Moon and Baby Lady were tired and upset. Have you ever felt extra grumpy or spilly when you were really, really tired? What helps you feel like you again?",
+    "Cottontail wanted to fight, but there was nothing to pounce on — and lying down in the garden turned out to be the bravest plan of all. Why do you think resting worked when claws and wind couldn't?",
+    "Nobody ever let Leeblebeest rest — she stayed up keeping watch while everyone else slept. Cheeblest patted the dirt beside her and said, \"You get to be a seed too.\" Why do you think that was exactly the right thing to say?"
+  ],
+  "lookAndFind": "There's a crescent moon hiding somewhere in almost every picture — and watch Leeblebeest's little clay pot: every time you see it, it's a little bit fuller. Can you find the crescents, and keep an eye on that pot?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Two yawning twins",
+      "text": "Morning came up the stair the way it does,\ngold on the lavender, gold on the sea,\nand the castle was full to its windows with family:\na mama, a papa, two jaguars, two twins.\n\nTwo yawning twins.\nMoon yawned a yawn that could swallow a boat.\nHer sister yawned back (it's polite to return them).\n\"We're not tired,\" they said at exactly the same time,\nin exactly the way that tired people say it.",
+      "image": "images/01.webp",
+      "imagePrompt": "Warm gold morning at Castle Everstair: the lavender castle bright with sunrise over a calm sea, the whole family together at breakfast on the wide castle terrace — Moon mid-enormous-yawn with one hand over her mouth, the small winged puppy yawning back beside her, the small all-purple cat and the fluffy rose-pink dog pouring tea, the pink-haired jaguar cub and the blue-haired sky jaguar tumbling in play by the balustrade; below the terrace, garden beds of warm brown soil and green rows just visible. Cozy, golden, safe. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "purpleshine", "pinkshine", "cottontail", "winds"],
+      "vocab": [
+        { "word": "lavender", "definition": "a soft purple color — and a flower that smells sleepy" },
+        { "word": "polite", "definition": "using your kind manners, even about yawns" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "The dirt friend",
+      "text": "Cottontail bounced in, all spots and hurry.\n\"Come on, come ON! Come meet my dirt friend!\"\n\"Your friend named Dirt?\"\n\"My dirt friend. You'll see.\"\n\nDown in the garden, a garden bed rumpled.\nIt heaved. It sat up. And it whistled hello —\na jaguar! Brown as the brownest of earth,\nwith a leaf-green tuft and a wide slow smile\nand soil in his whiskers and worms for neighbors.\n\n\"Hullo,\" whistled Dirt, in a voice deep as wells.\n\"You woke me. That's fine. I was nearly done anyway.\"",
+      "image": "images/02.webp",
+      "imagePrompt": "The castle garden in soft morning light: a garden bed of warm brown soil rumpled upward as a soil-brown jaguar cub with leaf-green hair sits up out of the earth mid-whistle, soil crumbs on his whiskers, smiling wide and slow; the pink-haired jaguar cub bounces beside the bed, proudly introducing him with one paw flung out; Moon, the small winged puppy, and the blue-haired sky jaguar peer down amazed; leafy green bean rows and a watering can around them, one tiny friendly earthworm by his paw. Warm earth browns and garden greens against lavender stone. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["dirt", "cottontail", "moon", "babylady", "winds"],
+      "vocab": [
+        { "word": "rumpled", "definition": "all wrinkled and pushed up, like blankets in the morning" },
+        { "word": "heaved", "definition": "lifted up with one big push" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Boring on purpose",
+      "text": "Dirt gave a tour at the speed of a garden,\nwhich is slow. \"Here's my beans. Here's my roots. Here's my dark.\"\nHe held up a seed, very small, very brown.\n\"It sleeps in the ground, where it's boring on purpose.\nThat's how it grows. Sleep first. Then flowers.\"\n\nWinds yawned. (It was catching.) Moon poked at a worm.\n\"Is something going to happen?\" asked Baby Lady, kindly.\n\"It's happening now,\" whistled Dirt, delighted.\n\"You just can't see it. That's the best part.\"\n\nNobody quite agreed.\nDirt didn't mind. Dirt never minds.\nGardens are used to being underestimated.",
+      "image": "images/03.webp",
+      "imagePrompt": "Garden tour in mellow late-morning light: the soil-brown jaguar cub with leaf-green hair proudly holding up one very small brown seed between two claws to show his visitors; Moon crouched down gently poking at a little earthworm, the small winged puppy watching with polite attention, the blue-haired sky jaguar mid-yawn, the pink-haired jaguar cub squinting at a bean pole with polite doubt; rows of green sprouts and rich brown soil beds around them, the lavender castle rising behind. Gently funny, warm earth browns and garden greens. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["dirt", "moon", "babylady", "winds", "cottontail"],
+      "vocab": [
+        { "word": "delighted", "definition": "so, so pleased — happy all the way through" },
+        { "word": "underestimated", "definition": "when everyone thinks you can't do much — and you can" }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "The fifth bed",
+      "text": "Meanwhile, below the castle — below the below,\nwhere the cellars stop pretending to be rooms —\nthree shadows were meeting a stranger.\n\nBlue. All-over blue. Blue face, blue fingers,\nblue as the hour before the morning.\n\"Hello, sisters,\" she said, like they'd talked just yesterday.\n\"I'm Leeblebeest. The fifth one. The last one.\nThere were five little beds in the tower, remember?\nYou kept mine made. That was kind.\"\n\nEvilest stared. Beedlist held her book tighter.\nEven Shock, who is taller than secrets, went still.\nAnd in the blue hands sat a little clay pot,\nsmall as a teacup,\nand empty,\nand patient.",
+      "image": "images/04.webp",
+      "imagePrompt": "Deep beneath the castle in a stone cellar lit by one warm amber lantern: an all-blue girl in a midnight-blue dress sits calmly on an old wooden crate, holding out a small empty clay pot in both hands, her blue face gentle and strange but never frightening; facing her in the lantern glow — Evilest staring with her arms coming uncrossed, Beedlist clutching her small black book to her chest, and the tall masked sister in her grey cloak standing very still at the edge of the light. Every sister is a small child except the tall masked one. Deep indigo shadows, one clear warm light source. Never gory, never horrific.",
+      "textPosition": "top",
+      "characters": ["leeblebeest", "evilest", "beedlist", "shock"],
+      "vocab": [
+        { "word": "cellars", "definition": "the cool dark rooms underneath a house" },
+        { "word": "patient", "definition": "good at waiting without making a fuss" }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The plan with no fighting in it",
+      "text": "\"Here's where we always went wrong,\" said Leeblebeest.\n\"We fought them. Fighting wakes people up.\nSo we won't lift a finger. We'll just be around:\na creak at nap time. A drip in the quiet.\nA little too much of the wrong kind of nothing.\n\nTired people leak. Upset people spill.\nAnd my little pot catches spills.\"\n\nShe turned the pot slowly around in her hands.\n\"Drip by drip, sisters. Nobody will notice.\nNobody guards against nothing at all.\"",
+      "image": "images/05.webp",
+      "imagePrompt": "In the lantern-lit stone cellar, the all-blue girl stands explaining her plan, slowly turning the small empty clay pot in her blue hands, wearing a small patient smile; around the single warm amber lantern the other three lean in — Evilest grinning despite herself, Beedlist watching over the top of her black book, the tall masked sister motionless in her grey cloak; on the stone wall behind them, soft indigo shadow-shapes of a creaking door, a falling drip, and a small moth. Every sister is a small child except the tall masked one. One clear warm light source against deep indigo. Never gory, never horrific.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest", "evilest", "beedlist", "shock"],
+      "vocab": [
+        { "word": "creak", "definition": "the small squeaky sound an old door or floor makes" },
+        { "word": "leak", "definition": "when little bits escape through a hole too small to see" }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Plip",
+      "text": "Nap time at the castle. Curtains drawn. Cozy.\nThen: tap. Then: creeeeak. Then a moth at the window.\nThen somebody's spoon, somewhere, stirring forever.\n\nMoon flipped and she flopped and she flumped and she huffed —\nand a tiny gold spark hopped right off of her huff,\nand rolled down the stair, and the wall, and the dark,\nand dripped in a pot she had never once seen.\n\nPlip.\nFar below, a small blue smile.\n\"One.\"",
+      "refrain": true,
+      "image": "images/06.webp",
+      "imagePrompt": "Tall vertical storybook composition split by the castle wall: in the upper half, the twins' cozy curtained bedroom at nap time, lit by soft afternoon light through the curtains — Moon flopped grumpily across her bed mid-huff with blankets kicked everywhere, the small winged puppy holding a pillow over her long ears, a little moth tapping at the windowpane; from Moon one tiny bright gold spark escapes and rolls in a thin dotted sparkle-trail down through the castle stones; in the lower, darker half the trail ends at a small clay pot held up by two blue hands, the single gold drop falling in, the all-blue girl's face lit faintly gold from below with a soft smile. Warm lamplit top, deep indigo bottom lit only by the pot's gold glow. Never frightening.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "leeblebeest"],
+      "vocab": [
+        { "word": "flumped", "definition": "flopped down grumpily with your whole body — a made-up word, but exactly right" },
+        { "word": "spark", "definition": "one tiny bit of light, like a baby star" }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "The twins who agree",
+      "text": "Now here is a thing that had never, not once,\nnot ever in five whole books, happened before:\n\n\"You're on my side of the sleep,\" snapped Moon.\n\"You yawned in my ear,\" her sister snapped back.\n\nThe room went so quiet the curtains looked shocked.\nThe twins who agree — who were born agreeing —\nlay glaring, too tired to remember they matched.\n\nAnd down in the dark the pot glowed brighter,\ngold sloshing inside like a small stolen sunset.\nLeeblebeest didn't gloat. Well. Mostly.\n\"Drip by drip,\" she told nobody. \"Drip by drip.\"",
+      "image": "images/07.webp",
+      "imagePrompt": "Night in the twins' bedroom, lit warm by one small bedside lamp: Moon and the small winged puppy back to back at opposite ends of the same big bed, both glaring tiredly over their shoulders at each other, the blanket tugged in both directions, the window curtains seeming to lean apart in shock; low in one dark corner of the picture, glimpsed through a glowing floor-crack, the small clay pot now a quarter full of swirling gold light, cradled in two blue hands. Gentle comedy in the quarrel, never mean; deep indigo night outside the window with a perfectly round full moon (never a crescent).",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "leeblebeest"],
+      "vocab": [
+        { "word": "snapped", "definition": "said something in a quick, grumpy bite of a voice" },
+        { "word": "sloshing", "definition": "the way water wobbles and splashes inside a cup you carry" }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Nothing to fight",
+      "text": "Cottontail knew what to do about villains.\nClaws. It was claws. It had always been claws.\nShe prowled every hallway. She pounced on a creak.\nThe creak was a floorboard. You can't arrest those.\n\nWinds threw the whole sky at the problem, gladly:\nhe blew the moth west and the tapping to sea.\nBut you can't blow away an already-lost nap.\nIt's already lost. The tired stays tired.\n\n\"WHERE is the monster?\" growled Cottontail, claws full of nothing.\nAnd nothing, politely, was all that she got.",
+      "image": "images/08.webp",
+      "imagePrompt": "A moonlit castle hallway and the open night sky in one scene: the pink-haired jaguar cub mid-pounce on a completely innocent creaky floorboard, claws out, ferociously baffled to find nothing there; through the tall open window beside her, the blue-haired sky jaguar rides a visible swooping ribbon of wind across the night, blowing a tiny moth away over the sea; warm gold wall lamps light the hallway clearly against the indigo night. Perfectly round full moon (never a crescent). Funny, energetic, never gory. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["cottontail", "winds"],
+      "vocab": [
+        { "word": "prowled", "definition": "walked slowly and quietly, hunting for something" },
+        { "word": "pounced", "definition": "jumped on something all at once, like a cat" }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Not like me",
+      "text": "By the third bad morning, the shine had gone somewhere.\nMoon's wings went up — and the rest of Moon didn't.\nBaby Lady said \"help,\" and it came out a whisper,\nso small that the fish all leaned out of the sea to hear.\n\nPurple Shine tried mama-magic. Pink Shine tried papa's:\nwarm blankets, warm soup, the lullaby twice.\nBut you can't pour sleep into somebody spilling.\n\n\"I don't feel like me,\" said Moon, very quietly.\nAnd that, right there, was the whole of the trouble.",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "A grey, tired morning at the castle: Moon sitting small on the terrace steps with her golden wings drooping and dim, lifting halfway and settling again; the small winged puppy beside her saying something tiny, while below them little fish lean up out of the calm sea to listen; behind the twins the small all-purple cat wraps a warm blanket around both of them and the fluffy rose-pink dog nudges over a steaming bowl of soup; all the usual sparkle faint and thin. Muted gold and soft grey over lavender stone. Tender, quiet, safe. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "purpleshine", "pinkshine"],
+      "vocab": [
+        { "word": "whisper", "definition": "talking so softly it's almost just breath" }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "The knock",
+      "pronunciations": { "bows": "boʊz" },
+      "text": "That evening there came a knock — soft, unhurried —\nand there on the doorstep stood somebody blue,\nwith a pot full of nearly-all-of-the-gold.\n\n\"I never stole this,\" said Leeblebeest, honestly.\n\"You dropped it. I caught it. There's just a bit left.\nOne more bad bedtime should do it.\"\n\nThen feet on the stairs — it was Cheeblest, breathless,\nbows flying loose like they do when it matters:\n\"It's her! The fifth bed! It's HER!\nDon't be upset — DON'T BE UPSET — it feeds the—\"\n\nwhich is very hard advice,\nif you think about it,\nto take.",
+      "image": "images/10.webp",
+      "imagePrompt": "Night at the castle's great arched wooden front door, warm gold light spilling out onto the steps: on the doorstep stands the all-blue girl, calm and unhurried, holding up the small clay pot now brimming with bright swirling gold light that lights her blue face from below; in the warm glowing doorway stand Moon and the small winged puppy, tired and dim, looking up at her; and up the castle steps behind the blue girl races Cheeblest, taking them two at a time, hair bows flying loose, mouth open mid-warning, one arm pointing at the blue girl. Every sister is a small child. No other children and no other people anywhere in the image — exactly these four characters, each appearing exactly once. Deep indigo night, perfectly round full moon (never a crescent). Dramatic but gentle, never gory.",
+      "textPosition": "top",
+      "characters": ["leeblebeest", "cheeblest", "moon", "babylady"],
+      "vocab": [
+        { "word": "unhurried", "definition": "taking your time, with no rush in you at all" },
+        { "word": "breathless", "definition": "so out of breath from running that words come out in pieces" }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "The deep whistling voice",
+      "text": "And into that worried and wobbling room\ncame a whistle. Low. Slow. Deep as wells.\n\nDirt stood in the doorway with soil on his paws,\nnot one bit surprised and not one bit hurried.\n\n\"You can't out-fight tired,\" he whistled. \"Can't out-shout it.\nBut I know the thing. I do it all seasons.\nCome and lie down in my garden.\"\n\n\"Lie DOWN?\" cried Cottontail. \"NOW? That's giving up!\"\n\"No,\" said Dirt, with his wide slow smile.\n\"It's seeds.\"",
+      "image": "images/11.webp",
+      "imagePrompt": "A warm crowded castle hall at night, everyone worried and mid-argument in the gold lamplight — and standing calm in the wide doorway, the soil-brown jaguar cub with leaf-green hair, garden soil dusted on his paws, mid-whistle, one paw gesturing gently back toward the moonlit garden behind him; the pink-haired jaguar cub spins toward him mid-protest with her claws out; Moon and the small winged puppy, dim and drooping, look up at him and listen. Warm gold lamplight, with earth-brown and leaf-green tones arriving into the indigo palette along with him. No rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["dirt", "cottontail", "moon", "babylady"],
+      "vocab": [
+        { "word": "seasons", "definition": "the four turns of the year — spring, summer, fall, and winter" }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Tucked in like seeds",
+      "text": "So out they went, under the round yellow moon,\nand lay themselves down in the warm brown earth —\na moon-girl, a puppy, a mama, a papa,\ntwo jaguar cubs — in rows, like the beans.\n\nAnd Dirt went along the row, tucking:\na pat of warm soil for a blanket's corner,\na leaf pulled up here, a worm shooed off there.\n\"Sleep first,\" he whistled, low as a root. \"Then flowers.\"\n\nAnd the castle hushed, and the garden held them,\nand one by one by two by three,\nthe whole tired family\nslept.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "The castle garden at night under a perfectly round full moon (never a crescent), moonlight silver on the leaves: the whole family lying tucked in neat rows in the warm brown soil between green bean rows like planted seeds, eyes closed and peaceful — Moon and the small winged puppy side by side, the small all-purple cat and the fluffy rose-pink dog curled close together, the pink-haired jaguar cub and the blue-haired sky jaguar sprawled comfortably; the soil-brown jaguar cub with leaf-green hair walks the row patting a corner of soil over each sleeper like tucking in a blanket; gold sparkle-fireflies drifting low. Deeply cozy and safe, warm earth browns under the indigo night. Each character appears exactly once — no duplicate characters. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["dirt", "moon", "babylady", "purpleshine", "pinkshine", "cottontail", "winds"],
+      "vocab": [
+        { "word": "soil", "definition": "the soft brown ground that things grow in — garden dirt" },
+        { "word": "hushed", "definition": "went quiet, the gentle way" }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "What calm is made of",
+      "text": "The pot went quiet.\nLeeblebeest shook it. She turned it. She listened.\nNot one drip more.\nBecause here is the thing that nobody told her:\n\ncalm hasn't got any upset in it.\nYou can't catch what nobody's spilling.\n\nAnd all of that gold, in the dark, in the quiet,\ndid what gold does when it finally rests.\nIt rooted.\nTick, went the pot. Tick. Tick. CRACK —\nand roots burst out of it, green and rude,\nand the little pot opened like a flower.",
+      "image": "images/13.webp",
+      "imagePrompt": "Night close-up at the garden's edge: the all-blue girl holding the small clay pot up beside her ear and shaking it, puzzled, her blue face lit gold from the pot — and the pot caught at the exact moment of bursting open: fine cracks glowing gold across the clay, small green roots and shoots pushing out through the cracks from the inside, tiny new leaves unfurling, soft gold sparks escaping. Her expression is pure surprise, not anger; never frightening. She is completely alone — exactly one blue girl in the whole image, no duplicate characters, no other people. Deep indigo night lit by the pot's gold-and-green glow, a perfectly round full moon (never a crescent) above.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest"],
+      "vocab": [
+        { "word": "calm", "definition": "the quiet, smooth feeling when nothing is wobbling inside you" },
+        { "word": "rooted", "definition": "grew roots — little underground arms that hold on and drink" }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "The root way home",
+      "text": "And up through the garden, where everyone slept,\nthe shine came home the slow way. The root way.\nNot a flash. Not a bang. A sprout.\n\nGold curled up through the rows like pea-vines,\nback into wings, back into voices,\nback into two twins dreaming one dream\n(they matched again — they matched even asleep).\n\nMoon's wings glowed first, like dawn under soil.\nBaby Lady's bark came back mid-snore.\nNothing looked like it grew that night.\nEverything had.\nThat's gardens for you.",
+      "image": "images/14.webp",
+      "imagePrompt": "The first pale gold of dawn over the castle garden: the family still asleep in their soil rows while ribbons of gold light curl up out of the earth around them like glowing pea-vine tendrils, winding gently back into Moon's wings — which are beginning to glow bright again — and around the small winged puppy's long curly ears; new green sprouts standing up all along the rows; at the row's end the soil-brown jaguar cub with leaf-green hair sleeps too, one paw resting over a seedling. Green and gold sprouting through the fading indigo night, hushed and full of quiet magic. Each character appears exactly once — no duplicate characters. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "dirt"],
+      "vocab": [
+        { "word": "sprout", "definition": "the first tiny green bit of a plant, just poking out" }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "A seed too",
+      "text": "Leeblebeest sat down in the bits of her pot,\nand for somebody blue, she looked awfully grey.\n\n\"Five sisters,\" she said. \"And I kept all the watch.\nSomebody had to stay up, keeping count.\nNobody let me — nobody ever —\"\nShe stopped.\nShe was tired. It's hard to say tired things.\n\nAnd Cheeblest — who once had been forgiven herself,\nback when forgiving was newly invented —\ncame and patted the warm brown earth beside her.\n\n\"Lie down,\" she said. \"That's how it starts.\nYou get to be a seed too.\"",
+      "image": "images/15.webp",
+      "imagePrompt": "Soft early morning in the garden: the all-blue girl sitting slumped and tired among the blossoming broken pieces of her clay pot — the clay bits sprouting little green shoots and small gold flowers around her — while Cheeblest kneels close beside her, patting the warm brown earth in invitation, her hair bows crooked from running, her smile kind; the first morning gold touching both girls' faces. Every sister is a small child. Gentle, forgiving, warm earth browns and soft golds. Never gory.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest", "cheeblest"],
+      "vocab": [
+        { "word": "forgiven", "definition": "when someone stops being mad at you and makes room for you again" }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "The garden party",
+      "pronunciations": { "wound": "waʊnd" },
+      "text": "The garden party had soup, of course,\nand beans (Dirt's beans), and a crooked proud cake,\nand every single sister at one long table —\neven a blue one, blinking in the daylight,\neven a stormy one, quiet at the end of the row.\n\nThen Moon and her sister stood up on their chairs\nand gave Dirt a gift, the way that they do:\npowers — his own — and this is what grew in:\nwherever Dirt sleeps, things grow.\n(He'd had it for years, if you asked the beans.\nNow it sparkled, was all. He liked it.)\n\nAnd when the party wound down with the moon,\nnobody argued at bedtime. Not once. Not anywhere.\nBecause deep in the dark, where nobody watches,\nin the boring-on-purpose, in the hush under everything,\nthe seeds were all busy becoming.\n\nGoodnight.",
+      "refrain": true,
+      "theEnd": "The End — of the sixth one.",
+      "image": "images/16.webp",
+      "imagePrompt": "A golden late-afternoon garden party at Castle Everstair: one long crowded table set right between the garden rows — steaming soup bowls, platters of green beans, a tall slightly-crooked cake; Moon and the small winged puppy standing on their chairs mid-gift, sprinkling gold sparkles down onto the soil-brown jaguar cub with leaf-green hair, who grins his wide slow grin as tiny green sprouts pop up around his paws; around the table the small all-purple cat, the fluffy rose-pink dog, the pink-haired jaguar cub and the blue-haired sky jaguar mid-cheer, Evilest laughing, Beedlist writing in her small black book, Cheeblest sitting beside the all-blue girl who blinks happily in the daylight — and at the far end of the row the tall masked sister in her grey cloak, present and unremarked, a soup bowl set before her. Every sister is a small child except the tall masked one. A crescent moon carved on a wooden garden arch; a perfectly round full moon (never a crescent) rising pale beyond the castle. Warm, crowded, golden, safe. Each character appears exactly once — no duplicate characters, exactly one pink-haired girl. No rabbits, no other animals.",
+      "textPosition": "top",
+      "characters": ["dirt", "moon", "babylady", "purpleshine", "pinkshine", "cottontail", "winds", "evilest", "cheeblest", "beedlist", "shock", "leeblebeest"],
+      "vocab": [
+        { "word": "crooked", "definition": "leaning a little sideways instead of standing up straight" },
+        { "word": "becoming", "definition": "turning, slowly and secretly, into what you're going to be" }
+      ]
+    }
+  ]
+}
