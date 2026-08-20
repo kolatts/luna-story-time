@@ -186,6 +186,7 @@ section.band { position: relative; padding: 4.5rem 1.4rem; }
 .suggest-form textarea:focus,
 .suggest-form input:focus { outline: 2px solid var(--gold); outline-offset: 2px; border-color: var(--gold); }
 .suggest-form .cta { border: none; cursor: pointer; font-size: 1.05rem; justify-self: center; }
+.turnstile-slot { display: flex; justify-content: center; }
 .form-status { text-align: center; min-height: 1.4em; font-size: .98rem; }
 .form-status.ok { color: var(--gold-soft); }
 .form-status.error { color: var(--pink); }

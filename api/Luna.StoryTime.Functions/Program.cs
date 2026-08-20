@@ -12,6 +12,8 @@ builder.Services
     .AddApplicationInsightsTelemetryWorkerService()
     .ConfigureFunctionsApplicationInsights();
 
+builder.Services.AddHttpClient();
+
 builder.Services.AddSingleton(_ =>
 {
     var connectionString = Environment.GetEnvironmentVariable("AzureWebJobsStorage")

@@ -9,13 +9,17 @@ using Microsoft.Extensions.Logging;
 
 namespace Luna.StoryTime.Functions.Functions;
 
-public class SubmitSuggestionFunction(TableClient tableClient, ILogger<SubmitSuggestionFunction> logger)
+public class SubmitSuggestionFunction(
+    TableClient tableClient,
+    IHttpClientFactory httpClientFactory,
+    ILogger<SubmitSuggestionFunction> logger)
 {
     private const int IdeaMinLength = 3;
     private const int IdeaMaxLength = 500;
     private const int NameMaxLength = 50;
     private const int LocationMaxLength = 100;
-    private const int DailyCap = 50;
+    private const int DailyCap = 10;
+    private const string TurnstileVerifyUrl = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
@@ -60,6 +64,11 @@ public class SubmitSuggestionFunction(TableClient tableClient, ILogger<SubmitSug
         var name = Truncate(request.Name, NameMaxLength);
         var location = Truncate(request.Location, LocationMaxLength);
 
+        if (!await VerifyTurnstileAsync(request.TurnstileToken))
+        {
+            return Friendly400("The magic gate didn't open — please try the check again.");
+        }
+
         if (!await TryCountTowardDailyCapAsync())
         {
             return new ObjectResult(new { ok = false, message = "The castle mailbox is full for today — please come back tomorrow!" })
@@ -78,6 +87,39 @@ public class SubmitSuggestionFunction(TableClient tableClient, ILogger<SubmitSug
 
         logger.LogInformation("Stored story suggestion {RowKey} ({Length} chars)", entity.RowKey, idea.Length);
         return new OkObjectResult(new { ok = true });
+    }
+
+    /// <summary>
+    /// Server-side Cloudflare Turnstile check (never trust the client). Mirrors
+    /// imagile-app's TurnstileVerificationService. Skipped when TURNSTILE_SECRET
+    /// is not configured (local dev); fails open on Cloudflare outages so a
+    /// Cloudflare blip never swallows a kid's story idea.
+    /// </summary>
+    private async Task<bool> VerifyTurnstileAsync(string? token)
+    {
+        var secret = Environment.GetEnvironmentVariable("TURNSTILE_SECRET");
+        if (string.IsNullOrWhiteSpace(secret))
+        {
+            return true;
+        }
+        if (string.IsNullOrWhiteSpace(token))
+        {
+            return false;
+        }
+
+        try
+        {
+            var client = httpClientFactory.CreateClient();
+            using var response = await client.PostAsync(TurnstileVerifyUrl, new FormUrlEncodedContent(
+                new Dictionary<string, string> { ["secret"] = secret, ["response"] = token }));
+            using var doc = await JsonDocument.ParseAsync(await response.Content.ReadAsStreamAsync());
+            return doc.RootElement.TryGetProperty("success", out var success) && success.GetBoolean();
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException or JsonException)
+        {
+            logger.LogWarning(ex, "Turnstile siteverify unreachable; allowing submission");
+            return true;
+        }
     }
 
     private static string? Truncate(string? value, int maxLength)

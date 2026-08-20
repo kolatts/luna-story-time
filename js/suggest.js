@@ -5,10 +5,22 @@
   var form = document.getElementById("suggestForm");
   if (!form) return;
 
-  var API_BASE =
-    location.hostname === "localhost" || location.hostname === "127.0.0.1"
-      ? "http://localhost:7071/api"
-      : "https://luna-storytime-functions.azurewebsites.net/api";
+  var isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+  var API_BASE = isLocal
+    ? "http://localhost:7071/api"
+    : "https://luna-storytime-functions.azurewebsites.net/api";
+
+  /* Cloudflare Turnstile (skipped during local playtests — the API skips
+     verification too when no secret is configured) */
+  var TURNSTILE_SITEKEY = "0x4AAAAAAC8hdd6wCVRVf8YH";
+  var turnstileWidgetId = null;
+  window.onTurnstileReady = function () {
+    if (isLocal || !window.turnstile) return;
+    turnstileWidgetId = window.turnstile.render("#suggestTurnstile", {
+      sitekey: TURNSTILE_SITEKEY,
+      theme: "dark"
+    });
+  };
 
   var ideaEl = document.getElementById("suggestIdea");
   var nameEl = document.getElementById("suggestName");
@@ -31,6 +43,17 @@
       return;
     }
 
+    var turnstileToken = "";
+    if (!isLocal) {
+      turnstileToken = (window.turnstile && turnstileWidgetId !== null)
+        ? window.turnstile.getResponse(turnstileWidgetId)
+        : "";
+      if (!turnstileToken) {
+        setStatus("One moment — the magic gate is still checking. Try again in a second.", "error");
+        return;
+      }
+    }
+
     button.disabled = true;
     setStatus("Sending your idea to the castle…");
 
@@ -41,7 +64,8 @@
         idea: idea,
         name: nameEl.value.trim(),
         location: locationEl.value.trim(),
-        website: form.elements.website.value
+        website: form.elements.website.value,
+        turnstileToken: turnstileToken
       })
     })
       .then(function (r) {
@@ -64,6 +88,9 @@
           ? err.message
           : "The castle owls are napping — please try again in a moment.", "error");
         button.disabled = false;
+        if (!isLocal && window.turnstile && turnstileWidgetId !== null) {
+          try { window.turnstile.reset(turnstileWidgetId); } catch (e) { /* not rendered */ }
+        }
       });
   });
 })();

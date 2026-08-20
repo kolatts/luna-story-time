@@ -74,6 +74,7 @@
         <div class="visually-hidden" aria-hidden="true">
           <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
         </div>
+        <div id="suggestTurnstile" class="turnstile-slot"></div>
         <button type="submit" class="cta">🌠 Send it to the castle</button>
         <p id="suggestStatus" class="form-status" role="status" aria-live="polite"></p>
       </form>
@@ -89,5 +90,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/suggest.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileReady&render=explicit" async defer></script>
 </body>
 </html>
