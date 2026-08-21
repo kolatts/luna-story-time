@@ -1,0 +1,413 @@
+{
+  "slug": "hairs-and-the-growl-that-meant-please",
+  "series": "dreamed-up-by-you",
+  "bookNumber": 1,
+  "title": "Hairs and the Growl That Meant Please",
+  "subtitle": "Dreamed up by Luna from Ohio",
+  "authors": [
+    "Luna"
+  ],
+  "ageRange": "4-8",
+  "refrain": "But scared is not the same as sure.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#D7E3F0",
+    "moss": "#6E8B6A",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    {
+      "id": "hairs",
+      "name": "Hairs",
+      "sheet": "Hairs: an enormous gentle grey wolf, soft dove-grey fur, glossy jet-black tail; extraordinarily long silver-grey hair growing from his head, neck and shoulders and flowing far behind him in ropes and drifts, a hundred years long and never brushed; huge soft amber eyes under kind heavy brows, rounded ears, big dark nose; mouth always closed or softly open — never bared teeth, never snarling, never fierce, never a predator; shy and slow and mountain-sized, like a hill that stood up. Gentle and sad-eyed, not frightening."
+    },
+    {
+      "id": "fern",
+      "name": "Princess Fern",
+      "sheet": "Princess Fern: a seven-year-old girl, warm brown skin, dark curly hair in two round puffs, a small crooked tin crown sitting slightly askew; moss-green hooded cloak over a mustard-yellow dress, sturdy brown boots, a small woven berry basket; big dark eyes, a determined chin."
+    },
+    {
+      "id": "bee",
+      "name": "Baby Bee",
+      "sheet": "Baby Bee: a two-year-old toddler girl, warm brown skin, one wispy curl on top of her head, very round cheeks, a honey-yellow knitted romper with tiny round buttons, bare feet; always holding a soft grey knitted blanket; calm, unbothered, enormous dark eyes."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: in a misty blue-green wood, an enormous gentle grey wolf with a glossy black tail sits and leans his huge head all the way down toward a tiny two-year-old girl who stands looking straight up at him, her small hand raised; his impossibly long silver hair spills out around them and away into the trees, catching the light like rope and river; a seven-year-old girl in a moss-green cloak and crooked tin crown stands just behind her little sister with one hand out. The wolf's mouth is closed, his amber eyes enormous and kind — no teeth, nothing frightening. Warm gold light breaking through the trees, floating sparkles. Open sky and mist in the upper third for the title. No other people, no other animals."
+  },
+  "questions": [
+    "The whole village had one word for Hairs — hungry — and not one of them had ever met him. Has anyone ever decided something about you before they knew you? How did that feel?",
+    "Hairs was hungry. Just not the way everyone thought. What do you think he was really hungry for?",
+    "Fern says she was scared the entire time she was braiding, and she braided anyway. Do you have to stop being scared before you can do a brave thing?",
+    "Baby Bee only had one word, and she chose to spend it on \"please.\" Is there something you've been wanting to ask somebody, but the words keep coming out wrong? Who could you practice on?"
+  ],
+  "lookAndFind": "One long silver strand of Hairs' hair sneaks into every single picture — even the ones before you meet him. Can you find it on every page? (Bee's grey blanket is hiding in most of them, too.)",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The rule about the Bramblewood",
+      "text": "Every village has one rule it never explains.\nOurs was this: do not go past the thorn gate.\n\nPast the thorn gate was the Bramblewood,\nand in the Bramblewood was the wolf,\nand about the wolf there was only one word,\nand everyone in the village used it.\n\nHungry.",
+      "image": "images/01.webp",
+      "imagePrompt": "Wide establishing view at golden dusk: a small cozy village of round thatched cottages with warm lit windows at the bottom of a green hill; at the top of the hill a tall arched gate woven entirely of dark brambles and thorns, and beyond it a deep misty blue-green wood going on forever. Nobody visible, empty lane, warm and storybook, a little mysterious but safe. Perfectly round full moon low in the sky (never a crescent). No people, no animals.",
+      "textPosition": "top",
+      "characters": [],
+      "vocab": [
+        {
+          "word": "rule",
+          "definition": "a thing you are supposed to do, or not do"
+        },
+        {
+          "word": "hungry",
+          "definition": "needing food in your tummy"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "What they said about Hairs",
+      "text": "They said his coat was grey as an old rain.\nThey said his tail was black as a shut door.\nThey said his hair had been growing a hundred years\nand had never once been brushed.\n\nThey said his name was Hairs.\n\nNobody in the village had ever met him.\nThat did not slow anybody down.",
+      "image": "images/02.webp",
+      "imagePrompt": "A storybook rumor-picture: the enormous grey wolf shown far away and small among misty blue-green trees, mostly a silhouette with two soft amber eyes glowing warmly and his impossibly long silver hair trailing off between the trunks into the fog. Dreamy, hushed, curious rather than scary — the wolf is calm and still, ears soft, mouth closed. No people, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "coat",
+          "definition": "the fur an animal wears all over"
+        },
+        {
+          "word": "brushed",
+          "definition": "combed smooth with a brush"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Princess Fern and Baby Bee",
+      "text": "Princess Fern was seven, and a princess of the small kind:\none tin crown, slightly crooked, and a great deal of opinion.\n\nBaby Bee was two. Baby Bee had one word.\nShe spent it carefully, the way you spend a last coin,\nand some days she didn't spend it at all.\n\nThursdays were blackberry days.",
+      "image": "images/03.webp",
+      "imagePrompt": "Sunny afternoon in a tangle of blackberry brambles at the edge of a meadow: Princess Fern reaching up on tiptoe to drop a fat blackberry into her woven basket, her tin crown sliding sideways; Baby Bee sitting in the grass beside her, blanket in her lap, cheeks and hands purple with berry juice, looking straight at the viewer. Warm gold light, sparkles in the air, deeply cozy. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "top",
+      "characters": [
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "opinion",
+          "definition": "what you think about something, said out loud"
+        },
+        {
+          "word": "carefully",
+          "definition": "slowly, with lots of attention"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Over the gate",
+      "text": "The wind took Bee's grey blanket\nand folded it neatly over the thorn gate,\nthe way wind does when it has plans.\n\nFern looked at the gate.\nFern looked at Bee.\nBee looked at the blanket.\n\n\"Fine,\" said Fern, to nobody. \"Fine.\"",
+      "image": "images/04.webp",
+      "imagePrompt": "At the tall arched bramble-and-thorn gate on the hilltop, late afternoon wind blowing: the soft grey knitted blanket has landed draped high on the thorny arch, out of reach, one corner fluttering. Princess Fern stands with hands on hips glaring up at it, cloak whipping; Baby Bee stands beside her pointing up at the blanket, perfectly calm. Beyond the gate the misty blue-green wood waits. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "gate",
+          "definition": "a door in a fence or a wall"
+        },
+        {
+          "word": "neatly",
+          "definition": "tidy, and all lined up"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The trap",
+      "text": "Inside, the wood was strung with ropes.\nNot ropes — hair. Long silver hair, hooked on every thorn,\nlooped through every branch, drifted over every root\nlike a hundred years of somebody's morning.\n\nFern's boot caught. Then her cloak. Then her crown.\n\nSomething in the dark went GRRRR.\n\nFern's whole body said run.",
+      "refrain": true,
+      "image": "images/05.webp",
+      "imagePrompt": "Inside the deep blue-green Bramblewood, dim and dappled with shafts of warm light: long silvery strands of hair are strung everywhere like harp strings and cobwebby ropes, hooked on thorns, looped through branches, drifting over roots — the whole wood laced with silver. Princess Fern is tangled mid-step, her cloak and crown snagged on silver strands, eyes wide, turning toward a dark gap between two trunks; Baby Bee holds a fistful of her sister's cloak, unafraid. Dramatic but gentle, no monster visible, nothing frightening. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "top",
+      "characters": [
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "thorn",
+          "definition": "a sharp little spike that grows on a plant"
+        },
+        {
+          "word": "looped",
+          "definition": "went around and around in circles"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "The growl",
+      "text": "He came out slow, and he was enormous.\nGrey as an old rain. Tail black as a shut door.\nHair pouring off him in long silver rivers\nthat went on into the trees and did not stop.\n\nHe opened his mouth.\n\nGRRRR, said Hairs.\n\nFern shut her eyes and waited to be a story\nthat the village would tell.",
+      "image": "images/06.webp",
+      "imagePrompt": "The enormous grey wolf steps slowly out from between two mossy trunks into a shaft of warm light, filling most of the frame — huge, soft, sad-eyed, mouth softly open, absolutely no teeth showing, ears gently back; his silver hair pours off him in long rivers that vanish into the trees behind. Small in the foreground below him, Princess Fern stands with her eyes squeezed shut and Baby Bee peeking calmly around her sister's cloak. Awe, not horror — the wolf reads as gentle and enormous, like weather. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "enormous",
+          "definition": "very, very big"
+        },
+        {
+          "word": "pouring",
+          "definition": "flowing out, the way water does"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "What was actually happening",
+      "text": "Nothing happened.\n\nNothing kept on happening\nuntil Fern got curious enough to peek.\n\nHairs had not come one step closer.\nHe couldn't. Every thorn in the Bramblewood\nheld a piece of his hair, and he stood in the middle of it\nlike a kite in a tree.\n\nThe wolf was more caught than they were.",
+      "image": "images/07.webp",
+      "imagePrompt": "Pulled-back view showing the whole clearing: the enormous grey wolf stands in the middle of a great silver web of his own hair, every long strand hooked and stretched out to a hundred thorns and branches all around him like the strings of a harp — clearly stuck, one paw lifted, looking down apologetically. Princess Fern has opened one eye and is staring, mouth open in realization; Baby Bee sits on a root beside her. Warm dappled light, tender and a little funny. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "top",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "curious",
+          "definition": "really wanting to know about something"
+        },
+        {
+          "word": "caught",
+          "definition": "stuck, and not able to get away"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Hungry",
+      "text": "\"I'm hungry,\" said Hairs.\n\nAt least, that is what he meant.\nWhat came out was GRRRR,\nbecause a voice that hasn't been used in a hundred years\ncomes out the shape it was left in.\n\nFern took one step back. Her heart said danger.\nHer eyes said he's crying.",
+      "refrain": true,
+      "image": "images/08.webp",
+      "imagePrompt": "Close, quiet moment: the enormous grey wolf's face fills the left of the frame, huge amber eyes shining wet with one bright tear caught in the fur, mouth softly open, ears flat with embarrassment, no teeth at all; Princess Fern is small at the right, one boot behind her, hand out, caught exactly between backing away and staying, her face confused and softening; Baby Bee stands beside her looking up steadily. Deep blue-green shadow, one warm shaft of light on the wolf's eyes. Tender, not scary. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "danger",
+          "definition": "something that could hurt you"
+        },
+        {
+          "word": "voice",
+          "definition": "the sound you make when you talk"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Bee spends her word",
+      "text": "Bee walked out from behind her sister.\nTwo years old, bare feet, blanket under one arm.\nShe stood in front of the biggest wolf in the world\nand looked all the way up.\n\nThen Baby Bee spent her one word.\n\n\"Please,\" said Bee.\n\nThe whole wood went quiet to hear it.",
+      "image": "images/09.webp",
+      "imagePrompt": "Low storybook view from behind and below: tiny Baby Bee stands alone in the open, bare feet in the moss, grey blanket tucked under one arm, head tipped all the way back to look up at the enormous grey wolf who towers over her, leaning down toward her with astonished gentle amber eyes and closed mouth. Princess Fern is a few steps behind, frozen, hand half-raised. The whole clearing glows — sparkles and floating pollen hanging still in the hush. Warm gold light breaking through blue-green trees. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "top",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "quiet",
+          "definition": "with no noise at all"
+        },
+        {
+          "word": "please",
+          "definition": "the kind word you say when you are asking for something"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "The growl that meant please",
+      "text": "And Hairs sat down. Just — sat down, in all that hair.\n\n\"That's the one,\" he said, and this time\nFern heard the words inside the growl.\n\"That's the word I've been practicing.\nI've been practicing since before you were born, small one.\nIt keeps coming out wrong.\"\n\n\"Practicing to say what?\" said Fern.\n\n\"Please come to supper. I've never had anyone.\"",
+      "image": "images/10.webp",
+      "imagePrompt": "The enormous grey wolf has sat down heavily in a great soft pile of his own silver hair, shoulders low, looking almost shy, head tilted, huge amber eyes on the children, mouth gently open mid-word, no teeth. Princess Fern has stepped closer and is listening hard, head tipped; Baby Bee has already climbed into the nearest coil of silver hair and is sitting in it like a nest. Warm intimate light in the blue-green clearing, sparkles. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "practicing",
+          "definition": "doing a thing again and again to get better at it"
+        },
+        {
+          "word": "supper",
+          "definition": "the meal you eat in the evening"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Hungry for what",
+      "text": "A hundred years of Thursdays.\nA pot on, a fire lit, three bowls set out.\nA hundred years of walking to the thorn gate\nto ask, and hearing his own voice, and turning around.\n\n\"They run,\" said Hairs. \"I would run from me too.\"\n\nFern's heart still said danger. It said it quietly now.\nHer hands were already reaching for his hair.",
+      "image": "images/11.webp",
+      "imagePrompt": "A memory picture, softly faded at the edges like an old page: inside a big cozy hollow-tree den, a small fire and a covered pot; three empty wooden bowls set neatly on a low stone table, waiting, a little dusty. Through the round doorway, far off, the enormous grey wolf is seen from behind walking away from the distant thorn gate with his head down, endless silver hair trailing behind him. Warm gold firelight against deep blue-green evening. Lonely but tender. No people, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "reaching",
+          "definition": "stretching your hands out toward something"
+        },
+        {
+          "word": "quietly",
+          "definition": "in a very soft, small voice"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "The braid",
+      "text": "\"Hold this,\" said Fern, and Bee held it.\n\nOver, under, over — the way you do.\nThorn by thorn the wood let go of him.\nGrey silver rope, thick as a river,\na hundred years long and getting shorter.\n\nFern was scared the entire time. She braided anyway.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "Busy, joyful working scene: Princess Fern stands on a mossy log with her sleeves pushed up, braiding an enormous rope of silver hair — three thick shining strands crossing over and under in her hands; Baby Bee sits below holding the finished end of the braid in both fists, blanket over her shoulder like a cape; the enormous grey wolf lies down patiently with his chin on his paws, eyes closed, utterly content. All around them the thorns are springing free, empty. Warm light, floating sparkles. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "braided",
+          "definition": "crossed three ropes over and under to make one thick rope"
+        },
+        {
+          "word": "scared",
+          "definition": "the shaky feeling you get when something might be bad"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Standing up",
+      "text": "When the last thorn let go, Hairs stood.\n\nHe was even bigger standing.\nHe was even gentler standing.\nThe braid lay behind him through the whole Bramblewood,\nshining, like a path somebody had finally finished.\n\n\"Oh,\" said Hairs, looking at his own feet. \"There they are.\"",
+      "image": "images/13.webp",
+      "imagePrompt": "The enormous grey wolf stands tall and free for the first time, head lifted, huge amber eyes soft and amazed, mouth closed in a gentle almost-smile; behind him one thick shining silver braid winds away like a glowing rope path through the whole blue-green wood into the distance. He is looking down at his own big grey paws, which are visible on the moss. Princess Fern and Baby Bee stand small beside his front leg, both looking up, delighted. Golden evening light through the trees, sparkles. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "top",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "gentler",
+          "definition": "softer and kinder"
+        },
+        {
+          "word": "shining",
+          "definition": "giving off a bright, pretty light"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Three bowls",
+      "text": "Supper was blackberries and brown bread\nand something orange in a pot with a lid on.\n\nThree bowls, already out. Already waiting.\nAlready a little bit dusty.\n\nBee ate with her hands. Fern ate two helpings.\nHairs mostly watched them eat,\nwhich is its own kind of full.",
+      "image": "images/14.webp",
+      "imagePrompt": "Warm cozy supper inside the big hollow-tree den: a low stone table with three wooden bowls, a covered pot of orange soup steaming, a loaf of brown bread and a heap of blackberries; Baby Bee eating happily with both hands, face a mess; Princess Fern mid-second-helping with her crown pushed back; the enormous grey wolf curled around the whole table, chin resting on the stone, just watching them with shining amber eyes, mouth closed, deeply happy. Firelight gold against deep indigo evening outside the round doorway. No other children and no other people in the picture; each character appears exactly once. No other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "bowls",
+          "definition": "round dishes you eat out of"
+        },
+        {
+          "word": "helpings",
+          "definition": "one serving of food — a second helping means more"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "The village comes to look",
+      "text": "The village came to the thorn gate that night,\nall of them, standing well back, being very brave together.\n\nHairs opened his mouth. GRRRR, said Hairs.\n\nEverybody flinched.\n\n\"He said please,\" said Fern. \"He says it like that.\nYou get used to it.\"\n\nAnd they were still scared, most of them, a little.",
+      "image": "images/15.webp",
+      "imagePrompt": "Night at the bramble gate, lanterns held high: a small crowd of villagers — grown men and women in cloaks and shawls, huddled together well back, holding lanterns, eyes wide, half of them leaning away. On the wood side of the open gate stands the enormous grey wolf, mouth softly open mid-growl with absolutely no teeth showing, ears politely forward, one silver braid coiled behind him; Princess Fern stands right in front of him with one hand up, explaining to the crowd, completely unbothered; Baby Bee holds the tip of the braid. Warm lantern gold against deep indigo night, perfectly round full moon above (never a crescent). Gentle and a little funny, nobody in danger.",
+      "textPosition": "top",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "flinched",
+          "definition": "jumped a little because something surprised you"
+        },
+        {
+          "word": "brave",
+          "definition": "doing the thing even though you are scared"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Thursdays",
+      "text": "Now the Bramblewood has a path through it,\nsilver, and it needs re-braiding about once a month,\nand Bee is in charge of holding the end.\n\nNow there are more than three bowls.\n\nAnd when somebody new comes down the path\nand hears that sound and stops —\nthe village doesn't say hungry anymore.\nThe village says, \"Keep walking. That's how he says hello.\"",
+      "refrain": true,
+      "theEnd": "The End — of the one Luna dreamed up.",
+      "image": "images/16.webp",
+      "imagePrompt": "Big warm final scene: a long table set right in the clearing of the Bramblewood under strings of little glowing lanterns, loaded with bowls and bread and blackberries; villagers in cloaks and shawls seated all along it, laughing and passing food; the enormous grey wolf curled around the far end like a grey hillside, chin on the table, eyes closed in bliss, his single shining silver braid winding away down a path through the trees; Princess Fern standing on the bench with her crooked crown, and Baby Bee holding the very end of the braid. Golden lantern light, deep indigo night above, sparkles and stardust, perfectly round full moon (never a crescent). Open sky in the upper third. Joyful and cozy.",
+      "textPosition": "bottom",
+      "characters": [
+        "hairs",
+        "fern",
+        "bee"
+      ],
+      "vocab": [
+        {
+          "word": "path",
+          "definition": "a track you can walk along"
+        },
+        {
+          "word": "silver",
+          "definition": "a shiny, pale grey-white color"
+        }
+      ]
+    }
+  ]
+}

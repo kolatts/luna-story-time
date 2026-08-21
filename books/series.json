@@ -54,7 +54,15 @@
       "id": "dreamed-up-by-you",
       "name": "Dreamed Up By You",
       "description": "Stories grown from ideas readers sent to the castle.",
-      "books": []
+      "books": [
+        {
+          "slug": "hairs-and-the-growl-that-meant-please",
+          "title": "Hairs and the Growl That Meant Please",
+          "subtitle": "Dreamed up by Luna from Ohio",
+          "ageRange": "4-8",
+          "cover": "books/hairs-and-the-growl-that-meant-please/images/cover.webp"
+        }
+      ]
     }
   ]
 }
