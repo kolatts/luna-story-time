@@ -135,6 +135,8 @@ jobs:
       # The push is the workflow's job, not Claude's — a run that produced nothing must
       # go red instead of reporting success with an empty diff.
       - name: Commit and push the new book
+        env:
+          PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f .no-book-this-run ]; then
             echo "::notice::Claude stopped without writing a book: $(cat .no-book-this-run)"
@@ -149,4 +151,20 @@ jobs:
           git add -A
           git status --short
           git commit -m "Add new Dreamed Up By You book (issue #${{ github.event.issue.number }})"
-          git push
+
+          # claude-code-action leaves git authenticated with its own OIDC app token,
+          # then revokes that token in its cleanup step — which runs just before this
+          # one. Drop the dead credential and push with the workflow's GITHUB_TOKEN.
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          git push "https://x-access-token:${PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
+
+      # Claude comments and closes the issue before this job pushes, so a failed push
+      # would leave the issue closed advertising a book that never shipped.
+      - name: Reopen the issue if nothing shipped
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue reopen ${{ github.event.issue.number }} || true
+          gh issue comment ${{ github.event.issue.number }} --body \
+            "⚠️ The build failed before the book reached \`main\` — nothing shipped, and any link above is not live yet. Run log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
