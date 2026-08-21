@@ -41,7 +41,7 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           plugin_marketplaces: "https://github.com/kolatts/claude-marketplace.git"
-          plugins: "imagile-dev-tools@claude-marketplace"
+          plugins: "imagile-dev-tools@kolatts-marketplace"
           claude_args: |
             --allowedTools "Read,Glob,Grep,Edit,Write,Skill,Bash"
             --max-turns 400
