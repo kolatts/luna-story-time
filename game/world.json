@@ -1,0 +1,795 @@
+{
+  "tileTypes": {
+    ".": {
+      "terrain": "grass",
+      "walkable": true
+    },
+    ",": {
+      "terrain": "path",
+      "walkable": true
+    },
+    "T": {
+      "terrain": "tree",
+      "walkable": false
+    },
+    "#": {
+      "terrain": "rock",
+      "walkable": false
+    },
+    "~": {
+      "terrain": "water",
+      "walkable": false
+    },
+    "s": {
+      "terrain": "sand",
+      "walkable": true
+    },
+    "d": {
+      "terrain": "cavefloor",
+      "walkable": true
+    },
+    "c": {
+      "terrain": "cavewall",
+      "walkable": false
+    },
+    "f": {
+      "terrain": "floor",
+      "walkable": true
+    },
+    "w": {
+      "terrain": "wall",
+      "walkable": false
+    },
+    "D": {
+      "terrain": "castledoor",
+      "walkable": true
+    },
+    "o": {
+      "terrain": "flowers",
+      "walkable": true
+    },
+    "*": {
+      "terrain": "glow",
+      "walkable": true
+    }
+  },
+  "maps": {
+    "grounds": {
+      "name": "Castle Grounds",
+      "outdoor": true,
+      "tiles": [
+        "T.To.TTTTTTTT.oT.T",
+        "T........D.......T",
+        "T.....oo,,,oo....T",
+        "T..T..o..,..o.T..T",
+        "T........,.......T",
+        ".........,........",
+        "..o.T....,...T.o..",
+        "..o......,.....o..",
+        "T..T.T......T.oT.T",
+        "T#...........o.o#T",
+        "T..T..T.......TT#T",
+        "TT.TToTTTTTToTT.TT"
+      ],
+      "exits": [
+        {
+          "x": 0,
+          "y": 5,
+          "to": "shore",
+          "tx": 16,
+          "ty": 5
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "to": "shore",
+          "tx": 16,
+          "ty": 6
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "to": "shore",
+          "tx": 16,
+          "ty": 7
+        },
+        {
+          "x": 17,
+          "y": 5,
+          "to": "cave",
+          "tx": 1,
+          "ty": 5
+        },
+        {
+          "x": 17,
+          "y": 6,
+          "to": "cave",
+          "tx": 1,
+          "ty": 6
+        },
+        {
+          "x": 17,
+          "y": 7,
+          "to": "cave",
+          "tx": 1,
+          "ty": 7
+        }
+      ],
+      "door": {
+        "x": 9,
+        "y": 1,
+        "toRoom": "hall"
+      },
+      "resources": [
+        {
+          "x": 5,
+          "y": 4,
+          "type": "moonflower"
+        },
+        {
+          "x": 13,
+          "y": 4,
+          "type": "moonflower"
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "silverberry"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "type": "silverberry"
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "type": "branch"
+        },
+        {
+          "x": 14,
+          "y": 7,
+          "type": "branch"
+        },
+        {
+          "x": 7,
+          "y": 10,
+          "type": "branch"
+        },
+        {
+          "x": 11,
+          "y": 9,
+          "type": "stone"
+        },
+        {
+          "x": 4,
+          "y": 9,
+          "type": "stone"
+        }
+      ],
+      "npcs": [
+        "babylady",
+        "dirt"
+      ]
+    },
+    "shore": {
+      "name": "Moonlit Shore",
+      "outdoor": true,
+      "tiles": [
+        "~~~~~~~~~~~~~~~~~~",
+        "~~~~~~~~~~~~~~~~~~",
+        "~~~~~~~~~~~~~~~~~~",
+        "ss#ssss,,,ssssssss",
+        "ssssssss,sssssssss",
+        "ssssssss,sssssssss",
+        "ssssssss,sssssssss",
+        "ssssssss,sssssssss",
+        "ssssssss,sssssssss",
+        "ssssssss,sssssssss",
+        "s#ssssssssssssss#s",
+        "s#ssssssssssssssss"
+      ],
+      "exits": [
+        {
+          "x": 17,
+          "y": 5,
+          "to": "grounds",
+          "tx": 1,
+          "ty": 5
+        },
+        {
+          "x": 17,
+          "y": 6,
+          "to": "grounds",
+          "tx": 1,
+          "ty": 6
+        },
+        {
+          "x": 17,
+          "y": 7,
+          "to": "grounds",
+          "tx": 1,
+          "ty": 7
+        }
+      ],
+      "resources": [
+        {
+          "x": 3,
+          "y": 5,
+          "type": "pearl"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "type": "pearl"
+        },
+        {
+          "x": 2,
+          "y": 8,
+          "type": "seashell"
+        },
+        {
+          "x": 15,
+          "y": 5,
+          "type": "seashell"
+        },
+        {
+          "x": 5,
+          "y": 9,
+          "type": "kelp"
+        },
+        {
+          "x": 12,
+          "y": 4,
+          "type": "kelp"
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "sandcrystal"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "type": "sandcrystal"
+        },
+        {
+          "x": 9,
+          "y": 10,
+          "type": "sandcrystal"
+        }
+      ],
+      "npcs": []
+    },
+    "cave": {
+      "name": "Glimmer Cave",
+      "outdoor": true,
+      "tiles": [
+        "cccccccccccccccccc",
+        "cccccccccccccccccc",
+        "cccccccccccccccccc",
+        "cccddd*ddddddddccc",
+        "cccdddcdddd*cddddd",
+        "ddddddddd*dddddddd",
+        "dddddd*dddddd*dddd",
+        "ddddddddddcddddddd",
+        "cccddcddd*dddddddd",
+        "cccddddddddddddccc",
+        "cccccccccccccccccc",
+        "cccccccccccccccccc"
+      ],
+      "exits": [
+        {
+          "x": 0,
+          "y": 5,
+          "to": "grounds",
+          "tx": 16,
+          "ty": 5
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "to": "grounds",
+          "tx": 16,
+          "ty": 6
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "to": "grounds",
+          "tx": 16,
+          "ty": 7
+        }
+      ],
+      "resources": [
+        {
+          "x": 5,
+          "y": 4,
+          "type": "crystal"
+        },
+        {
+          "x": 11,
+          "y": 8,
+          "type": "crystal"
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "type": "mushroom"
+        },
+        {
+          "x": 13,
+          "y": 4,
+          "type": "mushroom"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "gem"
+        },
+        {
+          "x": 10,
+          "y": 9,
+          "type": "gem"
+        },
+        {
+          "x": 6,
+          "y": 9,
+          "type": "moss"
+        },
+        {
+          "x": 12,
+          "y": 7,
+          "type": "moss"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "moss"
+        }
+      ],
+      "npcs": [
+        "cottontail",
+        "winds"
+      ]
+    }
+  },
+  "resources": {
+    "moonflower": {
+      "name": "Moonflower",
+      "emoji": "🌸",
+      "node": "🌸",
+      "biome": "grounds"
+    },
+    "silverberry": {
+      "name": "Silver Berry",
+      "emoji": "🫐",
+      "node": "🫐",
+      "biome": "grounds"
+    },
+    "branch": {
+      "name": "Branch",
+      "emoji": "🪵",
+      "node": "🌿",
+      "biome": "grounds"
+    },
+    "stone": {
+      "name": "Stone",
+      "emoji": "🪨",
+      "node": "🪨",
+      "biome": "grounds"
+    },
+    "pearl": {
+      "name": "Sea-Pearl",
+      "emoji": "🫧",
+      "node": "🦪",
+      "biome": "shore"
+    },
+    "seashell": {
+      "name": "Seashell",
+      "emoji": "🐚",
+      "node": "🐚",
+      "biome": "shore"
+    },
+    "kelp": {
+      "name": "Kelp",
+      "emoji": "🌿",
+      "node": "🪸",
+      "biome": "shore"
+    },
+    "sandcrystal": {
+      "name": "Sand-Crystal",
+      "emoji": "✨",
+      "node": "✨",
+      "biome": "shore"
+    },
+    "crystal": {
+      "name": "Crystal Shard",
+      "emoji": "🔮",
+      "node": "💠",
+      "biome": "cave"
+    },
+    "mushroom": {
+      "name": "Mushroom",
+      "emoji": "🍄",
+      "node": "🍄",
+      "biome": "cave"
+    },
+    "gem": {
+      "name": "Gem",
+      "emoji": "💎",
+      "node": "💎",
+      "biome": "cave"
+    },
+    "moss": {
+      "name": "Moss",
+      "emoji": "🍀",
+      "node": "🍀",
+      "biome": "cave"
+    }
+  },
+  "recipes": [
+    {
+      "id": "bedframe",
+      "name": "Driftwood Bed",
+      "emoji": "🛏️",
+      "needs": {
+        "branch": 4,
+        "stone": 2
+      },
+      "unlock": {
+        "type": "start"
+      },
+      "flavor": "A snug bed built from branches the sea polished smooth."
+    },
+    {
+      "id": "flowerpot",
+      "name": "Moonflower Pot",
+      "emoji": "🪴",
+      "needs": {
+        "moonflower": 3,
+        "stone": 1
+      },
+      "unlock": {
+        "type": "start"
+      },
+      "flavor": "A little clay pot that keeps the moonflowers smiling all night."
+    },
+    {
+      "id": "pathstones",
+      "name": "Garden Stepping Stones",
+      "emoji": "🪨",
+      "needs": {
+        "stone": 3,
+        "branch": 1
+      },
+      "unlock": {
+        "type": "start"
+      },
+      "flavor": "Smooth stones laid in a wandering line, just for gentle feet."
+    },
+    {
+      "id": "berrybasket",
+      "name": "Silverberry Basket",
+      "emoji": "🧺",
+      "needs": {
+        "branch": 2,
+        "silverberry": 3
+      },
+      "unlock": {
+        "type": "start"
+      },
+      "flavor": "Woven tight enough to carry a whole afternoon of berries home."
+    },
+    {
+      "id": "windowbox",
+      "name": "Window Flower Box",
+      "emoji": "🌷",
+      "needs": {
+        "branch": 2,
+        "moonflower": 2,
+        "silverberry": 1
+      },
+      "unlock": {
+        "type": "start"
+      },
+      "flavor": "Every window deserves a little garden of its own."
+    },
+    {
+      "id": "shellchime",
+      "name": "Seashell Wind Chime",
+      "emoji": "🎐",
+      "needs": {
+        "seashell": 3,
+        "kelp": 1
+      },
+      "unlock": {
+        "type": "gathered",
+        "count": 15
+      },
+      "flavor": "It sings the softest song whenever the sea breeze wanders by."
+    },
+    {
+      "id": "nightlight",
+      "name": "Crystal Nightlight",
+      "emoji": "🏮",
+      "needs": {
+        "crystal": 2,
+        "moss": 1
+      },
+      "unlock": {
+        "type": "gathered",
+        "count": 15
+      },
+      "flavor": "A little glow to keep the dark friendly until morning."
+    },
+    {
+      "id": "mosscushion",
+      "name": "Moss Cushion",
+      "emoji": "🛋️",
+      "needs": {
+        "moss": 4,
+        "mushroom": 1
+      },
+      "unlock": {
+        "type": "gathered",
+        "count": 15
+      },
+      "flavor": "Softer than it has any right to be, and smells like rain."
+    },
+    {
+      "id": "sandglass",
+      "name": "Sand-Crystal Hourglass",
+      "emoji": "⏳",
+      "needs": {
+        "sandcrystal": 3,
+        "stone": 1
+      },
+      "unlock": {
+        "type": "crafted",
+        "count": 3
+      },
+      "flavor": "The sand inside falls slow, like it wants the moment to last."
+    },
+    {
+      "id": "pearlmirror",
+      "name": "Pearl Hand Mirror",
+      "emoji": "🪞",
+      "needs": {
+        "pearl": 2,
+        "seashell": 1
+      },
+      "unlock": {
+        "type": "crafted",
+        "count": 3
+      },
+      "flavor": "It shows you smiling, even on days you forgot you could."
+    },
+    {
+      "id": "gemcrown",
+      "name": "Little Gem Crown",
+      "emoji": "👑",
+      "needs": {
+        "gem": 3,
+        "stone": 1
+      },
+      "unlock": {
+        "type": "crafted",
+        "count": 3
+      },
+      "flavor": "A tiny crown for a princess who never needed one to prove it."
+    },
+    {
+      "id": "puppynook",
+      "name": "Cozy Puppy Nook",
+      "emoji": "🐾",
+      "needs": {
+        "branch": 3,
+        "moonflower": 2,
+        "moss": 1
+      },
+      "unlock": {
+        "type": "companion",
+        "id": "babylady"
+      },
+      "flavor": "A soft round bed for the sister who's zero years old and never tired of wagging."
+    },
+    {
+      "id": "seedjar",
+      "name": "Seed Keeping Jar",
+      "emoji": "🌱",
+      "needs": {
+        "stone": 2,
+        "moonflower": 1,
+        "mushroom": 1
+      },
+      "unlock": {
+        "type": "companion",
+        "id": "dirt"
+      },
+      "flavor": "Every seed inside is already dreaming about growing, slow and sure."
+    },
+    {
+      "id": "shellnecklace",
+      "name": "Shell & Claw Necklace",
+      "emoji": "📿",
+      "needs": {
+        "seashell": 2,
+        "gem": 1
+      },
+      "unlock": {
+        "type": "companion",
+        "id": "cottontail"
+      },
+      "flavor": "Strung with a shell from her bracelet and a gem that catches the glow."
+    },
+    {
+      "id": "cloudkite",
+      "name": "Cloud-Wind Kite",
+      "emoji": "🪁",
+      "needs": {
+        "kelp": 2,
+        "sandcrystal": 2
+      },
+      "unlock": {
+        "type": "companion",
+        "id": "winds"
+      },
+      "flavor": "It only really flies on days Winds decides to help — which is most of them."
+    }
+  ],
+  "companions": {
+    "babylady": {
+      "name": "Baby Lady",
+      "emoji": "🐶",
+      "map": "grounds",
+      "x": 7,
+      "y": 3,
+      "dialogue": [
+        "Yip! You're here, you're here! I felt your steps before I saw you.",
+        "The garden's extra sparkly today — did you bring the moonflowers in?",
+        "Mama says even a puppy sister can help build a home. Let's build ours cozy.",
+        "Sniff sniff... I smell something wonderful you're about to make!"
+      ],
+      "unlocksRecipe": "puppynook",
+      "revisit": "Back again? My tail's already wagging."
+    },
+    "dirt": {
+      "name": "Dirt",
+      "emoji": "🐈",
+      "map": "grounds",
+      "x": 13,
+      "y": 8,
+      "dialogue": [
+        "Mm. Soil is warm today. Good day for growing things.",
+        "You know the trick, don't you? Sleep first. Then flowers.",
+        "Whatever you plant near me tends to come up smiling.",
+        "Slow down a little, small one. The best things take their time."
+      ],
+      "unlocksRecipe": "seedjar",
+      "revisit": "Still here. Still growing. Sit a while."
+    },
+    "cottontail": {
+      "name": "Cottontail",
+      "emoji": "🐆",
+      "map": "cave",
+      "x": 15,
+      "y": 6,
+      "dialogue": [
+        "You made it all the way down here? Brave. I like that.",
+        "Feel that? Something is warming up on the tip of my claw. New, I think.",
+        "I came on a driftwood log with a leaf for a sail — best trip of my whole life.",
+        "Come on, there's more cave to see. I'll race you to the glow."
+      ],
+      "unlocksRecipe": "shellnecklace",
+      "revisit": "Ready for another look around? I never get tired of this cave."
+    },
+    "winds": {
+      "name": "Winds",
+      "emoji": "🐅",
+      "map": "cave",
+      "x": 16,
+      "y": 6,
+      "dialogue": [
+        "Ooh, feel that draft? That is my favorite kind of hello.",
+        "Cottontail and I go everywhere together — she claws, I catch the wind.",
+        "Close your eyes for a second. Can you feel it swirl? That one was just for you.",
+        "Caves shouldn't be still. I like to stir them up a little."
+      ],
+      "unlocksRecipe": "cloudkite",
+      "revisit": "The wind's still blowing my way. Come feel it."
+    }
+  },
+  "rooms": [
+    {
+      "id": "hall",
+      "name": "The Great Hall",
+      "tiles": [
+        "wwwwwwwwwwww",
+        "wwfffffffffw",
+        "wffffffffffw",
+        "wfffffffffff",
+        "wfffffffffff",
+        "wffffffffffw",
+        "*ffffffffff*",
+        "wffffffffffw",
+        "wwwwwDwwwwww"
+      ],
+      "unlock": {
+        "type": "start"
+      },
+      "exits": [
+        {
+          "x": 0,
+          "y": 6,
+          "to": "bedroom",
+          "tx": 6,
+          "ty": 3,
+          "room": true
+        },
+        {
+          "x": 11,
+          "y": 6,
+          "to": "searoom",
+          "tx": 1,
+          "ty": 3,
+          "room": true
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "name": "Moonlit Bedroom",
+      "tiles": [
+        "wwwwwwww",
+        "wfffffww",
+        "wffffffw",
+        "wffffff*",
+        "wffffffw",
+        "wffffffw",
+        "wwwwwwww"
+      ],
+      "unlock": {
+        "type": "crafted",
+        "count": 3
+      },
+      "exits": [
+        {
+          "x": 7,
+          "y": 3,
+          "to": "hall",
+          "tx": 1,
+          "ty": 6,
+          "room": true
+        }
+      ]
+    },
+    {
+      "id": "searoom",
+      "name": "The Sea Window",
+      "tiles": [
+        "wwwwwwww",
+        "wffffffw",
+        "wffffffw",
+        "*ffffffw",
+        "wffffffw",
+        "wfffffww",
+        "wwwwwwww"
+      ],
+      "unlock": {
+        "type": "crafted",
+        "count": 8
+      },
+      "exits": [
+        {
+          "x": 0,
+          "y": 3,
+          "to": "hall",
+          "tx": 10,
+          "ty": 6,
+          "room": true
+        }
+      ]
+    }
+  ]
+}

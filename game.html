@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Princess Moon's Castle Life — Luna's Story Time</title>
+<meta name="description" content="A cozy no-fail gather, craft, and decorate game set in Princess Moon's castle world.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body class="game-body">
+
+<header class="game-top">
+  <a class="home-link" href="index.html" aria-label="Back to the bookshelf">🌙 Home</a>
+  <h1 class="game-title">Princess Moon's Castle Life</h1>
+  <div class="top-actions"><button type="button" id="btnReset" class="chip-btn">Start over</button></div>
+</header>
+
+<main class="game-main">
+  <section class="stage-wrap">
+    <div class="location-banner" id="locationName"></div>
+    <div id="mapView" class="map-view"></div>
+    <div id="dialogueBox" class="dialogue-box" role="dialog" aria-label="Conversation" hidden>
+      <div class="dialogue-portrait" id="dialoguePortrait"></div>
+      <div class="dialogue-text" id="dialogueText"></div>
+      <button type="button" id="dialogueNext" class="cta small">Next ✨</button>
+    </div>
+    <div id="toast" class="toast" hidden></div>
+    <div class="touch-controls">
+      <div class="dpad">
+        <button type="button" data-dir="up" aria-label="Move up">▲</button>
+        <button type="button" data-dir="left" aria-label="Move left">◀</button>
+        <button type="button" data-dir="down" aria-label="Move down">▼</button>
+        <button type="button" data-dir="right" aria-label="Move right">▶</button>
+      </div>
+      <button type="button" id="btnAction" class="action-btn" aria-label="Gather or interact">✨</button>
+    </div>
+  </section>
+
+  <aside class="hud">
+    <section class="hud-panel" id="inventoryPanel">
+      <h2>Satchel</h2>
+      <div class="inv-grid" id="invGrid"></div>
+    </section>
+    <section class="hud-panel" id="craftPanel">
+      <h2>Crafting</h2>
+      <div id="recipeList"></div>
+    </section>
+    <section class="hud-panel" id="furniturePanel">
+      <h2>Furniture</h2>
+      <div id="furnList"></div>
+      <p class="hint" id="decorHint" hidden>Tap a furniture piece, then tap a floor tile to place it 💫</p>
+    </section>
+  </aside>
+</main>
+
+<footer class="game-footer">
+  <a href="index.html">🌙 Back to the storybooks</a>
+</footer>
+
+<div id="confirmModal" class="modal" hidden>
+  <div class="modal-card">
+    <p id="confirmText">Start over from the very beginning? Your castle will be empty again.</p>
+    <div class="modal-actions">
+      <button type="button" id="confirmYes" class="cta">Yes, start over</button>
+      <button type="button" id="confirmNo" class="cta ghost">Keep my castle</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/game.js" defer></script>
+</body>
+</html>

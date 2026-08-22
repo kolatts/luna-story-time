@@ -1,0 +1,585 @@
+/* =====================================================================
+   Princess Moon's Castle Life — game styles
+   Loads after css/site.css; reuses its :root palette + fonts.
+   Art here is emoji + CSS gradients (storybook-cute placeholders).
+   ===================================================================== */
+
+:root {
+  /* Tile size: 18 cols must sit next to a ~300px HUD without page scroll
+     on a laptop, while staying touch-friendly on phones. */
+  --tile: clamp(24px, min(3.4vw, 5.6vh), 44px);
+  --touch-h: 118px; /* approx height reserved for on-screen d-pad + action btn */
+}
+
+/* ===== Page shell ===== */
+body.game-body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(1.5px 1.5px at 8% 15%, rgba(255,255,255,.55) 0, transparent 60%),
+    radial-gradient(1.5px 1.5px at 22% 68%, rgba(255,255,255,.4) 0, transparent 60%),
+    radial-gradient(1.5px 1.5px at 38% 30%, rgba(255,255,255,.5) 0, transparent 60%),
+    radial-gradient(1.5px 1.5px at 55% 78%, rgba(255,255,255,.35) 0, transparent 60%),
+    radial-gradient(1.5px 1.5px at 70% 20%, rgba(255,255,255,.5) 0, transparent 60%),
+    radial-gradient(1.5px 1.5px at 85% 60%, rgba(255,255,255,.4) 0, transparent 60%),
+    radial-gradient(1.5px 1.5px at 95% 12%, rgba(255,255,255,.45) 0, transparent 60%),
+    radial-gradient(120% 100% at 50% 0%, #2b2452 0%, var(--night) 45%, var(--night-deep) 100%);
+  background-attachment: fixed;
+}
+
+.game-top {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: .8rem;
+  padding: .6rem 1rem;
+  background: rgba(18,18,42,.85); backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(183,167,212,.2);
+}
+.game-top .home-link {
+  font-size: 1.05rem; font-weight: 700; white-space: nowrap;
+  padding: .4rem .7rem; border-radius: 999px;
+  background: rgba(183,167,212,.14); border: 1px solid rgba(183,167,212,.25);
+  transition: background .15s ease, transform .15s ease;
+}
+.game-top .home-link:hover { background: rgba(183,167,212,.3); transform: translateY(-1px); }
+.game-title {
+  flex: 1; text-align: center;
+  font-size: clamp(1.05rem, 2.6vw, 1.6rem);
+  color: var(--gold-soft);
+  text-shadow: 0 2px 12px rgba(0,0,0,.5);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.top-actions { display: flex; }
+.chip-btn {
+  font-family: "Andika", sans-serif; font-weight: 700; font-size: .88rem;
+  padding: .45rem .9rem; border-radius: 999px;
+  background: rgba(183,167,212,.14); border: 1px solid rgba(183,167,212,.3);
+  color: var(--scale);
+  transition: background .15s ease, transform .15s ease, border-color .15s ease;
+}
+.chip-btn:hover { background: rgba(183,167,212,.3); border-color: var(--gold); transform: translateY(-1px); }
+
+.game-footer {
+  text-align: center; padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom));
+  color: var(--stone); font-size: .85rem;
+}
+.game-footer a { border-bottom: 1px dotted rgba(183,167,212,.5); padding-bottom: 1px; }
+.game-footer a:hover { color: var(--gold-soft); border-color: var(--gold); }
+
+/* ===== Main layout ===== */
+.game-main {
+  flex: 1; min-height: 0;
+  display: flex; align-items: flex-start; justify-content: center;
+  gap: 1.25rem; padding: 1rem 1.1rem;
+}
+
+.stage-wrap {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: .55rem;
+  flex: 0 1 auto;
+}
+
+.location-banner {
+  font-family: "Berkshire Swash", Georgia, serif;
+  font-size: clamp(1.05rem, 2.2vw, 1.5rem);
+  color: var(--gold-soft);
+  text-shadow: 0 2px 10px rgba(0,0,0,.5);
+  letter-spacing: .02em;
+}
+
+/* ===== Map / tile grid ===== */
+.map-view {
+  position: relative;
+  display: grid;
+  grid-auto-rows: var(--tile);
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #15132e;
+  box-shadow: 0 16px 46px rgba(0,0,0,.55), 0 0 0 5px rgba(253,249,240,.06), inset 0 0 0 1px rgba(0,0,0,.35);
+  transition: opacity .18s ease;
+}
+.map-view.fading { opacity: 0; }
+
+.tile {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  font-size: calc(var(--tile) * .7);
+  line-height: 1;
+  user-select: none;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
+}
+
+/* Terrain looks */
+.t-grass { background: linear-gradient(155deg, #4c8f6b 0%, #3a6f7c 55%, #2c4f68 100%); }
+.t-path  { background: linear-gradient(155deg, #e2c393 0%, #cda56e 100%); }
+.t-flowers {
+  background:
+    radial-gradient(circle at 30% 35%, rgba(242,169,196,.55) 0 8%, transparent 9%),
+    radial-gradient(circle at 68% 60%, rgba(243,221,166,.55) 0 7%, transparent 8%),
+    radial-gradient(circle at 50% 20%, rgba(255,255,255,.35) 0 5%, transparent 6%),
+    linear-gradient(155deg, #4c8f6b 0%, #3a6f7c 55%, #2c4f68 100%);
+}
+.t-sand  { background: linear-gradient(155deg, #f0dfae 0%, #ddc287 100%); }
+.t-water {
+  background: linear-gradient(160deg, #2a5f8c 0%, #1c3f70 55%, #142a52 100%);
+  background-size: 220% 220%;
+  animation: waterShimmer 7s ease-in-out infinite;
+}
+@keyframes waterShimmer {
+  0%, 100% { background-position: 0% 40%; }
+  50% { background-position: 100% 60%; }
+}
+.t-cavefloor { background: linear-gradient(155deg, #3b2350 0%, #2a1938 100%); }
+.t-cavewall {
+  background:
+    radial-gradient(circle at 25% 30%, rgba(215,227,240,.28) 0 5%, transparent 6%),
+    radial-gradient(circle at 70% 65%, rgba(215,227,240,.2) 0 4%, transparent 5%),
+    radial-gradient(circle at 55% 20%, rgba(232,196,106,.22) 0 4%, transparent 5%),
+    linear-gradient(155deg, #221530 0%, #150c22 100%);
+}
+.t-floor { background: linear-gradient(155deg, #f3e2bd 0%, #e6cd9c 100%); }
+.t-wall {
+  background:
+    repeating-linear-gradient(0deg, rgba(0,0,0,.08) 0 6px, transparent 6px calc(var(--tile) / 2)),
+    linear-gradient(155deg, #a495c4 0%, #7f6ea8 100%);
+}
+.t-tree {
+  background: radial-gradient(circle at 50% 62%, #2f6b4a 0 42%, #1e4632 43% 100%);
+}
+.t-tree::after { content: "🌳"; font-size: calc(var(--tile) * .78); filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
+.t-rock {
+  background: radial-gradient(circle at 45% 45%, #8a8296 0 45%, #5c5570 46% 100%);
+}
+.t-rock::after { content: "🪨"; font-size: calc(var(--tile) * .7); filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
+.t-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(243,221,166,.55) 0%, rgba(232,196,106,.18) 55%, transparent 80%), linear-gradient(155deg, #4c8f6b 0%, #3a6f7c 55%, #2c4f68 100%);
+  animation: glowPulse 2.6s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.25); }
+}
+.t-castledoor {
+  background: linear-gradient(180deg, #caa25a 0%, #8a6a34 100%);
+  box-shadow: inset 0 0 0 2px rgba(253,249,240,.25), inset 0 0 14px rgba(0,0,0,.35);
+}
+.t-castledoor { font-size: calc(var(--tile) * .68); }
+
+/* Resource nodes */
+.tile.res {
+  font-size: calc(var(--tile) * .68);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.45));
+  transition: transform .25s ease, opacity .25s ease, filter .25s ease;
+  cursor: pointer;
+}
+.tile.res.depleted {
+  opacity: .3;
+  filter: grayscale(.6) drop-shadow(0 1px 2px rgba(0,0,0,.3));
+  transform: scale(.55);
+}
+
+/* NPCs */
+.tile.npc {
+  font-size: calc(var(--tile) * .78);
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.45));
+  animation: npcBounce 1.6s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes npcBounce {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -3px; }
+}
+
+/* Placed furniture */
+.tile.furn {
+  font-size: calc(var(--tile) * .72);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.4));
+  /* keep the floor tone underneath the gold glow — a bare `background:` here
+     would blank out the terrain gradient and leave a dark square */
+  background:
+    radial-gradient(circle at 50% 60%, rgba(232,196,106,.28) 0%, transparent 70%),
+    linear-gradient(155deg, #f3e2bd 0%, #e6cd9c 100%);
+  cursor: pointer;
+}
+
+/* Locked doorway */
+.tile.locked {
+  font-size: calc(var(--tile) * .68);
+  background: radial-gradient(circle at 50% 50%, rgba(232,196,106,.35) 0%, rgba(42,31,80,.6) 70%);
+  animation: lockShimmer 1.8s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes lockShimmer {
+  0%, 100% { filter: brightness(1) saturate(1); opacity: .85; }
+  50% { filter: brightness(1.35) saturate(1.3); opacity: 1; }
+}
+
+/* Placement-mode affordances */
+body.placing .map-view .tile { cursor: not-allowed; }
+body.placing .map-view .tile.t-floor:hover,
+body.placing .map-view .tile.t-castledoor:hover {
+  outline: 3px solid var(--gold);
+  outline-offset: -3px;
+  cursor: pointer;
+  filter: brightness(1.12);
+}
+.placing-cursor,
+body.placing .map-view { cursor: grabbing; }
+
+/* ===== Player sprite ===== */
+#player {
+  position: absolute;
+  top: 0; left: 0;
+  width: var(--tile); height: var(--tile);
+  display: flex; align-items: center; justify-content: center;
+  font-size: calc(var(--tile) * .92);
+  line-height: 1;
+  filter: drop-shadow(0 0 8px rgba(232,196,106,.85)) drop-shadow(0 3px 5px rgba(0,0,0,.45));
+  transition: transform .12s linear;
+  animation: playerBob 1.9s ease-in-out infinite;
+  z-index: 10;
+  pointer-events: none;
+  will-change: transform;
+}
+/* idle bob uses the independent `translate` property so it never fights
+   the JS-driven inline `transform: translate(...)` used for movement */
+@keyframes playerBob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -4px; }
+}
+#player .p-sprite { display: block; }
+#player.face-left .p-sprite { transform: scaleX(-1); }
+
+/* Sparkle burst (engine-appended, transient) */
+.sparkle-burst {
+  /* engine sets inline left/top to the tile's center — keep this a 0x0 point */
+  position: absolute; width: 0; height: 0;
+  pointer-events: none;
+  z-index: 15;
+}
+.sparkle-burst span {
+  position: absolute; top: 0; left: 0;
+  font-size: calc(var(--tile) * .5);
+  color: var(--gold-soft);
+  text-shadow: 0 0 6px rgba(232,196,106,.9);
+  opacity: 0;
+}
+.sparkle-burst span:nth-child(6n+1) { animation: sparkle1 .65s ease-out forwards; }
+.sparkle-burst span:nth-child(6n+2) { animation: sparkle2 .65s ease-out forwards; }
+.sparkle-burst span:nth-child(6n+3) { animation: sparkle3 .65s ease-out forwards; }
+.sparkle-burst span:nth-child(6n+4) { animation: sparkle4 .65s ease-out forwards; }
+.sparkle-burst span:nth-child(6n+5) { animation: sparkle5 .65s ease-out forwards; }
+.sparkle-burst span:nth-child(6n)   { animation: sparkle6 .65s ease-out forwards; }
+@keyframes sparkle1 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% - 16px), calc(-50% - 18px)) scale(1.2); } }
+@keyframes sparkle2 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% + 16px), calc(-50% - 18px)) scale(1.2); } }
+@keyframes sparkle3 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% + 22px), calc(-50% + 2px)) scale(1.2); } }
+@keyframes sparkle4 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% + 10px), calc(-50% + 20px)) scale(1.2); } }
+@keyframes sparkle5 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% - 10px), calc(-50% + 20px)) scale(1.2); } }
+@keyframes sparkle6 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% - 22px), calc(-50% + 2px)) scale(1.2); } }
+
+/* ===== Dialogue box ===== */
+.dialogue-box {
+  position: absolute;
+  left: 50%; bottom: 14px;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: min(94%, calc(var(--tile) * 18));
+  display: flex; align-items: center; gap: .9rem;
+  background: linear-gradient(180deg, var(--paper), #f6eeda);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: .9rem 1.1rem;
+  box-shadow: 0 14px 36px rgba(0,0,0,.5), inset 0 0 0 1px var(--paper-edge);
+}
+.dialogue-portrait {
+  flex: 0 0 auto;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.25));
+}
+.dialogue-text {
+  flex: 1;
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+.dialogue-box .cta.small {
+  flex: 0 0 auto;
+}
+
+/* ===== Toast ===== */
+.toast {
+  position: absolute;
+  left: 50%; top: 3.4rem; bottom: auto;
+  transform: translateX(-50%);
+  z-index: 25;
+  max-width: min(90%, 26rem);
+  background: rgba(38,33,80,.92);
+  border: 1.5px solid var(--gold);
+  color: var(--gold-soft);
+  font-weight: 700;
+  padding: .55rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.45);
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
+}
+.toast.intro-toast {
+  max-width: min(94%, 30rem);
+  font-weight: 400;
+  font-size: .92rem;
+  background: rgba(18,18,42,.92);
+}
+
+/* ===== Touch controls ===== */
+.touch-controls {
+  display: none;
+  align-items: center; justify-content: center; gap: 1.4rem;
+  padding-top: .3rem;
+}
+.dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 2.7rem);
+  grid-template-rows: repeat(3, 2.7rem);
+  grid-template-areas:
+    ".    up    ."
+    "left .     right"
+    ".    down  .";
+  gap: .3rem;
+}
+.dpad button {
+  border-radius: 12px;
+  background: rgba(183,167,212,.16);
+  border: 1.5px solid rgba(183,167,212,.3);
+  color: var(--scale);
+  font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .12s ease, transform .12s ease;
+}
+.dpad button:active { background: var(--gold); color: var(--ink); transform: scale(.94); }
+.dpad button[data-dir="up"] { grid-area: up; }
+.dpad button[data-dir="left"] { grid-area: left; }
+.dpad button[data-dir="down"] { grid-area: down; }
+.dpad button[data-dir="right"] { grid-area: right; }
+
+.action-btn {
+  width: 4.2rem; height: 4.2rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+  color: var(--ink);
+  font-size: 1.7rem;
+  box-shadow: 0 8px 22px rgba(232,196,106,.45), inset 0 1px 0 #fff8;
+  transition: transform .12s ease;
+}
+.action-btn:active { transform: scale(.92); }
+
+@media (hover: none), (max-width: 899px) {
+  .touch-controls { display: flex; }
+  .dialogue-box { bottom: calc(var(--touch-h) - 4px); }
+}
+
+/* ===== HUD ===== */
+.hud {
+  flex: 0 0 300px;
+  width: 300px;
+  max-width: 300px;
+  display: flex; flex-direction: column; gap: 1rem;
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.hud-panel {
+  background: linear-gradient(180deg, #262150, #1d1a3e);
+  border: 1px solid #3d3670; border-radius: var(--radius);
+  padding: 1rem 1.1rem 1.1rem;
+  box-shadow: 0 10px 28px rgba(0,0,0,.4);
+}
+.hud-panel h2 {
+  font-size: 1.2rem; color: var(--gold-soft);
+  margin-bottom: .7rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,.4);
+}
+.hud-panel .hint {
+  margin-top: .6rem; font-size: .82rem; color: var(--stone);
+  line-height: 1.4;
+}
+
+/* Satchel / inventory */
+.inv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.6rem, 1fr));
+  gap: .5rem;
+}
+.inv-grid .hint { grid-column: 1 / -1; }
+.inv-grid .inv-item {
+  display: flex; flex-direction: column; align-items: center; gap: .15rem;
+  background: rgba(183,167,212,.1);
+  border: 1px solid rgba(183,167,212,.22);
+  border-radius: 12px;
+  padding: .45rem .2rem .35rem;
+  font-size: 1.15rem;
+}
+.inv-grid .inv-item .count {
+  font-family: "Andika", sans-serif;
+  font-size: .72rem; font-weight: 700; color: var(--scale);
+}
+
+/* Recipes */
+#recipeList { display: flex; flex-direction: column; gap: .5rem; }
+.recipe {
+  display: flex; align-items: center; gap: .6rem;
+  width: 100%;
+  background: rgba(183,167,212,.08);
+  border: 1px solid rgba(183,167,212,.18);
+  border-radius: 14px;
+  padding: .55rem .7rem;
+  text-align: left;
+  color: var(--scale);
+  opacity: .68;
+  transition: transform .15s ease, opacity .15s ease, background .15s ease, border-color .15s ease;
+}
+.recipe .r-emoji { font-size: 1.4rem; flex: 0 0 auto; }
+.recipe .r-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: .25rem; }
+.recipe .r-name { font-weight: 700; color: var(--paper); font-size: .95rem; }
+.recipe .r-needs { display: flex; flex-wrap: wrap; gap: .3rem; }
+.recipe.craftable {
+  opacity: 1;
+  background: linear-gradient(155deg, rgba(232,196,106,.22), rgba(232,196,106,.06));
+  border-color: var(--gold);
+  cursor: pointer;
+}
+.recipe.craftable:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(232,196,106,.25); }
+.recipe.craftable .r-name { color: var(--gold-soft); }
+.recipe.mystery { opacity: .45; cursor: default; }
+.recipe.mystery .r-name { color: var(--stone); letter-spacing: .12em; }
+.recipe .r-flavor { font-size: .78rem; color: var(--stone); line-height: 1.35; }
+[hidden] { display: none !important; }
+
+.need {
+  font-size: .74rem; font-weight: 700;
+  background: rgba(183,167,212,.16); color: var(--stone);
+  border-radius: 999px; padding: .12rem .5rem;
+}
+.need.have { background: var(--gold); color: var(--ink); }
+
+/* Furniture */
+#furnList { display: flex; flex-direction: column; gap: .5rem; }
+.furn-item {
+  display: flex; align-items: center; gap: .6rem;
+  width: 100%;
+  background: rgba(183,167,212,.08);
+  border: 1px solid rgba(183,167,212,.18);
+  border-radius: 14px;
+  padding: .55rem .7rem;
+  text-align: left;
+  color: var(--paper);
+  transition: transform .15s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.furn-item .f-emoji { font-size: 1.4rem; }
+.furn-item .f-name { flex: 1; font-weight: 700; font-size: .92rem; }
+.furn-item .f-count {
+  font-size: .78rem; color: var(--ink); font-weight: 700;
+  background: var(--gold-soft); border-radius: 999px; padding: .1rem .5rem;
+}
+.furn-item:hover { transform: translateY(-2px); border-color: var(--gold); }
+.furn-item.selected {
+  background: linear-gradient(155deg, rgba(232,196,106,.3), rgba(232,196,106,.08));
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(232,196,106,.4), 0 8px 18px rgba(232,196,106,.25);
+}
+
+/* Inline Move / Put away popup for placed furniture */
+.inline-menu {
+  position: absolute;
+  z-index: 30;
+  display: flex; flex-direction: column; gap: .35rem;
+  background: linear-gradient(180deg, #262150, #1d1a3e);
+  border: 1px solid var(--gold);
+  border-radius: 14px;
+  padding: .4rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,.5);
+}
+.inline-menu button {
+  font-family: "Andika", sans-serif; font-size: .82rem; font-weight: 700;
+  color: var(--paper);
+  padding: .4rem .8rem;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: background .12s ease;
+}
+.inline-menu button:hover { background: rgba(232,196,106,.22); color: var(--gold-soft); }
+
+/* Small cta variant used in dialogue box */
+.cta.small {
+  padding: .5rem 1.1rem;
+  font-size: .92rem;
+  margin-top: 0;
+}
+
+/* ===== Confirm modal ===== */
+.modal {
+  position: fixed; inset: 0; z-index: 80;
+  display: flex; align-items: center; justify-content: center;
+  padding: 1.2rem;
+  background: rgba(12,12,28,.72);
+  backdrop-filter: blur(3px);
+}
+.modal-card {
+  width: min(92%, 26rem);
+  background: linear-gradient(180deg, #262150, #1d1a3e);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 22px 60px rgba(0,0,0,.6);
+}
+.modal-card p {
+  color: var(--paper);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.3rem;
+}
+.modal-actions {
+  display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap;
+}
+.modal-actions .cta { margin-top: 0; }
+
+/* ===== Responsive stacking ===== */
+@media (max-width: 900px) {
+  .game-main {
+    flex-direction: column;
+    align-items: stretch;
+    padding: .8rem;
+  }
+  .stage-wrap { align-items: center; }
+  .hud {
+    flex: none; width: 100%; max-width: none;
+    max-height: none; overflow-y: visible;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-title { font-size: 1rem; }
+  .chip-btn { font-size: .8rem; padding: .4rem .7rem; }
+  .dialogue-portrait { font-size: 2rem; }
+  .dialogue-text { font-size: .92rem; }
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  #player { animation: none; }
+  .tile.npc { animation: none; }
+  .t-water { animation: none; }
+  .t-glow { animation: none; }
+  .tile.locked { animation: none; }
+  .sparkle-burst span { animation: none; opacity: 0; }
+  .map-view, .toast, .recipe, .furn-item, .chip-btn, .home-link, .action-btn, .dpad button {
+    transition: none !important;
+  }
+}
