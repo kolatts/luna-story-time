@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>Princess Moon's Castle Life — Luna's Story Time</title>
 <meta name="description" content="A cozy no-fail gather, craft, and decorate game set in Princess Moon's castle world.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
@@ -31,13 +31,11 @@
       <button type="button" id="dialogueNext" class="cta small">Next ✨</button>
     </div>
     <div id="toast" class="toast" hidden></div>
-    <div class="touch-controls">
-      <div class="dpad">
-        <button type="button" data-dir="up" aria-label="Move up">▲</button>
-        <button type="button" data-dir="left" aria-label="Move left">◀</button>
-        <button type="button" data-dir="down" aria-label="Move down">▼</button>
-        <button type="button" data-dir="right" aria-label="Move right">▶</button>
-      </div>
+    <!-- Touch controls sit ON the stage (same box as #mapView) and are
+         pointer-events:none apart from the action button, so canvas taps for
+         placing furniture still reach Phaser. -->
+    <div class="touch-controls" id="touchControls">
+      <div class="stick" id="touchStick" aria-hidden="true"><span class="stick-nub" id="touchStickNub"></span></div>
       <button type="button" id="btnAction" class="action-btn" aria-label="Gather or interact">✨</button>
     </div>
   </section>

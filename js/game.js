@@ -87,6 +87,9 @@
   var furnList = $("furnList");
   var decorHint = $("decorHint");
   var btnAction = $("btnAction");
+  var touchControls = $("touchControls");
+  var stickEl = $("touchStick");
+  var stickNub = $("touchStickNub");
   var btnReset = $("btnReset");
   var btnSound = $("btnSound");
   var confirmModal = $("confirmModal");
@@ -132,8 +135,15 @@
   var lastBumpToast = 0;
   var pointerDriven = false;
   var heldKeys = [];           // held direction keys, most recent last
-  var dpadDir = null;
-  var repeatPointerId = null;
+  var dpadDir = null;          // direction the thumbstick is currently asking for
+  var repeatPointerId = null;  // the one finger allowed to stop the hold
+
+  /* Floating thumbstick */
+  var STICK_DEAD = 0.22;       // dead zone, as a fraction of the ring radius
+  var stickPointerId = null;   // finger steering the stick (null = at rest)
+  var stickDir = null;         // last direction it asked for
+  var stickRadius = 60;        // ring radius in overlay px
+  var stickOx = 0, stickOy = 0; // ring centre in overlay px
   var toastQueue = [], toastTimer = null;
 
   var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -794,7 +804,7 @@
         scene = this;
         this.cameras.main.setBackgroundColor("#15132e");
         this.input.on("pointerup", onStagePointerUp);
-        this.scale.on("resize", closeTileMenu);
+        this.scale.on("resize", function () { closeTileMenu(); layoutStick(); });
         onSceneReady();
       }
     };
@@ -2122,46 +2132,29 @@
     // Dialogue
     if (dialogueNext) dialogueNext.addEventListener("click", function () { advanceDialogue(); });
 
-    // Touch d-pad + action button: click and press-and-hold both work.
-    var dpad = document.querySelector(".dpad");
-    if (dpad) {
-      dpad.addEventListener("pointerdown", function (e) {
-        var btn = dirButton(e.target);
-        if (!btn) return;
-        pointerDriven = true;
-        e.preventDefault();
-        var dir = btn.getAttribute("data-dir");
-        dpadDir = dir;
-        repeatPointerId = (e.pointerId === undefined) ? null : e.pointerId;
-        tryMove(dir);
-      });
-      dpad.addEventListener("click", function (e) {
-        var btn = dirButton(e.target);
-        if (!btn) return;
-        if (pointerDriven && e.detail !== 0) return;   // pointerdown already moved us
-        tryMove(btn.getAttribute("data-dir"));
-      });
-      var dpadButtons = dpad.querySelectorAll("button[data-dir]");
-      for (var i = 0; i < dpadButtons.length; i++) {
-        var b = dpadButtons[i];
-        if (!b.getAttribute("aria-label")) b.setAttribute("aria-label", "Walk " + b.getAttribute("data-dir"));
-        if (!b.getAttribute("type")) b.setAttribute("type", "button");
-      }
-    }
+    // Touch controls: floating thumbstick on the stage + the big action button.
+    wireTouchControls();
+
     ["pointerup", "pointercancel", "pointerleave"].forEach(function (evt) {
       window.addEventListener(evt, function (e) {
-        // only the finger that started the hold may stop it
+        // only the finger that started the hold may stop it — the other thumb
+        // is free to work the action button without cancelling the walk
         if (repeatPointerId === null || e.pointerId === repeatPointerId) stopRepeat();
       });
     });
-    window.addEventListener("blur", function () { stopRepeat(); heldKeys = []; });
+    window.addEventListener("blur", function () { stopRepeat(); heldKeys = []; releaseStick(true); });
 
     if (btnAction) {
       if (!btnAction.getAttribute("aria-label")) btnAction.setAttribute("aria-label", "Do the sparkly thing (gather, talk, open)");
       btnAction.addEventListener("pointerdown", function (e) {
         pointerDriven = true;
         e.preventDefault();
+        btnAction.classList.add("pressed");
         if (dialogue) advanceDialogue(); else interact();
+      });
+      var unpress = function () { btnAction.classList.remove("pressed"); };
+      ["pointerup", "pointercancel", "pointerleave"].forEach(function (evt) {
+        btnAction.addEventListener(evt, unpress);
       });
       btnAction.addEventListener("click", function (e) {
         if (pointerDriven && e.detail !== 0) return;
@@ -2196,17 +2189,148 @@
     document.addEventListener("visibilitychange", function () { if (document.hidden) flushSave(); });
   }
 
-  function dirButton(node) {
-    while (node && node !== document.body) {
-      if (node.getAttribute && node.getAttribute("data-dir")) return node;
-      node = node.parentNode;
-    }
-    return null;
-  }
-
   function stopRepeat() {
     dpadDir = null;
     repeatPointerId = null;
+  }
+
+  /* ================= Floating thumbstick =================
+     Roblox-style: touching the lower-left of the stage springs a translucent
+     ring to that spot and the nub follows the thumb. Direction is the dominant
+     axis of the drag (4-way, matching the grid) past a dead zone, fed into the
+     same dpadDir / repeat mechanism the keyboard uses.
+
+     Deliberately NOT a DOM hit target: the listener lives on #mapView and never
+     calls preventDefault, so a plain tap in the stick corner still reaches the
+     Phaser placement handler (which ignores anything it measures as a drag).
+     Stick and action button track separate pointerIds, so two thumbs work. */
+
+  var coarseMQ = (window.matchMedia ? window.matchMedia("(pointer: coarse)") : null);
+
+  /* iPadOS reports a desktop-class UA, so feature-detect rather than sniff. */
+  function touchUIWanted() {
+    if ((navigator.maxTouchPoints || 0) > 0) return true;
+    if (coarseMQ && coarseMQ.matches) return true;
+    return window.innerWidth < 900;              // the old narrow-screen case
+  }
+
+  function touchUIOn() { return document.documentElement.classList.contains("touch-ui"); }
+
+  function syncTouchUI() {
+    var on = touchUIWanted();
+    if (on === touchUIOn()) { layoutStick(); return; }
+    if (on) document.documentElement.classList.add("touch-ui");
+    else { document.documentElement.classList.remove("touch-ui"); releaseStick(true); }
+    layoutStick();
+  }
+
+  function clampN(v, lo, hi) { return v < lo ? lo : (v > hi ? hi : v); }
+
+  /* Overlay box == canvas box (see the CSS note), so one coordinate space. */
+  function stickBox() {
+    if (!touchControls) return null;
+    var r = touchControls.getBoundingClientRect();
+    return (r.width && r.height) ? r : null;
+  }
+
+  function placeStick(cx, cy, nx, ny) {
+    if (!stickEl) return;
+    stickEl.style.left = Math.round(cx) + "px";
+    stickEl.style.top = Math.round(cy) + "px";
+    if (stickNub) {
+      stickNub.style.transform = "translate(calc(-50% + " + Math.round(nx) + "px), calc(-50% + " + Math.round(ny) + "px))";
+    }
+  }
+
+  /* Park the ring in the lower-left of the stage. */
+  function layoutStick() {
+    if (!stickEl || !touchUIOn()) return;
+    stickRadius = (stickEl.offsetWidth || 120) / 2;
+    if (stickPointerId !== null) return;          // a thumb owns it right now
+    var r = stickBox();
+    if (!r) return;
+    var pad = stickRadius + 8;
+    placeStick(
+      clampN(r.width * 0.17, pad, Math.max(pad, r.width - pad)),
+      clampN(r.height * 0.74, pad, Math.max(pad, r.height - pad)),
+      0, 0
+    );
+  }
+
+  /* Left ~45% of the stage, lower two-thirds. */
+  function inStickZone(r, cx, cy) {
+    return cx >= r.left && cx <= r.left + r.width * 0.45 &&
+      cy >= r.top + r.height * (1 / 3) && cy <= r.bottom;
+  }
+
+  function onStagePointerDown(e) {
+    if (!stickEl || !touchUIOn()) return;
+    if (e.pointerType === "mouse") return;        // desktop pointing stays untouched
+    if (stickPointerId !== null) return;          // one thumb on the stick
+    var r = stickBox();
+    if (!r || !inStickZone(r, e.clientX, e.clientY)) return;
+    stickPointerId = (e.pointerId === undefined) ? -1 : e.pointerId;
+    stickDir = null;
+    pointerDriven = true;
+    stickRadius = (stickEl.offsetWidth || 120) / 2;
+    var pad = stickRadius + 8;
+    stickOx = clampN(e.clientX - r.left, pad, Math.max(pad, r.width - pad));
+    stickOy = clampN(e.clientY - r.top, pad, Math.max(pad, r.height - pad));
+    stickEl.classList.add("active");
+    placeStick(stickOx, stickOy, 0, 0);
+  }
+
+  function onStickMove(e) {
+    if (stickPointerId === null) return;
+    if (e.pointerId !== undefined && stickPointerId !== -1 && e.pointerId !== stickPointerId) return;
+    var r = stickBox();
+    if (!r) return;
+    var dx = (e.clientX - r.left) - stickOx;
+    var dy = (e.clientY - r.top) - stickOy;
+    var d = Math.sqrt(dx * dx + dy * dy);
+    var k = (d > stickRadius && d > 0) ? stickRadius / d : 1;
+    placeStick(stickOx, stickOy, dx * k, dy * k);
+
+    if (d < stickRadius * STICK_DEAD) {           // resting thumb: no creeping
+      if (stickDir) { stickDir = null; stopRepeat(); }
+      return;
+    }
+    var dir = (Math.abs(dx) >= Math.abs(dy))
+      ? (dx > 0 ? "right" : "left")
+      : (dy > 0 ? "down" : "up");
+    if (dir === stickDir && dpadDir === dir) return;
+    stickDir = dir;
+    dpadDir = dir;
+    repeatPointerId = stickPointerId;             // only this thumb may stop it
+    tryMove(dir);
+  }
+
+  function releaseStick(force) {
+    if (stickPointerId === null && !force) return;
+    stickPointerId = null;
+    stickDir = null;
+    stopRepeat();
+    if (stickEl) stickEl.classList.remove("active");
+    layoutStick();
+  }
+
+  function wireTouchControls() {
+    syncTouchUI();
+    if (coarseMQ) {
+      if (coarseMQ.addEventListener) coarseMQ.addEventListener("change", syncTouchUI);
+      else if (coarseMQ.addListener) coarseMQ.addListener(syncTouchUI);
+    }
+    window.addEventListener("resize", syncTouchUI);
+    window.addEventListener("orientationchange", function () { setTimeout(syncTouchUI, 80); });
+
+    if (mapView) mapView.addEventListener("pointerdown", onStagePointerDown);
+    window.addEventListener("pointermove", onStickMove);
+    ["pointerup", "pointercancel"].forEach(function (evt) {
+      window.addEventListener(evt, function (e) {
+        if (stickPointerId === null) return;
+        if (e.pointerId === undefined || stickPointerId === -1 || e.pointerId === stickPointerId) releaseStick(false);
+      });
+    });
   }
 
   function onKeyUp(e) {
@@ -2319,10 +2443,14 @@
     }
     renderHud();
     flushSave();
+    layoutStick();
 
     pendingGreeting = firstRun ? "intro" : "welcome";
     if (firstRun) {
-      toast("Walk with the arrow keys · ✨ to gather · Craft cozy things for your castle 💫", 6500, "intro-toast");
+      toast((touchUIOn()
+        ? "Drag the circle to walk · ✨ to gather"
+        : "Walk with the arrow keys · ✨ to gather") +
+        " · Craft cozy things for your castle 💫", 6500, "intro-toast");
     } else {
       var area = currentArea();
       toast("Welcome back to " + ((area && area.name) || "the castle") + " 🌙");

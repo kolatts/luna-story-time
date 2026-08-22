@@ -10,7 +10,10 @@
      internal size) and has to sit next to the ~300px HUD without pushing
      the page into a scrollbar on a laptop. */
   --stage-w: max(240px, min(1152px, calc((100dvh - 11.5rem) * 1.5), calc(100vw - 22.5rem)));
-  --touch-h: 118px; /* approx height reserved for on-screen d-pad + action btn */
+  /* On-stage touch controls (see "Touch controls" below). vmin keeps them
+     thumb-sized on both iPad orientations without swallowing the map. */
+  --stick-size: clamp(104px, 19vmin, 152px);
+  --action-size: clamp(88px, 13vmin, 120px);
 }
 
 /* ===== Page shell ===== */
@@ -18,6 +21,8 @@ body.game-body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  /* dragging the thumbstick must never rubber-band or scroll the page */
+  overscroll-behavior: none;
   background:
     radial-gradient(1.5px 1.5px at 8% 15%, rgba(255,255,255,.55) 0, transparent 60%),
     radial-gradient(1.5px 1.5px at 22% 68%, rgba(255,255,255,.4) 0, transparent 60%),
@@ -193,52 +198,128 @@ body.placing .map-view { cursor: crosshair; }
   background: rgba(18,18,42,.92);
 }
 
-/* ===== Touch controls ===== */
+/* ===== Touch controls (Roblox-style, drawn on the stage) =====
+   `.touch-controls` is laid out to exactly the same box as `.map-view`: same
+   width (--stage-w), same 3:2 aspect, bottom-aligned inside `.stage-wrap`
+   (the map is the last in-flow child, so their bottom edges coincide). That
+   lets js/game.js treat overlay-local pixels and canvas-local pixels as one
+   coordinate space.
+
+   The wrapper is `pointer-events: none` so taps meant for the Phaser
+   placement handler pass straight through; only #btnAction takes pointers.
+   The thumbstick itself is driven from a pointerdown listener on #mapView,
+   which means a *tap* in the stick corner still reaches the canvas (Phaser
+   already ignores anything it measures as a drag) while a *drag* walks.
+
+   Shown only when <html> has .touch-ui, which js/game.js sets from
+   navigator.maxTouchPoints / (pointer: coarse) / a narrow window — one gate
+   for both CSS and JS, so they can never disagree. */
 .touch-controls {
   display: none;
-  align-items: center; justify-content: center; gap: 1.4rem;
-  padding-top: .3rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: var(--stage-w);
+  aspect-ratio: 3 / 2;
+  /* above the dialogue box (20) so the action button stays tappable while
+     someone is talking; under the toast (25) and the tile menu (30) */
+  z-index: 22;
+  pointer-events: none;
+  touch-action: none;
 }
-.dpad {
-  display: grid;
-  grid-template-columns: repeat(3, 2.7rem);
-  grid-template-rows: repeat(3, 2.7rem);
-  grid-template-areas:
-    ".    up    ."
-    "left .     right"
-    ".    down  .";
-  gap: .3rem;
+.touch-controls, .touch-controls * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.dpad button {
-  border-radius: 12px;
-  background: rgba(183,167,212,.16);
-  border: 1.5px solid rgba(183,167,212,.3);
-  color: var(--scale);
-  font-size: 1.1rem;
-  display: flex; align-items: center; justify-content: center;
-  transition: background .12s ease, transform .12s ease;
+html.touch-ui .touch-controls { display: block; }
+
+/* Floating thumbstick. JS sets left/top (its centre, in overlay pixels); the
+   translate keeps that point the middle of the ring. */
+.stick {
+  position: absolute;
+  left: 0; top: 0;
+  width: var(--stick-size); height: var(--stick-size);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(215,227,240,.45);
+  background: radial-gradient(circle at 50% 40%, rgba(183,167,212,.26), rgba(20,18,46,.32) 72%);
+  box-shadow: 0 8px 24px rgba(0,0,0,.38), inset 0 0 22px rgba(255,255,255,.07);
+  opacity: .62;
+  transition: opacity .18s ease, border-color .18s ease;
 }
-.dpad button:active { background: var(--gold); color: var(--ink); transform: scale(.94); }
-.dpad button[data-dir="up"] { grid-area: up; }
-.dpad button[data-dir="left"] { grid-area: left; }
-.dpad button[data-dir="down"] { grid-area: down; }
-.dpad button[data-dir="right"] { grid-area: right; }
+.stick.active { opacity: 1; border-color: rgba(232,196,106,.75); }
+.stick-nub {
+  position: absolute; left: 50%; top: 50%;
+  width: 44%; height: 44%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 30%, #fffdf7 0%, var(--paper) 38%, #e6dcc4 78%, #cdbfa4 100%);
+  box-shadow:
+    0 4px 14px rgba(0,0,0,.5),
+    0 0 16px rgba(232,196,106,.45),
+    inset 0 1px 0 #fff;
+  transform: translate(-50%, -50%);
+}
+/* Nothing to steer while someone is talking. */
+#dialogueBox.open ~ .touch-controls .stick { opacity: 0; }
 
 .action-btn {
-  width: 4.2rem; height: 4.2rem;
+  position: absolute;
+  right: calc(4.5% + env(safe-area-inset-right, 0px));
+  bottom: calc(7% + env(safe-area-inset-bottom, 0px));
+  width: var(--action-size); height: var(--action-size);
+  min-width: 44px; min-height: 44px;
   border-radius: 50%;
   background: linear-gradient(180deg, var(--gold-soft), var(--gold));
   color: var(--ink);
-  font-size: 1.7rem;
-  box-shadow: 0 8px 22px rgba(232,196,106,.45), inset 0 1px 0 #fff8;
-  transition: transform .12s ease;
+  font-size: calc(var(--action-size) * .42);
+  line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: auto;
+  touch-action: none;
+  box-shadow: 0 10px 26px rgba(232,196,106,.45), inset 0 2px 0 #fff9;
+  transition: transform .12s ease, box-shadow .12s ease;
 }
-.action-btn:active { transform: scale(.92); }
+.action-btn.pressed, .action-btn:active {
+  transform: scale(.9);
+  box-shadow: 0 4px 12px rgba(232,196,106,.55), inset 0 2px 0 #fff9;
+}
 
-@media (hover: none), (max-width: 899px) {
-  .touch-controls { display: flex; }
-  .dialogue-box { bottom: calc(var(--touch-h) - 4px); }
+/* ===== Touch-device layout =====
+   One screen, no page scrolling: the shell is pinned to the viewport and the
+   HUD is what scrolls. Everything tappable gets a 44px minimum. */
+html.touch-ui { height: 100%; overflow: hidden; }
+html.touch-ui body.game-body {
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
 }
+html.touch-ui .game-main { min-height: 0; overflow: hidden; }
+html.touch-ui .stage-wrap { flex: 0 0 auto; }
+html.touch-ui .hud {
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+/* Sit above the action button rather than under it. */
+html.touch-ui .dialogue-box {
+  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  padding-right: calc(var(--action-size) + 1.2rem);
+}
+html.touch-ui .chip-btn,
+html.touch-ui .home-link,
+html.touch-ui .cta.small,
+html.touch-ui .inline-menu button {
+  min-height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+html.touch-ui .chip-btn.icon-chip { min-width: 44px; font-size: 1.2rem; }
+html.touch-ui .recipe,
+html.touch-ui .furn-item { min-height: 48px; }
+html.touch-ui .inv-grid .inv-item { min-height: 48px; justify-content: center; }
 
 /* ===== HUD ===== */
 .hud {
@@ -423,6 +504,8 @@ body.placing .map-view { cursor: crosshair; }
     flex: none; width: 100%; max-width: none;
     max-height: none; overflow-y: visible;
   }
+  /* stacked + touch: the HUD takes what's left of the screen and scrolls itself */
+  html.touch-ui .hud { flex: 1 1 auto; max-height: none; overflow-y: auto; }
 }
 
 @media (max-width: 480px) {
@@ -436,7 +519,7 @@ body.placing .map-view { cursor: crosshair; }
    The canvas juice (bob, sway, shimmer, particles, fades, vignette pulse)
    is gated in js/game.js on the same media query; this covers the DOM. */
 @media (prefers-reduced-motion: reduce) {
-  .map-view, .toast, .recipe, .furn-item, .chip-btn, .home-link, .action-btn, .dpad button {
+  .map-view, .toast, .recipe, .furn-item, .chip-btn, .home-link, .action-btn, .stick {
     transition: none !important;
   }
 }
