@@ -47,6 +47,13 @@
           "subtitle": "Book Six of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/dirt-and-the-blue-sisters-pot/images/cover.webp"
+        },
+        {
+          "slug": "poodle-hairs-and-the-mermaids-tale",
+          "title": "Poodle, Hairs, and the Mermaid's Tale",
+          "subtitle": "Book Seven of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/poodle-hairs-and-the-mermaids-tale/images/cover.webp"
         }
       ]
     },

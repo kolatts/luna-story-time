@@ -1,0 +1,539 @@
+{
+  "slug": "poodle-hairs-and-the-mermaids-tale",
+  "series": "castle-everstair",
+  "bookNumber": 7,
+  "title": "Poodle, Hairs, and the Mermaid's Tale",
+  "subtitle": "Book Seven of the Castle Everstair stories",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "ageRange": "4-8",
+  "refrain": "But joy is not a thing you can carry.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    {
+      "id": "poodle",
+      "name": "Poodle",
+      "sheet": "Poodle: a small lean young grey WOLF (a wolf, never a dog, never a poodle) — barely a quarter the size of Hairs; a narrow clever face, tall pointed ears with one ear notched, bright amber eyes, a long bushy tail with a white tip; scruffy charcoal-and-silver fur that curls oddly tight all over him, which is how he got his name; a small tattered moss-green scarf knotted at his neck; stands and walks on four paws; a sideways scheming grin with small blunt friendly teeth; talkative, mischievous, never fierce, never frightening."
+    },
+    {
+      "id": "hairs",
+      "name": "Hairs",
+      "sheet": "Hairs: an enormous gentle grey wolf, soft dove-grey fur, glossy jet-black tail; extraordinarily long silver-grey hair growing from his head, neck and shoulders and flowing far behind him in ropes and drifts, a hundred years long and never brushed; huge soft amber eyes under kind heavy brows, rounded ears, big dark nose; mouth always closed or softly open — never bared teeth, never snarling, never fierce, never a predator; shy and slow and mountain-sized, like a hill that stood up. Gentle and sad-eyed, not frightening."
+    },
+    {
+      "id": "witchy",
+      "name": "Witchy",
+      "sheet": "Witchy: a small round elderly GOOD witch with warm brown skin, deep laugh-line crinkles and a wide kind smile, silver-white hair escaping from under a soft floppy pointed hat of patched moonlit-blue cloth; a patched blue-and-lavender travelling cloak over a simple grey dress, round spectacles, sturdy scuffed boots; she carries a fat round glass potion bottle with a wooden stopper, filled part-way with slow swirling rainbow light; warm and grandmotherly, never sinister, never green-skinned, no warts, not a scary witch."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: the oldest mermaid of the sea — a warm brown crinkled face full of kindness, long silver-white hair like sea-foam with tiny shells woven through it, kind grey-green eyes; a broad shimmering pale-green mermaid tail with mother-of-pearl scales in place of legs — no legs, tail only; no wings; a small gold crescent charm at her throat."
+    },
+    {
+      "id": "moon",
+      "name": "Princess Moon",
+      "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant."
+    },
+    {
+      "id": "babylady",
+      "name": "Baby Lady",
+      "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar."
+    },
+    {
+      "id": "cottontail",
+      "name": "Baby Jag Cottontail",
+      "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg."
+    },
+    {
+      "id": "winds",
+      "name": "Winds",
+      "sheet": "Winds: young jaguar cub the same size and age as Cottontail; pale grey-blue coat with cloud-white rosette spots, a tuft of bright wavy blue hair exactly the shape of Cottontail's pink tuft, very wide-open sky-blue eyes, a huge cheerful grin; sturdy ordinary paws; no wings, no mermaid tail, no magic, no sparkle; a woven pale-blue grass bracelet on one front leg."
+    },
+    {
+      "id": "dirt",
+      "name": "Dirt",
+      "sheet": "Dirt: young jaguar cub the same size and age as Cottontail; warm soil-brown coat with dark chocolate-brown rosette spots, a tuft of bright wavy leaf-green hair exactly the shape of Cottontail's pink tuft, calm friendly moss-green eyes, half-lidded and unhurried, a wide slow easy smile; sturdy ordinary paws lightly dusted with garden soil; no wings, no mermaid tail; a woven green-vine bracelet on one front leg."
+    },
+    {
+      "id": "purpleshine",
+      "name": "Purple Shine",
+      "sheet": "Purple Shine: small sleek cat, purple all over — plum-purple fur, deeper violet ears; large gentle violet eyes; delicate translucent lavender fairy wings, small and fine; her cat body ends in a shimmering amethyst-purple mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver necklace with a tiny purple star charm; calm, warm, watchful, like someone who already knows you."
+    },
+    {
+      "id": "pinkshine",
+      "name": "Pink Shine",
+      "sheet": "Pink Shine: fluffy grown dog, warm rose-pink all over, long soft curly ears; kind dark round eyes; iridescent pearl-pink fairy wings; his dog body ends in a rose-gold mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver collar with a tiny pink star charm; steady and gentle, with a woolly deep bark."
+    },
+    {
+      "id": "evilest",
+      "name": "Evilest",
+      "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile."
+    },
+    {
+      "id": "cheeblest",
+      "name": "Cheeblest",
+      "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower."
+    },
+    {
+      "id": "beedlist",
+      "name": "Beedlist",
+      "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her."
+    },
+    {
+      "id": "leeblebeest",
+      "name": "Leeblebeest",
+      "sheet": "Leeblebeest: a girl the same size as the other small sisters; every bit of her skin is a smooth soft matte blue — face, ears, hands, all of it, like a girl painted gently blue — strange and calm but never frightening, never gory; long straight deep-blue hair; plain long midnight-blue high-collared dress; a quiet patient face with a small unreadable smile."
+    },
+    {
+      "id": "shock",
+      "name": "Shock",
+      "sheet": "Shock: a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature with two small carved fangs at its frown, round dark eye-holes, a thin hairline crack down one cheek, and a small simple tipped-sideways crescent moon — one clean thin C-shaped curve — scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: a long grey road winding out of grey woods toward Castle Everstair in the distance, the lavender castle and its great stair the only warm gold thing left in a world washed colorless (all greens, pinks and blues drained to soft grey, like a watercolor left out in the rain — but the castle's lamplight still glows warm gold and the night sky still reads deep indigo). Walking the road with her back to us, a small round grandmotherly witch in a patched blue cloak and floppy pointed hat, holding up a fat round glass bottle that swirls with the last rainbow colors left in the world. Behind her, creeping along the roadside grass, two wolves of very different sizes: a small lean curly-furred wolf in a green scarf, and behind him an ENORMOUS gentle grey wolf whose hundred-year silver hair trails away down the road behind him like a river. Far ahead over the castle, a few shining bubbles of color rise from the sea. A perfectly round full moon (never a crescent) above. Open sky in the upper third for the title. Wolves only — no dogs, no poodles, no other animals.",
+    "note": "The two wolves must be dramatically different sizes — Poodle small and wiry, Hairs mountain-sized with an endless silver mane."
+  },
+  "questions": [
+    "Poodle and Hairs took the whole feast because they were afraid there wouldn't be enough left for them. Have you ever wanted to keep all of something for yourself? What made it feel like there might not be enough?",
+    "Witchy said a tale is only half of a tale — the other half is somebody listening. Who is the best listener you know? How does it feel when someone really leans in while you're talking?",
+    "Hairs only has one word, and for a very long time everybody heard it wrong. Has anybody ever misunderstood what you meant? What did you wish they had heard?",
+    "At the very end, the two wolves who took everything were given a seat at the table and a bowl of their own. Was that the right thing to do? Talk about it together — is there someone you could ask to sit down with you?"
+  ],
+  "lookAndFind": "Almost everything in this book is grey until the very end — but a few things never go grey at all. Can you find the gold in every picture? (Look for lanterns, the round full moon, and Witchy's bottle, which fills up a little more each time you see it.) One long silver strand of Hairs' hair sneaks into every page too, and there's a crescent moon hiding in nearly every picture.",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Two wolves and a scheme",
+      "text": "Deep in the grey woods, where the trees forgot their green,\nlived two wolves who were not the same amount of wolf.\n\nPoodle was the small one. Poodle did the planning.\n\nHairs was the enormous one, with a hundred years of silver hair\nbraided down the path behind him.\nHairs did the eating, and the agreeing, and the following.\n\nPoodle did all of the talking as well,\nbecause Hairs only ever says one thing.\n\n\"GRRRR,\" said Hairs.\n\"He agrees,\" said Poodle. Hairs had not agreed yet.",
+      "image": "images/01.webp",
+      "imagePrompt": "Deep in a colorless grey forest at dusk: a small lean curly-furred grey wolf in a tattered green scarf stands on a mossy log drawing a plan in the dirt with one claw, gesturing grandly — and looming behind him, taking up most of the picture, an ENORMOUS gentle grey wolf with huge soft amber eyes, sitting patiently, his hundred-year silver mane pouring off him and trailing away between the trees into the distance. The size difference is comic and enormous. Every tree, leaf and fern is washed to soft grey, as if the color has been rinsed out of the world; only the warm gold of moonlight through the branches and the round full moon above stay true. Cozy, funny, storybook-mischievous — never scary, no bared teeth. Wolves only — no dogs, no poodles, no rabbits, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "enormous",
+          "definition": "so big that big isn't a big enough word for it"
+        },
+        {
+          "word": "braided",
+          "definition": "woven together in three strands, the way you do with long hair"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    },
+    {
+      "number": 2,
+      "title": "Everything grey",
+      "text": "Nobody could say exactly when the grey had begun.\nIt came the way quiet comes — a little, and then a lot.\nThe leaves went grey. The berries went grey.\nEven the soup went the color of rain.\n\nAnd everybody remembered the colors. That was the worst part.\n\nWhen the world goes grey, the food goes thin,\nand a wolf the size of Hairs takes an awful lot of filling.\n\nSo Poodle made their biggest plan yet:\nsneak, and sniff, and take every crumb they could find.\n\n\"GRRRR,\" said Hairs, uncertainly.\n\"He says it's a wonderful idea,\" said Poodle.",
+      "image": "images/02.webp",
+      "imagePrompt": "A wide sad grey landscape: bare grey berry bushes, grey grass, a grey stream, a grey sky — a whole world with its color rinsed out, painted in soft watercolor greys and washed lavender-greys, beautiful rather than gloomy. Crossing it, the small lean curly grey wolf trots ahead nose-down and sneaky, and behind him the enormous grey wolf plods with his nose deep in an empty grey berry bush, his endless silver mane dragging a wide soft trail through the grass behind him. A single warm gold lantern hangs forgotten on a fence post — the only color in the picture. Perfectly round full moon (never a crescent) low in the sky. Wolves only — no dogs, no poodles, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "sneak",
+          "definition": "to move so quietly that nobody notices you at all"
+        },
+        {
+          "word": "crumb",
+          "definition": "the tiniest little piece of food, the kind that falls off a cake"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    },
+    {
+      "number": 3,
+      "title": "One ingredient left",
+      "text": "In a crooked cottage at the edge of those woods,\na good witch called Witchy stirred a bubbling pot.\n(Not the witch under the bottom step. A different one.\nA kind one. There are kind ones.)\n\n\"Almost, almost,\" she whispered. \"One ingredient left.\"\n\nIn her bottle swirled a slow soft heap of every color there was,\nsaved up and stoppered and waiting to be poured.\n\n\"What I need,\" said Witchy, \"is a mermaid's tale.\"\n\nWhich does NOT mean a mermaid's tail.\nIt means a story. Told by a mermaid. Out loud.",
+      "image": "images/03.webp",
+      "imagePrompt": "Inside a warm crooked little cottage at night, everything leaning slightly sideways: a small round grandmotherly witch in a floppy patched blue pointed hat stirs a big bubbling copper pot on a stove, her round spectacles fogged, laugh lines everywhere. On the shelf beside her stands a fat round glass bottle stoppered with wood, holding a slow swirl of rainbow light — the only real color in the whole picture, throwing colored spots across her face and the rafters. Through the window behind her, the grey colorless world. Herbs, jars and teacups clutter every shelf. Warm gold firelight, deep indigo window. Cozy and safe, absolutely not a scary witch. No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "witchy"
+      ],
+      "vocab": [
+        {
+          "word": "ingredient",
+          "definition": "one of the things you put in when you are making something"
+        },
+        {
+          "word": "tale",
+          "definition": "a story you tell out loud — it sounds exactly like tail, but it isn't one"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "The road to Everstair",
+      "text": "So Witchy tucked her bottle in a scarf and set off\ndown the grey road to Castle Everstair,\nwhere the great stair starts in the sea and climbs to the moon.\n\nThe mermaids were coming up from the deep that night —\nall of them, every color they used to be —\nbecause it was a birthday. Two birthdays, really.\n\nPrincess Moon and Baby Lady were turning zero again,\nthe way they do, having been born with the moon.",
+      "image": "images/04.webp",
+      "imagePrompt": "A long grey road at night winding down toward the sea, where the lavender Castle Everstair rises with its great glowing stair climbing out of the water toward a perfectly round full moon (never a crescent). The small round witch walks the road seen from behind, cloak and hat blown by the wind, her bottle of swirling rainbow light bundled in a scarf under one arm and glowing through the cloth. The whole landscape is washed colorless grey — except the castle's warm gold windows and lanterns far ahead, and the little rainbow glow at her elbow. Down in the dark water, faint shapes of mermaid tails are already turning toward the castle. No other people, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "witchy"
+      ],
+      "vocab": [
+        {
+          "word": "deep",
+          "definition": "the far-down part of the sea, where the light stops"
+        },
+        {
+          "word": "mermaids",
+          "definition": "sea people with shining fish tails instead of legs"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Two noses in the dark",
+      "text": "Two noses lifted in the grey woods.\n\nCake. Somewhere out there — cake.\nAnd berries. And frosting. And something with butter in it.\n\n\"Do you smell what I smell?\" said Poodle.\n\"GRRRR,\" said Hairs, who had smelled nothing else since Tuesday.\n\nSo out they slipped after Witchy, low and quiet:\none thin grey shadow, and one shadow the size of a hill\nwith a silver braid trailing a mile out behind it,\nfollowing the smell of somebody's party.",
+      "image": "images/05.webp",
+      "imagePrompt": "Night on a grey hillside above the sea road: the small lean curly grey wolf and the enormous silver-maned grey wolf sit side by side with both noses tipped straight up and eyes closed in bliss, breathing in a thin drifting golden ribbon of delicious smell that curls up from the distant castle far below — the smell drawn as a glowing gold sparkle-trail winding through the colorless grey landscape, the only warmth in the picture. The small wolf's green scarf flutters; the enormous one is drooling just slightly, his silver mane spilling down the whole hillside behind them. Perfectly round full moon (never a crescent) behind them. Funny and adorable, never menacing. Wolves only — no dogs, no poodles, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "frosting",
+          "definition": "the sweet soft sugar that goes on top of a cake"
+        },
+        {
+          "word": "shadow",
+          "definition": "the dark shape a thing makes when it stands in the light"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    },
+    {
+      "number": 6,
+      "title": "The table and the pool",
+      "text": "Castle Everstair was lit up gold against the grey.\nThe long table went on and on and on:\ncakes, and berry towers, and soup, of course,\nand a bowl set at the end for anyone stormy\nwho might not be there. (She wasn't. She was close.)\n\nAnd up out of the warm round pool came the mermaids,\nsilver and rose and green under all that grey,\nsinging happy-birthday in the old sea way.\n\nPoodle counted the cakes.\nHairs counted them twice, which took a while,\nbecause Hairs counts with his nose.",
+      "refrain": true,
+      "image": "images/06.webp",
+      "imagePrompt": "A huge golden birthday feast at Castle Everstair at night: one enormously long table on the stone terrace beside the warm round sea-pool, loaded with cakes, towers of berries, steaming soup bowls and lanterns, with a single empty bowl set alone at the far end of the row. Rising out of the glowing pool are several mermaids of different colors, tails curled over the rim, mid-song, and among them one very old mermaid with sea-foam-white hair. At the table: a pink-haired winged princess with a silver mermaid tail, a small winged puppy with a mermaid tail and no back legs, a purple winged cat and a rose-pink winged dog, and three jaguar cubs with pink, blue and green hair tufts. Just outside the lantern light, two wolf shapes crouch in the grass — one small, one gigantic — only their eyes catching the gold, a faint silver mane glimmering behind the big one. The world beyond the terrace is washed colorless grey; the party itself blazes warm gold. Perfectly round full moon (never a crescent) above. Each character appears exactly once — no duplicate characters, no other children, no other people, no extra animals besides the ones named.",
+      "textPosition": "top",
+      "characters": [
+        "moon",
+        "babylady",
+        "cottontail",
+        "winds",
+        "dirt",
+        "purpleshine",
+        "pinkshine",
+        "pearl",
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "stormy",
+          "definition": "full of wind and rain and rumbling — the way weather gets when it is upset"
+        },
+        {
+          "word": "counted",
+          "definition": "went through them one at a time to find out how many there are"
+        }
+      ],
+      "pronunciations": {
+        "close": "kloʊs"
+      }
+    },
+    {
+      "number": 7,
+      "title": "Pearl begins",
+      "text": "Then the oldest mermaid of all rose up on her tail.\nHer name was Pearl, and her hair was sea-foam,\nand when Pearl tells a tale the sea holds still to hear it.\n\nShe opened her mouth and the story came out in bubbles —\nround shining bubbles that drifted up over the table,\nand inside every one of them, a little bit of color:\na green, a gold, a blue nobody had seen in ages.\n\nWitchy uncorked her bottle. It began, slowly, to fill.\n\nAnd behind the table, two shadows got low.\n(One of them took some doing.)",
+      "image": "images/07.webp",
+      "imagePrompt": "The old sea-foam-haired mermaid rises tall out of the glowing sea-pool mid-story, arms open, and from her mouth float dozens of big round shining bubbles that drift up over the feast table — and inside each bubble glows a scrap of real color: a green leaf, a gold sun, a blue wave, tiny painted scenes glowing bright against the colorless grey night. Every face at the table is tipped up, lit from below, delighted. At the table's edge the small round witch holds up her uncorked glass bottle, colored light streaming into it in a thin ribbon, the bottle now filling. Behind the far end of the table, two wolves creep along on their bellies unnoticed — a small wiry one and an enormous silver-maned one squashed as flat as a mountain can get. Warm gold and rainbow bubbles against grey and indigo. Each character appears exactly once. Wolves only — no poodles, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "pearl",
+        "witchy",
+        "moon",
+        "babylady",
+        "cottontail",
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "uncorked",
+          "definition": "pulled the little plug out of a bottle to open it"
+        },
+        {
+          "word": "ages",
+          "definition": "a very, very, very long time"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "The great sneaky sweep",
+      "text": "It took them one breath. It took them one sweep.\n\nCakes — gone. Berries — gone. Frosting, crumbs,\nthe little sugar moons, the cheese cut into stars,\nthe whole entire birthday feast rolled up in a hundred years\nof silver hair and carried off into the woods.\n\nThey ran until they had to stop and lean on a tree.\n\n\"We are,\" gasped Poodle, \"the cleverest wolves alive.\"\n\"GRRRR,\" said Hairs, with his mouth already full.",
+      "image": "images/08.webp",
+      "imagePrompt": "Wild funny motion: the enormous grey wolf gallops away from the castle into the grey woods with the entire birthday feast bundled up in his own vast silver mane — cakes, berry towers, sugar moons and star-shaped cheese riding along in the hair and tumbling out behind him in a comic trail — while the small curly wolf in the green scarf races alongside, laughing, tongue out, one whole cake balanced on his head. Behind them the golden castle terrace glows, its long table suddenly bare. Colorless grey forest, warm gold light spilling from the castle behind. Joyful and comic, never frightening, no bared teeth. Wolves only — no dogs, no poodles, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "sweep",
+          "definition": "one big fast movement that scoops up everything at once"
+        },
+        {
+          "word": "feast",
+          "definition": "an enormous happy meal with far more food than usual"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    },
+    {
+      "number": 9,
+      "title": "The sparkle goes out",
+      "text": "\"The food!\" cried Baby Lady. \"It's all — it's ALL gone!\"\n\nAnd the strangest thing happened, and it happened fast.\nThe party went quiet. The bubbles went dim.\n\nPearl kept telling her tale, and her tale was a good one,\nbut nobody laughed, and nobody leaned in,\nand the color inside the bubbles went thin, and went grey,\nand the bubbles came down instead of up.\n\nWitchy's bottle stopped filling at halfway.",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "The same feast table, now bare and sad: empty platters, a tipped-over lantern, scattered crumbs. The small winged puppy with the mermaid tail hovers above the table with her front paws over her mouth, stricken; the pink-haired winged princess stares at the empty place. The old mermaid still rises from the pool, still telling her story, but her bubbles are sinking instead of rising and their colors have drained to dull grey. The small round witch stands holding out her half-filled bottle, watching the last thin ribbon of color fade. Faces turned away from each other, nobody leaning in. Muted, hushed, gently sad — not frightening. Perfectly round full moon (never a crescent) above. Each character appears exactly once, no other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "babylady",
+        "moon",
+        "pearl",
+        "witchy",
+        "cottontail",
+        "winds"
+      ],
+      "vocab": [
+        {
+          "word": "dim",
+          "definition": "not shining much anymore — going dark and quiet"
+        },
+        {
+          "word": "halfway",
+          "definition": "part of the way there, but not all of the way"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Half a bottle",
+      "text": "\"Half,\" said Witchy, and she sat down heavily.\n\"Half won't paint a world. Half won't even paint a garden.\"\n\n\"But you have the tale,\" said Cottontail. \"She's still telling it.\"\n\n\"A tale is only half of a tale, little jaguar,\" said Witchy.\n\"The other half is the listening. The leaning in. The joy.\n\nAnd there is no joy at an empty party.\"",
+      "image": "images/10.webp",
+      "imagePrompt": "A quiet close moment on the terrace steps: the small round witch sits heavily on a stone step with her half-filled glass bottle balanced on her knees, the swirling color inside reaching only halfway up, her face soft and tired and kind. The pink-haired jaguar cub sits close beside her with one paw on the bottle, looking up with big worried amber eyes; the green-haired jaguar cub and the blue-haired jaguar cub sit a little behind. Behind them the emptied golden table and the grey sea. Lantern-light warm on their faces, everything else washed grey. Gentle and tender, never frightening. Each character appears exactly once, no other people, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "witchy",
+        "cottontail",
+        "winds",
+        "dirt"
+      ],
+      "vocab": [
+        {
+          "word": "joy",
+          "definition": "the big shining happy feeling — and it grows bigger when it is shared"
+        },
+        {
+          "word": "empty",
+          "definition": "with nothing at all inside it"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Dreams of hope",
+      "text": "Princess Moon closed her eyes.\n\nShe has every power there is, but she reaches for them less\nthan she used to. Tonight she reached for her favorite:\ndreams of hope.\n\nIt isn't a power that lives inside her.\nIt lives inside other people. That's why it can't be stolen.\n\nAnd there, behind a great grey boulder at the edge of the woods,\nshe found two wolves dreaming the very same dream:\na table. A long one. With them at it.\n\n(One of them had had a table once.\nHe remembered every Thursday of it.)",
+      "image": "images/11.webp",
+      "imagePrompt": "Princess Moon floating with her eyes closed above the dark terrace, hands open, gold wings spread, her whole outline glowing softly gold — and above and around her a big soft translucent dream-vision painted in warm gold sparkle-light, clearly a dream: inside it, a small curly wolf and an enormous silver-maned wolf sit at a long crowded table wearing party hats, each being handed a bowl. Below her the colorless grey world; inside the dream, warm gold. Perfectly round full moon (never a crescent) above her. Serene and beautiful. Moon appears exactly once; the wolves appear only inside the dream vision. No other people.",
+      "textPosition": "bottom",
+      "characters": [
+        "moon",
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "hope",
+          "definition": "the feeling that something good can still happen"
+        },
+        {
+          "word": "boulder",
+          "definition": "a rock so big you could hide a whole wolf behind it"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Off she went",
+      "text": "\"I know exactly where they are,\" said Moon,\nand she was up off the terrace before anybody answered,\ngold wings going, silver tail trailing sparks behind her,\none bright thing moving fast across all that grey.\n\nBaby Lady started after her — then stopped.\nThen stayed. Then put her paws around Witchy instead.\n\nBecause somebody had to keep the party from ending.",
+      "refrain": true,
+      "image": "images/12.webp",
+      "imagePrompt": "Princess Moon flying fast and low over a colorless grey landscape at night, a long trail of gold sparkles and stardust streaming behind her silver mermaid tail, hair blown back — one bright warm streak of color crossing a whole grey world. In the lower corner, small and far away on the lit castle terrace, the little winged puppy with the mermaid tail has turned back and wrapped both front paws around the small round witch in a hug, the half-filled bottle glowing between them. Perfectly round full moon (never a crescent). Sweeping, hopeful, cinematic. Each character appears exactly once. No other people, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "moon",
+        "babylady",
+        "witchy"
+      ],
+      "vocab": [
+        {
+          "word": "terrace",
+          "definition": "a wide flat stone porch outside, big enough for a long table"
+        },
+        {
+          "word": "trailing",
+          "definition": "leaving something streaming out behind you as you go"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Caught, with frosting",
+      "text": "She found them mid-bite. Frosting on both snouts.\nHairs had cake in his ears. Hairs had cake in his EYEBROWS.\n\nMoon didn't shout. Moon sat down in the grass.\n\n\"That's Baby Lady's birthday, and mine,\" she said.\n\"And Witchy needs the joy of it to give the world\nits colors back. All of them. Yours too.\n\nThe green of your woods is in that bottle, waiting.\"\n\n\"GRRRR,\" said Hairs, very quietly.\n\n\"He says we're keeping it,\" said Poodle.\n\n\"No,\" said Moon. \"That isn't what he said.\"",
+      "image": "images/13.webp",
+      "imagePrompt": "Behind a great grey boulder in the grey woods: the two wolves caught mid-feast in a spill of cakes and berries — the enormous silver-maned grey wolf sitting with white frosting all over his snout and cake stuck comically on his ears and eyebrows, huge amber eyes wide with guilt; the small curly wolf beside him frozen with a berry tart halfway to his mouth. Facing them, Princess Moon has sat down calmly in the grass at their level, wings folded, hands in her lap, speaking gently — not angry at all, tiny beside the huge wolf. Her soft gold glow lights all three of them and the stolen cakes; everything beyond is washed grey. Perfectly round full moon (never a crescent) above the trees. Warm, funny, forgiving, never frightening, no bared teeth. Wolves only — no dogs, no poodles, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "moon",
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "snouts",
+          "definition": "the long nose-and-mouth part of an animal's face"
+        },
+        {
+          "word": "shout",
+          "definition": "to say something as loudly as you possibly can"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    },
+    {
+      "number": 14,
+      "title": "What Hairs actually said",
+      "text": "Poodle looked down at his paws. Both paws.\nBoth covered in somebody else's birthday.\n\nAnd Hairs — enormous, gentle, ridiculous Hairs —\nput his great head down in the grass and said it again,\nthe only word he has, the one he has been practicing\nsince before anybody was born.\n\n\"GRRRR.\"\n\nPoodle opened his mouth to translate. Then he didn't.\n\n\"He's asking to be asked,\" said Moon.\n\n\"He's been asking the whole entire time,\" said Poodle,\n\"and we took a cake instead. Because a cake was easier.\"\n\n\"Then come,\" said Moon. \"Both of you. Bring it back and stay.\"\n\nSo they grumbled — hungry wolves do grumble —\nand they pushed the whole feast home across the grass,\ncrumbs and cakes and all of it, walking beside the princess.",
+      "image": "images/14.webp",
+      "imagePrompt": "The enormous silver-maned grey wolf walks slowly down the grey road with the whole recovered birthday feast bundled carefully in his mane — cakes and berry towers riding along safely now instead of stolen — his great head low and his ears back, embarrassed and relieved. The small curly wolf trots at his shoulder with the green scarf, tail low. Princess Moon walks beside them glowing softly gold, one hand resting on the big wolf's shoulder, delighted and trying not to smile too much. Grey woods behind, the far golden castle ahead down the road. Perfectly round full moon (never a crescent). Warm and funny and kind. Wolves only — no dogs, no poodles, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "poodle",
+        "hairs",
+        "moon"
+      ],
+      "vocab": [
+        {
+          "word": "translate",
+          "definition": "to say what somebody meant in words that other people know"
+        },
+        {
+          "word": "grumbled",
+          "definition": "complained in a low rumbly voice, mostly to yourself"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    },
+    {
+      "number": 15,
+      "title": "The pouring",
+      "text": "The party came back on the way a lamp comes back on:\nall at once, everywhere.\n\nEverybody leaned in. Everybody laughed in the right places.\nPearl told the end of her tale, and the bubbles blazed,\nand the color inside them was almost too much to look at.\n\nAnd Witchy's bottle filled, and filled, and filled,\nuntil it glowed like a small round moon in her hands.\n\nSo she climbed to the top step.\nShe pulled out the stopper.\nAnd she poured the whole thing out over everything.",
+      "image": "images/15.webp",
+      "imagePrompt": "The great moment: the small round witch stands high on the top step of the glowing stair with both arms raised, tipping her brimming glass bottle over — and an enormous waterfall of liquid rainbow light pours out and spills down the stair, across the sea, over the woods and the whole world below, color racing outward in a bright wave over the grey. Below on the terrace the restored feast blazes with lanterns and cakes, the old sea-foam-haired mermaid mid-story with huge brilliant color-filled bubbles bursting upward around her, every face lit and laughing, and at the table's end the enormous silver-maned wolf and the small curly wolf watching the sky with their mouths open. The part of the picture the pour has reached is in full brilliant color; the far edge is still grey. Perfectly round full moon (never a crescent) directly above. Triumphant, dazzling, joyful. Each character appears exactly once. No other people.",
+      "textPosition": "top",
+      "characters": [
+        "witchy",
+        "pearl",
+        "moon",
+        "babylady",
+        "cottontail",
+        "poodle",
+        "hairs"
+      ],
+      "vocab": [
+        {
+          "word": "blazed",
+          "definition": "shone out bright and hot, the way a big happy fire does"
+        },
+        {
+          "word": "stopper",
+          "definition": "the little plug that keeps a bottle closed"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Happy birthday, in color",
+      "text": "Green came back into the leaves like a held breath let go.\nGold came back into the lanterns. Pink came back into hair.\nThe sea remembered blue. The soup remembered orange.\nAnd the grey woods were only woods again.\n\n\"Happy birthday!\" everybody shouted, all at once —\nand two wolves shouted it too, because by then\ntwo wolves were at the table with two bowls in front of them,\nand one more bowl at the end for anyone stormy.\n\n\"GRRRR,\" said Hairs, with his mouth completely full,\nand every single person there knew what he meant.\n\n\"Don't tell anybody I'm happy,\" said Poodle,\nwho was crying a little.\n\nAnd far out, where the dark begins,\none small place stayed grey a while longer,\nand something out there hummed one note, badly.\n\nGoodnight.",
+      "refrain": true,
+      "theEnd": "The End — of the seventh one.",
+      "image": "images/16.webp",
+      "imagePrompt": "Full brilliant color at last, and the difference is the whole point: the long birthday table on the castle terrace under blazing gold lanterns — green leaves, a blue sea, orange soup, everything saturated and alive after fifteen grey pages. At one side of the table the enormous silver-maned grey wolf sits with a tiny crooked party hat perched on his huge head and his cheeks packed full, his vast mane coiled neatly under the table like a rug, and beside him the small curly wolf in the green scarf wipes his eyes with his scarf, a bowl in front of each of them. Around the table: the pink-haired winged princess and the small winged puppy with the mermaid tail standing on their chairs mid-cheer, the purple winged cat and the rose-pink winged dog, the pink-haired, blue-haired and green-haired jaguar cubs, the small round witch holding her empty bottle upside down and grinning, the old sea-foam-haired mermaid leaning in from the sea-pool, Evilest laughing, Beedlist writing in her small black book, Cheeblest beside the all-blue girl — and at the very end of the row the tall masked sister in her grey cloak, quiet, a full soup bowl set before her. Far off at the dark horizon, one small patch of the world is still washed grey. A crescent moon carved into the stone balustrade; a perfectly round full moon (never a crescent) above. Every sister is a small child except the tall masked one. Each character appears exactly once — no duplicate characters, exactly one pink-haired girl, no other children, no other people. Wolves only — no poodles.",
+      "textPosition": "top",
+      "characters": [
+        "poodle",
+        "hairs",
+        "witchy",
+        "pearl",
+        "moon",
+        "babylady",
+        "cottontail",
+        "winds",
+        "dirt",
+        "purpleshine",
+        "pinkshine",
+        "evilest",
+        "cheeblest",
+        "beedlist",
+        "leeblebeest",
+        "shock"
+      ],
+      "vocab": [
+        {
+          "word": "lanterns",
+          "definition": "lamps you can carry, with the light kept safe inside"
+        },
+        {
+          "word": "hummed",
+          "definition": "sang a tune with your mouth closed"
+        }
+      ],
+      "pronunciations": {
+        "GRRRR": "ɡɝː"
+      }
+    }
+  ]
+}
