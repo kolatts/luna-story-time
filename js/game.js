@@ -1,22 +1,43 @@
-/* Princess Moon's Castle Life — game engine
- * One plain script (no modules), same house style as js/reader.js.
- * Loads game/world.json once, then runs a cozy tile game: walk, gather,
- * craft, decorate. Art in this pass is emoji + CSS tiles; a future session
- * can swap the emoji for images without touching the rules below.
+/* Princess Moon's Castle Life — game engine (v2)
+ *
+ * Phaser 3.90.0 — vendored as js/vendor/phaser.min.js (minified UMD build,
+ * loaded by game.html before this file; no bundler, no modules).
+ *
+ * Hybrid architecture (game/SPEC-V2.md, Workstream B):
+ *   - Phaser owns ONLY the map stage. Its canvas mounts inside #mapView and
+ *     scales with Phaser.Scale.FIT.
+ *   - Everything else stays DOM exactly as v1: header, satchel / crafting /
+ *     furniture panels, dialogue box, toasts, confirm modal, touch d-pad.
+ *   - All game rules, world data and the save format are v1's (game/SPEC.md).
+ *     localStorage key "pm-castle-life-v1" stays byte-compatible.
+ *
+ * Art comes from game/assets/manifest.json when it exists. ANY subset may be
+ * missing: the engine generates a fallback texture per terrain (the v1 CSS
+ * tile colours) and draws the v1 emoji as Phaser Text for objects, characters
+ * and nodes, so the game is fully playable with no art at all.
  */
 (function () {
   "use strict";
 
-  /* ---------- Constants ---------- */
+  /* ================= Constants ================= */
+
   var SAVE_KEY = "pm-castle-life-v1";
   var RESPAWN_MS = 35000;   // resource node comes back this long after gathering
   var TICK_MS = 1000;       // respawn check
   var TOAST_MS = 2400;
-  var FADE_MS = 180;        // map/room transition fade
-  var REPEAT_MS = 180;      // touch d-pad hold-to-repeat
+  var FADE_MS = 250;        // map/room transition fade (each way)
+  var STEP_MS = 150;        // one tweened grid step
+  var HOP_PX = 7;           // little hop arc during a step
   var SAVE_DEBOUNCE = 150;
   var START_MAP = "grounds";
   var START_X = 9, START_Y = 5;
+
+  /* Fixed internal stage size; Scale.FIT letterboxes it into #mapView.
+     Every area is centred inside it at its own tile size. */
+  var GAME_W = 1152, GAME_H = 768;
+
+  var ASSET_BASE = "game/assets/";
+  var EMOJI_FONT = '"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji","Twemoji Mozilla",sans-serif';
 
   var DIRS = {
     up: { dx: 0, dy: -1 },
@@ -29,7 +50,29 @@
     w: "up", s: "down", a: "left", d: "right"
   };
 
-  /* ---------- DOM ---------- */
+  /* Terrain textures the renderer may ask for (manifest keys + "void"). */
+  var TERRAIN_LIST = [
+    "grass", "grass2", "path", "dock", "tree", "rock", "water", "sand",
+    "cavefloor", "cavewall", "floor", "wall", "flowers", "glow",
+    "castledoor", "dooropen", "void"
+  ];
+  /* v1 emoji drawn over a *fallback* terrain swatch (never over real art). */
+  var TERRAIN_EMOJI = { tree: "🌳", castledoor: "🏰", dooropen: "🚪" };
+
+  /* Terrain glyphs the manifest ships as TRANSPARENT overlay sprites rather
+     than opaque tiles: the map's own base ground is drawn underneath and the
+     sprite sits on top as a y-sorted object (value = the v1 emoji fallback).
+     No generated ground swatch is made for these — a missing file has to fall
+     through to the emoji, exactly like nodes and furniture do. */
+  var TERRAIN_OVERLAY = { rock: "🪨" };
+
+  var PLAYER_EMOJI = "🧚";
+
+  /* Depth bands: ground 0, terrain emoji 1, y-sorted objects 100+py, fx 9000+. */
+  var DEPTH_OBJ = 100;
+
+  /* ================= DOM ================= */
+
   function $(id) { return document.getElementById(id); }
 
   var mapView = $("mapView");
@@ -50,16 +93,31 @@
   var confirmYes = $("confirmYes");
   var confirmNo = $("confirmNo");
 
-  /* ---------- Runtime ---------- */
+  /* ================= Runtime ================= */
+
   var world = null;            // parsed world.json
-  var roomsById = {};          // room id -> room
-  var recipesById = {};        // recipe id -> recipe
-  var houseDoorMap = null;     // map object that owns the castle door
+  var manifest = null;         // parsed game/assets/manifest.json (or {})
+  var roomsById = {};
+  var recipesById = {};
+  var houseDoorMap = null;
   var state = null;
 
-  var playerEl = null;
-  var tileEls = [];            // tileEls[y][x] -> div.tile
+  var game = null;             // Phaser.Game
+  var scene = null;            // the live WorldScene
+
+  /* Current area geometry (stage coordinates) */
   var gridW = 0, gridH = 0;
+  var tileSize = 64, originX = 0, originY = 0;
+  var useDock = false, isCave = false, isOutdoor = false;
+  var baseTerrain = "grass";   // what this map's ground is made of (see baseTerrainOf)
+
+  /* Display objects for the current area */
+  var groundAt = {};           // "x:y" -> ground Image
+  var overlayAt = {};          // "x:y" -> [GameObject]
+  var swayFx = [], waterFx = [], glowFx = [];
+  var playerC = null, playerInner = null, playerSprite = null;
+  var sparkleEmitter = null, dustEmitter = null;
+
   var npcIndex = {};           // "x:y" -> companion id (current area)
   var resIndex = {};           // "x:y" -> resource placement (current area)
 
@@ -67,12 +125,14 @@
   var placing = null;          // furniture item id being placed
   var tileMenu = null;         // inline Move / Put away menu element
   var travelling = false;
+  var moving = false;          // a step tween is in flight
   var saveTimer = null;
-  var wiped = false;           // set by "Start over" so nothing writes the save back
+  var wiped = false;
   var lastBumpToast = 0;
-  var pointerDriven = false;   // touch/mouse used the d-pad; ignore synthetic clicks
-  var repeatTimer = null;
-  var repeatPointerId = null;  // pointer that started hold-to-repeat; only it may stop it
+  var pointerDriven = false;
+  var heldKeys = [];           // held direction keys, most recent last
+  var dpadDir = null;
+  var repeatPointerId = null;
   var toastQueue = [], toastTimer = null;
 
   var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -82,20 +142,20 @@
   function intOr(v, def) { var n = parseInt(v, 10); return isNaN(n) ? def : n; }
   function keyOf(x, y) { return x + ":" + y; }
 
+  /* Stable pseudo-random per tile, so grass variants never shuffle. */
+  function hash2(x, y) {
+    var h = (x * 374761393 + y * 668265263) | 0;
+    h = (h ^ (h >> 13)) | 0;
+    h = Math.imul(h, 1274126177) | 0;
+    return ((h ^ (h >> 16)) >>> 0) / 4294967296;
+  }
+
   /* Hide/show belt-and-braces: some panels carry a `display` rule that would
      out-rank the `hidden` attribute, so set both. */
   function setHidden(el, hide) {
     if (!el) return;
     el.hidden = !!hide;
     el.style.display = hide ? "none" : "";
-  }
-
-  function closestTile(node) {
-    while (node && node !== mapView) {
-      if (node.classList && node.classList.contains("tile")) return node;
-      node = node.parentNode;
-    }
-    return null;
   }
 
   /* Toasts queue so a burst of unlocks doesn't stomp on itself. */
@@ -124,29 +184,7 @@
     }, t.ms);
   }
 
-  /* A little ✦ ✧ pop over a tile (CSS animates the children outward). */
-  function sparkleAt(x, y) {
-    if (reduceMotion) return;
-    var tile = tileEls[y] && tileEls[y][x];
-    if (!tile || !mapView) return;
-    var burst = document.createElement("div");
-    burst.className = "sparkle-burst";
-    burst.setAttribute("aria-hidden", "true");
-    burst.style.left = (tile.offsetLeft + tile.offsetWidth / 2) + "px";
-    burst.style.top = (tile.offsetTop + tile.offsetHeight / 2) + "px";
-    for (var i = 0; i < 6; i++) {
-      var s = document.createElement("span");
-      s.textContent = i % 2 ? "✧" : "✦";
-      s.style.setProperty("--i", String(i));
-      burst.appendChild(s);
-    }
-    mapView.appendChild(burst);
-    setTimeout(function () {
-      if (burst.parentNode) burst.parentNode.removeChild(burst);
-    }, 1000);
-  }
-
-  /* ================= Save / load ================= */
+  /* ================= Save / load  (unchanged from v1) ================= */
 
   function save() {
     if (saveTimer || wiped) return;
@@ -259,7 +297,7 @@
     return sanitize(parsed);
   }
 
-  /* ================= World queries ================= */
+  /* ================= World queries  (unchanged from v1) ================= */
 
   function areaIdOf(area) { return area && area._id ? area._id : ""; }
   function currentArea() {
@@ -309,7 +347,7 @@
     return !!r && condMet(r.unlock);
   }
 
-  /* A "*" doorway that leads to a still-locked room. */
+  /* A doorway that leads to a still-locked room. */
   function lockedDoorIn(area, x, y) {
     var e = exitIn(area, x, y);
     if (e && e.room && !roomUnlocked(e.to)) return e;
@@ -392,36 +430,617 @@
     return null;
   }
 
-  /* ================= Rendering ================= */
-
-  function ensurePlayer() {
-    if (playerEl) return playerEl;
-    playerEl = document.createElement("div");
-    playerEl.id = "player";
-    playerEl.className = "player face-down";
-    var sprite = document.createElement("span");
-    sprite.className = "p-sprite";
-    sprite.textContent = "🧚";
-    playerEl.appendChild(sprite);
-    playerEl.setAttribute("aria-hidden", "true");
-    return playerEl;
+  function areaHasTerrain(area, terrain) {
+    if (!area || !area.tiles) return false;
+    for (var y = 0; y < area.tiles.length; y++) {
+      var row = area.tiles[y] || "";
+      for (var x = 0; x < row.length; x++) {
+        if (terrainOf(row.charAt(x)) === terrain) return true;
+      }
+    }
+    return false;
   }
 
-  function tilePx() {
-    var v = 0;
-    try {
-      v = parseFloat(getComputedStyle(mapView).getPropertyValue("--tile"));
-    } catch (e) { v = 0; }
-    return v > 0 ? v : 34;
+  function findTerrain(area, terrain) {
+    if (!area || !area.tiles) return null;
+    for (var y = 0; y < area.tiles.length; y++) {
+      var row = area.tiles[y] || "";
+      for (var x = 0; x < row.length; x++) {
+        if (terrainOf(row.charAt(x)) === terrain) return { x: x, y: y };
+      }
+    }
+    return null;
   }
 
-  /* Build the whole grid — once per map/room entry. */
+  /* ================= Asset manifest ================= */
+
+  function manifestPath(group, id) {
+    if (!manifest || !manifest[group]) return null;
+    var p = manifest[group][id];
+    return (typeof p === "string" && p) ? p : null;
+  }
+  function texKey(group, id) { return group.charAt(0) + "_" + id; }
+
+  /* Every manifest entry we might use, as {key, url} pairs. */
+  function manifestQueue() {
+    var out = [];
+    var groups = {
+      terrain: TERRAIN_LIST,
+      characters: ["moon"].concat(Object.keys(world.companions || {})),
+      nodes: Object.keys(world.resources || {}),
+      furniture: (world.recipes || []).map(function (r) { return r && r.id; }),
+      fx: ["sparkle"]
+    };
+    var seen = {};
+    for (var g in groups) {
+      var ids = groups[g];
+      for (var i = 0; i < ids.length; i++) {
+        var id = ids[i];
+        if (!id) continue;
+        var key = texKey(g, id);
+        if (seen[key]) continue;          // e.g. a companion literally named "moon"
+        var p = manifestPath(g, id);
+        if (!p) continue;
+        seen[key] = true;
+        out.push({ key: key, url: ASSET_BASE + p });
+      }
+    }
+    return out;
+  }
+
+  /* ================= Generated fallback textures ================= */
+
+  /* v1's CSS tile colours, redrawn on a canvas so a missing .webp still
+     looks like the game the kids already know. */
+  var TERRAIN_PAINT = {
+    grass: { stops: [[0, "#4c8f6b"], [0.55, "#3a6f7c"], [1, "#2c4f68"]] },
+    grass2: { stops: [[0, "#56986f"], [0.5, "#3d7480"], [1, "#284a63"]], speckle: "rgba(255,255,255,.10)" },
+    path: { stops: [[0, "#e2c393"], [1, "#cda56e"]] },
+    dock: { stops: [[0, "#a97c4c"], [1, "#7d5730"]], planks: true },
+    sand: { stops: [[0, "#f0dfae"], [1, "#ddc287"]] },
+    water: { stops: [[0, "#2a5f8c"], [0.55, "#1c3f70"], [1, "#142a52"]] },
+    cavefloor: { stops: [[0, "#3b2350"], [1, "#2a1938"]] },
+    cavewall: { stops: [[0, "#221530"], [1, "#150c22"]], crystals: true },
+    floor: { stops: [[0, "#f3e2bd"], [1, "#e6cd9c"]], planks: true },
+    wall: { stops: [[0, "#a495c4"], [1, "#7f6ea8"]], bricks: true },
+    flowers: {
+      stops: [[0, "#4c8f6b"], [0.55, "#3a6f7c"], [1, "#2c4f68"]],
+      dots: [["rgba(242,169,196,.75)", 0.30, 0.35, 0.09], ["rgba(243,221,166,.75)", 0.68, 0.60, 0.08], ["rgba(255,255,255,.55)", 0.50, 0.20, 0.06]]
+    },
+    glow: { stops: [[0, "#3b2350"], [1, "#2a1938"]], halo: "rgba(243,221,166,.55)" },
+    tree: { stops: [[0, "#4c8f6b"], [0.55, "#3a6f7c"], [1, "#2c4f68"]], blob: ["#2f6b4a", "#1e4632", 0.44] },
+    castledoor: { stops: [[0, "#caa25a"], [1, "#8a6a34"]], frame: "rgba(253,249,240,.32)" },
+    dooropen: { stops: [[0, "#9a7440"], [1, "#5d4520"]], frame: "rgba(253,249,240,.28)" },
+    void: { stops: [[0, "#191636"], [1, "#12102a"]] }
+  };
+
+  function roundRectPath(g, x, y, w, h, r) {
+    g.beginPath();
+    g.moveTo(x + r, y);
+    g.lineTo(x + w - r, y);
+    g.quadraticCurveTo(x + w, y, x + w, y + r);
+    g.lineTo(x + w, y + h - r);
+    g.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    g.lineTo(x + r, y + h);
+    g.quadraticCurveTo(x, y + h, x, y + h - r);
+    g.lineTo(x, y + r);
+    g.quadraticCurveTo(x, y, x + r, y);
+    g.closePath();
+  }
+
+  function paintTerrainTexture(sc, name) {
+    var key = texKey("terrain", name);
+    if (sc.textures.exists(key)) return;
+    var spec = TERRAIN_PAINT[name] || TERRAIN_PAINT.void;
+    var S = 128;
+    var cv = sc.textures.createCanvas(key, S, S);
+    if (!cv) return;
+    var g = cv.getContext();
+    var i;
+
+    // Base gradient, roughly v1's 155deg linear-gradient.
+    var grad = g.createLinearGradient(0, 0, S * 0.62, S);
+    for (i = 0; i < spec.stops.length; i++) grad.addColorStop(spec.stops[i][0], spec.stops[i][1]);
+    g.fillStyle = grad;
+    g.fillRect(0, 0, S, S);
+
+    if (spec.speckle) {
+      g.fillStyle = spec.speckle;
+      for (i = 0; i < 14; i++) {
+        var sx = hash2(i + 1, 7) * S, sy = hash2(7, i + 1) * S;
+        g.beginPath(); g.arc(sx, sy, 1.6 + hash2(i, i) * 2, 0, 6.284); g.fill();
+      }
+    }
+    if (spec.planks) {
+      g.strokeStyle = "rgba(0,0,0,.16)";
+      g.lineWidth = 2;
+      for (i = 1; i < 4; i++) {
+        g.beginPath(); g.moveTo(0, (S / 4) * i); g.lineTo(S, (S / 4) * i); g.stroke();
+      }
+    }
+    if (spec.bricks) {
+      g.strokeStyle = "rgba(0,0,0,.18)";
+      g.lineWidth = 2;
+      for (i = 1; i < 5; i++) {
+        g.beginPath(); g.moveTo(0, (S / 5) * i); g.lineTo(S, (S / 5) * i); g.stroke();
+      }
+      g.beginPath(); g.moveTo(S / 2, 0); g.lineTo(S / 2, S / 5); g.stroke();
+      g.beginPath(); g.moveTo(S / 2, (S / 5) * 2); g.lineTo(S / 2, (S / 5) * 3); g.stroke();
+      g.beginPath(); g.moveTo(S / 2, (S / 5) * 4); g.lineTo(S / 2, S); g.stroke();
+    }
+    if (spec.crystals) {
+      var cols = ["rgba(215,227,240,.28)", "rgba(215,227,240,.20)", "rgba(232,196,106,.24)"];
+      var pts = [[0.25, 0.30, 0.055], [0.70, 0.65, 0.045], [0.55, 0.20, 0.04]];
+      for (i = 0; i < pts.length; i++) {
+        g.fillStyle = cols[i];
+        g.beginPath(); g.arc(pts[i][0] * S, pts[i][1] * S, pts[i][2] * S, 0, 6.284); g.fill();
+      }
+    }
+    if (spec.dots) {
+      for (i = 0; i < spec.dots.length; i++) {
+        var d = spec.dots[i];
+        g.fillStyle = d[0];
+        g.beginPath(); g.arc(d[1] * S, d[2] * S, d[3] * S, 0, 6.284); g.fill();
+      }
+    }
+    if (spec.halo) {
+      var hg = g.createRadialGradient(S / 2, S / 2, 0, S / 2, S / 2, S * 0.55);
+      hg.addColorStop(0, spec.halo);
+      hg.addColorStop(0.6, "rgba(232,196,106,.18)");
+      hg.addColorStop(1, "rgba(232,196,106,0)");
+      g.fillStyle = hg;
+      g.fillRect(0, 0, S, S);
+    }
+    if (spec.blob) {
+      var bg = g.createRadialGradient(S * 0.46, S * 0.5, 0, S * 0.5, S * 0.55, S * spec.blob[2]);
+      bg.addColorStop(0, spec.blob[0]);
+      bg.addColorStop(1, spec.blob[1]);
+      g.fillStyle = bg;
+      g.beginPath(); g.arc(S * 0.5, S * 0.55, S * spec.blob[2], 0, 6.284); g.fill();
+    }
+    if (spec.frame) {
+      g.strokeStyle = spec.frame;
+      g.lineWidth = 5;
+      roundRectPath(g, 12, 10, S - 24, S - 14, 22);
+      g.stroke();
+    }
+
+    // The "rounded swatch" read: a soft inner outline so tiles stay legible.
+    g.strokeStyle = "rgba(0,0,0,.16)";
+    g.lineWidth = 3;
+    roundRectPath(g, 2, 2, S - 4, S - 4, S * 0.14);
+    g.stroke();
+
+    cv.refresh();
+  }
+
+  function paintSparkle(sc) {
+    if (sc.textures.exists("fx_sparkle")) return;
+    var S = 64, c = S / 2;
+    var cv = sc.textures.createCanvas("fx_sparkle", S, S);
+    if (!cv) return;
+    var g = cv.getContext();
+    var glow = g.createRadialGradient(c, c, 0, c, c, c);
+    glow.addColorStop(0, "rgba(243,221,166,.9)");
+    glow.addColorStop(0.4, "rgba(232,196,106,.35)");
+    glow.addColorStop(1, "rgba(232,196,106,0)");
+    g.fillStyle = glow;
+    g.fillRect(0, 0, S, S);
+    // four-point star
+    g.fillStyle = "#fdf9f0";
+    g.beginPath();
+    g.moveTo(c, 2);
+    g.quadraticCurveTo(c + 4, c - 4, S - 2, c);
+    g.quadraticCurveTo(c + 4, c + 4, c, S - 2);
+    g.quadraticCurveTo(c - 4, c + 4, 2, c);
+    g.quadraticCurveTo(c - 4, c - 4, c, 2);
+    g.closePath();
+    g.fill();
+    cv.refresh();
+  }
+
+  function paintSoftCircle(sc, key, inner, outer) {
+    if (sc.textures.exists(key)) return;
+    var S = 128, c = S / 2;
+    var cv = sc.textures.createCanvas(key, S, S);
+    if (!cv) return;
+    var g = cv.getContext();
+    var grad = g.createRadialGradient(c, c, 0, c, c, c);
+    grad.addColorStop(0, inner);
+    grad.addColorStop(1, outer);
+    g.fillStyle = grad;
+    g.fillRect(0, 0, S, S);
+    cv.refresh();
+  }
+
+  function paintVignette(sc) {
+    if (sc.textures.exists("fx_vignette")) return;
+    var W = 320, H = 214;
+    var cv = sc.textures.createCanvas("fx_vignette", W, H);
+    if (!cv) return;
+    var g = cv.getContext();
+    var grad = g.createRadialGradient(W / 2, H / 2, H * 0.18, W / 2, H / 2, H * 0.85);
+    grad.addColorStop(0, "rgba(6,4,18,0)");
+    grad.addColorStop(0.55, "rgba(6,4,18,.35)");
+    grad.addColorStop(1, "rgba(6,4,18,.82)");
+    g.fillStyle = grad;
+    g.fillRect(0, 0, W, H);
+    cv.refresh();
+  }
+
+  function buildFallbackTextures(sc) {
+    for (var i = 0; i < TERRAIN_LIST.length; i++) {
+      // overlay terrains (rock) are objects, not ground: no swatch, emoji instead
+      if (TERRAIN_OVERLAY[TERRAIN_LIST[i]]) continue;
+      paintTerrainTexture(sc, TERRAIN_LIST[i]);
+    }
+    paintSparkle(sc);
+    paintSoftCircle(sc, "fx_dust", "rgba(240,232,214,.85)", "rgba(240,232,214,0)");
+    paintSoftCircle(sc, "fx_halo", "rgba(243,221,166,.55)", "rgba(232,196,106,0)");
+    paintVignette(sc);
+  }
+
+  /* ================= Stage geometry ================= */
+
+  function tileCenter(x, y) {
+    return {
+      x: originX + x * tileSize + tileSize / 2,
+      y: originY + y * tileSize + tileSize / 2
+    };
+  }
+
+  /* The ground an overlay terrain (rock) sits on: whatever this map is made
+     of. Falls back to grass so an unusual map still gets something sensible. */
+  function baseTerrainOf(area) {
+    if (areaHasTerrain(area, "cavefloor")) return "cavefloor";
+    if (areaHasTerrain(area, "sand")) return "sand";
+    if (areaHasTerrain(area, "floor")) return "floor";
+    return "grass";
+  }
+
+  /* Which terrain texture a cell draws with (doors + shore docks + variants). */
+  function groundTexFor(area, x, y) {
+    var e = exitIn(area, x, y);
+    if (e && e.room) return texKey("terrain", roomUnlocked(e.to) ? "dooropen" : "wall");
+    var terrain = terrainOf(tileCharOf(area, x, y));
+    if (terrain === "castledoor") return texKey("terrain", inRoom() ? "dooropen" : "castledoor");
+    // rock is a transparent sprite: draw the map's own ground beneath it
+    if (TERRAIN_OVERLAY[terrain]) terrain = baseTerrain;
+    if (terrain === "path" && useDock) return texKey("terrain", "dock");
+    if (terrain === "grass" && hash2(x, y) < 0.28) return texKey("terrain", "grass2");
+    if (!TERRAIN_PAINT[terrain] && !(scene && scene.textures.exists(texKey("terrain", terrain)))) return texKey("terrain", "void");
+    return texKey("terrain", terrain);
+  }
+
+  /* The v1 emoji that belongs on a fallback terrain swatch (if any). */
+  function groundEmojiFor(area, x, y) {
+    var e = exitIn(area, x, y);
+    var name;
+    if (e && e.room) name = roomUnlocked(e.to) ? "dooropen" : null;
+    else {
+      var terrain = terrainOf(tileCharOf(area, x, y));
+      if (terrain === "castledoor") name = inRoom() ? "dooropen" : "castledoor";
+      else name = terrain;
+    }
+    if (!name || !TERRAIN_EMOJI[name]) return null;
+    // Real art already contains the object — only decorate generated swatches.
+    if (realTerrain[name]) return null;
+    return TERRAIN_EMOJI[name];
+  }
+
+  var realTerrain = {};   // terrain name -> true when the manifest texture loaded
+
+  /* An object sprite: real texture when we have one, else the v1 emoji.
+     `_baseSX` remembers the un-flipped horizontal scale (see setFlip). */
+  function makeIcon(group, id, emoji, px) {
+    var key = texKey(group, id);
+    var obj;
+    if (scene.textures.exists(key)) {
+      obj = scene.add.image(0, 0, key);
+      var src = scene.textures.get(key).getSourceImage();
+      var big = Math.max(src.width || 1, src.height || 1);
+      obj.setScale(px / big);
+    } else {
+      obj = scene.add.text(0, 0, emoji || "✨", {
+        fontFamily: EMOJI_FONT,
+        fontSize: Math.round(px * 0.84) + "px",
+        padding: { x: 6, y: 6 }
+      });
+      obj.setOrigin(0.5, 0.5);
+    }
+    obj._baseSX = obj.scaleX;
+    return obj;
+  }
+
+  /* Works for both Image and Text (Text has no reliable flip component). */
+  function setFlip(obj, flip) {
+    if (!obj) return;
+    var base = Math.abs(obj._baseSX || 1);
+    obj.scaleX = flip ? -base : base;
+  }
+
+  /* ================= Phaser scenes ================= */
+
+  var BootScene = null, WorldScene = null;
+
+  function makeScenes() {
+    BootScene = class BootScene extends Phaser.Scene {
+      constructor() { super({ key: "Boot" }); }
+      preload() {
+        this.load.on("loaderror", function (file) {
+          // A missing .webp is fine: the fallback swatch/emoji covers it.
+          if (file && file.key && file.key.indexOf("t_") === 0) delete realTerrain[file.key.slice(2)];
+        });
+        var q = manifestQueue();
+        for (var i = 0; i < q.length; i++) {
+          if (q[i].key.indexOf("t_") === 0) realTerrain[q[i].key.slice(2)] = true;
+          this.load.image(q[i].key, q[i].url);
+        }
+      }
+      create() {
+        // Drop bookkeeping for anything that didn't actually make it in.
+        for (var name in realTerrain) {
+          if (!this.textures.exists(texKey("terrain", name))) delete realTerrain[name];
+        }
+        buildFallbackTextures(this);
+        this.scene.start("World");
+      }
+    };
+
+    WorldScene = class WorldScene extends Phaser.Scene {
+      constructor() { super({ key: "World" }); }
+      create() {
+        scene = this;
+        this.cameras.main.setBackgroundColor("#15132e");
+        this.input.on("pointerup", onStagePointerUp);
+        this.scale.on("resize", closeTileMenu);
+        onSceneReady();
+      }
+    };
+  }
+
+  /* ================= Area rendering ================= */
+
+  function clearOverlay(k) {
+    var list = overlayAt[k];
+    if (!list) return;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i] && list[i].destroy) list[i].destroy();
+    }
+    delete overlayAt[k];
+  }
+
+  function pushOverlay(k, obj) {
+    if (!overlayAt[k]) overlayAt[k] = [];
+    overlayAt[k].push(obj);
+    return obj;
+  }
+
+  /* Build (or rebuild) everything sitting above the ground on one tile. */
+  function buildOverlay(x, y) {
+    var area = currentArea();
+    var k = keyOf(x, y);
+    clearOverlay(k);
+    var c = tileCenter(x, y);
+    var depth = DEPTH_OBJ + c.y;
+
+    // Rock: a transparent sprite standing on the map's ground, y-sorted like a
+    // node and anchored bottom-centre so it sits on the tile rather than in it.
+    var terrain = terrainOf(tileCharOf(area, x, y));
+    if (TERRAIN_OVERLAY[terrain]) {
+      var boulder = makeIcon("terrain", terrain, TERRAIN_OVERLAY[terrain], tileSize * 0.9);
+      boulder.setOrigin(0.5, 1);
+      boulder.setPosition(c.x, c.y + tileSize * 0.44);
+      boulder.setDepth(depth + 1);
+      pushOverlay(k, boulder);
+    }
+
+    // Locked room doorway: a pulsing gold sparkle on the wall.
+    var e = exitIn(area, x, y);
+    if (e && e.room && !roomUnlocked(e.to)) {
+      var ring = scene.add.image(c.x, c.y, "fx_halo");
+      ring.setDisplaySize(tileSize * 1.1, tileSize * 1.1).setDepth(depth);
+      var star = scene.add.image(c.x, c.y, "fx_sparkle");
+      star.setDisplaySize(tileSize * 0.5, tileSize * 0.5).setDepth(depth + 1);
+      pushOverlay(k, ring); pushOverlay(k, star);
+      if (!reduceMotion) {
+        scene.tweens.add({
+          targets: [ring, star], alpha: { from: 0.45, to: 1 }, scale: { from: 0.86, to: 1.06 },
+          duration: 900, yoyo: true, repeat: -1, ease: "Sine.easeInOut"
+        });
+      }
+    }
+
+    // Companion standing here
+    var cid = npcAt(x, y);
+    if (cid) {
+      var comp = world.companions[cid];
+      var npc = makeIcon("characters", cid, (comp && comp.emoji) || "✨", tileSize * 1.05);
+      npc.setPosition(c.x, c.y - tileSize * 0.12).setDepth(depth + 2);
+      pushOverlay(k, npc);
+      if (!reduceMotion) {
+        scene.tweens.add({
+          targets: npc, y: npc.y - 4, duration: 900, yoyo: true, repeat: -1,
+          ease: "Sine.easeInOut", delay: Math.round(hash2(x, y) * 600)
+        });
+      }
+    }
+
+    // Resource node
+    var node = resourceAt(x, y);
+    if (node) {
+      var def = world.resources[node.type];
+      var res = makeIcon("nodes", node.type, (def && (def.node || def.emoji)) || "✨", tileSize * 0.78);
+      res.setPosition(c.x, c.y).setDepth(depth + 1);
+      if (nodeDepleted(x, y)) { res.setAlpha(0.3); res.setScale(res.scaleX * 0.55, res.scaleY * 0.55); }
+      pushOverlay(k, res);
+    }
+
+    // Placed furniture
+    var p = placedAt(x, y);
+    if (p) {
+      var recipe = recipesById[p.item];
+      var furn = makeIcon("furniture", p.item, (recipe && recipe.emoji) || "🎁", tileSize * 0.82);
+      furn.setPosition(c.x, c.y - tileSize * 0.06).setDepth(depth + 1);
+      pushOverlay(k, furn);
+    }
+
+    // Cave glow tiles get a soft halo
+    if (isCave && terrainOf(tileCharOf(area, x, y)) === "glow") {
+      var halo = scene.add.image(c.x, c.y, "fx_halo");
+      halo.setDisplaySize(tileSize * 2.1, tileSize * 2.1);
+      halo.setDepth(DEPTH_OBJ - 1).setBlendMode(Phaser.BlendModes.ADD).setAlpha(0.5);
+      pushOverlay(k, halo);
+      glowFx.push(halo);
+    }
+  }
+
+  function makeGround(x, y) {
+    var area = currentArea();
+    var c = tileCenter(x, y);
+    var k = keyOf(x, y);
+    var img = scene.add.image(c.x, c.y, groundTexFor(area, x, y));
+    img.setDisplaySize(tileSize + 1, tileSize + 1).setDepth(0);
+    groundAt[k] = img;
+
+    var emoji = groundEmojiFor(area, x, y);
+    if (emoji) {
+      var t = scene.add.text(c.x, c.y, emoji, {
+        fontFamily: EMOJI_FONT, fontSize: Math.round(tileSize * 0.72) + "px", padding: { x: 6, y: 6 }
+      });
+      t.setOrigin(0.5, 0.5).setDepth(1);
+      pushOverlay(k, t);
+    }
+
+    var terrain = terrainOf(tileCharOf(area, x, y));
+    if (!reduceMotion && (terrain === "tree" || terrain === "flowers")) {
+      img.setDisplaySize(tileSize * 1.06, tileSize * 1.06);   // headroom so the sway never shows a seam
+      swayFx.push({ o: img, bx: c.x, ph: hash2(x, y) * 6.283 });
+      var list = overlayAt[k];
+      if (list) {
+        for (var i = 0; i < list.length; i++) swayFx.push({ o: list[i], bx: list[i].x, ph: hash2(x, y) * 6.283 });
+      }
+    }
+    if (!reduceMotion && terrain === "water") {
+      var sh = scene.add.rectangle(c.x, c.y, tileSize, tileSize, 0x9fd8ff, 0.08);
+      sh.setDepth(1).setBlendMode(Phaser.BlendModes.ADD);
+      pushOverlay(k, sh);
+      waterFx.push(sh);
+    }
+  }
+
+  function makePlayer() {
+    var c = tileCenter(state.x, state.y);
+    playerC = scene.add.container(c.x, c.y);
+    playerInner = scene.add.container(0, 0);
+    playerC.add(playerInner);
+
+    var shadow = scene.add.ellipse(0, tileSize * 0.34, tileSize * 0.5, tileSize * 0.18, 0x000000, 0.3);
+    playerInner.add(shadow);
+
+    playerSprite = makeIcon("characters", "moon", PLAYER_EMOJI, tileSize * 1.15);
+    playerSprite.setPosition(0, -tileSize * 0.1);
+    playerInner.add(playerSprite);
+
+    playerC.setDepth(DEPTH_OBJ + c.y + 3);
+    setFacing(state.facing);
+
+    if (!reduceMotion) {
+      scene.tweens.add({
+        targets: playerSprite, y: playerSprite.y - 4, duration: 950,
+        yoyo: true, repeat: -1, ease: "Sine.easeInOut"
+      });
+    }
+  }
+
+  function setFacing(dir) {
+    setFlip(playerSprite, dir === "left");
+  }
+
+  var playerHalo = null;
+
+  function makeFx() {
+    sparkleEmitter = scene.add.particles(0, 0, "fx_sparkle", {
+      speed: { min: 60, max: 190 },
+      angle: { min: 0, max: 360 },
+      lifespan: 700,
+      scale: { start: tileSize / 140, end: 0 },
+      alpha: { start: 1, end: 0 },
+      gravityY: 130,
+      blendMode: "ADD",
+      emitting: false
+    });
+    sparkleEmitter.setDepth(9000);
+
+    dustEmitter = scene.add.particles(0, 0, "fx_dust", {
+      speed: { min: 12, max: 42 },
+      angle: { min: 200, max: 340 },
+      lifespan: 420,
+      scale: { start: tileSize / 260, end: 0 },
+      alpha: { start: 0.45, end: 0 },
+      emitting: false
+    });
+    dustEmitter.setDepth(90);
+
+    if (isCave) {
+      var v = scene.add.image(GAME_W / 2, GAME_H / 2, "fx_vignette");
+      v.setDisplaySize(GAME_W, GAME_H).setDepth(8500);
+      var glow = scene.add.image(0, 0, "fx_halo");
+      glow.setDisplaySize(tileSize * 3, tileSize * 3).setDepth(DEPTH_OBJ - 2)
+        .setBlendMode(Phaser.BlendModes.ADD).setAlpha(0.35);
+      playerHalo = glow;
+    } else {
+      playerHalo = null;
+    }
+  }
+
+  function startAmbientTweens() {
+    if (reduceMotion) return;
+    if (waterFx.length) {
+      scene.tweens.addCounter({
+        from: 0.03, to: 0.15, duration: 3400, yoyo: true, repeat: -1, ease: "Sine.easeInOut",
+        onUpdate: function (tw) {
+          var v = tw.getValue();
+          for (var i = 0; i < waterFx.length; i++) {
+            if (waterFx[i].active) waterFx[i].setAlpha(v);
+          }
+        }
+      });
+    }
+    if (glowFx.length) {
+      scene.tweens.addCounter({
+        from: 0.32, to: 0.72, duration: 2600, yoyo: true, repeat: -1, ease: "Sine.easeInOut",
+        onUpdate: function (tw) {
+          var v = tw.getValue();
+          for (var i = 0; i < glowFx.length; i++) {
+            if (glowFx[i].active) glowFx[i].setAlpha(v);
+          }
+        }
+      });
+    }
+    if (swayFx.length) {
+      scene.tweens.addCounter({
+        from: 0, to: 6.283, duration: 4200, repeat: -1,
+        onUpdate: function (tw) {
+          var p = tw.getValue();
+          for (var i = 0; i < swayFx.length; i++) {
+            var s = swayFx[i];
+            if (s.o && s.o.active !== false) s.o.x = s.bx + Math.sin(p + s.ph) * 0.9;
+          }
+        }
+      });
+    }
+  }
+
+  /* Build the whole stage — once per map/room entry. */
   function renderArea() {
     var area = currentArea();
     if (!area || !area.tiles || !area.tiles.length) {
       fatal("This part of the castle is missing from the storybook.");
       return;
     }
+    if (!scene) return;
+
     npcIndex = npcsFor(area);
     resIndex = {};
     var res = area.resources;
@@ -439,97 +1058,60 @@
     gridW = 0;
     for (var y0 = 0; y0 < gridH; y0++) gridW = Math.max(gridW, (area.tiles[y0] || "").length);
 
-    mapView.innerHTML = "";
-    mapView.setAttribute("data-map", areaIdOf(area));
-    mapView.classList.toggle("in-room", inRoom());
-    mapView.style.gridTemplateColumns = "repeat(" + gridW + ", var(--tile))";
+    tileSize = Math.floor(Math.min(GAME_W / gridW, GAME_H / gridH));
+    originX = Math.round((GAME_W - gridW * tileSize) / 2);
+    originY = Math.round((GAME_H - gridH * tileSize) / 2);
 
-    tileEls = [];
-    for (var y = 0; y < gridH; y++) {
-      tileEls[y] = [];
-      for (var x = 0; x < gridW; x++) {
-        var el = document.createElement("div");
-        el.setAttribute("data-x", String(x));
-        el.setAttribute("data-y", String(y));
-        tileEls[y][x] = el;
-        mapView.appendChild(el);
-        paintTile(x, y);
-      }
-    }
+    useDock = areaHasTerrain(area, "sand");
+    isCave = areaHasTerrain(area, "cavefloor");
+    isOutdoor = !inRoom();
+    baseTerrain = baseTerrainOf(area);
 
-    mapView.appendChild(ensurePlayer());
+    scene.tweens.killAll();
+    scene.children.removeAll(true);
+    groundAt = {}; overlayAt = {};
+    swayFx = []; waterFx = []; glowFx = [];
+    playerC = playerInner = playerSprite = null;
+
+    var x, y;
+    for (y = 0; y < gridH; y++) for (x = 0; x < gridW; x++) buildOverlay(x, y);
+    for (y = 0; y < gridH; y++) for (x = 0; x < gridW; x++) makeGround(x, y);
+
+    makeFx();
+    makePlayer();
+    startAmbientTweens();
+    syncPlayerHalo();
+
+    if (mapView) mapView.setAttribute("data-map", areaIdOf(area));
     if (locationName) locationName.textContent = area.name || "";
-    positionPlayer(true);
+
+    var cam = scene.cameras.main;
+    cam.setZoom(1);
+    if (!reduceMotion) {
+      cam.fadeIn(FADE_MS, 0, 0, 0);
+      cam.setZoom(1.03);
+      scene.tweens.add({ targets: cam, zoom: 1, duration: 420, ease: "Sine.easeOut" });
+    } else {
+      cam.resetFX();
+    }
   }
 
-  /* Repaint one tile — used for gathering, respawns, furniture, unlocks. */
+  /* Repaint one tile — gathering, respawns, furniture, unlocks. */
   function paintTile(x, y) {
-    var el = tileEls[y] && tileEls[y][x];
-    if (!el) return;
+    if (!scene || !groundAt[keyOf(x, y)]) return;
     var area = currentArea();
-    var ch = tileCharOf(area, x, y);
-    var terrain = terrainOf(ch);
-    var cls = "tile t-" + terrain;
-    var text = "";
-    var title = "";
-
-    // Castle door (outdoors) / the hall's way back out (indoors)
-    if (terrain === "castledoor") {
-      cls += " door";
-      if (inRoom()) { text = "🚪"; title = "Back outside"; }
-      else { text = "🏰"; title = "The castle door"; }
+    groundAt[keyOf(x, y)].setTexture(groundTexFor(area, x, y));
+    buildOverlay(x, y);
+    var k = keyOf(x, y);
+    var emoji = groundEmojiFor(area, x, y);
+    if (emoji) {
+      var c = tileCenter(x, y);
+      var t = scene.add.text(c.x, c.y, emoji, {
+        fontFamily: EMOJI_FONT, fontSize: Math.round(tileSize * 0.72) + "px", padding: { x: 6, y: 6 }
+      });
+      t.setOrigin(0.5, 0.5).setDepth(1);
+      pushOverlay(k, t);
     }
-
-    // Room-to-room doorways: sparkly lock, or an open door once unlocked
-    var e = exitIn(area, x, y);
-    if (e && e.room) {
-      var room = roomsById[e.to];
-      if (room && condMet(room.unlock)) {
-        cls += " door open";
-        text = "🚪";
-        title = room.name || "";
-      } else {
-        cls += " locked";
-        text = "✨🔒";
-        title = room ? unlockText(room.unlock) : "Locked";
-      }
-    }
-
-    // Companion standing here
-    var cid = npcAt(x, y);
-    if (cid) {
-      var c = world.companions[cid];
-      cls += " npc";
-      text = (c && c.emoji) || "✨";
-      title = (c && c.name) || "";
-    }
-
-    // Resource node
-    var node = resourceAt(x, y);
-    if (node) {
-      var def = world.resources[node.type];
-      cls += " res";
-      text = (def && (def.node || def.emoji)) || "✨";
-      if (nodeDepleted(x, y)) {
-        cls += " depleted";      // CSS shrinks + fades the leftover sprig
-        title = def ? def.name + " (gathered — it will grow back)" : "";
-      } else {
-        title = def ? def.name : "";
-      }
-    }
-
-    // Placed furniture wins the tile
-    var p = placedAt(x, y);
-    if (p) {
-      var recipe = recipesById[p.item];
-      cls += " furn";
-      text = (recipe && recipe.emoji) || "🎁";
-      title = (recipe ? recipe.name : "Furniture") + " — tap to move or put away";
-    }
-
-    el.className = cls;
-    el.textContent = text;
-    if (title) el.setAttribute("title", title); else el.removeAttribute("title");
   }
 
   function repaintDoorways() {
@@ -541,22 +1123,57 @@
     }
   }
 
+  function syncPlayerHalo() {
+    if (!playerHalo || !playerC) return;
+    playerHalo.setPosition(playerC.x, playerC.y);
+  }
+
   function positionPlayer(instant) {
-    var el = ensurePlayer();
-    if (instant) el.style.transition = "none";
-    var tile = tileEls[state.y] && tileEls[state.y][state.x];
-    var px, py;
-    if (tile) { px = tile.offsetLeft; py = tile.offsetTop; }
-    else { var t = tilePx(); px = state.x * t; py = state.y * t; }
-    el.style.transform = "translate(" + px + "px, " + py + "px)";
-    el.className = "player face-" + state.facing;
-    if (instant) { void el.offsetWidth; el.style.transition = ""; }
+    if (!playerC) return;
+    var c = tileCenter(state.x, state.y);
+    setFacing(state.facing);
+    if (instant || reduceMotion) {
+      playerC.setPosition(c.x, c.y);
+      playerC.setDepth(DEPTH_OBJ + c.y + 3);
+      syncPlayerHalo();
+      moving = false;
+      return;
+    }
+    moving = true;
+    scene.tweens.add({
+      targets: playerC, x: c.x, y: c.y, duration: STEP_MS, ease: "Linear",
+      onUpdate: function () { playerC.setDepth(DEPTH_OBJ + playerC.y + 3); syncPlayerHalo(); },
+      onComplete: function () {
+        playerC.setDepth(DEPTH_OBJ + c.y + 3);
+        syncPlayerHalo();
+        moving = false;
+        continueHold();
+      }
+    });
+    scene.tweens.add({
+      targets: playerInner, y: { from: 0, to: -HOP_PX },
+      duration: STEP_MS / 2, yoyo: true, ease: "Sine.easeOut"
+    });
+  }
+
+  /* Gold star burst at a tile (gather / craft / place). */
+  function sparkleAt(x, y) {
+    if (reduceMotion || !sparkleEmitter) return;
+    var c = tileCenter(x, y);
+    sparkleEmitter.explode(9, c.x, c.y);
+  }
+
+  function dustAt(x, y) {
+    if (reduceMotion || !dustEmitter || !isOutdoor) return;
+    var c = tileCenter(x, y);
+    dustEmitter.explode(3, c.x, c.y + tileSize * 0.3);
   }
 
   function fatal(msg) {
+    if (game) { try { game.destroy(true); } catch (e) { /* ignore */ } game = null; scene = null; }
     if (mapView) {
       mapView.innerHTML = "";
-      mapView.removeAttribute("style");
+      mapView.classList.add("stage-error");
       var p = document.createElement("p");
       p.className = "hint";
       p.textContent = "Oh no! " + msg;
@@ -572,12 +1189,12 @@
   }
 
   function tryMove(dir) {
-    if (!state || busy()) return;
+    if (!state || !scene || !playerC || busy() || moving) return;
     var d = DIRS[dir];
     if (!d) return;
     if (state.facing !== dir) {
       state.facing = dir;
-      positionPlayer(false);
+      setFacing(dir);
       save();
     }
     var nx = state.x + d.dx, ny = state.y + d.dy;
@@ -594,6 +1211,7 @@
     if (placedAt(nx, ny)) { bumpToast("Something cozy is in the way ✨"); return; }
     if (!walkableAt(nx, ny)) return;
 
+    dustAt(state.x, state.y);
     state.x = nx; state.y = ny;
     positionPlayer(false);
     save();
@@ -604,6 +1222,13 @@
     if (e) { takeExit(e); return; }
     if (!inRoom() && isCastleDoor(nx, ny)) { enterHouse(); return; }
     if (inRoom() && terrainOf(tileCharOf(area, nx, ny)) === "castledoor") { leaveHouse(); return; }
+  }
+
+  /* Keyboard auto-repeat / d-pad hold keep walking after each step lands. */
+  function continueHold() {
+    if (busy() || moving) return;
+    var dir = heldKeys.length ? heldKeys[heldKeys.length - 1] : dpadDir;
+    if (dir) tryMove(dir);
   }
 
   function bumpToast(msg) {
@@ -661,7 +1286,7 @@
     goTo(false, mapId, tx, ty);
   }
 
-  /* Fade out, swap the area, fade back in. */
+  /* Fade out through black, swap the area, fade back in. */
   function goTo(isRoom, id, tx, ty) {
     var area = isRoom ? roomsById[id] : world.maps[id];
     if (!area) return;
@@ -670,30 +1295,24 @@
 
     cancelPlacing();
     closeTileMenu();
+    heldKeys = []; dpadDir = null;
     travelling = true;
-    if (mapView) mapView.classList.add("fading");
+    moving = false;
 
-    setTimeout(function () {
+    var arrive = function () {
       if (isRoom) { state.roomId = id; }
       else { state.roomId = null; state.mapId = id; }
       state.x = spot.x; state.y = spot.y;
       renderArea();
       renderFurniture();
-      if (mapView) mapView.classList.remove("fading");
       travelling = false;
       flushSave();
-    }, reduceMotion ? 0 : FADE_MS);
-  }
+    };
 
-  function findTerrain(area, terrain) {
-    if (!area || !area.tiles) return null;
-    for (var y = 0; y < area.tiles.length; y++) {
-      var row = area.tiles[y] || "";
-      for (var x = 0; x < row.length; x++) {
-        if (terrainOf(row.charAt(x)) === terrain) return { x: x, y: y };
-      }
-    }
-    return null;
+    if (reduceMotion || !scene) { arrive(); return; }
+    var cam = scene.cameras.main;
+    cam.once("camerafadeoutcomplete", arrive);
+    cam.fadeOut(FADE_MS, 0, 0, 0);
   }
 
   /* ================= Interact ================= */
@@ -754,6 +1373,7 @@
     if (!c) return;
     cancelPlacing();
     closeTileMenu();
+    heldKeys = []; dpadDir = null;
     var first = state.met.indexOf(cid) < 0;
     var lines = [];
     if (first) {
@@ -769,7 +1389,7 @@
       lines.push(fallback);
     }
     dialogue = { id: cid, lines: lines, i: 0, first: first };
-    if (dialoguePortrait) dialoguePortrait.textContent = c.emoji || "✨";
+    setIcon(dialoguePortrait, "characters", cid, c.emoji || "✨");
     if (dialogueBox) { setHidden(dialogueBox, false); dialogueBox.classList.add("open"); }
     showDialogueLine();
   }
@@ -894,6 +1514,31 @@
 
   /* ================= HUD ================= */
 
+  /* Sprite from the manifest when we have one, else the v1 emoji. */
+  function setIcon(el, group, id, emoji) {
+    if (!el) return;
+    el.textContent = "";
+    var path = manifestPath(group, id);
+    if (!path) { el.textContent = emoji || "✨"; return; }
+    var img = document.createElement("img");
+    img.className = "icon-img";
+    img.alt = "";
+    img.setAttribute("aria-hidden", "true");
+    img.addEventListener("error", function () {
+      if (img.parentNode) img.parentNode.removeChild(img);
+      el.textContent = emoji || "✨";
+    });
+    img.src = ASSET_BASE + path;
+    el.appendChild(img);
+  }
+
+  function iconSpan(cls, group, id, emoji) {
+    var span = document.createElement("span");
+    span.className = cls;
+    setIcon(span, group, id, emoji);
+    return span;
+  }
+
   function renderHud() {
     renderInventory();
     renderRecipes();
@@ -914,14 +1559,10 @@
       cell.setAttribute("title", def.name || id);
       cell.setAttribute("aria-label", count + " " + (def.name || id));
 
-      var em = document.createElement("span");
-      em.className = "emoji";
-      em.textContent = def.emoji || "✨";
+      cell.appendChild(iconSpan("emoji", "nodes", id, def.emoji || "✨"));
       var n = document.createElement("span");
       n.className = "count";
       n.textContent = "×" + count;
-
-      cell.appendChild(em);
       cell.appendChild(n);
       invGrid.appendChild(cell);
     }
@@ -981,10 +1622,7 @@
       "Craft " + recipe.name + ". Needs " + needsLabel(recipe) + ". " +
       (ready ? "Ready to craft." : "Not enough yet."));
 
-    var em = document.createElement("span");
-    em.className = "r-emoji";
-    em.textContent = recipe.emoji || "✨";
-    btn.appendChild(em);
+    btn.appendChild(iconSpan("r-emoji", "furniture", recipe.id, recipe.emoji || "✨"));
 
     var body = document.createElement("span");
     body.className = "r-info";
@@ -1024,8 +1662,6 @@
     var btn = document.createElement("button");
     btn.type = "button";
     // Tier recipes you haven't reached yet: a teasing "???" row.
-    // (Not `locked-hidden` — css/game.css hides that class outright, which is
-    // what companion recipes get by simply not being rendered at all.)
     btn.className = "recipe mystery";
     btn.setAttribute("data-recipe", "");
     btn.setAttribute("aria-label", "A secret recipe. " + recipeHint(recipe.unlock));
@@ -1095,9 +1731,7 @@
       btn.setAttribute("aria-label", "Place " + (recipe.name || recipe.id) + ". You have " + count + ".");
       btn.setAttribute("aria-pressed", placing === recipe.id ? "true" : "false");
 
-      var em = document.createElement("span");
-      em.className = "f-emoji";
-      em.textContent = recipe.emoji || "🎁";
+      btn.appendChild(iconSpan("f-emoji", "furniture", recipe.id, recipe.emoji || "🎁"));
       var name = document.createElement("span");
       name.className = "f-name";
       name.textContent = recipe.name || recipe.id;
@@ -1105,7 +1739,6 @@
       n.className = "f-count";
       n.textContent = "×" + count;
 
-      btn.appendChild(em);
       btn.appendChild(name);
       btn.appendChild(n);
       furnList.appendChild(btn);
@@ -1126,6 +1759,10 @@
 
   /* ================= Decorating ================= */
 
+  function setStageCursor(cursor) {
+    if (game && game.canvas) game.canvas.style.cursor = cursor || "";
+  }
+
   function selectFurniture(item) {
     if (!state.furniture[item]) { cancelPlacing(); return; }
     if (!inRoom()) { toast("Furniture goes inside the castle 🏰"); return; }
@@ -1133,6 +1770,7 @@
     placing = item;
     document.body.classList.add("placing");
     if (mapView) mapView.classList.add("placing-cursor");
+    setStageCursor("crosshair");
     setHidden(decorHint, false);
     renderFurniture();
     var recipe = recipesById[item];
@@ -1142,6 +1780,7 @@
   function cancelPlacing() {
     document.body.classList.remove("placing");
     if (mapView) mapView.classList.remove("placing-cursor");
+    setStageCursor("");
     setHidden(decorHint, true);
     if (!placing) return;
     placing = null;
@@ -1193,19 +1832,26 @@
     return null;
   }
 
+  /* Canvas (stage) coordinates -> page coordinates, through the scale manager. */
+  function stageToPage(sx, sy) {
+    if (!game || !game.scale) return { x: 0, y: 0 };
+    var sm = game.scale;
+    sm.updateBounds();
+    var b = sm.canvasBounds;
+    var ds = sm.displayScale;
+    return { x: b.x + sx / (ds.x || 1), y: b.y + sy / (ds.y || 1) };
+  }
+
   function openTileMenu(x, y) {
     closeTileMenu();
     var p = placedAt(x, y);
-    var tile = tileEls[y] && tileEls[y][x];
-    if (!p || !tile || !mapView) return;
+    if (!p || !mapView || !game) return;
     var recipe = recipesById[p.item];
 
     tileMenu = document.createElement("div");
     tileMenu.className = "inline-menu";
     tileMenu.setAttribute("role", "group");
     tileMenu.setAttribute("aria-label", (recipe ? recipe.name : "Furniture") + " options");
-    tileMenu.style.left = (tile.offsetLeft + tile.offsetWidth / 2) + "px";
-    tileMenu.style.top = (tile.offsetTop + tile.offsetHeight) + "px";
 
     tileMenu.appendChild(menuButton("Move ✋", "Move " + (recipe ? recipe.name : "this"), function () {
       closeTileMenu();
@@ -1227,6 +1873,19 @@
     }));
 
     mapView.appendChild(tileMenu);
+
+    // Position under the tile, converted stage-space -> page-space -> #mapView.
+    var c = tileCenter(x, y);
+    var pt = stageToPage(c.x, c.y + tileSize / 2);
+    var mv = mapView.getBoundingClientRect();
+    var left = pt.x - (mv.left + window.pageXOffset);
+    var top = pt.y - (mv.top + window.pageYOffset);
+    var w = tileMenu.offsetWidth || 120;
+    var h = tileMenu.offsetHeight || 70;
+    left = Math.max(4, Math.min(left - w / 2, mv.width - w - 4));
+    if (top + h > mv.height - 4) top = Math.max(4, top - h - tileSize / (game.scale.displayScale.y || 1));
+    tileMenu.style.left = Math.round(left) + "px";
+    tileMenu.style.top = Math.round(top) + "px";
   }
 
   function menuButton(label, aria, onClick) {
@@ -1245,6 +1904,19 @@
   function closeTileMenu() {
     if (tileMenu && tileMenu.parentNode) tileMenu.parentNode.removeChild(tileMenu);
     tileMenu = null;
+  }
+
+  /* Tap on the canvas: place furniture, or open the move/put-away menu. */
+  function onStagePointerUp(pointer) {
+    if (busy() || !state) return;
+    if (pointer.getDistance && pointer.getDistance() > 14) return;   // that was a drag
+    var tx = Math.floor((pointer.worldX - originX) / tileSize);
+    var ty = Math.floor((pointer.worldY - originY) / tileSize);
+    if (tx < 0 || ty < 0 || tx >= gridW || ty >= gridH) { closeTileMenu(); return; }
+    var hadMenu = !!tileMenu;
+    closeTileMenu();
+    if (placing) { tryPlace(tx, ty); return; }
+    if (!hadMenu && inRoom() && placedAt(tx, ty)) openTileMenu(tx, ty);
   }
 
   /* ================= Confirm modal ================= */
@@ -1283,7 +1955,7 @@
         var parts = k.split(":");
         var x = intOr(parts[parts.length - 2], -1);
         var y = intOr(parts[parts.length - 1], -1);
-        if (tileEls[y] && tileEls[y][x]) paintTile(x, y);
+        paintTile(x, y);
       }
     }
     if (changed) save();
@@ -1293,25 +1965,13 @@
 
   function wireInput() {
     document.addEventListener("keydown", onKeyDown);
-
-    // Clicks on the map: place furniture, or open the move/put-away menu.
-    if (mapView) {
-      mapView.addEventListener("click", function (e) {
-        if (busy()) return;
-        var tile = closestTile(e.target);
-        if (!tile) return;
-        var x = intOr(tile.getAttribute("data-x"), -1);
-        var y = intOr(tile.getAttribute("data-y"), -1);
-        if (x < 0 || y < 0) return;
-        var hadMenu = !!tileMenu;
-        closeTileMenu();
-        if (placing) { tryPlace(x, y); return; }
-        if (!hadMenu && inRoom() && placedAt(x, y)) openTileMenu(x, y);
-      });
-    }
+    document.addEventListener("keyup", onKeyUp);
 
     document.addEventListener("click", function (e) {
-      if (tileMenu && !tileMenu.contains(e.target) && !closestTile(e.target)) closeTileMenu();
+      if (!tileMenu) return;
+      if (tileMenu.contains(e.target)) return;
+      if (game && game.canvas && e.target === game.canvas) return;   // the stage handles its own taps
+      closeTileMenu();
     });
 
     // Crafting
@@ -1349,8 +2009,9 @@
         pointerDriven = true;
         e.preventDefault();
         var dir = btn.getAttribute("data-dir");
+        dpadDir = dir;
+        repeatPointerId = (e.pointerId === undefined) ? null : e.pointerId;
         tryMove(dir);
-        startRepeat(dir, e.pointerId);
       });
       dpad.addEventListener("click", function (e) {
         var btn = dirButton(e.target);
@@ -1367,11 +2028,11 @@
     }
     ["pointerup", "pointercancel", "pointerleave"].forEach(function (evt) {
       window.addEventListener(evt, function (e) {
-        // only the finger that started the repeat may stop it
+        // only the finger that started the hold may stop it
         if (repeatPointerId === null || e.pointerId === repeatPointerId) stopRepeat();
       });
     });
-    window.addEventListener("blur", stopRepeat);
+    window.addEventListener("blur", function () { stopRepeat(); heldKeys = []; });
 
     if (btnAction) {
       if (!btnAction.getAttribute("aria-label")) btnAction.setAttribute("aria-label", "Do the sparkly thing (gather, talk, open)");
@@ -1407,7 +2068,7 @@
       if (e.target === confirmModal) closeConfirm();
     });
 
-    window.addEventListener("resize", function () { positionPlayer(true); closeTileMenu(); });
+    window.addEventListener("resize", closeTileMenu);
     window.addEventListener("pagehide", flushSave);
     document.addEventListener("visibilitychange", function () { if (document.hidden) flushSave(); });
   }
@@ -1420,14 +2081,18 @@
     return null;
   }
 
-  function startRepeat(dir, pointerId) {
-    stopRepeat();
-    repeatPointerId = (pointerId === undefined) ? null : pointerId;
-    repeatTimer = setInterval(function () { tryMove(dir); }, REPEAT_MS);
-  }
   function stopRepeat() {
-    if (repeatTimer) { clearInterval(repeatTimer); repeatTimer = null; }
+    dpadDir = null;
     repeatPointerId = null;
+  }
+
+  function onKeyUp(e) {
+    var k = e.key;
+    if (!k) return;
+    var dir = DIR_KEYS[k] || DIR_KEYS[String(k).toLowerCase()];
+    if (!dir) return;
+    var i = heldKeys.indexOf(dir);
+    if (i >= 0) heldKeys.splice(i, 1);
   }
 
   function onKeyDown(e) {
@@ -1468,6 +2133,7 @@
 
     if (dir) {
       e.preventDefault();               // arrows never scroll the page
+      if (heldKeys.indexOf(dir) < 0) heldKeys.push(dir);
       tryMove(dir);
       return;
     }
@@ -1514,9 +2180,33 @@
     }
   }
 
-  function init(w) {
+  var firstRun = false;
+
+  /* Runs once WorldScene.create() has a live scene to draw into. */
+  function onSceneReady() {
+    renderArea();
+    // Last safety net: never start standing inside a wall / on a friend.
+    if (!walkableAt(state.x, state.y)) {
+      var spot = nearestWalkable(currentArea(), inRoom(), state.x, state.y, state);
+      if (spot) { state.x = spot.x; state.y = spot.y; positionPlayer(true); }
+    }
+    renderHud();
+    flushSave();
+
+    if (firstRun) {
+      toast("Walk with the arrow keys · ✨ to gather · Craft cozy things for your castle 💫", 6500, "intro-toast");
+    } else {
+      var area = currentArea();
+      toast("Welcome back to " + ((area && area.name) || "the castle") + " 🌙");
+    }
+    firstRun = false;
+  }
+
+  function init(w, mf) {
     indexWorld(w);
+    manifest = (mf && typeof mf === "object") ? mf : {};
     if (!Object.keys(world.maps).length) { fatal("The castle grounds are missing."); return; }
+    if (typeof Phaser === "undefined") { fatal("The magic paintbrush (Phaser) didn't load."); return; }
 
     // Normalise the overlays the page ships hidden (their CSS `display` rules
     // would otherwise win over the plain `hidden` attribute).
@@ -1526,37 +2216,66 @@
     setHidden(decorHint, true);
 
     var loaded = loadState();
-    var firstRun = !loaded;
+    firstRun = !loaded;
     state = loaded || sanitize(null);
 
-    renderArea();
-    // Last safety net: never start standing inside a wall / on a friend.
-    if (!walkableAt(state.x, state.y)) {
-      var spot = nearestWalkable(currentArea(), inRoom(), state.x, state.y, state);
-      if (spot) { state.x = spot.x; state.y = spot.y; positionPlayer(true); }
-    }
-    renderHud();
+    makeScenes();
+    game = new Phaser.Game({
+      type: Phaser.AUTO,
+      parent: mapView,
+      width: GAME_W,
+      height: GAME_H,
+      backgroundColor: "#15132e",
+      transparent: false,
+      banner: false,
+      scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        expandParent: false
+      },
+      render: { antialias: true, roundPixels: false },
+      scene: [BootScene, WorldScene]
+    });
+
     wireInput();
     setInterval(tick, TICK_MS);
-    flushSave();
 
-    if (firstRun) {
-      toast("Walk with the arrow keys · ✨ to gather · Craft cozy things for your castle 💫", 6500, "intro-toast");
-    } else {
-      var area = currentArea();
-      toast("Welcome back to " + ((area && area.name) || "the castle") + " 🌙");
-    }
+    /* Testability hook — the canvas is opaque to DOM inspection.
+       Read-only accessors; `tick()` only runs the respawn sweep the 1s
+       interval already performs, and returns undefined. */
+    window.__castleLife = {
+      version: 2,
+      getState: function () {
+        try { return JSON.parse(JSON.stringify(state)); } catch (e) { return null; }
+      },
+      getMapId: function () { return state ? (state.roomId || state.mapId) : null; },
+      tick: function () { tick(); }
+    };
   }
 
   if (!mapView) return;
 
-  fetch("game/world.json")
-    .then(function (r) { if (!r.ok) throw new Error("world.json " + r.status); return r.json(); })
-    .then(function (w) {
-      if (!w || typeof w !== "object") throw new Error("world.json is not a story");
-      init(w);
-    })
-    .catch(function (err) {
-      fatal("The castle wouldn't open (" + err.message + "). Try refreshing the page.");
+  function fetchJson(url, optional) {
+    return fetch(url).then(function (r) {
+      if (!r.ok) {
+        if (optional) return null;
+        throw new Error(url + " " + r.status);
+      }
+      return r.json();
+    }).catch(function (err) {
+      if (optional) return null;
+      throw err;
     });
+  }
+
+  Promise.all([
+    fetchJson("game/world.json", false),
+    fetchJson(ASSET_BASE + "manifest.json", true)
+  ]).then(function (res) {
+    var w = res[0];
+    if (!w || typeof w !== "object") throw new Error("world.json is not a story");
+    init(w, res[1]);
+  }).catch(function (err) {
+    fatal("The castle wouldn't open (" + err.message + "). Try refreshing the page.");
+  });
 })();

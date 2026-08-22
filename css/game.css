@@ -1,13 +1,15 @@
 /* =====================================================================
-   Princess Moon's Castle Life — game styles
+   Princess Moon's Castle Life — game styles (v2)
    Loads after css/site.css; reuses its :root palette + fonts.
-   Art here is emoji + CSS gradients (storybook-cute placeholders).
+   The map is a Phaser canvas mounted in #mapView; everything else here
+   is the DOM HUD (satchel / crafting / furniture / dialogue / toasts).
    ===================================================================== */
 
 :root {
-  /* Tile size: 18 cols must sit next to a ~300px HUD without page scroll
-     on a laptop, while staying touch-friendly on phones. */
-  --tile: clamp(24px, min(3.4vw, 5.6vh), 44px);
+  /* Width of the canvas stage. It keeps a 3:2 box (the engine's 1152x768
+     internal size) and has to sit next to the ~300px HUD without pushing
+     the page into a scrollbar on a laptop. */
+  --stage-w: max(240px, min(1152px, calc((100dvh - 11.5rem) * 1.5), calc(100vw - 22.5rem)));
   --touch-h: 118px; /* approx height reserved for on-screen d-pad + action btn */
 }
 
@@ -87,196 +89,44 @@ body.game-body {
   letter-spacing: .02em;
 }
 
-/* ===== Map / tile grid ===== */
+/* ===== Map stage (Phaser canvas host) =====
+   The engine draws every tile, sprite, particle and vignette on the canvas.
+   This element only frames it and anchors the absolutely-positioned inline
+   menu, so it must stay `position: relative` and keep the 3:2 box. */
 .map-view {
   position: relative;
-  display: grid;
-  grid-auto-rows: var(--tile);
-  gap: 0;
+  width: var(--stage-w);
+  aspect-ratio: 3 / 2;
   border-radius: var(--radius);
-  overflow: hidden;
   background: #15132e;
   box-shadow: 0 16px 46px rgba(0,0,0,.55), 0 0 0 5px rgba(253,249,240,.06), inset 0 0 0 1px rgba(0,0,0,.35);
-  transition: opacity .18s ease;
+  /* visible so the Move / Put away popup can hang below a bottom-row tile */
+  overflow: visible;
+  touch-action: none;
 }
-.map-view.fading { opacity: 0; }
-
-.tile {
-  position: relative;
+.map-view canvas {
+  display: block;
+  border-radius: var(--radius);
+  touch-action: none;
+}
+/* Boot failure message stands in for the canvas */
+.map-view.stage-error {
   display: flex; align-items: center; justify-content: center;
-  font-size: calc(var(--tile) * .7);
-  line-height: 1;
-  user-select: none;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
+  padding: 1.5rem; text-align: center;
 }
 
-/* Terrain looks */
-.t-grass { background: linear-gradient(155deg, #4c8f6b 0%, #3a6f7c 55%, #2c4f68 100%); }
-.t-path  { background: linear-gradient(155deg, #e2c393 0%, #cda56e 100%); }
-.t-flowers {
-  background:
-    radial-gradient(circle at 30% 35%, rgba(242,169,196,.55) 0 8%, transparent 9%),
-    radial-gradient(circle at 68% 60%, rgba(243,221,166,.55) 0 7%, transparent 8%),
-    radial-gradient(circle at 50% 20%, rgba(255,255,255,.35) 0 5%, transparent 6%),
-    linear-gradient(155deg, #4c8f6b 0%, #3a6f7c 55%, #2c4f68 100%);
-}
-.t-sand  { background: linear-gradient(155deg, #f0dfae 0%, #ddc287 100%); }
-.t-water {
-  background: linear-gradient(160deg, #2a5f8c 0%, #1c3f70 55%, #142a52 100%);
-  background-size: 220% 220%;
-  animation: waterShimmer 7s ease-in-out infinite;
-}
-@keyframes waterShimmer {
-  0%, 100% { background-position: 0% 40%; }
-  50% { background-position: 100% 60%; }
-}
-.t-cavefloor { background: linear-gradient(155deg, #3b2350 0%, #2a1938 100%); }
-.t-cavewall {
-  background:
-    radial-gradient(circle at 25% 30%, rgba(215,227,240,.28) 0 5%, transparent 6%),
-    radial-gradient(circle at 70% 65%, rgba(215,227,240,.2) 0 4%, transparent 5%),
-    radial-gradient(circle at 55% 20%, rgba(232,196,106,.22) 0 4%, transparent 5%),
-    linear-gradient(155deg, #221530 0%, #150c22 100%);
-}
-.t-floor { background: linear-gradient(155deg, #f3e2bd 0%, #e6cd9c 100%); }
-.t-wall {
-  background:
-    repeating-linear-gradient(0deg, rgba(0,0,0,.08) 0 6px, transparent 6px calc(var(--tile) / 2)),
-    linear-gradient(155deg, #a495c4 0%, #7f6ea8 100%);
-}
-.t-tree {
-  background: radial-gradient(circle at 50% 62%, #2f6b4a 0 42%, #1e4632 43% 100%);
-}
-.t-tree::after { content: "🌳"; font-size: calc(var(--tile) * .78); filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
-.t-rock {
-  background: radial-gradient(circle at 45% 45%, #8a8296 0 45%, #5c5570 46% 100%);
-}
-.t-rock::after { content: "🪨"; font-size: calc(var(--tile) * .7); filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
-.t-glow {
-  background: radial-gradient(circle at 50% 50%, rgba(243,221,166,.55) 0%, rgba(232,196,106,.18) 55%, transparent 80%), linear-gradient(155deg, #4c8f6b 0%, #3a6f7c 55%, #2c4f68 100%);
-  animation: glowPulse 2.6s ease-in-out infinite;
-}
-@keyframes glowPulse {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.25); }
-}
-.t-castledoor {
-  background: linear-gradient(180deg, #caa25a 0%, #8a6a34 100%);
-  box-shadow: inset 0 0 0 2px rgba(253,249,240,.25), inset 0 0 14px rgba(0,0,0,.35);
-}
-.t-castledoor { font-size: calc(var(--tile) * .68); }
-
-/* Resource nodes */
-.tile.res {
-  font-size: calc(var(--tile) * .68);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,.45));
-  transition: transform .25s ease, opacity .25s ease, filter .25s ease;
-  cursor: pointer;
-}
-.tile.res.depleted {
-  opacity: .3;
-  filter: grayscale(.6) drop-shadow(0 1px 2px rgba(0,0,0,.3));
-  transform: scale(.55);
-}
-
-/* NPCs */
-.tile.npc {
-  font-size: calc(var(--tile) * .78);
-  filter: drop-shadow(0 3px 4px rgba(0,0,0,.45));
-  animation: npcBounce 1.6s ease-in-out infinite;
-  cursor: pointer;
-}
-@keyframes npcBounce {
-  0%, 100% { translate: 0 0; }
-  50% { translate: 0 -3px; }
-}
-
-/* Placed furniture */
-.tile.furn {
-  font-size: calc(var(--tile) * .72);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,.4));
-  /* keep the floor tone underneath the gold glow — a bare `background:` here
-     would blank out the terrain gradient and leave a dark square */
-  background:
-    radial-gradient(circle at 50% 60%, rgba(232,196,106,.28) 0%, transparent 70%),
-    linear-gradient(155deg, #f3e2bd 0%, #e6cd9c 100%);
-  cursor: pointer;
-}
-
-/* Locked doorway */
-.tile.locked {
-  font-size: calc(var(--tile) * .68);
-  background: radial-gradient(circle at 50% 50%, rgba(232,196,106,.35) 0%, rgba(42,31,80,.6) 70%);
-  animation: lockShimmer 1.8s ease-in-out infinite;
-  cursor: pointer;
-}
-@keyframes lockShimmer {
-  0%, 100% { filter: brightness(1) saturate(1); opacity: .85; }
-  50% { filter: brightness(1.35) saturate(1.3); opacity: 1; }
-}
-
-/* Placement-mode affordances */
-body.placing .map-view .tile { cursor: not-allowed; }
-body.placing .map-view .tile.t-floor:hover,
-body.placing .map-view .tile.t-castledoor:hover {
-  outline: 3px solid var(--gold);
-  outline-offset: -3px;
-  cursor: pointer;
-  filter: brightness(1.12);
-}
+/* Placement-mode affordance (the canvas sets its own cursor too) */
 .placing-cursor,
-body.placing .map-view { cursor: grabbing; }
+body.placing .map-view { cursor: crosshair; }
 
-/* ===== Player sprite ===== */
-#player {
-  position: absolute;
-  top: 0; left: 0;
-  width: var(--tile); height: var(--tile);
-  display: flex; align-items: center; justify-content: center;
-  font-size: calc(var(--tile) * .92);
-  line-height: 1;
-  filter: drop-shadow(0 0 8px rgba(232,196,106,.85)) drop-shadow(0 3px 5px rgba(0,0,0,.45));
-  transition: transform .12s linear;
-  animation: playerBob 1.9s ease-in-out infinite;
-  z-index: 10;
-  pointer-events: none;
-  will-change: transform;
+/* HUD sprite icons — manifest art where it exists, emoji otherwise */
+.icon-img {
+  display: block;
+  width: 1.35em; height: 1.35em;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.4));
 }
-/* idle bob uses the independent `translate` property so it never fights
-   the JS-driven inline `transform: translate(...)` used for movement */
-@keyframes playerBob {
-  0%, 100% { translate: 0 0; }
-  50% { translate: 0 -4px; }
-}
-#player .p-sprite { display: block; }
-#player.face-left .p-sprite { transform: scaleX(-1); }
-
-/* Sparkle burst (engine-appended, transient) */
-.sparkle-burst {
-  /* engine sets inline left/top to the tile's center — keep this a 0x0 point */
-  position: absolute; width: 0; height: 0;
-  pointer-events: none;
-  z-index: 15;
-}
-.sparkle-burst span {
-  position: absolute; top: 0; left: 0;
-  font-size: calc(var(--tile) * .5);
-  color: var(--gold-soft);
-  text-shadow: 0 0 6px rgba(232,196,106,.9);
-  opacity: 0;
-}
-.sparkle-burst span:nth-child(6n+1) { animation: sparkle1 .65s ease-out forwards; }
-.sparkle-burst span:nth-child(6n+2) { animation: sparkle2 .65s ease-out forwards; }
-.sparkle-burst span:nth-child(6n+3) { animation: sparkle3 .65s ease-out forwards; }
-.sparkle-burst span:nth-child(6n+4) { animation: sparkle4 .65s ease-out forwards; }
-.sparkle-burst span:nth-child(6n+5) { animation: sparkle5 .65s ease-out forwards; }
-.sparkle-burst span:nth-child(6n)   { animation: sparkle6 .65s ease-out forwards; }
-@keyframes sparkle1 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% - 16px), calc(-50% - 18px)) scale(1.2); } }
-@keyframes sparkle2 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% + 16px), calc(-50% - 18px)) scale(1.2); } }
-@keyframes sparkle3 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% + 22px), calc(-50% + 2px)) scale(1.2); } }
-@keyframes sparkle4 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% + 10px), calc(-50% + 20px)) scale(1.2); } }
-@keyframes sparkle5 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% - 10px), calc(-50% + 20px)) scale(1.2); } }
-@keyframes sparkle6 { 0% { opacity: 1; transform: translate(-50%,-50%) scale(.3); } 100% { opacity: 0; transform: translate(calc(-50% - 22px), calc(-50% + 2px)) scale(1.2); } }
+.dialogue-portrait .icon-img { width: 1em; height: 1em; }
 
 /* ===== Dialogue box ===== */
 .dialogue-box {
@@ -284,7 +134,7 @@ body.placing .map-view { cursor: grabbing; }
   left: 50%; bottom: 14px;
   transform: translateX(-50%);
   z-index: 20;
-  width: min(94%, calc(var(--tile) * 18));
+  width: min(94%, var(--stage-w));
   display: flex; align-items: center; gap: .9rem;
   background: linear-gradient(180deg, var(--paper), #f6eeda);
   color: var(--ink);
@@ -390,7 +240,8 @@ body.placing .map-view { cursor: grabbing; }
   width: 300px;
   max-width: 300px;
   display: flex; flex-direction: column; gap: 1rem;
-  max-height: calc(100dvh - 6rem);
+  /* keeps header + map + footer inside one screen on a laptop */
+  max-height: calc(100dvh - 9.5rem);
   overflow-y: auto;
   scrollbar-width: thin;
 }
@@ -552,6 +403,10 @@ body.placing .map-view { cursor: grabbing; }
 
 /* ===== Responsive stacking ===== */
 @media (max-width: 900px) {
+  :root {
+    /* HUD moves under the map; leave room for the touch controls instead */
+    --stage-w: max(240px, min(1152px, calc((100dvh - 17rem) * 1.5), calc(100vw - 1.8rem)));
+  }
   .game-main {
     flex-direction: column;
     align-items: stretch;
@@ -571,14 +426,10 @@ body.placing .map-view { cursor: grabbing; }
   .dialogue-text { font-size: .92rem; }
 }
 
-/* ===== Reduced motion ===== */
+/* ===== Reduced motion =====
+   The canvas juice (bob, sway, shimmer, particles, fades, vignette pulse)
+   is gated in js/game.js on the same media query; this covers the DOM. */
 @media (prefers-reduced-motion: reduce) {
-  #player { animation: none; }
-  .tile.npc { animation: none; }
-  .t-water { animation: none; }
-  .t-glow { animation: none; }
-  .tile.locked { animation: none; }
-  .sparkle-burst span { animation: none; opacity: 0; }
   .map-view, .toast, .recipe, .furn-item, .chip-btn, .home-link, .action-btn, .dpad button {
     transition: none !important;
   }

@@ -1,0 +1,62 @@
+{
+  "tileSize": 256,
+  "terrain": {
+    "grass": "terrain/grass.webp",
+    "grass2": "terrain/grass2.webp",
+    "path": "terrain/path.webp",
+    "dock": "terrain/dock.webp",
+    "tree": "terrain/tree.webp",
+    "rock": "terrain/rock.webp",
+    "water": "terrain/water.webp",
+    "sand": "terrain/sand.webp",
+    "cavefloor": "terrain/cavefloor.webp",
+    "cavewall": "terrain/cavewall.webp",
+    "floor": "terrain/floor.webp",
+    "wall": "terrain/wall.webp",
+    "flowers": "terrain/flowers.webp",
+    "glow": "terrain/glow.webp",
+    "castledoor": "terrain/castledoor.webp",
+    "dooropen": "terrain/dooropen.webp"
+  },
+  "characters": {
+    "moon": "characters/moon.webp",
+    "babylady": "characters/babylady.webp",
+    "cottontail": "characters/cottontail.webp",
+    "winds": "characters/winds.webp",
+    "dirt": "characters/dirt.webp"
+  },
+  "nodes": {
+    "moonflower": "nodes/moonflower.webp",
+    "silverberry": "nodes/silverberry.webp",
+    "branch": "nodes/branch.webp",
+    "stone": "nodes/stone.webp",
+    "pearl": "nodes/pearl.webp",
+    "seashell": "nodes/seashell.webp",
+    "kelp": "nodes/kelp.webp",
+    "sandcrystal": "nodes/sandcrystal.webp",
+    "crystal": "nodes/crystal.webp",
+    "mushroom": "nodes/mushroom.webp",
+    "gem": "nodes/gem.webp",
+    "moss": "nodes/moss.webp"
+  },
+  "furniture": {
+    "bedframe": "furniture/bedframe.webp",
+    "flowerpot": "furniture/flowerpot.webp",
+    "pathstones": "furniture/pathstones.webp",
+    "berrybasket": "furniture/berrybasket.webp",
+    "windowbox": "furniture/windowbox.webp",
+    "shellchime": "furniture/shellchime.webp",
+    "nightlight": "furniture/nightlight.webp",
+    "mosscushion": "furniture/mosscushion.webp",
+    "sandglass": "furniture/sandglass.webp",
+    "pearlmirror": "furniture/pearlmirror.webp",
+    "gemcrown": "furniture/gemcrown.webp",
+    "puppynook": "furniture/puppynook.webp",
+    "seedjar": "furniture/seedjar.webp",
+    "shellnecklace": "furniture/shellnecklace.webp",
+    "cloudkite": "furniture/cloudkite.webp"
+  },
+  "fx": {
+    "sparkle": "fx/sparkle.webp"
+  }
+}
