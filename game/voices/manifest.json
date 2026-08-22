@@ -1,0 +1,57 @@
+{
+  "narrator": {
+    "voice": "en-US-AnaNeural",
+    "lines": {
+      "intro": "narrator/intro.mp3",
+      "welcome": "narrator/welcome.mp3",
+      "recipe": "narrator/recipe.mp3",
+      "crafted": "narrator/crafted.mp3",
+      "room": "narrator/room.mp3",
+      "friend": "narrator/friend.mp3",
+      "placed": "narrator/placed.mp3",
+      "full": "narrator/full.mp3"
+    }
+  },
+  "companions": {
+    "babylady": {
+      "voice": "en-US-AvaNeural",
+      "lines": [
+        "babylady/01.mp3",
+        "babylady/02.mp3",
+        "babylady/03.mp3",
+        "babylady/04.mp3"
+      ],
+      "revisit": "babylady/revisit.mp3"
+    },
+    "cottontail": {
+      "voice": "en-US-JaneNeural",
+      "lines": [
+        "cottontail/01.mp3",
+        "cottontail/02.mp3",
+        "cottontail/03.mp3",
+        "cottontail/04.mp3"
+      ],
+      "revisit": "cottontail/revisit.mp3"
+    },
+    "winds": {
+      "voice": "en-US-AndrewNeural",
+      "lines": [
+        "winds/01.mp3",
+        "winds/02.mp3",
+        "winds/03.mp3",
+        "winds/04.mp3"
+      ],
+      "revisit": "winds/revisit.mp3"
+    },
+    "dirt": {
+      "voice": "en-US-DavisNeural",
+      "lines": [
+        "dirt/01.mp3",
+        "dirt/02.mp3",
+        "dirt/03.mp3",
+        "dirt/04.mp3"
+      ],
+      "revisit": "dirt/revisit.mp3"
+    }
+  }
+}

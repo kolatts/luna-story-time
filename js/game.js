@@ -88,6 +88,7 @@
   var decorHint = $("decorHint");
   var btnAction = $("btnAction");
   var btnReset = $("btnReset");
+  var btnSound = $("btnSound");
   var confirmModal = $("confirmModal");
   var confirmText = $("confirmText");
   var confirmYes = $("confirmYes");
@@ -1364,6 +1365,109 @@
     });
     paintTile(x, y);
     sparkleAt(x, y);
+    var held = 0;
+    for (var r in state.inv) held += state.inv[r] || 0;
+    if (held >= 40) narrate("full", true);
+  }
+
+  /* ================= Voices ================= */
+  /* Spoken lines from game/voices/ (Azure AI Speech). Entirely optional: with no
+     manifest, a 404 clip, or sound switched off, the game simply stays quiet.
+     One shared <audio> means two lines can never talk over each other. */
+
+  var VOICE_BASE = "game/voices/";
+  var SOUND_KEY = "pm-castle-life-sound";
+  var voices = null;           // parsed manifest, or null when there is no audio
+  var audioEl = null;          // created lazily, on the first line actually spoken
+  var queuedNarration = null;  // Ana waits her turn rather than interrupting a friend
+  var pendingGreeting = null;  // autoplay policy: held back until the first gesture
+  var saidOnce = {};           // milestone lines that should only ever land once
+  var soundOn = true;
+
+  function loadSoundPref() {
+    try { soundOn = localStorage.getItem(SOUND_KEY) !== "off"; }
+    catch (e) { soundOn = true; }
+  }
+
+  function setSound(on) {
+    soundOn = !!on;
+    try { localStorage.setItem(SOUND_KEY, soundOn ? "on" : "off"); } catch (e) { /* ignore */ }
+    if (!soundOn) stopVoice();
+    syncSoundButton();
+  }
+
+  function syncSoundButton() {
+    if (!btnSound) return;
+    btnSound.textContent = soundOn ? "\uD83D\uDD0A" : "\uD83D\uDD07";
+    btnSound.setAttribute("aria-pressed", soundOn ? "true" : "false");
+    btnSound.setAttribute("aria-label", soundOn ? "Turn voices off" : "Turn voices on");
+    btnSound.setAttribute("title", soundOn ? "Voices are on" : "Voices are off");
+  }
+
+  function stopVoice() {
+    queuedNarration = null;
+    if (!audioEl) return;
+    try { audioEl.pause(); audioEl.currentTime = 0; } catch (e) { /* ignore */ }
+  }
+
+  /* Play a clip path relative to game/voices/. Returns true if it was started. */
+  function playClip(rel) {
+    if (!rel || !soundOn || !voices) return false;
+    if (!audioEl) {
+      audioEl = new Audio();
+      audioEl.volume = 0.9;
+      audioEl.preload = "none";
+      audioEl.addEventListener("ended", function () {
+        var next = queuedNarration;
+        queuedNarration = null;
+        if (next) playClip(next);
+      });
+      audioEl.addEventListener("error", function () { queuedNarration = null; });
+    }
+    stopVoice();
+    try {
+      audioEl.src = VOICE_BASE + rel;
+      var pr = audioEl.play();
+      // A blocked autoplay rejects; swallow it so it never surfaces as an error.
+      if (pr && typeof pr.catch === "function") pr.catch(function () {});
+    } catch (e) { return false; }
+    return true;
+  }
+
+  function voiceIsBusy() {
+    return !!(audioEl && !audioEl.paused && !audioEl.ended);
+  }
+
+  /* One of the companion's own lines: index-aligned with world.json dialogue[]. */
+  function speakCompanion(cid, index, isRevisit) {
+    if (!voices || !voices.companions) return;
+    var entry = voices.companions[cid];
+    if (!entry) return;
+    var rel = isRevisit
+      ? entry.revisit
+      : (Object.prototype.toString.call(entry.lines) === "[object Array]" ? entry.lines[index] : null);
+    playClip(rel);
+  }
+
+  /* Ana's milestone lines. She never speaks over a friend - she waits. */
+  function narrate(key, once) {
+    if (!voices || !voices.narrator || !voices.narrator.lines) return;
+    if (once) {
+      if (saidOnce[key]) return;
+      saidOnce[key] = true;
+    }
+    var rel = voices.narrator.lines[key];
+    if (!rel || !soundOn) return;
+    if (dialogue || voiceIsBusy()) { queuedNarration = rel; return; }
+    playClip(rel);
+  }
+
+  /* The greeting cannot play at load - browsers need a gesture first. */
+  function releaseGreeting() {
+    if (!pendingGreeting) return;
+    var key = pendingGreeting;
+    pendingGreeting = null;
+    narrate(key, true);
   }
 
   /* ================= Dialogue ================= */
@@ -1399,6 +1503,7 @@
     var c = world.companions[dialogue.id];
     var name = (c && c.name) ? c.name + ": " : "";
     if (dialogueText) dialogueText.textContent = name + dialogue.lines[dialogue.i];
+    speakCompanion(dialogue.id, dialogue.i, !dialogue.first);
     if (dialogueNext) {
       var last = dialogue.i >= dialogue.lines.length - 1;
       dialogueNext.textContent = last ? "All done ✨" : "Next ✨";
@@ -1419,12 +1524,14 @@
   function endDialogue() {
     var d = dialogue;
     dialogue = null;
+    stopVoice();
     if (dialogueBox) { setHidden(dialogueBox, true); dialogueBox.classList.remove("open"); }
     if (!d) return;
     if (d.first && state.met.indexOf(d.id) < 0) {
       var c = world.companions[d.id];
       if (c && c.name) toast(c.name + " is your friend now 💖");
       progress(function () { state.met.push(d.id); });   // may add their recipe
+      narrate("friend", true);
     }
   }
 
@@ -1467,6 +1574,8 @@
       var room = roomsById[newRooms[j]];
       if (room) toast((room.name || "A new room") + " is open! 🎉");
     }
+    if (newRooms.length) narrate("room");            // a whole room beats a recipe
+    else if (newRecipes.length) narrate("recipe");
     repaintDoorways();   // opens newly unlocked doors and refreshes "3 more to go" hints
 
     renderHud();
@@ -1702,6 +1811,7 @@
       return;
     }
     toast("Made " + (recipe.emoji || "✨") + " " + (recipe.name || recipe.id) + "!");
+    narrate("crafted", true);
     progress(function () {
       var needs = recipe.needs || {};
       for (var r in needs) {
@@ -1814,6 +1924,7 @@
     sparkleAt(x, y);
     var recipe = recipesById[item];
     toast(((recipe && recipe.emoji) || "✨") + " " + ((recipe && recipe.name) || "It") + " looks lovely there!");
+    narrate("placed", true);
     renderHud();
     save();
   }
@@ -1967,6 +2078,17 @@
     document.addEventListener("keydown", onKeyDown);
     document.addEventListener("keyup", onKeyUp);
 
+    if (btnSound) {
+      btnSound.addEventListener("click", function (e) {
+        setSound(!soundOn);
+        if (e && e.detail) btnSound.blur();   // pointer click: don't keep focus
+      });
+    }
+    // Browsers will not let audio start before the player touches something.
+    var release = function () { releaseGreeting(); };
+    document.addEventListener("keydown", release, { once: true });
+    document.addEventListener("pointerdown", release, { once: true });
+
     document.addEventListener("click", function (e) {
       if (!tileMenu) return;
       if (tileMenu.contains(e.target)) return;
@@ -2049,7 +2171,8 @@
 
     // Start over
     if (btnReset) {
-      btnReset.addEventListener("click", function () {
+      btnReset.addEventListener("click", function (e) {
+        if (e && e.detail) btnReset.blur();   // pointer click: don't keep focus
         openConfirm("Start over? Your satchel, treasures and cozy rooms will all be cleared.", function () {
           wiped = true;
           if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; }
@@ -2105,6 +2228,10 @@
     if (!k) return;
     var dir = DIR_KEYS[k] || DIR_KEYS[String(k).toLowerCase()];
     var isConfirmKey = (k === " " || k === "Spacebar" || k === "Enter");
+
+    // The browser already activates a focused button on Space/Enter; doing the
+    // game action too would fire a single press twice.
+    if (isConfirmKey && t && t.tagName === "BUTTON") return;
 
     if (isModalOpen()) {
       if (k === "Escape") { e.preventDefault(); closeConfirm(); }
@@ -2193,6 +2320,7 @@
     renderHud();
     flushSave();
 
+    pendingGreeting = firstRun ? "intro" : "welcome";
     if (firstRun) {
       toast("Walk with the arrow keys · ✨ to gather · Craft cozy things for your castle 💫", 6500, "intro-toast");
     } else {
@@ -2202,9 +2330,12 @@
     firstRun = false;
   }
 
-  function init(w, mf) {
+  function init(w, mf, vf) {
     indexWorld(w);
     manifest = (mf && typeof mf === "object") ? mf : {};
+    voices = (vf && typeof vf === "object" && vf.companions) ? vf : null;
+    loadSoundPref();
+    syncSoundButton();
     if (!Object.keys(world.maps).length) { fatal("The castle grounds are missing."); return; }
     if (typeof Phaser === "undefined") { fatal("The magic paintbrush (Phaser) didn't load."); return; }
 
@@ -2270,11 +2401,12 @@
 
   Promise.all([
     fetchJson("game/world.json", false),
-    fetchJson(ASSET_BASE + "manifest.json", true)
+    fetchJson(ASSET_BASE + "manifest.json", true),
+    fetchJson("game/voices/manifest.json", true)
   ]).then(function (res) {
     var w = res[0];
     if (!w || typeof w !== "object") throw new Error("world.json is not a story");
-    init(w, res[1]);
+    init(w, res[1], res[2]);
   }).catch(function (err) {
     fatal("The castle wouldn't open (" + err.message + "). Try refreshing the page.");
   });

@@ -59,6 +59,12 @@ body.game-body {
   color: var(--scale);
   transition: background .15s ease, transform .15s ease, border-color .15s ease;
 }
+.chip-btn.icon-chip {
+  font-size: 1.05rem;
+  line-height: 1;
+  padding: .45rem .7rem;
+}
+.chip-btn.icon-chip[aria-pressed="false"] { opacity: .6; }
 .chip-btn:hover { background: rgba(183,167,212,.3); border-color: var(--gold); transform: translateY(-1px); }
 
 .game-footer {
