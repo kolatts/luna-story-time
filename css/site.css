@@ -305,7 +305,7 @@ body.reader-body { background: radial-gradient(120% 100% at 50% 0%, #2b2452 0%, 
 }
 .spread-kicker {
   font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
-  color: #9a7bb5; margin-bottom: .35rem;
+  color: #75589a; margin-bottom: .35rem;
 }
 .spread-title {
   font-size: clamp(1.5rem, 4.5vw, 2rem); color: #6d4fa0; margin-bottom: .9rem;
@@ -333,14 +333,14 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
 }
 .refrain-line .say-with-me {
   display: block; font-style: normal; font-size: .78rem;
-  letter-spacing: .1em; text-transform: uppercase; color: #b58ac2; margin-bottom: .25rem;
+  letter-spacing: .1em; text-transform: uppercase; color: #77518f; margin-bottom: .25rem;
 }
 .the-end { margin-top: 1rem; font-family: "Berkshire Swash", Georgia, serif; font-size: 1.5rem; color: #6d4fa0; text-align: center; }
 
 .vocab-chips { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: .5rem; }
 .vocab-chip {
   background: linear-gradient(180deg, #fff, #fbe9f1); color: #a03d6b;
-  border: 1.5px solid #f2a9c4; border-radius: 999px;
+  border: 1.5px solid #c96a92; border-radius: 999px;
   padding: .35rem .85rem; font-size: .92rem; font-weight: 700;
 }
 .vocab-chip::before { content: "✨ "; }
@@ -392,8 +392,8 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
 @keyframes popIn { from { transform: scale(.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 .vocab-pop .vp-word { font-weight: 700; font-size: 1.25rem; color: #a03d6b; }
 .vocab-pop .vp-def { margin-top: .3rem; line-height: 1.5; }
-.vocab-pop .vp-say { margin-top: .6rem; background: var(--pink); color: #fff; border-radius: 999px; padding: .4rem .95rem; font-weight: 700; }
-.vocab-pop .vp-close { position: absolute; top: .35rem; right: .55rem; font-size: 1.05rem; color: #b58ac2; }
+.vocab-pop .vp-say { margin-top: .6rem; background: #b03f74; color: #fff; border-radius: 999px; padding: .4rem .95rem; font-weight: 700; }
+.vocab-pop .vp-close { position: absolute; top: .35rem; right: .55rem; font-size: 1.05rem; color: #7d5c8e; }
 
 /* Finale */
 .finale { text-align: center; padding: 1rem 0 0; }
@@ -409,6 +409,14 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
 .finale-actions { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin-top: 1.4rem; }
 .finale-actions .cta { margin-top: 0; font-size: 1.05rem; padding: .8rem 1.7rem; }
 .cta.ghost { background: none; border: 2px solid var(--gold); color: var(--gold-soft); box-shadow: none; }
+/* Ghost buttons sit on the light paper panel inside the reader, where the gold
+   palette is unreadable — restate them in the panel's own purple. */
+.finale .cta.ghost {
+  background: rgba(109, 79, 160, .07);
+  border-color: #7b5aa6;
+  color: #553688;
+}
+.finale .cta.ghost:hover { background: rgba(109, 79, 160, .16); border-color: #553688; box-shadow: none; }
 
 /* Page-turn feel */
 .spread.turning-next { animation: turnNext .32s ease; }
