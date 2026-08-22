@@ -1,0 +1,12 @@
+{
+  "games": [
+    {
+      "slug": "castle-life",
+      "title": "Princess Moon's Castle Life",
+      "subtitle": "Wander the moonlit grounds, gather sparkly treasures, and craft a cozy castle home with Baby Lady and the jaguar cubs.",
+      "href": "game.html",
+      "cover": "games/castle-life/cover.webp",
+      "badge": "Cozy sandbox · Ages 4-8"
+    }
+  ]
+}
