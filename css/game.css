@@ -312,6 +312,7 @@ html.touch-ui .dialogue-box {
 html.touch-ui .chip-btn,
 html.touch-ui .home-link,
 html.touch-ui .cta.small,
+html.touch-ui .game-footer a,
 html.touch-ui .inline-menu button {
   min-height: 44px;
   display: inline-flex; align-items: center; justify-content: center;
@@ -340,9 +341,58 @@ html.touch-ui .inv-grid .inv-item { min-height: 48px; justify-content: center; }
 }
 .hud-panel h2 {
   font-size: 1.2rem; color: var(--gold-soft);
-  margin-bottom: .7rem;
+  margin-bottom: 0;
   text-shadow: 0 1px 8px rgba(0,0,0,.4);
 }
+
+/* ===== Collapsible panels =====
+   The <h2> is the tap target: a full-width button carrying aria-expanded /
+   aria-controls, with a chevron that rotates as it opens. js/game.js animates
+   the body's height (and skips the animation under prefers-reduced-motion). */
+.panel-toggle {
+  display: flex; align-items: center; gap: .6rem;
+  width: 100%;
+  min-height: 44px;
+  padding: .15rem 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none; border: 0;
+  cursor: pointer;
+}
+.panel-toggle .panel-name { flex: 1; min-width: 0; }
+.panel-toggle:hover .panel-name { color: var(--gold); }
+.panel-toggle:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+.panel-toggle .chev {
+  flex: 0 0 auto;
+  width: 1.5rem; height: 1.5rem;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--stone);
+  transition: transform .22s ease, color .15s ease;
+}
+.panel-toggle .chev::before {
+  content: "";
+  width: .55rem; height: .55rem;
+  border-right: 2.5px solid currentColor;
+  border-bottom: 2.5px solid currentColor;
+  border-radius: 1px;
+  transform: translateY(-2px) rotate(45deg);
+}
+.panel-toggle[aria-expanded="false"] .chev { transform: rotate(-90deg); }
+.panel-toggle:hover .chev { color: var(--gold-soft); }
+
+/* `overflow: hidden` also makes this a block formatting context, so the gap
+   under the heading can live as the first child's margin — it counts toward
+   scrollHeight and disappears with the body instead of leaving a ghost gap. */
+.panel-body {
+  overflow: hidden;
+  transition: height .26s ease;
+}
+.panel-body > :first-child { margin-top: .7rem; }
 .hud-panel .hint {
   margin-top: .6rem; font-size: .82rem; color: var(--stone);
   line-height: 1.4;
@@ -519,7 +569,8 @@ html.touch-ui .inv-grid .inv-item { min-height: 48px; justify-content: center; }
    The canvas juice (bob, sway, shimmer, particles, fades, vignette pulse)
    is gated in js/game.js on the same media query; this covers the DOM. */
 @media (prefers-reduced-motion: reduce) {
-  .map-view, .toast, .recipe, .furn-item, .chip-btn, .home-link, .action-btn, .stick {
+  .map-view, .toast, .recipe, .furn-item, .chip-btn, .home-link, .action-btn, .stick,
+  .panel-body, .panel-toggle .chev {
     transition: none !important;
   }
 }

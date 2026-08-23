@@ -40,19 +40,27 @@
     </div>
   </section>
 
+  <!-- Each panel collapses from its own heading (js/game.js wires the toggles
+       and remembers the open/closed set in localStorage). -->
   <aside class="hud">
-    <section class="hud-panel" id="inventoryPanel">
-      <h2>Satchel</h2>
-      <div class="inv-grid" id="invGrid"></div>
+    <section class="hud-panel" id="inventoryPanel" data-panel="inventory">
+      <h2><button type="button" class="panel-toggle" aria-expanded="true" aria-controls="inventoryBody"><span class="panel-name">Satchel</span><span class="chev" aria-hidden="true"></span></button></h2>
+      <div class="panel-body" id="inventoryBody">
+        <div class="inv-grid" id="invGrid"></div>
+      </div>
     </section>
-    <section class="hud-panel" id="craftPanel">
-      <h2>Crafting</h2>
-      <div id="recipeList"></div>
+    <section class="hud-panel" id="craftPanel" data-panel="craft">
+      <h2><button type="button" class="panel-toggle" aria-expanded="true" aria-controls="craftBody"><span class="panel-name">Crafting</span><span class="chev" aria-hidden="true"></span></button></h2>
+      <div class="panel-body" id="craftBody">
+        <div id="recipeList"></div>
+      </div>
     </section>
-    <section class="hud-panel" id="furniturePanel">
-      <h2>Furniture</h2>
-      <div id="furnList"></div>
-      <p class="hint" id="decorHint" hidden>Tap a furniture piece, then tap a floor tile to place it 💫</p>
+    <section class="hud-panel" id="furniturePanel" data-panel="furniture">
+      <h2><button type="button" class="panel-toggle" aria-expanded="true" aria-controls="furnitureBody"><span class="panel-name">Furniture</span><span class="chev" aria-hidden="true"></span></button></h2>
+      <div class="panel-body" id="furnitureBody">
+        <div id="furnList"></div>
+        <p class="hint" id="decorHint" hidden>Tap a furniture piece, then tap a floor tile to place it 💫</p>
+      </div>
     </section>
   </aside>
 </main>

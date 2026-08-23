@@ -32,9 +32,18 @@
   var START_MAP = "grounds";
   var START_X = 9, START_Y = 5;
 
-  /* Fixed internal stage size; Scale.FIT letterboxes it into #mapView.
-     Every area is centred inside it at its own tile size. */
+  /* Fixed internal stage size; Scale.FIT letterboxes it into #mapView. */
   var GAME_W = 1152, GAME_H = 768;
+
+  /* Camera: the stage shows ~VIEW_TILES_X tiles across and follows Princess
+     Moon, so the characters read at a size a 4-year-old can actually see
+     (v2.0 fitted the whole 18x12 map in and the sprites were thumbnails).
+     One tile size for every area keeps her the same size indoors and out;
+     areas narrower/shorter than the viewport are centred instead of pinned
+     to a corner (see renderArea's worldW/worldH). */
+  var VIEW_TILES_X = 10;
+  var TILE_PX = Math.floor(GAME_W / VIEW_TILES_X);   // 115
+  var CAM_LERP = 0.14;         // a little glide, not a snap
 
   var ASSET_BASE = "game/assets/";
   var EMOJI_FONT = '"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji","Twemoji Mozilla",sans-serif';
@@ -111,7 +120,8 @@
 
   /* Current area geometry (stage coordinates) */
   var gridW = 0, gridH = 0;
-  var tileSize = 64, originX = 0, originY = 0;
+  var tileSize = TILE_PX, originX = 0, originY = 0;
+  var worldW = GAME_W, worldH = GAME_H;   // camera bounds (>= one viewport)
   var useDock = false, isCave = false, isOutdoor = false;
   var baseTerrain = "grass";   // what this map's ground is made of (see baseTerrainOf)
 
@@ -217,6 +227,7 @@
       furniture: {},
       placed: {},
       met: [],
+      cutscenesSeen: [],       // added in v2.1; older saves simply have none
       totals: { gathered: 0, crafted: 0 },
       nodesDepleted: {}
     };
@@ -235,6 +246,16 @@
       for (var i = 0; i < raw.met.length; i++) {
         var id = raw.met[i];
         if (typeof id === "string" && world.companions[id] && s.met.indexOf(id) < 0) s.met.push(id);
+      }
+    }
+    /* Additive: a v1/v2.0 save has no cutscenesSeen and just gets an empty
+       one, so nothing that used to load stops loading. */
+    if (Object.prototype.toString.call(raw.cutscenesSeen) === "[object Array]") {
+      for (var ci = 0; ci < raw.cutscenesSeen.length; ci++) {
+        var csid = raw.cutscenesSeen[ci];
+        if (typeof csid === "string" && cutsceneById(csid) && s.cutscenesSeen.indexOf(csid) < 0) {
+          s.cutscenesSeen.push(csid);
+        }
       }
     }
     if (raw.inv && typeof raw.inv === "object") {
@@ -365,14 +386,17 @@
     return null;
   }
 
-  function npcsFor(area) {
+  function npcsFor(area, s) {
     var out = {};
     if (!area || !world.companions) return out;
+    s = s || state;
     var id = areaIdOf(area);
     var listed = (area.npcs && Object.prototype.toString.call(area.npcs) === "[object Array]") ? area.npcs : [];
     var add = function (cid) {
       var c = world.companions[cid];
       if (!c) return;
+      // Gated on a cutscene the player hasn't watched yet: not there at all.
+      if (c.appearsAfter && !seenCutscene(c.appearsAfter, s)) return;
       if (c.map && c.map !== id) return;
       var cx = intOr(c.x, -1), cy = intOr(c.y, -1);
       if (tileCharOf(area, cx, cy) === null) return;
@@ -417,7 +441,7 @@
       var room = roomsById[e.to];
       if (!room || !condMetWith(s, room.unlock)) return false;
     }
-    var npcs = (area === currentArea()) ? npcIndex : npcsFor(area);
+    var npcs = (area === currentArea() && s === state) ? npcIndex : npcsFor(area, s);
     if (npcs[keyOf(x, y)]) return false;
     if (isRoom && placedInAt(areaIdOf(area), x, y, s)) return false;
     return true;
@@ -472,12 +496,26 @@
   }
   function texKey(group, id) { return group.charAt(0) + "_" + id; }
 
+  /* Everyone who speaks in a cutscene may need a character sprite too. */
+  function cutsceneSpeakers() {
+    var out = [];
+    var list = cutsceneList();
+    for (var i = 0; i < list.length; i++) {
+      var steps = (list[i] && Object.prototype.toString.call(list[i].steps) === "[object Array]") ? list[i].steps : [];
+      for (var j = 0; j < steps.length; j++) {
+        var id = steps[j] && steps[j].speaker;
+        if (typeof id === "string" && id && id !== "narrator" && out.indexOf(id) < 0) out.push(id);
+      }
+    }
+    return out;
+  }
+
   /* Every manifest entry we might use, as {key, url} pairs. */
   function manifestQueue() {
     var out = [];
     var groups = {
       terrain: TERRAIN_LIST,
-      characters: ["moon"].concat(Object.keys(world.companions || {})),
+      characters: ["moon"].concat(Object.keys(world.companions || {})).concat(cutsceneSpeakers()),
       nodes: Object.keys(world.resources || {}),
       furniture: (world.recipes || []).map(function (r) { return r && r.id; }),
       fx: ["sparkle"]
@@ -994,8 +1032,10 @@
     dustEmitter.setDepth(90);
 
     if (isCave) {
+      // Screen-space: scrollFactor 0 pins it to the viewport as the camera
+      // follows, and the 8% overscan covers the 1.03 zoom-settle on arrival.
       var v = scene.add.image(GAME_W / 2, GAME_H / 2, "fx_vignette");
-      v.setDisplaySize(GAME_W, GAME_H).setDepth(8500);
+      v.setDisplaySize(GAME_W * 1.08, GAME_H * 1.08).setDepth(8500).setScrollFactor(0);
       var glow = scene.add.image(0, 0, "fx_halo");
       glow.setDisplaySize(tileSize * 3, tileSize * 3).setDepth(DEPTH_OBJ - 2)
         .setBlendMode(Phaser.BlendModes.ADD).setAlpha(0.35);
@@ -1069,15 +1109,23 @@
     gridW = 0;
     for (var y0 = 0; y0 < gridH; y0++) gridW = Math.max(gridW, (area.tiles[y0] || "").length);
 
-    tileSize = Math.floor(Math.min(GAME_W / gridW, GAME_H / gridH));
-    originX = Math.round((GAME_W - gridW * tileSize) / 2);
-    originY = Math.round((GAME_H - gridH * tileSize) / 2);
+    /* One tile size everywhere, so Princess Moon never changes size when she
+       walks through a door. The camera bounds are at least one viewport big:
+       an area narrower (or shorter) than the stage gets the slack split
+       evenly into originX/originY, which centres it — Phaser's own clamp
+       would otherwise pin it to the top-left corner. */
+    tileSize = TILE_PX;
+    worldW = Math.max(gridW * tileSize, GAME_W);
+    worldH = Math.max(gridH * tileSize, GAME_H);
+    originX = Math.round((worldW - gridW * tileSize) / 2);
+    originY = Math.round((worldH - gridH * tileSize) / 2);
 
     useDock = areaHasTerrain(area, "sand");
     isCave = areaHasTerrain(area, "cavefloor");
     isOutdoor = !inRoom();
     baseTerrain = baseTerrainOf(area);
 
+    scene.cameras.main.stopFollow();     // the old player container is about to die
     scene.tweens.killAll();
     scene.children.removeAll(true);
     groundAt = {}; overlayAt = {};
@@ -1097,7 +1145,11 @@
     if (locationName) locationName.textContent = area.name || "";
 
     var cam = scene.cameras.main;
+    cam.setBounds(0, 0, worldW, worldH);
+    cam.setRoundPixels(true);
     cam.setZoom(1);
+    cam.startFollow(playerC, true, CAM_LERP, CAM_LERP);
+    cam.centerOn(playerC.x, playerC.y);
     if (!reduceMotion) {
       cam.fadeIn(FADE_MS, 0, 0, 0);
       cam.setZoom(1.03);
@@ -1105,6 +1157,15 @@
     } else {
       cam.resetFX();
     }
+  }
+
+  /* World (stage) point -> canvas pixels, through the camera. */
+  function worldToCanvas(wx, wy) {
+    if (!scene || !scene.cameras) return { x: wx, y: wy };
+    var cam = scene.cameras.main;
+    var z = cam.zoom || 1;
+    var view = cam.worldView;
+    return { x: (wx - view.x) * z, y: (wy - view.y) * z };
   }
 
   /* Repaint one tile — gathering, respawns, furniture, unlocks. */
@@ -1196,7 +1257,7 @@
   /* ================= Movement & travel ================= */
 
   function busy() {
-    return !!dialogue || travelling || isModalOpen();
+    return !!dialogue || !!cutscene || travelling || isModalOpen();
   }
 
   function tryMove(dir) {
@@ -1222,6 +1283,7 @@
     if (placedAt(nx, ny)) { bumpToast("Something cozy is in the way ✨"); return; }
     if (!walkableAt(nx, ny)) return;
 
+    closeTileMenu();          // the camera is about to scroll out from under it
     dustAt(state.x, state.y);
     state.x = nx; state.y = ny;
     positionPlayer(false);
@@ -1318,6 +1380,7 @@
       renderFurniture();
       travelling = false;
       flushSave();
+      maybeCutscene();   // a scene whose trigger was met on another map
     };
 
     if (reduceMotion || !scene) { arrive(); return; }
@@ -1330,6 +1393,7 @@
 
   function interact() {
     if (!state) return;
+    if (cutscene) { advanceCutscene(); return; }
     if (dialogue) { advanceDialogue(); return; }
     if (busy()) return;
     var d = DIRS[state.facing] || DIRS.down;
@@ -1459,6 +1523,16 @@
     playClip(rel);
   }
 
+  /* A cutscene line: voices.cutscenes["<id>"][stepIndex], index-aligned with
+     the scene's steps[]. Missing manifest entry = a silent (but still
+     perfectly playable) scene. */
+  function speakCutscene(id, index) {
+    if (!voices || !voices.cutscenes) return;
+    var list = voices.cutscenes[id];
+    if (Object.prototype.toString.call(list) !== "[object Array]") return;
+    playClip(list[index]);
+  }
+
   /* Ana's milestone lines. She never speaks over a friend - she waits. */
   function narrate(key, once) {
     if (!voices || !voices.narrator || !voices.narrator.lines) return;
@@ -1468,7 +1542,7 @@
     }
     var rel = voices.narrator.lines[key];
     if (!rel || !soundOn) return;
-    if (dialogue || voiceIsBusy()) { queuedNarration = rel; return; }
+    if (dialogue || cutscene || voiceIsBusy()) { queuedNarration = rel; return; }
     playClip(rel);
   }
 
@@ -1521,6 +1595,13 @@
     }
   }
 
+  /* Whatever is currently talking — a friend or a whole story moment. */
+  function advanceTalking() {
+    if (cutscene) { advanceCutscene(); return; }
+    if (dialogue) { advanceDialogue(); return; }
+    interact();
+  }
+
   function advanceDialogue() {
     if (!dialogue) return;
     if (dialogue.i < dialogue.lines.length - 1) {
@@ -1543,6 +1624,183 @@
       progress(function () { state.met.push(d.id); });   // may add their recipe
       narrate("friend", true);
     }
+  }
+
+  /* ================= Cutscenes =================
+     Data-driven visits (game/SPEC-SISTERS.md): world.cutscenes is optional and
+     everything here no-ops when it is absent. A scene plays through the very
+     same dialogue box, one step at a time, advancing on whatever advances
+     dialogue; Escape (or "All done") ends the whole thing. Speakers with an
+     `at` offset fade in beside the player and stay put until the scene ends. */
+
+  /* Storybook stand-ins for visitors who have no companion entry (and so no
+     name or emoji anywhere in the data). Sprites come from the manifest as
+     soon as the art lands — this is only the fallback face. */
+  var VISITOR_EMOJI = {
+    evilest: "🌑", beedlist: "📓", shock: "🎭",
+    leeblebeest: "💙", cheeblest: "🎀", narrator: "🌙"
+  };
+
+  var cutscene = null;         // { id, steps, i, actors: {id: sprite}, taken: {} }
+
+  function cutsceneList() {
+    var list = world && world.cutscenes;
+    return Object.prototype.toString.call(list) === "[object Array]" ? list : [];
+  }
+  function cutsceneById(id) {
+    var list = cutsceneList();
+    for (var i = 0; i < list.length; i++) {
+      if (list[i] && list[i].id === id) return list[i];
+    }
+    return null;
+  }
+  function seenCutscene(id, s) {
+    s = s || state;
+    if (!s || Object.prototype.toString.call(s.cutscenesSeen) !== "[object Array]") return false;
+    return s.cutscenesSeen.indexOf(id) >= 0;
+  }
+  function markCutsceneSeen(id) {
+    if (!state) return;
+    if (Object.prototype.toString.call(state.cutscenesSeen) !== "[object Array]") state.cutscenesSeen = [];
+    if (state.cutscenesSeen.indexOf(id) < 0) state.cutscenesSeen.push(id);
+  }
+
+  /* Who is talking: a companion when we have one, otherwise a plain
+     capitalised id (the tower sisters are visitors, not companions). */
+  function speakerInfo(step) {
+    var id = (step && typeof step.speaker === "string") ? step.speaker : "narrator";
+    if (id === "narrator") return { id: id, name: "", emoji: VISITOR_EMOJI.narrator };
+    var c = world.companions[id];
+    var name = (c && c.name) || (typeof step.name === "string" ? step.name : "") ||
+      (id.charAt(0).toUpperCase() + id.slice(1));
+    return { id: id, name: name, emoji: (c && c.emoji) || step.emoji || VISITOR_EMOJI[id] || "✨" };
+  }
+
+  /* Called after every progress() mutation. Picks the first unseen scene whose
+     trigger is met on the map the player is standing on. */
+  function maybeCutscene() {
+    if (!state || cutscene || dialogue || travelling || isModalOpen()) return;
+    var here = areaIdOf(currentArea());
+    var list = cutsceneList();
+    for (var i = 0; i < list.length; i++) {
+      var cs = list[i];
+      if (!cs || typeof cs.id !== "string") continue;
+      if (seenCutscene(cs.id)) continue;
+      if (cs.map && cs.map !== here) continue;
+      if (!condMet(cs.trigger)) continue;
+      startCutscene(cs);
+      return;
+    }
+  }
+
+  function startCutscene(cs) {
+    var steps = Object.prototype.toString.call(cs.steps) === "[object Array]" ? cs.steps : [];
+    var clean = [];
+    for (var i = 0; i < steps.length; i++) {
+      if (steps[i] && typeof steps[i].text === "string" && steps[i].text.trim()) clean.push(steps[i]);
+    }
+    if (!clean.length) { markCutsceneSeen(cs.id); save(); return; }   // nothing to show: don't wedge
+
+    cancelPlacing();
+    closeTileMenu();
+    heldKeys = []; dpadDir = null;
+    stopRepeat();
+    releaseStick(true);
+    cutscene = { id: cs.id, steps: clean, i: 0, actors: {}, taken: {} };
+    if (dialogueBox) { setHidden(dialogueBox, false); dialogueBox.classList.add("open"); }
+    showCutsceneStep();
+  }
+
+  /* A free tile for a visitor: the offset from the player, clamped into the
+     map and nudged off the player's own tile (and off each other). */
+  function cutsceneSpot(at) {
+    var dx = intOr(at && at.dx, 0), dy = intOr(at && at.dy, 0);
+    var bx = clampN(state.x + dx, 0, Math.max(0, gridW - 1));
+    var by = clampN(state.y + dy, 0, Math.max(0, gridH - 1));
+    var nudges = [[0, 0], [0, -1], [1, 0], [-1, 0], [0, 1], [1, -1], [-1, -1], [2, 0], [-2, 0], [0, -2]];
+    for (var i = 0; i < nudges.length; i++) {
+      var cx = clampN(bx + nudges[i][0], 0, Math.max(0, gridW - 1));
+      var cy = clampN(by + nudges[i][1], 0, Math.max(0, gridH - 1));
+      if (cx === state.x && cy === state.y) continue;
+      if (cutscene.taken[keyOf(cx, cy)]) continue;
+      return { x: cx, y: cy };
+    }
+    return { x: bx, y: by };
+  }
+
+  function addCutsceneActor(info, at) {
+    if (!scene || cutscene.actors[info.id]) return;
+    var spot = cutsceneSpot(at);
+    cutscene.taken[keyOf(spot.x, spot.y)] = true;
+    var c = tileCenter(spot.x, spot.y);
+    var sprite = makeIcon("characters", info.id, info.emoji, tileSize * 1.05);
+    sprite.setPosition(c.x, c.y - tileSize * 0.12);
+    sprite.setDepth(DEPTH_OBJ + c.y + 2);
+    cutscene.actors[info.id] = sprite;
+    if (reduceMotion) { sprite.setAlpha(1); return; }
+    sprite.setAlpha(0);
+    scene.tweens.add({ targets: sprite, alpha: 1, duration: 280, ease: "Sine.easeOut" });
+    scene.tweens.add({
+      targets: sprite, y: sprite.y - 4, duration: 950, yoyo: true, repeat: -1,
+      ease: "Sine.easeInOut", delay: 300
+    });
+  }
+
+  function showCutsceneStep() {
+    if (!cutscene) return;
+    var step = cutscene.steps[cutscene.i];
+    var info = speakerInfo(step);
+    if (step.at) addCutsceneActor(info, step.at);
+
+    setIcon(dialoguePortrait, "characters", info.id, info.emoji);
+    if (dialogueText) dialogueText.textContent = (info.name ? info.name + ": " : "") + step.text;
+    speakCutscene(cutscene.id, cutscene.i);
+    if (dialogueNext) {
+      var last = cutscene.i >= cutscene.steps.length - 1;
+      dialogueNext.textContent = last ? "All done ✨" : "Next ✨";
+      dialogueNext.setAttribute("aria-label", last ? "Close this story moment" : "Next line");
+    }
+  }
+
+  function advanceCutscene() {
+    if (!cutscene) return;
+    if (cutscene.i < cutscene.steps.length - 1) {
+      cutscene.i += 1;
+      showCutsceneStep();
+      return;
+    }
+    endCutscene();
+  }
+
+  /* Ends the scene whether it ran out of steps or the player skipped it: the
+     visitors fade away, it is marked seen, and the area is rebuilt so anyone
+     with `appearsAfter` is standing there now. */
+  function endCutscene() {
+    var cs = cutscene;
+    cutscene = null;
+    stopVoice();
+    if (dialogueBox) { setHidden(dialogueBox, true); dialogueBox.classList.remove("open"); }
+    if (!cs) return;
+
+    var actors = [];
+    for (var id in cs.actors) { if (cs.actors[id]) actors.push(cs.actors[id]); }
+
+    markCutsceneSeen(cs.id);
+    flushSave();
+
+    var finish = function () {
+      for (var i = 0; i < actors.length; i++) {
+        if (actors[i] && actors[i].destroy && actors[i].scene) actors[i].destroy();
+      }
+      if (!state) return;
+      renderArea();     // Cheeblest is on the grounds now
+      renderHud();
+    };
+
+    if (reduceMotion || !scene || !actors.length) { finish(); return; }
+    scene.tweens.add({
+      targets: actors, alpha: 0, duration: 320, ease: "Sine.easeIn", onComplete: finish
+    });
   }
 
   /* ================= Unlocks ================= */
@@ -1590,6 +1848,7 @@
 
     renderHud();
     save();
+    maybeCutscene();
   }
 
   function diff(after, before) {
@@ -1831,6 +2090,7 @@
       state.furniture[recipe.id] = (state.furniture[recipe.id] || 0) + 1;
       state.totals.crafted += 1;
     });
+    openPanel("furniture");     // so the new treasure is visible on a phone
     sparkleAt(state.x, state.y);
   }
 
@@ -1875,6 +2135,98 @@
       furnList.appendChild(hint2);
     }
     setHidden(decorHint, !placing);
+  }
+
+  /* ================= Collapsible HUD panels =================
+     On a phone the three panels are a very long scroll, so each one folds up
+     from its own heading. The open/closed set is remembered per panel in
+     localStorage; a phone starts with only Crafting open, a desktop with all
+     three. The height animation is skipped under prefers-reduced-motion. */
+
+  var HUD_KEY = "pm-castle-life-hud";
+  var PANEL_ANIM_MS = 280;
+
+  function panelSections() {
+    return document.querySelectorAll(".hud-panel[data-panel]");
+  }
+
+  /* A phone, not a tablet: the HUD is stacked under the map and narrow. */
+  function isPhoneLayout() {
+    return window.innerWidth < 700;
+  }
+
+  function defaultPanelOpen(name) {
+    return isPhoneLayout() ? (name === "craft") : true;
+  }
+
+  function readPanelPrefs() {
+    var raw = null;
+    try { raw = localStorage.getItem(HUD_KEY); } catch (e) { raw = null; }
+    if (!raw) return {};
+    try {
+      var parsed = JSON.parse(raw);
+      return (parsed && typeof parsed === "object") ? parsed : {};
+    } catch (e) { return {}; }
+  }
+
+  function writePanelPrefs(prefs) {
+    try { localStorage.setItem(HUD_KEY, JSON.stringify(prefs)); } catch (e) { /* private mode */ }
+  }
+
+  function setPanelOpen(sec, open, animate) {
+    var body = sec.querySelector(".panel-body");
+    var btn = sec.querySelector(".panel-toggle");
+    if (!body || !btn) return;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) sec.classList.remove("collapsed"); else sec.classList.add("collapsed");
+
+    if (body._panelTimer) { clearTimeout(body._panelTimer); body._panelTimer = null; }
+    if (!animate || reduceMotion) {
+      body.style.height = open ? "" : "0px";
+      return;
+    }
+    var start = body.getBoundingClientRect().height;
+    body.style.height = start + "px";
+    void body.offsetHeight;                       // commit the starting height
+    body.style.height = (open ? body.scrollHeight : 0) + "px";
+    body._panelTimer = setTimeout(function () {
+      body._panelTimer = null;
+      if (open) body.style.height = "";           // back to auto: content can grow
+    }, PANEL_ANIM_MS + 40);
+  }
+
+  function initPanels() {
+    var prefs = readPanelPrefs();
+    var secs = panelSections();
+    for (var i = 0; i < secs.length; i++) {
+      (function (sec) {
+        var name = sec.getAttribute("data-panel");
+        var open = (typeof prefs[name] === "boolean") ? prefs[name] : defaultPanelOpen(name);
+        setPanelOpen(sec, open, false);
+        var btn = sec.querySelector(".panel-toggle");
+        if (!btn) return;
+        btn.addEventListener("click", function () {
+          var nowOpen = btn.getAttribute("aria-expanded") !== "true";
+          setPanelOpen(sec, nowOpen, true);
+          var saved = readPanelPrefs();
+          saved[name] = nowOpen;
+          writePanelPrefs(saved);
+        });
+      })(secs[i]);
+    }
+  }
+
+  /* Opening a panel programmatically (e.g. so the player can see the furniture
+     they just picked) must not fight the saved preference — it saves too. */
+  function openPanel(name) {
+    var sec = document.querySelector('.hud-panel[data-panel="' + name + '"]');
+    if (!sec) return;
+    var btn = sec.querySelector(".panel-toggle");
+    if (!btn || btn.getAttribute("aria-expanded") === "true") return;
+    setPanelOpen(sec, true, true);
+    var saved = readPanelPrefs();
+    saved[name] = true;
+    writePanelPrefs(saved);
   }
 
   /* ================= Decorating ================= */
@@ -1995,16 +2347,18 @@
 
     mapView.appendChild(tileMenu);
 
-    // Position under the tile, converted stage-space -> page-space -> #mapView.
+    // Position under the tile: world -> canvas (via the camera) -> page -> #mapView.
     var c = tileCenter(x, y);
-    var pt = stageToPage(c.x, c.y + tileSize / 2);
+    var cv = worldToCanvas(c.x, c.y + tileSize / 2);
+    var pt = stageToPage(cv.x, cv.y);
+    var zoom = (scene && scene.cameras) ? (scene.cameras.main.zoom || 1) : 1;
     var mv = mapView.getBoundingClientRect();
     var left = pt.x - (mv.left + window.pageXOffset);
     var top = pt.y - (mv.top + window.pageYOffset);
     var w = tileMenu.offsetWidth || 120;
     var h = tileMenu.offsetHeight || 70;
     left = Math.max(4, Math.min(left - w / 2, mv.width - w - 4));
-    if (top + h > mv.height - 4) top = Math.max(4, top - h - tileSize / (game.scale.displayScale.y || 1));
+    if (top + h > mv.height - 4) top = Math.max(4, top - h - (tileSize * zoom) / (game.scale.displayScale.y || 1));
     tileMenu.style.left = Math.round(left) + "px";
     tileMenu.style.top = Math.round(top) + "px";
   }
@@ -2031,8 +2385,11 @@
   function onStagePointerUp(pointer) {
     if (busy() || !state) return;
     if (pointer.getDistance && pointer.getDistance() > 14) return;   // that was a drag
-    var tx = Math.floor((pointer.worldX - originX) / tileSize);
-    var ty = Math.floor((pointer.worldY - originY) / tileSize);
+    // Through the camera: the stage scrolls now, so canvas pixels are not
+    // world pixels. (pointer.x/y are already scale-manager corrected.)
+    var wp = scene.cameras.main.getWorldPoint(pointer.x, pointer.y);
+    var tx = Math.floor((wp.x - originX) / tileSize);
+    var ty = Math.floor((wp.y - originY) / tileSize);
     if (tx < 0 || ty < 0 || tx >= gridW || ty >= gridH) { closeTileMenu(); return; }
     var hadMenu = !!tileMenu;
     closeTileMenu();
@@ -2130,7 +2487,7 @@
     }
 
     // Dialogue
-    if (dialogueNext) dialogueNext.addEventListener("click", function () { advanceDialogue(); });
+    if (dialogueNext) dialogueNext.addEventListener("click", function () { advanceTalking(); });
 
     // Touch controls: floating thumbstick on the stage + the big action button.
     wireTouchControls();
@@ -2150,7 +2507,7 @@
         pointerDriven = true;
         e.preventDefault();
         btnAction.classList.add("pressed");
-        if (dialogue) advanceDialogue(); else interact();
+        advanceTalking();
       });
       var unpress = function () { btnAction.classList.remove("pressed"); };
       ["pointerup", "pointercancel", "pointerleave"].forEach(function (evt) {
@@ -2158,7 +2515,7 @@
       });
       btnAction.addEventListener("click", function (e) {
         if (pointerDriven && e.detail !== 0) return;
-        if (dialogue) advanceDialogue(); else interact();
+        advanceTalking();
       });
     }
 
@@ -2363,6 +2720,20 @@
       return;
     }
 
+    if (cutscene) {
+      if (isConfirmKey) {
+        if (t === dialogueNext) return;    // the button's own click will advance
+        e.preventDefault();
+        advanceCutscene();
+      } else if (k === "Escape") {
+        e.preventDefault();
+        endCutscene();                     // skippable, and cleanly
+      } else if (dir) {
+        e.preventDefault();                // no walking off mid-scene
+      }
+      return;
+    }
+
     if (dialogue) {
       if (isConfirmKey) {
         if (t === dialogueNext) return;    // the button's own click will advance
@@ -2445,6 +2816,7 @@
     flushSave();
     layoutStick();
 
+    maybeCutscene();   // a save that already meets a trigger, reloaded here
     pendingGreeting = firstRun ? "intro" : "welcome";
     if (firstRun) {
       toast((touchUIOn()
@@ -2461,7 +2833,7 @@
   function init(w, mf, vf) {
     indexWorld(w);
     manifest = (mf && typeof mf === "object") ? mf : {};
-    voices = (vf && typeof vf === "object" && vf.companions) ? vf : null;
+    voices = (vf && typeof vf === "object" && (vf.companions || vf.cutscenes || vf.narrator)) ? vf : null;
     loadSoundPref();
     syncSoundButton();
     if (!Object.keys(world.maps).length) { fatal("The castle grounds are missing."); return; }
@@ -2508,11 +2880,32 @@
         try { return JSON.parse(JSON.stringify(state)); } catch (e) { return null; }
       },
       getMapId: function () { return state ? (state.roomId || state.mapId) : null; },
+      /* Read-only camera/geometry snapshot: the canvas is opaque to the DOM,
+         so this is the only way a test can check the zoom and the follow. */
+      getView: function () {
+        if (!scene || !scene.cameras) return null;
+        var cam = scene.cameras.main;
+        var v = cam.worldView;
+        var pc = playerC ? { x: playerC.x, y: playerC.y } : null;
+        return {
+          tileSize: tileSize, gridW: gridW, gridH: gridH,
+          worldW: worldW, worldH: worldH, originX: originX, originY: originY,
+          zoom: cam.zoom, scrollX: cam.scrollX, scrollY: cam.scrollY,
+          viewW: v.width, viewH: v.height, viewX: v.x, viewY: v.y,
+          tilesAcross: v.width / tileSize, tilesDown: v.height / tileSize,
+          player: pc,
+          playerOnScreen: pc ? { x: (pc.x - v.x) / (v.width || 1), y: (pc.y - v.y) / (v.height || 1) } : null,
+          inCutscene: !!cutscene
+        };
+      },
       tick: function () { tick(); }
     };
   }
 
   if (!mapView) return;
+
+  // Panels fold before the world even loads, so nothing flashes open.
+  initPanels();
 
   function fetchJson(url, optional) {
     return fetch(url).then(function (r) {
