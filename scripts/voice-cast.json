@@ -1,0 +1,32 @@
+{
+  "_comment": "Canonical voice casting for Castle Everstair. Read by BOTH scripts/generate-narration.py (book dialogue) and scripts/generate-game-voices.py (game dialogue) so a character sounds the same wherever they speak. Voices are Azure AI Speech neural voices; pitch/rate are SSML prosody values shaping them toward the character. Never repoint an existing id at a different voice without regenerating every clip that uses it.",
+  "narrator": { "voice": "en-US-AnaNeural", "note": "The voice of the books. Narration everywhere, and the game's milestone lines." },
+
+  "moon": { "voice": "en-US-SaraNeural", "pitch": "+22%", "rate": "+2%", "note": "Princess Moon: warm, bright, a girl telling you a secret. Silent in the game (she's the player), speaks in the books." },
+  "babylady": { "voice": "en-US-AvaNeural", "pitch": "+28%", "rate": "+12%", "note": "Puppy sister, all yips and wagging." },
+  "cottontail": { "voice": "en-US-JaneNeural", "pitch": "+12%", "rate": "+4%", "note": "Older, braver cub; a big-sister read." },
+  "winds": { "voice": "en-US-AndrewNeural", "pitch": "+22%", "rate": "+15%", "note": "Breezy and giddy, words tumbling out." },
+  "dirt": { "voice": "en-US-DavisNeural", "pitch": "-28%", "rate": "-16%", "note": "Canon-deep and unhurried: a cub with a mountain's voice." },
+
+  "cheeblest": { "voice": "en-US-MichelleNeural", "pitch": "+10%", "rate": "-2%", "note": "Tower sister whose eyes are too soft for the tower. Gentle, watchful, a friend." },
+  "evilest": { "voice": "en-US-AriaNeural", "pitch": "-8%", "rate": "-6%", "note": "Sharp and theatrical, enjoying herself. Never actually frightening." },
+  "beedlist": { "voice": "en-US-EmmaNeural", "pitch": "-6%", "rate": "-14%", "note": "All black, perfectly still, unreadable. Flat and calm." },
+  "shock": { "voice": "en-US-SteffanNeural", "pitch": "-22%", "rate": "-12%", "note": "Taller than secrets, behind a storm-cloud mask. Low and slow; unsettling, never gory." },
+  "leeblebeest": { "voice": "en-US-NancyNeural", "pitch": "+6%", "rate": "-10%", "note": "The blue fifth sister. Quiet, patient, oddly calm." },
+
+  "purpleshine": { "voice": "en-US-MonicaNeural", "pitch": "+8%", "rate": "0%", "note": "Purple cat: warm, watchful, already knows you." },
+  "pinkshine": { "voice": "en-US-ChristopherNeural", "pitch": "-18%", "rate": "-8%", "note": "Rose-pink dog with a woolly deep bark." },
+
+  "poodle": { "voice": "en-US-JasonNeural", "pitch": "+18%", "rate": "+10%", "note": "Small grey wolf, all plans and patter. Quick, wiry, sideways-grinning; talks for two." },
+  "hairs": { "voice": "en-US-GuyNeural", "pitch": "-35%", "rate": "-22%", "note": "Mountain-sized gentle wolf with one word. Enormous, slow, soft — a hill clearing its throat, never a snarl." },
+  "witchy": { "voice": "en-US-CoraNeural", "pitch": "-4%", "rate": "-8%", "note": "The GOOD witch: round, elderly, grandmotherly. Warm and unhurried, never sinister." },
+
+  "fern": { "voice": "en-US-AshleyNeural", "pitch": "+16%", "rate": "+2%", "note": "Princess Fern, seven and determined. Bright and a bit clipped when she's being brave." },
+  "bee": { "voice": "en-US-JennyNeural", "pitch": "+40%", "rate": "-14%", "note": "Baby Bee, two years old, one word to her name. Tiny, high, unbothered." },
+
+  "elysian": { "voice": "en-US-ElizabethNeural", "pitch": "-22%", "rate": "-18%", "note": "The witch of the deep cave, one hundred and five. Deep and slow, like a voice climbing up from below." },
+  "unicorn": { "voice": "en-US-AmberNeural", "pitch": "+32%", "rate": "+4%", "note": "The unicorn who screams. A needle of a voice, pitched higher than hearing would rather have gone." },
+  "pim": { "voice": "en-US-LunaNeural", "pitch": "+30%", "rate": "+8%", "note": "Captain Pim, palm-sized moth-knight. Small, crisp, wide awake after a hundred sleepless nights." },
+
+  "_unassigned": "Characters that speak in a book but are not cast above (e.g. hairs, fern, bee, poodle, witchy, pearl, pim, unicorn, elysian) must be added here before their lines are generated. Read the character's sheet in that book's book.json, pick an Azure en-US neural voice that fits, shape it with pitch/rate, and write the entry with a note. Keep every id distinct in sound from the ones already cast."
+}
