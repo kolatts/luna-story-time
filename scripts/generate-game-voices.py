@@ -5,10 +5,16 @@ voice shaped with SSML prosody so they read as young animals rather than adults.
 Dirt is deliberately absurd: canon gives him "a deep whistling voice" and a "wide
 slow smile", so a jaguar cub rumbles like a bass-baritone grandfather.
 
+Casting is NOT defined here: it is read from scripts/voice-cast.json, the one
+file both this script and generate-narration.py share, so a character sounds the
+same in the game as on the page. Never repoint an id at a different voice without
+regenerating every clip that uses it.
+
 Writes game/voices/:
   <companion>/01.mp3 .. 04.mp3   - dialogue[], index-aligned with game/world.json
   <companion>/revisit.mp3        - the "you came back" line
   narrator/<key>.mp3             - milestone lines (see NARRATOR_LINES)
+  cutscenes/<id>/01.mp3 ..       - cutscene steps[], index-aligned with world.json
   manifest.json                  - what the engine loads; lists only files on disk
 
 Companion text comes from game/world.json so the lines never drift out of sync;
@@ -38,15 +44,32 @@ ROOT = Path(__file__).resolve().parent.parent
 WORLD = ROOT / "game" / "world.json"
 OUT = ROOT / "game" / "voices"
 
-NARRATOR_VOICE = "en-US-AnaNeural"
+CAST_FILE = ROOT / "scripts" / "voice-cast.json"
 
-# voice, pitch, rate  — see game/SPEC-VOICES.md for the casting rationale
-CAST = {
-    "babylady":   ("en-US-AvaNeural",    "+28%", "+12%"),
-    "cottontail": ("en-US-JaneNeural",   "+12%", "+4%"),
-    "winds":      ("en-US-AndrewNeural", "+22%", "+15%"),
-    "dirt":       ("en-US-DavisNeural",  "-28%", "-16%"),
-}
+
+def load_cast():
+    """id -> (voice, pitch, rate) from the shared casting file.
+
+    Keys starting with "_" are comments. A missing pitch/rate means "no prosody
+    wrapper at all", which is how the narrator has always been synthesized —
+    keeping every existing clip bit-for-bit reproducible.
+    """
+    raw = json.loads(CAST_FILE.read_text(encoding="utf-8"))
+    cast = {}
+    for cid, entry in raw.items():
+        if cid.startswith("_") or not isinstance(entry, dict):
+            continue
+        voice = entry.get("voice")
+        if not voice:
+            sys.exit(f"voice-cast.json: {cid!r} has no voice")
+        cast[cid] = (voice, entry.get("pitch"), entry.get("rate"))
+    return cast
+
+
+CAST = load_cast()
+if "narrator" not in CAST:
+    sys.exit("voice-cast.json must cast 'narrator'")
+NARRATOR_VOICE, NARRATOR_PITCH, NARRATOR_RATE = CAST["narrator"]
 
 NARRATOR_LINES = {
     "intro":   "Welcome to Castle Everstair. Walk with the arrow keys, "
@@ -104,18 +127,29 @@ def main():
 
     jobs = []  # (rel_path, text, voice, pitch, rate, label)
     for key, line in NARRATOR_LINES.items():
-        jobs.append((f"narrator/{key}.mp3", line, NARRATOR_VOICE, None, None, f"narrator/{key}"))
+        jobs.append((f"narrator/{key}.mp3", line, NARRATOR_VOICE, NARRATOR_PITCH,
+                     NARRATOR_RATE, f"narrator/{key}"))
 
-    for cid, cfg in CAST.items():
-        comp = companions.get(cid)
-        if not comp:
-            sys.exit(f"companion {cid!r} missing from world.json")
-        voice, pitch, rate = cfg
+    # world.json is the source of truth for *who* speaks; voice-cast.json for *how*.
+    for cid, comp in companions.items():
+        if cid not in CAST:
+            sys.exit(f"companion {cid!r} is not cast in {CAST_FILE.name}")
+        voice, pitch, rate = CAST[cid]
         for i, line in enumerate(comp.get("dialogue", []), start=1):
             jobs.append((f"{cid}/{i:02d}.mp3", line, voice, pitch, rate, f"{cid} line {i}"))
         if comp.get("revisit"):
             jobs.append((f"{cid}/revisit.mp3", comp["revisit"], voice, pitch, rate,
                          f"{cid} revisit"))
+
+    for scene in world.get("cutscenes", []):
+        sid = scene.get("id")
+        for i, step in enumerate(scene.get("steps", []), start=1):
+            speaker = step.get("speaker")
+            if speaker not in CAST:
+                sys.exit(f"cutscene {sid!r} step {i}: speaker {speaker!r} is not cast")
+            voice, pitch, rate = CAST[speaker]
+            jobs.append((f"cutscenes/{sid}/{i:02d}.mp3", step.get("text", ""), voice,
+                         pitch, rate, f"{sid} step {i} ({speaker})"))
 
     made = skipped = 0
     failures = []
@@ -148,8 +182,8 @@ def main():
     for key in NARRATOR_LINES:
         if (OUT / f"narrator/{key}.mp3").exists():
             manifest["narrator"]["lines"][key] = f"narrator/{key}.mp3"
-    for cid, (voice, _p, _r) in CAST.items():
-        comp = companions.get(cid, {})
+    for cid, comp in companions.items():
+        voice = CAST[cid][0]
         lines = []
         for i in range(1, len(comp.get("dialogue", [])) + 1):
             rel = f"{cid}/{i:02d}.mp3"
@@ -160,6 +194,15 @@ def main():
         if (OUT / revisit).exists():
             entry["revisit"] = revisit
         manifest["companions"][cid] = entry
+
+    for scene in world.get("cutscenes", []):
+        sid = scene.get("id")
+        clips = []
+        for i in range(1, len(scene.get("steps", [])) + 1):
+            rel = f"cutscenes/{sid}/{i:02d}.mp3"
+            if (OUT / rel).exists():
+                clips.append(rel)
+        manifest.setdefault("cutscenes", {})[sid] = clips
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "manifest.json").write_text(

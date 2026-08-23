@@ -23,7 +23,11 @@
     "babylady": "characters/babylady.webp",
     "cottontail": "characters/cottontail.webp",
     "winds": "characters/winds.webp",
-    "dirt": "characters/dirt.webp"
+    "dirt": "characters/dirt.webp",
+    "cheeblest": "characters/cheeblest.webp",
+    "evilest": "characters/evilest.webp",
+    "beedlist": "characters/beedlist.webp",
+    "shock": "characters/shock.webp"
   },
   "nodes": {
     "moonflower": "nodes/moonflower.webp",
@@ -54,7 +58,8 @@
     "puppynook": "furniture/puppynook.webp",
     "seedjar": "furniture/seedjar.webp",
     "shellnecklace": "furniture/shellnecklace.webp",
-    "cloudkite": "furniture/cloudkite.webp"
+    "cloudkite": "furniture/cloudkite.webp",
+    "towerbell": "furniture/towerbell.webp"
   },
   "fx": {
     "sparkle": "fx/sparkle.webp"

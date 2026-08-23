@@ -169,7 +169,8 @@
       ],
       "npcs": [
         "babylady",
-        "dirt"
+        "dirt",
+        "cheeblest"
       ]
     },
     "shore": {
@@ -636,6 +637,21 @@
         "id": "winds"
       },
       "flavor": "It only really flies on days Winds decides to help — which is most of them."
+    },
+    {
+      "id": "towerbell",
+      "name": "Little Tower Bell",
+      "emoji": "🔔",
+      "needs": {
+        "crystal": 2,
+        "stone": 2,
+        "seashell": 1
+      },
+      "unlock": {
+        "type": "companion",
+        "id": "cheeblest"
+      },
+      "flavor": "It rings small and clear, so nobody in the tallest room ever feels far away."
     }
   ],
   "companions": {
@@ -698,6 +714,22 @@
       ],
       "unlocksRecipe": "cloudkite",
       "revisit": "The wind's still blowing my way. Come feel it."
+    },
+    "cheeblest": {
+      "name": "Cheeblest",
+      "emoji": "🎀",
+      "map": "grounds",
+      "x": 6,
+      "y": 6,
+      "appearsAfter": "tower-sisters",
+      "dialogue": [
+        "Oh — hello. I hoped you'd come this way. I've been practicing saying hello.",
+        "The tower never opened its door for me. Yours just stays open. I like that.",
+        "If you're ever lonely, ring something. I'll hear it. I'm very good at listening.",
+        "Once, somebody looked right at me instead of past me. That's the day I stopped being scary."
+      ],
+      "unlocksRecipe": "towerbell",
+      "revisit": "You came back. I don't think I'll ever get used to that — in the good way."
     }
   },
   "rooms": [
@@ -788,6 +820,70 @@
           "tx": 10,
           "ty": 6,
           "room": true
+        }
+      ]
+    }
+  ],
+  "cutscenes": [
+    {
+      "id": "tower-sisters",
+      "trigger": {
+        "type": "crafted",
+        "count": 5
+      },
+      "map": "grounds",
+      "steps": [
+        {
+          "speaker": "evilest",
+          "text": "BEHOLD! The tower sisters have swept all the way down for a visit. You may be amazed now.",
+          "at": {
+            "dx": 0,
+            "dy": -2
+          }
+        },
+        {
+          "speaker": "beedlist",
+          "text": "HELLO. (Beedlist does not talk. Her little black book does.)",
+          "at": {
+            "dx": -2,
+            "dy": -2
+          }
+        },
+        {
+          "speaker": "shock",
+          "text": "Your castle is warm. I did not say that I liked it.",
+          "at": {
+            "dx": 2,
+            "dy": -2
+          }
+        },
+        {
+          "speaker": "cheeblest",
+          "text": "Hi. I'm Cheeblest. I brought a little bell down from the tower, in case anybody ever feels far away.",
+          "at": {
+            "dx": 1,
+            "dy": -1
+          }
+        },
+        {
+          "speaker": "evilest",
+          "text": "Very well. We are sweeping off dramatically now. Cheeblest? Cheeblest is not sweeping.",
+          "at": {
+            "dx": 0,
+            "dy": -2
+          }
+        },
+        {
+          "speaker": "cheeblest",
+          "text": "I'd like to stay. If that's all right. It's brighter down here.",
+          "at": {
+            "dx": 1,
+            "dy": -1
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "And off the sisters swept, back up to the tower — all but one. Cheeblest stayed, and the whole castle felt a little warmer."
         }
       ]
     }

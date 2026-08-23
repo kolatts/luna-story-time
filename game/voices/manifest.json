@@ -23,6 +23,16 @@
       ],
       "revisit": "babylady/revisit.mp3"
     },
+    "dirt": {
+      "voice": "en-US-DavisNeural",
+      "lines": [
+        "dirt/01.mp3",
+        "dirt/02.mp3",
+        "dirt/03.mp3",
+        "dirt/04.mp3"
+      ],
+      "revisit": "dirt/revisit.mp3"
+    },
     "cottontail": {
       "voice": "en-US-JaneNeural",
       "lines": [
@@ -43,15 +53,26 @@
       ],
       "revisit": "winds/revisit.mp3"
     },
-    "dirt": {
-      "voice": "en-US-DavisNeural",
+    "cheeblest": {
+      "voice": "en-US-MichelleNeural",
       "lines": [
-        "dirt/01.mp3",
-        "dirt/02.mp3",
-        "dirt/03.mp3",
-        "dirt/04.mp3"
+        "cheeblest/01.mp3",
+        "cheeblest/02.mp3",
+        "cheeblest/03.mp3",
+        "cheeblest/04.mp3"
       ],
-      "revisit": "dirt/revisit.mp3"
+      "revisit": "cheeblest/revisit.mp3"
     }
+  },
+  "cutscenes": {
+    "tower-sisters": [
+      "cutscenes/tower-sisters/01.mp3",
+      "cutscenes/tower-sisters/02.mp3",
+      "cutscenes/tower-sisters/03.mp3",
+      "cutscenes/tower-sisters/04.mp3",
+      "cutscenes/tower-sisters/05.mp3",
+      "cutscenes/tower-sisters/06.mp3",
+      "cutscenes/tower-sisters/07.mp3"
+    ]
   }
 }
