@@ -22,8 +22,8 @@
   var STEP_MS = 150;                       // one tweened hero step
   var HOP_PX = 10;
   var FADE_MS = 250;
-  var HUSH_MS = 1500;                      // immunity window
-  var HUSH_COOLDOWN_MS = 4000;
+  var HUSH_MS = 2500;                      // immunity window
+  var HUSH_COOLDOWN_MS = 3000;
   var HMM_GAP_MS = 8000;                   // guest "hmm" rate limit
   var GRACE_MS = 2500;                     // can't be re-spotted right after returning to the rug
   var SPOTTED_HOLD_MS = 1500;              // bubble time before the white fade
@@ -256,9 +256,9 @@
     return { w: 16, h: 11 };
   }
   function presentCount(n) { return Math.min(5, 2 + Math.floor((n - 1) / 3)); }
-  function guestCount(n) { return Math.min(6, 1 + Math.floor((n - 1) / 2)); }
-  function coneLength(n) { return n <= 2 ? 2 : (n <= 6 ? 3 : 4); }
-  function guestStepMs(n) { return Math.max(320, 500 - (n - 1) * 20); }
+  function guestCount(n) { return Math.min(5, 1 + Math.floor((n - 1) / 3)); }
+  function coneLength(n) { return n <= 3 ? 2 : (n <= 9 ? 3 : 4); }
+  function guestStepMs(n) { return Math.max(380, 560 - (n - 1) * 15); }
 
   function terrainAt(f, x, y) {
     if (!f || y < 0 || y >= f.h || x < 0 || x >= f.w) return null;
@@ -1135,7 +1135,7 @@
        sweeping cone can pass over a frozen hero; linger longer and you wiggle.
      heroMoved: this call comes from a step landing — heroes with movedFlag
      stepped just now. */
-  var STILL_MS = 1200;
+  var STILL_MS = 2000;
   var litSince = { moon: 0, babylady: 0 };
   function checkSpotted(heroMoved) {
     if (spotted || transitioning || !floor || floor.party) return;

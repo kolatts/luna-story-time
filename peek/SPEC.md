@@ -27,15 +27,15 @@ A gentle stealth game for Luna's Story Time. Night before the twins' birthday, *
   - `plant` (prop): both may enter; hides whoever stands there. At most a few per floor.
   - `arch` (prop, a puppy-sized archway in a wall segment): Baby Lady only.
   - Characters never collide with each other or with guests (guests are "looking", not walls).
-- Action button / Space: **Hush** — both freeze and crouch for 1.5 s (small "shh" visual). While hushed on ANY tile they cannot be spotted. Cooldown 4 s. Simple, forgiving.
+- Action button / Space: **Hush** — both freeze and crouch for 2.5 s (small "shh" visual). While hushed on ANY tile they cannot be spotted. Cooldown 3 s. Simple, forgiving.
 
 ## Guests (the "guards")
 
 - Cast (all already in `scripts/voice-cast.json`): `winds`, `dirt`, `cottontail`, `cheeblest`, `evilest`, `beedlist`, `purpleshine`, `pinkshine`, and special `leeblebeest`.
-- Guests patrol generated loops (back-and-forth along corridors) at a gentle pace (500 ms/tile at floor 1, ramping to 320 ms floor 10+, capped). Facing = movement direction.
-- **Vision**: a soft golden cone, straight line of tiles in facing direction, length 2 (floor 1–2) → 3 (3–6) → 4 (7+), blocked by `wall`, `curtain`, `table`, `plant`. Render it as a translucent warm glow so kids can see it.
+- Guests patrol generated loops (back-and-forth along corridors) at a gentle pace (560 ms/tile at floor 1, ramping to 380 ms, capped — eased 2026-08-25). Facing = movement direction.
+- **Vision**: a soft golden cone, straight line of tiles in facing direction, length 2 (floor 1–3) → 3 (4–9) → 4 (10+), blocked by `wall`, `curtain`, `table`, `plant`. Render it as a translucent warm glow so kids can see it.
 - `leeblebeest` ("the watcher who never slept") never walks: she stands and slowly rotates her gaze 90° every ~2.5 s. Appears from floor 4.
-- **Red-light-green-light rule** (added after playtest): STEPPING into a lit cone tile spots you at once, but STANDING still in the light is safe for 1.2 s ("hold your breath") so a sweeping cone can pass over a frozen hero — linger longer and you're seen. A 300 ms heartbeat enforces the dwell even when no guest event fires. The entrance rug is always safe (the doorway's shadow) — without this, a cone sweeping the rug re-spots freshly returned heroes forever.
+- **Red-light-green-light rule** (added after playtest): STEPPING into a lit cone tile spots you at once, but STANDING still in the light is safe for 2 s ("hold your breath") so a sweeping cone can pass over a frozen hero — linger longer and you're seen. A 300 ms heartbeat enforces the dwell even when no guest event fires. The entrance rug is always safe (the doorway's shadow) — without this, a cone sweeping the rug re-spots freshly returned heroes forever.
 - **Spotted**: freeze inputs, the guest speaks a voiced spotted-line, big friendly "Ooh!" speech bubble, gentle white fade, both heroes return to the floor's entrance rug. Nothing else is lost. This must feel funny, not punishing.
 
 ## Floors — endless
@@ -45,7 +45,7 @@ A gentle stealth game for Luna's Story Time. Night before the twins' birthday, *
 - Walking either hero onto a present tile "peeks" it: sparkle burst, present opens slightly, +1 score, Baby Lady yip or narrator quip sometimes.
 - Stairs unlock (glow) once all presents on the floor are peeked; both heroes must reach the stairs tile (either order; first one waits with a small bounce) → floor transition.
 - **Every 5th floor is the Party Landing**: no guests, a long table with `cake`, balloons, presents everywhere, guests dancing harmlessly as decoration, narrator line plays, one giant present to peek → stairs. A safe breather that makes "endless" feel like a celebration, not a treadmill.
-- Guest count: floor 1 = 1, +1 every 2 floors, cap 6.
+- Guest count: floor 1 = 1, +1 every 3 floors, cap 5 (eased 2026-08-25).
 - HUD: floor number, presents peeked (score), best floor + best score from localStorage `pm-present-peek-v1` (shape: `{bestFloor, bestScore, sound}`; debounced writes + pagehide flush — test seeds must be planted from another page, e.g. index.html, exactly like Castle Life).
 
 ## Voices
