@@ -46,7 +46,8 @@ A gentle stealth game for Luna's Story Time. Night before the twins' birthday, *
 - Stairs unlock (glow) once all presents on the floor are peeked; both heroes must reach the stairs tile (either order; first one waits with a small bounce) → floor transition.
 - **Every 5th floor is the Party Landing**: no guests, a long table with `cake`, balloons, presents everywhere, guests dancing harmlessly as decoration, narrator line plays, one giant present to peek → stairs. A safe breather that makes "endless" feel like a celebration, not a treadmill.
 - Guest count: floor 1 = 1, +1 every 3 floors, cap 5 (eased 2026-08-25).
-- HUD: floor number, presents peeked (score), best floor + best score from localStorage `pm-present-peek-v1` (shape: `{bestFloor, bestScore, sound}`; debounced writes + pagehide flush — test seeds must be planted from another page, e.g. index.html, exactly like Castle Life).
+- **Progress persists** (added 2026-08-25): the save carries `run: {seed, floor, score, peeked[]}` — the seed plus floor number regenerate the map exactly, so only the current floor's peeked present indices need listing. On boot a valid run resumes in place (HUD, score, unlocked stairs and all), the intro overlay gains a "Welcome back! You left off on floor N" note, and a **Start a brand-new sneak** button rerolls the seed. A malformed/absent `run` is dropped by `sanitizeRun` and the game starts fresh while keeping `bestFloor`/`bestScore`. Snapshot points: every peek, every floor change, and pagehide/visibilitychange (capture-then-flush).
+- HUD: floor number, presents peeked (score), best floor + best score from localStorage `pm-present-peek-v1` (shape: `{bestFloor, bestScore, sound, run}`; debounced writes + pagehide flush — test seeds must be planted from another page, e.g. index.html, exactly like Castle Life).
 
 ## Voices
 
@@ -83,7 +84,7 @@ Implement `game/SPEC-TOUCH.md` verbatim: floating thumbstick lower-left 45%, ~22
 
 ## Test hook
 
-`window.__presentPeek` (read-only): `{version, getState(), getFloor(), getPositions() /* {moon:{x,y}, babylady:{x,y}, guests:[{id,x,y,facing}]} */, getSeed(), setSeed(runSeed) /* before start */, tick()}`. Movement is tween-paced — paced synthetic keydown/keyup on `document.body`, never burst-dispatch.
+`window.__presentPeek` (read-only): `{version, getState(), getFloor(), getPositions() /* {moon:{x,y}, babylady:{x,y}, guests:[{id,x,y,facing}]} */, getSeed(), setSeed(runSeed) /* before start */, getSavedRun(), resumedFrom() /* 0 = fresh */, tick()}`. Seeding a save for a test must be done from ANOTHER page (index.html) then navigating — the engine's pagehide flush clobbers a same-page seed. Movement is tween-paced — paced synthetic keydown/keyup on `document.body`, never burst-dispatch.
 
 ## Tone guardrails (canon)
 

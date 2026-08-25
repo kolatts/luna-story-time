@@ -202,6 +202,33 @@ body.peek-body {
   50% { opacity: 1; }
 }
 
+/* Resuming a saved run: where you left off, plus an escape hatch. */
+.resume-note {
+  text-align: center;
+  background: rgba(255, 214, 122, .1);
+  border: 1px solid rgba(255, 214, 122, .32);
+  border-radius: 12px;
+  padding: .5rem .7rem;
+  margin-bottom: .7rem !important;
+}
+.restart-btn {
+  display: block;
+  margin: 0 auto .7rem;
+  min-height: 44px;
+  padding: .5rem 1.1rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--gold-soft);
+  background: rgba(150, 130, 255, .32);
+  border: 1px solid rgba(200, 185, 255, .55);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.restart-btn:hover, .restart-btn:focus-visible {
+  background: rgba(175, 155, 255, .48);
+  color: #fff;
+}
+
 /* ===== Touch controls (game/SPEC-TOUCH.md, same box trick as Castle Life) =====
    `.touch-controls` matches `.map-view`'s box exactly (same width, same 3:2,
    bottom-aligned in .stage-wrap) so overlay pixels == canvas pixels for the

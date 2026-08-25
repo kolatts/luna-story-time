@@ -17,7 +17,8 @@
 
   /* ================= Constants ================= */
 
-  var SAVE_KEY = "pm-present-peek-v1";     // {bestFloor, bestScore, sound}
+  var SAVE_KEY = "pm-present-peek-v1";     // {bestFloor, bestScore, sound, run}
+                                           // run: {seed, floor, score, peeked[]} — resume where you stopped
   var SAVE_DEBOUNCE = 150;
   var STEP_MS = 150;                       // one tweened hero step
   var HOP_PX = 10;
@@ -142,7 +143,7 @@
 
   /* ================= Save (pm-present-peek-v1) ================= */
 
-  var save = { bestFloor: 1, bestScore: 0, sound: true };
+  var save = { bestFloor: 1, bestScore: 0, sound: true, run: null };
   var saveTimer = null;
 
   function loadSave() {
@@ -155,6 +156,33 @@
     save.bestFloor = Math.max(1, intOr(p.bestFloor, 1));
     save.bestScore = Math.max(0, intOr(p.bestScore, 0));
     save.sound = p.sound !== false;
+    save.run = sanitizeRun(p.run);
+  }
+  /* A run is only resumable if the seed still regenerates the same floors. */
+  function sanitizeRun(r) {
+    if (!r || typeof r !== "object") return null;
+    var seed = intOr(r.seed, 0), fl = intOr(r.floor, 0);
+    if (seed <= 0 || fl < 1) return null;
+    var peeked = [];
+    if (Object.prototype.toString.call(r.peeked) === "[object Array]") {
+      for (var i = 0; i < r.peeked.length; i++) {
+        var idx = intOr(r.peeked[i], -1);
+        if (idx >= 0) peeked.push(idx);
+      }
+    }
+    return { seed: seed, floor: fl, score: Math.max(0, intOr(r.score, 0)), peeked: peeked };
+  }
+  /* Snapshot the run in progress: seed + floor regenerate the map exactly,
+     so only the peeked presents on THIS floor need listing. */
+  function captureRun() {
+    var peeked = [];
+    if (floor && floor.presents) {
+      for (var i = 0; i < floor.presents.length; i++) {
+        if (floor.presents[i].peeked) peeked.push(i);
+      }
+    }
+    save.run = { seed: runSeed, floor: floorNum, score: score, peeked: peeked };
+    scheduleSave();
   }
   function scheduleSave() {
     if (saveTimer) return;
@@ -176,6 +204,7 @@
   var pendingIntro = false;    // narrator intro waits for the first gesture
   var lastHmm = 0;
   var saidBest = false;        // "new best" narration once per run
+  var resumedFloor = 0;        // >0 when this session picked up a saved run
 
   function setSound(on) {
     soundOn = !!on;
@@ -1337,7 +1366,8 @@
   function peekPresent(pr) {
     pr.peeked = true;
     score += 1;
-    if (score > save.bestScore) { save.bestScore = score; scheduleSave(); }
+    if (score > save.bestScore) save.bestScore = score;
+    captureRun();
     var idx = floor.presents.indexOf(pr);
     var spr = presentSprites[idx];
     if (spr) {
@@ -1423,6 +1453,7 @@
       renderFloor();
       graceUntil = Date.now() + 1200;
       transitioning = false;
+      captureRun();
       flushSave();
       if (floor.party) narrate("party");
       else if (Math.random() < 0.25) narrate("floor");
@@ -1443,7 +1474,22 @@
     spotted = false;
     transitioning = false;
     floor = genFloor(floorNum);
+    captureRun();
     if (scene) renderFloor();
+  }
+
+  /* Pick the run back up: same seed and floor rebuild the map, and the
+     presents already peeked stay peeked (their stairs stay unlocked). */
+  function resumeRun(r) {
+    runSeed = r.seed;
+    floorNum = r.floor;
+    score = r.score;
+    resumedFloor = r.floor > 1 || r.peeked.length > 0 ? r.floor : 0;
+    floor = genFloor(floorNum);
+    for (var i = 0; i < r.peeked.length; i++) {
+      var pr = floor.presents[r.peeked[i]];
+      if (pr) pr.peeked = true;
+    }
   }
 
   /* ================= Hush ================= */
@@ -1504,6 +1550,31 @@
     if (hudBest) hudBest.textContent = save.bestFloor + " / " + save.bestScore;
   }
 
+  /* Resuming should be visible, and always escapable: one tap starts fresh. */
+  function showResumeNote() {
+    if (!resumedFloor || !introOverlay) return;
+    var card = introOverlay.querySelector(".intro-card");
+    if (!card) return;
+    var note = document.createElement("p");
+    note.className = "resume-note";
+    note.innerHTML = "🌙 Welcome back! You left off on <b>floor " + resumedFloor +
+      "</b> with <b>" + score + "</b> " + (score === 1 ? "present" : "presents") + " peeked.";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "restart-btn";
+    btn.textContent = "Start a brand-new sneak ✨";
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();                        // don't let it double as "close intro"
+      startRun(Math.floor(Math.random() * 1000000) + 1);
+      note.remove();
+      btn.remove();
+      closeIntro();
+    });
+    var go = card.querySelector(".intro-go");
+    card.insertBefore(note, go || null);
+    card.insertBefore(btn, go || null);
+  }
+
   function closeIntro() {
     if (!introOpen) return;
     introOpen = false;
@@ -1554,8 +1625,10 @@
     });
     window.addEventListener("blur", function () { stopRepeat(); heldKeys = []; releaseStick(true); });
 
-    window.addEventListener("pagehide", flushSave);
-    document.addEventListener("visibilitychange", function () { if (document.hidden) flushSave(); });
+    // Capture before flushing so a mid-floor exit keeps this floor's peeks.
+    var saveNow = function () { if (floor) captureRun(); flushSave(); };
+    window.addEventListener("pagehide", saveNow);
+    document.addEventListener("visibilitychange", function () { if (document.hidden) saveNow(); });
   }
 
   function onKeyUp(e) {
@@ -1748,7 +1821,9 @@
     syncSoundButton();
     if (typeof Phaser === "undefined") { fatal("The magic paintbrush (Phaser) didn't load."); return; }
 
-    floor = genFloor(floorNum);
+    if (save.run) resumeRun(save.run);
+    else floor = genFloor(floorNum);
+    showResumeNote();
 
     // Dwell heartbeat: catches "stood too long in the light" even when no
     // guest event fires (e.g. only leeblebeest, rotating every 2.5s).
@@ -1813,6 +1888,8 @@
         };
       },
       getSeed: function () { return runSeed; },
+      getSavedRun: function () { return save.run ? JSON.parse(JSON.stringify(save.run)) : null; },
+      resumedFrom: function () { return resumedFloor; },   // 0 = fresh run this session
       setSeed: function (s) { startRun(s); },     // intended before play begins
       tick: function () { checkSpotted(); }
     };
