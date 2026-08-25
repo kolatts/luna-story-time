@@ -538,7 +538,9 @@
         audioId: "cover",
         title: b.title,
         kicker: b.subtitle,
-        speakText: b.title + ". " + b.subtitle + ". Written with love by " + b.authors.join(" and ") + ".",
+        speakText: b.series === "dreamed-up-by-you"
+          ? b.title + ". " + b.subtitle + "."
+          : b.title + ". " + b.subtitle + ". Written with love by " + b.authors.join(" and ") + ".",
         image: b.cover.image,
         alt: "Cover: " + b.title,
         emoji: "🌙",

@@ -8,6 +8,7 @@ Per book (books/<slug>/narration/):
 
 The page narration text MUST mirror js/reader.js exactly:
   - cover:  "<title>. <subtitle>. Written with love by <authors joined with ' and '>."
+            (dreamed-up-by-you books drop the "Written with love" sentence)
   - spread: spread.text, plus " … " + book.refrain when the spread has refrain: true
 The word sprite uses the same tokenization as reader.js (split on whitespace,
 strip leading/trailing non-letters, lowercase) so every data-word resolves.
@@ -81,10 +82,16 @@ def make_config(voice=None):
 
 
 def pages_for(book):
-    yield "cover", (
-        f"{book['title']}. {book['subtitle']}. "
-        f"Written with love by {' and '.join(book['authors'])}."
-    ), {}
+    # Dreamed Up By You covers credit the dreamer via the subtitle alone;
+    # Castle Everstair covers keep the "Written with love by" line. Must
+    # mirror reader.js speakText exactly.
+    if book.get("series") == "dreamed-up-by-you":
+        yield "cover", f"{book['title']}. {book['subtitle']}.", {}
+    else:
+        yield "cover", (
+            f"{book['title']}. {book['subtitle']}. "
+            f"Written with love by {' and '.join(book['authors'])}."
+        ), {}
     for s in book["spreads"]:
         text = s["text"]
         if s.get("refrain"):
