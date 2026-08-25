@@ -68,6 +68,13 @@
           "subtitle": "Dreamed up by Luna from Ohio",
           "ageRange": "4-8",
           "cover": "books/hairs-and-the-growl-that-meant-please/images/cover.webp"
+        },
+        {
+          "slug": "pip-and-the-fire-that-was-too-big",
+          "title": "Pip and the Fire That Was Too Big",
+          "subtitle": "Dreamed up by Harper",
+          "ageRange": "4-8",
+          "cover": "books/pip-and-the-fire-that-was-too-big/images/cover.webp"
         }
       ]
     }

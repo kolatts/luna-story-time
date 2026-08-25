@@ -1,0 +1,436 @@
+{
+  "slug": "pip-and-the-fire-that-was-too-big",
+  "series": "dreamed-up-by-you",
+  "bookNumber": 2,
+  "title": "Pip and the Fire That Was Too Big",
+  "subtitle": "Dreamed up by Harper",
+  "authors": [
+    "Harper"
+  ],
+  "ageRange": "4-8",
+  "refrain": "But a fire has to go somewhere.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "pink": "#F2A9C4",
+    "plum": "#6B4A8F",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    {
+      "id": "pip",
+      "name": "Pip",
+      "sheet": "Pip: a small young dragon, about the size of a big dog — warm rose-pink all over, smooth pink scales with a paler blush-pink belly, soft pearly-pink wings with a faint shimmer, a short rounded snout, two tiny blunt lilac horns, big round amber-gold eyes with long lashes, a stubby tail with a small pink fin at the tip; blunt little teeth that never show; one faintly singed patch along a wing edge; clearly a young dragon, never a person, never a child."
+    },
+    {
+      "id": "plum",
+      "name": "Plum",
+      "sheet": "Plum: a very large grown dragon, three or four times Pip's size — deep plum-purple all over with translucent lavender-violet wing membranes, a long neck and a long tail with a soft violet fin running along it, four gently curving lilac horns, calm dark-violet eyes under heavy kind lids, big rounded feet with blunt pale claws, a broad flat nose that puffs small silver smoke rings; unhurried and gentle, like a hillside that decided to be a dragon."
+    },
+    {
+      "id": "nell",
+      "name": "Nell",
+      "sheet": "Nell: a seven-year-old girl, warm brown skin, thick dark curls tied back with a strip of yellow cloth, large dark eyes, a gap in her front teeth when she grins; a patched grey-green wool coat too big at the sleeves, muddy boots; a small tin whistle on a cord around her neck."
+    },
+    {
+      "id": "bo",
+      "name": "Bo",
+      "sheet": "Bo: a four-year-old boy, Nell's little brother — the same warm brown skin and dark curls, round cheeks, huge serious dark eyes; a bright red knitted woolen hat with a floppy pom-pom that he never takes off; a mustard-yellow scarf wound twice around his neck; he carries one stick of kindling like it is an important job."
+    },
+    {
+      "id": "gran",
+      "name": "Gran",
+      "sheet": "Gran: an old woman with deep brown skin and silver hair pinned up, laugh lines, small round spectacles; a heavy dark-green shawl over a long grey dress; she drives a small wooden wagon pulled by two patient brown horses."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: an enormous pink-and-gold sunset sky filling the upper two-thirds; two dragons flying down toward a green hilltop — the very large plum-purple dragon with wings spread wide, and the small rose-pink dragon just behind and below him, tumbling happily through the light; on the hilltop far below, Nell waving both arms and Bo beside her in his red woolen hat, next to a neat woodpile and an old empty iron beacon basket on a tall pole. Warm golden light, floating sparkles and stardust. Open pink sky in the upper third for the title. Gentle friendly dragons — mouths closed, no teeth showing, big soft eyes, nothing frightening. No other people, no other children, no other animals."
+  },
+  "questions": [
+    "The village had one word for Pip: too much. Has anybody ever told you that you were too much of something — too loud, too wiggly, too big? What did you want to say back?",
+    "Plum's little fire was a good fire, and it still couldn't light the beacon. Can something be really good and still not be the right thing for that one job?",
+    "Bo didn't say Pip's fire should be smaller. He said it needed room. What are you good at that needs room — and who could help you find some?",
+    "Pip swallowed her laugh for a whole year. Grown-ups do that too, sometimes. Is there something you have been keeping inside because you thought it was too big for other people?"
+  ],
+  "lookAndFind": "The old iron beacon on its tall pole is standing somewhere in nearly every picture, long before anybody lights it. Can you find it each time? And keep an eye on Bo's red woolen hat — he takes it off exactly once in the whole book. Can you find where?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The last hill",
+      "text": "On the last hill before the mountains,\nwhere the road gets tired and gives up,\nNell and Bo stack the woodpile before supper.\n\nNot for tonight. Tonight is only a Tuesday.\nThey stack it for the seventh night —\n\nbecause every seventh sunset the whole sky goes pink,\nand two specks in all that pink come flying.",
+      "image": "images/01.webp",
+      "imagePrompt": "Wide establishing shot in late-afternoon gold: a single tall green hill at the end of a winding dirt road, the road petering out into grass; dark blue mountains standing behind it; on the hilltop Nell and Bo stack a neat woodpile together beside a small stone cottage and a low stone wall, with an old rusty empty iron beacon basket on a tall pole at the edge of the hilltop; far below, a small village of warm lit windows in the valley. Soft pink clouds just beginning along the horizon. Cozy, storybook scale. No other people, no other children, no animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "nell",
+        "bo"
+      ],
+      "vocab": [
+        {
+          "word": "stack",
+          "definition": "to pile things up neatly, one on top of another"
+        },
+        {
+          "word": "sunset",
+          "definition": "the time when the sun goes down and the sky turns colors"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Plum and Pip",
+      "text": "Down over the ridge they come, wings wide.\n\nPlum first: purple as a plum, bigger than the barn,\npuffing small silver smoke rings out of his nose.\n\nThen Pip, rose-pink, all wings and elbows,\nwho lands the way a leaf lands\nif the leaf were extremely excited.\n\n\"HELLO,\" says Bo, who is four, and means it.",
+      "image": "images/02.webp",
+      "imagePrompt": "The pink-and-gold sunset sky seen from the hilltop: the very large plum-purple dragon coming down over the mountain ridge with wings spread wide, small silver smoke rings puffing from his nose; behind him the small rose-pink dragon landing clumsily and joyfully in the grass, wings every which way; Nell laughing, and Bo with both arms straight up shouting hello; the empty iron beacon on its tall pole at the edge of frame. Warm rose and gold light, floating sparkles. Gentle dragons — mouths closed, no teeth showing, big soft round eyes, nothing frightening. No other people, no other children, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "plum",
+        "pip",
+        "nell",
+        "bo"
+      ],
+      "vocab": [
+        {
+          "word": "ridge",
+          "definition": "the long top edge of a hill or a mountain"
+        },
+        {
+          "word": "elbows",
+          "definition": "the bendy middle parts of your arms"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The lighting of the fire",
+      "text": "This is how it goes, every seventh night.\n\nThe wood is stacked. Everybody sits.\nPlum leans down and breathes one thin gold thread —\n\nand the woodpile catches,\nand the hill goes warm and orange,\nand the mountains stand around in the dark\nlike grown-ups listening at a door.",
+      "image": "images/03.webp",
+      "imagePrompt": "Dusk on the hilltop, the last pink draining out of the sky: the huge plum-purple dragon leaning his head down and breathing one single thin thread of gold fire into a neat woodpile that is just beginning to catch; Nell and Bo sit together on the grass a good distance back, faces lit warm orange; the small rose-pink dragon sits much farther away at the edge of the light. Dark blue mountains standing all around, the empty iron beacon on its pole nearby, deep indigo sky above. Cozy and safe, the children clearly well back from the fire. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "plum",
+        "nell",
+        "bo",
+        "pip"
+      ],
+      "vocab": [
+        {
+          "word": "thread",
+          "definition": "a long thin piece of something, like a string pulled from a shirt"
+        },
+        {
+          "word": "mountains",
+          "definition": "hills so enormous that their tops are bare rock"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "The one who never lights it",
+      "text": "Pip sits farther back than the others.\nPip always sits farther back.\n\nShe holds her breath a lot, Pip does.\nShe laughs with her mouth shut,\nwhich is a very hard way to laugh.\n\nAnd she has never, not once, lit the fire.\n\nBo has asked her nine times why.",
+      "image": "images/04.webp",
+      "imagePrompt": "Night on the hilltop with a warm campfire glowing in the middle distance: in the foreground the small rose-pink dragon sits alone at the dark edge of the hill, mouth held tightly shut, wings folded in small, looking back toward the fire with big amber eyes; far behind her the huge plum-purple dragon curls around Nell by the fire, while Bo walks out toward Pip with a question on his face. Deep indigo night, a perfectly round full moon low behind the mountains (never a crescent), drifting stardust. Tender and quiet. No other people, no other children, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "pip",
+        "plum",
+        "nell",
+        "bo"
+      ],
+      "vocab": [
+        {
+          "word": "farther",
+          "definition": "more far away than something else"
+        },
+        {
+          "word": "breath",
+          "definition": "the air you take in and let out again"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The spring before",
+      "text": "Here is why.\n\nLast spring Pip laughed. Really laughed — out loud,\nthe whole entire laugh —\nand the fire came out with it.\n\nNot a thread. A ROAR of a thing.\nIt ate the old swing and half the great oak\nand left the sky smelling of smoke for a week.\n\nNobody was hurt.\nEverybody was scared.",
+      "refrain": true,
+      "image": "images/05.webp",
+      "imagePrompt": "A remembered scene in soft spring daylight, painted a little hazier at the edges like a memory: a great oak tree beside a hilltop cottage with one side of it blackened and gently smoking, an old rope swing burnt away to a stub, drifting smoke and orange sparks floating up into a pale sky; below it the small rose-pink dragon stands with both wings clapped over her own mouth in horror, eyes huge; Nell and Bo stand well back, unhurt, mouths open. Dramatic but soft and safe — no flames near anyone, nobody hurt, no building on fire, nothing frightening. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "pip",
+        "nell",
+        "bo"
+      ],
+      "vocab": [
+        {
+          "word": "roar",
+          "definition": "a huge rushing sound, the loudest a thing can be"
+        },
+        {
+          "word": "scared",
+          "definition": "the shaky feeling you get when something frightens you"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Smaller, Pip",
+      "text": "After that, the village had a word for Pip.\nToo much, they said. Too much, too big, too hot.\n\n\"Smaller, Pip,\" said the village.\n\"Smaller,\" said Pip, and got smaller,\nand swallowed every laugh she had for a year.\n\nBut swallowed fire doesn't go out.\nIt only goes quiet.",
+      "refrain": true,
+      "image": "images/06.webp",
+      "imagePrompt": "A grey overcast day in the village lane below the hill: the small rose-pink dragon crouched right down making herself as tiny as she possibly can, wings pressed flat, mouth clamped shut, eyes lowered; standing at a distance around her, four or five grown-up villagers in shawls and long coats with their arms folded, talking about her — wary but not cruel, none of them close to her; stone cottage walls behind, and above the rooftops the hill with its iron beacon pole. Muted lavender-grey palette, one small warm ember-glow escaping between the little dragon's closed lips. Sad and gentle, nobody shouting. Grown-up villagers only — no children except the dragon is not a child, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "pip"
+      ],
+      "vocab": [
+        {
+          "word": "swallowed",
+          "definition": "took something down inside you instead of letting it out"
+        },
+        {
+          "word": "village",
+          "definition": "a very small town where everybody knows everybody"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "The sunset that didn't behave",
+      "text": "Then came a seventh sunset that didn't behave.\n\nThe wind swung round cold off the mountains.\nGrey came over the pink and pressed it flat.\nRain fell sideways and mean, and then fog —\nthick as porridge, filling the valley to the brim.\n\nThe woodpile drank it all and sat there, soaked.",
+      "image": "images/07.webp",
+      "imagePrompt": "The hilltop caught in a sudden cold storm at what should have been sunset: the pink sky shoved aside by heavy grey cloud, rain blowing hard sideways, thick white fog pouring up the valley and swallowing the village lights below; the neat woodpile dark and shining wet; the old rusty iron beacon streaming with rain on its tall pole; the huge plum-purple dragon hunched with one great wing raised as a shelter, Nell and Bo pressed close underneath it, and the small rose-pink dragon huddled at the wing's edge. Dramatic weather in deep indigo and slate, but cozy and safe under the wing — nobody in danger. No moon visible. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "plum",
+        "nell",
+        "bo",
+        "pip"
+      ],
+      "vocab": [
+        {
+          "word": "fog",
+          "definition": "a cloud that has come all the way down to the ground"
+        },
+        {
+          "word": "soaked",
+          "definition": "as wet as a thing can possibly get"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "One short",
+      "text": "Bo counted the lights down in the valley,\nthe way he does, every night, twice.\n\n\"One short,\" said Bo.\n\nThe wagon. The one that comes over the mountain road\nwith Gran and the flour and everybody's letters.\nOut in that fog, with no light and no path\nand a long drop on the left the whole way home.",
+      "image": "images/08.webp",
+      "imagePrompt": "Night at the low stone wall on the edge of the hilltop, fog everywhere below: Bo standing up on the wall pointing out into the fog, counting, his face very serious; Nell beside him with a hand on his back, looking where he points; the huge plum-purple dragon's head resting behind them both. Far below, a scattering of tiny warm village lights half-drowned in fog, and one dark gap where a light should be; the thin thread of a mountain road disappearing into white. Deep indigo and lantern gold, hushed and worried but gentle. No other people, no other children, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "bo",
+        "nell",
+        "plum"
+      ],
+      "vocab": [
+        {
+          "word": "wagon",
+          "definition": "a big open cart on wheels that horses pull"
+        },
+        {
+          "word": "valley",
+          "definition": "the low land that lies between the hills"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "What Plum's fire is for",
+      "text": "The old iron beacon has stood on that hill forever,\nrusty and empty, with nobody's fire in it.\n\nPlum stretched up tall\nand breathed his thin gold thread into the soaked black wood.\n\nHiss, said the wood. And nothing. And hiss.\n\nPlum's fire is a sitting-close fire.\nIt is a good fire.\nIt was not the fire this needed.",
+      "image": "images/09.webp",
+      "imagePrompt": "Night on the foggy hilltop: the huge plum-purple dragon stretched up tall with his long neck extended, breathing a thin gold thread of fire up into a big rusty iron beacon basket on its tall pole, the wood inside black and soaking wet; only steam and a curl of grey smoke coming off it, no flame catching; Nell and Bo watch from behind the low stone wall, well back, faces anxious; the small rose-pink dragon is a soft shape in the fog behind them. Deep indigo night, cold wet fog, a single small gold light source. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "plum",
+        "nell",
+        "bo",
+        "pip"
+      ],
+      "vocab": [
+        {
+          "word": "beacon",
+          "definition": "a big fire lit up high so people far away can see it"
+        },
+        {
+          "word": "rusty",
+          "definition": "old metal that has gone orange and flaky"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Nell turns around",
+      "text": "Nell stood still for one whole second.\n\nThen she turned around and looked at the back of the hill,\nwhere Pip was sitting, being small.\n\n\"Pip,\" said Nell. \"We need the big one.\"",
+      "image": "images/10.webp",
+      "imagePrompt": "Night on the hilltop in fog: Nell turned all the way around, standing perfectly still, looking straight across the wet grass at the small rose-pink dragon, who sits at the far dark edge of the hill with her wings folded tiny, lit faintly pink; fog lying between them; behind Nell, the shape of the beacon pole and the huge purple dragon in the dark. A quiet, held-breath moment in deep indigo and soft rose. No other people, no other children, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "nell",
+        "pip",
+        "plum"
+      ],
+      "vocab": [
+        {
+          "word": "still",
+          "definition": "not moving at all, not even a little"
+        },
+        {
+          "word": "second",
+          "definition": "a tiny piece of time — about as long as saying one-elephant"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "The size of a mouse",
+      "text": "\"You saw what it does,\" said Pip.\nHer voice came out the size of a mouse.\n\"You saw the oak. You saw everybody's face.\"\n\n\"I did,\" said Nell. \"I saw all of it.\"\n\nAnd Bo took off his red hat, which he never does,\nand set it on the wall, and said:\n\"We'll stand back. That's all it needs. Room.\"",
+      "refrain": true,
+      "image": "images/11.webp",
+      "imagePrompt": "Night and fog, close and tender: the small rose-pink dragon with her head held low, eyes enormous and shining, shrinking back a little; Nell standing right in front of her, calm, one hand held out; beside them Bo has taken off his red woolen hat — his dark curls showing, bare-headed for the only time in the whole book — and is setting the hat carefully on top of the low stone wall, very solemn about it. Faint warm glow from campfire embers off to one side. Deep indigo, rose and gold. Gentle: no fear in the children's faces. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "pip",
+        "nell",
+        "bo"
+      ],
+      "vocab": [
+        {
+          "word": "room",
+          "definition": "enough space for a thing to be as big as it really is"
+        },
+        {
+          "word": "voice",
+          "definition": "the sound that comes out when you talk or sing"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "The way big things need doing",
+      "text": "So they did it properly,\nthe way big things need doing.\n\nNell walked Bo behind the old stone wall.\nPlum lay down along the wall like a purple hill\nand put one wing over both children, which is a roof.\n\n\"Now,\" called Nell, from under the wing.\n\"As big as you actually are.\"",
+      "image": "images/12.webp",
+      "imagePrompt": "Night on the hilltop: the huge plum-purple dragon lying down full-length along the low stone wall like a long purple hill, one enormous lavender wing lifted and arched over Nell and Bo, who are tucked safely behind the wall underneath it as if under a roof, Nell calling out from beneath the wing; far out on the open hilltop, well away from them, the small rose-pink dragon stands alone facing the tall iron beacon, wings beginning to spread, chest filling with air. Both children clearly far back and sheltered. Deep indigo, fog, faint rose light. No other people, no other children, no other animals.",
+      "textPosition": "top",
+      "characters": [
+        "plum",
+        "nell",
+        "bo",
+        "pip"
+      ],
+      "vocab": [
+        {
+          "word": "properly",
+          "definition": "the right way, carefully, with nothing skipped"
+        },
+        {
+          "word": "wing",
+          "definition": "the part a bird or a dragon flies with"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "The second sunset",
+      "text": "Pip breathed in.\n\nShe breathed in the cold and the fog and the whole grey year,\nand then she let go of it — all of it, the entire laugh —\n\nand fire went up off that hill like the sun coming back.\n\nThe beacon caught.\nThe fog turned gold and got out of the way.\nThe hill was so bright the mountains had shadows again.",
+      "refrain": true,
+      "image": "images/13.webp",
+      "imagePrompt": "The big spectacular moment: the small rose-pink dragon alone on the open hilltop, wings flung wide and head thrown back, sending an enormous roaring column of gold-and-rose fire straight up into the iron beacon basket, which erupts into a blazing golden light like a second sunset; the fog turning gold and rolling away in every direction; the mountains suddenly lit and casting long shadows; far to one side the huge purple dragon lies along the low stone wall with his wing sheltering Nell and Bo, who peek out with faces gold in the light, safely far from the flame. Glorious, warm and triumphant, never frightening — the fire goes straight up and nothing else is burning. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "pip",
+        "plum",
+        "nell",
+        "bo"
+      ],
+      "vocab": [
+        {
+          "word": "shadows",
+          "definition": "the dark shapes things make when a light is behind them"
+        },
+        {
+          "word": "entire",
+          "definition": "all of it, with none of it left out"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Seen from far away",
+      "text": "Out on the mountain road, in all that white nothing,\nGran saw a gold place in the sky where the hill should be.\n\n\"There,\" said Gran, and turned the horses toward it.\n\nAnd down in the valley the lanterns came out,\none and one and one,\nevery single one of them pointing the same way.",
+      "image": "images/14.webp",
+      "imagePrompt": "A high wide view from a mountain road in thick white fog: Gran driving her small wooden wagon behind two patient brown horses along a broad safe road, turning the horses toward a great glow of warm gold light shining up through the fog from a distant hilltop; far below in the valley, tiny lantern lights coming out one by one at cottage doors, all of them turned the same direction. Deep indigo night, white fog, one enormous gold beacon glow in the distance. Hopeful and safe — the road is wide, the wagon steady, nobody near an edge. Only Gran — no other people, no children.",
+      "textPosition": "top",
+      "characters": [
+        "gran"
+      ],
+      "vocab": [
+        {
+          "word": "lanterns",
+          "definition": "lights you can carry, with the little flame kept safe inside"
+        },
+        {
+          "word": "toward",
+          "definition": "in the direction of something, getting closer to it"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Nobody says too much",
+      "text": "They came up the hill in the beacon's warmth —\nGran and the wagon and half the village behind her,\nall of them lit orange, all of them looking up.\n\nNobody said too much.\n\nSomebody said thank you. Then everybody did.\n\nPip put a wing over her face,\nbecause that is a lot of being looked at.",
+      "image": "images/15.webp",
+      "imagePrompt": "Night on the hilltop beneath a blazing gold beacon: Gran and her small wooden wagon arriving at the top of the road, and behind her about a dozen grown-up villagers in coats and shawls carrying lanterns, every face lit warm orange and turned upward in soft amazement; beneath the beacon the small rose-pink dragon stands with one wing lifted shyly across her own face, peeking over the top of it; Nell and Bo grin beside her, Bo's red woolen hat back on his head; the huge plum-purple dragon behind them all. Golden light against deep indigo night, joyful and warm. Grown-up villagers only — no other children.",
+      "textPosition": "bottom",
+      "characters": [
+        "gran",
+        "pip",
+        "nell",
+        "bo",
+        "plum"
+      ],
+      "vocab": [
+        {
+          "word": "warmth",
+          "definition": "the good soft heat you feel when something is warm"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Two fires",
+      "text": "Now there are two fires on the last hill.\n\nThe little one is Plum's, for sitting close:\nfor stories, and burnt bread, and leaning on a dragon.\n\nThe big one is Pip's, up in the iron basket,\nfor the nights when somebody out there needs finding.\n\nShe lights it every seventh sunset now, rain or no rain.\nAnd she laughs the whole entire laugh while she does it.",
+      "refrain": true,
+      "theEnd": "The End — of the one Harper dreamed up.",
+      "image": "images/16.webp",
+      "imagePrompt": "Final wide scene on the hilltop at deep dusk with two fires burning: down in the grass a small cozy campfire with the huge plum-purple dragon curled all the way around it like a sleeping hillside, Nell leaning back against his warm side and Bo toasting a piece of bread that is definitely burnt; and high above them on its tall pole the great iron beacon basket blazing gold into the sky, the small rose-pink dragon hovering beside it mid-laugh with her mouth wide open and happy and her wings spread. The last pink of sunset along the mountains, stars and stardust coming out, open sky in the upper third. Warm and joyous. No other people, no other children, no other animals.",
+      "textPosition": "bottom",
+      "characters": [
+        "plum",
+        "nell",
+        "bo",
+        "pip"
+      ],
+      "vocab": [
+        {
+          "word": "basket",
+          "definition": "something you carry things in — this one is made of iron and holds fire"
+        },
+        {
+          "word": "burnt",
+          "definition": "left in the fire too long, gone black and crunchy at the edges"
+        }
+      ]
+    }
+  ]
+}
