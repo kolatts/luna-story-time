@@ -1,0 +1,38 @@
+{
+  "tileSize": 256,
+  "terrain": {
+    "carpet": "terrain/carpet.webp",
+    "carpet2": "terrain/carpet2.webp",
+    "wall": "terrain/wall.webp",
+    "stairs": "terrain/stairs.webp",
+    "rug": "terrain/rug.webp"
+  },
+  "props": {
+    "curtain": "props/curtain.webp",
+    "table": "props/table.webp",
+    "plant": "props/plant.webp",
+    "arch": "props/arch.webp",
+    "present1": "props/present1.webp",
+    "present2": "props/present2.webp",
+    "present3": "props/present3.webp",
+    "present-giant": "props/present-giant.webp",
+    "cake": "props/cake.webp",
+    "balloons": "props/balloons.webp"
+  },
+  "characters": {
+    "moon": "characters/moon.webp",
+    "babylady": "characters/babylady.webp",
+    "winds": "characters/winds.webp",
+    "dirt": "characters/dirt.webp",
+    "cottontail": "characters/cottontail.webp",
+    "cheeblest": "characters/cheeblest.webp",
+    "evilest": "characters/evilest.webp",
+    "beedlist": "characters/beedlist.webp",
+    "purpleshine": "characters/purpleshine.webp",
+    "pinkshine": "characters/pinkshine.webp",
+    "leeblebeest": "characters/leeblebeest.webp"
+  },
+  "fx": {
+    "sparkle": "fx/sparkle.webp"
+  }
+}

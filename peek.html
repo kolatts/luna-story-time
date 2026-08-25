@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>The Great Present Peek — Luna's Story Time</title>
+<meta name="description" content="A gentle stealth game: sneak Princess Moon and Baby Lady down through the castle to peek at the birthday presents.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/peek.css">
+</head>
+<body class="game-body peek-body">
+
+<header class="game-top">
+  <a class="home-link" href="index.html" aria-label="Back to the bookshelf">🌙 Home</a>
+  <h1 class="game-title">The Great Present Peek</h1>
+  <div class="top-actions">
+    <span class="hud-chip" title="Floor">🏰 <b id="hudFloor">1</b></span>
+    <span class="hud-chip" title="Presents peeked">🎁 <b id="hudScore">0</b></span>
+    <span class="hud-chip" title="Best floor / best presents">⭐ <b id="hudBest">1 / 0</b></span>
+    <button type="button" id="btnSound" class="chip-btn icon-chip" aria-pressed="true" aria-label="Turn voices off" title="Voices are on">🔊</button>
+  </div>
+</header>
+
+<main class="game-main">
+  <section class="stage-wrap">
+    <!-- Phaser mounts its canvas in here -->
+    <div id="mapView" class="map-view" role="img" aria-label="A moonlit castle floor, seen from above"></div>
+
+    <!-- Big friendly "Ooh!" bubble when a guest spots the sisters -->
+    <div id="speechBubble" class="speech-bubble" role="status" hidden></div>
+
+    <!-- How to play: dismissed by the very first key press or tap -->
+    <div id="introOverlay" class="intro-overlay">
+      <div class="intro-card">
+        <h2>🎁 The Great Present Peek</h2>
+        <p>It's the night before the birthday! Sneak <b>Princess Moon</b> 🧚 and
+        <b>Baby Lady</b> 🐶 down through the castle to peek at every present.</p>
+        <ul>
+          <li>⬆️⬇️⬅️➡️ or the stick moves <b>both sisters</b> at once</li>
+          <li>🐶 Baby Lady fits <b>under tables</b> and through tiny archways</li>
+          <li>🧚 Moon can hide <b>behind curtains</b> — plants hide anyone!</li>
+          <li>💡 If the golden light reaches you, <b>stand still!</b> They only notice sneakers who wiggle</li>
+          <li>🤫 <b>Space</b> (or the big button) is <b>Hush</b>: hold extra still when the light lingers</li>
+          <li>✨ Peek every present, then bring <b>both</b> sisters to the glowing stairs</li>
+        </ul>
+        <p class="intro-go">Press any key or tap to start sneaking…</p>
+      </div>
+    </div>
+
+    <!-- Touch controls sit ON the stage; pointer-events:none except the Hush
+         button — the floating stick is driven from #mapView's own pointerdown. -->
+    <div class="touch-controls" id="touchControls">
+      <div class="stick" id="touchStick" aria-hidden="true"><span class="stick-nub" id="touchStickNub"></span></div>
+      <button type="button" id="btnHush" class="action-btn" aria-label="Hush! Freeze quietly for a moment">🤫</button>
+    </div>
+  </section>
+</main>
+
+<footer class="game-footer">
+  <a href="index.html">🌙 Back to the storybooks</a>
+</footer>
+
+<script src="js/vendor/phaser.min.js" defer></script>
+<script src="js/peek.js" defer></script>
+</body>
+</html>

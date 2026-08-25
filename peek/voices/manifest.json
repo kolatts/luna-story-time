@@ -1,0 +1,121 @@
+{
+  "narrator": {
+    "intro": "narrator/intro.mp3",
+    "floor": "narrator/floor.mp3",
+    "party": "narrator/party.mp3",
+    "spotted": "narrator/spotted.mp3",
+    "best": "narrator/best.mp3"
+  },
+  "speakers": {
+    "winds": {
+      "spotted": [
+        "winds/spotted-01.mp3",
+        "winds/spotted-02.mp3",
+        "winds/spotted-03.mp3"
+      ],
+      "hmm": [
+        "winds/hmm-01.mp3",
+        "winds/hmm-02.mp3"
+      ]
+    },
+    "dirt": {
+      "spotted": [
+        "dirt/spotted-01.mp3",
+        "dirt/spotted-02.mp3",
+        "dirt/spotted-03.mp3"
+      ],
+      "hmm": [
+        "dirt/hmm-01.mp3",
+        "dirt/hmm-02.mp3"
+      ]
+    },
+    "cottontail": {
+      "spotted": [
+        "cottontail/spotted-01.mp3",
+        "cottontail/spotted-02.mp3",
+        "cottontail/spotted-03.mp3"
+      ],
+      "hmm": [
+        "cottontail/hmm-01.mp3",
+        "cottontail/hmm-02.mp3"
+      ]
+    },
+    "cheeblest": {
+      "spotted": [
+        "cheeblest/spotted-01.mp3",
+        "cheeblest/spotted-02.mp3",
+        "cheeblest/spotted-03.mp3"
+      ],
+      "hmm": [
+        "cheeblest/hmm-01.mp3",
+        "cheeblest/hmm-02.mp3"
+      ]
+    },
+    "evilest": {
+      "spotted": [
+        "evilest/spotted-01.mp3",
+        "evilest/spotted-02.mp3",
+        "evilest/spotted-03.mp3"
+      ],
+      "hmm": [
+        "evilest/hmm-01.mp3",
+        "evilest/hmm-02.mp3"
+      ]
+    },
+    "beedlist": {
+      "spotted": [
+        "beedlist/spotted-01.mp3",
+        "beedlist/spotted-02.mp3",
+        "beedlist/spotted-03.mp3"
+      ],
+      "hmm": [
+        "beedlist/hmm-01.mp3",
+        "beedlist/hmm-02.mp3"
+      ]
+    },
+    "purpleshine": {
+      "spotted": [
+        "purpleshine/spotted-01.mp3",
+        "purpleshine/spotted-02.mp3",
+        "purpleshine/spotted-03.mp3"
+      ],
+      "hmm": [
+        "purpleshine/hmm-01.mp3",
+        "purpleshine/hmm-02.mp3"
+      ]
+    },
+    "pinkshine": {
+      "spotted": [
+        "pinkshine/spotted-01.mp3",
+        "pinkshine/spotted-02.mp3",
+        "pinkshine/spotted-03.mp3"
+      ],
+      "hmm": [
+        "pinkshine/hmm-01.mp3",
+        "pinkshine/hmm-02.mp3"
+      ]
+    },
+    "leeblebeest": {
+      "spotted": [
+        "leeblebeest/spotted-01.mp3",
+        "leeblebeest/spotted-02.mp3",
+        "leeblebeest/spotted-03.mp3"
+      ],
+      "hmm": [
+        "leeblebeest/hmm-01.mp3",
+        "leeblebeest/hmm-02.mp3"
+      ]
+    },
+    "babylady": {
+      "yip": [
+        "babylady/yip-01.mp3",
+        "babylady/yip-02.mp3",
+        "babylady/yip-03.mp3"
+      ],
+      "peek": [
+        "babylady/peek-01.mp3",
+        "babylady/peek-02.mp3"
+      ]
+    }
+  }
+}

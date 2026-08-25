@@ -1,0 +1,122 @@
+{
+  "_comment": "Spoken lines for The Great Present Peek. Every speaker id must exist in scripts/voice-cast.json. Input to scripts/generate-peek-voices.py. Keep lines short (under ~4 seconds spoken), warm, funny, never scary — the guests are family setting up the party.",
+  "narrator": {
+    "intro": "It was the night before the birthday, and two small shadows were not asleep. Down the stairs they crept, to peek at the presents.",
+    "floor": "Down another floor, quiet as moonlight.",
+    "party": "Oh! A party landing! Balloons and cake everywhere!",
+    "spotted": "Ooh, spotted! Back to the rug, little shadows.",
+    "best": "Your very best sneak ever! The moon herself is impressed."
+  },
+  "speakers": {
+    "winds": {
+      "spotted": [
+        "Ooh ooh ooh! I see you, I see you, I see BOTH of you!",
+        "Two sneakers! Sneaking! At night! Back to bed, sneakers!",
+        "Ha! Found you found you found you!"
+      ],
+      "hmm": [
+        "Did something whoosh? Something whooshed. I know a whoosh.",
+        "Hmm hmm hmm — my whiskers are tingling!"
+      ]
+    },
+    "dirt": {
+      "spotted": [
+        "Hello, small ones. Bed is that way.",
+        "I see you. Slowly. Back you go.",
+        "Hm. Two peekers. Big day tomorrow."
+      ],
+      "hmm": [
+        "Hmmmm.",
+        "Something... small... went by."
+      ]
+    },
+    "cottontail": {
+      "spotted": [
+        "A-ha! Caught you, little sneaks! Off to bed!",
+        "Nice try, you two! But nobody sneaks past me.",
+        "Spotted! And I'm not even sorry. Bedtime!"
+      ],
+      "hmm": [
+        "Hmm. My big-sister senses are tingling.",
+        "Was that a footstep? I know footsteps."
+      ]
+    },
+    "cheeblest": {
+      "spotted": [
+        "Oh! Little ones. Shh — back to bed now.",
+        "I see you, sweet shadows. Off you go now.",
+        "Found you. Gently, gently, back upstairs."
+      ],
+      "hmm": [
+        "Hmm... did the shadows just giggle?",
+        "Soft feet. Somewhere. Hmm."
+      ]
+    },
+    "evilest": {
+      "spotted": [
+        "Caught! Deliciously caught!",
+        "Two tiny plotters! I adore it. To bed!",
+        "You dare sneak past ME? Magnificent. Bedtime anyway."
+      ],
+      "hmm": [
+        "Hmm. I smell... mischief. Wonderful.",
+        "Something is afoot. Something SMALL is afoot."
+      ]
+    },
+    "beedlist": {
+      "spotted": [
+        "Bed. Now.",
+        "Seen.",
+        "No."
+      ],
+      "hmm": [
+        "Hm.",
+        "Mmm."
+      ]
+    },
+    "purpleshine": {
+      "spotted": [
+        "Mm, there you are, my little moons. Back to bed, you two.",
+        "I knew you'd try, sweet ones. Upstairs now.",
+        "Peeking already? The presents can wait one more sleep."
+      ],
+      "hmm": [
+        "Hmm. Two little heartbeats, somewhere close.",
+        "My whiskers say somebody is not asleep."
+      ]
+    },
+    "pinkshine": {
+      "spotted": [
+        "Woof! Two little peekers! Back to bed, you two!",
+        "Well, well! Caught you, pups! Up you go.",
+        "A-woof! I spy two sleepy sneakers!"
+      ],
+      "hmm": [
+        "Hmm? Woof. My ears heard a tiptoe.",
+        "Ho hum... something small and giggly went past."
+      ]
+    },
+    "leeblebeest": {
+      "spotted": [
+        "There you are. I was watching. Bed now.",
+        "I never sleep. But you should. Go on.",
+        "Seen you. Upstairs, please."
+      ],
+      "hmm": [
+        "Hmm. The quiet just got quieter.",
+        "I am watching... something."
+      ]
+    },
+    "babylady": {
+      "yip": [
+        "Yip!",
+        "Yip yip!",
+        "Yip yip yip!"
+      ],
+      "peek": [
+        "Yip! A present!",
+        "Yip yip! Sparkly!"
+      ]
+    }
+  }
+}
