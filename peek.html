@@ -22,6 +22,7 @@
     <span class="hud-chip" title="Presents peeked">🎁 <b id="hudScore">0</b></span>
     <span class="hud-chip" title="Best floor / best presents">⭐ <b id="hudBest">1 / 0</b></span>
     <button type="button" id="btnSound" class="chip-btn icon-chip" aria-pressed="true" aria-label="Turn voices off" title="Voices are on">🔊</button>
+    <button type="button" id="btnMenu" class="chip-btn icon-chip" aria-label="Choose a floor or start over" title="Floors &amp; progress">🗺️</button>
   </div>
 </header>
 
@@ -48,6 +49,19 @@
           <li>✨ Peek every present, then bring <b>both</b> sisters to the glowing stairs</li>
         </ul>
         <p class="intro-go">Press any key or tap to start sneaking…</p>
+      </div>
+    </div>
+
+    <!-- Floors & progress: revisit any floor already reached, or start over -->
+    <div id="menuOverlay" class="menu-overlay" hidden>
+      <div class="menu-card" role="dialog" aria-modal="true" aria-labelledby="menuTitle">
+        <h2 id="menuTitle">🗺️ Floors you've reached</h2>
+        <p class="menu-hint" id="menuHint">Tap a floor to sneak through it again.</p>
+        <div class="floor-grid" id="floorGrid"></div>
+        <div class="menu-actions">
+          <button type="button" id="btnCloseMenu" class="menu-btn">Keep sneaking 🤫</button>
+          <button type="button" id="btnClear" class="menu-btn danger">Clear all progress 🧹</button>
+        </div>
       </div>
     </div>
 

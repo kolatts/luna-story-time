@@ -114,6 +114,12 @@
   var stickNub = $("touchStickNub");
   var introOverlay = $("introOverlay");
   var bubbleEl = $("speechBubble");
+  var btnMenu = $("btnMenu");
+  var menuOverlay = $("menuOverlay");
+  var menuHint = $("menuHint");
+  var floorGrid = $("floorGrid");
+  var btnCloseMenu = $("btnCloseMenu");
+  var btnClear = $("btnClear");
 
   var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 
@@ -1260,7 +1266,7 @@
   var transitioning = false;
   var introOpen = true;
 
-  function busy() { return spotted || transitioning || introOpen; }
+  function busy() { return spotted || transitioning || introOpen || menuOpen; }
 
   function stopRepeat() {
     dpadDir = null;
@@ -1575,6 +1581,97 @@
     card.insertBefore(btn, go || null);
   }
 
+  /* ================= Floors & progress menu ================= */
+
+  var menuOpen = false;
+  var clearArmed = false;      // "tap again to erase" — no scary browser confirm()
+
+  /* Revisiting keeps the run's seed, so floor N is the very same castle the
+     player already knows. Score stays put; it's a stroll, not a rewind. */
+  function goToFloor(n) {
+    n = clampN(intOr(n, 1), 1, Math.max(1, save.bestFloor));
+    closeMenu();
+    heldKeys = [];
+    stopRepeat();
+    floorNum = n;
+    floor = genFloor(floorNum);
+    renderFloor();
+    graceUntil = Date.now() + 1500;
+    captureRun();
+    flushSave();
+  }
+
+  function buildFloorGrid() {
+    if (!floorGrid) return;
+    floorGrid.textContent = "";
+    var top = Math.max(1, save.bestFloor);
+    for (var n = 1; n <= top; n++) {
+      (function (num) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "floor-chip" + (num === floorNum ? " current" : "") +
+          (num % 5 === 0 ? " party" : "");
+        b.textContent = num % 5 === 0 ? num + " 🎂" : String(num);
+        b.setAttribute("aria-label", "Floor " + num + (num % 5 === 0 ? ", a party floor" : ""));
+        if (num === floorNum) b.setAttribute("aria-current", "true");
+        b.addEventListener("click", function () { goToFloor(num); });
+        floorGrid.appendChild(b);
+      })(n);
+    }
+    if (menuHint) {
+      menuHint.textContent = top === 1
+        ? "Reach the stairs to unlock more floors to revisit!"
+        : "Tap a floor to sneak through it again.";
+    }
+  }
+
+  function openMenu() {
+    if (menuOpen || !menuOverlay) return;
+    menuOpen = true;
+    heldKeys = [];
+    stopRepeat();
+    disarmClear();
+    buildFloorGrid();
+    menuOverlay.hidden = false;
+    if (btnCloseMenu) btnCloseMenu.focus();
+  }
+  function closeMenu() {
+    if (!menuOpen || !menuOverlay) return;
+    menuOpen = false;
+    menuOverlay.hidden = true;
+    disarmClear();
+    graceUntil = Date.now() + 1000;   // no ambush the instant the panel closes
+  }
+
+  function disarmClear() {
+    clearArmed = false;
+    if (btnClear) {
+      btnClear.textContent = "Clear all progress 🧹";
+      btnClear.classList.remove("armed");
+    }
+  }
+  /* Destructive, so it asks once — in the game's own voice, not a browser dialog. */
+  function clearProgress() {
+    if (!clearArmed) {
+      clearArmed = true;
+      if (btnClear) {
+        btnClear.textContent = "Really erase everything? Tap again";
+        btnClear.classList.add("armed");
+      }
+      return;
+    }
+    disarmClear();
+    try { localStorage.removeItem(SAVE_KEY); } catch (e) { /* private mode */ }
+    save.bestFloor = 1;
+    save.bestScore = 0;
+    save.run = null;
+    resumedFloor = 0;
+    closeMenu();
+    startRun(Math.floor(Math.random() * 1000000) + 1);
+    renderHud();
+    flushSave();
+  }
+
   function closeIntro() {
     if (!introOpen) return;
     introOpen = false;
@@ -1595,6 +1692,20 @@
     var release = function () { closeIntro(); };
     document.addEventListener("keydown", release, { once: true });
     document.addEventListener("pointerdown", release, { once: true });
+
+    if (btnMenu) {
+      btnMenu.addEventListener("click", function () {
+        closeIntro();                 // the map is itself a first gesture
+        if (menuOpen) closeMenu(); else openMenu();
+      });
+    }
+    if (btnCloseMenu) btnCloseMenu.addEventListener("click", closeMenu);
+    if (btnClear) btnClear.addEventListener("click", clearProgress);
+    if (menuOverlay) {
+      menuOverlay.addEventListener("click", function (e) {
+        if (e.target === menuOverlay) closeMenu();   // tap the dark edge to dismiss
+      });
+    }
 
     if (btnSound) {
       btnSound.addEventListener("click", function (e) {
@@ -1649,10 +1760,15 @@
     var dir = DIR_KEYS[k] || DIR_KEYS[String(k).toLowerCase()];
     var isSpace = (k === " " || k === "Spacebar");
 
+    if (menuOpen) {
+      if (k === "Escape") { e.preventDefault(); closeMenu(); }
+      return;                             // the panel owns the keyboard while open
+    }
     if (introOpen) {
       if (dir || isSpace || k === "Enter") { e.preventDefault(); closeIntro(); }
       return;
     }
+    if (k === "Escape" || k === "m" || k === "M") { e.preventDefault(); openMenu(); return; }
     if (dir) {
       e.preventDefault();                 // arrows never scroll the page
       if (heldKeys.indexOf(dir) < 0) heldKeys.push(dir);
@@ -1868,6 +1984,7 @@
           hushed: isHushed(),
           spotted: spotted,
           introOpen: introOpen,
+          menuOpen: menuOpen,
           sound: soundOn
         };
       },

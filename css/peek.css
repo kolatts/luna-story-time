@@ -202,6 +202,86 @@ body.peek-body {
   50% { opacity: 1; }
 }
 
+/* ===== Floors & progress panel ===== */
+/* Fixed, not stage-relative: on phones .stage-wrap is wider than the viewport
+   and starts at a negative left, which clipped the card off-screen. */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+  background: rgba(12, 9, 32, .82);
+  backdrop-filter: blur(3px);
+}
+.menu-overlay[hidden] { display: none; }
+.menu-card {
+  width: min(520px, 100%);
+  max-height: 100%;
+  overscroll-behavior: contain;
+  overflow-y: auto;
+  padding: 1.1rem 1.2rem;
+  background: linear-gradient(180deg, #241d4e, #1a1540);
+  border: 2px solid rgba(255, 214, 122, .5);
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .5);
+}
+.menu-card h2 {
+  font-family: "Berkshire Swash", Georgia, serif;
+  color: var(--gold-soft);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: .3rem;
+}
+.menu-hint {
+  text-align: center;
+  font-size: .9rem;
+  opacity: .85;
+  margin-bottom: .8rem;
+}
+.floor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+.floor-chip {
+  min-height: 48px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--gold-soft);
+  background: rgba(150, 130, 255, .22);
+  border: 1px solid rgba(190, 175, 255, .4);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.floor-chip:hover, .floor-chip:focus-visible { background: rgba(175, 155, 255, .42); color: #fff; }
+.floor-chip.party { border-color: rgba(255, 180, 220, .6); background: rgba(255, 150, 210, .2); }
+.floor-chip.current {
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+  color: #2a2140;
+  border-color: #fff;
+}
+.menu-actions { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; }
+.menu-btn {
+  min-height: 44px;
+  padding: .5rem 1.1rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--gold-soft);
+  background: rgba(150, 130, 255, .3);
+  border: 1px solid rgba(200, 185, 255, .5);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.menu-btn:hover, .menu-btn:focus-visible { background: rgba(175, 155, 255, .46); color: #fff; }
+.menu-btn.danger { color: #ffd7d7; background: rgba(190, 80, 110, .28); border-color: rgba(255, 150, 170, .5); }
+.menu-btn.danger:hover, .menu-btn.danger:focus-visible { background: rgba(215, 95, 125, .45); color: #fff; }
+.menu-btn.danger.armed { background: rgba(230, 90, 120, .72); color: #fff; }
+
 /* Resuming a saved run: where you left off, plus an escape hatch. */
 .resume-note {
   text-align: center;
