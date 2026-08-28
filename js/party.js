@@ -1480,6 +1480,18 @@
     setApiBase: function (url) { API_BASE = url; },
     setTimeScale: function (k) { timeScale = Math.max(0.1, Math.min(20, k)); },
     netStats: function () { return { gets: net.gets, posts: net.posts, errors: net.errors, snapshotVersion: view.version }; },
+    debugBoot: function () {
+      var s = game && game.scene && game.scene.getScene("party");
+      return {
+        game: !!game,
+        sceneCreated: !!scene,
+        sceneStatus: s && s.scene.settings.status,
+        loadProgress: s && s.load ? s.load.progress : null,
+        loadTotal: s && s.load ? s.load.totalToLoad : null,
+        loadFailed: s && s.load ? s.load.totalFailed : null,
+        rendererType: game && game.renderer ? game.renderer.type : null
+      };
+    },
     getPositions: function () {
       var st = currentState();
       if (!st) return null;
