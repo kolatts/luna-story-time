@@ -15,6 +15,14 @@
       "href": "peek.html",
       "cover": "games/present-peek/cover.webp",
       "badge": "Sneaky fun · Ages 4-8"
+    },
+    {
+      "slug": "birthday-party-patrol",
+      "title": "The Birthday Party Patrol",
+      "subtitle": "Team up — or team mischief! Guard the birthday goodies with up to 4 friends.",
+      "href": "party.html",
+      "cover": "games/birthday-party-patrol/cover.webp",
+      "badge": "Multiplayer · Ages 4-8"
     }
   ]
 }
