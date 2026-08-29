@@ -56,7 +56,7 @@ body.game-body {
   text-shadow: 0 2px 12px rgba(0,0,0,.5);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.top-actions { display: flex; }
+.top-actions { display: flex; align-items: center; gap: .45rem; }
 .chip-btn {
   font-family: "Andika", sans-serif; font-weight: 700; font-size: .88rem;
   padding: .45rem .9rem; border-radius: 999px;
@@ -423,14 +423,13 @@ html.touch-ui .inv-grid .inv-item { min-height: 48px; justify-content: center; }
 .recipe {
   display: flex; align-items: center; gap: .6rem;
   width: 100%;
-  background: rgba(183,167,212,.08);
-  border: 1px solid rgba(183,167,212,.18);
+  background: rgba(183,167,212,.05);
+  border: 1px solid rgba(183,167,212,.14);
   border-radius: 14px;
   padding: .55rem .7rem;
   text-align: left;
   color: var(--scale);
-  opacity: .68;
-  transition: transform .15s ease, opacity .15s ease, background .15s ease, border-color .15s ease;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
 }
 .recipe .r-emoji { font-size: 1.4rem; flex: 0 0 auto; }
 .recipe .r-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: .25rem; }
@@ -444,7 +443,8 @@ html.touch-ui .inv-grid .inv-item { min-height: 48px; justify-content: center; }
 }
 .recipe.craftable:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(232,196,106,.25); }
 .recipe.craftable .r-name { color: var(--gold-soft); }
-.recipe.mystery { opacity: .45; cursor: default; }
+.recipe.mystery { cursor: default; }
+.recipe.mystery .r-emoji { opacity: .7; }
 .recipe.mystery .r-name { color: var(--stone); letter-spacing: .12em; }
 .recipe .r-flavor { font-size: .78rem; color: var(--stone); line-height: 1.35; }
 [hidden] { display: none !important; }
@@ -537,6 +537,44 @@ html.touch-ui .inv-grid .inv-item { min-height: 48px; justify-content: center; }
   display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap;
 }
 .modal-actions .cta { margin-top: 0; }
+
+/* ===== How-to-play overlay =====
+   Shown once automatically on a brand-new game, and any time from the header
+   ❓ button. Mirrors Present Peek's .intro-overlay/.intro-card language. */
+.intro-overlay {
+  position: fixed; inset: 0; z-index: 81;
+  display: flex; align-items: center; justify-content: center;
+  padding: 1.2rem;
+  background: rgba(12,12,28,.72);
+  backdrop-filter: blur(3px);
+}
+.intro-card {
+  position: relative;
+  width: min(94%, 30rem);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #262150, #1d1a3e);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.7rem;
+  box-shadow: 0 22px 60px rgba(0,0,0,.6);
+  color: var(--paper);
+}
+.intro-card h2 {
+  color: var(--gold-soft); font-size: 1.4rem; margin-bottom: .7rem;
+}
+.intro-card p { line-height: 1.55; margin-bottom: .9rem; }
+.intro-card ul { list-style: none; display: grid; gap: .55rem; margin-bottom: 1.1rem; }
+.intro-card li { line-height: 1.5; }
+.intro-card .cta.small { display: block; margin: 0 auto; }
+.intro-close {
+  position: absolute; top: .6rem; right: .7rem;
+  min-width: 44px; min-height: 44px;
+  display: grid; place-items: center;
+  font-size: 1.1rem; color: var(--stone);
+  border-radius: 10px;
+}
+.intro-close:hover { color: var(--gold-soft); background: rgba(183,167,212,.16); }
 
 /* ===== Responsive stacking ===== */
 @media (max-width: 900px) {

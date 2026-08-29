@@ -33,7 +33,8 @@ body.peek-body {
 
 .game-top {
   position: sticky; top: 0; z-index: 40;
-  display: flex; align-items: center; gap: .8rem;
+  display: flex; align-items: center; gap: .8rem; row-gap: .35rem;
+  flex-wrap: wrap;
   padding: .6rem 1rem;
   background: rgba(18,18,42,.85); backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(183,167,212,.2);
@@ -385,14 +386,19 @@ html.touch-ui .touch-controls { display: block; }
 /* Hush is recharging */
 .action-btn.cooldown { opacity: .45; filter: saturate(.6); }
 
-/* ===== Touch-device layout: one screen, no page scrolling ===== */
-html.touch-ui { height: 100%; overflow: hidden; }
+/* ===== Touch-device layout ===== */
+/* One screen at normal zoom, but not scroll-locked: at high browser zoom the
+   header/footer text needs somewhere to go rather than being clipped and
+   unreachable (WCAG 1.4.4). overscroll-behavior on body.peek-body already
+   stops the thumbstick from rubber-banding the page during play, and
+   touch-action: none on the stage keeps drags there from scrolling too. */
+html.touch-ui { height: 100%; overflow-x: hidden; overflow-y: auto; }
 html.touch-ui body.peek-body {
-  height: 100dvh;
-  min-height: 0;
-  overflow: hidden;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-html.touch-ui .game-main { min-height: 0; overflow: hidden; }
+html.touch-ui .game-main { min-height: 0; }
 html.touch-ui .stage-wrap { flex: 0 0 auto; }
 html.touch-ui .chip-btn,
 html.touch-ui .home-link,

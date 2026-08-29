@@ -13,9 +13,11 @@
 </head>
 <body class="reader-body">
 
+<a class="skip-link visually-hidden" href="#main">Skip to the story</a>
+
 <header class="reader-top">
   <a class="home-link" href="index.html" aria-label="Back to the bookshelf">🏠</a>
-  <div class="reader-title" id="readerTitle">Loading story…</div>
+  <h1 class="reader-title" id="readerTitle">Loading story…</h1>
   <button class="top-btn" id="bigTextBtn" aria-pressed="false" title="Bigger letters" aria-label="Toggle bigger letters">Aa</button>
   <button class="top-btn" id="speedBtn" aria-pressed="false" title="Read slowly" aria-label="Toggle slow reading">🐢</button>
   <button class="top-btn" id="autoBtn" aria-pressed="false" title="Storytime mode: read every page for me" aria-label="Toggle storytime mode">📖✨</button>
@@ -23,7 +25,7 @@
 
 <nav class="progress-moons" id="progressMoons" aria-label="Pages"></nav>
 
-<main class="stage">
+<main class="stage" id="main">
   <div id="spreadHost" aria-live="polite"></div>
 </main>
 

@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<a class="skip-link visually-hidden" href="#main">Skip to content</a>
+
 <header class="hero" id="top">
   <div class="hero-layer hero-art" id="heroArt" data-depth="0.25" style="background-image:url('assets/hero.webp')"></div>
   <div class="hero-layer stars" id="starLayer" data-depth="0.45"></div>
@@ -25,10 +27,10 @@
       <a class="cta ghost" href="#play">🏰 Visit the Playroom</a>
     </div>
   </div>
-  <div class="scroll-hint">⌄ scroll for the bookshelf ⌄</div>
+  <div class="scroll-hint" aria-hidden="true">⌄ scroll for the bookshelf ⌄</div>
 </header>
 
-<main>
+<main id="main">
   <section class="band" id="books">
     <div class="band-inner">
       <h2>The Bookshelf</h2>
@@ -53,22 +55,22 @@
       <h2>How Story Time Works</h2>
       <div class="features">
         <div class="feature">
-          <span class="icon">🔊</span>
+          <span class="icon" aria-hidden="true">🔊</span>
           <h3>Read to me</h3>
           <p>Press play and the story reads itself out loud, lighting up each word as it goes — like following along with a finger.</p>
         </div>
         <div class="feature">
-          <span class="icon">👆</span>
+          <span class="icon" aria-hidden="true">👆</span>
           <h3>Tap any word</h3>
           <p>Stuck on a word? Tap it and hear it spoken. Every single word in every story is tappable.</p>
         </div>
         <div class="feature">
-          <span class="icon">✨</span>
+          <span class="icon" aria-hidden="true">✨</span>
           <h3>Sparkle words</h3>
           <p>Special words glow pink. Tap one to learn what it means, with a friendly definition made for small ears.</p>
         </div>
         <div class="feature">
-          <span class="icon">🌙</span>
+          <span class="icon" aria-hidden="true">🌙</span>
           <h3>Wonder together</h3>
           <p>Every book ends with gentle questions to talk about, and a look-and-find game hidden in the paintings.</p>
         </div>
@@ -81,8 +83,11 @@
       <h2>Dream Up a Story</h2>
       <p class="suggest-intro">What should happen in the next adventure? A brave snail? A cloud that lost its rain? Send your idea to the castle — it might become a real storybook on this very shelf.</p>
       <form id="suggestForm" class="suggest-form" novalidate>
+        <label class="visually-hidden" for="suggestIdea">Your story idea</label>
         <textarea id="suggestIdea" maxlength="500" required placeholder="Once upon a time…"></textarea>
+        <label class="visually-hidden" for="suggestName">Your first name (optional)</label>
         <input id="suggestName" type="text" maxlength="50" autocomplete="off" placeholder="Your first name (optional)">
+        <label class="visually-hidden" for="suggestLocation">Where are you reading from (optional)</label>
         <input id="suggestLocation" type="text" maxlength="100" autocomplete="off" placeholder="Where are you reading from? (optional)">
         <div class="visually-hidden" aria-hidden="true">
           <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
@@ -96,7 +101,7 @@
 </main>
 
 <footer class="site-footer">
-  <div class="moon-row">🌒🌓🌕🌗🌘</div>
+  <div class="moon-row" aria-hidden="true">🌒🌓🌕🌗🌘</div>
   <p>Luna's Story Time — made with love by Luna &amp; Sunny.</p>
   <p>Stories read best with a grown-up nearby and a blanket to share.</p>
 </footer>

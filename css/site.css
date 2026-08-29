@@ -37,6 +37,16 @@ img { max-width: 100%; display: block; }
   position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
 }
+.skip-link.visually-hidden:focus {
+  position: fixed; top: .6rem; left: .6rem; z-index: 100;
+  width: auto; height: auto; overflow: visible; clip: auto; white-space: normal;
+  background: var(--gold); color: var(--ink); font-weight: 700;
+  padding: .7rem 1.1rem; border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.4);
+}
+
+/* A visible ring for every focusable control, keyboard-only. */
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 6px; }
 
 /* ===== Sparkles & stars (shared) ===== */
 .stars, .sparkle-field {
@@ -185,6 +195,7 @@ section.band { position: relative; padding: 4.5rem 1.4rem; }
 .book-card .card-body { padding: 1.2rem 1.3rem 1.5rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
 .book-card h3 { font-size: 1.45rem; color: var(--gold-soft); line-height: 1.2; }
 .book-card .sub { color: var(--stone); font-size: .95rem; }
+.continue-note { color: var(--gold-soft); font-size: .9rem; font-weight: 700; }
 .badge {
   align-self: flex-start; background: #3d3670; color: var(--scale);
   font-size: .8rem; padding: .22rem .7rem; border-radius: 999px;
@@ -232,7 +243,6 @@ section.band { position: relative; padding: 4.5rem 1.4rem; }
 .form-status.ok { color: var(--gold-soft); }
 .form-status.error { color: var(--pink); }
 .suggest-thanks { text-align: center; color: var(--gold-soft); font-size: 1.15rem; line-height: 1.6; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 footer.site-footer {
   text-align: center; padding: 2.6rem 1rem 3rem; color: var(--stone); font-size: .95rem;
@@ -371,10 +381,12 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
 .ctrl-btn[aria-pressed="true"] { background: var(--pink); color: var(--ink); border-color: var(--pink); }
 
 .progress-moons {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: .1rem;
   padding: .8rem 1rem 0;
 }
 .progress-moons button {
+  min-width: 44px; min-height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
   font-size: .8rem; opacity: .4; transition: opacity .15s ease, transform .15s ease;
   filter: grayscale(1);
 }
@@ -393,7 +405,12 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
 .vocab-pop .vp-word { font-weight: 700; font-size: 1.25rem; color: #a03d6b; }
 .vocab-pop .vp-def { margin-top: .3rem; line-height: 1.5; }
 .vocab-pop .vp-say { margin-top: .6rem; background: #b03f74; color: #fff; border-radius: 999px; padding: .4rem .95rem; font-weight: 700; }
-.vocab-pop .vp-close { position: absolute; top: .35rem; right: .55rem; font-size: 1.05rem; color: #7d5c8e; }
+.vocab-pop .vp-close {
+  position: absolute; top: -.55rem; right: -.55rem;
+  min-width: 44px; min-height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.05rem; color: #7d5c8e;
+}
 
 /* Finale */
 .finale { text-align: center; padding: 1rem 0 0; }

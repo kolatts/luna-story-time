@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Princess Moon's Castle Life — Luna's Story Time</title>
 <meta name="description" content="A cozy no-fail gather, craft, and decorate game set in Princess Moon's castle world.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
@@ -14,23 +14,25 @@
 </head>
 <body class="game-body">
 
+<a class="skip-link visually-hidden" href="#main">Skip to content</a>
+
 <header class="game-top">
   <a class="home-link" href="index.html" aria-label="Back to the bookshelf">🌙 Home</a>
   <h1 class="game-title">Princess Moon's Castle Life</h1>
-  <div class="top-actions"><button type="button" id="btnSound" class="chip-btn icon-chip" aria-pressed="true" aria-label="Turn voices off" title="Voices are on">🔊</button><button type="button" id="btnReset" class="chip-btn">Start over</button></div>
+  <div class="top-actions"><button type="button" id="btnHelp" class="chip-btn icon-chip" aria-label="How to play">❓</button><button type="button" id="btnSound" class="chip-btn icon-chip" aria-pressed="true" aria-label="Turn voices off" title="Voices are on">🔊</button><button type="button" id="btnReset" class="chip-btn">Start over</button></div>
 </header>
 
-<main class="game-main">
+<main class="game-main" id="main">
   <section class="stage-wrap">
-    <div class="location-banner" id="locationName"></div>
+    <div class="location-banner" id="locationName" role="status" aria-live="polite"></div>
     <!-- Phaser mounts its canvas in here -->
-    <div id="mapView" class="map-view" role="img" aria-label="Princess Moon's world"></div>
-    <div id="dialogueBox" class="dialogue-box" role="dialog" aria-label="Conversation" hidden>
+    <div id="mapView" class="map-view" role="img" aria-label="Princess Moon's world" tabindex="-1"></div>
+    <div id="dialogueBox" class="dialogue-box" role="dialog" aria-modal="true" aria-label="Conversation" hidden>
       <div class="dialogue-portrait" id="dialoguePortrait"></div>
       <div class="dialogue-text" id="dialogueText"></div>
       <button type="button" id="dialogueNext" class="cta small">Next ✨</button>
     </div>
-    <div id="toast" class="toast" hidden></div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
     <!-- Touch controls sit ON the stage (same box as #mapView) and are
          pointer-events:none apart from the action button, so canvas taps for
          placing furniture still reach Phaser. -->
@@ -70,12 +72,28 @@
 </footer>
 
 <div id="confirmModal" class="modal" hidden>
-  <div class="modal-card">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="confirmText">
     <p id="confirmText">Start over from the very beginning? Your castle will be empty again.</p>
     <div class="modal-actions">
       <button type="button" id="confirmYes" class="cta">Yes, start over</button>
       <button type="button" id="confirmNo" class="cta ghost">Keep my castle</button>
     </div>
+  </div>
+</div>
+
+<div id="helpOverlay" class="intro-overlay" hidden>
+  <div class="intro-card" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button type="button" id="btnHelpClose" class="intro-close" aria-label="Close how to play">✖</button>
+    <h2 id="helpTitle">🏰 Princess Moon's Castle Life</h2>
+    <p>Wander the moonlit grounds with Princess Moon, gather sparkly treasures, and craft cozy things for your castle.</p>
+    <ul>
+      <li>🕹️ Drag the floating circle (or the arrow keys) to <b>walk</b></li>
+      <li>✨ Tap the sparkle button (or Space/Enter) to <b>gather, talk, or open</b> something</li>
+      <li>🎒 <b>Satchel</b> holds what you've gathered</li>
+      <li>🧵 <b>Crafting</b> turns what's in your satchel into cozy things</li>
+      <li>🪑 <b>Furniture</b> — tap a piece, then tap a floor tile to place it 💫</li>
+    </ul>
+    <button type="button" id="btnHelpGotIt" class="cta small">Let's play ✨</button>
   </div>
 </div>
 

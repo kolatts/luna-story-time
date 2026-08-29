@@ -113,7 +113,9 @@
   var stickEl = $("touchStick");
   var stickNub = $("touchStickNub");
   var introOverlay = $("introOverlay");
+  var introClose = $("introClose");
   var bubbleEl = $("speechBubble");
+  var btnHelp = $("btnHelp");
   var btnMenu = $("btnMenu");
   var menuOverlay = $("menuOverlay");
   var menuHint = $("menuHint");
@@ -1641,6 +1643,7 @@
     menuOverlay.hidden = true;
     disarmClear();
     graceUntil = Date.now() + 1000;   // no ambush the instant the panel closes
+    if (btnMenu) btnMenu.focus();     // the only control that opens this menu
   }
 
   function disarmClear() {
@@ -1672,6 +1675,8 @@
     flushSave();
   }
 
+  var introOpenedViaHelp = false;
+
   function closeIntro() {
     if (!introOpen) return;
     introOpen = false;
@@ -1680,6 +1685,27 @@
       setTimeout(function () { introOverlay.hidden = true; }, 260);
     }
     releaseIntro();
+    if (introOpenedViaHelp) {
+      introOpenedViaHelp = false;
+      if (btnHelp) btnHelp.focus();
+    } else if (mapView) {
+      mapView.focus();
+    }
+  }
+
+  /* Reopen the how-to-play at any point in the session (js/game.js's sibling
+     help overlay follows the same idea). busy() already treats introOpen as
+     a pause, so reopening mid-floor safely freezes movement/hush/spotting. */
+  function openHelp() {
+    if (introOpen || !introOverlay) return;
+    if (menuOpen) closeMenu();
+    introOpenedViaHelp = true;
+    introOpen = true;
+    heldKeys = [];
+    stopRepeat();
+    introOverlay.classList.remove("closing");
+    introOverlay.hidden = false;
+    if (introClose) introClose.focus();
   }
 
   /* ================= Input ================= */
@@ -1704,6 +1730,19 @@
     if (menuOverlay) {
       menuOverlay.addEventListener("click", function (e) {
         if (e.target === menuOverlay) closeMenu();   // tap the dark edge to dismiss
+      });
+    }
+
+    if (btnHelp) btnHelp.addEventListener("click", openHelp);
+    if (introClose) {
+      introClose.addEventListener("click", function (e) {
+        e.stopPropagation();
+        closeIntro();
+      });
+    }
+    if (introOverlay) {
+      introOverlay.addEventListener("click", function (e) {
+        if (e.target === introOverlay) closeIntro();   // tap the dark edge to dismiss
       });
     }
 
@@ -1765,7 +1804,7 @@
       return;                             // the panel owns the keyboard while open
     }
     if (introOpen) {
-      if (dir || isSpace || k === "Enter") { e.preventDefault(); closeIntro(); }
+      if (dir || isSpace || k === "Enter" || k === "Escape") { e.preventDefault(); closeIntro(); }
       return;
     }
     if (k === "Escape" || k === "m" || k === "M") { e.preventDefault(); openMenu(); return; }

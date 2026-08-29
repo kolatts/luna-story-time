@@ -105,6 +105,10 @@
   var confirmText = $("confirmText");
   var confirmYes = $("confirmYes");
   var confirmNo = $("confirmNo");
+  var btnHelp = $("btnHelp");
+  var helpOverlay = $("helpOverlay");
+  var btnHelpClose = $("btnHelpClose");
+  var btnHelpGotIt = $("btnHelpGotIt");
 
   /* ================= Runtime ================= */
 
@@ -136,6 +140,7 @@
   var resIndex = {};           // "x:y" -> resource placement (current area)
 
   var dialogue = null;         // { id, lines, i, first }
+  var dialogueOpenerFocus = null;
   var placing = null;          // furniture item id being placed
   var tileMenu = null;         // inline Move / Put away menu element
   var travelling = false;
@@ -195,8 +200,8 @@
     }
     var t = toastQueue.shift();
     toastEl.className = "toast" + (t.cls ? " " + t.cls : "");
-    setHidden(toastEl, false);
     toastEl.textContent = t.m;
+    setHidden(toastEl, false);
     void toastEl.offsetWidth;          // restart the fade-in
     toastEl.classList.add("show");
     toastTimer = setTimeout(function () {
@@ -1257,7 +1262,7 @@
   /* ================= Movement & travel ================= */
 
   function busy() {
-    return !!dialogue || !!cutscene || travelling || isModalOpen();
+    return !!dialogue || !!cutscene || travelling || isModalOpen() || isHelpOpen();
   }
 
   function tryMove(dir) {
@@ -1578,8 +1583,10 @@
     }
     dialogue = { id: cid, lines: lines, i: 0, first: first };
     setIcon(dialoguePortrait, "characters", cid, c.emoji || "✨");
+    dialogueOpenerFocus = document.activeElement;
     if (dialogueBox) { setHidden(dialogueBox, false); dialogueBox.classList.add("open"); }
     showDialogueLine();
+    if (dialogueNext && dialogueNext.focus) { try { dialogueNext.focus(); } catch (e) { /* ignore */ } }
   }
 
   function showDialogueLine() {
@@ -1612,11 +1619,22 @@
     endDialogue();
   }
 
+  /* dialogueBox is shared by companion chat and cutscenes; both remember who
+     had focus before it opened (usually the map, via #mapView's tabindex="-1")
+     and hand it back here when it closes. */
+  function restoreDialogueFocus() {
+    var target = dialogueOpenerFocus;
+    dialogueOpenerFocus = null;
+    if (target && target.focus && document.contains(target)) { try { target.focus(); } catch (e) { /* ignore */ } }
+    else if (mapView && mapView.focus) { try { mapView.focus(); } catch (e) { /* ignore */ } }
+  }
+
   function endDialogue() {
     var d = dialogue;
     dialogue = null;
     stopVoice();
     if (dialogueBox) { setHidden(dialogueBox, true); dialogueBox.classList.remove("open"); }
+    restoreDialogueFocus();
     if (!d) return;
     if (d.first && state.met.indexOf(d.id) < 0) {
       var c = world.companions[d.id];
@@ -1707,8 +1725,10 @@
     stopRepeat();
     releaseStick(true);
     cutscene = { id: cs.id, steps: clean, i: 0, actors: {}, taken: {} };
+    dialogueOpenerFocus = document.activeElement;
     if (dialogueBox) { setHidden(dialogueBox, false); dialogueBox.classList.add("open"); }
     showCutsceneStep();
+    if (dialogueNext && dialogueNext.focus) { try { dialogueNext.focus(); } catch (e) { /* ignore */ } }
   }
 
   /* A free tile for a visitor: the offset from the player, clamped into the
@@ -1780,6 +1800,7 @@
     cutscene = null;
     stopVoice();
     if (dialogueBox) { setHidden(dialogueBox, true); dialogueBox.classList.remove("open"); }
+    restoreDialogueFocus();
     if (!cs) return;
 
     var actors = [];
@@ -1934,6 +1955,7 @@
       var def = world.resources[id];
       var cell = document.createElement("div");
       cell.className = "inv-item";
+      cell.setAttribute("role", "img");
       cell.setAttribute("title", def.name || id);
       cell.setAttribute("aria-label", count + " " + (def.name || id));
 
@@ -2144,6 +2166,7 @@
      three. The height animation is skipped under prefers-reduced-motion. */
 
   var HUD_KEY = "pm-castle-life-hud";
+  var HELP_SEEN_KEY = "pm-castle-life-help-seen";
   var PANEL_ANIM_MS = 280;
 
   function panelSections() {
@@ -2400,12 +2423,14 @@
   /* ================= Confirm modal ================= */
 
   var confirmAction = null;
+  var confirmOpenerFocus = null;
 
   function isModalOpen() { return !!(confirmModal && !confirmModal.hidden); }
 
   function openConfirm(msg, onYes) {
     if (!confirmModal) { if (onYes) onYes(); return; }
     confirmAction = onYes || null;
+    confirmOpenerFocus = document.activeElement;
     if (confirmText) confirmText.textContent = msg;
     setHidden(confirmModal, false);
     confirmModal.classList.add("open");
@@ -2416,6 +2441,41 @@
     if (!confirmModal) return;
     setHidden(confirmModal, true);
     confirmModal.classList.remove("open");
+    var target = confirmOpenerFocus;
+    confirmOpenerFocus = null;
+    if (target && target.focus && document.contains(target)) { try { target.focus(); } catch (e) { /* ignore */ } }
+  }
+
+  /* ================= How-to-play overlay ================= */
+
+  var helpOpenerFocus = null;
+
+  function isHelpOpen() { return !!(helpOverlay && !helpOverlay.hidden); }
+
+  function markHelpSeen() {
+    try { localStorage.setItem(HELP_SEEN_KEY, "1"); } catch (e) { /* private mode */ }
+  }
+  function helpSeen() {
+    try { return localStorage.getItem(HELP_SEEN_KEY) === "1"; } catch (e) { return false; }
+  }
+
+  function openHelp() {
+    if (!helpOverlay) return;
+    helpOpenerFocus = document.activeElement;
+    setHidden(helpOverlay, false);
+    helpOverlay.classList.add("open");
+    markHelpSeen();
+    var focusTarget = btnHelpClose || btnHelpGotIt;
+    if (focusTarget && focusTarget.focus) { try { focusTarget.focus(); } catch (e) { /* ignore */ } }
+  }
+  function closeHelp() {
+    if (!helpOverlay) return;
+    setHidden(helpOverlay, true);
+    helpOverlay.classList.remove("open");
+    var target = helpOpenerFocus;
+    helpOpenerFocus = null;
+    if (target && target.focus && document.contains(target)) { try { target.focus(); } catch (e) { /* ignore */ } }
+    else if (btnHelp && btnHelp.focus) { try { btnHelp.focus(); } catch (e) { /* ignore */ } }
   }
 
   /* ================= Respawn tick ================= */
@@ -2539,6 +2599,17 @@
     if (confirmNo) confirmNo.addEventListener("click", closeConfirm);
     if (confirmModal) confirmModal.addEventListener("click", function (e) {
       if (e.target === confirmModal) closeConfirm();
+    });
+
+    // How to play
+    if (btnHelp) btnHelp.addEventListener("click", function (e) {
+      if (e && e.detail) btnHelp.blur();   // pointer click: don't keep focus
+      openHelp();
+    });
+    if (btnHelpClose) btnHelpClose.addEventListener("click", closeHelp);
+    if (btnHelpGotIt) btnHelpGotIt.addEventListener("click", closeHelp);
+    if (helpOverlay) helpOverlay.addEventListener("click", function (e) {
+      if (e.target === helpOverlay) closeHelp();
     });
 
     window.addEventListener("resize", closeTileMenu);
@@ -2720,6 +2791,12 @@
       return;
     }
 
+    if (isHelpOpen()) {
+      if (k === "Escape") { e.preventDefault(); closeHelp(); }
+      else if (dir || k === " " || k === "Spacebar") e.preventDefault();   // never scroll behind the overlay
+      return;
+    }
+
     if (cutscene) {
       if (isConfirmKey) {
         if (t === dialogueNext) return;    // the button's own click will advance
@@ -2818,7 +2895,9 @@
 
     maybeCutscene();   // a save that already meets a trigger, reloaded here
     pendingGreeting = firstRun ? "intro" : "welcome";
-    if (firstRun) {
+    if (firstRun && !helpSeen()) {
+      openHelp();
+    } else if (firstRun) {
       toast((touchUIOn()
         ? "Drag the circle to walk · ✨ to gather"
         : "Walk with the arrow keys · ✨ to gather") +
@@ -2843,6 +2922,7 @@
     // would otherwise win over the plain `hidden` attribute).
     setHidden(dialogueBox, true);
     setHidden(confirmModal, true);
+    setHidden(helpOverlay, true);
     setHidden(toastEl, true);
     setHidden(decorHint, true);
 

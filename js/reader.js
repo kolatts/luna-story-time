@@ -15,12 +15,40 @@
   var slow = false;
   var autoMode = false;
   var speaking = false;
+  var renderCount = 0;   // used to skip the initial-load focus steal
 
   var host = document.getElementById("spreadHost");
   var moonsNav = document.getElementById("progressMoons");
   var playBtn = document.getElementById("playBtn");
   var prevBtn = document.getElementById("prevBtn");
   var nextBtn = document.getElementById("nextBtn");
+  var bigTextBtn = document.getElementById("bigTextBtn");
+  var speedBtn = document.getElementById("speedBtn");
+  var autoBtn = document.getElementById("autoBtn");
+
+  /* ---------- Reader preferences + reading position (localStorage) ---------- */
+  var READER_STATE_KEY = "luna-reader-v1";
+  function loadReaderState() {
+    try { return JSON.parse(localStorage.getItem(READER_STATE_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+  function saveReaderState(state) {
+    try { localStorage.setItem(READER_STATE_KEY, JSON.stringify(state)); } catch (e) { /* private mode: play on */ }
+  }
+  var readerState = loadReaderState();
+  if (!readerState.prefs) readerState.prefs = {};
+  if (!readerState.books) readerState.books = {};
+
+  // Storytime/auto mode is deliberately never restored — a page that starts
+  // talking on load is startling, and it's the one toggle with audible side effects.
+  if (readerState.prefs.bigText) {
+    document.body.classList.add("big-text");
+    bigTextBtn.setAttribute("aria-pressed", "true");
+  }
+  if (readerState.prefs.slow) {
+    slow = true;
+    speedBtn.setAttribute("aria-pressed", "true");
+  }
 
   /* ---------- Narration audio (pre-generated Azure "Ana" voice) ---------- */
   var narration = null;   // { pageId: [[ms, charOffset, wordLen], ...] }
@@ -112,6 +140,7 @@
       if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
       speaking = false;
       playBtn.textContent = "🔊";
+      playBtn.setAttribute("aria-label", "Read this page to me");
       clearHighlights();
       if (onDone) onDone();
     };
@@ -168,12 +197,14 @@
     u.onend = function () {
       speaking = false;
       playBtn.textContent = "🔊";
+      playBtn.setAttribute("aria-label", "Read this page to me");
       clearHighlights();
       if (onDone) onDone();
     };
     u.onerror = function () {
       speaking = false;
       playBtn.textContent = "🔊";
+      playBtn.setAttribute("aria-label", "Read this page to me");
       clearHighlights();
     };
     speaking = true;
@@ -245,6 +276,8 @@
       if (vocabMap && vocabMap[clean]) {
         el.classList.add("sparkle");
         el.setAttribute("data-vocab", clean);
+        el.setAttribute("role", "button");
+        el.setAttribute("tabindex", "0");
       }
       el.setAttribute("data-word", clean || m[0]);
       frag.appendChild(el);
@@ -261,7 +294,6 @@
     wrap.className = "art-frame kenburns";
     var img = document.createElement("img");
     img.alt = alt;
-    img.src = base + src;
     img.onerror = function () {
       img.remove();
       var ph = document.createElement("div");
@@ -269,11 +301,13 @@
       ph.textContent = placeholderEmoji || "🌙";
       wrap.appendChild(ph);
     };
+    img.src = base + src;
     wrap.appendChild(img);
     return wrap;
   }
 
   function renderPage(idx, dir) {
+    renderCount++;
     stopSpeaking();
     current = idx;
     host.innerHTML = "";
@@ -337,7 +371,23 @@
 
     host.appendChild(spreadEl);
     updateChrome();
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    window.scrollTo({ top: 0, behavior: "instant" });
+
+    // Warm the cache for the next page's art so the turn feels instant.
+    var nextPage = pages[idx + 1];
+    if (nextPage && nextPage.image) {
+      var pre = new Image();
+      pre.src = base + nextPage.image;
+    }
+
+    // Move focus to the new spread's heading so it doesn't silently drop to
+    // <body> on every turn — but not on the very first render, which would
+    // steal focus from wherever the page naturally starts.
+    var titleEl = spreadEl.querySelector("h2");
+    if (titleEl) {
+      titleEl.setAttribute("tabindex", "-1");
+      if (renderCount > 1) titleEl.focus({ preventScroll: true });
+    }
 
     if (autoMode && page.kind !== "finale") {
       setTimeout(function () { if (autoMode && current === idx) playCurrent(); }, 450);
@@ -404,11 +454,17 @@
     nextBtn.disabled = current === pages.length - 1;
     var moons = moonsNav.querySelectorAll("button");
     for (var i = 0; i < moons.length; i++) {
-      moons[i].classList.toggle("current", i === current);
+      var isCurrent = i === current;
+      moons[i].classList.toggle("current", isCurrent);
       moons[i].classList.toggle("done", i < current);
+      if (isCurrent) moons[i].setAttribute("aria-current", "true");
+      else moons[i].removeAttribute("aria-current");
     }
     var page = pages[current];
     playBtn.style.visibility = page.kind === "finale" ? "hidden" : "visible";
+
+    readerState.books[slug] = { page: current, total: pages.length, lastRead: Date.now() };
+    saveReaderState(readerState);
   }
 
   function go(dir) {
@@ -435,17 +491,27 @@
 
   /* ---------- Vocab popup ---------- */
   var pop = null;
-  function closePop() { if (pop) { pop.remove(); pop = null; } }
-  function showVocab(word, anchorRect) {
+  var popTrigger = null;
+  function closePop() {
+    if (!pop) return;
+    pop.remove();
+    pop = null;
+    if (popTrigger) { popTrigger.focus(); popTrigger = null; }
+  }
+  function showVocab(word, triggerEl) {
     closePop();
     var entry = pages[current].vocabLookup && pages[current].vocabLookup[word];
     if (!entry) return;
+    popTrigger = triggerEl;
+    var anchorRect = triggerEl.getBoundingClientRect();
     pop = document.createElement("div");
     pop.className = "vocab-pop";
     pop.setAttribute("role", "dialog");
+    pop.setAttribute("aria-modal", "true");
+    pop.setAttribute("aria-labelledby", "vpWord");
     pop.innerHTML =
       '<button class="vp-close" aria-label="Close">✖</button>' +
-      '<div class="vp-word">✨ ' + entry.word + "</div>" +
+      '<div class="vp-word" id="vpWord">✨ ' + entry.word + "</div>" +
       '<div class="vp-def">' + entry.definition + "</div>" +
       '<button class="vp-say">🔊 Say it</button>';
     document.body.appendChild(pop);
@@ -453,11 +519,13 @@
     var left = Math.min(Math.max(12, anchorRect.left), window.innerWidth - pop.offsetWidth - 12);
     pop.style.top = top + "px";
     pop.style.left = left + "px";
-    pop.querySelector(".vp-close").addEventListener("click", closePop);
+    var closeBtn = pop.querySelector(".vp-close");
+    closeBtn.addEventListener("click", closePop);
     pop.querySelector(".vp-say").addEventListener("click", function () {
       sayVocab(entry);
     });
     sayVocab(entry);
+    closeBtn.focus();
   }
 
   /* ---------- Events ---------- */
@@ -465,16 +533,20 @@
   nextBtn.addEventListener("click", function () { go(1); });
   playBtn.addEventListener("click", playCurrent);
 
-  document.getElementById("bigTextBtn").addEventListener("click", function () {
+  bigTextBtn.addEventListener("click", function () {
     var on = document.body.classList.toggle("big-text");
     this.setAttribute("aria-pressed", String(on));
+    readerState.prefs.bigText = on;
+    saveReaderState(readerState);
   });
-  document.getElementById("speedBtn").addEventListener("click", function () {
+  speedBtn.addEventListener("click", function () {
     slow = !slow;
     this.setAttribute("aria-pressed", String(slow));
     if (audio && !audio.paused) audio.playbackRate = slow ? 0.75 : 1;
+    readerState.prefs.slow = slow;
+    saveReaderState(readerState);
   });
-  document.getElementById("autoBtn").addEventListener("click", function () {
+  autoBtn.addEventListener("click", function () {
     autoMode = !autoMode;
     this.setAttribute("aria-pressed", String(autoMode));
     if (autoMode && !speaking) playCurrent();
@@ -484,12 +556,12 @@
   host.addEventListener("click", function (e) {
     var t = e.target;
     if (t.classList && t.classList.contains("vocab-chip")) {
-      showVocab(t.getAttribute("data-vocab"), t.getBoundingClientRect());
+      showVocab(t.getAttribute("data-vocab"), t);
       return;
     }
     if (t.classList && t.classList.contains("w")) {
       var v = t.getAttribute("data-vocab");
-      if (v) { showVocab(v, t.getBoundingClientRect()); return; }
+      if (v) { showVocab(v, t); return; }
       var w = t.getAttribute("data-word");
       if (w) {
         t.classList.add("speaking");
@@ -498,15 +570,26 @@
       }
     }
   });
+  host.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    var t = e.target;
+    // Only sparkle-word spans need this — vocab-chip buttons are native
+    // <button>s and already fire click on Enter/Space.
+    if (t.classList && t.classList.contains("w") && t.getAttribute("data-vocab")) {
+      e.preventDefault();
+      showVocab(t.getAttribute("data-vocab"), t);
+    }
+  });
   document.addEventListener("click", function (e) {
     if (pop && !pop.contains(e.target) && !(e.target.classList && (e.target.classList.contains("sparkle") || e.target.classList.contains("vocab-chip")))) closePop();
   });
 
   document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") { closePop(); stopSpeaking(); return; }
+    if (pop) return; // don't let arrow keys/space reach page navigation while the popup is open
     if (e.key === "ArrowRight") go(1);
     else if (e.key === "ArrowLeft") go(-1);
     else if (e.key === " " && e.target === document.body) { e.preventDefault(); playCurrent(); }
-    else if (e.key === "Escape") { closePop(); stopSpeaking(); }
   });
 
   /* Swipe */
@@ -588,7 +671,15 @@
         moonsNav.appendChild(btn);
       });
 
-      renderPage(0, 0);
+      // Resume where we left off — unless that was the finale, in which case
+      // the book is finished and we start back at the cover.
+      var startPage = 0;
+      var saved = readerState.books[slug];
+      if (saved && typeof saved.page === "number") {
+        var clamped = Math.max(0, Math.min(saved.page, pages.length - 1));
+        if (clamped > 0 && pages[clamped].kind !== "finale") startPage = clamped;
+      }
+      renderPage(startPage, 0);
 
       // Pre-generated narration is optional; the Web Speech voice covers its absence.
       fetch(base + "narration/timings.json")

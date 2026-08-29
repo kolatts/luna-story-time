@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>The Great Present Peek — Luna's Story Time</title>
 <meta name="description" content="A gentle stealth game: sneak Princess Moon and Baby Lady down through the castle to peek at the birthday presents.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
@@ -14,30 +14,34 @@
 </head>
 <body class="game-body peek-body">
 
+<a class="skip-link visually-hidden" href="#main">Skip to content</a>
+
 <header class="game-top">
   <a class="home-link" href="index.html" aria-label="Back to the bookshelf">🌙 Home</a>
   <h1 class="game-title">The Great Present Peek</h1>
   <div class="top-actions">
-    <span class="hud-chip" title="Floor">🏰 <b id="hudFloor">1</b></span>
-    <span class="hud-chip" title="Presents peeked">🎁 <b id="hudScore">0</b></span>
-    <span class="hud-chip" title="Best floor / best presents">⭐ <b id="hudBest">1 / 0</b></span>
+    <span class="hud-chip" title="Floor" aria-live="polite"><span aria-hidden="true">🏰</span> <span class="visually-hidden">Floor</span> <b id="hudFloor">1</b></span>
+    <span class="hud-chip" title="Presents peeked" aria-live="polite"><span aria-hidden="true">🎁</span> <span class="visually-hidden">Presents peeked</span> <b id="hudScore">0</b></span>
+    <span class="hud-chip" title="Best floor / best presents"><span aria-hidden="true">⭐</span> <span class="visually-hidden">Best floor and presents peeked</span> <b id="hudBest">1 / 0</b></span>
     <button type="button" id="btnSound" class="chip-btn icon-chip" aria-pressed="true" aria-label="Turn voices off" title="Voices are on">🔊</button>
+    <button type="button" id="btnHelp" class="chip-btn icon-chip" aria-label="How to play">❓</button>
     <button type="button" id="btnMenu" class="chip-btn icon-chip" aria-label="Choose a floor or start over" title="Floors &amp; progress">🗺️</button>
   </div>
 </header>
 
-<main class="game-main">
+<main class="game-main" id="main">
   <section class="stage-wrap">
     <!-- Phaser mounts its canvas in here -->
-    <div id="mapView" class="map-view" role="img" aria-label="A moonlit castle floor, seen from above"></div>
+    <div id="mapView" class="map-view" role="img" aria-label="A moonlit castle floor, seen from above" tabindex="-1"></div>
 
     <!-- Big friendly "Ooh!" bubble when a guest spots the sisters -->
     <div id="speechBubble" class="speech-bubble" role="status" hidden></div>
 
-    <!-- How to play: dismissed by the very first key press or tap -->
+    <!-- How to play: dismissed by the very first key press or tap, and
+         reopenable any time via #btnHelp (js/peek.js openHelp/closeIntro). -->
     <div id="introOverlay" class="intro-overlay">
-      <div class="intro-card">
-        <h2>🎁 The Great Present Peek</h2>
+      <div class="intro-card" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+        <h2 id="introTitle">🎁 The Great Present Peek</h2>
         <p>It's the night before the birthday! Sneak <b>Princess Moon</b> 🧚 and
         <b>Baby Lady</b> 🐶 down through the castle to peek at every present.</p>
         <ul>
@@ -49,6 +53,7 @@
           <li>✨ Peek every present, then bring <b>both</b> sisters to the glowing stairs</li>
         </ul>
         <p class="intro-go">Press any key or tap to start sneaking…</p>
+        <button type="button" id="introClose" class="menu-btn">Got it, keep sneaking 🤫</button>
       </div>
     </div>
 

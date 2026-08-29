@@ -28,6 +28,7 @@
     for (var j = 0; j < 14; j++) {
       var d = document.createElement("span");
       d.className = "drift";
+      d.setAttribute("aria-hidden", "true");
       d.textContent = glyphs[j % glyphs.length];
       d.style.left = Math.random() * 100 + "%";
       d.style.fontSize = 0.6 + Math.random() * 1.2 + "rem";
@@ -78,11 +79,73 @@
     try { localStorage.setItem(SHELF_STATE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
   }
 
+  /* Reading position saved by js/reader.js, read here to power "Continue
+     reading" affordances. A book counts as in progress when it's past the
+     cover and short of the finale page. */
+  var READER_STATE_KEY = "luna-reader-v1";
+  function loadReaderBooks() {
+    try {
+      var raw = JSON.parse(localStorage.getItem(READER_STATE_KEY));
+      return (raw && raw.books) || {};
+    } catch (e) { return {}; }
+  }
+  var readerBooks = loadReaderBooks();
+  function inProgressBook(slug) {
+    var p = readerBooks[slug];
+    if (p && typeof p.page === "number" && p.page > 0 && p.total && p.page < p.total - 1) return p;
+    return null;
+  }
+  function mostRecentInProgressSlug() {
+    var bestSlug = null, bestTime = -1;
+    for (var s in readerBooks) {
+      if (!readerBooks.hasOwnProperty(s)) continue;
+      var p = inProgressBook(s);
+      if (p && typeof p.lastRead === "number" && p.lastRead > bestTime) {
+        bestTime = p.lastRead;
+        bestSlug = s;
+      }
+    }
+    return bestSlug;
+  }
+
+  /* Shared broken-cover fallback for both the bookshelf and the Playroom. */
+  function wireCoverFallback(imgEl, fallbackEmoji, whatLabel) {
+    imgEl.addEventListener("error", function () {
+      var wrap = imgEl.closest(".cover-wrap");
+      if (!wrap) return;
+      wrap.classList.add("cover-fallback");
+      wrap.innerHTML = "";
+      wrap.setAttribute("role", "img");
+      wrap.setAttribute("aria-label", whatLabel + " cover not available");
+      wrap.textContent = fallbackEmoji;
+    });
+  }
+
   fetch("books/series.json")
     .then(function (r) { if (!r.ok) throw new Error("series.json " + r.status); return r.json(); })
     .then(function (data) {
       var ordinals = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
       var shelfState = loadShelfState();
+
+      // Point the hero CTA at the most recently read in-progress book.
+      var cta = document.getElementById("readFirstCta");
+      if (cta) {
+        var mostRecentSlug = mostRecentInProgressSlug();
+        if (mostRecentSlug) {
+          outer:
+          for (var si = 0; si < data.series.length; si++) {
+            var bks = data.series[si].books;
+            for (var bi = 0; bi < bks.length; bi++) {
+              if (bks[bi].slug === mostRecentSlug) {
+                cta.href = "reader.html?book=" + encodeURIComponent(mostRecentSlug);
+                cta.textContent = "🌙 Continue " + bks[bi].title;
+                break outer;
+              }
+            }
+          }
+        }
+      }
+
       data.series.forEach(function (series) {
         var block = document.createElement("section");
         block.className = "series-block";
@@ -123,14 +186,18 @@
         series.books.forEach(function (book) {
           var card = document.createElement("article");
           card.className = "book-card";
+          var progress = inProgressBook(book.slug);
+          var href = "reader.html?book=" + encodeURIComponent(book.slug);
           card.innerHTML =
             '<div class="cover-wrap"><img loading="lazy" alt="Cover of ' + book.title + '" src="' + book.cover + '"></div>' +
             '<div class="card-body">' +
             "<h3>" + book.title + "</h3>" +
             '<p class="sub">' + (book.subtitle || "") + "</p>" +
+            (progress ? '<p class="continue-note">Continue · page ' + progress.page + " of " + (progress.total - 2) + "</p>" : "") +
             '<span class="badge">Ages ' + book.ageRange + "</span>" +
-            '<a class="read-btn" href="reader.html?book=' + encodeURIComponent(book.slug) + '">Read this story 🔊</a>' +
+            '<a class="read-btn" href="' + href + '">' + (progress ? "Continue this story 🔊" : "Read this story 🔊") + "</a>" +
             "</div>";
+          wireCoverFallback(card.querySelector("img"), "🌙", book.title);
           row.appendChild(card);
         });
 
@@ -185,12 +252,7 @@
             (game.badge ? '<span class="badge">' + game.badge + "</span>" : "") +
             '<a class="read-btn" href="' + game.href + '">Play this game ✨</a>' +
             "</div>";
-          var img = card.querySelector("img");
-          img.addEventListener("error", function () {
-            var wrap = card.querySelector(".cover-wrap");
-            wrap.classList.add("cover-fallback");
-            wrap.textContent = "🏰";
-          });
+          wireCoverFallback(card.querySelector("img"), "🏰", game.title);
           row.appendChild(card);
         });
 

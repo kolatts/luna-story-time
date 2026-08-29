@@ -19,4 +19,8 @@ Short version: add a folder under `books/<slug>/` with a `book.json` (see the sc
 the first book) and 4:5 images in `images/`, then list the book in `books/series.json`.
 
 ## Local preview
-Any static server works, e.g. `python -m http.server 8080`.
+`python -m http.server` lacks HTTP Range support, so narration/word-sprite audio seeking
+silently fails locally (it works fine on GitHub Pages). Serve with:
+```
+uv run --with rangehttpserver python -m RangeHTTPServer 8080
+```
