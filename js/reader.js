@@ -12,7 +12,6 @@
   var book = null;
   var pages = [];        // cover page + spreads + finale
   var current = 0;
-  var slow = false;
   var autoMode = false;
   var speaking = false;
   var renderCount = 0;   // used to skip the initial-load focus steal
@@ -25,6 +24,27 @@
   var bigTextBtn = document.getElementById("bigTextBtn");
   var speedBtn = document.getElementById("speedBtn");
   var autoBtn = document.getElementById("autoBtn");
+
+  /* ---------- Reading speed (speed-dial cycle button) ----------
+     audio.playbackRate takes a plain multiplier; the Web Speech API's rate
+     doesn't scale linearly with how fast it actually sounds, so each step
+     gets its own tuned ttsRate rather than reusing the multiplier. */
+  var SPEEDS = [
+    { mult: 0.75, ttsRate: 0.72, icon: "🐢", label: "Slow" },
+    { mult: 1,    ttsRate: 0.92, icon: "🙂", label: "Normal" },
+    { mult: 1.25, ttsRate: 1.05, icon: "🐇", label: "Fast" },
+    { mult: 1.5,  ttsRate: 1.2,  icon: "⚡", label: "Extra fast" }
+  ];
+  var DEFAULT_SPEED_INDEX = 1; // "Normal" — today's un-toggled default
+  var speedIndex = DEFAULT_SPEED_INDEX;
+
+  function syncSpeedButton() {
+    var s = SPEEDS[speedIndex];
+    speedBtn.textContent = s.icon + " " + s.mult + "×";
+    speedBtn.title = "Reading speed: " + s.label;
+    speedBtn.setAttribute("aria-label", "Reading speed: " + s.label + ", " + s.mult + " times. Tap to change speed.");
+    speedBtn.classList.toggle("speed-set", speedIndex !== DEFAULT_SPEED_INDEX);
+  }
 
   /* ---------- Reader preferences + reading position (localStorage) ---------- */
   var READER_STATE_KEY = "luna-reader-v1";
@@ -45,10 +65,13 @@
     document.body.classList.add("big-text");
     bigTextBtn.setAttribute("aria-pressed", "true");
   }
-  if (readerState.prefs.slow) {
-    slow = true;
-    speedBtn.setAttribute("aria-pressed", "true");
+  if (typeof readerState.prefs.speedIndex === "number" && SPEEDS[readerState.prefs.speedIndex]) {
+    speedIndex = readerState.prefs.speedIndex;
+  } else if (readerState.prefs.slow) {
+    // Migrate the old binary "slow" toggle, saved by an earlier version of the reader.
+    speedIndex = 0;
   }
+  syncSpeedButton();
 
   /* ---------- Narration audio (pre-generated Azure "Ana" voice) ---------- */
   var narration = null;   // { pageId: [[ms, charOffset, wordLen], ...] }
@@ -127,7 +150,7 @@
     if (!audio) { audio = new Audio(); audio.preload = "auto"; }
     var bounds = narration[page.audioId];
     audio.src = base + "narration/" + page.audioId + ".mp3";
-    audio.playbackRate = slow ? 0.75 : 1;
+    audio.playbackRate = SPEEDS[speedIndex].mult;
 
     var fellBack = false;
     audio.onerror = function () {
@@ -169,7 +192,7 @@
     synth.cancel();
     var u = new SpeechSynthesisUtterance(text);
     if (chosenVoice) u.voice = chosenVoice;
-    u.rate = slow ? 0.72 : 0.92;
+    u.rate = SPEEDS[speedIndex].ttsRate;
     u.pitch = 1.05;
 
     if (wordSpans && wordSpans.length) {
@@ -540,10 +563,11 @@
     saveReaderState(readerState);
   });
   speedBtn.addEventListener("click", function () {
-    slow = !slow;
-    this.setAttribute("aria-pressed", String(slow));
-    if (audio && !audio.paused) audio.playbackRate = slow ? 0.75 : 1;
-    readerState.prefs.slow = slow;
+    speedIndex = (speedIndex + 1) % SPEEDS.length;
+    syncSpeedButton();
+    if (audio && !audio.paused) audio.playbackRate = SPEEDS[speedIndex].mult;
+    delete readerState.prefs.slow; // superseded by speedIndex
+    readerState.prefs.speedIndex = speedIndex;
     saveReaderState(readerState);
   });
   autoBtn.addEventListener("click", function () {

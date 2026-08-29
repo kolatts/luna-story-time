@@ -273,7 +273,7 @@ body.reader-body { background: radial-gradient(120% 100% at 50% 0%, #2b2452 0%, 
   transition: background .15s ease;
 }
 .top-btn:hover { background: rgba(183,167,212,.3); }
-.top-btn[aria-pressed="true"] { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+.top-btn[aria-pressed="true"], .top-btn.speed-set { background: var(--gold); color: var(--ink); border-color: var(--gold); }
 
 .stage {
   max-width: 68rem; margin: 0 auto; padding: 1.1rem 1rem 6.5rem;
