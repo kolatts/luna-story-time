@@ -259,7 +259,7 @@
         var soon = document.createElement("article");
         soon.className = "book-card coming-soon";
         soon.innerHTML =
-          '<div class="cover-wrap">🧸…</div>' +
+          '<div class="cover-wrap">💖…</div>' +
           '<div class="card-body"><h3>More games are brewing</h3>' +
           '<p class="sub">New ways to play in the world of Castle Everstair — coming soon.</p>' +
           '<span class="badge">Shhh, it’s still a dream</span></div>';
