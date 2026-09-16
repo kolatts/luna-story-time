@@ -1,0 +1,87 @@
+---
+name: add-story
+description: Add a new storybook to Luna's Story Time — turns a manuscript into a book.json, generates on-model artwork with the image-generation skill, playtests, and deploys. Use when the user provides a new story/manuscript, asks to add a book, create book two, regenerate spread art, or edit an existing book's text or images.
+---
+
+# Add a story to Luna's Story Time
+
+Luna's Story Time is a static, no-build site (vanilla JS) published to GitHub Pages from the `main` branch of `kolatts/luna-story-time`. Live at https://kolatts.github.io/luna-story-time/. The site reads `books/series.json` for the bookshelf and `books/<slug>/book.json` for each book — **adding a book means adding a folder; no site code changes needed.**
+
+## Pipeline overview
+
+1. Manuscript → `books/<slug>/book.json`
+2. Artwork → `imagile-dev-tools:image-generation` skill → `books/<slug>/images/`
+3. Register in `books/series.json`
+4. Playtest locally in the browser
+5. Commit, push to `main` — GitHub Pages redeploys automatically. Verify live.
+
+## 1. book.json
+
+Copy the schema from `books/princess-moon-and-the-nevershine-lantern/book.json`. Rules:
+
+- `slug`: kebab-case, matches the folder name.
+- `spreads[].text`: plain text, `\n` for line breaks, `\n\n` between stanzas. **Strip markdown emphasis** (`*word*` → `word`).
+- The book's repeating refrain goes ONLY in the top-level `refrain` field; on spreads where it appears, set `"refrain": true` (do not duplicate the line in `text`). The reader renders it as a styled "Say it with me" callout and appends it to narration.
+- `spreads[].textPosition`: `"top"` or `"bottom"` — alternate so the layout varies; use `"top"` when the image's focal subject is in the lower half.
+- `spreads[].vocab`: 1–2 "sparkle words" per spread, each `{word, definition}` with a definition a 4-year-old understands. Pick words actually present in that spread's text (matching is case-insensitive, simple s-plural aware).
+- `characters[].sheet`: verbatim visual description; these get appended to image prompts so characters stay on-model. Never paraphrase an existing character's sheet — reuse it exactly across books.
+- `questions`: 4 gentle discussion prompts; `lookAndFind`: one seek-and-find sentence.
+- Last spread may carry `"theEnd": "The End — ..."`.
+- Keep `imagePrompt` (scene description WITHOUT character sheets or style) on every spread and the cover, so any image can be regenerated later.
+
+**Proofread**: delegate a subagent to diff book.json text against the manuscript word-by-word and to check JSON validity/consistency (spread numbers, image paths, character ids). Preserve authorial voice — quirky rhymes and invented words are intentional; only fix true typos, and confirm with the user if a change to the manuscript's words seems needed.
+
+## 2. Artwork
+
+Use the `imagile-dev-tools:image-generation` skill (OpenAI Images API). The global art style lives in `.Codex/image-generation/style.md` and is auto-appended to every prompt — don't restate it in prompts, and don't change it without the user asking (visual consistency across books is the product).
+
+- Per-spread prompt = `spreads[].imagePrompt` + the `sheet` of every character in `spreads[].characters`.
+- Size **1024x1280** (4:5 portrait) for cover + spreads, quality `medium` (≈$0.07/image; a 17-image book ≈ $1.20). Only use `high` for the landing hero or if the user asks.
+- Slugs `spread-01`…`spread-16`, `cover`. Generate with a background bash loop over prompt files (see `.Codex/image-generation/generate-all.sh` for the pattern — it skips already-generated slugs, so re-running is safe).
+- **Convert to WebP for the site** — the generated PNGs are ~2.5 MB; the site serves WebP (~200 KB). Run `uv run --with pillow python .Codex/image-generation/to-webp.py <pngs...>` and copy results to `books/<slug>/images/01.webp`…`16.webp` and `cover.webp`. book.json image paths use `.webp`. Original PNGs stay in the run folders as the archival record (don't commit multi-MB PNGs into `books/`).
+- **Review every image** (Read tool) for: character on-model (wings/tail/crown/colors), no text/letters baked into the art, nothing frightening for ages 4–8, and the scene matching the spread. Regenerate misses; for small fixes use `--edit` on the existing PNG.
+- **Prompt pitfalls learned the hard way**: character names that are animal words get literalized (a "Cottontail" became a rabbit — say "the young jaguar cub" in prompts, and add "no rabbits/no other animals" when burned); very dark scenes can come back as a solid black frame (reword to make the light sources explicit); the model loves adding uninvited background animals to nature scenes; vague group nouns ("the tired family crowds the doorway") get literalized as generic extra human children — name every visible character explicitly and add "no other children, no other people, each character exactly once"; even with "(never a crescent)" in the prompt, ~1–2 images per book come back with a crescent sky moon — the reliable fix is a surgical `--edit --no-style` ("replace the crescent moon with a perfectly round full moon ... change nothing else"), which preserves the composition. `.Codex/image-generation/make-prompts.py` builds prompt files straight from a book.json (imagePrompt + sheets).
+- Cover art should leave open sky/space in the upper third (site may overlay the title later).
+
+## 3. Narration (Azure "Ana" voice)
+
+Every page gets a pre-generated MP3 + word timings so the reader uses a warm neural voice instead of the robotic browser default (Web Speech stays as fallback and still powers tap-a-word/vocab).
+
+```bash
+export SPEECH_KEY=$(az cognitiveservices account keys list -n imagile-speech -g imagile-organization --query key1 -o tsv)
+uv run --with azure-cognitiveservices-speech python scripts/generate-narration.py <book-slug>
+```
+
+- Produces `books/<slug>/narration/cover.mp3`, `01.mp3`…`16.mp3` + `timings.json` (word boundaries → reader highlight sync), plus `words.mp3`+`words.json` (per-word audio sprite for tap-a-word) and `vocab/<word>.mp3` (spoken "word + definition" for sparkle-word popups). Commit them all. Page MP3s are skipped if present; delete to force regeneration after text edits.
+- `imagile-speech` is the shared org resource (F0, 0.5M chars/month) provisioned via kolatts/imagile-organization Bicep. Voice: `en-US-AnaNeural`.
+- **The script mirrors reader.js's speakText composition exactly** (cover sentence; spread text + " … " + refrain). If reader.js changes how it composes page text, change the script the same way and regenerate, or highlights drift.
+- After changing any spread's text, regenerate that book's narration.
+
+## 4. Register the book
+
+Append to `books/series.json` under the right series (create a new series entry if needed): `slug`, `title`, `subtitle`, `ageRange`, `cover` path. Remove/keep the "coming soon" card logic alone — it's generated in `js/main.js`.
+
+## 5. Playtest
+
+Serve locally (`uv run --with rangehttpserver python -m RangeHTTPServer 8080` — NOT plain `python -m http.server`, which lacks HTTP Range support, so narration/word-sprite audio seeking silently fails locally while working fine on GitHub Pages) and check with browser tools, at mobile (375px), tablet (768px), and desktop widths:
+
+- Bookshelf shows the new cover; card links to `reader.html?book=<slug>`.
+- Every page renders: art loads (no 🌙 placeholder), text matches, sparkle words glow and pop definitions, refrain callout appears on the right spreads.
+- Read-aloud plays and highlights words (needs a real browser voice; headless CI may lack voices — verify manually or via the Browser pane, not just playwright).
+- Storytime mode auto-advances; prev/next, moons nav, swipe, arrow keys work.
+- Nothing overflows horizontally on mobile.
+
+## 6. Deploy
+
+```bash
+git add -A && git commit -m "Add <title> (book N)" && git push
+```
+
+GitHub Pages serves `main` @ `/ (root)` — no build step, no action needed. Wait ~1 minute, then verify the live URL in a browser (bookshelf + open the new book + read a page aloud). The site must never require a build step; keep everything static and relative-pathed (no leading `/` in URLs — it's hosted under `/luna-story-time/`).
+
+## Voice & content guardrails
+
+- Stories are for ages 4–8: dramatic is fine, frightening/gory is not.
+- **Every story must carry a positive moral** — one that resonates equally with children and the adults reading aloud. The child should feel it ("being scared and going anyway is what brave means"); the grown-up should recognize it in their own life too. Weave it through the story and let the ending land it; never state it as a tacked-on lesson line. At least one of the `questions` should invite the family to talk about it.
+- Definitions and questions address the child directly, warm and simple.
+- Keep the manuscript's line breaks and stanza structure exactly — the rhythm is the point.
