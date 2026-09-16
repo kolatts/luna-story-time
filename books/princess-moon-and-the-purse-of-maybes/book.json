@@ -1,0 +1,268 @@
+{
+  "slug": "princess-moon-and-the-purse-of-maybes",
+  "series": "castle-everstair",
+  "bookNumber": 8,
+  "title": "Princess Moon and the Purse of Maybes",
+  "subtitle": "Book Eight of the Castle Everstair stories",
+  "authors": ["Luna", "Sunny"],
+  "ageRange": "4-8",
+  "refrain": "But you don't have to match to belong.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
+    { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar." },
+    { "id": "leeblebeest", "name": "Blooey", "sheet": "Blooey: a girl the same size as the other small sisters; every bit of her skin is a smooth soft matte blue — face, ears, hands, all of it, like a girl painted gently blue — strange and calm but never frightening, never gory; long straight deep-blue hair; plain long midnight-blue high-collared dress; a quiet patient face with a small unreadable smile." },
+    { "id": "elysian", "name": "Elysian", "sheet": "Elysian: very old witch, one hundred and five years old, small and hunched like a hook; deeply wrinkled pale grey-lavender face with a long nose and heavy-lidded eyes; floor-length black hair that, when light shines through it, drapes into the unmistakable shape of a skull — two round sockets, a jaw, a grin — made only of falling hair strands, never a real skull, and it shifts when she moves; the skull shape appears ONLY in her hair, never on her clothing; plain ragged high-collared black robe with no pattern, no markings, and no skull on it; carries a thin black wand; her cave holds a round black cauldron glowing sick green, a worn twig broom, and an enormous open spell book; no pet and no helper; ugly-scary but calm and certain, never gleeful, never gory or horrific." },
+    { "id": "purpleshine", "name": "Purple Shine", "sheet": "Purple Shine: small sleek cat, purple all over — plum-purple fur, deeper violet ears; large gentle violet eyes; delicate translucent lavender fairy wings, small and fine; her cat body ends in a shimmering amethyst-purple mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver necklace with a tiny purple star charm; calm, warm, watchful, like someone who already knows you." },
+    { "id": "pinkshine", "name": "Pink Shine", "sheet": "Pink Shine: fluffy grown dog, warm rose-pink all over, long soft curly ears; kind dark round eyes; iridescent pearl-pink fairy wings; his dog body ends in a rose-gold mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver collar with a tiny pink star charm; steady and gentle, with a woolly deep bark." },
+    { "id": "cottontail", "name": "Baby Jag Cottontail", "sheet": "Baby Jag Cottontail: young jaguar cub, soft yellow-gold coat with black rosette spots, a tuft of bright pink wavy hair, warm amber eyes, sturdy ordinary paws with small curved claws; no wings and no mermaid tail; a woven seashell bracelet on one front leg." },
+    { "id": "winds", "name": "Winds", "sheet": "Winds: young jaguar cub the same size and age as Cottontail; pale grey-blue coat with cloud-white rosette spots, a tuft of bright wavy blue hair exactly the shape of Cottontail's pink tuft, very wide-open sky-blue eyes, a huge cheerful grin; sturdy ordinary paws; no wings, no mermaid tail, no magic, no sparkle; a woven pale-blue grass bracelet on one front leg." },
+    { "id": "dirt", "name": "Dirt", "sheet": "Dirt: young jaguar cub the same size and age as Cottontail; warm soil-brown coat with dark chocolate-brown rosette spots, a tuft of bright wavy leaf-green hair exactly the shape of Cottontail's pink tuft, calm friendly moss-green eyes, half-lidded and unhurried, a wide slow easy smile; sturdy ordinary paws lightly dusted with garden soil; no wings, no mermaid tail; a woven green-vine bracelet on one front leg." },
+    { "id": "poodle", "name": "Poodle", "sheet": "Poodle: a small lean young grey WOLF (a wolf, never a dog, never a poodle) — barely a quarter the size of Hairs; a narrow clever face, tall pointed ears with one ear notched, bright amber eyes, a long bushy tail with a white tip; scruffy charcoal-and-silver fur that curls oddly tight all over him, which is how he got his name; a small tattered moss-green scarf knotted at his neck; stands and walks on four paws; a sideways scheming grin with small blunt friendly teeth; talkative, mischievous, never fierce, never frightening." },
+    { "id": "hairs", "name": "Hairs", "sheet": "Hairs: an enormous gentle grey wolf, soft dove-grey fur, glossy jet-black tail; extraordinarily long silver-grey hair growing from his head, neck and shoulders and flowing far behind him in ropes and drifts, a hundred years long and never brushed; huge soft amber eyes under kind heavy brows, rounded ears, big dark nose; mouth always closed or softly open — never bared teeth, never snarling, never fierce, never a predator; shy and slow and mountain-sized, like a hill that stood up. Gentle and sad-eyed, not frightening." },
+    { "id": "evilest", "name": "Evilest", "sheet": "Evilest: pale girl, black hair, tall spiky black crown, high-collared black gown, arms crossed, sharp confident smile." },
+    { "id": "cheeblest", "name": "Cheeblest", "sheet": "Cheeblest: pale girl, black hair in two bows and pigtails, deep-purple dress, watchful rather than cruel, eyes slightly too soft for the tower." },
+    { "id": "beedlist", "name": "Beedlist", "sheet": "Beedlist: pale girl dressed entirely in black: long straight black hair, plain long black high-collared dress, black shoes, black ribbon; no crown; no color anywhere on her; small calm unreadable face; perfectly still posture, hands folded in front of her." },
+    { "id": "shock", "name": "Shock", "sheet": "Shock: a tall slender girl, a head taller than the other sisters, always standing very straight; long storm-grey hair falling past her waist; a long charcoal-grey hooded cloak whose hem fades into soft mist; grey gloves; her whole face hidden behind a smooth dark carved mask shaped like a gently scowling storm-cloud creature with two small carved fangs at its frown, round dark eye-holes, a thin hairline crack down one cheek, and a small simple tipped-sideways crescent moon — one clean thin C-shaped curve — scratched above the brow; the mask never comes off and no part of her face is ever visible; unsettling but gentle, never gory or horrific." }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Book cover composition: the great glowing stair of lavender Castle Everstair climbing out of the night sea toward a perfectly round full moon (never a crescent). On the stair, Princess Moon hovers holding up a small round lavender purse with a brightly shining gold clasp, and beside her Baby Lady the winged mermaid-puppy cups a tiny glowing round puff of light in her front paws. All around them, dozens of large slow translucent blue bubbles drift up the stair and into the sky, and wherever a bubble has touched, one step or one patch of stone has turned bright blue. Far down at the bottom step where the stair meets the sea, small and calm, stands an all-blue girl in a midnight-blue dress, watching. Open sky in the upper third for the title. No other people, no other animals."
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The one grey place",
+      "image": "images/01.webp",
+      "imagePrompt": "The twins' bedroom in lavender Castle Everstair at pink morning: lavender stone walls, warm gold light through a round arched window, and outside the window the great stair climbing up toward a perfectly round full moon still faint in the dawn sky. On a plump pillow sits a small round lavender-and-gold purse with a strap and a brightly shining gold clasp. Princess Moon and Baby Lady lean over the pillow, wide-eyed and curious. Purple Shine hovers in the doorway behind them, gentle and watchful. In the far upper corner, glimpsed through the window at the very edge of the horizon where the dark begins, one tiny desaturated pocket of grey grass and grey stones, colorless in a colored world. No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady", "purpleshine"],
+      "text": "Far out, where the dark begins, past the last of the sea,\nthere's a patch that stayed grey when the color came back.\nWitchy poured. The whole world drank. But that one place — no.\nGrey grass. Grey sky. Grey stones in a row.\nAnd something out there hums one note, and hums it wrong.\n\nBut up at the castle the morning was pink,\nand the stair was gold, and the sea was as blue as blue,\nand on the twins' pillow, where nothing had been,\nsat a purse.\n\nA small, round, ordinary purse,\nwith a strap and a clasp and a shine on the clasp.\n\"Whose is it?\" said Moon.\n\"Yours,\" said Purple Shine, from the doorway,\nin the voice she keeps for very old things.\n\"It came with us. All the way. We were saving it.\"",
+      "vocab": [
+        { "word": "ordinary", "definition": "plain and usual, nothing special about it (or so it looks!)" },
+        { "word": "clasp", "definition": "the little clip that snaps a purse closed" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "What the purse can do",
+      "image": "images/02.webp",
+      "imagePrompt": "The castle terrace beside the warm round pool at bright morning, lavender stone and gold light, the sea beyond. Princess Moon has just pulled a tiny glowing golden ladder out of the small lavender purse; the ladder leads up into a little cloud that is only half painted in. Above floats a kite of an impossible shifting rainbow color, and a small curl of gold musical sparkle drifts out of the purse like a folded-up song. Baby Lady holds a small fuzzy round glowing puff of soft light in her front paws (a glowing puff, not an animal, no face). A rock on the terrace has just turned bright pink. Pink Shine watches from the pool's edge, smiling. The round full moon faint and pale in the day sky. No other people, no other animals.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "pinkshine"],
+      "text": "It's a plain-looking purse. It is not a plain purse.\n\nReach in, and your hand finds things that aren't real:\na ladder to a cloud that nobody's built,\na kite the color of Tuesday,\na song that hasn't been sung yet, still folded up small.\nBaby Lady reached in and pulled out a maybe.\n(It squeaked. She kept it.)\n\nStrap it across you and strum, and it's a guitar.\nTuck it under your chin, and it's a violin.\nAnd tap a thing with it, softly,\nand the thing turns whatever color you were thinking of.\nMoon tapped a rock. The rock went pink.\nBaby Lady tapped Moon. Moon went pinker.\n\n\"Where we come from,\" said Pink Shine, gently,\n\"most things weren't real. So we needed somewhere to keep them.\"",
+      "vocab": [
+        { "word": "strum", "definition": "to brush your fingers across guitar strings to make music" },
+        { "word": "violin", "definition": "a small wooden instrument you hold under your chin and play with a bow" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Blue on grey",
+      "image": "images/03.webp",
+      "imagePrompt": "A wide, quiet, colorless grey meadow far from the castle at night: grey grass, a row of grey stones, a soft grey sky, the lavender castle only a distant warm-gold speck on the horizon. In the middle of all the grey stands the only color for miles: a small all-blue girl, calm and patient, and at her feet one stone has just turned bright blue. Beside her, the very old hunched witch stirs a round black cauldron glowing sick green and blows large slow translucent blue bubbles through a bent black straw; a few blue bubbles drift up into the grey sky. Her long black hair, lit from behind by the cauldron glow, falls into the faint shape of a skull made only of hair strands. A perfectly round full moon, pale grey, in the sky (never a crescent). No other people, no animals.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest", "elysian"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "Out in the one grey place, somebody stood\nwho was the only color for miles.\n\nBlue. All-over blue. Blue as the hour before morning.\nBlooey. The fifth one. The one who kept count.\nAnd beside her, hunched like a hook in the grey,\nthe witch from under the bottom step —\nElysian, one hundred and five, and every bit as evil as before,\nstirring a cauldron that glowed a sick green,\nand blowing, through a bent black straw,\nbubbles.\n\nBlue bubbles. Slow ones. The kind that don't pop.\n\"Everything they touch,\" said the witch, \"goes blue.\nAnd a shine that gets caught in one floats off. To you.\"\n\nBlooey watched a bubble drift over a grey stone.\nThe stone went blue. It matched her.\n\"Good,\" she said. \"Now: bigger.\"",
+      "vocab": [
+        { "word": "cauldron", "definition": "a big round pot a witch stirs her potions in" },
+        { "word": "hunched", "definition": "bent over with your shoulders curled forward" }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "The project",
+      "image": "images/04.webp",
+      "imagePrompt": "Close view in the grey meadow at night: the small all-blue girl cups one large slow translucent blue bubble in both hands like a crystal ball, and inside the bubble glows a tiny dream-picture of a whole blue world — a blue castle, a blue stair, a blue sea, a blue round moon. Behind her the very old hunched witch stands at her green-glowing black cauldron with a thin black wand raised, her long black hair falling into the faint shape of a skull made only of hair strands. Grey grass, grey sky, and a scatter of blue bubbles rising. A perfectly round full pale-grey moon in the sky (never a crescent). No other people, no animals.",
+      "textPosition": "top",
+      "characters": ["leeblebeest", "elysian"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "\"A fort,\" said Blooey. \"That's the project.\nNot a small one. Not a pillow one.\nA fort so big it goes over the sea and the stair and the moon,\nover the woods and the wolves and the witch,\nand then there's no outside left at all.\nJust inside. Just blue. Just everybody matching.\"\n\n\"Why?\" said the witch, who only asked so she'd know where to stand.\nBlooey turned a bubble slowly in her hands.\n\"Because I'm the only one,\" she said, \"and I've been counting.\nFive sisters. One blue. Have you ever tried to be the one?\"\n\n\"To grow it that big, you'll need shine,\" said the witch.\n\"Their shine. Both twins. All of it.\"\n\"Then we'll go and get it,\" said Blooey. \"Twice, if we have to.\nI'm patient. I've had practice.\"",
+      "vocab": [
+        { "word": "project", "definition": "a big thing you plan and work on, step by step" },
+        { "word": "patient", "definition": "able to wait a long time without getting upset" }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "First try",
+      "image": "images/05.webp",
+      "imagePrompt": "A cozy castle bathroom at night: lavender stone, a round stone tub full of warm lamplit water and ordinary white foam, a gold lantern. Big slow translucent blue bubbles drift in through an arched window from the stair outside. One blue bubble is popping on the tip of Princess Moon's golden wing while a small gold spark is being drawn inside another bubble that is closing up around it; another bubble pops on Baby Lady's nose. Patches of the room have turned bright blue where bubbles touched: one blue step, a blue towel on a hook, a blue patch of ceiling. Moon's face is turning from delight to alarm; Baby Lady's ears are flat. Through the window, a perfectly round full moon (never a crescent). No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["moon", "babylady"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "The bubbles came up the stair at bathtime,\nwhich is the best time for bubbles, and Blooey knew it.\nThey came slow, and low, and blue, and lovely,\nand the twins laughed and popped them, the way you do —\n\nPop! went a bubble on the tip of Moon's wing,\nand a gold spark jumped in, and the bubble closed back up,\nand floated off down the stair with a shine inside it.\nPop! on Baby Lady's nose. Another spark. Another bubble.\nAnd where the bubbles had touched, the castle went blue:\na blue step. A blue towel. A blue bit of ceiling.\n\n\"Wait,\" said Moon. \"Those are taking.\"\n\"Those are ours,\" said Baby Lady, and her ears went flat.",
+      "vocab": [
+        { "word": "spark", "definition": "a tiny bright bit of light, like the ones that jump off a sparkler" }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "The guitar",
+      "image": "images/06.webp",
+      "imagePrompt": "Princess Moon on the great glowing stair at night, the small lavender purse slung across her body by its strap and held like a little guitar, strumming it. A wave of warm gold-and-pink morning-colored music-light ripples out from it, and dozens of translucent blue bubbles are popping in mid-air in a cascade all up the stair, each releasing a small gold spark that streams back toward the twins. Baby Lady, wings out, taps a blue step with her nose and it is flushing back to lavender and gold. Purple Shine sits a step higher, amused. A perfectly round full moon above the stair (never a crescent). No other people, no other animals.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "purpleshine"],
+      "refrain": true,
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "Moon grabbed the purse and slung it across her,\nand (she'd never done this) she strummed.\n\nIt turned into a guitar the moment she touched it,\nand the note that came out was the color of morning,\nand every blue bubble that heard it went POP,\npop pop pop pop, like rain going upward,\nand the sparks came home, the whole shining set,\nand Baby Lady tapped the blue step gold again,\nand the towel, and the ceiling, and, for good measure, the cat.\n(Purple Shine was already purple. She didn't mind.)\n\nFar below, in the one grey place, Blooey listened,\nand counted the bubbles that came back empty.\n\"One,\" she said, and did not seem sad.\n\"That was one.\"",
+      "vocab": [
+        { "word": "strummed", "definition": "brushed her fingers across the strings to make a sound" },
+        { "word": "upward", "definition": "going up, toward the sky" }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "The ask",
+      "image": "images/07.webp",
+      "imagePrompt": "The bottom step of the great stair at night, where the lavender stone meets the dark sea, lit by one warm gold lantern. The small all-blue girl stands on the bottom step, blue in the lamplight, hands folded, calm, asking. Princess Moon hovers one step above, looking gently down at her, and above the blue girl's head a soft dream-cloud shows what Moon sees: a very long table with many chairs and small blue figures seated all along it. Baby Lady peeks out from behind Moon. A perfectly round full moon over the sea (never a crescent). A quiet, sad, kind moment; nothing frightening. No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest", "moon", "babylady"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "The second time, she came herself.\nBlooey always does. She's honest. It's the strangest thing about her.\n\nShe stood on the bottom step at bedtime, blue in the lamplight,\nand said, \"Lend them. Just for a while. Just for the project.\nWhen it's done, nobody will be the wrong color again.\nNobody. Not even me.\"\n\nAnd Moon did the thing she does. She looked.\nNot at Blooey. At what Blooey was dreaming of wanting.\nAnd there it was: a long table, very long,\nand every single chair with somebody blue in it,\nand nobody, anywhere, looking twice.\n\n\"No,\" said Moon. Softly. The way you say it to someone you like.\n\"Then the slow way,\" said Blooey, and went back down.",
+      "vocab": [
+        { "word": "honest", "definition": "telling the truth, even when it's a strange truth" },
+        { "word": "lamplight", "definition": "the warm glow that comes from a lamp at night" }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "The bubble that doesn't pop",
+      "image": "images/08.webp",
+      "imagePrompt": "Seen from far away across the night sea: one single enormous translucent blue bubble, bigger than the whole castle, has rolled over lavender Castle Everstair and its great stair. Inside the bubble the castle, the stair, the sea and the perfectly round full moon are all tinted shades of blue, every color turned to blue, while outside the bubble the night is still deep indigo and lavender. Along the sea road in the foreground a small all-blue girl walks calmly through the bubble's wall toward the castle. Far behind her, tiny, the hunched old witch stands beside her cauldron glowing sick green. No other people, no animals.",
+      "textPosition": "top",
+      "characters": ["leeblebeest", "elysian"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "The witch had been busy. Witches are.\nShe'd blown one bubble, only one, for a night and a day,\nand it was the size of a hill, and then a mountain,\nand it did not pop, because she'd stirred a don't-pop into it,\nand it rolled.\n\nIt rolled up the sea road, slow as weather.\nIt rolled over the pool and the rocks and the bottom step.\nIt went over the castle like a hand over a candle,\nand inside it, everything, all at once, went blue.\n\nBlue sea. Blue stair. Blue moon, round and blue.\nCottontail's spots: blue. Winds' clouds: bluer.\nDirt's beans, blue. Pink Shine, blue, and not a bit pink.\nMoon's pink hair, blue. Baby Lady's ears, blue.\nEverything matched.\nAnd Blooey walked in through the wall of it, smiling,\nand held out her hands for the shine.",
+      "vocab": [
+        { "word": "mountain", "definition": "a hill so tall its top can reach the clouds" },
+        { "word": "weather", "definition": "what the sky is doing — sun, rain, wind, or clouds" }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Nothing to catch",
+      "image": "images/09.webp",
+      "imagePrompt": "Inside the giant bubble fort, on the castle terrace: everything in the scene is tinted shades of blue — the lavender stone, the sea, the perfectly round full moon overhead, all blue. Princess Moon and Baby Lady are drawn exactly as themselves but every color on them tinted soft blue for this scene, hair and wings and tails blue; only the tiny gold clasp of the small purse at Moon's side keeps a faint gold glint. The small all-blue girl stands in front of them with her hands held out, and a few small blue bubbles hover around the twins' wings finding nothing to catch, drifting away empty. The blue girl's face shows real puzzlement; the twins are calm. In the background the hunched old witch presses a hand to her forehead beside her green-glowing cauldron. No other people, no animals.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest", "moon", "babylady", "elysian"],
+      "refrain": true,
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "And there wasn't any.\n\nOh, it was there. Moon still had every power she'd ever had.\nBut bubbles catch gold. That's how the witch made them.\nAnd there wasn't a gold thing left in the world to see.\nBlooey had painted it out. All of it. Herself.\n\nShe reached for Moon's wings. Blue. Just blue.\nShe reached for Baby Lady's bark. It came out blue, and got away.\n\"Where IS it?\" said Blooey, and for the first time she sounded like the others.\n\"Same place it always was,\" said Moon. \"You just can't tell it from the rest.\"\n\nThe witch said a word that means \"oh dear\" in witch.\n\"Two,\" said Blooey, very quietly. \"That was two.\"\nBut the fort kept growing. It didn't need the shine to grow.\nIt only needed nobody to stop it.",
+      "vocab": [
+        { "word": "painted", "definition": "covered something with color" }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Everybody tries",
+      "image": "images/10.webp",
+      "imagePrompt": "The castle garden inside the giant bubble fort at night, every single thing tinted shades of blue, including every character: all three young jaguar cubs, Princess Moon and Baby Lady are drawn exactly as themselves but with all their colors tinted blue for this scene. The young jaguar cub with the pink tuft rears up clawing at the stretchy translucent bubble wall, which dents inward like jelly around her paws; the cub with the blue tuft beside her blows a gust that ripples the wall; the cub with the green tuft lies flat in the bean rows with new sprouts coming up blue around him. Princess Moon kneels with the small purse, holding up a blue ladder, a blue kite and a blue glowing puff of light, all useless. Baby Lady sits a little apart, thinking. A perfectly round blue-tinted full moon above (never a crescent). No rabbits, no other animals, no other people.",
+      "textPosition": "top",
+      "characters": ["cottontail", "winds", "dirt", "moon", "babylady"],
+      "text": "Cottontail clawed the wall of the bubble.\nIt stretched like jelly. It wobbled. It did not pop.\nWinds blew, and the whole fort drifted a little to the left,\nwith everybody in it. \"Sorry,\" said Winds.\nDirt lay down in the blue beans and closed his eyes,\nand things grew, but they grew blue, and that wasn't the problem.\n\nAnd out past the wall the blue went on going:\nover the woods, over the wolves (Poodle said a wolf word; Hairs said his),\nover the tower, over the tower sisters,\nover the one grey place, which had been grey for so long,\nand now, at last, wasn't. It was blue instead.\nNobody had asked it.\n\nMoon reached in the purse for something that wasn't real,\nand pulled out a ladder, a kite, a maybe,\nand every one of them was blue, and none of them helped.",
+      "vocab": [
+        { "word": "wobbled", "definition": "shook and wiggled from side to side, like jelly" },
+        { "word": "drifted", "definition": "floated slowly along, wherever the wind took it" }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "What Baby Lady heard",
+      "image": "images/11.webp",
+      "imagePrompt": "A quiet close two-shot in the middle of the castle courtyard inside the giant bubble fort, everything tinted shades of blue and softly lit: Baby Lady, small, sitting up and looking upward, drawn exactly as herself but with all her colors tinted blue for this scene, and the small all-blue girl looking down at her. The small purse lies on the blue stone beside Baby Lady, its gold clasp the only faint gold glint. A perfectly round blue-tinted full moon behind them (never a crescent). Nobody else in the picture. Gentle, still, close. No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["babylady", "leeblebeest"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "Now, everybody hears Baby Lady. That's the rule.\nThe fish hear her. The hawk hears her.\nBut here's the other half, that nobody had noticed:\nBaby Lady hears everybody.\n\nShe'd heard Blooey say \"the only one.\"\nShe'd heard \"I've been counting.\"\nAnd she trotted (she trots; it's the tail) to the middle of the blue,\nand looked up at the blue girl, and said:\n\n\"You don't want the world. That's a lot of world.\nYou want somebody. You want one somebody who's the same.\"\n\nBlooey didn't say anything.\nWhen you're right about somebody, they usually don't.",
+      "vocab": [
+        { "word": "trotted", "definition": "moved along quickly with little bouncy steps" },
+        { "word": "noticed", "definition": "saw or heard something and paid attention to it" }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Blue on purpose",
+      "image": "images/12.webp",
+      "imagePrompt": "Inside the giant bubble fort, the whole world soft blue and out of focus in the background. In sharp focus in the center: Baby Lady, who has just tapped herself with the small purse held in her mouth, is now truly, fully blue — her fur, ears, wings and mermaid tail all the same smooth soft matte blue as the blue girl — sitting up straight and proud. The small all-blue girl has gone down on her knees to be level with her, one hand just reaching out toward the puppy, her face open and amazed. The purse's tiny gold clasp glints. A perfectly round blue-tinted full moon above (never a crescent). Nobody else. No other people, no other animals.",
+      "textPosition": "top",
+      "characters": ["babylady", "leeblebeest"],
+      "refrain": true,
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "So Baby Lady picked up the purse in her mouth,\nand she tapped herself with it,\nand she thought, very hard, of blue.\n\nAnd she went blue. All of her. Ears, wings, tail, the tiny curl on top.\nA small blue puppy, sitting down in front of a small blue girl.\n\n\"There,\" said Baby Lady. \"Now you match somebody. Me.\nYou didn't need everybody. You needed one.\nOne is plenty. One is a whole lot, actually.\"\n\nAnd Blooey looked down at the one blue puppy\nin the whole blue world,\nand it was the only thing in it she could see.",
+      "vocab": [
+        { "word": "plenty", "definition": "enough, and then some — as much as you need" }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "A fort is for keeping out",
+      "image": "images/13.webp",
+      "imagePrompt": "A wide shot of lavender Castle Everstair as the enormous blue bubble fort pops: its wall bursts softly into a shower of fine blue droplets and mist, and the deep indigo night sky is reappearing above through the gap, while everything below is still tinted blue and glistening wet. In the foreground the hunched old witch, sour-faced, carries her round black cauldron glowing sick green under one arm and ducks down beneath the bottom step of the stair where the sea begins. In the middle distance, small, the all-blue girl and a small fully-blue winged mermaid-puppy sit together watching the sky come back. A perfectly round full moon at the top returning to its true pale silver (never a crescent). No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["elysian", "leeblebeest", "babylady"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "Here's a thing about forts:\nthey're for keeping something out.\nAnd Blooey, standing there, couldn't think what.\n\nThe bubble felt it first. Bubbles know.\nIt wobbled, once, and let go,\nand the whole enormous don't-pop fort\npopped, the quiet way, like a held breath let out,\nand there was the sky again, and the sea, and the stair,\nall of it still blue, all of it soaking wet.\n\n\"Ridiculous,\" said Elysian, and stirred her cauldron the other way,\nand picked it up, and went back under the bottom step,\nwhere she stayed exactly as evil as before.\nSome steps stay wobbly. That's just steps.",
+      "vocab": [
+        { "word": "ridiculous", "definition": "so silly it makes you shake your head" },
+        { "word": "soaking", "definition": "completely, drippingly wet" }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "The colors come home",
+      "image": "images/14.webp",
+      "imagePrompt": "Full color returning to Castle Everstair at night: Princess Moon flies along the great stair tapping steps with the small purse, and each tap sends warm gold flooding back into the stone, color spreading out behind her like paint dropped in water, while the untouched steps ahead are still blue. Baby Lady, still fully blue all over, taps the young jaguar cub with the pink tuft with her nose and the cub's spots flush back to gold and black. Pink Shine is mid-shake, spraying pink back over himself. The cubs with the blue tuft and the green tuft are getting their colors back beside them. In the far upper corner, at the horizon where the dark begins, the one small far-off patch that was grey is blooming into green, gold and sunset colors. A perfectly round full moon, pale silver (never a crescent). No rabbits, no other animals, no other people.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "cottontail", "winds", "dirt", "pinkshine"],
+      "text": "Then the twins went round with the purse,\nthe way you'd go round with a candle,\ntapping things back.\n\nTap: the sea went blue the proper way, which is different.\nTap: the stair went gold. Tap: Moon's hair went pink.\nTap, tap, tap: three sets of jaguar spots.\nPink Shine got his pink back and shook it like a wet dog, which he is.\n\nAnd when they got to the end of everything,\nto the one grey place, far out where the dark begins,\nthey tapped it, too. And it didn't go grey.\nIt went green, and gold, and sunset, and sea,\nevery color it had been missing, all at once,\nlike it had been holding its breath since Book Seven.\n\nAnd something out there hummed one note,\nand it was nearly, nearly right.",
+      "vocab": [
+        { "word": "proper", "definition": "the right way, the way it's supposed to be" },
+        { "word": "hummed", "definition": "sang a tune with your mouth closed, mmm-mmm" }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "One is plenty",
+      "image": "images/15.webp",
+      "imagePrompt": "The castle garden at night in full warm color, with small gold flowers glowing among the bean rows. A cozy little pillow fort made of two blankets draped over one chair, lit from inside by a gold lantern, with a small blank wooden sign propped at its doorway (the sign is completely blank: no letters, no writing, no marks). The small all-blue girl sits inside the fort, content, and Baby Lady, back to her usual golden-cream colors except for one ear that is still faintly blue, is crawling in to join her. The lavender castle and the great stair behind, under a perfectly round full moon (never a crescent). Nobody else. No other people, no other animals.",
+      "textPosition": "bottom",
+      "characters": ["leeblebeest", "babylady"],
+      "pronunciations": { "Blooey": "ˈbluːi" },
+      "text": "Blooey stayed blue. Of course she did.\nNobody offered to tap her, and she'd have said no.\nBlue's hers. She likes it. That was never the trouble.\n\nBaby Lady's blue faded by morning, mostly.\nOne ear took until Thursday.\nShe didn't mind. She'd have kept it longer, if asked.\n\nAnd in the garden, next to Blooey's seed-spot,\na fort went up that night. A small one. A pillow one.\nTwo blankets, one chair, a lantern,\nand a sign, in Baby Lady's writing (which is mostly paw),\nthat said ROOM FOR ONE MORE.\n\nBlooey sat inside it and counted.\n\"One,\" she said. And then, because the puppy came in: \"Two.\"\nAnd then she stopped counting, which she had never done.",
+      "vocab": [
+        { "word": "faded", "definition": "slowly got lighter and lighter until it was almost gone" }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Bowls",
+      "image": "images/16.webp",
+      "imagePrompt": "A long soup table on the castle terrace at night in full warm color, gold lanterns, steaming bowls, the great stair rising behind toward a perfectly round full yellow moon (never a crescent). Seated along the table, each exactly once: Princess Moon and Baby Lady side by side; Purple Shine and Pink Shine; the three young jaguar cubs (pink tuft, blue tuft, green tuft); the small curly grey wolf and, taking up the whole far side, the enormous long-haired gentle wolf; and the sisters in a row — Evilest, Cheeblest, Beedlist — with the small all-blue girl seated in the middle of them rather than at the end. Far off at the edge of the sea, tiny at the horizon, stands the tall masked grey-cloaked sister. At the near end of the table one full, untouched soup bowl sits before an empty chair. No other people, no other animals.",
+      "textPosition": "top",
+      "characters": ["moon", "babylady", "purpleshine", "pinkshine", "cottontail", "winds", "dirt", "poodle", "hairs", "evilest", "cheeblest", "beedlist", "leeblebeest", "shock"],
+      "refrain": true,
+      "text": "The soup that night had a lot of bowls.\nTwo for two sisters, one crown, one curl.\nA mama's bowl, a papa's. Three jaguar bowls, all spots.\nTwo wolf bowls (one enormous). Five sister bowls in a row,\nand the blue one wasn't at the end this time. She was in the middle.\nSomebody had moved her chair.\n\nAnd one more bowl, full, set, at the end,\nfor anyone stormy who might not be there.\nThere's always one. There always will be.\n\nThen the purse went back on the pillow, where it lives now,\nwith a maybe inside it, squeaking a little,\nand the round yellow moon came up over the stair (yellow, not blue),\nand everyone matched exactly as much as they wanted to,\nwhich was: not very. Which was: enough.\n\nGoodnight.",
+      "theEnd": "The End — of the eighth one.",
+      "vocab": [
+        { "word": "stormy", "definition": "full of wind and rain and thunder, or full of big grumbly feelings" }
+      ]
+    }
+  ],
+  "questions": [
+    "Blooey wanted the whole world to be blue so that everybody would match her. Baby Lady figured out she really only wanted one friend who was the same. Have you ever wanted everyone to like what you like? What did you really want underneath?",
+    "The purse can pull out things that aren't real: a ladder to a cloud, a kite the color of Tuesday, a maybe. If you reached into the purse, what would you pull out?",
+    "Baby Lady turned herself blue on purpose so Blooey wouldn't be the only one. That was a kind thing to do. Can you think of a time you did something so somebody else wouldn't feel alone?",
+    "At the end, everybody at the table was a different color, and that was enough. Talk about it together: what makes you feel like you belong somewhere, even when you're not the same as everyone else?"
+  ],
+  "lookAndFind": "The purse is in almost every picture, and its clasp stays a tiny bit gold even when the whole world goes blue. Can you find it? And watch for the one grey place far off in the corner: it's grey at the start, blue in the middle, and full of color by the end."
+}

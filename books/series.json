@@ -54,6 +54,13 @@
           "subtitle": "Book Seven of the Castle Everstair stories",
           "ageRange": "4-8",
           "cover": "books/poodle-hairs-and-the-mermaids-tale/images/cover.webp"
+        },
+        {
+          "slug": "princess-moon-and-the-purse-of-maybes",
+          "title": "Princess Moon and the Purse of Maybes",
+          "subtitle": "Book Eight of the Castle Everstair stories",
+          "ageRange": "4-8",
+          "cover": "books/princess-moon-and-the-purse-of-maybes/images/cover.webp"
         }
       ]
     },
