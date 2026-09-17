@@ -2,7 +2,7 @@
 
 Cheeblest joins the game as a **friend** (a fifth companion). The other tower sisters — Evilest,
 Beedlist, Shock — **drop in for a short cutscene and leave**, which is how Cheeblest ends up staying.
-Leeblebeest may appear too if it fits the scene.
+Blooey may appear too if it fits the scene.
 
 Tone: this is a cozy no-fail game for 4-8 year olds. The sisters are *storybook* spooky — dramatic,
 a little haughty, never actually frightening, never threatening the player. Nobody is in danger. The
@@ -58,7 +58,7 @@ global style string from `.claude/image-generation/style.md`. Look at an existin
 (`game/assets/characters/cottontail.webp`) first and match its scale and framing.
 
 QC every image before accepting it: correct canon (Shock fully masked, no face; Beedlist entirely
-black with no colour; Leeblebeest blue all over), no text in the image, real transparency, and
+black with no colour; Blooey blue all over), no text in the image, real transparency, and
 consistent with the other five sprites.
 
 ## Voices

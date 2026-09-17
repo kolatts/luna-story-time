@@ -153,5 +153,5 @@ stolen/saved counts and the same `done` result. Plus a solo run against AI Snack
 - Bible rules 4/5 (Shock's mask), 7 (never gone forever), 8 (bedtime-safe) apply.
 - Villainy is *mischief*: snackers giggle, the steal line is "off to a midnight feast!".
 - Moon and Baby Lady never argue (rule 1) — victory quips are team-wide, never at a sister.
-- Leeblebeest on the snacker side is the watcher playing pretend — her end-screen line when she
+- Blooey on the snacker side is the watcher playing pretend — her end-screen line when she
   wins: "Somebody had to count the cupcakes."

@@ -37,7 +37,7 @@
     shock:       { side: "snackers", name: "Shock",         emoji: "⛈️", img: "game/assets/characters/shock.webp" },
     elysian:     { side: "snackers", name: "Elysian",       emoji: "🧙", img: "party/assets/characters/elysian.webp" },
     unicorn:     { side: "snackers", name: "The Unicorn",   emoji: "🦄", img: "party/assets/characters/unicorn.webp" },
-    leeblebeest: { side: "snackers", name: "Leeblebeest",   emoji: "🔵", img: "peek/assets/characters/leeblebeest.webp" }
+    leeblebeest: { side: "snackers", name: "Blooey",   emoji: "🔵", img: "peek/assets/characters/leeblebeest.webp" }
   };
 
   var MINIONS = {
@@ -954,7 +954,7 @@
 
     var leeble = winner === "snackers" && result && result.stats && Object.keys(result.stats).some(function (pid) {
       return result.stats[pid] && result.stats[pid].char === "leeblebeest" && result.stats[pid].steals > 0;
-    }) ? '<p class="soft">"Somebody had to count the cupcakes." — Leeblebeest</p>' : "";
+    }) ? '<p class="soft">"Somebody had to count the cupcakes." — Blooey</p>' : "";
 
     showOverlay(
       "<h2>" + headline + "</h2>" +

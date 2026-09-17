@@ -82,7 +82,7 @@
   var GUEST_NAMES = {
     winds: "Winds", dirt: "Dirt", cottontail: "Cottontail", cheeblest: "Cheeblest",
     evilest: "Evilest", beedlist: "Beedlist", purpleshine: "Purpleshine",
-    pinkshine: "Pinkshine", leeblebeest: "Leeblebeest"
+    pinkshine: "Pinkshine", leeblebeest: "Blooey"
   };
   var PATROL_IDS = ["winds", "dirt", "cottontail", "cheeblest", "evilest",
     "beedlist", "purpleshine", "pinkshine"];

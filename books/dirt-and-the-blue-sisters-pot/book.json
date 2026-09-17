@@ -18,7 +18,7 @@
   "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
   "characters": [
     { "id": "dirt", "name": "Dirt", "sheet": "Dirt: young jaguar cub the same size and age as Cottontail; warm soil-brown coat with dark chocolate-brown rosette spots, a tuft of bright wavy leaf-green hair exactly the shape of Cottontail's pink tuft, calm friendly moss-green eyes, half-lidded and unhurried, a wide slow easy smile; sturdy ordinary paws lightly dusted with garden soil; no wings, no mermaid tail; a woven green-vine bracelet on one front leg." },
-    { "id": "leeblebeest", "name": "Leeblebeest", "sheet": "Leeblebeest: a girl the same size as the other small sisters; every bit of her skin is a smooth soft matte blue — face, ears, hands, all of it, like a girl painted gently blue — strange and calm but never frightening, never gory; long straight deep-blue hair; plain long midnight-blue high-collared dress; a quiet patient face with a small unreadable smile; she carries a little round clay pot of plain unglazed brown clay, small as a teacup, cupped carefully in both hands." },
+    { "id": "leeblebeest", "name": "Blooey", "sheet": "Blooey: a girl the same size as the other small sisters; every bit of her skin is a smooth soft matte blue — face, ears, hands, all of it, like a girl painted gently blue — strange and calm but never frightening, never gory; long straight deep-blue hair; plain long midnight-blue high-collared dress; a quiet patient face with a small unreadable smile; she carries a little round clay pot of plain unglazed brown clay, small as a teacup, cupped carefully in both hands." },
     { "id": "moon", "name": "Princess Moon", "sheet": "Princess Moon: young girl, long wavy pink hair, large dark-blue eyes, rosy cheeks; delicate translucent golden fairy wings with fine filigree veining; silver iridescent mermaid tail with pearl-sheen scales; small gold crown topped with a crescent moon; pearl necklace with a gold crescent pendant." },
     { "id": "babylady", "name": "Baby Lady", "sheet": "Baby Lady: small fluffy cocker-spaniel puppy, golden-cream curly ears, dark round eyes; iridescent pearl-white fairy wings, smaller and softer than Moon's; pale silver-pink mermaid tail in place of back legs — she has no back legs and no back paws, her puppy body ends in the mermaid tail, front paws only; tiny gold crescent charm on a pearl collar." },
     { "id": "purpleshine", "name": "Purple Shine", "sheet": "Purple Shine: small sleek cat, purple all over — plum-purple fur, deeper violet ears; large gentle violet eyes; delicate translucent lavender fairy wings, small and fine; her cat body ends in a shimmering amethyst-purple mermaid tail in place of back legs — no back legs, no back paws, front paws only; a thin silver necklace with a tiny purple star charm; calm, warm, watchful, like someone who already knows you." },
@@ -36,11 +36,11 @@
   },
   "questions": [
     "Dirt loves dirt — gardens and worms and seeds and all of it — and he doesn't mind one bit that everyone finds his garden boring. Is there something you love that other people don't understand yet? What would you show them first?",
-    "Leeblebeest's pot only filled up when Moon and Baby Lady were tired and upset. Have you ever felt extra grumpy or spilly when you were really, really tired? What helps you feel like you again?",
+    "Blooey's pot only filled up when Moon and Baby Lady were tired and upset. Have you ever felt extra grumpy or spilly when you were really, really tired? What helps you feel like you again?",
     "Cottontail wanted to fight, but there was nothing to pounce on — and lying down in the garden turned out to be the bravest plan of all. Why do you think resting worked when claws and wind couldn't?",
-    "Nobody ever let Leeblebeest rest — she stayed up keeping watch while everyone else slept. Cheeblest patted the dirt beside her and said, \"You get to be a seed too.\" Why do you think that was exactly the right thing to say?"
+    "Nobody ever let Blooey rest — she stayed up keeping watch while everyone else slept. Cheeblest patted the dirt beside her and said, \"You get to be a seed too.\" Why do you think that was exactly the right thing to say?"
   ],
-  "lookAndFind": "There's a crescent moon hiding somewhere in almost every picture — and watch Leeblebeest's little clay pot: every time you see it, it's a little bit fuller. Can you find the crescents, and keep an eye on that pot?",
+  "lookAndFind": "There's a crescent moon hiding somewhere in almost every picture — and watch Blooey's little clay pot: every time you see it, it's a little bit fuller. Can you find the crescents, and keep an eye on that pot?",
   "spreads": [
     {
       "number": 1,
@@ -83,8 +83,9 @@
     },
     {
       "number": 4,
+      "pronunciations": { "Blooey": "ˈbluːi" },
       "title": "The fifth bed",
-      "text": "Meanwhile, below the castle — below the below,\nwhere the cellars stop pretending to be rooms —\nthree shadows were meeting a stranger.\n\nBlue. All-over blue. Blue face, blue fingers,\nblue as the hour before the morning.\n\"Hello, sisters,\" she said, like they'd talked just yesterday.\n\"I'm Leeblebeest. The fifth one. The last one.\nThere were five little beds in the tower, remember?\nYou kept mine made. That was kind.\"\n\nEvilest stared. Beedlist held her book tighter.\nEven Shock, who is taller than secrets, went still.\nAnd in the blue hands sat a little clay pot,\nsmall as a teacup,\nand empty,\nand patient.",
+      "text": "Meanwhile, below the castle — below the below,\nwhere the cellars stop pretending to be rooms —\nthree shadows were meeting a stranger.\n\nBlue. All-over blue. Blue face, blue fingers,\nblue as the hour before the morning.\n\"Hello, sisters,\" she said, like they'd talked just yesterday.\n\"I'm Blooey. The fifth one. The last one.\nThere were five little beds in the tower, remember?\nYou kept mine made. That was kind.\"\n\nEvilest stared. Beedlist held her book tighter.\nEven Shock, who is taller than secrets, went still.\nAnd in the blue hands sat a little clay pot,\nsmall as a teacup,\nand empty,\nand patient.",
       "image": "images/04.webp",
       "imagePrompt": "Deep beneath the castle in a stone cellar lit by one warm amber lantern: an all-blue girl in a midnight-blue dress sits calmly on an old wooden crate, holding out a small empty clay pot in both hands, her blue face gentle and strange but never frightening; facing her in the lantern glow — Evilest staring with her arms coming uncrossed, Beedlist clutching her small black book to her chest, and the tall masked sister in her grey cloak standing very still at the edge of the light. Every sister is a small child except the tall masked one. Deep indigo shadows, one clear warm light source. Never gory, never horrific.",
       "textPosition": "top",
@@ -96,8 +97,9 @@
     },
     {
       "number": 5,
+      "pronunciations": { "Blooey": "ˈbluːi" },
       "title": "The plan with no fighting in it",
-      "text": "\"Here's where we always went wrong,\" said Leeblebeest.\n\"We fought them. Fighting wakes people up.\nSo we won't lift a finger. We'll just be around:\na creak at nap time. A drip in the quiet.\nA little too much of the wrong kind of nothing.\n\nTired people leak. Upset people spill.\nAnd my little pot catches spills.\"\n\nShe turned the pot slowly around in her hands.\n\"Drip by drip, sisters. Nobody will notice.\nNobody guards against nothing at all.\"",
+      "text": "\"Here's where we always went wrong,\" said Blooey.\n\"We fought them. Fighting wakes people up.\nSo we won't lift a finger. We'll just be around:\na creak at nap time. A drip in the quiet.\nA little too much of the wrong kind of nothing.\n\nTired people leak. Upset people spill.\nAnd my little pot catches spills.\"\n\nShe turned the pot slowly around in her hands.\n\"Drip by drip, sisters. Nobody will notice.\nNobody guards against nothing at all.\"",
       "image": "images/05.webp",
       "imagePrompt": "In the lantern-lit stone cellar, the all-blue girl stands explaining her plan, slowly turning the small empty clay pot in her blue hands, wearing a small patient smile; around the single warm amber lantern the other three lean in — Evilest grinning despite herself, Beedlist watching over the top of her black book, the tall masked sister motionless in her grey cloak; on the stone wall behind them, soft indigo shadow-shapes of a creaking door, a falling drip, and a small moth. Every sister is a small child except the tall masked one. One clear warm light source against deep indigo. Never gory, never horrific.",
       "textPosition": "bottom",
@@ -123,8 +125,9 @@
     },
     {
       "number": 7,
+      "pronunciations": { "Blooey": "ˈbluːi" },
       "title": "The twins who agree",
-      "text": "Now here is a thing that had never, not once,\nnot ever in five whole books, happened before:\n\n\"You're on my side of the sleep,\" snapped Moon.\n\"You yawned in my ear,\" her sister snapped back.\n\nThe room went so quiet the curtains looked shocked.\nThe twins who agree — who were born agreeing —\nlay glaring, too tired to remember they matched.\n\nAnd down in the dark the pot glowed brighter,\ngold sloshing inside like a small stolen sunset.\nLeeblebeest didn't gloat. Well. Mostly.\n\"Drip by drip,\" she told nobody. \"Drip by drip.\"",
+      "text": "Now here is a thing that had never, not once,\nnot ever in five whole books, happened before:\n\n\"You're on my side of the sleep,\" snapped Moon.\n\"You yawned in my ear,\" her sister snapped back.\n\nThe room went so quiet the curtains looked shocked.\nThe twins who agree — who were born agreeing —\nlay glaring, too tired to remember they matched.\n\nAnd down in the dark the pot glowed brighter,\ngold sloshing inside like a small stolen sunset.\nBlooey didn't gloat. Well. Mostly.\n\"Drip by drip,\" she told nobody. \"Drip by drip.\"",
       "image": "images/07.webp",
       "imagePrompt": "Night in the twins' bedroom, lit warm by one small bedside lamp: Moon and the small winged puppy back to back at opposite ends of the same big bed, both glaring tiredly over their shoulders at each other, the blanket tugged in both directions, the window curtains seeming to lean apart in shock; low in one dark corner of the picture, glimpsed through a glowing floor-crack, the small clay pot now a quarter full of swirling gold light, cradled in two blue hands. Gentle comedy in the quarrel, never mean; deep indigo night outside the window with a perfectly round full moon (never a crescent).",
       "textPosition": "bottom",
@@ -164,7 +167,7 @@
       "number": 10,
       "title": "The knock",
       "pronunciations": { "bows": "boʊz" },
-      "text": "That evening there came a knock — soft, unhurried —\nand there on the doorstep stood somebody blue,\nwith a pot full of nearly-all-of-the-gold.\n\n\"I never stole this,\" said Leeblebeest, honestly.\n\"You dropped it. I caught it. There's just a bit left.\nOne more bad bedtime should do it.\"\n\nThen feet on the stairs — it was Cheeblest, breathless,\nbows flying loose like they do when it matters:\n\"It's her! The fifth bed! It's HER!\nDon't be upset — DON'T BE UPSET — it feeds the—\"\n\nwhich is very hard advice,\nif you think about it,\nto take.",
+      "text": "That evening there came a knock — soft, unhurried —\nand there on the doorstep stood somebody blue,\nwith a pot full of nearly-all-of-the-gold.\n\n\"I never stole this,\" said Blooey, honestly.\n\"You dropped it. I caught it. There's just a bit left.\nOne more bad bedtime should do it.\"\n\nThen feet on the stairs — it was Cheeblest, breathless,\nbows flying loose like they do when it matters:\n\"It's her! The fifth bed! It's HER!\nDon't be upset — DON'T BE UPSET — it feeds the—\"\n\nwhich is very hard advice,\nif you think about it,\nto take.",
       "image": "images/10.webp",
       "imagePrompt": "Night at the castle's great arched wooden front door, warm gold light spilling out onto the steps: on the doorstep stands the all-blue girl, calm and unhurried, holding up the small clay pot now brimming with bright swirling gold light that lights her blue face from below; in the warm glowing doorway stand Moon and the small winged puppy, tired and dim, looking up at her; and up the castle steps behind the blue girl races Cheeblest, taking them two at a time, hair bows flying loose, mouth open mid-warning, one arm pointing at the blue girl. Every sister is a small child. No other children and no other people anywhere in the image — exactly these four characters, each appearing exactly once. Deep indigo night, perfectly round full moon (never a crescent). Dramatic but gentle, never gory.",
       "textPosition": "top",
@@ -202,8 +205,9 @@
     },
     {
       "number": 13,
+      "pronunciations": { "Blooey": "ˈbluːi" },
       "title": "What calm is made of",
-      "text": "The pot went quiet.\nLeeblebeest shook it. She turned it. She listened.\nNot one drip more.\nBecause here is the thing that nobody told her:\n\ncalm hasn't got any upset in it.\nYou can't catch what nobody's spilling.\n\nAnd all of that gold, in the dark, in the quiet,\ndid what gold does when it finally rests.\nIt rooted.\nTick, went the pot. Tick. Tick. CRACK —\nand roots burst out of it, green and rude,\nand the little pot opened like a flower.",
+      "text": "The pot went quiet.\nBlooey shook it. She turned it. She listened.\nNot one drip more.\nBecause here is the thing that nobody told her:\n\ncalm hasn't got any upset in it.\nYou can't catch what nobody's spilling.\n\nAnd all of that gold, in the dark, in the quiet,\ndid what gold does when it finally rests.\nIt rooted.\nTick, went the pot. Tick. Tick. CRACK —\nand roots burst out of it, green and rude,\nand the little pot opened like a flower.",
       "image": "images/13.webp",
       "imagePrompt": "Night close-up at the garden's edge: the all-blue girl holding the small clay pot up beside her ear and shaking it, puzzled, her blue face lit gold from the pot — and the pot caught at the exact moment of bursting open: fine cracks glowing gold across the clay, small green roots and shoots pushing out through the cracks from the inside, tiny new leaves unfurling, soft gold sparks escaping. Her expression is pure surprise, not anger; never frightening. She is completely alone — exactly one blue girl in the whole image, no duplicate characters, no other people. Deep indigo night lit by the pot's gold-and-green glow, a perfectly round full moon (never a crescent) above.",
       "textPosition": "bottom",
@@ -227,8 +231,9 @@
     },
     {
       "number": 15,
+      "pronunciations": { "Blooey": "ˈbluːi" },
       "title": "A seed too",
-      "text": "Leeblebeest sat down in the bits of her pot,\nand for somebody blue, she looked awfully grey.\n\n\"Five sisters,\" she said. \"And I kept all the watch.\nSomebody had to stay up, keeping count.\nNobody let me — nobody ever —\"\nShe stopped.\nShe was tired. It's hard to say tired things.\n\nAnd Cheeblest — who once had been forgiven herself,\nback when forgiving was newly invented —\ncame and patted the warm brown earth beside her.\n\n\"Lie down,\" she said. \"That's how it starts.\nYou get to be a seed too.\"",
+      "text": "Blooey sat down in the bits of her pot,\nand for somebody blue, she looked awfully grey.\n\n\"Five sisters,\" she said. \"And I kept all the watch.\nSomebody had to stay up, keeping count.\nNobody let me — nobody ever —\"\nShe stopped.\nShe was tired. It's hard to say tired things.\n\nAnd Cheeblest — who once had been forgiven herself,\nback when forgiving was newly invented —\ncame and patted the warm brown earth beside her.\n\n\"Lie down,\" she said. \"That's how it starts.\nYou get to be a seed too.\"",
       "image": "images/15.webp",
       "imagePrompt": "Soft early morning in the garden: the all-blue girl sitting slumped and tired among the blossoming broken pieces of her clay pot — the clay bits sprouting little green shoots and small gold flowers around her — while Cheeblest kneels close beside her, patting the warm brown earth in invitation, her hair bows crooked from running, her smile kind; the first morning gold touching both girls' faces. Every sister is a small child. Gentle, forgiving, warm earth browns and soft golds. Never gory.",
       "textPosition": "bottom",
