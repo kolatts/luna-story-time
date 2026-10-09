@@ -312,13 +312,38 @@
     return spans;
   }
 
-  function makeArt(src, alt, placeholderEmoji) {
+  /* Short, page-turn-triggered magic; decorative and confined to the artwork.
+     CSS stops it within five seconds and disables it for reduced motion. */
+  function addSceneEffect(wrap, effect) {
+    if (["embers", "bubbles", "vortex", "bond", "starlight"].indexOf(effect) < 0) return;
+    var layer = document.createElement("div");
+    layer.className = "scene-magic scene-magic--" + effect;
+    layer.setAttribute("aria-hidden", "true");
+    for (var i = 0; i < 20; i++) {
+      var particle = document.createElement("i");
+      var bubble = effect === "bubbles" || (effect === "bond" && i % 2 === 0);
+      particle.className = "magic-particle" + (bubble ? " magic-bubble" : "");
+      particle.style.setProperty("--x", (7 + (i * 37 % 86)) + "%");
+      particle.style.setProperty("--y", (12 + (i * 23 % 77)) + "%");
+      particle.style.setProperty("--size", (bubble ? 10 + i % 5 * 6 : 3 + i % 4) + "px");
+      particle.style.setProperty("--drift", (-45 + i * 17 % 90) + "px");
+      particle.style.setProperty("--delay", (i % 5 * 0.12) + "s");
+      particle.style.setProperty("--duration", (3.2 + i % 4 * 0.3) + "s");
+      particle.style.setProperty("--angle", (i * 53) + "deg");
+      layer.appendChild(particle);
+    }
+    wrap.appendChild(layer);
+  }
+
+  function makeArt(src, alt, placeholderEmoji, effect) {
     var wrap = document.createElement("div");
     wrap.className = "art-frame kenburns";
     var img = document.createElement("img");
     img.alt = alt;
     img.onerror = function () {
       img.remove();
+      var magic = wrap.querySelector(".scene-magic");
+      if (magic) magic.remove();
       var ph = document.createElement("div");
       ph.className = "art-placeholder";
       ph.textContent = placeholderEmoji || "🌙";
@@ -326,6 +351,7 @@
     };
     img.src = base + src;
     wrap.appendChild(img);
+    addSceneEffect(wrap, effect);
     return wrap;
   }
 
@@ -343,7 +369,7 @@
     if (page.kind === "finale") {
       renderFinale(spreadEl);
     } else {
-      spreadEl.appendChild(makeArt(page.image, page.alt, page.emoji));
+      spreadEl.appendChild(makeArt(page.image, page.alt, page.emoji, page.effect));
 
       var panel = document.createElement("div");
       panel.className = "text-panel";
@@ -649,6 +675,7 @@
           ? b.title + ". " + b.subtitle + "."
           : b.title + ". " + b.subtitle + ". Written with love by " + b.authors.join(" and ") + ".",
         image: b.cover.image,
+        effect: b.cover.effect,
         alt: "Cover: " + b.title,
         emoji: "🌙",
         textPosition: "bottom",
@@ -676,6 +703,7 @@
           refrain: !!s.refrain,
           theEnd: s.theEnd,
           image: s.image,
+          effect: s.effect,
           alt: "Illustration: " + s.title,
           emoji: "✨",
           textPosition: s.textPosition === "top" ? "top" : "bottom",

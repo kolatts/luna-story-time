@@ -295,6 +295,62 @@ body.reader-body { background: radial-gradient(120% 100% at 50% 0%, #2b2452 0%, 
 }
 .art-frame img { width: 100%; height: 100%; object-fit: cover; }
 .art-frame.kenburns img { animation: kenburns 26s ease-in-out infinite alternate; }
+.scene-magic {
+  position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+  border-radius: inherit; contain: paint;
+  --magic-color: #ffe5a0;
+}
+.scene-magic--embers { --magic-color: #ffbb63; }
+.scene-magic--bubbles { --magic-color: #d7f4ff; }
+.scene-magic--vortex { --magic-color: #d5a4ff; }
+.magic-particle {
+  position: absolute; left: var(--x); top: var(--y);
+  width: var(--size); height: var(--size); border-radius: 50%;
+  background: var(--magic-color); opacity: 0;
+  box-shadow: 0 0 9px 2px var(--magic-color);
+  animation: magic-rise var(--duration) var(--delay) ease-out both;
+}
+.magic-bubble {
+  background: radial-gradient(circle at 28% 25%, #ffffffb3 0 5%, #ffffff00 24%);
+  border: 1px solid #e7f8ffb3;
+  box-shadow: inset -2px -2px 5px #acddff40, 0 0 7px #d7f4ff40;
+}
+.scene-magic--starlight .magic-particle { animation-name: magic-glimmer; }
+.scene-magic--vortex .magic-particle {
+  left: 65%; top: 40%; animation-name: magic-orbit;
+}
+.scene-magic--vortex::before {
+  content: ""; position: absolute; left: 43%; top: 22%;
+  width: 44%; aspect-ratio: 1; border-radius: 50%;
+  background: conic-gradient(from 20deg, transparent, #cba0ff55, transparent 35%, #e0c8ff66, transparent 75%);
+  mask-image: radial-gradient(circle, transparent 42%, #000 54%, transparent 70%);
+  animation: magic-swirl 4.8s ease-out both;
+}
+@keyframes magic-rise {
+  0% { opacity: 0; transform: translate(0, 25px) scale(.6); }
+  18% { opacity: .72; }
+  70% { opacity: .45; }
+  100% { opacity: 0; transform: translate(var(--drift), -125px) scale(1.12); }
+}
+@keyframes magic-glimmer {
+  0%, 100% { opacity: 0; transform: translateY(0) scale(.5); }
+  35% { opacity: .7; transform: translateY(-10px) scale(1); }
+  75% { opacity: .25; transform: translateY(-20px) scale(.7); }
+}
+@keyframes magic-orbit {
+  0% { opacity: 0; transform: rotate(var(--angle)) translateX(110px) scale(.6); }
+  20% { opacity: .7; }
+  100% { opacity: 0; transform: rotate(calc(var(--angle) + 200deg)) translateX(8px) scale(.2); }
+}
+@keyframes magic-swirl {
+  0% { opacity: 0; transform: rotate(0) scale(.8); }
+  25% { opacity: .6; }
+  100% { opacity: 0; transform: rotate(160deg) scale(.4); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-magic { display: none; }
+  .scene-magic *, .scene-magic::before { animation: none; }
+}
 @keyframes kenburns {
   0% { transform: scale(1) translateY(0); }
   100% { transform: scale(1.07) translateY(-2%); }

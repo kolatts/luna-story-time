@@ -84,6 +84,20 @@
           "cover": "books/pip-and-the-fire-that-was-too-big/images/cover.webp"
         }
       ]
+    },
+    {
+      "id": "ruby-and-the-dragon-bonds",
+      "name": "Ruby and the Dragon Bonds",
+      "description": "A rainbow-haired princess, baby dragons, and the brave work of caring for one another. Dreamed up by Luna.",
+      "books": [
+        {
+          "slug": "ruby-and-the-egg-nobody-owned",
+          "title": "Ruby and the Egg Nobody Owned",
+          "subtitle": "Book One of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-and-the-egg-nobody-owned/images/cover.webp"
+        }
+      ]
     }
   ]
 }

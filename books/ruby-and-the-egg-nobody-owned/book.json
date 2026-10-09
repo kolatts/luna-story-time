@@ -1,0 +1,395 @@
+{
+  "slug": "ruby-and-the-egg-nobody-owned",
+  "series": "ruby-and-the-dragon-bonds",
+  "bookNumber": 1,
+  "title": "Ruby and the Egg Nobody Owned",
+  "subtitle": "Book One of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "ageRange": "4-8",
+  "refrain": "A hand can hold without holding tight.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver dragon-shaped birthmark centered on her forehead, a tiny three-point gold crown, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover composition, exactly Ruby kneeling beside Flame and Pearl on a lavender garden bridge above a bright blue stream; an empty pearl-white eggshell between them, Ruby offering an open palm, one tiny warm fire sparkle and one transparent bubble hovering above her hands. Ruby in her normal plum dress. Willow trees and distant low round palace roofs, sunrise and generous open sky in upper third for title overlay. No other characters, no text.",
+    "effect": "bond"
+  },
+  "questions": [
+    "Ruby could walk and talk right away, but she still needed help. What do you like getting help with?",
+    "Why did Ruby put down the crown to catch the egg? What would you have wanted to save?",
+    "Pearl could choose whether to stay. How can you show a friend you care without making their choices for them?",
+    "Ruby made a mistake with her fire, then tried something different. Can you remember a time you changed your plan?"
+  ],
+  "lookAndFind": "Find Ruby's silver dragon mark, Flame's yellow tummy, and Pearl's clear bubbles. Which picture has a crown beside warm bread?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Zero, exactly",
+      "text": "In the kingdom of Riverlight, under a bell,\na girl said hello from inside an eggshell.\n\nOut stepped Ruby. Rainbow hair. Golden eyes.\nA silver dragon mark, small as a sigh.\nShe could walk. She could talk. She could ask for some bread.\n\"How old?\" asked the cook.\n\"Zero,\" she said.",
+      "image": "images/01.webp",
+      "imagePrompt": "Exactly Ruby newly stepping out of a large split pearly egg onto a soft cushion in a sunlit palace nursery, fully dressed in her normal plum tunic and boots, tiny crown already on her head; decorative brass bell overhead, bread roll on a low table. Ruby is a human child, not a dragon hatchling. Cook is off-frame, no other people or dragons.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "kingdom",
+          "definition": "a land with a king, queen, or princess"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 2,
+      "title": "A princess, and a beginner",
+      "text": "The silver mark meant she would lead Riverlight.\nThe crown fit her head. The big chair wasn't right.\nHer feet couldn't reach. There was much she didn't know.\n\nThe king, her papa, said, \"We can learn slow.\nI'll help, and the gardeners and cooks will help too.\nYou don't have to know everything to be you.\"",
+      "image": "images/02.webp",
+      "imagePrompt": "Exactly Ruby sitting sideways on an oversized cushioned gold and lavender throne, boots dangling far above floor, looking thoughtfully at a small sapling in a pot beside the chair. Warm sunlight, inviting open doors. Her father is speaking off-frame; no other people, no dragons. Normal plum dress.",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "lead",
+          "definition": "to help people find a way forward"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 3,
+      "title": "Flame",
+      "text": "Her dragon was Flame: red, orange, and yellow,\na snuggly, bouncy, tumble-down fellow.\nA girl, to be clear. A baby, quite small.\nShe chased her own tail and fell over it all.\n\nWhen Ruby felt wobbly, Flame tucked herself near.\nNo crown was required. Just a lap. Just here.",
+      "image": "images/03.webp",
+      "imagePrompt": "Exactly Ruby sitting cross-legged on a garden rug laughing as Flame rolls playfully onto her back beside Ruby's lap, showing yellow belly and curled tail. Close cozy scene, tiny crown rests on rug, sunlight through willow leaves, no other characters. Ruby normal plum dress.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "snuggly",
+          "definition": "soft and cozy to cuddle close"
+        }
+      ],
+      "effect": "embers"
+    },
+    {
+      "number": 4,
+      "title": "The first bond",
+      "text": "Flame pressed her nose to an outstretched hand.\nA warm little feeling said: I understand.\nRuby's dress shimmered like embers at night;\na curl of soft fire made her fingertips bright.\n\nStill a girl. Still Ruby. With something to share.\nTheir bond was a promise: I'll answer. I'll care.",
+      "refrain": true,
+      "image": "images/04.webp",
+      "imagePrompt": "Exactly Ruby and Flame touching nose to open palm in a garden in afternoon sunlight. Ruby remains entirely human but her tunic dress has transformed to ember red with golden trim, tiny controlled warm curl of fire over her free hand, silver dragon forehead mark glowing. No wings or horns or tail on Ruby. Tender mutual bond, no other characters.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "bond",
+          "definition": "a special closeness between friends who care"
+        },
+        {
+          "word": "embers",
+          "definition": "little glowing bits left in a warm fire"
+        }
+      ],
+      "effect": "embers"
+    },
+    {
+      "number": 5,
+      "title": "A chair they wanted",
+      "text": "But Noir, her stepmother, wanted that chair.\nAnd War, her stepsister, said, \"It isn't fair!\nI've waited for years. She hatched just today!\"\n\n\"Then we'll take her place,\" Noir said. \"Our way.\"\nTheir dragon, Black Hole, gave a mean little grin.\nHe liked making things disappear into him.",
+      "image": "images/05.webp",
+      "imagePrompt": "Exactly Noir, War and Black Hole in a palace side room, Noir pointing toward a distant empty throne through an arch, War arms crossed stomping one foot, Black Hole smugly watching a tiny purple-edged dark swirl near his snout. Lavender window light and several warm lamps keep everyone fully visible. No Ruby, no other dragons or people.",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "disappear",
+          "definition": "to go where you cannot see something anymore"
+        }
+      ],
+      "effect": "vortex"
+    },
+    {
+      "number": 6,
+      "title": "Attack practice",
+      "text": "\"Attack!\" called War. A little black round\nswallowed a cushion without any sound.\n\"Again!\" ordered Noir. In went a chair.\nBlack Hole laughed purple sparks into the air.\n\nThe stolen things stayed in his pocket of night.\nWhen he sneezed, they popped out.\nWar said, \"Hold it tight!\"",
+      "image": "images/06.webp",
+      "imagePrompt": "Exactly Noir and War training Black Hole in a well-lit courtyard. War points at a soft lavender cushion being gently sucked toward a small purple-rimmed black circular magical pocket above Black Hole's nose. A little wooden chair already protrudes from the swirl. Black Hole gleeful and smug; Noir approving. Bright daylight, comic action, no injuries, no other characters.",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "cushion",
+          "definition": "a soft pillow you can sit on"
+        }
+      ],
+      "effect": "vortex"
+    },
+    {
+      "number": 7,
+      "title": "The locked egg",
+      "text": "They'd stolen an egg from the waterfall nest:\nwhite, blue, and trembling inside an iron chest.\n\"A water dragon,\" said Noir. \"One more power to keep.\"\n\nRuby heard tapping when she should have been napping.\nShe followed with Flame to the chest by the wall.\nSomething inside it was frightened and small.",
+      "image": "images/07.webp",
+      "imagePrompt": "Exactly Ruby and Flame discovering an open-lidded iron chest with a locked iron lattice across the opening, inside one white egg streaked sky blue on a folded cloth. Ruby reaches toward the lattice, concerned. Warm lantern illuminates faces and egg clearly in palace storage alcove; afternoon sunlight through window. Normal plum dress. No villains visible.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "trembling",
+          "definition": "shaking with little quick wiggles"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 8,
+      "title": "Too much fire",
+      "text": "\"I'll melt the lock!\" Ruby's fire flared wide.\nThe egg gave a frightened little knock inside.\n\nRuby stopped. Her cheeks burned hot.\nBeing able to do it didn't mean that she ought.\n\"Smaller,\" she whispered. Flame warmed just the pin.\nClick went the lock. Cool air drifted in.",
+      "image": "images/08.webp",
+      "imagePrompt": "Exactly Ruby and Flame at iron chest, protective iron lattice now opening. Ruby's ember-red transformed tunic, hands lowered with her fire extinguished, thoughtful concerned expression. Flame uses a tiny precise candle-sized flame on the outer lock pin far from egg. White and blue egg safely nested in chest behind lattice, clearly unharmed. Warm well-lit scene, no other characters.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "flared",
+          "definition": "suddenly grew brighter and bigger"
+        }
+      ],
+      "effect": "embers"
+    },
+    {
+      "number": 9,
+      "title": "Put something down",
+      "text": "They reached the bridge. \"Attack!\" shouted War.\nBlack Hole's dark circle pulled harder than before.\nRuby's crown slipped. The egg rocked near the side.\nShe couldn't catch both, though she very much tried.\n\nDown went the crown with a plink in the stream.\nTwo hands caught the egg.\n\"I've got you,\" said she.",
+      "image": "images/09.webp",
+      "imagePrompt": "Action on a low lavender stone garden bridge. Ruby in normal plum dress, no crown on head, kneels firmly on bridge catching a large white and blue egg securely in BOTH hands; her little crown falling toward shallow stream below. Flame beside her. Far end of bridge exactly War and Black Hole, Black Hole casting one small purple-rimmed vacuum swirl pulling loose ribbons. No Noir, no other people, no one falling, safe expressive drama.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "stream",
+          "definition": "a little river of moving water"
+        }
+      ],
+      "effect": "vortex"
+    },
+    {
+      "number": 10,
+      "title": "Pearl chooses",
+      "text": "Under the willow, the shell split in two.\nOut tumbled white paws and a nose colored blue.\nClear bubbles bobbed round the little one's head.\n\"Pearl? Would that suit you?\" the princess said.\n\nPearl nodded. Ruby left room by the stream.\n\"You can stay. You can go. You can choose what you need.\"\nPearl took one small step. Then she leaned against Flame.",
+      "refrain": true,
+      "image": "images/10.webp",
+      "imagePrompt": "Exactly Ruby, Flame and newly hatched Pearl under a willow beside shallow stream. Empty white and blue eggshell halves on grass. Ruby kneels with open relaxed hands giving the dragons space, no crown, normal plum dress; Pearl leans affectionately against Flame, clear transparent bubbles around Pearl, cozy new friendship. No other characters.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "choose",
+          "definition": "to pick what you want or need"
+        }
+      ],
+      "effect": "bubbles"
+    },
+    {
+      "number": 11,
+      "title": "Water hands",
+      "text": "Pearl touched Ruby's palm. A cool sparkle grew.\nHer dress rippled white, then waterfall blue.\nStill a girl, with two feet planted firm on the land,\nRuby lifted a bubble with each of her hands.\n\nFlame's glow was still there, like a lamp down the hall.\nA new friend didn't mean less love. Not at all.",
+      "image": "images/11.webp",
+      "imagePrompt": "Exactly Ruby, Flame and Pearl under sunlit willow. Ruby fully human in magically transformed waterfall-blue dress with pearl-white trim, rainbow hair golden eyes silver dragon forehead mark unchanged, no crown. She lifts two large transparent water bubbles from open hands. Pearl touches her wrist with nose; Flame snuggles happily against her golden boot, warm tiny glow on Ruby's bracelet. No other characters.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "rippled",
+          "definition": "moved in little waves like water"
+        }
+      ],
+      "effect": "bubbles"
+    },
+    {
+      "number": 12,
+      "title": "The thing she could refuse",
+      "text": "Noir blocked the path. \"That dragon is mine.\nI found her. I kept her. Get back in line.\"\n\n\"You kept her locked up,\" Ruby said, standing near.\n\"She isn't a prize. And she isn't staying here.\"\n\nHer voice shook a little. Her feet didn't go.\nEven a very new girl could say no.",
+      "image": "images/12.webp",
+      "imagePrompt": "Exactly Ruby facing Noir across willow garden path. Ruby in waterfall-blue dress pearl-white trim, no crown, small but firm open palm raised to say stop, with Flame and Pearl sheltered behind her boots. Noir charcoal gown violet lining stern with folded arms, not touching anyone. Warm daylight, clear readable expressions, safe distance. No War or Black Hole or other people.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "noir"
+      ],
+      "vocab": [
+        {
+          "word": "prize",
+          "definition": "something you win in a game or contest"
+        }
+      ],
+      "effect": "bubbles"
+    },
+    {
+      "number": 13,
+      "title": "A different plan",
+      "text": "Black Hole attacked with a greedy black swirl.\nFlame puffed back fire. \"Wait!\" shouted the girl.\nThe circle gulped flame and grew wider still.\n\nRuby stepped back. Then she stood very still.\nShe'd seen him sneeze cushions. A tickle might do.\n\"Pearl, blow some bubbles. Flame, warm them through!\"",
+      "image": "images/13.webp",
+      "imagePrompt": "Exactly Ruby, Flame, Pearl and Black Hole in bright garden beside bridge. Black Hole far right casting purple-rimmed dark swirl swallowing ONE tiny orange flame ribbon. Ruby in waterfall-blue dress no crown, gently gesturing Flame to stop while Pearl blows first few transparent bubbles. Characters separated and clearly visible, thoughtful action not frightening, no villains or other people in frame.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "tickle",
+          "definition": "a little touch that can make you wiggle or laugh"
+        }
+      ],
+      "effect": "vortex"
+    },
+    {
+      "number": 14,
+      "title": "The enormous achoo",
+      "text": "Ruby's water hands lifted. Flame breathed soft heat.\nWarm bubbles went bobbling, a whole wobbly fleet.\nThey burst by his nostrils. One. Two.\nBlack Hole scrunched up his snout.\n\"AHHHHH-CHOO!\"\n\nOut flew the cushion! The chair! War's left shoe!\nThe circle snapped shut.\nBlack Hole sneezed anew.",
+      "image": "images/14.webp",
+      "imagePrompt": "Comic climax, exactly Ruby Flame Pearl and Black Hole. Ruby blue dress no crown lifting clear bubbles from hands, Flame gently warming bubbles with tiny orange breath, Pearl blowing bubbles. Far right Black Hole sneezing enormously with eyes squeezed shut as purple magic pocket collapses; one lavender cushion, small wooden chair and black boot tumble onto soft grass away from everyone. Bright golden daylight, transparent bubbles, slapstick safe, no additional people or dragons.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "fleet",
+          "definition": "a group of boats, or bubbles pretending to be boats"
+        }
+      ],
+      "effect": "bond"
+    },
+    {
+      "number": 15,
+      "title": "A gate, not a goodbye",
+      "text": "At Ruby's call, her papa came. The gardeners came too.\nNoir backed off with Black Hole. War hopped on one shoe.\n\"This isn't finished!\" she called through the gate.\n\"It is for tonight,\" Ruby said. \"You can wait.\"\n\nThe grown-ups kept watch. Ruby let herself lean.\nShe didn't have to be everyone's shield to be queen.\nNot queen yet, of course. There was growing to do.",
+      "image": "images/15.webp",
+      "imagePrompt": "View from safe garden toward firmly closed ornate gate. Foreground exactly Ruby in normal plum dress no crown sitting relaxed with Flame and Pearl against a big soft cushion. Beyond gate small departing figures exactly Noir, War wearing only one black boot, and Black Hole grumpy. Two warm adult-sized guardian shadows cast from OFF FRAME across gate show adults keeping watch, no additional visible people. Sunset reassurance, no menace.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "shield",
+          "definition": "something that helps keep you safe from harm"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 16,
+      "title": "Room for two",
+      "text": "They found her crown in a puddle downstream.\nRuby washed it, then left it beside her to gleam.\nShe asked for warm bread and a blanket for three.\nFlame curled by her elbow. Pearl slept by her knee.\n\n\"Zero,\" she murmured. \"And what a first day.\"\nHer hands opened softly. Her friends chose to stay.\n\nFar off, beyond Riverlight, thunder rolled low.\nBut tonight there was nowhere that Ruby must go.",
+      "refrain": true,
+      "theEnd": "The End — of Ruby's first adventure.",
+      "image": "images/16.webp",
+      "imagePrompt": "Exactly Ruby Flame and Pearl sleeping cozily together under one lavender blanket on a cushioned window seat, Ruby normal plum dress no crown on head, rainbow hair and silver forehead dragon mark visible. Flame curled at elbow Pearl by knee, clear bubbles floating softly. Little gold crown beside warm bread on table. Warm amber lamp, distant softly lit blue raincloud beyond window, peaceful secure bedtime. No other characters.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "gleam",
+          "definition": "to shine with a soft little light"
+        }
+      ],
+      "effect": "starlight"
+    }
+  ]
+}
