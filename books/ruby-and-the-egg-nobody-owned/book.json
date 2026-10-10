@@ -328,7 +328,7 @@
     {
       "number": 14,
       "title": "The enormous achoo",
-      "text": "Ruby's water hands lifted. Flame breathed soft heat.\nWarm bubbles went bobbling, a whole wobbly fleet.\nThey burst by his nostrils. One. Two.\nBlack Hole scrunched up his snout.\n\"AHHHHH-CHOO!\"\n\nOut flew the cushion! The chair! War's left shoe!\nThe circle snapped shut.\nBlack Hole sneezed anew.",
+      "text": "Ruby's water hands lifted. Flame breathed soft heat.\nWarm bubbles went bobbling, a whole wobbly fleet.\nThey burst by his nostrils. One. Two.\nBlack Hole scrunched up his snout.\n\"Achoo!\"\n\nOut flew the cushion! The chair! War's left shoe!\nThe circle snapped shut.\nBlack Hole sneezed anew.",
       "image": "images/14.webp",
       "imagePrompt": "Comic climax, exactly Ruby Flame Pearl and Black Hole. Ruby blue dress no crown lifting clear bubbles from hands, Flame gently warming bubbles with tiny orange breath, Pearl blowing bubbles. Far right Black Hole sneezing enormously with eyes squeezed shut as purple magic pocket collapses; one lavender cushion, small wooden chair and black boot tumble onto soft grass away from everyone. Bright golden daylight, transparent bubbles, slapstick safe, no additional people or dragons.",
       "textPosition": "top",
@@ -344,14 +344,17 @@
           "definition": "a group of boats, or bubbles pretending to be boats"
         }
       ],
-      "effect": "bond"
+      "effect": "bond",
+      "pronunciations": {
+        "Achoo": "əˈtʃuː"
+      }
     },
     {
       "number": 15,
-      "title": "A gate, not a goodbye",
-      "text": "At Ruby's call, her papa came. The gardeners came too.\nNoir backed off with Black Hole. War hopped on one shoe.\n\"This isn't finished!\" she called through the gate.\n\"It is for tonight,\" Ruby said. \"You can wait.\"\n\nThe grown-ups kept watch. Ruby let herself lean.\nShe didn't have to be everyone's shield to be queen.\nNot queen yet, of course. There was growing to do.",
-      "image": "images/15.webp",
-      "imagePrompt": "View from safe garden toward firmly closed ornate gate. Foreground exactly Ruby in normal plum dress no crown sitting relaxed with Flame and Pearl against a big soft cushion. Beyond gate small departing figures exactly Noir, War wearing only one black boot, and Black Hole grumpy. Two warm adult-sized guardian shadows cast from OFF FRAME across gate show adults keeping watch, no additional visible people. Sunset reassurance, no menace.",
+      "title": "Go home to your kingdom",
+      "text": "\"Go home to your kingdom,\" said Ruby. \"All three.\nYou don't get to choose who my friends get to be.\"\nNoir left with Black Hole. War hopped on one shoe.\nRuby watched till the last of their shadows withdrew.\n\nShe closed the gate gently. Her shoulders sank low.\nBeing brave didn't mean never needing to slow.\nShe'd been her friends' shield. Now the danger was through.\nThere was room to be small, and be looked after too.",
+      "image": "images/15-v2.webp",
+      "imagePrompt": "Exactly Ruby standing inside the garden, gently closing an ornate iron gate with one hand and pointing firmly down the road with the other. Flame and Pearl snuggle against her golden boots. Beyond the gate, clearly on its FAR side, Noir, War wearing only one black boot, and Black Hole walk AWAY along a winding road toward their own distant kingdom, a tiny charcoal-and-violet palace across far hills. Ruby has sent them home herself. Ruby wears her normal plum dress and NO CROWN; her silver dragon-shaped forehead mark is visible. Warm sunset, confident but tired Ruby, reassuring and gentle. Exactly these six characters, no king, no gardeners, no adult guardian shadows, no other people, no letters or text. Preserve the established watercolor and colored-pencil storybook style.",
       "textPosition": "bottom",
       "characters": [
         "ruby",
@@ -391,5 +394,6 @@
       ],
       "effect": "starlight"
     }
-  ]
+  ],
+  "assetVersion": "ruby-feedback-2"
 }

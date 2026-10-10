@@ -149,7 +149,7 @@
   function playNarration(page, onDone) {
     if (!audio) { audio = new Audio(); audio.preload = "auto"; }
     var bounds = narration[page.audioId];
-    audio.src = base + "narration/" + page.audioId + ".mp3";
+    audio.src = bookAsset("narration/" + page.audioId + ".mp3");
     audio.playbackRate = SPEEDS[speedIndex].mult;
 
     var fellBack = false;
@@ -255,7 +255,7 @@
     var seg = wordSprite && wordSprite[word];
     if (!seg) { speakWord(word); return; }
     if (!spriteAudio) {
-      spriteAudio = new Audio(base + "narration/words.mp3");
+      spriteAudio = new Audio(bookAsset("narration/words.mp3"));
       spriteAudio.preload = "auto";
     }
     if (segTimer) { clearTimeout(segTimer); segTimer = null; }
@@ -275,7 +275,7 @@
     if (!vocabAudio) { vocabAudio = new Audio(); vocabAudio.preload = "auto"; }
     var key = stripPunct(entry.word);
     vocabAudio.onerror = function () { speakWord(entry.word + ". " + entry.definition); };
-    vocabAudio.src = base + "narration/vocab/" + key + ".mp3";
+    vocabAudio.src = bookAsset("narration/vocab/" + key + ".mp3");
     var p = vocabAudio.play();
     if (p && p.catch) p.catch(function () { speakWord(entry.word + ". " + entry.definition); });
   }
@@ -659,7 +659,12 @@
   document.addEventListener("visibilitychange", function () { if (document.hidden) stopSpeaking(); });
 
   /* ---------- Load ---------- */
-  fetch(base + "book.json")
+  // Revised audio and its matching timing map must share a cache version.
+  function bookAsset(path) {
+    return base + path + (book && book.assetVersion ? "?v=" + encodeURIComponent(book.assetVersion) : "");
+  }
+
+  fetch(base + "book.json", { cache: "no-cache" })
     .then(function (r) { if (!r.ok) throw new Error("book.json " + r.status); return r.json(); })
     .then(function (b) {
       book = b;
@@ -734,11 +739,11 @@
       renderPage(startPage, 0);
 
       // Pre-generated narration is optional; the Web Speech voice covers its absence.
-      fetch(base + "narration/timings.json")
+      fetch(bookAsset("narration/timings.json"))
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (t) { narration = t; })
         .catch(function () { narration = null; });
-      fetch(base + "narration/words.json")
+      fetch(bookAsset("narration/words.json"))
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (w) { wordSprite = w; })
         .catch(function () { wordSprite = null; });
