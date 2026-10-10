@@ -32,3 +32,17 @@ uv run --with rangehttpserver python -m RangeHTTPServer 8080
 If 8080 is occupied, use `8765 --bind 127.0.0.1` and open
 `http://127.0.0.1:8765/`. Push `main` to publish through GitHub Pages, then verify
 the live bookshelf and reader at the link above.
+
+## Usage tracking
+`js/track.js` sends a few cookieless custom events (story opened / page reached / read to
+the end, idea form seen / clicked / sent, game opened / played) straight to the
+`luna-storytime-ai` Application Insights resource. Only `kolatts.github.io` reports; add
+`?track=1` to a local URL to send `env=dev` test events. No cookies or localStorage, just a
+random per-tab id in sessionStorage.
+
+The **Luna's Story Time — Usage** workbook (`analytics/usage-workbook.bicep`) compares the
+last 14 days with the 14 before. Find it in the Azure portal under `luna-storytime-ai` →
+Workbooks. Redeploy after editing:
+```
+az deployment group create --subscription "Visual Studio Enterprise Subscription" -g imagile-organization -f analytics/usage-workbook.bicep
+```
