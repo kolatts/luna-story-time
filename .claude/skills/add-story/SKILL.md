@@ -20,6 +20,7 @@ Luna's Story Time is a static, no-build site (vanilla JS) published to GitHub Pa
 Copy the schema from `books/princess-moon-and-the-nevershine-lantern/book.json`. Rules:
 
 - `slug`: kebab-case, matches the folder name.
+- `authors`: **before writing book.json, ask the user whether Mommy helped with this story** (AskUserQuestion; don't assume from earlier books). Yes → `["Luna", "Sunny", "Mommy"]`; no → `["Luna", "Sunny"]`. The cover narration speaks them ("Written with love by Luna, Sunny, and Mommy." — the reader and `generate-narration.py` share the same list-joining rule), so changing authors on an existing book means regenerating its `cover.mp3`. In headless CI there is no one to ask: keep `["Luna", "Sunny"]` (Dreamed Up By You covers don't speak authors anyway).
 - `spreads[].text`: plain text, `\n` for line breaks, `\n\n` between stanzas. **Strip markdown emphasis** (`*word*` → `word`).
 - The book's repeating refrain goes ONLY in the top-level `refrain` field; on spreads where it appears, set `"refrain": true` (do not duplicate the line in `text`). The reader renders it as a styled "Say it with me" callout and appends it to narration.
 - `spreads[].textPosition`: `"top"` or `"bottom"` — alternate so the layout varies; use `"top"` when the image's focal subject is in the lower half.

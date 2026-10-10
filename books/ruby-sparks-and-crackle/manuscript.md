@@ -1,7 +1,7 @@
 # Ruby, Sparks and Crackle
 
 *Book Two of Ruby and the Dragon Bonds*
-*Dreamed up by Luna. Written with love by Luna and Sunny.*
+*Dreamed up by Luna. Written with love by Luna, Sunny, and Mommy.*
 
 **Refrain:** *Good things hatch when they're ready.* Placed on spreads 3, 9, 16.
 

@@ -6,7 +6,8 @@
   "subtitle": "Book Two of Ruby and the Dragon Bonds",
   "authors": [
     "Luna",
-    "Sunny"
+    "Sunny",
+    "Mommy"
   ],
   "ageRange": "4-8",
   "refrain": "Good things hatch when they're ready.",
@@ -418,5 +419,5 @@
       "theEnd": "The End — of Ruby's second adventure."
     }
   ],
-  "assetVersion": "ruby2-1"
+  "assetVersion": "ruby2-2"
 }

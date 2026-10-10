@@ -1,7 +1,7 @@
 # Ruby and the Dragon Bonds — series bible
 
 Read this before writing or illustrating any Ruby book. It outranks per-book prompts.
-Dreamed up by Luna; written by Luna and Sunny.
+Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 
 ## Canon
 

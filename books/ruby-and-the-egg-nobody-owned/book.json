@@ -6,7 +6,8 @@
   "subtitle": "Book One of Ruby and the Dragon Bonds",
   "authors": [
     "Luna",
-    "Sunny"
+    "Sunny",
+    "Mommy"
   ],
   "ageRange": "4-8",
   "refrain": "A hand can hold without holding tight.",
@@ -395,5 +396,5 @@
       "effect": "starlight"
     }
   ],
-  "assetVersion": "ruby-canon-1"
+  "assetVersion": "ruby-canon-2"
 }

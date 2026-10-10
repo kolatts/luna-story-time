@@ -5,6 +5,12 @@
 (function () {
   "use strict";
 
+  // "A and B" for two names, "A, B, and C" for more. Must mirror generate-narration.py join_authors.
+  function joinAuthors(authors) {
+    if (authors.length <= 2) return authors.join(" and ");
+    return authors.slice(0, -1).join(", ") + ", and " + authors[authors.length - 1];
+  }
+
   var params = new URLSearchParams(location.search);
   var slug = params.get("book") || "princess-moon-and-the-nevershine-lantern";
   var base = "books/" + slug + "/";
@@ -694,7 +700,7 @@
         kicker: b.subtitle,
         speakText: b.series === "dreamed-up-by-you"
           ? b.title + ". " + b.subtitle + "."
-          : b.title + ". " + b.subtitle + ". Written with love by " + b.authors.join(" and ") + ".",
+          : b.title + ". " + b.subtitle + ". Written with love by " + joinAuthors(b.authors) + ".",
         image: b.cover.image,
         effect: b.cover.effect,
         alt: "Cover: " + b.title,

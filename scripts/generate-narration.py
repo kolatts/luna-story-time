@@ -7,7 +7,7 @@ Per book (books/<slug>/narration/):
   vocab/<word>.mp3           - "Word! <definition>" for each sparkle-word popup
 
 The page narration text MUST mirror js/reader.js exactly:
-  - cover:  "<title>. <subtitle>. Written with love by <authors joined with ' and '>."
+  - cover:  "<title>. <subtitle>. Written with love by <authors: 'A and B', or 'A, B, and C'>."
             (dreamed-up-by-you books drop the "Written with love" sentence)
   - spread: spread.text, plus " … " + book.refrain when the spread has refrain: true
 The word sprite uses the same tokenization as reader.js (split on whitespace,
@@ -81,6 +81,13 @@ def make_config(voice=None):
     return cfg
 
 
+# "A and B" for two names, "A, B, and C" for more. Must mirror reader.js joinAuthors.
+def join_authors(authors):
+    if len(authors) <= 2:
+        return " and ".join(authors)
+    return ", ".join(authors[:-1]) + ", and " + authors[-1]
+
+
 def pages_for(book):
     # Dreamed Up By You covers credit the dreamer via the subtitle alone;
     # Castle Everstair covers keep the "Written with love by" line. Must
@@ -90,7 +97,7 @@ def pages_for(book):
     else:
         yield "cover", (
             f"{book['title']}. {book['subtitle']}. "
-            f"Written with love by {' and '.join(book['authors'])}."
+            f"Written with love by {join_authors(book['authors'])}."
         ), {}
     for s in book["spreads"]:
         text = s["text"]
