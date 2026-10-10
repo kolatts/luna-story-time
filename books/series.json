@@ -96,6 +96,13 @@
           "subtitle": "Book One of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-and-the-egg-nobody-owned/images/cover.webp"
+        },
+        {
+          "slug": "ruby-sparks-and-crackle",
+          "title": "Ruby, Sparks and Crackle",
+          "subtitle": "Book Two of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-sparks-and-crackle/images/cover.webp"
         }
       ]
     }

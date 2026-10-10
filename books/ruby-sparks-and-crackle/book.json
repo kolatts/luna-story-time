@@ -1,0 +1,422 @@
+{
+  "slug": "ruby-sparks-and-crackle",
+  "series": "ruby-and-the-dragon-bonds",
+  "bookNumber": 2,
+  "title": "Ruby, Sparks and Crackle",
+  "subtitle": "Book Two of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "ageRange": "4-8",
+  "refrain": "Good things hatch when they're ready.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover composition: exactly Ruby kneeling on the grassy bank of a small round hilltop pond ringed by willows and lily pads, her tunic dress magically half lemon yellow and half shining silver with gold trim, tiny gold sparkles at her fingertips, tiny crown, silver forehead mark glowing, smiling at exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once who bounce on the grass in front of her with tiny friendly gold sparkles. Half an empty yellow-and-silver zigzag eggshell beside them. Soft violet storm clouds clearing to a warm golden sky, generous open sky in the upper third for the title. No other characters, no text.",
+    "effect": "bond"
+  },
+  "questions": [
+    "Noir and War shouted \"Hatch it now!\" but Ruby waited. Why do you think the egg hatched for Ruby?",
+    "Is there something you're waiting to be big enough or ready enough to do? How does waiting feel?",
+    "Sparks and Crackle are twins, but they look different. What makes you different from the people you love?",
+    "Flame and Pearl stayed home, but Ruby still felt Pearl's bond with her. How can you feel close to someone who isn't with you?"
+  ],
+  "lookAndFind": "Find the yellow dragon with silver eyes and the silver dragon with yellow eyes. Which page has a lily pad landing on someone's head?",
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Eight days old",
+      "text": "Ruby was eight days old. She had counted each day.\nShe could button her boots. She could put toys away.\nFlame snored in a sunbeam. Pearl bubbled the bath.\nAnd the cook taught her pancakes, and patience, and math.",
+      "image": "images/01.webp",
+      "imagePrompt": "Exactly Ruby standing on a little wooden stool in a sunny lavender-stone palace kitchen, proudly holding a pan with one golden pancake, a wooden bead abacus on the table beside a plate of pancakes. Flame asleep curled in a warm sunbeam on the floor; Pearl splashing happily in a round copper washtub nearby, clear bubbles rising. Ruby wears her normal plum dress and her tiny crown. The cook is off-frame; no other people, no other dragons. Warm morning light.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "patience",
+          "definition": "waiting calmly, even when waiting is hard"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 2,
+      "title": "A tingle",
+      "text": "Then her silver mark tingled. It fizzed. It went zing!\nlike a tickle that knew of a wonderful thing.\nFar off, past the garden and over the hill,\nan old pond flashed gold. Then it rumbled. Then... still.\n\nRuby knew that low rumble. She'd heard it before,\non her very first night, like a knock at a door.",
+      "image": "images/02.webp",
+      "imagePrompt": "Exactly Ruby at a tall arched palace window, one hand touching her glowing silver forehead dragon mark, tiny gold sparkles fizzing around the mark, surprised curious face. Flame and Pearl peek over the windowsill beside her. Through the window, far away over green hills, a small round hilltop pond ringed by willows and lily pads glows with a flash of warm gold light under soft violet-grey storm clouds lit with warm gold, no moon in the sky. Ruby normal plum dress, tiny crown. No other people, no other dragons.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "tingled",
+          "definition": "felt a tiny prickly, fizzy feeling"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 3,
+      "title": "The Thunder Egg",
+      "text": "Deep down in that pond, where the lily roots grow,\nan egg had been waiting since long, long ago.\nIt was yellow and silver, with zigzags of light,\nand it slept through the years, every day, every night.\n\nNow it fizzed. Now it flickered. Now, more than before,\nit was almost ready. Not yet. Just a little bit more.",
+      "refrain": true,
+      "image": "images/03.webp",
+      "imagePrompt": "Storybook cutaway view of a small round hilltop pond ringed by willows and lily pads: lily pads and pink lilies floating on top, and below the clear green-blue water, resting on soft sand among long lily roots, the Thunder Egg: a round egg striped with lemon-yellow and silver zigzags, faint gold sparkles fizzing on its shell. Little zigzags of gold light flicker from the egg; a few tiny friendly orange fish swim nearby. soft violet-grey storm clouds lit with warm gold, no moon in the sky above the willows. No people, no dragons, no other creatures besides the small fish.",
+      "textPosition": "top",
+      "characters": [],
+      "vocab": [
+        {
+          "word": "flickered",
+          "definition": "shined on and off, quick and wobbly"
+        }
+      ],
+      "effect": "starlight"
+    },
+    {
+      "number": 4,
+      "title": "Stay home",
+      "text": "\"Stay here,\" Ruby said. \"Pearl, keep Flame cozy and warm.\nA pond's not for fire, and that sounds like a storm.\"\nFlame puffed a sad smoke ring. Pearl blew a goodbye.\nRuby hugged them both twice. Then she gave a brave sigh.\n\nShe went on her own, but not quite on her own:\nPearl's cool, watery bond came along, soft as foam.",
+      "image": "images/04.webp",
+      "imagePrompt": "Exactly Ruby kneeling at an open garden gate of the palace, hugging Flame and Pearl goodbye. Flame puffs one small grey smoke ring; Pearl blows one clear bubble. A soft cool blue shimmer glows around Ruby's wrist. Beyond the gate a path winds up a green hill toward a distant gold flicker under violet-grey clouds. Ruby normal plum dress, tiny crown. No other people, no other dragons.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "cozy",
+          "definition": "warm, snug, and comfy"
+        }
+      ],
+      "effect": "bubbles"
+    },
+    {
+      "number": 5,
+      "title": "First gets to keep",
+      "text": "Across the far hills, in her charcoal-dark tower,\nNoir saw the gold flicker. \"A dragon! More power!\nWhoever gets there first gets to keep it,\" she said.\nWar tugged on both boots. (The cook sent the left one back, wrapped up with bread.)\n\"Black Hole! Go!\" they shouted. And off the three sped.",
+      "image": "images/05.webp",
+      "imagePrompt": "Exactly Noir, War and Black Hole inside a grim charcoal-and-violet stone tower room lit by warm lamps so everyone is clearly visible. Noir points out of a tall narrow window toward a distant gold flash on a far hill. War hops on one foot, tugging on her second black boot. Black Hole flaps his violet wings eagerly, ready to go. No Ruby, no other dragons, no other people.",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "power",
+          "definition": "the strength to make things happen"
+        }
+      ],
+      "effect": "vortex"
+    },
+    {
+      "number": 6,
+      "title": "Tap-tap, flap-flap",
+      "text": "Ruby ran up the hill. Her boots went tap-tap.\nDown the far side came Black Hole: flap-flap, flap-flap,\nwith Noir striding after, and War shouting, \"GO!\"\nThey all reached the pond at the same time. Oh no.",
+      "image": "images/06.webp",
+      "imagePrompt": "Wide storybook view of a green hill with a small round hilltop pond ringed by willows and lily pads on top glowing gold. On the LEFT slope Ruby runs uphill along a path, determined, normal plum dress, tiny crown. On the RIGHT slope Black Hole flies low toward the pond, Noir striding behind in her charcoal gown and War running and shouting. Everyone small but clearly visible, soft violet-grey storm clouds lit with warm gold, no moon in the sky. Exactly these four characters, no other people or dragons.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "striding",
+          "definition": "walking with long, big steps"
+        }
+      ],
+      "effect": "starlight",
+      "pronunciations": {
+        "GO": "ɡoʊ"
+      }
+    },
+    {
+      "number": 7,
+      "title": "In she goes",
+      "text": "\"Attack!\" shouted War. Black Hole opened his swirl.\nIt slurped at the pond with a gulp and a whirl.\nRuby touched her cool bond. Her dress rippled blue.\nShe held up her water hands, took a breath, and dove through.",
+      "image": "images/07.webp",
+      "imagePrompt": "Exactly Ruby mid-dive, graceful and safe, into a small round hilltop pond ringed by willows and lily pads, a clear bubble forming around her head, Ruby's tunic dress magically transformed to waterfall blue with pearl-white trim (her water magic), tiny crown on her head, silver forehead mark visible. On the far bank Black Hole opens a small purple-rimmed dark swirl that slurps a curling ribbon of pond water up into the air, while War points and shouts and Noir watches with folded arms. soft violet-grey storm clouds lit with warm gold, no moon in the sky. Exactly these four characters, no other people or dragons.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "whirl",
+          "definition": "a fast spin round and round"
+        }
+      ],
+      "effect": "vortex",
+      "pronunciations": {
+        "dove": "doʊv"
+      }
+    },
+    {
+      "number": 8,
+      "title": "Down, down",
+      "text": "Down, down, in a bubble her water hands made,\npast minnows and lily stems, into the shade,\nshe found it: the Thunder Egg, fizzing and warm.\nShe held it so gently. It hummed like a storm.",
+      "image": "images/08.webp",
+      "imagePrompt": "Underwater storybook scene inside a small round hilltop pond ringed by willows and lily pads: exactly Ruby, her head and shoulders inside a large clear air bubble so she can breathe, Ruby's tunic dress magically transformed to waterfall blue with pearl-white trim (her water magic), tiny crown, silver forehead mark visible, gently cradling the Thunder Egg: a round egg striped with lemon-yellow and silver zigzags, faint gold sparkles fizzing on its shell in both arms on the soft sandy bottom among tall green lily stems. Tiny orange minnows swim by; soft sunbeams slant down through blue-green water. Calm, wondrous, safe. No other people, no dragons.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "minnows",
+          "definition": "tiny little fish"
+        }
+      ],
+      "effect": "bubbles"
+    },
+    {
+      "number": 9,
+      "title": "Hatch it now!",
+      "text": "Above her, the pond sank. Black Hole slurped it in.\n\"Crack it!\" yelled War. Noir snapped, \"Hatch it now! Begin!\"\nRuby wanted to hurry. Her heart thumped like a drum.\nBut she'd been an egg, too. So she hummed: hum-de-dum,\nand she held it, and waited, as still as a stone.\n\"Take your time,\" Ruby whispered. \"You're not on your own.\"",
+      "refrain": true,
+      "image": "images/09.webp",
+      "imagePrompt": "Underwater view: exactly Ruby sitting calmly on the sandy pond bottom inside her clear air bubble, eyes softly closed, humming, holding the Thunder Egg: a round egg striped with lemon-yellow and silver zigzags, faint gold sparkles fizzing on its shell close to her heart, Ruby's tunic dress magically transformed to waterfall blue with pearl-white trim (her water magic), tiny crown, silver forehead mark visible. Above her, the water's surface is being pulled up into a twisting funnel toward a small purple-rimmed dark swirl in the sky above the pond, and the water level is visibly lower. Patient, brave, peaceful mood in the middle of the bustle. No other characters visible.",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "hurry",
+          "definition": "to go fast because you want it now"
+        }
+      ],
+      "effect": "bubbles"
+    },
+    {
+      "number": 10,
+      "title": "Two!",
+      "text": "Then tap. Then tap-tap. Then a zig and a zag.\nThe shell opened up like a little gift bag.\nOut wiggled two dragons, two sisters, two twins:\none yellow, with silver eyes, fizzing with grins;\none silver, with yellow eyes, crackling with cheer.\n\"Sparks!\" Ruby laughed. \"And Crackle! You're here!\"",
+      "image": "images/10.webp",
+      "imagePrompt": "Underwater: exactly Ruby inside her clear air bubble, delighted, Ruby's tunic dress magically transformed to waterfall blue with pearl-white trim (her water magic), tiny crown, silver forehead mark visible, holding open hands under a cracked-open zigzag-striped yellow and silver eggshell. Wiggling out of it: exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, both puppy-sized with tiny wings, happy and new. Soft gold sparkles. No other characters, no humans other than Ruby.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "sparks",
+        "crackle"
+      ],
+      "vocab": [
+        {
+          "word": "twins",
+          "definition": "two babies born at the very same time"
+        }
+      ],
+      "effect": "bond"
+    },
+    {
+      "number": 11,
+      "title": "Zap!",
+      "text": "But the swirl pulled the pond, and the pond pulled them too,\nup and up toward the swirl, where the slurping wind blew.\nThen Crackle went CRACKLE! And Sparks went ZAP!\nA zigzag of gold shot through water. Snap, snap!\nOn Ruby, it tingled. It felt like a game!\nThe twins had already chosen. Their sparks knew her name.",
+      "image": "images/11.webp",
+      "imagePrompt": "Underwater: exactly Ruby inside her clear air bubble, giggling as if tickled, Ruby's tunic dress magically transformed to waterfall blue with pearl-white trim (her water magic), tiny crown, silver forehead mark visible. Beside her exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once glowing, sending bright friendly zigzags of gold light through the water, which race upward along a twisting column of water being pulled toward the surface. Gold sparkles dance harmlessly on Ruby's bubble. Joyful, magical, not scary. No other characters.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "sparks",
+        "crackle"
+      ],
+      "vocab": [
+        {
+          "word": "zigzag",
+          "definition": "a line that goes this way, then that way, like lightning"
+        }
+      ],
+      "effect": "bond",
+      "pronunciations": {
+        "CRACKLE": "ˈkɹækəl",
+        "ZAP": "zæp",
+        "wind": "wɪnd"
+      }
+    },
+    {
+      "number": 12,
+      "title": "Hold it!",
+      "text": "Up the slurping-up water, the tickly sparks rose,\nup into the swirl, and then up Black Hole's nose.\nHis snout started twitching. His eyes squeezed up tight.\n\"Hold it!\" War shouted. \"Black Hole! Hold it tight!\"\n\"Ah...\" said Black Hole. \"Ah... ah... AH...\"",
+      "image": "images/12.webp",
+      "imagePrompt": "Exactly Black Hole on the bank of a small round hilltop pond ringed by willows and lily pads, his small purple-rimmed swirl slurping a twisting column of pond water, tiny gold zigzag sparkles racing up the water into his snout; his nose twitches and his eyes squeeze shut, about to sneeze. War beside him waves her arms in alarm; Noir leans back, worried. Comic, slapstick, not scary, soft violet-grey storm clouds lit with warm gold, no moon in the sky. Exactly these three characters, no Ruby, no other dragons or people.",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "twitching",
+          "definition": "making little quick jumpy wiggles"
+        }
+      ],
+      "effect": "vortex",
+      "pronunciations": {
+        "AH": "ɑː",
+        "Ah": "ɑː"
+      }
+    },
+    {
+      "number": 13,
+      "title": "ACHOO!",
+      "text": "\"ACHOO!\" Out came the pond, every drop he had drunk,\nin one great big SPLASH! Splish! And splosh! And kerplunk!\nIt soaked Noir's tall crown and her long charcoal gown.\nIt soaked War from her braid to her boots, all the way down.",
+      "image": "images/13.webp",
+      "imagePrompt": "Comic climax: exactly Black Hole sneezing enormously, eyes squeezed shut, his swirl popping closed as a huge silly splash of pond water bursts out over Noir and War, who are drenched from head to toe, hair dripping, mouths open in shock. Bright water droplets everywhere, a lily pad landing on War's head. Slapstick and safe, no one hurt, a small round hilltop pond ringed by willows and lily pads behind them. Exactly these three characters, no other people or dragons.",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "soaked",
+          "definition": "wet all the way through"
+        }
+      ],
+      "effect": "bubbles",
+      "pronunciations": {
+        "ACHOO": "əˈtʃuː",
+        "SPLASH": "splæʃ"
+      }
+    },
+    {
+      "number": 14,
+      "title": "Squelch, squelch",
+      "text": "\"We're SOGGY!\" wailed War. Noir wrung out her sleeve.\n\"Home,\" Noir said, dripping. \"Right now. We will leave.\"\nThey squelched down the hill to their kingdom. Achoo!\nAnd the pond filled back up, sparkly, clear, and brand new.",
+      "image": "images/14.webp",
+      "imagePrompt": "Exactly Noir, War and Black Hole walking AWAY down a winding hill path toward their tiny distant charcoal-and-violet palace, all three dripping wet and grumpy, leaving little puddles; Noir wringing out her long sleeve, War with squelching boots, Black Hole sneezing a tiny puff. Behind them on the hilltop, the little round pond is full again and sparkling. Clouds clearing to a warm golden late-afternoon sky. Exactly these three characters, no Ruby, no other people or dragons.",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "squelched",
+          "definition": "walked with wet, squishy, sloppy sounds"
+        }
+      ],
+      "effect": "starlight",
+      "pronunciations": {
+        "Achoo": "əˈtʃuː",
+        "SOGGY": "ˈsɑɡi"
+      }
+    },
+    {
+      "number": 15,
+      "title": "One bond for two",
+      "text": "Ruby climbed out with a twin tucked in each arm.\nEach pressed a small nose to a palm, soft and warm.\nZing! went her mark. And her dress fizzed, then grew\nto half yellow, half silver, and crackly too.\nOne bond for two sisters who'd hatched side by side.\nHer fingertips sparkled. Her smile opened wide.",
+      "image": "images/15.webp",
+      "imagePrompt": "Exactly Ruby standing on the grassy bank of a small round hilltop pond ringed by willows and lily pads at golden sunset, holding out both open palms; exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once press their noses to her palms, one dragon at each hand. Ruby's tunic dress has magically transformed: the left half lemon yellow, the right half shining silver, with gold trim, and tiny friendly gold sparkles crackle at her fingertips; her silver forehead mark glows; tiny crown on her head. Rainbow hair and golden eyes unchanged. Tender, triumphant. No other characters.",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "sparks",
+        "crackle"
+      ],
+      "vocab": [
+        {
+          "word": "bond",
+          "definition": "a special closeness between friends who care"
+        }
+      ],
+      "effect": "bond"
+    },
+    {
+      "number": 16,
+      "title": "When it's ready",
+      "text": "Back home, Flame sniffed Crackle. Pearl bubbled at Sparks.\nFour dragons, one princess, one heap, after dark.\nThe big chair still waited, too big and too wide.\n\"Someday,\" Ruby yawned. \"When I'm ready inside.\"",
+      "refrain": true,
+      "image": "images/16.webp",
+      "imagePrompt": "Cozy bedtime: exactly Ruby asleep on a big cushioned window seat under a lavender blanket, normal plum dress, tiny crown resting on the cushion beside her head, rainbow hair and silver forehead mark visible, snuggled in one sleepy heap with four baby dragons: Flame curled at her elbow, Pearl by her knee with clear bubbles, and exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once curled together on her lap. Through an open doorway, the big empty gold-and-lavender throne waits in warm lamplight. Deep indigo starry night through the window, no moon. Exactly Ruby and these four dragons, no other people.",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle"
+      ],
+      "vocab": [
+        {
+          "word": "someday",
+          "definition": "a time that will come later"
+        }
+      ],
+      "effect": "starlight",
+      "theEnd": "The End — of Ruby's second adventure."
+    }
+  ],
+  "assetVersion": "ruby2-1"
+}
