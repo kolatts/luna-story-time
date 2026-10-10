@@ -15,6 +15,10 @@
   var autoMode = false;
   var speaking = false;
   var renderCount = 0;   // used to skip the initial-load focus steal
+  var furthest = -1;     // furthest page reached this visit (for drop-off tracking)
+  var finished = false;
+
+  function track(name, props) { if (window.lunaTrack) window.lunaTrack(name, props); }
 
   var host = document.getElementById("spreadHost");
   var moonsNav = document.getElementById("progressMoons");
@@ -361,6 +365,7 @@
     current = idx;
     host.innerHTML = "";
     var page = pages[idx];
+    trackProgress(idx);
 
     var spreadEl = document.createElement("section");
     spreadEl.className = "spread " + (page.textPosition === "top" ? "text-top" : "text-bottom") +
@@ -440,6 +445,17 @@
 
     if (autoMode && page.kind !== "finale") {
       setTimeout(function () { if (autoMode && current === idx) playCurrent(); }, 450);
+    }
+  }
+
+  // "Read all the way" = reached the last story spread (the finale is a bonus).
+  function trackProgress(idx) {
+    if (idx <= furthest) return;
+    furthest = idx;
+    if (renderCount > 1) track("story_page", { book: slug, spread: idx, pages: pages.length - 2 });
+    if (!finished && renderCount > 1 && idx >= pages.length - 2) {
+      finished = true;
+      track("story_finish", { book: slug, title: book.title, pages: pages.length - 2, auto: autoMode });
     }
   }
 
@@ -736,6 +752,7 @@
         var clamped = Math.max(0, Math.min(saved.page, pages.length - 1));
         if (clamped > 0 && pages[clamped].kind !== "finale") startPage = clamped;
       }
+      track("story_open", { book: slug, title: b.title, pages: b.spreads.length, resumedAt: startPage });
       renderPage(startPage, 0);
 
       // Pre-generated narration is optional; the Web Speech voice covers its absence.

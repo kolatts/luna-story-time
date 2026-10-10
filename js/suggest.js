@@ -78,6 +78,7 @@
         });
       })
       .then(function () {
+        if (window.lunaTrack) window.lunaTrack("suggest_submit", {});
         var thanks = document.createElement("p");
         thanks.className = "suggest-thanks";
         thanks.textContent = "🦉 Your idea is flying to the castle! Maybe one day it will be a story on this shelf.";
