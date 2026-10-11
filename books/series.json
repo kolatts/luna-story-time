@@ -103,6 +103,13 @@
           "subtitle": "Book Two of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-sparks-and-crackle/images/cover.webp"
+        },
+        {
+          "slug": "ruby-and-luna",
+          "title": "Ruby and Luna",
+          "subtitle": "Book Three of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-and-luna/images/cover.webp"
         }
       ]
     }

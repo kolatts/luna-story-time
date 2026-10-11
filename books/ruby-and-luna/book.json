@@ -1,0 +1,449 @@
+{
+  "slug": "ruby-and-luna",
+  "series": "ruby-and-the-dragon-bonds",
+  "bookNumber": 3,
+  "title": "Ruby and Luna",
+  "subtitle": "Book Three of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny",
+    "Mommy"
+  ],
+  "ageRange": "4-8",
+  "refrain": "Look for the light, not the color.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#D7E3F0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover composition: exactly Ruby standing on the stone doorstep outside the open arched front door of a lavender-stone palace at night, Ruby's tunic dress magically transformed to midnight black sprinkled with tiny silver stars, with softly glowing moon-white trim (her moon magic), tiny crown, silver forehead mark visible, smiling and cradling Luna, the puppy-sized baby BLACK dragon speckled with silver stars, in her arms. Soft silver moonlight pours out from Luna and fills the doorstep and garden with glowing light, warm golden lamplight spilling from the doorway behind. Half a black star-speckled eggshell on the welcome mat. a big perfectly round full moon (never a crescent) in a deep indigo starry sky, with generous open sky in the upper third for the title. No other characters, no text.",
+    "effect": "bond"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    }
+  ],
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Full moon",
+      "text": "Ruby was twelve days old. She had counted them all.\nThe full moon rose up, big and round as a ball.\nFlame toasted a marshmallow. Pearl blew a bubble.\nSparks and Crackle played chase and got into some trouble.\n\nThen WHOOSH! Something streaked down the sky, long and bright:\na shooting star, swooping, with sparkles of light.",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle"
+      ],
+      "vocab": [
+        {
+          "word": "streaked",
+          "definition": "zoomed by fast, leaving a long line behind"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Cozy lavender-stone palace playroom at night, warm golden firelight and lamplight so everyone is clearly visible. Exactly Ruby at a big open arched window, pointing up in delight at a shooting star streaking across the deep indigo sky with a long sparkly silver-and-gold tail, beside a big perfectly round full moon (never a crescent). Flame toasts one marshmallow on a stick at the little fireplace with a tiny friendly flame puff; Pearl blows one big clear bubble; exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, chase each other across the rug. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly Ruby and these four baby dragons, no other people, no other dragons.",
+      "pronunciations": {
+        "WHOOSH": "wʊʃ"
+      }
+    },
+    {
+      "number": 2,
+      "title": "Tap, tap",
+      "text": "Ruby's silver mark tingled. It fizzed. It went zing!\nThe star swooped down lower. It carried a thing.\nIt skipped over the river, then hopped the stone wall.\nThen it slowed, and it glowed, and it stopped. That was all.\n\nTap, tap! came a knock on the big palace door.\nRuby ran down the hall, and then ran a bit more.",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "glowed",
+          "definition": "shined with a soft, warm light"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Exactly Ruby running down a long lavender-stone palace hallway lit by warm golden lamps toward a big arched wooden front door, one hand touching her glowing silver forehead dragon mark with tiny gold sparkles fizzing around it, excited curious face. Soft silver starlight glows through the gap under the door. Through a tall window beside the door, a shooting star with a sparkly tail swoops low over a winding river and a garden wall toward the palace, a big perfectly round full moon (never a crescent) above. Ruby normal plum dress, tiny crown, silver forehead mark visible. No other people, no dragons."
+    },
+    {
+      "number": 3,
+      "title": "On the doorstep",
+      "text": "On the step sat an egg. It was black, black as night,\nand speckled all over with stars, tiny and bright.\nThe shooting star twinkled, then faded away.\nThe egg hummed a soft hum, like it wanted to stay.\nRuby knelt. Her mark fizzed. \"Oh,\" she whispered. \"Hello.\"\nShe reached out her hands, oh so gentle, so slow...",
+      "image": "images/03.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "speckled",
+          "definition": "covered in lots of tiny dots"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Exactly Ruby kneeling on the stone doorstep outside the open arched palace front door, gently reaching both hands toward the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, resting on a round woven welcome mat. A fading shooting-star sparkle trail curls up into the sky. A big wicker basket heaped with soft folded white laundry (sheets and towels) sits beside the door. Tender wonder. Ruby normal plum dress, tiny crown, silver forehead mark visible, golden boots. No other people, no dragons."
+    },
+    {
+      "number": 4,
+      "title": "Black is bad?",
+      "text": "Across the far hills, in her charcoal-dark tower,\nNoir saw the star fall. \"An egg! Dragon power!\"\nWar squinted. \"It's BLACK! Black is spooky! Black's mean!\nIt's the baddest, most rotten-est egg ever seen!\"\n\"Then it's ours,\" Noir decided. \"Black Hole, fly! Be quick!\"\nAnd they swooped through the night with a flap and a flick.",
+      "image": "images/04.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "spooky",
+          "definition": "a little bit scary, like a ghost story"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Exactly Noir, War and Black Hole inside a grim charcoal-and-violet stone tower room lit by warm lamps so everyone is clearly visible. Through a tall narrow window, far away across dark hills, a tiny shooting star lands with a sparkle beside a distant glowing lavender palace, a big perfectly round full moon (never a crescent) in the sky. Noir points at it with a greedy smile; War squints and points, making a scrunched 'yuck, spooky' face; Black Hole flaps his violet wings eagerly. No Ruby, no other dragons, no other people.",
+      "pronunciations": {
+        "BLACK": "blæk"
+      }
+    },
+    {
+      "number": 5,
+      "title": "Attack!",
+      "text": "Ruby's fingers were close. Just a little bit more...\nwhen down swooped Black Hole, right in front of the door.\n\"Attack!\" shouted War, and she jumped off his back.\nShe bumped Ruby, WHUMP, into the cook's laundry stack.",
+      "image": "images/05.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "war",
+        "noir",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "laundry",
+          "definition": "clothes and sheets that get washed"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Slapstick moment at the open arched palace front door: Black Hole has just landed on the garden path with wings spread; War hops down from his back and bumps exactly Ruby sideways, so Ruby tumbles comically, safe and unhurt, into a big wicker basket of soft folded white laundry beside the door, golden boots in the air, surprised face, tiny crown still on her head. Noir strides up the path behind them. the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, sits on the welcome mat. Silly, not scary, nobody hurt. Ruby normal plum dress. Exactly these four characters, no other people or dragons.",
+      "pronunciations": {
+        "WHUMP": "wʌmp"
+      }
+    },
+    {
+      "number": 6,
+      "title": "Mine!",
+      "text": "\"MINE!\" War grabbed. \"No, MINE!\" Noir grabbed. \"Can't you see?\nIt's as dark as my tower. It's dark just like me!\"\nBut the egg felt their hands, grabby, grumpy, and tight,\nand it shivered... then pushed out a ring of starlight.\nBWOMMM! Back slid Noir. Back slid War, on her bum,\nand the egg floated up with a hum, hum, hum.",
+      "image": "images/06.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "grabby",
+          "definition": "wanting to snatch things for yourself"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Comic scene on the palace doorstep: Noir and War both reached for the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, and the egg has just sent out a bright, gentle ring of silver starlight that pushes them both backward: Noir sliding back with arms windmilling, War plopped down on her bottom on the garden path, both surprised, nobody hurt. The egg floats up in the air, glowing. Black Hole blinks in surprise in the background. Exactly these three characters, no Ruby, no other people or dragons.",
+      "pronunciations": {
+        "MINE": "maɪn",
+        "BWOMMM": "bwɑm"
+      }
+    },
+    {
+      "number": 7,
+      "title": "The egg chooses",
+      "text": "Ruby wriggled out with a sock on her shoe.\nThe egg drifted to her, as if it just knew.\nIt felt Ruby's heart, gentle, patient, and kind,\nand it glowed, warm and happy. It had made up its mind.\nThen it rang like a bell, a soft call, clear and high,\nand four little dragons looked up at the sky.",
+      "refrain": true,
+      "image": "images/07.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "patient",
+          "definition": "able to wait calmly without getting upset"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Exactly Ruby climbing out of a big wicker basket of soft white laundry beside the palace front door, one white sock stuck on the toe of her golden boot, smiling with gentle wonder as the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, floats down toward her open hands, glowing warmer. Soft bell-like rings of silver light ripple out from the egg into the starry sky. Ruby normal plum dress, tiny crown, silver forehead mark visible. No other characters."
+    },
+    {
+      "number": 8,
+      "title": "Slurp!",
+      "text": "\"Black Hole!\" Noir snapped. \"Swirl it! Gobble it in!\"\nHis dark swirl went slurrrp with a whirl and a spin.\nThe egg tipped. The egg spun. It slid up through the air,\ntoward the swirl! Ruby gasped. \"Oh, egg, don't go there!\"",
+      "image": "images/08.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "gobble",
+          "definition": "to eat something up very fast"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. On the palace lawn, Black Hole opens a small purple-rimmed dark swirl in the air that pulls the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, spinning up and away out of reach; exactly Ruby stretches up on tiptoe after it, worried; War cheers and Noir points commandingly. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly these four characters, no other people or dragons."
+    },
+    {
+      "number": 9,
+      "title": "To the rescue",
+      "text": "Out raced Flame! Out raced Pearl! Out zoomed Sparks! Crackle, too!\nThey had heard the egg calling. They knew what to do.\nPearl blew a big bubble, bloop! round the egg, snug and sound.\nFlame puffed warm air under it. Up! Off the ground!\nLike a balloon on a breeze, the bubble rose high,\naway from the swirl, to the moon-silver sky.",
+      "image": "images/09.webp",
+      "textPosition": "top",
+      "characters": [
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "balloon",
+          "definition": "a floaty ball full of air"
+        }
+      ],
+      "effect": "bubbles",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Night garden in front of the lavender-stone palace: Pearl blows a big clear bubble around the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, while Flame puffs warm golden air and one tiny friendly flame puff underneath, so the bubble floats up high like a balloon, well above a small purple-rimmed dark swirl that strains to reach it. exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, zoom out of the open palace door to help. Black Hole is small at the edge of the scene beside his swirl. Exactly these five dragons, no people."
+    },
+    {
+      "number": 10,
+      "title": "Dizzy",
+      "text": "Sparks zipped round to the left. Crackle zipped round to the right:\ntwo zigzagging ribbons of crackly gold light.\nBlack Hole's head went around, and around, and around,\ntill, dizzy, his swirl fizzled. Pfft! He plopped on the ground.",
+      "image": "images/10.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "sparks",
+        "crackle",
+        "black-hole",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "dizzy",
+          "definition": "when your head feels spinny and wobbly"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Night scene clearly lit by warm golden lamplight from the palace and a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Comic scene on the moonlit palace lawn: Sparks, the YELLOW baby dragon with silver eyes, zooms around Black Hole one way and Crackle, the SILVER baby dragon with yellow eyes, zooms around him the other way, each appearing exactly once, leaving two friendly zigzag ribbons of gold light circling him. Black Hole sits down hard, dizzy, cartoon swirls in his eyes, his small purple swirl fizzling out in a puff. War and Noir stare open-mouthed. High above, a clear bubble holding the small black star-speckled egg drifts gently down. Silly, not scary. Exactly these characters, no Ruby, no other people or dragons."
+    },
+    {
+      "number": 11,
+      "title": "Tap, tap, SNAP",
+      "text": "Down drifted the bubble, as soft as a sigh,\ninto Ruby's two arms, where it popped. Pip! Goodbye!\nThe full moon shone down. The egg wiggled. Tap, tap...\nThen a crick, then a crack, then a crickety-SNAP!",
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "sigh",
+          "definition": "a long, soft breath out"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "Exactly Ruby standing alone on the moonlit palace lawn, arms open, as a clear bubble holding the Starry Egg: a round egg with a glossy deep-black shell speckled all over with tiny twinkling silver-white stars like a patch of night sky, with a soft silver glow around its outline, pops softly into her arms with a little sparkle. A tiny crack on the egg lets silver light peek out. a big perfectly round full moon (never a crescent) glows huge directly above her in a deep indigo starry sky, its silver light streaming down onto her like a gentle spotlight, warm lamplight from palace windows behind. Hushed, magical. Ruby normal plum dress, tiny crown, silver forehead mark visible. No other characters.",
+      "pronunciations": {
+        "SNAP": "snæp"
+      }
+    },
+    {
+      "number": 12,
+      "title": "Luna",
+      "text": "Out tumbled a dragon, as black as the sky,\nwith stars on her scales and two moon-silver eyes.\nShe yawned a big yawn, and then WHOOOM! Silver light\nfilled the garden, the palace, the hills, and the night!\n\"But she's BLACK!\" War gasped. \"Black things don't shine! Or do they?\"\n\"Hello, Luna,\" said Ruby. \"You're brighter than day.\"",
+      "refrain": true,
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "luna",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "shine",
+          "definition": "to give off bright light"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "Exactly Ruby on the palace lawn cradling Luna, the puppy-sized baby BLACK dragon speckled with silver stars, newly hatched in her arms, two cracked black star-speckled eggshell halves at her feet. Luna yawns a big happy yawn, and a wave of bright, soft silver moonlight pours out from her, filling the whole garden, the palace walls and the far hills with glowing light. Ruby beams with joy. To one side, War and Noir shield their eyes, amazed, mouths open. a big perfectly round full moon (never a crescent) in the sky. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly these four characters, no other dragons, no other people.",
+      "pronunciations": {
+        "WHOOOM": "wuːm",
+        "BLACK": "blæk"
+      }
+    },
+    {
+      "number": 13,
+      "title": "Moonbeams",
+      "text": "Luna nuzzled her nose into Ruby's warm hand.\nZing! went Ruby's mark, and her dress swished so grand:\nmidnight black, sprinkled over with stars shining bright,\nwith a trim that glowed softly in moon-silver white.\nAnd her hands filled with moonbeams, as cool as a stream,\nsoft and silver and curling like ribbons in dreams.",
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "moonbeams",
+          "definition": "rays of soft light that come from the moon"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "Exactly Ruby standing in soft silver moonlight on the palace lawn, holding out one open palm; Luna, the puppy-sized baby BLACK dragon speckled with silver stars, hovers on tiny wings and presses her nose to Ruby's palm. Ruby's tunic dress magically transformed to midnight black sprinkled with tiny silver stars, with softly glowing moon-white trim (her moon magic), tiny crown, silver forehead mark visible; ribbons of soft silver moonbeam light curl gently around both of her hands; her silver forehead mark glows. Rainbow hair and golden eyes unchanged. Tender, triumphant. a big perfectly round full moon (never a crescent) in a deep indigo starry sky. No other characters."
+    },
+    {
+      "number": 14,
+      "title": "Crashing moon",
+      "text": "\"That light should be OURS!\" Noir snapped. \"Black Hole, GO!\"\nBlack Hole wobbled up, dizzy, his swirl spinning slow.\nRuby lifted her moonbeams. Luna lifted hers, too.\nThey rolled them together, and the moonbeams grew\ninto one round, glowing, enormous soft moon...\nand CRASH! Down it came, with a BOING and a BOOM!\nSQUISH! went Noir. SQUASH! went War. SQUOOSH! went Black Hole: flat\nas three pancakes, three pillows, three squashed welcome mats.",
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "luna",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "enormous",
+          "definition": "very, very, VERY big"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Comic climax on the palace lawn at night, lit by golden lamplight: exactly Ruby (Ruby's tunic dress magically transformed to midnight black sprinkled with tiny silver stars, with softly glowing moon-white trim (her moon magic), tiny crown, silver forehead mark visible) and Luna, the puppy-sized baby BLACK dragon speckled with silver stars, flying beside her, both lift their hands and paws toward a huge, soft, round glowing silver ball of moonlight they made from moonbeams, which has bounced down BOING onto Noir, War and Black Hole and squished all three comically flat as pancakes underneath it, only their heads, hands and feet poking out, cartoon-style, dazed but unhurt. The glowing ball is the only moon shape in the picture; no moon in the sky. Silly, not scary. Exactly these five characters, no other people or dragons.",
+      "pronunciations": {
+        "OURS": "aʊɚz",
+        "GO": "ɡoʊ",
+        "CRASH": "kɹæʃ",
+        "BOING": "bɔɪŋ",
+        "BOOM": "buːm",
+        "SQUISH": "skwɪʃ",
+        "SQUASH": "skwɑʃ",
+        "SQUOOSH": "skwuːʃ"
+      }
+    },
+    {
+      "number": 15,
+      "title": "ACHOO!",
+      "text": "The squishy moon popped into silvery dust,\nand it tickled Black Hole's nose, as tickly dust must.\n\"Ah...\" \"HOLD IT!\" squeaked War, still as flat as a sheet.\n\"Ah... ah... ACHOO!\" And it blew them right off their feet,\nover hills, past the river, back home to their tower:\nthree sneezy, squashed grumps in a moon-dusty shower.",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "tower",
+          "definition": "a tall, skinny building"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Comic scene in the night sky over dark rolling hills: Black Hole, a little flattened, sneezes an enormous burst of sparkly silver moon-dust, and the sneeze wind blows him, Noir and War tumbling away through the air toward a tiny distant charcoal-and-violet tower, hair and gown flapping, silly and safe, nobody hurt. a big perfectly round full moon (never a crescent) lights the scene in a deep indigo starry sky. Exactly these three characters, no Ruby, no other people or dragons.",
+      "pronunciations": {
+        "HOLD": "hoʊld",
+        "IT": "ɪt",
+        "ACHOO": "əˈtʃuː"
+      }
+    },
+    {
+      "number": 16,
+      "title": "Look for the light",
+      "text": "Back inside, Luna snuggled with Flame, Pearl, and the twins:\nfive dragons, one princess, one heap of sleepy grins.\nLuna glowed like a nightlight, all speckled with stars.\n\"Some folks see a color,\" yawned Ruby, \"not who you are.\nBut you're dark, and you shine. You're both, Luna. It's true.\"\nAnd Luna glowed brighter, the way good friends do.",
+      "refrain": true,
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "nightlight",
+          "definition": "a little light that glows while you sleep"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Cozy bedtime: exactly Ruby asleep on a big cushioned window seat under a lavender blanket, normal plum dress, tiny crown resting on the cushion beside her head, rainbow hair and silver forehead mark visible, snuggled in one sleepy heap with five baby dragons: Flame curled at her elbow, Pearl by her knee with clear bubbles, exactly two baby dragons: Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, curled together by her feet, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars, curled on her chest glowing softly like a nightlight. Through the window, a big perfectly round full moon (never a crescent) in a deep indigo starry sky. Exactly Ruby and these five dragons, each appearing once, no other people.",
+      "theEnd": "The End — of Ruby's third adventure."
+    }
+  ],
+  "questions": [
+    "War said the egg must be bad because it was black. Was she right? How did Luna show everyone?",
+    "Noir said the egg was \"dark just like me.\" Have you ever guessed what someone was like just from how they looked? What happened when you got to know them?",
+    "The egg pushed away the grabbing hands, but it floated to Ruby. What do you think the egg felt in Ruby's heart?",
+    "Four dragons worked together to save the egg. What did each one do? Which job would you pick?"
+  ],
+  "lookAndFind": "Find the sock stuck on Ruby's boot. Which page has three grumps squished as flat as pancakes?",
+  "assetVersion": "ruby3-1"
+}

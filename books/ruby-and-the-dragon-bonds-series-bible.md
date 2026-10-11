@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -27,6 +27,12 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
   - Sparks and Crackle (lightning, twin sisters, ONE shared bond): dress half lemon yellow, half
     shining silver, gold sparkles crackling at her fingertips. A dragon's own sparks never hurt the
     one it has chosen. Book Two.
+  - Luna (moon, girl): dress midnight black sprinkled with tiny silver stars, moon-white glowing
+    trim, soft silver moonbeams in her hands. Book Three.
+- **Luna's magic**: moonbeams. Her big move is the **crashing moon**: Ruby and Luna roll their
+  moonbeams into one soft glowing moon that BOINGs down and squashes the bad guys flat as pancakes
+  (comic, nobody hurt). The real moon in the sky never moves. Luna stays black; she is never
+  "revealed" as another color, because she is the proof that dark things can shine.
 - **The big chair** (the throne) is still too big. Ruby will grow into it when she's ready.
 
 ## Books
@@ -37,12 +43,21 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    has always been in the hilltop pond between the kingdoms (it was the "thunder" at the end of
    Book One). Ruby waits underwater while Noir and War demand it hatch. The twins zap the water,
    the sparks tickle Black Hole, and his sneeze soaks Noir and War.
+3. *Ruby and Luna*: refrain "Look for the light, not the color." A shooting star carries the
+   Starry Egg (black, speckled with silver stars) to the palace door on a full-moon night. War
+   says black means bad; Noir says it's "dark just like me," so it's theirs. The egg feels their
+   grabby hearts and pushes them off with a ring of starlight, chooses Ruby, and calls the dragons.
+   Pearl bubbles it, Flame floats it like a balloon, the twins spin Black Hole dizzy. Luna hatches
+   in Ruby's arms under the full moon and fills everything with light. The crashing moon squashes
+   all three; its moon-dust makes Black Hole sneeze them home. Only Noir and War judge by color.
 
 ## Open threads
 
 - The cook's name and story.
 - Where dragon eggs come from, and how many more Ruby's mark will find.
-- What Noir does next. She has now lost two dragons to Ruby.
+- What Noir does next. She has now lost three dragons to Ruby.
+- War gasped "Black things don't shine! Or do they?" A seed of doubt, if a later book wants it.
+- Where the shooting star came from.
 
 ## Art invariants (check every image as a SET)
 
@@ -59,7 +74,13 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 4. Twins: always name species and colors per dragon ("the YELLOW baby dragon with silver eyes",
    "the SILVER baby dragon with yellow eyes"). The word "twins" alone renders two identical human
    girls.
-5. No king, no father figure and no adult guardian shadows in any Ruby art.
+5. **Luna**: puppy-sized, glossy BLACK scales speckled with silver stars, moon-silver eyes,
+   pearly-silver horns, curled black tail with a round glowing silver tip. Always name her "the
+   baby BLACK dragon speckled with silver stars" in prompts so she never reads as Black Hole (big,
+   charcoal with lavender highlights, violet wings).
+6. **Moon**: always a perfectly round full moon in Book Three art, except the crashing-moon
+   spread, which has no sky moon (the glowing moon-ball is the only moon shape).
+7. No king, no father figure and no adult guardian shadows in any Ruby art.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region
