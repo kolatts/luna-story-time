@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Berkshire+Swash&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=ruby-magic-1">
+<link rel="stylesheet" href="css/site.css?v=auto-turn-1">
 </head>
 <body class="reader-body">
 
@@ -20,7 +20,7 @@
   <h1 class="reader-title" id="readerTitle">Loading story…</h1>
   <button class="top-btn" id="bigTextBtn" aria-pressed="false" title="Bigger letters" aria-label="Toggle bigger letters">Aa</button>
   <button class="top-btn" id="speedBtn" title="Reading speed" aria-label="Reading speed. Tap to change speed.">🙂 1×</button>
-  <button class="top-btn" id="autoBtn" aria-pressed="false" title="Storytime mode: read every page for me" aria-label="Toggle storytime mode">📖✨</button>
+  <button class="top-btn" id="autoBtn" title="Turn the pages for me" aria-label="Turn the pages for me. Tap to change.">⏱ 5s</button>
 </header>
 
 <nav class="progress-moons" id="progressMoons" aria-label="Pages"></nav>
@@ -30,12 +30,16 @@
 </main>
 
 <div class="reader-controls">
+  <div class="turn-countdown" id="turnCountdown" hidden>
+    <span class="turn-countdown-text" id="turnCountdownText" aria-live="polite"></span>
+    <button class="turn-countdown-stay" id="stayBtn">✋ Stay here</button>
+  </div>
   <button class="ctrl-btn" id="prevBtn" aria-label="Previous page">◀</button>
   <button class="ctrl-btn primary" id="playBtn" aria-label="Read this page to me">🔊</button>
   <button class="ctrl-btn" id="nextBtn" aria-label="Next page">▶</button>
 </div>
 
 <script src="js/track.js?v=track-2"></script>
-<script src="js/reader.js?v=track-2"></script>
+<script src="js/reader.js?v=auto-turn-1"></script>
 </body>
 </html>

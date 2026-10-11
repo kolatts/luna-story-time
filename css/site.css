@@ -436,6 +436,36 @@ body.big-text .story-text { font-size: calc(var(--story-size) * 1.28); line-heig
 }
 .ctrl-btn[aria-pressed="true"] { background: var(--pink); color: var(--ink); border-color: var(--pink); }
 
+/* Auto page-turn countdown: a gold ring fills around Next, a pill offers "Stay here" */
+.ctrl-btn.counting {
+  position: relative;
+  font-family: "Andika", system-ui, sans-serif; font-weight: 700; color: var(--gold-soft);
+}
+.ctrl-btn.counting::before {
+  content: ""; position: absolute; inset: -5px; border-radius: 50%;
+  background: conic-gradient(var(--gold) calc(var(--turn-progress, 0) * 360deg), rgba(183,167,212,.22) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+  pointer-events: none;
+}
+.turn-countdown {
+  position: absolute; left: 50%; bottom: calc(100% - .2rem); transform: translateX(-50%);
+  display: flex; align-items: center; gap: .6rem;
+  padding: .3rem .35rem .3rem .95rem; border-radius: 999px;
+  background: rgba(38,33,80,.95); border: 1px solid rgba(232,196,106,.5);
+  box-shadow: 0 6px 18px rgba(0,0,0,.45);
+  color: var(--gold-soft); font-weight: 700; white-space: nowrap;
+  animation: countdownIn .25s ease;
+}
+.turn-countdown[hidden] { display: none; }
+.turn-countdown-stay {
+  min-height: 36px; padding: .25rem .8rem; border-radius: 999px;
+  background: var(--paper); color: var(--ink); font-weight: 700; font-size: .92rem;
+}
+.turn-countdown-stay:hover { background: var(--gold-soft); }
+@keyframes countdownIn { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .turn-countdown { animation: none; } }
+
 .progress-moons {
   display: flex; flex-wrap: wrap; justify-content: center; gap: .1rem;
   padding: .8rem 1rem 0;

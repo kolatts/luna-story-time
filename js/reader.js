@@ -1,6 +1,7 @@
 /* Luna's Story Time — storybook reader
  * Read-aloud via the Web Speech API with word-level highlighting,
- * tap-a-word pronunciation, sparkle-word definitions, and storytime auto-advance.
+ * tap-a-word pronunciation, sparkle-word definitions, and auto page-turns:
+ * pressing Play starts a read-through that counts down and turns each page.
  */
 (function () {
   "use strict";
@@ -18,8 +19,9 @@
   var book = null;
   var pages = [];        // cover page + spreads + finale
   var current = 0;
-  var autoMode = false;
+  var readingThrough = false; // Play was pressed with auto-turn on: keep reading page after page
   var speaking = false;
+  var readToken = 0;     // bumped on every stop so a late onend can't turn the page
   var renderCount = 0;   // used to skip the initial-load focus steal
   var furthest = -1;     // furthest page reached this visit (for drop-off tracking)
   var finished = false;
@@ -34,6 +36,9 @@
   var bigTextBtn = document.getElementById("bigTextBtn");
   var speedBtn = document.getElementById("speedBtn");
   var autoBtn = document.getElementById("autoBtn");
+  var countdownEl = document.getElementById("turnCountdown");
+  var countdownText = document.getElementById("turnCountdownText");
+  var stayBtn = document.getElementById("stayBtn");
 
   /* ---------- Reading speed (speed-dial cycle button) ----------
      audio.playbackRate takes a plain multiplier; the Web Speech API's rate
@@ -56,6 +61,19 @@
     speedBtn.classList.toggle("speed-set", speedIndex !== DEFAULT_SPEED_INDEX);
   }
 
+  /* ---------- Auto page-turn delay (cycle button; 0 = turn pages yourself) ---------- */
+  var TURN_DELAYS = [3, 5, 10, 0];
+  var DEFAULT_TURN_DELAY = 5;
+  var turnDelay = DEFAULT_TURN_DELAY;
+
+  function syncAutoButton() {
+    var label = turnDelay ? "Turn the pages for me after " + turnDelay + " seconds" : "Turn the pages myself";
+    autoBtn.textContent = turnDelay ? "⏱ " + turnDelay + "s" : "✋ Off";
+    autoBtn.title = label;
+    autoBtn.setAttribute("aria-label", label + ". Tap to change.");
+    autoBtn.classList.toggle("speed-set", turnDelay !== DEFAULT_TURN_DELAY);
+  }
+
   /* ---------- Reader preferences + reading position (localStorage) ---------- */
   var READER_STATE_KEY = "luna-reader-v1";
   function loadReaderState() {
@@ -69,8 +87,8 @@
   if (!readerState.prefs) readerState.prefs = {};
   if (!readerState.books) readerState.books = {};
 
-  // Storytime/auto mode is deliberately never restored — a page that starts
-  // talking on load is startling, and it's the one toggle with audible side effects.
+  // Only the auto-turn *delay* is restored; reading itself never starts on
+  // load — a page that starts talking by itself is startling.
   if (readerState.prefs.bigText) {
     document.body.classList.add("big-text");
     bigTextBtn.setAttribute("aria-pressed", "true");
@@ -82,6 +100,8 @@
     speedIndex = 0;
   }
   syncSpeedButton();
+  if (TURN_DELAYS.indexOf(readerState.prefs.turnDelay) >= 0) turnDelay = readerState.prefs.turnDelay;
+  syncAutoButton();
 
   /* ---------- Narration audio (pre-generated Azure "Ana" voice) ---------- */
   var narration = null;   // { pageId: [[ms, charOffset, wordLen], ...] }
@@ -115,6 +135,7 @@
   }
 
   function stopSpeaking() {
+    readToken++;
     if (synth) synth.cancel();
     if (audio) { audio.pause(); audio.removeAttribute("src"); audio.load(); }
     if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
@@ -122,9 +143,21 @@
     if (spriteAudio) spriteAudio.pause();
     if (vocabAudio) vocabAudio.pause();
     speaking = false;
-    playBtn.textContent = "🔊";
-    playBtn.setAttribute("aria-label", "Read this page to me");
+    syncPlayButton();
     clearHighlights();
+  }
+
+  /* Stop reading AND end the read-through, so no page turns follow. */
+  function stopReadingThrough() {
+    readingThrough = false;
+    cancelCountdown();
+    stopSpeaking();
+  }
+
+  function syncPlayButton() {
+    var active = speaking || readingThrough;
+    playBtn.textContent = active ? "⏸" : "🔊";
+    playBtn.setAttribute("aria-label", active ? "Stop reading" : turnDelay ? "Read the story to me" : "Read this page to me");
   }
 
   function clearHighlights() {
@@ -172,10 +205,9 @@
     audio.onended = function () {
       if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
       speaking = false;
-      playBtn.textContent = "🔊";
-      playBtn.setAttribute("aria-label", "Read this page to me");
       clearHighlights();
       if (onDone) onDone();
+      syncPlayButton();
     };
 
     function tick() {
@@ -192,8 +224,7 @@
     var p = audio.play();
     if (p && p.catch) p.catch(function () { audio.onerror(); });
     speaking = true;
-    playBtn.textContent = "⏸";
-    playBtn.setAttribute("aria-label", "Stop reading");
+    syncPlayButton();
     rafId = requestAnimationFrame(tick);
   }
 
@@ -229,39 +260,33 @@
     }
     u.onend = function () {
       speaking = false;
-      playBtn.textContent = "🔊";
-      playBtn.setAttribute("aria-label", "Read this page to me");
       clearHighlights();
       if (onDone) onDone();
+      syncPlayButton();
     };
     u.onerror = function () {
       speaking = false;
-      playBtn.textContent = "🔊";
-      playBtn.setAttribute("aria-label", "Read this page to me");
+      syncPlayButton();
       clearHighlights();
     };
     speaking = true;
-    playBtn.textContent = "⏸";
-    playBtn.setAttribute("aria-label", "Stop reading");
+    syncPlayButton();
     synth.speak(u);
   }
 
   function speakWord(word) {
     if (!synth) return;
-    var wasAuto = autoMode;
-    autoMode = false; // a tapped word shouldn't trigger page-advance chains
     synth.cancel();
     var u = new SpeechSynthesisUtterance(word);
     if (chosenVoice) u.voice = chosenVoice;
     u.rate = 0.75;
     u.pitch = 1.1;
-    u.onend = function () { autoMode = wasAuto; };
     synth.speak(u);
   }
 
   /* Say one word with the Ana voice via the word sprite; browser voice fallback. */
   function sayWord(word) {
-    if (speaking) stopSpeaking();
+    if (speaking || readingThrough) stopReadingThrough(); // exploring the page ends the read-through
     var seg = wordSprite && wordSprite[word];
     if (!seg) { speakWord(word); return; }
     if (!spriteAudio) {
@@ -281,7 +306,7 @@
 
   /* Say a sparkle word plus its definition with the Ana voice; fallback to browser voice. */
   function sayVocab(entry) {
-    if (speaking) stopSpeaking();
+    if (speaking || readingThrough) stopReadingThrough();
     if (!vocabAudio) { vocabAudio = new Audio(); vocabAudio.preload = "auto"; }
     var key = stripPunct(entry.word);
     vocabAudio.onerror = function () { speakWord(entry.word + ". " + entry.definition); };
@@ -367,11 +392,13 @@
 
   function renderPage(idx, dir) {
     renderCount++;
+    cancelCountdown();
     stopSpeaking();
     current = idx;
     host.innerHTML = "";
     var page = pages[idx];
     trackProgress(idx);
+    if (page.kind === "finale") readingThrough = false;
 
     var spreadEl = document.createElement("section");
     spreadEl.className = "spread " + (page.textPosition === "top" ? "text-top" : "text-bottom") +
@@ -449,9 +476,14 @@
       if (renderCount > 1) titleEl.focus({ preventScroll: true });
     }
 
-    if (autoMode && page.kind !== "finale") {
-      setTimeout(function () { if (autoMode && current === idx) playCurrent(); }, 450);
+    // Mid read-through, every page (turned by the countdown or by hand) reads itself.
+    if (readingThrough && page.kind !== "finale") {
+      var token = readToken;
+      setTimeout(function () {
+        if (readingThrough && current === idx && token === readToken) readPage();
+      }, 450);
     }
+    syncPlayButton();
   }
 
   // "Read all the way" = reached the last story spread (the finale is a bonus).
@@ -461,7 +493,7 @@
     if (renderCount > 1) track("story_page", { book: slug, spread: idx, pages: pages.length - 2 });
     if (!finished && renderCount > 1 && idx >= pages.length - 2) {
       finished = true;
-      track("story_finish", { book: slug, title: book.title, pages: pages.length - 2, auto: autoMode });
+      track("story_finish", { book: slug, title: book.title, pages: pages.length - 2, auto: readingThrough });
     }
   }
 
@@ -544,20 +576,62 @@
     renderPage(next, dir);
   }
 
+  /* Play button: toggles a read-through (or one page when auto-turn is off). */
   function playCurrent() {
+    if (pages[current].kind === "finale") return;
+    if (speaking || readingThrough) { stopReadingThrough(); return; }
+    readingThrough = turnDelay > 0;
+    readPage();
+  }
+
+  function readPage() {
     var page = pages[current];
-    if (page.kind === "finale") return;
-    if (speaking) { stopSpeaking(); return; }
+    var token = readToken;
     var onDone = function () {
-      if (autoMode && current < pages.length - 1) {
-        setTimeout(function () { if (autoMode) go(1); }, 900);
-      }
+      if (token !== readToken) return; // stopped or turned while finishing
+      if (readingThrough && current < pages.length - 1) startCountdown();
+      else readingThrough = false;
     };
     if (narration && page.audioId && narration[page.audioId]) {
       playNarration(page, onDone);
     } else {
       speakText(page.speakText + (page.refrain ? " … " + book.refrain : ""), onDone, page.spans);
     }
+  }
+
+  /* ---------- Page-turn countdown ----------
+     When a page finishes reading, count down turnDelay seconds with a ring
+     filling around the Next button, then turn. Next skips the wait;
+     "Stay here" (or the pause button) ends the read-through. */
+  var countdownTimer = null;
+  var countdownEnds = 0;
+
+  function startCountdown() {
+    cancelCountdown();
+    countdownEnds = Date.now() + turnDelay * 1000;
+    nextBtn.classList.add("counting");
+    countdownEl.hidden = false;
+    tickCountdown();
+    countdownTimer = setInterval(tickCountdown, 100);
+  }
+
+  function tickCountdown() {
+    var left = countdownEnds - Date.now();
+    if (left <= 0) { go(1); return; } // renderPage cancels the countdown
+    var secs = Math.ceil(left / 1000);
+    var text = (current === pages.length - 2 ? "Wonder time in " : "Next page in ") + secs + "…";
+    if (countdownText.textContent !== text) countdownText.textContent = text;
+    nextBtn.textContent = String(secs);
+    nextBtn.style.setProperty("--turn-progress", (1 - left / (turnDelay * 1000)).toFixed(3));
+  }
+
+  function cancelCountdown() {
+    if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+    countdownEl.hidden = true;
+    countdownText.textContent = "";
+    nextBtn.classList.remove("counting");
+    nextBtn.style.removeProperty("--turn-progress");
+    nextBtn.textContent = "▶";
   }
 
   /* ---------- Vocab popup ---------- */
@@ -601,6 +675,7 @@
 
   /* ---------- Events ---------- */
   prevBtn.addEventListener("click", function () { go(-1); });
+  stayBtn.addEventListener("click", function () { stopReadingThrough(); playBtn.focus(); });
   nextBtn.addEventListener("click", function () { go(1); });
   playBtn.addEventListener("click", playCurrent);
 
@@ -619,10 +694,21 @@
     saveReaderState(readerState);
   });
   autoBtn.addEventListener("click", function () {
-    autoMode = !autoMode;
-    this.setAttribute("aria-pressed", String(autoMode));
-    if (autoMode && !speaking) playCurrent();
-    if (!autoMode) stopSpeaking();
+    turnDelay = TURN_DELAYS[(TURN_DELAYS.indexOf(turnDelay) + 1) % TURN_DELAYS.length];
+    syncAutoButton();
+    readerState.prefs.turnDelay = turnDelay;
+    saveReaderState(readerState);
+    // Takes effect mid-story without interrupting the voice: off finishes this
+    // page and stops; a new delay picks up the current read or countdown.
+    if (turnDelay === 0) {
+      readingThrough = false;
+      cancelCountdown();
+    } else if (speaking) {
+      readingThrough = true;
+    } else if (countdownTimer) {
+      startCountdown();
+    }
+    syncPlayButton();
   });
 
   host.addEventListener("click", function (e) {
@@ -657,7 +743,7 @@
   });
 
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") { closePop(); stopSpeaking(); return; }
+    if (e.key === "Escape") { closePop(); stopReadingThrough(); return; }
     if (pop) return; // don't let arrow keys/space reach page navigation while the popup is open
     if (e.key === "ArrowRight") go(1);
     else if (e.key === "ArrowLeft") go(-1);
@@ -678,7 +764,7 @@
   }, { passive: true });
 
   window.addEventListener("beforeunload", function () { if (synth) synth.cancel(); });
-  document.addEventListener("visibilitychange", function () { if (document.hidden) stopSpeaking(); });
+  document.addEventListener("visibilitychange", function () { if (document.hidden) stopReadingThrough(); });
 
   /* ---------- Load ---------- */
   // Revised audio and its matching timing map must share a cache version.

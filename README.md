@@ -8,7 +8,7 @@ Magical, read-aloud children's storybooks for little dreamers — a static site,
 - 🔊 **Read to me** — warm neural narration (Azure "Ana" voice, pre-generated per page) with per-word highlighting synced from word-boundary timings; Web Speech API fallback when narration files are absent
 - 👆 **Tap any word** to hear it spoken
 - ✨ **Sparkle words** — tappable vocabulary with kid-friendly definitions
-- 📖✨ **Storytime mode** — reads every page and turns them automatically
+- ⏱ **Auto page-turn** — press play and it reads the whole book, counting down (3, 5 or 10 seconds) before each page turn; tap ⏱ to change the wait or switch it off, remembered on this device
 - 🌙 **Wonder Together** — discussion questions + look-and-find after every book
 - Mobile/tablet/desktop responsive, parallax landing page, painted-storybook art
 - Ruby's Dragon Bonds stories add brief cinematic embers, bubbles, and violet magic on page turns; reduced-motion preferences disable them.

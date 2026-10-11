@@ -69,7 +69,7 @@ Serve locally (`uv run --with rangehttpserver python -m RangeHTTPServer 8080` �
 - Bookshelf shows the new cover; card links to `reader.html?book=<slug>`.
 - Every page renders: art loads (no 🌙 placeholder), text matches, sparkle words glow and pop definitions, refrain callout appears on the right spreads.
 - Read-aloud plays and highlights words (needs a real browser voice; headless CI may lack voices — verify manually or via the Browser pane, not just playwright).
-- Storytime mode auto-advances; prev/next, moons nav, swipe, arrow keys work.
+- Play reads through with a countdown between pages (⏱ cycles 3s/5s/10s/off); prev/next, moons nav, swipe, arrow keys work.
 - Nothing overflows horizontally on mobile.
 
 ## 6. Deploy
