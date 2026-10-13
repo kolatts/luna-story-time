@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -29,6 +29,12 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
     one it has chosen. Book Two.
   - Luna (moon, girl): dress midnight black sprinkled with tiny silver stars, moon-white glowing
     trim, soft silver moonbeams in her hands. Book Three.
+  - Leaf (earth, girl): spring-green dress with a hem of pink flower petals, tiny flowering green
+    vines curling from her fingertips. Book Four. Leaf's magic is flowers and vines that hold things
+    together, and gold flower dust (which makes Black Hole sneeze).
+- **Grizzlemop** is a great big hairy cave monster who lives in the cave under Noir and War's
+  palace. He roared at Ruby because a rock had pinned his tail; she freed him anyway, and he is a
+  friend now.
 - **Luna's magic**: moonbeams. Her big move is the **crashing moon**: Ruby and Luna roll their
   moonbeams into one soft glowing moon that BOINGs down and squashes the bad guys flat as pancakes
   (comic, nobody hurt). The real moon in the sky never moves. Luna stays black; she is never
@@ -50,12 +56,21 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    Pearl bubbles it, Flame floats it like a balloon, the twins spin Black Hole dizzy. Luna hatches
    in Ruby's arms under the full moon and fills everything with light. The crashing moon squashes
    all three; its moon-dust makes Black Hole sneeze them home. Only Noir and War judge by color.
+4. *Ruby and the Leafy Egg*: refrain "Give a hand, and give again." The Leafy Egg is buried deep
+   under Noir and War's palace. Noir has Black Hole gulp the cellar stones to dig down to it; the
+   gulping scares the egg, its shivers shake the hill, and the castle crumbles. The five dragons
+   feel the rumble and lead Ruby to the cave. Grizzlemop roars and swats off Ruby's crown; she
+   frees his pinned tail anyway, and he says sorry and leads them to the egg. Leaf hatches in
+   Ruby's arms and the shaking stops. Back on top, Leaf's flower dust makes Black Hole sneeze every
+   stone back, and Leaf's flowers hold them together. Noir and War never say thank you, and Ruby
+   doesn't need them to: "A gift's given free."
 
 ## Open threads
 
 - The cook's name and story.
 - Where dragon eggs come from, and how many more Ruby's mark will find.
-- What Noir does next. She has now lost three dragons to Ruby.
+- What Noir does next. She has now lost four dragons to Ruby, and her castle is held up by
+  Leaf's flowers.
 - War gasped "Black things don't shine! Or do they?" A seed of doubt, if a later book wants it.
 - Where the shooting star came from.
 
@@ -81,6 +96,11 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 6. **Moon**: always a perfectly round full moon in Book Three art, except the crashing-moon
    spread, which has no sky moon (the glowing moon-ball is the only moon shape).
 7. No king, no father figure and no adult guardian shadows in any Ruby art.
+8. **Leaf**: puppy-sized, spring-GREEN leaf-veined scales, leaf-shaped veined wings, a frill of
+   small leaves, petal-pink eyes, tiny brown twig horns, tail ending in a leaf tip. Name her "the
+   baby GREEN leaf dragon" in prompts.
+9. **Grizzlemop**: haystack-tall, round, chestnut-brown mop of fur, glowing amber eyes, flat blunt
+   teeth, fuzzy paws with no claws. Storybook-silly, never scary-real.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region

@@ -110,6 +110,13 @@
           "subtitle": "Book Three of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-and-luna/images/cover.webp"
+        },
+        {
+          "slug": "ruby-and-the-leafy-egg",
+          "title": "Ruby and the Leafy Egg",
+          "subtitle": "Book Four of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-and-the-leafy-egg/images/cover.webp"
         }
       ]
     }

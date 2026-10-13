@@ -1,0 +1,507 @@
+{
+  "slug": "ruby-and-the-leafy-egg",
+  "series": "ruby-and-the-dragon-bonds",
+  "bookNumber": 4,
+  "title": "Ruby and the Leafy Egg",
+  "subtitle": "Book Four of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny",
+    "Mommy"
+  ],
+  "ageRange": "4-8",
+  "refrain": "Give a hand, and give again.",
+  "palette": {
+    "night": "#1F2B22",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#9CCB72",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover composition: exactly Ruby standing on a sunny flowery green hillside, Ruby's tunic dress magically transformed to spring green with a hem of soft pink flower petals, with tiny green vines bearing little pink, yellow and blue flowers curling from her fingertips (her leaf magic), tiny crown, silver forehead mark visible, smiling and cradling Leaf, the puppy-sized baby GREEN leaf dragon in her arms. Behind them on the hilltop stands a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, its stones wrapped in climbing green vines and pink flowers; below it, the arched mouth of a cave in the hillside. Half a leaf-covered green eggshell lies in the grass at Ruby's feet. Soft blue sky with fluffy clouds and generous open sky in the upper third for the title. Exactly Ruby and Leaf, no other characters, no text.",
+    "effect": "bond"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "sheet": "Leaf: female baby earth dragon the size of a small puppy who looks like a leaf: rounded body of bright spring-GREEN scales with lighter yellow-green leaf-vein lines, a pale green belly, two leaf-shaped green wings with visible veins, a little frill of small green leaves around her neck, large petal-pink eyes, two tiny brown twig-like horns, four little legs and one curled green tail ending in a pointed leaf tip, sweet shy smile. Dragon, never a human, never a lizard, never a bug. Flowers, vines and gold flower dust only when specified."
+    },
+    {
+      "id": "grizzlemop",
+      "name": "Grizzlemop",
+      "sheet": "Grizzlemop: a great big hairy cave monster about as tall as a haystack, a round shaggy body completely covered in long tangled chestnut-brown fur like a giant mop, two big round glowing amber eyes peeking through the fur, a wide mouth with flat blunt teeth, big round fuzzy feet and fuzzy paws with no claws, a long shaggy tail. Storybook-silly and soft like a giant furry puppet, never gory: no sharp teeth, no claws, no horns, no drool."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    }
+  ],
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Rumble",
+      "text": "Ruby was thirteen days old. She had counted each one.\nShe was stacking up blocks in the warm morning sun.\nThen the teacups went rattle. The windows went hum.\nAnd the floor gave a rumble, like a big, bumpy drum.\n\nRUMBLE, RUMBLE! Her block tower tumbled and fell.\nSomething deep in the ground had a story to tell.",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "rumble",
+          "definition": "a low, grumbly, shaky sound, like thunder far away"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Cozy lavender-stone palace playroom in Riverlight in warm morning sunlight through a big arched window. Exactly Ruby sitting on a round rug, startled with wide eyes, as her tall tower of wooden toy blocks tumbles down around her; teacups rattle and hop on a little table. Around her sit five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars, all with ears perked up, alert, feeling the floor shake. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly Ruby and these five baby dragons, each appearing once, no other people, no other dragons.",
+      "pronunciations": {
+        "RUMBLE": "ˈɹʌmbəl"
+      }
+    },
+    {
+      "number": 2,
+      "title": "Gulp!",
+      "text": "Across the far hills, in her charcoal-dark tower,\nNoir rubbed her hands. \"There's an egg! Dragon power!\nIt's buried down deep, underneath our own floor.\nBlack Hole, gulp the stones! Gulp them up! Gulp some more!\"\n\nGULP! went the cellar. GLUG! went a wall.\nGULP! went the pillars that held up the hall.\nEvery gulp made a rumble. And deep down below,\na scared little egg shivered. The whole hill shook so!",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "pillars",
+          "definition": "tall, strong posts that hold up a roof"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Storybook cutaway view in daylight of a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, showing the inside like a dollhouse. Upstairs in the great hall, Noir points down at the floor with a greedy grin, rubbing her hands, War peeking eagerly beside her. Downstairs in the stone cellar, Black Hole gulps cellar stones and a stone pillar into his small dark purple-rimmed swirl, stones flying into it. Far below in the brown earth under the hill, in a small hollow pocket, sits the Leafy Egg: a round egg whose mossy green shell is covered all over with overlapping fresh green leaves like a leafy coat, with a few tiny pink flower buds peeking between the leaves, shivering with small curved shake lines. Exactly Noir, War and Black Hole, no other people, no other dragons, no Ruby.",
+      "pronunciations": {
+        "GULP": "ɡʌlp",
+        "GLUG": "ɡlʌɡ"
+      }
+    },
+    {
+      "number": 3,
+      "title": "Crumble",
+      "text": "The tower went wibble. The walls went a-wobble.\nDown tumbled the bricks with a bump and a bobble.\nNoir held up a doorway. War pushed on a wall.\n\"Stop GULPING!\" they shouted. \"You'll tumble it all!\"\nBlack Hole stopped, round and stuffed, with a BURP. But below,\nthe scared egg kept on shivering. The hill shook. Oh no!",
+      "image": "images/03.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "doorway",
+          "definition": "the open space where a door goes"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Daytime outside a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, which is comically crumbling: the dark tower leans and wobbles, bricks tumble down the front steps, puffs of dust everywhere. Noir stands with both arms up holding up a sagging stone doorway, War pushes with both hands against a cracked leaning wall, both shouting. Black Hole sits nearby round and stuffed like a big balloon, letting out a little burp puff, looking sheepish. Comic, nobody hurt. Exactly Noir, War and Black Hole, no other people, no Ruby.",
+      "pronunciations": {
+        "GULPING": "ˈɡʌlpɪŋ",
+        "BURP": "bɝp"
+      }
+    },
+    {
+      "number": 4,
+      "title": "Follow the rumble",
+      "text": "The five little dragons pressed their toes to the ground.\nThey could feel it: a tremble, a hum, a deep sound.\nFlame tiptoed. Pearl tiptoed. The twins went zip-zip.\nLuna padded ahead with her nose to each dip.\nOver meadows and creeks, over hill after hill,\nthey followed the rumble, and it rumbled on still.",
+      "image": "images/04.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "tremble",
+          "definition": "to shake just a tiny bit, like jelly"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Sunny daytime landscape of green rolling meadows, wildflowers and a little creek with stepping stones. Exactly Ruby walking along the path following five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars: Flame and Pearl tiptoeing, the two twins zipping ahead with tiny gold sparkles, Luna leading with her nose to the ground, all feeling the grass tremble with small curved shake lines. Far away on a distant hill stands a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, its tower slightly leaning. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly Ruby and these five dragons, each appearing once, no other people, no other animals."
+    },
+    {
+      "number": 5,
+      "title": "The cave",
+      "text": "Under Noir's crumbly castle, a cave mouth yawned wide.\nRuby's silver mark tingled. Zing! \"There's an egg inside!\"\n\"GO AWAY!\" yelled War from the top of a wall.\n\"That egg is OURS!\" Noir snapped. \"We found it! That's all!\"\n\"Somebody's frightened,\" Ruby whispered, \"down there.\"\nShe held close to her dragons, and stepped in with care.",
+      "image": "images/05.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "yawned",
+          "definition": "opened up wide, like a big sleepy mouth"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Daytime on a grassy hillside. High on the hilltop above stands a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, cracked and crumbling. Low in the hillside below it, a big dark arched cave mouth with tree roots dangling over its edge. Exactly Ruby standing at the cave mouth looking in, brave but a little nervous, her silver forehead mark glowing with tiny silver sparkles, with five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars huddled around her legs. High up on top of a cracked palace wall, War yells down with her hands cupped round her mouth, and Noir points down crossly from a broken window. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly these characters, each appearing once, no other people, no Black Hole.",
+      "pronunciations": {
+        "GO": "ɡoʊ",
+        "AWAY": "əˈweɪ",
+        "OURS": "aʊɚz"
+      }
+    },
+    {
+      "number": 6,
+      "title": "Drip, drop",
+      "text": "It was dark in the cave. Drip! Drop! went the drips.\nLong roots dangled down like old wiggly fingertips.\nLuna glowed soft and silver. Flame puffed a warm light.\nEchoes whispered \"...ello... ...ello...\" left and right.\n\"I'm scared,\" Ruby whispered. \"But I'll go anyway.\"\nAnd her dragons stayed close, every step of the way.",
+      "image": "images/06.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "echoes",
+          "definition": "sounds that bounce back to you, again and again"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Inside a rocky cave, clearly lit by Luna's soft silver glow and a small warm flame puff from Flame so everyone is clearly visible, never a solid black frame. Long tangled tree roots dangle from the cave ceiling like wiggly fingers, water drips into little shining puddles. Exactly Ruby tiptoeing forward, scared but brave, biting her lip, with five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars pressed close around her: Pearl leaning on her leg, Flame puffing a small warm light, Luna glowing silver at her side, the twins holding on to her hands. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly Ruby and these five dragons, each appearing once, no other people, no monsters."
+    },
+    {
+      "number": 7,
+      "title": "ROAR!",
+      "text": "Then the dark gave a huff. And a puff. And a THUMP.\nAnd out loomed a monster, a great, hairy lump!\nHe was big as a haystack, all shaggy and brown,\nwith two glowing eyes, and a growl, and a frown.\n\"ROOOAAAR!\" went the monster, so loud that rocks rolled,\nand he swatted Ruby's crown off. Clink! went the gold.",
+      "image": "images/07.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "grizzlemop",
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "haystack",
+          "definition": "a big, tall pile of dried grass on a farm"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Inside a rocky cave, clearly lit by Luna's soft silver glow and a small warm flame puff from Flame so everyone is clearly visible, never a solid black frame. Grizzlemop, the great big hairy cave monster, looms up out of the shadows, roaring with his mouth wide open, swinging one big fuzzy paw; Ruby's tiny gold crown flies off her head through the air in a sparkly arc. Ruby leans back startled, her rainbow hair blown back by the roar, silver forehead mark visible, normal plum dress. Her five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars squeak and tumble backward. Pebbles roll. Dramatic but not frightening, the monster is storybook-silly. Exactly these characters, each appearing once, no other people, no other monsters.",
+      "pronunciations": {
+        "THUMP": "θʌmp",
+        "ROOOAAAR": "ɹɔːɹ"
+      }
+    },
+    {
+      "number": 8,
+      "title": "Stuck",
+      "text": "The dragons hid, trembling, tails tucked in tight.\nBut Ruby looked closer, by Luna's soft light.\nThen she saw why he roared. From the shaking, a rock\nhad dropped on his tail, and it held like a lock.\n\"He knocked off my crown, and that wasn't okay.\nBut he's hurting,\" said Ruby. \"Let's help anyway.\"",
+      "refrain": true,
+      "image": "images/08.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "anyway",
+          "definition": "even so; doing it even though it is hard"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Inside a rocky cave, clearly lit by Luna's soft silver glow and a small warm flame puff from Flame so everyone is clearly visible, never a solid black frame. Grizzlemop, the great big hairy cave monster, sits slumped and sad with big teary glowing amber eyes; the end of his long shaggy tail is pinned under one big fallen boulder. Exactly Ruby stepping toward him with a gentle, kind face and one open hand held out, NO crown on her head (her tiny gold crown lies on the cave floor beside Grizzlemop's big fuzzy paw), rainbow hair, silver forehead mark visible, normal plum dress. Her five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars peek out nervously from behind a rock, tails tucked. Exactly these characters, each appearing once, no other people."
+    },
+    {
+      "number": 9,
+      "title": "Heave-ho!",
+      "text": "\"Heave!\" pushed Ruby. \"Ho!\" pushed five dragons. Then... ROLL!\nOff tumbled the rock with a bump down a hole.\nThe monster sat up. He gave back her crown with a sigh.\n\"I'm Grizzlemop. Sorry I roared,\" he said, shy.\n\"You helped me, though I was so grumpy and rough.\nThe egg is this way. It's been scared long enough.\"",
+      "image": "images/09.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "shy",
+          "definition": "a little quiet and nervous around others"
+        }
+      ],
+      "effect": "bubbles",
+      "imagePrompt": "Inside a rocky cave, clearly lit by Luna's soft silver glow and a small warm flame puff from Flame so everyone is clearly visible, never a solid black frame. The big boulder tumbles away down into a dark hole in the cave floor. Grizzlemop, the great big hairy cave monster, now free, sits up with a shy, sorry smile, gently holding out Ruby's tiny gold crown on his big fuzzy paw. Exactly Ruby reaching up happily to take it back, NO crown on her head yet, rainbow hair, silver forehead mark visible, normal plum dress. Around them five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars cheer, a few clear bubbles from Pearl floating. Exactly these characters, each appearing once, no other people.",
+      "pronunciations": {
+        "ROLL": "ɹoʊl"
+      }
+    },
+    {
+      "number": 10,
+      "title": "The leafy egg",
+      "text": "Down, down, through a tunnel, past roots, round a bend,\nwas a cave full of green at the tunnel's far end.\nAnd there, in a nest made of moss, soft and deep,\nsat an egg wearing leaves, much too scared to sleep.\nIt shivered. It shook. RUMBLE, RUMBLE went the ground.\nRuby hugged it up close. \"Shh. You're safe now. You're found.\"",
+      "image": "images/10.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "moss",
+          "definition": "soft, fuzzy green stuff that grows on rocks and trees"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "Deep underground, a cozy round cavern glowing soft green, lit by glowing mushrooms, luminous moss and Luna's silver glow; ferns and roots everywhere. In a round nest of soft moss sits the Leafy Egg: a round egg whose mossy green shell is covered all over with overlapping fresh green leaves like a leafy coat, with a few tiny pink flower buds peeking between the leaves, shivering with small curved shake lines. Exactly Ruby kneeling in the nest, hugging the egg close with her eyes closed tenderly. Behind her, Grizzlemop peeks in from the tunnel and five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars watch quietly. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly these characters, each appearing once, no other people.",
+      "pronunciations": {
+        "RUMBLE": "ˈɹʌmbəl"
+      }
+    },
+    {
+      "number": 11,
+      "title": "Crick, crack, SNAP",
+      "text": "She hummed a soft hum, and she rocked it just so,\ntill its shivers grew smaller, and slower, and slow...\nThen a crick! Then a crack! Then a crinkly-leaf SNAP!\nOut tumbled a dragon, right into her lap.\nShe was green as a leaf, with two petal-pink eyes.\nAnd the shaking just STOPPED. What a quiet surprise!",
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "crinkly",
+          "definition": "wrinkly and crackly, like a dry leaf"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "The cozy underground cavern glowing soft green with luminous moss, glowing mushrooms and roots. Exactly Ruby sitting in a round moss nest with Leaf, the puppy-sized baby GREEN leaf dragon just hatched in her lap, cracked pieces of a leaf-covered green eggshell around them, a few leaves drifting down gently. Leaf blinks up at Ruby with petal-pink eyes. Everything calm and still. Ruby delighted and amazed. Ruby normal plum dress, tiny crown, silver forehead mark visible. Exactly Ruby and Leaf, no other characters.",
+      "pronunciations": {
+        "SNAP": "snæp",
+        "STOPPED": "stɑpt"
+      }
+    },
+    {
+      "number": 12,
+      "title": "Leaf",
+      "text": "\"Hello, Leaf,\" Ruby whispered. Leaf gave a green grin,\nand she pressed her small nose to Ruby's palm. Zing!\nRuby's dress swirled spring green, as fresh as new leaves,\nwith a hem of pink petals that swirled like a breeze,\nand from her fingertips, little vines curled and grew,\nwith wee flowers that opened, pink, yellow, and blue.",
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "petals",
+          "definition": "the soft, colorful parts of a flower"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "The cozy underground cavern glowing soft green, now bursting with blooming flowers. Exactly Ruby standing, delighted, as Leaf, the puppy-sized baby GREEN leaf dragon presses her small nose into Ruby's open palm. Ruby's tunic dress magically transformed to spring green with a hem of soft pink flower petals, with tiny green vines bearing little pink, yellow and blue flowers curling from her fingertips (her leaf magic), tiny crown, silver forehead mark visible. Golden-green sparkles and pink petals swirl around them. Exactly Ruby and Leaf, no other characters."
+    },
+    {
+      "number": 13,
+      "title": "The heap",
+      "text": "Up, up, out they climbed, to the top of the hill.\nNoir's castle lay crumbled, all dusty and still.\n\"That's OUR egg!\" Noir snapped. \"Hand that dragon to me!\"\nBut Leaf hopped to Ruby, as snug as could be.\nNoir and War made this mess. They were grabby, it's true.\nRuby looked at the rubble... and knew what to do.",
+      "refrain": true,
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "leaf",
+        "noir",
+        "war",
+        "black-hole",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "rubble",
+          "definition": "a messy pile of broken stones"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Daytime on top of a grassy hill. Noir and War's charcoal-and-violet palace has crumbled into a big dusty heap of charcoal and violet stones, only a stump of the dark tower left. Noir, dusty, stands on the rubble pointing and demanding; War sits on a broken stone, scowling, dust in her braid; Black Hole lies round and stuffed beside the heap. Exactly Ruby in the foreground looking at the rubble thoughtfully with a kind face, Ruby's tunic dress magically transformed to spring green with a hem of soft pink flower petals, with tiny green vines bearing little pink, yellow and blue flowers curling from her fingertips (her leaf magic), tiny crown, silver forehead mark visible, with Leaf, the puppy-sized baby GREEN leaf dragon hiding snugly against her legs and peeking out. Behind Ruby, small in the background at the edge of the cave mouth, five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars. Exactly these characters, each appearing once, no other people.",
+      "pronunciations": {
+        "OUR": "aʊɚ"
+      }
+    },
+    {
+      "number": 14,
+      "title": "ACHOO!",
+      "text": "\"Black Hole swallowed your stones,\" Ruby said. \"They're in there.\"\nLeaf blew a gold puff of flower dust into the air.\nIt tickled Black Hole's nose. \"Ah...\" \"Don't!\" War said. \"Ah... ah...\"\n\"ACHOOOO!\" Out they flew! Stones and pillars! Ta-da!\nBack up flew the bricks and the stairs, block by block,\nto the walls and the tower. Clink! Clunk! Clonk! Clock!",
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "leaf",
+        "black-hole",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "swallowed",
+          "definition": "gulped something down into your tummy"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Daytime on the hilltop beside a heap of rubble. Black Hole lets out a giant comic sneeze, eyes squeezed shut; dozens of charcoal and violet stones, bricks, stone stair steps and pillars fly out of his mouth in a big swoosh and soar back up through the air toward the palace walls. A little cloud of golden flower dust drifts around his nose. Leaf, the puppy-sized baby GREEN leaf dragon sits beside Ruby, having just blown the gold puff. War covers her ears; Noir's hair blows back. Exactly Ruby, Ruby's tunic dress magically transformed to spring green with a hem of soft pink flower petals, with tiny green vines bearing little pink, yellow and blue flowers curling from her fingertips (her leaf magic), tiny crown, silver forehead mark visible. Comic, nobody hurt. Exactly these five characters, each appearing once, no other people.",
+      "pronunciations": {
+        "ACHOOOO": "əˈtʃuː"
+      }
+    },
+    {
+      "number": 15,
+      "title": "Flowers hold tight",
+      "text": "But the stones wibbled. Wobbled. \"Oh, Leaf,\" Ruby said,\n\"can we help them hold tight?\" And Leaf nodded her head.\nUp sprang vines! Up sprang flowers, in every last crack,\nholding stone onto stone, side to side, front to back.\nGrizzlemop carried big stones. Pearl washed off the dust.\nFlame, the twins, and Luna glowed, as good helpers must.",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "leaf",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "helpers",
+          "definition": "friends who lend a hand"
+        }
+      ],
+      "effect": "bubbles",
+      "imagePrompt": "Daytime, a charcoal-and-violet stone palace with one dark tower on a grassy hilltop being rebuilt: green vines and pink, yellow and blue flowers sprout in every crack between the stones, holding them together like stitches. Exactly Ruby, Ruby's tunic dress magically transformed to spring green with a hem of soft pink flower petals, with tiny green vines bearing little pink, yellow and blue flowers curling from her fingertips (her leaf magic), tiny crown, silver forehead mark visible, and Leaf, the puppy-sized baby GREEN leaf dragon both sending flowering vines from Ruby's fingertips and Leaf's little paws toward the walls. Grizzlemop, the great big hairy cave monster, carries a big stone on his head; Pearl blows clear bubbles that wash the dust off; Flame puffs a tiny warm flame; Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, light a lantern with gold sparkles; Luna, the puppy-sized baby BLACK dragon speckled with silver stars glows silver on a windowsill. Busy, cheerful teamwork. Exactly these characters, each appearing once, no other people."
+    },
+    {
+      "number": 16,
+      "title": "Give again",
+      "text": "The castle stood tall, wrapped in flowers, brand new.\nNoir sniffed. \"Pink flowers? Not OUR color. Pooh.\"\nWar crossed her arms. \"And no thank-yous from me!\"\n\"That's okay,\" Ruby smiled. \"A gift's given free.\"\nGrizzlemop waved from his cave as the sun dipped down low,\nand home went six dragons, one princess, all aglow.",
+      "refrain": true,
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "leaf",
+        "noir",
+        "war",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "free",
+          "definition": "given away without asking for anything back"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Golden sunset glow. On the hilltop, a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, rebuilt and wrapped all over in green vines and pink flowers. In its doorway, Noir sniffs at a pink flower with her nose turned up, and War stands with her arms crossed, scowling. In the foreground on the hill path heading home, exactly Ruby, Ruby's tunic dress magically transformed to spring green with a hem of soft pink flower petals, with tiny green vines bearing little pink, yellow and blue flowers curling from her fingertips (her leaf magic), tiny crown, silver forehead mark visible, waving back with a warm smile, Leaf, the puppy-sized baby GREEN leaf dragon riding on her shoulder, and five baby dragons: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, each appearing exactly once, and Luna, the puppy-sized baby BLACK dragon speckled with silver stars trotting beside her. Grizzlemop, the great big hairy cave monster, waves from the cave mouth in the hillside. Exactly these characters, each appearing once, no other people.",
+      "pronunciations": {
+        "OUR": "aʊɚ"
+      },
+      "theEnd": "The End — of Ruby's fourth adventure."
+    }
+  ],
+  "questions": [
+    "The monster roared and knocked off Ruby's crown. Why do you think Ruby still helped him?",
+    "Noir and War made the whole mess, and they never said thank you. Was it still good that Ruby helped? Why?",
+    "Ruby said, \"I'm scared, but I'll go anyway.\" When have you been brave even when you felt scared?",
+    "Has someone ever helped you after you made a mistake? Who could you give a hand to this week?"
+  ],
+  "lookAndFind": "Find Ruby's crown flying through the air. Which page has a whole castle sneezed back together?",
+  "assetVersion": "ruby4-1"
+}
