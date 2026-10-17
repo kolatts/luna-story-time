@@ -3,8 +3,8 @@
 // the latest window (default 14 days) with the window before it, so the question
 // "is it getting better?" is answered at a glance.
 //
-// Deploy (Visual Studio Enterprise Subscription, resource group imagile-organization):
-//   az deployment group create --subscription "Visual Studio Enterprise Subscription" \
+// Deploy (Imagile Paid, resource group imagile-organization):
+//   az deployment group create --subscription "Imagile Paid" \
 //     -g imagile-organization -f analytics/usage-workbook.bicep
 // Cost: workbooks are free; queries run against data already retained 90 days.
 

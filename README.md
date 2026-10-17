@@ -44,5 +44,5 @@ The **Luna's Story Time — Usage** workbook (`analytics/usage-workbook.bicep`) 
 last 14 days with the 14 before. Find it in the Azure portal under `luna-storytime-ai` →
 Workbooks. Redeploy after editing:
 ```
-az deployment group create --subscription "Visual Studio Enterprise Subscription" -g imagile-organization -f analytics/usage-workbook.bicep
+az deployment group create --subscription "Imagile Paid" -g imagile-organization -f analytics/usage-workbook.bicep
 ```
