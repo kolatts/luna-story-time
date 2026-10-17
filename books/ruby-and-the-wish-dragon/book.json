@@ -1,0 +1,552 @@
+{
+  "slug": "ruby-and-the-wish-dragon",
+  "series": "ruby-and-the-dragon-bonds",
+  "bookNumber": 5,
+  "title": "Ruby and the Wish Dragon",
+  "subtitle": "Book Five of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "ageRange": "4-8",
+  "refrain": "Be careful what you wish for. Wishes come true!",
+  "palette": {
+    "night": "#1B2A3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#5BB8B0",
+    "ink": "#2A2140"
+  },
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Cover composition: exactly Ruby standing in a sunny wet green meadow sparkling with raindrops, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible, smiling and cradling Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back in her arms, a puff of gold-and-silver glitter around them. Behind them a bright rainbow arcs across the sky and its glowing end touches down in the grass right beside them, with half a swirled green-and-blue glittery eggshell lying at Ruby's feet. Soft blue sky with fluffy clouds and generous open sky in the upper third for the title. Exactly Ruby and Shinebright, no other characters, no text.",
+    "effect": "bond"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "shinebright",
+      "name": "Shinebright",
+      "sheet": "Shinebright: female baby wish dragon the size of a small puppy, rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns, large bright sea-green eyes with gold flecks, four little legs and one curled green-blue tail with a silver underside, sweet bright smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Gold-and-silver wish glitter only when specified."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "sheet": "Leaf: female baby earth dragon the size of a small puppy who looks like a leaf: rounded body of bright spring-GREEN scales with lighter yellow-green leaf-vein lines, a pale green belly, two leaf-shaped green wings with visible veins, a little frill of small green leaves around her neck, large petal-pink eyes, two tiny brown twig-like horns, four little legs and one curled green tail ending in a pointed leaf tip, sweet shy smile. Dragon, never a human, never a lizard, never a bug. Flowers, vines and gold flower dust only when specified."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    }
+  ],
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The rainbow",
+      "text": "Ruby was fourteen days old, and the rain had just stopped.\nShe went splashing through puddles. Plip! Plop! Splish! Splop!\nHer six little dragons came splashing in too,\nwhen a rainbow swooped down, red and yellow and blue.\n\nIt curved over the meadow and touched down so near,\nand Ruby's mark tingled. Zing! \"There's an egg here!\"",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "rainbow",
+          "definition": "a big curvy stripe of colors in the sky, that comes when the sun shines after rain"
+        },
+        {
+          "word": "tingled",
+          "definition": "felt a tiny fizzy prickle, like a little buzz"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "A sunny green meadow in Riverlight just after rain, sparkling puddles and wet grass, soft clouds parting. Exactly Ruby splashing joyfully in a puddle, droplets flying, Ruby normal plum dress, tiny crown, silver forehead mark visible. Around her six baby dragons splash and play: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. A bright rainbow arcs across the sky and its end touches down in the grass nearby, glowing softly. Ruby looks toward the rainbow's end in surprise. Exactly Ruby and these six baby dragons, each appearing once, no other people, no other dragons."
+    },
+    {
+      "number": 2,
+      "title": "The rainbow egg",
+      "text": "At the end of the rainbow, tucked deep in the grass,\nsat an egg that shone bright as a window of glass.\nIt was swirly with green. It was swirly with blue,\nwith a glitter of silver, and gold sparkles too.\n\nRuby picked it up gently. It hummed a sweet hum.\n\"Hello, little egg. Are you ready to come?\"",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "swirly",
+          "definition": "twisty and curly, round and round, like a whirl"
+        },
+        {
+          "word": "gently",
+          "definition": "softly and carefully, so nothing gets bumped"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Close view at the glowing end of a rainbow touching down in wet green meadow grass. Exactly Ruby kneeling, gently lifting a dragon egg the size of a melon: its shell swirled sea-green and ocean-blue, flecked with glittering silver and tiny gold sparkles, shining softly. Ruby normal plum dress, tiny crown, silver forehead mark visible. Six baby dragons crowd close and peer at the egg with wonder: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly Ruby and these six baby dragons, each appearing once, no other people, no other dragons."
+    },
+    {
+      "number": 3,
+      "title": "Tink, tink, POP",
+      "text": "Then a tink! Then a tink! Then a glittery POP!\nOut climbed a small dragon, with a wiggle and hop.\nHer back and her paws were all green-blue, like the sea.\nBut her underneath sparkled as bright as could be:\n\nsilver belly, silver neck, silver wings, silver tail,\nsilver under her paws, like a glittery trail.\nAnd down her back marched little spikes in a row,\ngold and silver and glittery, all aglow.",
+      "image": "images/03.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "glittery",
+          "definition": "full of tiny sparkles that twinkle when they catch the light"
+        },
+        {
+          "word": "spikes",
+          "definition": "little pointy bumps in a row"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Close-up in the sunny meadow at the rainbow's end. Exactly Ruby holding a cracked open swirled green-and-blue glittery eggshell, smiling with delight, Ruby normal plum dress, tiny crown, silver forehead mark visible. Climbing out of the eggshell with a wiggle is Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back: her green-blue back and paws, her glittering silver belly, neck, tail underside and wings, and her gold-and-silver glittery back spikes clearly visible; a puff of gold and silver glitter pops from the shell. Exactly Ruby and Shinebright, no other people, no other dragons."
+    },
+    {
+      "number": 4,
+      "title": "Hello, Shinebright",
+      "text": "\"Hello, Shinebright,\" said Ruby. Shinebright gave a bright grin,\nand she pressed her small nose to Ruby's palm. Zing!\n\nRuby's dress swirled to green and to blue, like the sea,\nwith a sash of bright silver, as sparkly as she.\nAnd her fingertips fizzed with a gold-silver light,\nlittle glittery sparkles that twinkled so bright.",
+      "image": "images/04.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "sash",
+          "definition": "a wide ribbon you wear around your middle"
+        },
+        {
+          "word": "fizzed",
+          "definition": "bubbled and sparkled, like soda pop"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "The moment of the bond in the sunny meadow, the rainbow fading behind. Exactly Ruby holding out her open palm while Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back presses her small nose to it, a burst of gold and silver glitter swirling around them. Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. Behind them, six baby dragons cheer: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly Ruby, Shinebright and these six baby dragons, each appearing once, no other people."
+    },
+    {
+      "number": 5,
+      "title": "Two wishes",
+      "text": "Then Shinebright spoke up, like a tiny bell's chime:\n\"I'm a wish dragon, Ruby, so listen. It's time.\nI hatch holding two wishes. The first is for you.\nThe other I keep, if a wish goes askew.\n\nWishes are big, and they do what they say.\"\nRuby thought very hard. \"What's a good wish today?\"",
+      "refrain": true,
+      "image": "images/05.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "chime",
+          "definition": "a soft, ringing sound, like a little bell"
+        },
+        {
+          "word": "askew",
+          "definition": "crooked, or gone all wrong"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "The sunny meadow. Exactly Ruby sitting cross-legged in the grass, chin on her hand, thinking very hard with a thoughtful look, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. On her lap sits Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back, looking up at her and speaking sweetly, two tiny glowing glittery orbs of gold-and-silver light floating just above Shinebright's spikes like two little stars. Six baby dragons sit around them listening: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly Ruby, Shinebright and these six baby dragons, each appearing once, no other people."
+    },
+    {
+      "number": 6,
+      "title": "A sweet smile",
+      "text": "Then a shadow swooped low, with a whoosh and a thrill:\nBlack Hole, carrying Noir and War over the hill!\nNoir smiled a sweet smile (Noir is never that sweet).\n\"Oh, a WISH dragon! Darling, how lovely! How neat!\n\nEvery wish needs its words. Say them loud, say them clear.\nStart with 'I wish,' darling. We're all listening here.\"",
+      "image": "images/06.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "noir",
+        "war",
+        "black-hole",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "shadow",
+          "definition": "a dark shape made when something blocks the light"
+        },
+        {
+          "word": "darling",
+          "definition": "a sweet name for someone you like; Noir only pretends!"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "The sunny meadow. Black Hole, the big mischievous charcoal-black dragon, lands with wings spread, Noir and War riding on his back. Noir leans forward with a fake, too-sweet smile and clasped hands; War smirks behind her. Exactly Ruby stands in front of them, a little unsure, holding Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back in her arms, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. The six baby dragons cluster behind Ruby, ears back, suspicious: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly these characters, each appearing once, no other people."
+    },
+    {
+      "number": 7,
+      "title": "The trick",
+      "text": "Ruby didn't know tricks. So she stood tall, and she said,\n\"I wish...\" and she paused, with a thought in her head.\n\"...THAT ALL OF THE DRAGONS WERE OURS!\" Noir yelled fast.\nWar shouted it too. \"OURS! ALL OURS! OURS AT LAST!\"\n\nShinebright gasped. \"Oh no! Once a wish has begun,\nI must finish the wish. I'm so sorry. It's done.\"",
+      "image": "images/07.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "noir",
+        "war",
+        "black-hole",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "trick",
+          "definition": "a sneaky way to fool someone"
+        },
+        {
+          "word": "begun",
+          "definition": "started"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Bright sunny daytime, clear blue sky, the green flowery meadow. Noir shouting with her hands cupped around her mouth, War beside her shouting and pumping a fist, both looking sneaky and triumphant; Black Hole grinning behind them. Exactly Ruby with her mouth open mid-word, eyes wide with shock, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back gasps in Ruby's arms, a swirl of gold-and-silver glitter starting to spin up from her spikes. The six baby dragons look alarmed: Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly these characters, each appearing once, no other people.",
+      "pronunciations": {
+        "OURS": "aʊɚz"
+      }
+    },
+    {
+      "number": 8,
+      "title": "WHOOSH",
+      "text": "WHOOSH! went the wish, in a glittery whirl.\nUp went Flame! Up went Pearl! And the twins, in a twirl!\nUp went Luna and Leaf, though they tried to hold tight,\nand then Shinebright, tugged from Ruby's arms, out of sight.\n\nFrom the mountains and seas, from the clouds way up high,\nevery dragon there was went whooshing on by.",
+      "image": "images/08.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "whirl",
+          "definition": "a fast spin, round and round"
+        },
+        {
+          "word": "tugged",
+          "definition": "pulled hard"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Bright sunny daytime, clear blue sky with white clouds (not night, not dusk), over the green meadow, a great glittery gold-and-silver whirlwind of sparkles sweeping up into the sky toward far hills. Caught in the sparkly swirl and floating up and away, unhurt but surprised, are seven baby dragons: Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back, being tugged up out of Ruby's reaching arms, and Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly Ruby on the ground reaching up after them with both arms, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. High in the sky in the distance, small silhouettes of many big wild dragons all fly the same way toward the far hills. Exactly Ruby as the only person, no Noir, no War, no other people."
+    },
+    {
+      "number": 9,
+      "title": "Alone",
+      "text": "Then the meadow went quiet. The rainbow was gone.\nRuby stood all alone on the wet, empty lawn.\n\"My dragons,\" she whispered. A tear trickled down.\nShe sat in the grass with a wobbly frown.\n\nBut deep in her heart, she could feel, faint and far,\nevery bond, like a thread, like a string to a star.",
+      "image": "images/09.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "faint",
+          "definition": "very soft, and hard to notice"
+        },
+        {
+          "word": "thread",
+          "definition": "a long, thin string, like the kind for sewing"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "The empty sunny meadow, puddles, quiet, no rainbow. Exactly Ruby sitting alone in the grass hugging her knees, a single tear on her cheek, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. From her heart, soft glowing silver threads of light stretch gently away across the meadow toward far-off hills, like strings tied to faraway stars. Exactly Ruby, completely alone, no dragons, no other people, no animals."
+    },
+    {
+      "number": 10,
+      "title": "ALL OURS",
+      "text": "At Noir's dark palace, the dragons came down:\non the roof, in the halls, on the stairs, all around.\nBig dragons, small dragons, striped, spotted, and bright,\nfluffy dragons, and feathery dragons in flight.\n\n\"ALL OURS!\" Noir cheered, and she twirled in her gown.\n\"ALL OURS!\" War cheered. \"We're the bosses in town!\"",
+      "image": "images/10.webp",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war",
+        "black-hole",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "palace",
+          "definition": "a big, fancy home for a queen or princess"
+        },
+        {
+          "word": "feathery",
+          "definition": "soft and fluffy, like a bird's feathers"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Daytime: a charcoal-and-violet stone palace with one dark tower on a grassy hilltop, its stones wrapped in green vines and pink flowers, absolutely crowded with dragons perched on the roof, the tower, the walls and the stairs: a happy jumble of big friendly grown-up wild dragons of many kinds: a fluffy cloud-white dragon with feathery wings and a big feathery plume of a tail, a striped orange mountain dragon, a turquoise sea dragon with fins, a spotted lavender dragon, a round pink dragon. In the courtyard Noir twirls in her gown, delighted, and War cheers with both arms up. Black Hole sits squished in a corner among the crowd. Among the crowd, small and unhappy, sit seven baby dragons huddled together: Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back and Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Exactly Noir and War as the only people, no Ruby, no other people.",
+      "pronunciations": {
+        "OURS": "aʊɚz"
+      }
+    },
+    {
+      "number": 11,
+      "title": "Not one would play",
+      "text": "\"Play with me, dragons!\" War called. Not one dragon would play.\nThey all turned their backs. They all looked away.\n\"Love us!\" Noir ordered. \"We WISHED it! You're mine!\"\nBut Flame wouldn't glow, and Luna wouldn't shine.\n\nWar's chin gave a wobble. Her eyes filled with tears.\n\"They're OURS,\" she sniffed, \"but they won't even wiggle their ears.\"",
+      "refrain": true,
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "ordered",
+          "definition": "said someone HAD to do something, in a bossy way"
+        },
+        {
+          "word": "wobble",
+          "definition": "a shaky little wiggle"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Inside the courtyard of Noir and War's charcoal-and-violet palace, crowded with dragons: a happy jumble of big friendly grown-up wild dragons of many kinds: a fluffy cloud-white dragon with feathery wings and a big feathery plume of a tail, a striped orange mountain dragon, a turquoise sea dragon with fins, a spotted lavender dragon, a round pink dragon, every one of them sitting with its back turned to Noir and War, noses in the air. In front, seven baby dragons sit in a row with their backs turned too: Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back and Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. War stands in the middle with a wobbling chin and teary eyes, holding out a toy ball nobody wants; Noir beside her, hands on hips, looks hurt and sad rather than angry. Comic and gentle, nobody hurt. Exactly Noir and War as the only people, no Ruby.",
+      "pronunciations": {
+        "OURS": "aʊɚz"
+      }
+    },
+    {
+      "number": 12,
+      "title": "AH-CHOO",
+      "text": "Poor Black Hole was squished in the dragon-packed hall,\nwith a tail on his head and his nose to the wall.\nThen a fluffy-tailed dragon went swish! past his face,\nand the fluff tickled Black Hole's nose. Uh-oh. Brace!\n\n\"Ah... ah... AH-CHOO!\" Off spun Noir's crown, far away.\nWar's braid flew straight up. Every dragon went, \"Hey!\"\nAnd the sneeze shook out Shinebright's spare wish with a pop.\nIt zipped out the window and over the hilltop.",
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "black-hole",
+        "noir",
+        "war",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "squished",
+          "definition": "squeezed and pressed tight, with no room"
+        },
+        {
+          "word": "brace",
+          "definition": "get ready for something big!"
+        }
+      ],
+      "effect": "vortex",
+      "imagePrompt": "Bright daytime: sunlight streams through a big open arched window showing blue sky and green hills (not night). A crowded hall inside Noir's charcoal-and-violet palace. Black Hole, squished between dragons, lets out an enormous comic sneeze, a big cartoon whoosh of air. A fluffy cloud-white dragon's big feathery plume of a tail is swishing past his nose. Noir's one tall silver crown has just blown off her head and spins away through the air, her head now bare (only one crown in the picture); War's black braid blows straight up and her eyes are huge. Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back, squished in the crowd, jiggles as one tiny glittering gold-and-silver sparkle pops off her spikes and zips out an open arched window toward green hills. Other big wild dragons in the hall wince comically. Funny, nobody hurt. Exactly Noir and War as the only people, no Ruby."
+    },
+    {
+      "number": 13,
+      "title": "The spare wish",
+      "text": "Then over the hills, past the creek and the trees,\nfloated one little sparkle, as light as a breeze.\nIt landed in Ruby's palm, soft as a kiss.\n\"Shinebright's spare wish!\" Ruby gasped. \"Oh, look at this!\"\n\n\"I could wish them all MINE, every dragon, right here...\"\nThen she stopped. \"That's the same as Noir's wish. Oh dear.\"",
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "spare",
+          "definition": "an extra one, saved for later"
+        },
+        {
+          "word": "breeze",
+          "definition": "a soft little wind"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "The quiet sunny meadow. Exactly Ruby standing, gazing at one tiny glowing gold-and-silver sparkle resting in her open palm, its light shining on her face. Her expression is thoughtful and unsure, one finger on her chin. Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. A soft sparkly trail shows where it floated in from the far hills. Exactly Ruby, completely alone, no dragons, no other people, no animals."
+    },
+    {
+      "number": 14,
+      "title": "A careful wish",
+      "text": "So Ruby thought hard. She thought all the way through.\nThen she whispered a wish that was careful and true:\n\"I wish every dragon could choose where to be...\neven if they fly far, and don't come back to me.\"\n\nAnd she opened her hand, and she let the wish go.\nIt went sparkling away, soft and golden and slow.",
+      "refrain": true,
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "careful",
+          "definition": "thinking slowly and gently before you do something"
+        },
+        {
+          "word": "choose",
+          "definition": "to pick for yourself"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "The meadow in warm late-afternoon light. Exactly Ruby with her eyes closed and a gentle, brave smile, her open hand raised, releasing the tiny gold-and-silver sparkle, which drifts up and away into the sky leaving a soft glittery trail toward the far hills. Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. Exactly Ruby, alone, no dragons, no other people, no animals."
+    },
+    {
+      "number": 15,
+      "title": "They chose",
+      "text": "POP! went the sparkle in Noir's crowded hall,\nand the wish set them free, every dragon, big and small.\nCloud dragons flew home to the sky, way up high.\nSea dragons went splashing, with a happy goodbye.\n\nAnd seven small dragons? They knew where to be.\nThey zoomed over the hills, straight to Ruby. Whee!\nThen a heap of warm dragons came tumbling on top,\nwith nuzzles and giggles that just wouldn't stop.",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "heap",
+          "definition": "a big, messy pile"
+        },
+        {
+          "word": "nuzzles",
+          "definition": "soft rubs with a nose, to say I love you"
+        }
+      ],
+      "effect": "bond",
+      "imagePrompt": "The meadow in golden late-afternoon light. Exactly Ruby lying in the grass laughing with joy as seven baby dragons tumble onto her in a happy heap of nuzzles: Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back and Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible. Far away on the distant hill, tiny silhouettes of many big wild dragons fly off in every direction toward mountains, clouds and sea. Exactly Ruby and these seven baby dragons, each appearing once, no other people."
+    },
+    {
+      "number": 16,
+      "title": "Ah... ah...",
+      "text": "And far, far away, by their quiet, dark tower,\nNoir and War argued for hour after hour.\n\"It was YOUR wish!\" \"No, YOURS!\" \"You said it too fast!\"\n\"Well, YOU wanted them most!\" \"Well, YOU shouted it last!\"\nTheir feelings were hurt, and they both felt so blue.\nAnd Black Hole, between them, went... ah... ah... AH-CHOO!\n\nBack home, Ruby yawned, with her dragons all near,\nevery one of them there because they chose to be here.",
+      "refrain": true,
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf"
+      ],
+      "vocab": [
+        {
+          "word": "argued",
+          "definition": "said \"No, YOU!\" back and forth, crossly"
+        },
+        {
+          "word": "blue",
+          "definition": "a way of saying sad"
+        }
+      ],
+      "effect": "starlight",
+      "imagePrompt": "Evening in a cozy lavender-stone palace bedroom in Riverlight, warm golden lamplight, first stars in the deep blue sky outside a big arched window, no moon. Exactly Ruby sitting in a big soft bed, yawning sleepily and smiling, Ruby's tunic dress magically transformed to swirled sea-green and ocean-blue with a glittering silver sash and a sparkly silver hem, with tiny gold and silver glitter sparkles twinkling at her fingertips (her wish magic), tiny crown, silver forehead mark visible, with seven baby dragons cuddled all around her on the quilt: Shinebright, the puppy-sized baby GREEN-AND-BLUE wish dragon with a glittering silver belly and a row of gold-and-silver spikes down her back curled on her lap, and Flame, Pearl, Sparks, the YELLOW baby dragon with silver eyes, and Crackle, the SILVER baby dragon with yellow eyes, Luna, the puppy-sized baby BLACK dragon speckled with silver stars, and Leaf, the puppy-sized baby GREEN leaf dragon, each appearing exactly once. Through the window, far across the dark hills, a tiny charcoal-and-violet palace with one dark tower, with a tiny comic puff of sneeze cloud bursting from it. Exactly Ruby and these seven baby dragons, each appearing once, no other people.",
+      "pronunciations": {
+        "YOURS": "jɔɹz",
+        "YOUR": "jɔɹ"
+      },
+      "theEnd": "The End — of Ruby's fifth adventure."
+    }
+  ],
+  "questions": [
+    "Noir and War got ALL the dragons, but they still felt sad. Why didn't getting everything make them happy?",
+    "Ruby could have wished every dragon back to her. Why do you think she wished for them to choose instead?",
+    "If you found a wish dragon, what would you wish for? Can you think of a way that wish might go wrong?",
+    "Have you ever really, really wanted something, and when you got it, it didn't feel as good as you thought? What does feel that good?"
+  ],
+  "lookAndFind": "Find the fluffy, feathery tail that tickled Black Hole's nose. Can you count all seven of Ruby's dragons on the last page?",
+  "assetVersion": "ruby5-1"
+}

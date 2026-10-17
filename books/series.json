@@ -117,6 +117,13 @@
           "subtitle": "Book Four of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-and-the-leafy-egg/images/cover.webp"
+        },
+        {
+          "slug": "ruby-and-the-wish-dragon",
+          "title": "Ruby and the Wish Dragon",
+          "subtitle": "Book Five of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-and-the-wish-dragon/images/cover.webp"
         }
       ]
     }

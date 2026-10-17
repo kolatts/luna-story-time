@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -32,6 +32,10 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
   - Leaf (earth, girl): spring-green dress with a hem of pink flower petals, tiny flowering green
     vines curling from her fingertips. Book Four. Leaf's magic is flowers and vines that hold things
     together, and gold flower dust (which makes Black Hole sneeze).
+  - Shinebright (wish, girl): dress swirled sea-green and ocean-blue with a glittering silver sash and
+    silver hem, gold-and-silver glitter at her fingertips. Book Five. A wish dragon hatches holding two
+    wishes: one to give to the one she chooses, and one kept for when a wish goes wrong. A wish, once
+    begun, must be finished. Wish dragons talk.
 - **Grizzlemop** is a great big hairy cave monster who lives in the cave under Noir and War's
   palace. He roared at Ruby because a rock had pinned his tail; she freed him anyway, and he is a
   friend now.
@@ -64,13 +68,22 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    Ruby's arms and the shaking stops. Back on top, Leaf's flower dust makes Black Hole sneeze every
    stone back, and Leaf's flowers hold them together. Noir and War never say thank you, and Ruby
    doesn't need them to: "A gift's given free."
+5. *Ruby and the Wish Dragon*: refrain "Be careful what you wish for. Wishes come true!" After rain,
+   the Rainbow Egg sits at a rainbow's end in the meadow. Shinebright hatches and bonds with Ruby at
+   once. Noir gets Ruby to say "I wish..." and shouts the ending herself: "...that ALL of the dragons
+   were OURS!" Every dragon anywhere, Shinebright included, goes to Noir's palace, and none of them
+   will play, snuggle or shine for Noir and War (their feelings are hurt; nobody is hurt). A fluffy
+   dragon tail tickles Black Hole into sneezing, which shakes Shinebright's spare wish loose. It floats
+   to Ruby, who wishes that every dragon could choose where to be, "even if they fly far, and don't
+   come back to me." Wild dragons go home; all seven of Ruby's choose her. Noir and War argue over
+   whose fault it was.
 
 ## Open threads
 
 - The cook's name and story.
 - Where dragon eggs come from, and how many more Ruby's mark will find.
-- What Noir does next. She has now lost four dragons to Ruby, and her castle is held up by
-  Leaf's flowers.
+- What Noir does next. She has now lost five dragons to Ruby (and every dragon in the world, for an
+  afternoon), and her castle is held up by Leaf's flowers.
 - War gasped "Black things don't shine! Or do they?" A seed of doubt, if a later book wants it.
 - Where the shooting star came from.
 
@@ -101,6 +114,11 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    baby GREEN leaf dragon" in prompts.
 9. **Grizzlemop**: haystack-tall, round, chestnut-brown mop of fur, glowing amber eyes, flat blunt
    teeth, fuzzy paws with no claws. Storybook-silly, never scary-real.
+10. **Shinebright**: puppy-sized; back, head, legs and paw tops swirled sea-green and ocean-blue;
+   glittering silver belly, neck and tail undersides, wings and paw pads; a row of glittery spikes
+   alternating silver and gold; tiny silver horns; sea-green eyes with gold flecks. Name her "the
+   baby GREEN-AND-BLUE wish dragon with a glittering silver belly" in prompts. Book Five art is all
+   daytime until the last spread: say "bright sunny daytime" explicitly, or the model drifts to night.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region
