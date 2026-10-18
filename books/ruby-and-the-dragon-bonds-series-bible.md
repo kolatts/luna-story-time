@@ -111,7 +111,10 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 7. No king, no father figure and no adult guardian shadows in any Ruby art.
 8. **Leaf**: puppy-sized, spring-GREEN leaf-veined scales, leaf-shaped veined wings, a frill of
    small leaves, petal-pink eyes, tiny brown twig horns, tail ending in a leaf tip. Name her "the
-   baby GREEN leaf dragon" in prompts.
+   baby GREEN leaf dragon" in prompts. She is slim and upright with a small dragon
+   head and a jagged crest of spiky leaves, as in Book Four; the model drifts her into a round chubby
+   blob with big leaf "ears". Reference: `.claude/image-generation/leaf-reference.png`; fix with
+   `.claude/image-generation/fix-leaf.py` (add `--nomask` if the masked edit erases her).
 9. **Grizzlemop**: haystack-tall, round, chestnut-brown mop of fur, glowing amber eyes, flat blunt
    teeth, fuzzy paws with no claws. Storybook-silly, never scary-real.
 10. **Shinebright**: puppy-sized; back, head, legs and paw tops swirled sea-green and ocean-blue;
