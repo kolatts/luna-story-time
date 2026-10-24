@@ -168,4 +168,3 @@ with Lovee's pink wings like a quilt on the bed.
 She kept his one rose by her pillow, near her heart.
 And beyond the far hills, in a tower tall and steep,
 a grumbly black dragon dreamed birds in his sleep.
-
