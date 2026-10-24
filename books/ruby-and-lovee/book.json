@@ -1,0 +1,437 @@
+{
+  "series": "ruby-and-the-dragon-bonds",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "ruby-and-lovee",
+  "bookNumber": 6,
+  "title": "Ruby and Lovee",
+  "subtitle": "Book Six of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "refrain": "Every heart holds something to love.",
+  "palette": {
+    "night": "#1B2A3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#F2A9C4",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "shinebright",
+      "name": "Shinebright",
+      "sheet": "Shinebright: female baby wish dragon the size of a small puppy, rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns, large bright sea-green eyes with gold flecks, four little legs and one curled green-blue tail with a silver underside, sweet bright smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Gold-and-silver wish glitter only when specified."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "sheet": "Leaf: female baby earth dragon the size of a small puppy who looks like a leaf: rounded body of bright spring-GREEN scales with lighter yellow-green leaf-vein lines, a pale green belly, two leaf-shaped green wings with visible veins, a little frill of small green leaves around her neck, large petal-pink eyes, two tiny brown twig-like horns, four little legs and one curled green tail ending in a pointed leaf tip, sweet shy smile. Dragon, never a human, never a lizard, never a bug. Flowers, vines and gold flower dust only when specified."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    },
+    {
+      "id": "lovee",
+      "name": "Lovee",
+      "sheet": "Lovee: female baby love dragon the size of a small puppy, soft rose-PINK head, neck, back, upper body, legs, paw tops, two small PINK wings including PINK membranes, two tiny blunt pink horns, large warm golden eyes and a friendly rounded little snout; cherry-RED chest and belly, RED soles under all four paws; one curled tail PINK along the top and RED along the entire underside. Her upper surfaces are pink and lower surfaces red. Four small legs and two small pink wings. No red wings, no entirely red tail, no heart-shaped pupils. Dragon, never a human. Tiny warm pink heart lights only when specified."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Sunny lavender-stone wedding garden with rose arch, generous open space across upper third. Ruby in rose-PINK tunic with TWO cherry-RED heart-shaped pockets and RED hem cuddles Lovee, pink wings and upper body, red chest belly soles and tail underside, pink tail top. Dog-sized Black Hole sits bashfully beside her, clearly SMALLER than Ruby, his head below her shoulders when she stands. Pink eggshell fragments with red hearts on path, tiny heart lights above Ruby hand. Exactly Ruby, Lovee and Black Hole, no other characters.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "The wedding garden",
+      "text": "Ruby was fifteen days old. In the sun,\nher seven small dragons came out for some fun.\nThrough the wedding-garden arch, where the roses grew red,\nwhere people said, \"I love you,\" and got married, she led.\n\nThen her silver mark tingled. She stopped by a chair.\n\"Oh! A pink egg with red hearts! Who tucked you in there?\"",
+      "image": "images/01.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "pearl",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "arch",
+          "definition": "a curved doorway you can walk through"
+        }
+      ],
+      "imagePrompt": "Ruby kneels beside a low lavender-stone garden bench beneath the rose wedding arch, delighted to discover one intact pastel-pink egg decorated with simple RED hearts on a cream cushion. Pearl and Shinebright peer beside her. Bright sunny daytime; empty wedding garden, no wedding guests. Ruby in normal plum tunic. Focus low in frame on the egg and three faces."
+    },
+    {
+      "number": 2,
+      "title": "A gulp at the gate",
+      "text": "At the gate, Black Hole landed with Noir and with War.\n\"Another new egg?\" Noir cried. \"One dragon more!\nGulp it up! Bring it here! We shall have it this time!\"\nBlack Hole opened his swirly dark gulp with a whine.\n\nThe egg rocked toward Ruby. She reached out to hold.\nBlack Hole touched it first with his nose, dark and cold.",
+      "image": "images/02.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "swirly",
+          "definition": "curling around and around"
+        }
+      ],
+      "imagePrompt": "At the rose garden gate Noir and War stand behind Black Hole and point greedily at the intact pink red-heart egg on the low bench. A tiny purple-rimmed vacuum swirl in front of Black Hole tugs a ribbon and the egg toward him. His nose just touches the egg while Ruby reaches for it from the other side. Ruby normal plum tunic. Black Hole stands on all fours and his head is BELOW Ruby shoulder height, large-dog sized, not a giant. No riders."
+    },
+    {
+      "number": 3,
+      "title": "A heart went POP",
+      "text": "Something hiccupped inside it. A heart-light went POP!\nBlack Hole shut his gulp with a fluttery flop.\nHe blinked up at Ruby. His scowl slipped away.\n\"She's kind,\" thought the dragon. \"I'd like her to stay.\"\n\nHe brought her a rose and a cushion, then three,\nand rolled on his back. \"Is that REALLY you?\" said she.",
+      "image": "images/03.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "cushion",
+          "definition": "a soft pillow you can sit on"
+        }
+      ],
+      "imagePrompt": "Ruby stands in normal plum tunic laughing in surprise. Black Hole rolls on his back playfully like a LARGE DOG, smaller than Ruby, four paws in air, offering one rose beside a stack of three cream cushions. His violet eyes normal, no heart-shaped pupils. One intact pink egg with red hearts on the stone bench emits a tiny pink heart-shaped light. No other characters.",
+      "effect": "starlight"
+    },
+    {
+      "number": 4,
+      "title": "Ruby, too",
+      "text": "Ruby lifted the egg. Then a second heart flew.\nIt brushed past her cheek with a warm little whoo.\nShe looked at Black Hole, at his soft, floppy ear.\n\"There's a nice bit in YOU!\" And she scooted up near.\n\nShe scratched his chin gently. He waggled his feet.\n\"A friend!\" Ruby giggled. \"A friend I can meet!\"",
+      "image": "images/04.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "gently",
+          "definition": "softly and carefully"
+        }
+      ],
+      "imagePrompt": "Ruby sits on the path in her normal PLUM tunic, holding the intact pink red-heart egg in her lap, scratching the chin of dog-sized Black Hole who lies comfortably beside her. Tiny warm pink heart lights drift from egg past her cheek. Friendly child and pet-like dragon companionship. Black Hole is approximately half the height of standing Ruby. No other characters.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 5,
+      "title": "Too many presents",
+      "text": "He fetched her a teapot. He fetched her a shoe.\nHe fetched a whole curtain, still tied to it too!\n\"I love how you TRY,\" Ruby laughed, \"but, you see,\none rose and a place at my side work for me.\"\n\nHe dropped all his presents. He sat with a thump.\nShe leaned on his shoulder, that warm, lumpy lump.",
+      "image": "images/05.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "presents",
+          "definition": "things you give someone to make them smile"
+        }
+      ],
+      "imagePrompt": "Comic wedding garden scene. Ruby sits on bench in normal plum tunic with the intact pink red-heart egg safely nestled on its cream cushion beside her; she gestures fondly for Black Hole to sit. Dog-sized Black Hole sits at her side with a rose. An absurd heap of a teapot, one shoe and a long purple curtain lies on path. Flame, the tiny red baby fire dragon with orange wings, looks bemused at the heap. Black Hole shoulder below seated Ruby head, never towering."
+    },
+    {
+      "number": 6,
+      "title": "OUR dragon",
+      "text": "\"Black Hole!\" shouted War. \"You come HERE when I call!\"\n\"Fetch the egg!\" ordered Noir. \"Not the curtains! Not ALL!\"\nBut he tucked his dark wing round the bench like a wall.\nRuby said, \"He can sit. There's a place for us all.\"\n\n\"That egg has a POWER,\" Noir whispered to War.\n\"We'll take it. Then WE'LL be the ones they adore!\"",
+      "image": "images/06.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "whispered",
+          "definition": "spoke very softly so only someone close could hear"
+        }
+      ],
+      "imagePrompt": "Noir whispers greedily into War ear beside rose arch. In middle distance Ruby sits on bench in normal plum tunic, dog-sized Black Hole lying beside the bench with a violet wing gently shielding its edge. Intact pink red-heart egg on cushion beside Ruby. Nobody trapped, no wedding ceremony, no other people. Black Hole visibly smaller than Ruby and adult Noir."
+    },
+    {
+      "number": 7,
+      "title": "Seven little helpers",
+      "text": "Flame warmed the tea. Pearl blew bubbles in rows.\nLeaf coaxed a green vine round the droopiest rose.\nSparks lit one lantern. Crackle lit two.\nLuna made moonbeams the ribbons shone through.\n\nShinebright watched hearts drift away from the shell.\n\"It's helping you notice,\" she said. \"I can tell.\"",
+      "image": "images/07.webp",
+      "textPosition": "top",
+      "characters": [
+        "flame",
+        "pearl",
+        "leaf",
+        "sparks",
+        "crackle",
+        "luna",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "lantern",
+          "definition": "a little lamp you can carry or hang up"
+        }
+      ],
+      "imagePrompt": "Bright daytime wedding garden, exactly SEVEN puppy-sized baby dragons and no people: Flame warms a teapot with tiny safe flame; Pearl makes clear bubbles; slim upright Leaf with spiky leaf crest tends rosevine; yellow Sparks with silver eyes and silver Crackle with yellow eyes light three hanging lanterns; small BLACK star-speckled Luna drapes soft silver moonbeams along ribbon; GREEN-AND-BLUE silver-bellied Shinebright watches the intact pink red-heart egg on bench. Explicitly one each of these seven dragons only. All distinct and separated, no extra dragons. Leaf follows reference silhouette: slim and upright, small head, jagged spiky leaf crest, not round leaf ears."
+    },
+    {
+      "number": 8,
+      "title": "Already inside",
+      "text": "\"Love doesn't put kindness where nothing has been.\nIt opens a window to what's tucked within.\"\n\"He can be gentle,\" said Ruby. \"I see!\"\nBlack Hole brought a dropped baby bird to a tree.\n\nHe set it down softly, then backed out of sight.\nThe bird fluffed its feathers. Its mama held tight.",
+      "image": "images/08.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "gentle",
+          "definition": "kind and careful so you do not hurt anything"
+        }
+      ],
+      "imagePrompt": "Ruby in plum tunic watches dog-sized Black Hole gently place one tiny fluffy fledgling safely in a low tree nest, where one mother songbird waits. Black Hole uses his nose tenderly, wings folded. Shinebright watches at Ruby feet. Intact pink red-heart egg secure on bench in background. Exactly those three main characters and two little birds. Sunny garden, sweet scene, no danger. Black Hole head below Ruby shoulders.",
+      "refrain": true
+    },
+    {
+      "number": 9,
+      "title": "A velvet bag",
+      "text": "Noir crept to the bench with a bag, soft and black.\nWar held it wide open. \"Pop in! In the sack!\"\nBut Leaf's little vine caught the bag by its string,\nand Pearl blew a bubble round egg, bow, and everything.\n\nSparks and Crackle went ZIP! to the bench, side by side.\nThey nudged the round bubble toward Ruby to hide.",
+      "image": "images/09.webp",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war",
+        "leaf",
+        "pearl",
+        "sparks",
+        "crackle"
+      ],
+      "vocab": [
+        {
+          "word": "string",
+          "definition": "a thin cord you can tie around something"
+        }
+      ],
+      "imagePrompt": "Noir and War comically attempting to scoop the intact pink red-heart egg with a black velvet sack, but Leaf slim upright spiky-crested green leaf dragon holds sack string with a flowering vine. Pearl blows a single big TRANSPARENT bubble containing egg and cream cushion; yellow Sparks and silver Crackle nudge that floating bubble away from bench. Sunny rose wedding garden. Exactly two humans and FOUR baby dragons, no Ruby. No dangerous sparks."
+    },
+    {
+      "number": 10,
+      "title": "A little less pink",
+      "text": "Then the hearts grew much smaller. Their glow grew quite thin.\nBlack Hole blinked. Ruby felt something shift deep within.\n\"I still like your rose,\" she said, looking around,\n\"but my feet want to RUN now, not sit on the ground!\"\n\nHe scuffed at a pebble. He looked toward the gate.\n\"The magic is fading,\" said Shinebright. \"Just wait.\"",
+      "image": "images/10.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "fading",
+          "definition": "slowly becoming fainter until it is gone"
+        }
+      ],
+      "imagePrompt": "Ruby stands in normal plum tunic holding one rose, looking thoughtful toward open garden path. Dog-sized Black Hole beside her scuffs a pebble bashfully with forepaw, glancing toward garden gate, normal violet eyes. Shinebright looks up gently. Only two tiny almost invisible pink heart lights remain near intact pink red-heart egg safe on bench cushion. Sunny garden. No bubble now. Exactly three characters."
+    },
+    {
+      "number": 11,
+      "title": "The ribbon slips",
+      "text": "\"It's wearing off! QUICK!\" Noir reached for the nest.\nShe tugged at the ribbon beneath it. \"The BEST!\"\nOff slid the cushion! The egg tipped out too!\nLuna stretched out a moonbeam. Flame puffed, \"Phew! Phew!\"\n\nBut Black Hole was nearest. He could gulp it away.\nNoir pointed. \"Now GET IT!\" What would he do? Stay?",
+      "image": "images/11.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "noir",
+        "luna",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "ribbon",
+          "definition": "a long, thin strip of cloth used for bows"
+        }
+      ],
+      "imagePrompt": "Action moment in sunny garden. Noir has tugged loose a lavender ribbon beneath cream bench cushion; intact pink red-heart egg tips from LOW bench edge, only a short safe drop. Small star-speckled BLACK Luna extends a soft silver moonbeam below egg; tiny red Flame blows a harmless warm puff. Ruby reaches toward egg. Black Hole large-dog-sized nearest egg, alert and poised to catch, head lower than Ruby shoulders. One final tiny fading pink heart light remains high in the air, about to go out. No War in this close crop, nobody hurt."
+    },
+    {
+      "number": 12,
+      "title": "His own small choice",
+      "text": "The last little heart-light went out in the air.\nBlack Hole sprang forward. He WAS already there!\nHe caught it, all safe, in the curve of his wing,\nand carried it gently. A small, careful thing.\n\nHe set it in Ruby's two hands, warm and tight.\nNo spell made him do it. He chose to do right.",
+      "image": "images/12.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "curve",
+          "definition": "a smooth, round bend"
+        }
+      ],
+      "imagePrompt": "Tender close scene, no magic hearts at all. Black Hole large-dog-sized, body lower than Ruby waist, cups the intact pink red-heart egg in a softly curved violet wing and carefully offers it into kneeling Ruby open human hands. Ruby still in normal PLUM tunic. They exchange calm surprised smiles. Sunny garden bench behind. Exactly Ruby and Black Hole, no others. Egg intact, no hatchling yet.",
+      "refrain": true
+    },
+    {
+      "number": 13,
+      "title": "Lovee",
+      "text": "A knock from inside it. A tap. Then a CRACK!\nTwo tiny pink wings pushed the shell gently back.\nOut tumbled Lovee, with her pink little head,\nand her chest and her belly a warm cherry red.\n\nPink over her tail, with red underneath,\nred soles on her feet, and a grin full of teeth.\n\"Hello, little Lovee!\" Ruby whispered. \"You're here.\"\nLovee snuggled her wing to Black Hole's floppy ear.",
+      "image": "images/13.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "snuggled",
+          "definition": "cuddled close to feel cozy"
+        }
+      ],
+      "imagePrompt": "Big climactic hatching scene. Ruby kneels in normal PLUM tunic as newborn Lovee tumbles from broken pink red-heart eggshells into her lap. Lovee wings are PINK, head and upper body PINK, chest and belly cherry RED, foot soles RED, tail PINK along top and RED underneath. One small PINK wing touches Black Hole floppy ear. Black Hole sits nearby large-dog-sized, bigger than puppy Lovee but smaller than Ruby. Golden sunlight, magical sparkles around shell, no hearts on faces. Exactly Ruby, Black Hole, Lovee.",
+      "pronunciations": {
+        "Lovee": "ˈlʌvi"
+      },
+      "effect": "starlight"
+    },
+    {
+      "number": 14,
+      "title": "A pink little bond",
+      "text": "Lovee pressed her small nose to Ruby's palm. Zing!\nRuby's dress turned rose pink with a red-hearted swing:\ntwo heart-shaped red pockets, red trim at the seam,\nand her hands held small heart-lights, as warm as a dream.\n\nShe cupped them. \"Not now. We can choose what to do.\"\nThen she opened her arms. Lovee chose her arms too.",
+      "image": "images/14.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "pockets",
+          "definition": "little places sewn into clothes where you can keep things"
+        }
+      ],
+      "imagePrompt": "Bond scene in sunny rose wedding garden. Exactly Ruby and Lovee. Puppy-sized Lovee touches nose to Ruby open HUMAN palm. Ruby tunic now ROSE PINK with exactly TWO cherry-RED heart-shaped pockets and a simple RED hem, gold boots. A few small warm pink heart lights hover cupped in Ruby OTHER hand, contained, never hitting anyone. Lovee pink wings and pink upper body, red chest belly soles and tail underside, pink tail top. Crown and mark exactly match reference. Broken pink red-heart shell on path. No extra characters.",
+      "pronunciations": {
+        "Lovee": "ˈlʌvi"
+      },
+      "effect": "starlight"
+    },
+    {
+      "number": 15,
+      "title": "Something to love",
+      "text": "\"I love a good grumble,\" War grumbled. \"So THERE!\"\n\"I love MY fine tower,\" said Noir, nose in air.\n\"I love little birds,\" Black Hole mumbled down low.\n\"And a rose?\" Ruby asked. \"Mm. Perhaps. I don't know.\"\n\nShe gave War a ribbon. \"For something you love.\"\nWar tied up her braid, with a bow just above.",
+      "image": "images/15.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "lovee",
+        "black-hole",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "mumbled",
+          "definition": "said something in a low, quiet voice"
+        }
+      ],
+      "imagePrompt": "Sunny wedding garden farewell. Ruby in ROSE PINK tunic with TWO RED heart pockets and RED hem offers lavender ribbon to War, who is tying a bow in her black high braid, still stubborn but pleased. Noir stands aloof with arms crossed. Dog-sized Black Hole bashfully looks at tiny songbird on garden wall. Lovee sits beside Ruby, PINK wings and upper body, RED underside chest belly paw soles and underside of pink-red tail. No active heart magic. Exactly five main characters and one bird, no additional dragons."
+    },
+    {
+      "number": 16,
+      "title": "Eight at home",
+      "text": "Home went Black Hole, with the two, through the gate.\nHe paused by the bird's nest. Then left. It was late.\nRuby's eight little dragons curled close, head to head,\nwith Lovee's pink wings like a quilt on the bed.\n\n\"I liked him,\" said Ruby. \"I still like that part.\"\nShe kept his one rose by her pillow, near her heart.\nAnd beyond the far hills, in a tower tall and steep,\na grumbly black dragon dreamed birds in his sleep.",
+      "image": "images/16.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "lovee",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "quilt",
+          "definition": "a soft, cozy bed cover made from pieces of cloth"
+        }
+      ],
+      "imagePrompt": "Cozy lavender-stone bedroom at dusk, warm golden lanterns. Ruby in ROSE PINK tunic with TWO RED heart pockets and RED hem rests on pillows, one rose beside pillow, crown still on head and silver mark visible. Exactly EIGHT small baby dragons curl together around her: Lovee PINK wings PINK top RED underside and two-tone pink-top red-underside tail, red Flame, white-blue Pearl, YELLOW Sparks with silver eyes, SILVER Crackle with yellow eyes, tiny BLACK silver-starred Luna, slim upright spiky-leaf green Leaf, GREEN-BLUE silver-bellied Shinebright. Each dragon exactly once, all identifiable. Lovee closest to Ruby with pink wings spread like quilt. No Black Hole, no Noir or War, no people besides Ruby. Distant violet tower through window, no silhouettes. Main subject fills lower two thirds.",
+      "refrain": true,
+      "pronunciations": {
+        "Lovee": "ˈlʌvi"
+      },
+      "effect": "starlight",
+      "theEnd": "The End — of Ruby's sixth adventure."
+    }
+  ],
+  "questions": [
+    "Black Hole caught the egg after the magic wore off. Why do you think he chose to help?",
+    "What is something you love that makes your heart feel warm?",
+    "Ruby noticed a gentle part of Black Hole. Have you ever found something kind in someone who surprised you?",
+    "Black Hole brought lots of presents, but Ruby wanted him to sit beside her. What helps you feel loved?"
+  ],
+  "lookAndFind": "Find Lovee's red hearts on her pink eggshell. Can you spot the rose that Ruby keeps beside her pillow?",
+  "assetVersion": "ruby6-1"
+}

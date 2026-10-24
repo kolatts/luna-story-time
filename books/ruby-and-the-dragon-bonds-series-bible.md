@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -36,6 +36,10 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
     silver hem, gold-and-silver glitter at her fingertips. Book Five. A wish dragon hatches holding two
     wishes: one to give to the one she chooses, and one kept for when a wish goes wrong. A wish, once
     begun, must be finished. Wish dragons talk.
+  - Lovee (love, girl, pronounced Luhvee): rose-pink dress with two cherry-red heart-shaped pockets
+    and a red hem; small warm pink heart-lights in Ruby's hands. Book Six. Lovee's accidental magic
+    helps Ruby and Black Hole notice kindness already inside each other; it wears off before Black
+    Hole chooses to catch her egg. Ruby keeps her new heart-lights cupped instead of enchanting anyone.
 - **Grizzlemop** is a great big hairy cave monster who lives in the cave under Noir and War's
   palace. He roared at Ruby because a rock had pinned his tail; she freed him anyway, and he is a
   friend now.
@@ -78,11 +82,21 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    come back to me." Wild dragons go home; all seven of Ruby's choose her. Noir and War argue over
    whose fault it was.
 
+6. *Ruby and Lovee*: refrain "Every heart holds something to love." Ruby finds the pink egg with
+   red hearts in her castle's wedding garden. Black Hole touches it while trying to gulp it; a
+   startled hiccup from inside sends heart-lights to him, then Ruby. He brings absurd presents;
+   Ruby asks him simply to sit beside her. All seven baby dragons help, and Noir and War try to
+   steal the egg and its powers. The magic fades; Black Hole chooses to save the falling egg.
+   Lovee hatches at the climax, then freely bonds with Ruby. War loves a grumble and a ribbon,
+   Noir loves her tower, and Black Hole loves little birds. He returns home with Noir and War;
+   Ruby keeps his rose. Eight baby dragons stay with Ruby. Black Hole has shown a gentle side,
+   not become permanently enchanted or permanently joined Ruby.
+
 ## Open threads
 
 - The cook's name and story.
 - Where dragon eggs come from, and how many more Ruby's mark will find.
-- What Noir does next. She has now lost five dragons to Ruby (and every dragon in the world, for an
+- What Noir does next. She has now lost six new-dragon encounters to Ruby (and every dragon in the world, for an
   afternoon), and her castle is held up by Leaf's flowers.
 - War gasped "Black things don't shine! Or do they?" A seed of doubt, if a later book wants it.
 - Where the shooting star came from.
@@ -122,6 +136,12 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    alternating silver and gold; tiny silver horns; sea-green eyes with gold flecks. Name her "the
    baby GREEN-AND-BLUE wish dragon with a glittering silver belly" in prompts. Book Five art is all
    daytime until the last spread: say "bright sunny daytime" explicitly, or the model drifts to night.
+
+11. **Lovee**: puppy-sized; PINK head, upper body, legs, paw tops, tiny horns and wings (including
+   membranes); cherry-RED chest, belly and foot soles. Her tail is PINK on top and RED underneath.
+   Golden eyes. Never red wings, never an entirely red or entirely pink tail.
+12. **Black Hole**: large-dog-sized, smaller than Ruby, charcoal scales with lavender highlights
+   and violet wings. No star speckles or glitter on his body: those belong to Luna.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region

@@ -1,0 +1,24 @@
+---
+source: built-in-imagegen
+size: 1024x1280
+output: books/ruby-and-lovee/images/05.webp
+---
+
+Scene and character specification. Art reviewed for Ruby crown/mark, Black Hole size/plain charcoal scales, Lovee pink wings/top and red underside with two-tone tail, portrait framing, and daylight continuity.
+
+Comic wedding garden scene. Ruby sits on bench in normal plum tunic with the intact pink red-heart egg safely nestled on its cream cushion beside her; she gestures fondly for Black Hole to sit. Dog-sized Black Hole sits at her side with a rose. An absurd heap of a teapot, one shoe and a long purple curtain lies on path. Flame, the tiny red baby fire dragon with orange wings, looks bemused at the heap. Black Hole shoulder below seated Ruby head, never towering.
+
+Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain.
+
+Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror.
+
+Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified.
+
+# Luna's Story Time — global art style
+
+Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image, no words, no letters, no captions.
+
+Palette: deep indigo night #1B1B3A (27,27,58), lavender stone #B7A7D4 (183,167,212), warm gold #E8C46A (232,196,106), rose pink #F2A9C4 (242,169,196), pearl blue-grey #D7E3F0 (215,227,240), dark plum ink #2A2140 (42,33,64).
+
+Mood: gentle, dreamy, cozy, safe for young children even in dramatic moments. Nothing gory, nothing truly frightening. Full-bleed composition with soft edges, room left for overlaid text near the edges.
+

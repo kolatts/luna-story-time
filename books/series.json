@@ -124,6 +124,13 @@
           "subtitle": "Book Five of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-and-the-wish-dragon/images/cover.webp"
+        },
+        {
+          "slug": "ruby-and-lovee",
+          "title": "Ruby and Lovee",
+          "subtitle": "Book Six of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-and-lovee/images/cover.webp"
         }
       ]
     }
