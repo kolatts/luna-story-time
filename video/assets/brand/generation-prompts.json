@@ -1,0 +1,19 @@
+{
+  "method": "Built-in image generation; final technical resizing and JPEG encoding preserve originals.",
+  "references": [
+    "Castle Everstair book one cover",
+    "Ruby and the Egg Nobody Owned cover"
+  ],
+  "promptSet": {
+    "banner": "Luna Story Time, magical illustrated watercolor banner. Pink-haired fairy mermaid princess and puppy at left; rainbow-haired Ruby and friendly red/white baby dragons at right. Indigo, lavender and gold. Exact tagline: Magical stories. Read along together. Center title remains inside YouTube all-device safe area.",
+    "logo": "Gold crescent moon on the left and a tiny friendly baby dragon beside it, facing the moon, with one star above. Indigo circular field, watercolor texture, strong compact silhouette readable at avatar size, no text.",
+    "castleThumbnail": "Recompose existing Princess Moon artwork into 16:9 with expressive character and puppy, glowing lantern, moonlit castle, big cream Princess Moon / The Nevershine Lantern title and small READ ALONG label. No clickbait.",
+    "rubyThumbnail": "Recompose existing Ruby artwork into 16:9 with Ruby, red and pearl-white baby dragons, cracked egg and lavender bridge at dawn. Big indigo Ruby / The Egg Nobody Owned title, small READ ALONG label. No clickbait."
+  },
+  "assets": [
+    "channel-banner.jpg",
+    "channel-logo.png",
+    "princess-moon-youtube-thumbnail.jpg",
+    "ruby-youtube-thumbnail.jpg"
+  ]
+}

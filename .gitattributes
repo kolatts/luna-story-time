@@ -1,0 +1,11 @@
+# Final video assets are ordinary Git objects; the static site does not depend on LFS.
+video/**/*.mp4 binary
+video/**/*.mp3 binary
+video/**/*.png binary
+video/**/*.jpg binary
+video/**/*.webp binary
+.agents/skills/video-conversion/SKILL.md text eol=lf
+scripts/*story-video*.py text eol=lf
+video/**/*.json text eol=lf
+video/**/*.srt text eol=lf
+video/**/*.txt text eol=lf

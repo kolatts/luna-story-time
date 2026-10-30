@@ -1,0 +1,14 @@
+{
+  "recording": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\work\\music\\princess-moon-and-the-nevershine-lantern\\series-theme.mp3",
+  "series": "Castle Everstair",
+  "duration_s": 12.0,
+  "recommended_use": "Reuse this exact excerpt at both intro and outro.",
+  "source": "Extracted from the generated first score section; independent later sections are not expected to repeat its melody.",
+  "seed": 1846,
+  "bpm": 76,
+  "keyscale": "D major",
+  "source_section": "section-01-reused.mp3",
+  "source_offset_s": 0.4,
+  "loudness_lufs": -20.0,
+  "peak_dbfs": -3.8
+}

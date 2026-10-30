@@ -1,0 +1,196 @@
+{
+  "title": "Ruby, Sparks and Crackle",
+  "subtitle": "Book Two of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny",
+    "Mommy"
+  ],
+  "slug": "ruby-sparks-and-crackle",
+  "series": "ruby-and-the-dragon-bonds",
+  "preview": false,
+  "durationSeconds": 444.167,
+  "sourceHashes": {
+    "book.json": "1d490bb807130baf99981a9d6eec72fb7fa3fb8e1748b50e44efc10f5347c5cd",
+    "narration/timings.json": "3c37f4d03c3a4179d3a8b10fd9e32d9270042e0230c4c5aeed4c4aa1e1b46584",
+    "images/cover.webp": "6c1510a57e5157b050dd54e1f2e7f13b972e871b8c428fc279b3525e04a399b0",
+    "images/01.webp": "f065669fed56b077f6cc7982b910549ebccfbd13e07dd6ecca03af0268294d5d",
+    "images/02.webp": "777ebee1cdd3a6d2d1e0c5422126949557e0dc1c039c0bfa9c8f64d2af387ef0",
+    "images/03.webp": "a592b8f9f0abc0fd98aa0c12a4f6ac4b506fc54ac3479f589ad3f4642d576563",
+    "images/04.webp": "e541abb1a88de4aaec5a9be08eef2dc45bea8073ec2b17b0ae3273f97b69ec6c",
+    "images/05.webp": "6abfca922ed80c4907e4ce32e074fc9a0bc65ad62794058a86367f1a1797c218",
+    "images/06.webp": "812456ac5150e38b8e0ae57e9825c6eb45bc2375b5efbd290aad4834eab70830",
+    "images/07.webp": "fe8e3d08cfcf50984e597f26457fe77ef839ef9d93f3bb18e4b3ecde7d4c78b5",
+    "images/08.webp": "aeff93d47954c28184a2f3b205133ed47aae9bbfb25fe3cbed349fea8f43b81d",
+    "images/09.webp": "2809eb410704a2b570c154e16c287fffcdf3fd70fc1f0d69607863eded00e100",
+    "images/10.webp": "c117eb893a11899ba2315a83faf172b6b5f5c389b06ff9d8672f514410b28ce6",
+    "images/11.webp": "f7a4e751f87039f0c249aba0a9395b3702768dab9682951a72da69a50e6232b1",
+    "images/12.webp": "58940fe1838ad0aa194376cdc3dfc60a10b8d9b7f8a2760e22cb79115398d8bd",
+    "images/13.webp": "889a598766ce5be0ea524a49122d544acc0a81cabb7d130493f096fcbe82e672",
+    "images/14.webp": "a21c9110d12140cf0cd5adb901e05e15165ed231acd7b3c80e95f8018b804799",
+    "images/15.webp": "c57fdd89413756f3b3351bea71085be9f31c16b6c3903e6ddb371f5643e8e597",
+    "images/16.webp": "f3d579a449bfdaa4a44b1da6147085439188252b20c9bd07a5367cc59825cbf3",
+    "narration/cover.mp3": "62e6807872318d1ec02ca9f13072a3323299fb65cf30f575487363e8eabc7de7",
+    "narration/01.mp3": "3fe8683702d5d9c5b4b1a6eae9c1f4c0c8452ca800edd514a205f6a1d4133a76",
+    "narration/02.mp3": "d686b225aa1e97d218169235304cf0adaef6164e6644dac66b19455c8b37cbc2",
+    "narration/03.mp3": "99a65b23b70e6c6b791122beb99d2833c7383b945810d8382ec4fa6787b36556",
+    "narration/04.mp3": "e78bad2945ed98819690d60444d38ce15b6b46b9453e1334e824e5bc7c673381",
+    "narration/05.mp3": "d2d8d27fb4955b607e0227db6177f0b4bacdf946d8d0d6957923632c5448bbd6",
+    "narration/06.mp3": "3bea90215644e2ca38531bfd8a3dfe196d48dba21af0148338dcc70cb978a848",
+    "narration/07.mp3": "adc8fa55eaa4a54344fc84cf07080fabe28bb2a4c41d7060ea2b63fe2886faac",
+    "narration/08.mp3": "c6049aca479cff9fd1c15c44494d6a76d0691a393a3d7b80eef33a8369708fbd",
+    "narration/09.mp3": "59ef1d22fcfb47c6374ac70f77846d77c167c4c1ad0511be99917c2b70400234",
+    "narration/10.mp3": "f931352375d657e04ba9957c0e55375eadca3285aaa4af164d530bc5d50f2bad",
+    "narration/11.mp3": "c80657fbf70d4201d0b97633358fff38c8284a8ba0f1b6055d60fd9bbf028107",
+    "narration/12.mp3": "c5d38fb409a2675f9dd5688decb1f99344608d0a36a79b943ede49397e19150c",
+    "narration/13.mp3": "0143338030c19c526fb2efd3bf1f820c4ac310ec141966342507fd3cb15fd3d6",
+    "narration/14.mp3": "72a423ad673286ee5e719df07f7e212fcf716a91d0763f3767979157ea5cb051",
+    "narration/15.mp3": "98ae882744e9abf151c20b595f9ea6315fc80de751925a22ca663f4df78c4ce2",
+    "narration/16.mp3": "7938aae32d0e224662d562b8a515aaf4cf0d038ebe3a04c8ed9b3b0afde0f89d"
+  },
+  "musicSha256": "16aa1525934da3f6da6ddc82cf4c9637f58bf8f4e923ac75fdc494722de92c68",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 11.917,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Ruby, Sparks and Crackle. Book Two of Ruby and the Dragon Bonds. Written with love by Luna, Sunny, and Mommy."
+    },
+    {
+      "page": "01",
+      "startSeconds": 11.917,
+      "durationSeconds": 20.833,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "Ruby was eight days old. She had counted each day.\nShe could button her boots. She could put toys away.\nFlame snored in a sunbeam. Pearl bubbled the bath.\nAnd the cook taught her pancakes, and patience, and math."
+    },
+    {
+      "page": "02",
+      "startSeconds": 32.75,
+      "durationSeconds": 30.542,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "Then her silver mark tingled. It fizzed. It went zing!\nlike a tickle that knew of a wonderful thing.\nFar off, past the garden and over the hill,\nan old pond flashed gold. Then it rumbled. Then... still.\n\nRuby knew that low rumble. She'd heard it before,\non her very first night, like a knock at a door."
+    },
+    {
+      "page": "03",
+      "startSeconds": 63.292,
+      "durationSeconds": 33.042,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "Deep down in that pond, where the lily roots grow,\nan egg had been waiting since long, long ago.\nIt was yellow and silver, with zigzags of light,\nand it slept through the years, every day, every night.\n\nNow it fizzed. Now it flickered. Now, more than before,\nit was almost ready. Not yet. Just a little bit more. … Good things hatch when they're ready."
+    },
+    {
+      "page": "04",
+      "startSeconds": 96.333,
+      "durationSeconds": 31.5,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "\"Stay here,\" Ruby said. \"Pearl, keep Flame cozy and warm.\nA pond's not for fire, and that sounds like a storm.\"\nFlame puffed a sad smoke ring. Pearl blew a goodbye.\nRuby hugged them both twice. Then she gave a brave sigh.\n\nShe went on her own, but not quite on her own:\nPearl's cool, watery bond came along, soft as foam."
+    },
+    {
+      "page": "05",
+      "startSeconds": 127.833,
+      "durationSeconds": 29.0,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Across the far hills, in her charcoal-dark tower,\nNoir saw the gold flicker. \"A dragon! More power!\nWhoever gets there first gets to keep it,\" she said.\nWar tugged on both boots. (The cook sent the left one back, wrapped up with bread.)\n\"Black Hole! Go!\" they shouted. And off the three sped."
+    },
+    {
+      "page": "06",
+      "startSeconds": 156.833,
+      "durationSeconds": 20.708,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "Ruby ran up the hill. Her boots went tap-tap.\nDown the far side came Black Hole: flap-flap, flap-flap,\nwith Noir striding after, and War shouting, \"GO!\"\nThey all reached the pond at the same time. Oh no."
+    },
+    {
+      "page": "07",
+      "startSeconds": 177.542,
+      "durationSeconds": 20.208,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "\"Attack!\" shouted War. Black Hole opened his swirl.\nIt slurped at the pond with a gulp and a whirl.\nRuby touched her cool bond. Her dress rippled blue.\nShe held up her water hands, took a breath, and dove through."
+    },
+    {
+      "page": "08",
+      "startSeconds": 197.75,
+      "durationSeconds": 18.917,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "Down, down, in a bubble her water hands made,\npast minnows and lily stems, into the shade,\nshe found it: the Thunder Egg, fizzing and warm.\nShe held it so gently. It hummed like a storm."
+    },
+    {
+      "page": "09",
+      "startSeconds": 216.667,
+      "durationSeconds": 36.625,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "Above her, the pond sank. Black Hole slurped it in.\n\"Crack it!\" yelled War. Noir snapped, \"Hatch it now! Begin!\"\nRuby wanted to hurry. Her heart thumped like a drum.\nBut she'd been an egg, too. So she hummed: hum-de-dum,\nand she held it, and waited, as still as a stone.\n\"Take your time,\" Ruby whispered. \"You're not on your own.\" … Good things hatch when they're ready."
+    },
+    {
+      "page": "10",
+      "startSeconds": 253.292,
+      "durationSeconds": 31.583,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "Then tap. Then tap-tap. Then a zig and a zag.\nThe shell opened up like a little gift bag.\nOut wiggled two dragons, two sisters, two twins:\none yellow, with silver eyes, fizzing with grins;\none silver, with yellow eyes, crackling with cheer.\n\"Sparks!\" Ruby laughed. \"And Crackle! You're here!\""
+    },
+    {
+      "page": "11",
+      "startSeconds": 284.875,
+      "durationSeconds": 30.875,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "But the swirl pulled the pond, and the pond pulled them too,\nup and up toward the swirl, where the slurping wind blew.\nThen Crackle went CRACKLE! And Sparks went ZAP!\nA zigzag of gold shot through water. Snap, snap!\nOn Ruby, it tingled. It felt like a game!\nThe twins had already chosen. Their sparks knew her name."
+    },
+    {
+      "page": "12",
+      "startSeconds": 315.75,
+      "durationSeconds": 27.917,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "Up the slurping-up water, the tickly sparks rose,\nup into the swirl, and then up Black Hole's nose.\nHis snout started twitching. His eyes squeezed up tight.\n\"Hold it!\" War shouted. \"Black Hole! Hold it tight!\"\n\"Ah...\" said Black Hole. \"Ah... ah... AH...\""
+    },
+    {
+      "page": "13",
+      "startSeconds": 343.667,
+      "durationSeconds": 23.458,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "\"ACHOO!\" Out came the pond, every drop he had drunk,\nin one great big SPLASH! Splish! And splosh! And kerplunk!\nIt soaked Noir's tall crown and her long charcoal gown.\nIt soaked War from her braid to her boots, all the way down."
+    },
+    {
+      "page": "14",
+      "startSeconds": 367.125,
+      "durationSeconds": 22.958,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "\"We're SOGGY!\" wailed War. Noir wrung out her sleeve.\n\"Home,\" Noir said, dripping. \"Right now. We will leave.\"\nThey squelched down the hill to their kingdom. Achoo!\nAnd the pond filled back up, sparkly, clear, and brand new."
+    },
+    {
+      "page": "15",
+      "startSeconds": 390.083,
+      "durationSeconds": 29.667,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "Ruby climbed out with a twin tucked in each arm.\nEach pressed a small nose to a palm, soft and warm.\nZing! went her mark. And her dress fizzed, then grew\nto half yellow, half silver, and crackly too.\nOne bond for two sisters who'd hatched side by side.\nHer fingertips sparkled. Her smile opened wide."
+    },
+    {
+      "page": "16",
+      "startSeconds": 419.75,
+      "durationSeconds": 24.417,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "Back home, Flame sniffed Crackle. Pearl bubbled at Sparks.\nFour dragons, one princess, one heap, after dark.\nThe big chair still waited, too big and too wide.\n\"Someday,\" Ruby yawned. \"When I'm ready inside.\" … Good things hatch when they're ready."
+    }
+  ],
+  "archivedVideoSha256": "d2028b60790908135f5f396c84e2fdb34d78a7c3d33ff323adb32e1d23e71e91",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "16aa1525934da3f6da6ddc82cf4c9637f58bf8f4e923ac75fdc494722de92c68"
+  }
+}

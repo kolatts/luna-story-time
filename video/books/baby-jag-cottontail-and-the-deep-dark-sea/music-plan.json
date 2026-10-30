@@ -1,0 +1,544 @@
+{
+  "book": "baby-jag-cottontail-and-the-deep-dark-sea",
+  "title": "Baby Jag Cottontail and the Deep Dark Sea",
+  "series": "The Castle Everstair Stories",
+  "series_id": "castle-everstair",
+  "target_duration_s": 614.333333,
+  "duration_rule": "Each cover/page is narration duration + 0.8s, rounded up to a 24fps frame.",
+  "narration_pages": [
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/cover.mp3",
+      "duration_s": 10.968,
+      "hold_s": 0.823667,
+      "frame_total_s": 11.791667,
+      "start_s": 0.0,
+      "end_s": 11.791667,
+      "sha256": "f5d8eb92f121a1b99e45e80c4d59574a3f8e6394bc29c1ae9222e2392e9c5ee3"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/01.mp3",
+      "duration_s": 33.0,
+      "hold_s": 0.833333,
+      "frame_total_s": 33.833333,
+      "start_s": 11.791667,
+      "end_s": 45.625,
+      "sha256": "5c24b973fae05c59819b311edc4b773cc17c6731ba540d186411590d6031a43a"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/02.mp3",
+      "duration_s": 31.392,
+      "hold_s": 0.816333,
+      "frame_total_s": 32.208333,
+      "start_s": 45.625,
+      "end_s": 77.833333,
+      "sha256": "88b34bfc3bcda1edc32096ad9db21e84f33bea89b6b63afb459c11989b262060"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/03.mp3",
+      "duration_s": 27.168,
+      "hold_s": 0.832,
+      "frame_total_s": 28.0,
+      "start_s": 77.833333,
+      "end_s": 105.833333,
+      "sha256": "87f2d779ccd673a20bf03ef0cb5bd83e510cfe9ddc81af68c2067ce6176754ff"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/04.mp3",
+      "duration_s": 42.528,
+      "hold_s": 0.805333,
+      "frame_total_s": 43.333333,
+      "start_s": 105.833333,
+      "end_s": 149.166667,
+      "sha256": "173447716705bfae676b0b1b2cd1b5e9359394f08b95caebd9761c4d599c858a"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/05.mp3",
+      "duration_s": 46.056,
+      "hold_s": 0.819,
+      "frame_total_s": 46.875,
+      "start_s": 149.166667,
+      "end_s": 196.041667,
+      "sha256": "1f3d19d168ec03db2de0365a752fc949fd1a6c95b550443f6c2ade5b0d7153a0"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/06.mp3",
+      "duration_s": 38.496,
+      "hold_s": 0.837333,
+      "frame_total_s": 39.333333,
+      "start_s": 196.041667,
+      "end_s": 235.375,
+      "sha256": "d1258d929e0b6785eb4d9e36de115870aa0e1ee77d14c1f0e652ed7154cab8f1"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/07.mp3",
+      "duration_s": 27.024,
+      "hold_s": 0.809333,
+      "frame_total_s": 27.833333,
+      "start_s": 235.375,
+      "end_s": 263.208333,
+      "sha256": "650332176be8d4717b4c17d42caa304d8d2eb1078e01445177304cd323aeb845"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/08.mp3",
+      "duration_s": 32.376,
+      "hold_s": 0.832333,
+      "frame_total_s": 33.208333,
+      "start_s": 263.208333,
+      "end_s": 296.416667,
+      "sha256": "6975032e04ea55ce216a3143c5828971856a7d469d32be88acb93139941b4c77"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/09.mp3",
+      "duration_s": 26.544,
+      "hold_s": 0.831,
+      "frame_total_s": 27.375,
+      "start_s": 296.416667,
+      "end_s": 323.791667,
+      "sha256": "a20cc0fb9b72b4903661484ab8b2405fcf0f8959c5adbc5c968d607816ba2737"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/10.mp3",
+      "duration_s": 39.912,
+      "hold_s": 0.838,
+      "frame_total_s": 40.75,
+      "start_s": 323.791667,
+      "end_s": 364.541667,
+      "sha256": "5d4168f9352ee079c0384febea6ef7454a2fa155924099c6ef1b82741360fc58"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/11.mp3",
+      "duration_s": 30.456,
+      "hold_s": 0.835667,
+      "frame_total_s": 31.291667,
+      "start_s": 364.541667,
+      "end_s": 395.833333,
+      "sha256": "4695b6b4db42ef415e29c120a3873dcd07a07f535de5ad5faa4a0f29236d34a2"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/12.mp3",
+      "duration_s": 39.864,
+      "hold_s": 0.802667,
+      "frame_total_s": 40.666667,
+      "start_s": 395.833333,
+      "end_s": 436.5,
+      "sha256": "a7edf0dc2daf8d71b31f64ee4f5ea2ea93ad72affa59d7801e0b84c7bc11965e"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/13.mp3",
+      "duration_s": 33.912,
+      "hold_s": 0.838,
+      "frame_total_s": 34.75,
+      "start_s": 436.5,
+      "end_s": 471.25,
+      "sha256": "a2bf6786c0e40d02b7f8da9a193fd83f3c36babf48193139190ff041b7220410"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/14.mp3",
+      "duration_s": 36.048,
+      "hold_s": 0.827,
+      "frame_total_s": 36.875,
+      "start_s": 471.25,
+      "end_s": 508.125,
+      "sha256": "f1debfd73b57b9af21e021e0e6bffe4575ead8ba19c4e31d89160aaf1aed9e55"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/15.mp3",
+      "duration_s": 38.952,
+      "hold_s": 0.839667,
+      "frame_total_s": 39.791667,
+      "start_s": 508.125,
+      "end_s": 547.916667,
+      "sha256": "551f27b9ab6fecb08e4492089eb04182b515d96ac8c6f77a45867b8d0cfc96b2"
+    },
+    {
+      "file": "books/baby-jag-cottontail-and-the-deep-dark-sea/narration/16.mp3",
+      "duration_s": 65.616,
+      "hold_s": 0.800667,
+      "frame_total_s": 66.416667,
+      "start_s": 547.916667,
+      "end_s": 614.333333,
+      "sha256": "005ce74d4b5eee0a8406273effa4454ce317ec48e787d9ebc99cccf7725e7742"
+    }
+  ],
+  "theme": {
+    "file": "C:\\Code\\luna-story-time\\video\\assets\\music\\castle-everstair\\theme.mp3",
+    "sha256": "125d8045ba33fbd0b6921710c355318c971f35c93e75c21f376597d48b072d12",
+    "exists": true,
+    "use": "Same canonical recording reused at score start and end.",
+    "archived_asset": "video/assets/music/castle-everstair/theme.mp3"
+  },
+  "backend": {
+    "name": "ACE-Step 1.5 via local ComfyUI",
+    "tools_directory": "C:\\Code\\claude-video-editor\\tools",
+    "paid_or_remote_fallback": false,
+    "device": {
+      "device": "cuda:0 AMD Radeon RX 9070 XT : native",
+      "type": "cuda",
+      "vram_total_gb": 17.1,
+      "vram_free_gb": 6.4,
+      "comfy_version": "0.33.1",
+      "torch": "2.9.1+rocm7.2.1"
+    }
+  },
+  "crossfade_s": 2.5,
+  "target_lufs": -20.0,
+  "peak_ceiling_dbfs": -1.5,
+  "score_out": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\second-set\\baby-jag\\score.mp3",
+  "plan_out": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\second-set\\baby-jag\\score.plan.json",
+  "provenance_note": "Three 55-second local arrangements provide clean source windows. The plan records every selected window and its repeat index; all joins use crossfades. The canonical theme is a separate local asset, not generated by this command.",
+  "takes": [
+    {
+      "take": 1,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\second-set\\baby-jag\\score.takes\\take-01-seed-837.mp3",
+      "file_name": "take-01-seed-837.mp3",
+      "sha256": "e283e0eeb2f502d60ce9a9e8d6b1be6df638615ddcf7491ff9b93559fe3297fe",
+      "seed": 837,
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Sparse felt piano and one soft string line; leave generous space around the piano.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "moonlit-open",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          42.978
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 43.177708,
+          "event": "start"
+        },
+        {
+          "time_s": 44.160729,
+          "event": "end"
+        },
+        {
+          "time_s": 45.323563,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-01-seed-837.mp3",
+          "sha256": "e283e0eeb2f502d60ce9a9e8d6b1be6df638615ddcf7491ff9b93559fe3297fe",
+          "seed": 837,
+          "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Sparse felt piano and one soft string line; leave generous space around the piano.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              42.978
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 43.177708,
+              "event": "start"
+            },
+            {
+              "time_s": 44.160729,
+              "event": "end"
+            },
+            {
+              "time_s": 45.323563,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-01-seed-837.mp3"
+    },
+    {
+      "take": 2,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\second-set\\baby-jag\\score.takes\\take-02-seed-964.mp3",
+      "file_name": "take-02-seed-964.mp3",
+      "sha256": "1c54ab2f717218d1817742eeed47159d49e56a905ca05eb24e8f643831e312c6",
+      "seed": 964,
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: A gentle piano figure with a warm cello undercurrent; the arrangement unfolds quietly.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "lantern-unfolding",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          43.864
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 44.063708,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-02-seed-964.mp3",
+          "sha256": "1c54ab2f717218d1817742eeed47159d49e56a905ca05eb24e8f643831e312c6",
+          "seed": 964,
+          "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: A gentle piano figure with a warm cello undercurrent; the arrangement unfolds quietly.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              43.864
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 44.063708,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-02-seed-964.mp3"
+    },
+    {
+      "take": 3,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\second-set\\baby-jag\\score.takes\\take-03-seed-1091.mp3",
+      "file_name": "take-03-seed-1091.mp3",
+      "sha256": "4e8f99055c00555a4d8609d2a76dbd2d3f76f04039c506d2dd3e94b4430598fb",
+      "seed": 1091,
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Lightly hopeful piano and tender strings; settle into a soft, resolved close.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "tender-close",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          40.473
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 40.673021,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-03-seed-1091.mp3",
+          "sha256": "4e8f99055c00555a4d8609d2a76dbd2d3f76f04039c506d2dd3e94b4430598fb",
+          "seed": 1091,
+          "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Lightly hopeful piano and tender strings; settle into a soft, resolved close.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              40.473
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 40.673021,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-03-seed-1091.mp3"
+    }
+  ],
+  "arrangement": [
+    {
+      "kind": "theme",
+      "source": "video/assets/music/castle-everstair/theme.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.0,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-837.mp3",
+      "take": 1,
+      "seed": 837,
+      "start_s": 0.5,
+      "duration_s": 42.478,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-964.mp3",
+      "take": 2,
+      "seed": 964,
+      "start_s": 0.5,
+      "duration_s": 43.364,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-1091.mp3",
+      "take": 3,
+      "seed": 1091,
+      "start_s": 0.5,
+      "duration_s": 39.973,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-837.mp3",
+      "take": 1,
+      "seed": 837,
+      "start_s": 0.5,
+      "duration_s": 42.478,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-964.mp3",
+      "take": 2,
+      "seed": 964,
+      "start_s": 0.5,
+      "duration_s": 43.364,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-1091.mp3",
+      "take": 3,
+      "seed": 1091,
+      "start_s": 0.5,
+      "duration_s": 39.973,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-837.mp3",
+      "take": 1,
+      "seed": 837,
+      "start_s": 0.5,
+      "duration_s": 42.478,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-964.mp3",
+      "take": 2,
+      "seed": 964,
+      "start_s": 0.5,
+      "duration_s": 43.364,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-1091.mp3",
+      "take": 3,
+      "seed": 1091,
+      "start_s": 0.5,
+      "duration_s": 39.973,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-837.mp3",
+      "take": 1,
+      "seed": 837,
+      "start_s": 0.5,
+      "duration_s": 42.478,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-964.mp3",
+      "take": 2,
+      "seed": 964,
+      "start_s": 0.5,
+      "duration_s": 43.364,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-1091.mp3",
+      "take": 3,
+      "seed": 1091,
+      "start_s": 0.5,
+      "duration_s": 39.973,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-837.mp3",
+      "take": 1,
+      "seed": 837,
+      "start_s": 0.5,
+      "duration_s": 42.478,
+      "repeat_index": 4
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-964.mp3",
+      "take": 2,
+      "seed": 964,
+      "start_s": 0.5,
+      "duration_s": 43.364,
+      "repeat_index": 4
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-1091.mp3",
+      "take": 3,
+      "seed": 1091,
+      "start_s": 0.5,
+      "duration_s": 35.731333,
+      "repeat_index": 4
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-837.mp3",
+      "take": 1,
+      "seed": 837,
+      "start_s": 0.5,
+      "duration_s": 8.0,
+      "repeat_index": 5
+    },
+    {
+      "kind": "theme",
+      "source": "video/assets/music/castle-everstair/theme.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.0,
+      "repeat_index": 1
+    }
+  ],
+  "repeat_policy": "Clean music windows are reused in catalog order until the target length is filled; repeats are recorded above.",
+  "actual_duration_s": 614.333333,
+  "loudness_lufs": -20.0,
+  "peak_dbfs": -3.1,
+  "internal_silence_starts_s": [],
+  "score_sha256": "e497e2731465583dffeee855a6224dcc1ed467cf66aa8f73c9ee8e1312f216a5",
+  "seed_provenance": "Run used the earlier script default base seed 710, equivalent to an explicit --seed 710; take seeds are 837, 964, and 1091.",
+  "archivedSourceFiles": [
+    {
+      "file": "music-sources/take-01-seed-837.mp3",
+      "sha256": "e283e0eeb2f502d60ce9a9e8d6b1be6df638615ddcf7491ff9b93559fe3297fe"
+    },
+    {
+      "file": "music-sources/take-02-seed-964.mp3",
+      "sha256": "1c54ab2f717218d1817742eeed47159d49e56a905ca05eb24e8f643831e312c6"
+    },
+    {
+      "file": "music-sources/take-03-seed-1091.mp3",
+      "sha256": "4e8f99055c00555a4d8609d2a76dbd2d3f76f04039c506d2dd3e94b4430598fb"
+    }
+  ]
+}

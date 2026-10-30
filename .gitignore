@@ -8,3 +8,15 @@ books/**/images/*.png
 api/**/bin/
 api/**/obj/
 **/local.settings.json
+
+# Local Python tooling caches
+**/__pycache__/
+
+# Production sources/final assets under video/ are tracked; caches and auth are not.
+video/work/
+video/tmp/
+video/**/frames/
+video/**/work/
+.youtube/
+video/**/token.json
+video/**/client_secret.json

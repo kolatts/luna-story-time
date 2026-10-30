@@ -1,0 +1,244 @@
+{
+  "book": "princess-moon-and-the-nevershine-lantern",
+  "series": "Castle Everstair",
+  "style": "felt piano and gentle strings",
+  "target_duration_s": 413.375,
+  "duration_basis": "For each cover/page: ceil((narration MP3 duration + 0.8s) * 24) / 24.",
+  "pages": [
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\cover.mp3",
+      "duration_s": 10.464,
+      "hold_s": 0.827667,
+      "frame_duration_s": 11.291667,
+      "start_s": 0.0,
+      "end_s": 11.292
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\01.mp3",
+      "duration_s": 17.376,
+      "hold_s": 0.832333,
+      "frame_duration_s": 18.208333,
+      "start_s": 11.292,
+      "end_s": 29.5
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\02.mp3",
+      "duration_s": 34.92,
+      "hold_s": 0.83,
+      "frame_duration_s": 35.75,
+      "start_s": 29.5,
+      "end_s": 65.25
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\03.mp3",
+      "duration_s": 27.216,
+      "hold_s": 0.825667,
+      "frame_duration_s": 28.041667,
+      "start_s": 65.25,
+      "end_s": 93.292
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\04.mp3",
+      "duration_s": 27.0,
+      "hold_s": 0.833333,
+      "frame_duration_s": 27.833333,
+      "start_s": 93.292,
+      "end_s": 121.125
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\05.mp3",
+      "duration_s": 22.248,
+      "hold_s": 0.835333,
+      "frame_duration_s": 23.083333,
+      "start_s": 121.125,
+      "end_s": 144.208
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\06.mp3",
+      "duration_s": 24.432,
+      "hold_s": 0.818,
+      "frame_duration_s": 25.25,
+      "start_s": 144.208,
+      "end_s": 169.458
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\07.mp3",
+      "duration_s": 16.752,
+      "hold_s": 0.831333,
+      "frame_duration_s": 17.583333,
+      "start_s": 169.458,
+      "end_s": 187.042
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\08.mp3",
+      "duration_s": 19.68,
+      "hold_s": 0.82,
+      "frame_duration_s": 20.5,
+      "start_s": 187.042,
+      "end_s": 207.542
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\09.mp3",
+      "duration_s": 25.728,
+      "hold_s": 0.813667,
+      "frame_duration_s": 26.541667,
+      "start_s": 207.542,
+      "end_s": 234.083
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\10.mp3",
+      "duration_s": 26.664,
+      "hold_s": 0.836,
+      "frame_duration_s": 27.5,
+      "start_s": 234.083,
+      "end_s": 261.583
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\11.mp3",
+      "duration_s": 20.808,
+      "hold_s": 0.817,
+      "frame_duration_s": 21.625,
+      "start_s": 261.583,
+      "end_s": 283.208
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\12.mp3",
+      "duration_s": 22.152,
+      "hold_s": 0.806333,
+      "frame_duration_s": 22.958333,
+      "start_s": 283.208,
+      "end_s": 306.167
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\13.mp3",
+      "duration_s": 18.456,
+      "hold_s": 0.835667,
+      "frame_duration_s": 19.291667,
+      "start_s": 306.167,
+      "end_s": 325.458
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\14.mp3",
+      "duration_s": 18.984,
+      "hold_s": 0.807667,
+      "frame_duration_s": 19.791667,
+      "start_s": 325.458,
+      "end_s": 345.25
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\15.mp3",
+      "duration_s": 27.648,
+      "hold_s": 0.810333,
+      "frame_duration_s": 28.458333,
+      "start_s": 345.25,
+      "end_s": 373.708
+    },
+    {
+      "file": "C:\\Code\\luna-story-time\\books\\princess-moon-and-the-nevershine-lantern\\narration\\16.mp3",
+      "duration_s": 38.856,
+      "hold_s": 0.810667,
+      "frame_duration_s": 39.666667,
+      "start_s": 373.708,
+      "end_s": 413.375
+    }
+  ],
+  "bpm": 76,
+  "keyscale": "D major",
+  "seed_base": 710,
+  "crossfade_s": 2.5,
+  "target_lufs": -20.0,
+  "ceiling_dbfs": -1.5,
+  "sections": [
+    {
+      "n": 1,
+      "start_s": 0.0,
+      "end_s": 137.792,
+      "arc": "sparse felt piano and one soft string line",
+      "seed": 1846,
+      "file": "section-01-reused.mp3",
+      "source_file": "C:\\AI\\ComfyUI_windows_portable\\ComfyUI\\output\\claude-video-editor\\bed_00227.mp3",
+      "body_in_s": 0.4,
+      "body_out_s": 158.0,
+      "removed_dropouts_s": [
+        [
+          153.399979,
+          153.899979
+        ]
+      ],
+      "reused": true,
+      "atempo_ratio": null,
+      "requested_s": 160.28
+    },
+    {
+      "n": 2,
+      "start_s": 137.792,
+      "end_s": 275.583,
+      "arc": "gentle piano figure with warm cello undercurrent",
+      "seed": 1973,
+      "file": "section-02-reused.mp3",
+      "source_file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\work\\music\\princess-moon-and-the-nevershine-lantern\\section-02-salvaged.wav",
+      "body_in_s": 0.4,
+      "body_out_s": 142.2,
+      "removed_dropouts_s": [],
+      "reused": true,
+      "atempo_ratio": 0.9796824816748774,
+      "requested_s": 140.292
+    },
+    {
+      "n": 3,
+      "start_s": 275.583,
+      "end_s": 413.375,
+      "arc": "quietly unfolding strings around the piano",
+      "seed": 1973,
+      "file": "section-03-reused.mp3",
+      "source_file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\work\\music\\princess-moon-and-the-nevershine-lantern\\section-02-reused.mp3",
+      "body_in_s": 0.4,
+      "body_out_s": 139.7,
+      "removed_dropouts_s": [],
+      "reused": true,
+      "atempo_ratio": 0.9821735149364771,
+      "requested_s": 142.278542
+    }
+  ],
+  "backend": "local ACE-Step 1.5 via C:/Code/claude-video-editor/tools/acestep_local.py",
+  "negative_prompt": "No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+  "provenance_note": "Per-section prompts and seeds are recorded. Independently generated sections do not preserve a reliably repeatable melody.",
+  "backend_device": {
+    "device": "cuda:0 AMD Radeon RX 9070 XT : native",
+    "type": "cuda",
+    "vram_total_gb": 17.1,
+    "vram_free_gb": 6.4,
+    "comfy_version": "0.33.1",
+    "torch": "2.9.1+rocm7.2.1"
+  },
+  "score_file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\work\\music\\princess-moon-and-the-nevershine-lantern\\score.mp3",
+  "actual_duration_s": 413.375,
+  "loudness_lufs": -20.0,
+  "peak_dbfs": -2.3,
+  "internal_silence_starts_s": [],
+  "theme_file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\work\\music\\princess-moon-and-the-nevershine-lantern\\series-theme.mp3",
+  "theme_outro_overlay": true,
+  "archivedSourceFiles": [
+    {
+      "file": "music-sources/bed_00227.mp3",
+      "sha256": "e7cae46ce83df58e3097b5132a2a1dd7666d7411ca0ab8af88fb10b503a65e27"
+    },
+    {
+      "file": "music-sources/section-01-reused.mp3",
+      "sha256": "86607244ce82207b2fd3bcd70df6deacec4b337be78d6542553a02ce23732ace"
+    },
+    {
+      "file": "music-sources/section-02-reused.mp3",
+      "sha256": "707ec257d20fcf60ae34ee48c91fdcef1b5f27404fb120a7d9511c5df569ec9f"
+    },
+    {
+      "file": "music-sources/section-02-seed-1973.mp3",
+      "sha256": "4aec4eda1fe111f4d9e04adbf7d4ce698cf1d63b10bb4108b7fd1b027edd05f0"
+    },
+    {
+      "file": "music-sources/section-03-reused.mp3",
+      "sha256": "c08133eb26573f026f8f2a862c4a0e8c0be8712c7c1d9ece5764b3daa9d8fa23"
+    }
+  ],
+  "archiveNote": "Historical pilot plan retained; absolute work paths are provenance only. Archived used source audio and hashes are listed above."
+}

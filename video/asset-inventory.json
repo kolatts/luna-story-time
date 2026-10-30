@@ -1,0 +1,315 @@
+{
+  "description": "Luna channel and first four published story videos",
+  "files": [
+    {
+      "path": "video/assets/brand/banner-master.png",
+      "bytes": 3280021,
+      "sha256": "d62a7380ad19eb81893c2c1aca6ecc668740c34367f99b65c2fe62154ea02372"
+    },
+    {
+      "path": "video/assets/brand/banner.jpg",
+      "bytes": 1106451,
+      "sha256": "0f98ef59ef191e07def29e0937140026dea8c407417e8de4ab28836b72c709b9"
+    },
+    {
+      "path": "video/assets/brand/generation-prompts.json",
+      "bytes": 1418,
+      "sha256": "82d03bbf8fa8d8a834b5527b926dfbd00d7c68253121681f9ff4eef91f68d023"
+    },
+    {
+      "path": "video/assets/brand/logo-master.png",
+      "bytes": 2238490,
+      "sha256": "e1f079e867e80c5136d7a18595f2df25a21f1ae4ed556efab841c77bf07911ba"
+    },
+    {
+      "path": "video/assets/brand/logo.png",
+      "bytes": 913734,
+      "sha256": "aa80e085444b6f51e32e07be400a64dffbb6aaffa7f2b382d792ed7e010c9681"
+    },
+    {
+      "path": "video/assets/music/castle-everstair/theme-provenance.json",
+      "bytes": 603,
+      "sha256": "aa9f8c9df764437f26dc8b2c9c3ec900ba06d1f44b98682d29f0f8964407e4cf"
+    },
+    {
+      "path": "video/assets/music/castle-everstair/theme.mp3",
+      "bytes": 249888,
+      "sha256": "125d8045ba33fbd0b6921710c355318c971f35c93e75c21f376597d48b072d12"
+    },
+    {
+      "path": "video/assets/music/ruby-and-the-dragon-bonds/theme-provenance.json",
+      "bytes": 398,
+      "sha256": "aec94c035a2136d1215a672a9a01bce42692ac14f41d849acf5886dc6ca69a87"
+    },
+    {
+      "path": "video/assets/music/ruby-and-the-dragon-bonds/theme.mp3",
+      "bytes": 226764,
+      "sha256": "e1cdcd97a6a85a8de83598147b7e99af097d50a45e2ef2121dea3ca192974132"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/captions.srt",
+      "bytes": 9126,
+      "sha256": "cfc8b0733a227211f3bd2f5a3866caa3c50c3053d4328dc2067c7934bee32e33"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/manifest.json",
+      "bytes": 14000,
+      "sha256": "2c1c7508d196b79fb7711cff6a393ff8784dcf724bafa1eb4a5959fc312ce57b"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/music-plan.json",
+      "bytes": 19280,
+      "sha256": "8dd1d70c0bbf3a0505f1d7f62bab62a19409956fe7682c3fbdbaa8acf25454aa"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/music-sources/take-01-seed-837.mp3",
+      "bytes": 1619937,
+      "sha256": "e283e0eeb2f502d60ce9a9e8d6b1be6df638615ddcf7491ff9b93559fe3297fe"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/music-sources/take-02-seed-964.mp3",
+      "bytes": 1790053,
+      "sha256": "1c54ab2f717218d1817742eeed47159d49e56a905ca05eb24e8f643831e312c6"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/music-sources/take-03-seed-1091.mp3",
+      "bytes": 1791198,
+      "sha256": "4e8f99055c00555a4d8609d2a76dbd2d3f76f04039c506d2dd3e94b4430598fb"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/publishing.json",
+      "bytes": 372,
+      "sha256": "f9a60579253fd0dda457bdd03390c8158c89d7b9faba4b1bbec28478e57f5680"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/score.mp3",
+      "bytes": 13345704,
+      "sha256": "e497e2731465583dffeee855a6224dcc1ed467cf66aa8f73c9ee8e1312f216a5"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/thumbnail-master.png",
+      "bytes": 3302891,
+      "sha256": "e9994bb732e8588bb697ac1dd45b4209cfc8e1628dbb864fb0d2b89d58fe28d9"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/thumbnail-prompt.txt",
+      "bytes": 537,
+      "sha256": "6beca6279fe4f124ba47bd2524c8625fc78405724777885ac4a236542ed89f12"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/thumbnail.jpg",
+      "bytes": 486290,
+      "sha256": "40c8987c2ec4686f57b5d2c2375987a8795ede6e0d018fc89a0006b21aa7fbf1"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/video.mp4",
+      "bytes": 37140191,
+      "sha256": "2bb4b1f809f740366add0bd077e54b58b88571d09e4fd370e2147581a98feda9"
+    },
+    {
+      "path": "video/books/baby-jag-cottontail-and-the-deep-dark-sea/youtube-metadata.json",
+      "bytes": 1546,
+      "sha256": "7c49649f6ec1a9640de30d49577cefc3ecb201e5994be8e1839dc243cf40f47a"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/captions.srt",
+      "bytes": 5826,
+      "sha256": "6f4317a3af77ce3e05403e7923d9de30f11c0bb7ea577c80129fda93cfe55912"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/manifest.json",
+      "bytes": 11881,
+      "sha256": "f47660dc4d30b88253509007a0b5c2adc1c19333af0e7bb1e767aca837774835"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/music-plan.json",
+      "bytes": 8465,
+      "sha256": "c2f96d9e56278c0317b2cfd2cea22468ef8f4a259a6b2d6773b6acf083578757"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/music-sources/bed_00227.mp3",
+      "bytes": 4643617,
+      "sha256": "e7cae46ce83df58e3097b5132a2a1dd7666d7411ca0ab8af88fb10b503a65e27"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/music-sources/section-01-reused.mp3",
+      "bytes": 3279072,
+      "sha256": "86607244ce82207b2fd3bcd70df6deacec4b337be78d6542553a02ce23732ace"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/music-sources/section-02-reused.mp3",
+      "bytes": 2921900,
+      "sha256": "707ec257d20fcf60ae34ee48c91fdcef1b5f27404fb120a7d9511c5df569ec9f"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/music-sources/section-02-seed-1973.mp3",
+      "bytes": 4689607,
+      "sha256": "4aec4eda1fe111f4d9e04adbf7d4ce698cf1d63b10bb4108b7fd1b027edd05f0"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/music-sources/section-03-reused.mp3",
+      "bytes": 2868380,
+      "sha256": "c08133eb26573f026f8f2a862c4a0e8c0be8712c7c1d9ece5764b3daa9d8fa23"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/publishing.json",
+      "bytes": 339,
+      "sha256": "eb4590ac2ce60b13757eb8c7987c9b96d77da04a96e8b4e7b473186b5251c9a3"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/score.mp3",
+      "bytes": 8651904,
+      "sha256": "af869a61d4241cabe8a1fc1ab9baad4276559b725cc5bed4852bcedb47675dc8"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/thumbnail-master.png",
+      "bytes": 2969079,
+      "sha256": "4d9e8692c0f03d1005d4b349e7a87abe40cbf8c2dff9441291f5f4b20f9feba1"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/thumbnail.jpg",
+      "bytes": 466907,
+      "sha256": "4e19d39110b7d0bb8236ad631b0f1efcdf03df92c46cb532ac1c715d829439ad"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/video.mp4",
+      "bytes": 25063284,
+      "sha256": "a23b66686120f500e225b4acaaff2c6c47151dab8373e90462cafe2652e9a00d"
+    },
+    {
+      "path": "video/books/princess-moon-and-the-nevershine-lantern/youtube-metadata.json",
+      "bytes": 1336,
+      "sha256": "a431b2eace452c33a0b2e61631181dc8c9ed65a932e8fb9d1f0f61a994093f11"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/captions.srt",
+      "bytes": 7030,
+      "sha256": "55524ef57fcc344da1f2611301c46ba8e2aede205bf483b9de35f1c5f303cc35"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/manifest.json",
+      "bytes": 12725,
+      "sha256": "a66fa741aae515c3e23d1980f75f95ad8956f3e7bc501af11edf45360d010633"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/music-plan.json",
+      "bytes": 5548,
+      "sha256": "37fac8395d3a9239163e0f0920f921d3836b917f3fbbe96bb2dcc494147c64e1"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/music-sources/take-01-seed-7731.mp3",
+      "bytes": 1694211,
+      "sha256": "a3dd6c94ea91deec5ec5ed83ba3a1ff6d4570c112cf49015c575b0319659793e"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/music-sources/take-02-seed-7858.mp3",
+      "bytes": 1844637,
+      "sha256": "13628eb849add20c5c66e1ac586828382a72f5183f35dc69ec42695f96981327"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/music-sources/take-03-seed-7985.mp3",
+      "bytes": 1697197,
+      "sha256": "c38e9e5b8b91a67a678a22a41d471868da6f860f7c610aa212b90b60e71630ba"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/publishing.json",
+      "bytes": 328,
+      "sha256": "10c67f0ef7f8ebd6d2ba843d94018250d02b132b82607b130d67e951ab852c98"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/score.mp3",
+      "bytes": 10561716,
+      "sha256": "556f8263da61f8d2ce14748c3c558c977c34d979b94f0649010e37b547796925"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/thumbnail-master.png",
+      "bytes": 2835724,
+      "sha256": "ceaffe4b5d885c34b105e1ae62085ef9cf294dfdde1cb9783d412e297fd2f0ed"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/thumbnail.jpg",
+      "bytes": 437837,
+      "sha256": "b41426bed8fb2f62060008123483281825d3ff8e4d3915cfdffc8df9f87c5f4b"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/video.mp4",
+      "bytes": 28937717,
+      "sha256": "7cbf5c26f7abde080946f0c7e728e6e899048fa617cba544d8acd5c1e721e3e8"
+    },
+    {
+      "path": "video/books/ruby-and-the-egg-nobody-owned/youtube-metadata.json",
+      "bytes": 1297,
+      "sha256": "cefe6c1987cadfaf09ffc219e9fb867880f8f383cc0742de50bf45802936a34e"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/captions.srt",
+      "bytes": 5859,
+      "sha256": "e0118a58570c55b536dff878e268cda8f4400a476d3fa747bc56cc4c8d182c71"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/manifest.json",
+      "bytes": 11666,
+      "sha256": "079e7aa3b7077c9b86334b4c696e581ec11583aaabda50dbfea9496cd41eea8b"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/music-plan.json",
+      "bytes": 19618,
+      "sha256": "11793d052dfa5a8193233c5ee086c39e4afbcbc0cd01629c85b3fadc1d6bee47"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/music-sources/take-01-seed-698777932.mp3",
+      "bytes": 1713731,
+      "sha256": "d7f1ae3461db06c73bab76a0cf25720d596956b0cfafca6583fb8753345cbef4"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/music-sources/take-02-seed-698778059.mp3",
+      "bytes": 1713736,
+      "sha256": "69f218cd511daead88928aebbc34ce9c7d466bced01c95b631cf7d17235f7db1"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/music-sources/take-03-seed-698778186.mp3",
+      "bytes": 1668425,
+      "sha256": "53a0b1e8151ec3b97c518a565a4bbe98c3fcfafe143ffee9c3b8faba8691dc27"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/publishing.json",
+      "bytes": 336,
+      "sha256": "2574aeabb586b182ec1a416d6e27a3bcfc51ec85941a239d0b89f7ebef82cb17"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/score.mp3",
+      "bytes": 9624420,
+      "sha256": "16aa1525934da3f6da6ddc82cf4c9637f58bf8f4e923ac75fdc494722de92c68"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/thumbnail-master.png",
+      "bytes": 2905556,
+      "sha256": "94f044862d0b9569556010d85c086853f9388d006c99c412bd48251c59a4831c"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/thumbnail-prompt.txt",
+      "bytes": 495,
+      "sha256": "131c9514d5b9604d39171e8d60f5f5e6dcba2ea2f0b5bb95bd9e99def84b1c58"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/thumbnail.jpg",
+      "bytes": 436296,
+      "sha256": "3dbdbd4bdf7dc94a30b0be6528c87a120bae1faec567eb88d05bf30608431f1c"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/video.mp4",
+      "bytes": 27019564,
+      "sha256": "d2028b60790908135f5f396c84e2fdb34d78a7c3d33ff323adb32e1d23e71e91"
+    },
+    {
+      "path": "video/books/ruby-sparks-and-crackle/youtube-metadata.json",
+      "bytes": 1484,
+      "sha256": "587e459ed9d8f600bb1eacf42d6ff2d068823d312fc54055581ece3ff9950295"
+    },
+    {
+      "path": "video/channel.json",
+      "bytes": 704,
+      "sha256": "3f5d8064bd11fd2204e1ae26680b6060c892cc4f517a6ea0cef3dde66b3d0c2e"
+    }
+  ]
+}

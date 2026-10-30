@@ -1,0 +1,92 @@
+{
+  "version": 2,
+  "description": "Series style and score-generation settings. Eligible book slugs and titles are derived from books/series.json and validated against each book.json.",
+  "backend": {
+    "name": "ACE-Step 1.5 via local ComfyUI",
+    "default_tools_path": "C:/Code/claude-video-editor/tools",
+    "tools_env": "LUNA_VIDEO_BACKEND_TOOLS",
+    "install_root_default": "C:/AI/ComfyUI_windows_portable",
+    "install_root_env": "LUNA_COMFYUI_INSTALL_ROOT",
+    "launch_batch": "run_amd_gpu.bat",
+    "startup_timeout_s": 240,
+    "remote_or_paid_fallback": false
+  },
+  "duration": {
+    "page_hold_s": 0.8,
+    "fps": 24,
+    "rule": "Each cover/page narration duration plus hold is rounded up to a whole 24fps frame."
+  },
+  "generation": {
+    "take_count": 3,
+    "take_seconds": 55,
+    "seed_base": 710,
+    "book_seed_hash_bits": 30,
+    "seed_stride": 127,
+    "retry_seed_stride": 1009,
+    "attempts_per_take": 2,
+    "min_clean_window_s": 12,
+    "silence_threshold_db": -38,
+    "silence_min_s": 0.5,
+    "silence_margin_s": 0.2,
+    "edge_trim_s": 0.5,
+    "max_window_use_s": 45,
+    "min_part_s": 8,
+    "theme_use_s": 12,
+    "min_theme_s": 10,
+    "negative_prompt": "No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion."
+  },
+  "mix": {
+    "crossfade_s": 2.5,
+    "target_lufs": -20.0,
+    "peak_ceiling_dbfs": -1.5,
+    "limiter_peak": 0.97,
+    "opening_fade_s": 1.0,
+    "ending_fade_s": 1.5
+  },
+  "series": {
+    "castle-everstair": {
+      "name": "The Castle Everstair Stories",
+      "theme_asset": "video/assets/music/castle-everstair/theme.mp3",
+      "bpm": 76,
+      "keyscale": "D major",
+      "style": "Felt piano with gentle legato strings",
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle.",
+      "arrangements": [
+        {
+          "id": "moonlit-open",
+          "description": "Sparse felt piano and one soft string line; leave generous space around the piano."
+        },
+        {
+          "id": "lantern-unfolding",
+          "description": "A gentle piano figure with a warm cello undercurrent; the arrangement unfolds quietly."
+        },
+        {
+          "id": "tender-close",
+          "description": "Lightly hopeful piano and tender strings; settle into a soft, resolved close."
+        }
+      ]
+    },
+    "ruby-and-the-dragon-bonds": {
+      "name": "Ruby and the Dragon Bonds",
+      "theme_asset": "video/assets/music/ruby-and-the-dragon-bonds/theme.mp3",
+      "bpm": 84,
+      "keyscale": "G major",
+      "style": "Nylon-string guitar, felt piano and soft woodwinds",
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells.",
+      "arrangements": [
+        {
+          "id": "gentle-picking",
+          "description": "Spare nylon guitar picking with a soft piano note; close and unhurried."
+        },
+        {
+          "id": "dragon-curiosity",
+          "description": "Gentle guitar motion and subtle flute color, with room for a reader's voice."
+        },
+        {
+          "id": "warm-bond",
+          "description": "Conversational piano and guitar with mellow clarinet warmth, ending tenderly."
+        }
+      ]
+    }
+  }
+}

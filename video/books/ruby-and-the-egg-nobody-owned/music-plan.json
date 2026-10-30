@@ -1,0 +1,189 @@
+{
+  "book": "ruby-and-the-egg-nobody-owned",
+  "series": "Ruby and the Dragon Bonds",
+  "target_duration_s": 490.208333,
+  "actual_duration_s": 490.208333,
+  "bpm": 84,
+  "keyscale": "G major",
+  "backend": "local ACE-Step 1.5 / ComfyUI",
+  "takes": [
+    {
+      "file": "take-01-seed-7731.mp3",
+      "seed": 7731,
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion. Arrangement: spare nylon guitar picking with a soft piano note. Around 84 BPM, instrumental.",
+      "duration_s": 55.0,
+      "clean_windows_s": [
+        [
+          0.5,
+          48.734083
+        ]
+      ],
+      "detected_silence": [
+        [
+          48.934083,
+          "start"
+        ],
+        [
+          55.0,
+          "end"
+        ]
+      ]
+    },
+    {
+      "file": "take-02-seed-7858.mp3",
+      "seed": 7858,
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion. Arrangement: gentle guitar motion and subtle flute color. Around 84 BPM, instrumental.",
+      "duration_s": 55.0,
+      "clean_windows_s": [
+        [
+          11.844228999999999,
+          45.908542
+        ]
+      ],
+      "detected_silence": [
+        [
+          9.581479,
+          "start"
+        ],
+        [
+          11.644229,
+          "end"
+        ],
+        [
+          46.108542,
+          "start"
+        ],
+        [
+          55.0,
+          "end"
+        ]
+      ]
+    },
+    {
+      "file": "take-03-seed-7985.mp3",
+      "seed": 7985,
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion. Arrangement: conversational piano and guitar with mellow clarinet warmth. Around 84 BPM, instrumental.",
+      "duration_s": 55.0,
+      "clean_windows_s": [
+        [
+          0.5,
+          50.665499999999994
+        ]
+      ],
+      "detected_silence": [
+        [
+          50.8655,
+          "start"
+        ],
+        [
+          55.0,
+          "end"
+        ]
+      ]
+    }
+  ],
+  "arrangement": [
+    {
+      "file": "take-01-seed-7731.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 0
+    },
+    {
+      "file": "take-02-seed-7858.mp3",
+      "start_s": 11.844,
+      "end_s": 45.909,
+      "repeat_index": 0
+    },
+    {
+      "file": "take-03-seed-7985.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 0
+    },
+    {
+      "file": "take-01-seed-7731.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 1
+    },
+    {
+      "file": "take-02-seed-7858.mp3",
+      "start_s": 11.844,
+      "end_s": 45.909,
+      "repeat_index": 1
+    },
+    {
+      "file": "take-03-seed-7985.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 1
+    },
+    {
+      "file": "take-01-seed-7731.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 2
+    },
+    {
+      "file": "take-02-seed-7858.mp3",
+      "start_s": 11.844,
+      "end_s": 45.909,
+      "repeat_index": 2
+    },
+    {
+      "file": "take-03-seed-7985.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 2
+    },
+    {
+      "file": "take-01-seed-7731.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 3
+    },
+    {
+      "file": "take-02-seed-7858.mp3",
+      "start_s": 11.844,
+      "end_s": 45.909,
+      "repeat_index": 3
+    },
+    {
+      "file": "take-03-seed-7985.mp3",
+      "start_s": 0.5,
+      "end_s": 45.5,
+      "repeat_index": 3
+    },
+    {
+      "file": "take-01-seed-7731.mp3",
+      "start_s": 0.5,
+      "end_s": 5.5,
+      "repeat_index": 4
+    }
+  ],
+  "crossfade_s": 2.5,
+  "repetition": "Clean excerpts recur to fill the runtime; the exact 12-second theme source is reused at the beginning and end. Crossfades overlap its ends.",
+  "theme_source": {
+    "file": "take-03-seed-7985.mp3",
+    "start_s": 0.5,
+    "duration_s": 12
+  },
+  "loudness_lufs": -20.0,
+  "peak_dbfs": -3.5,
+  "archivedSourceFiles": [
+    {
+      "file": "music-sources/take-01-seed-7731.mp3",
+      "sha256": "a3dd6c94ea91deec5ec5ed83ba3a1ff6d4570c112cf49015c575b0319659793e"
+    },
+    {
+      "file": "music-sources/take-02-seed-7858.mp3",
+      "sha256": "13628eb849add20c5c66e1ac586828382a72f5183f35dc69ec42695f96981327"
+    },
+    {
+      "file": "music-sources/take-03-seed-7985.mp3",
+      "sha256": "c38e9e5b8b91a67a678a22a41d471868da6f860f7c610aa212b90b60e71630ba"
+    }
+  ],
+  "archiveNote": "Historical pilot plan retained; absolute work paths are provenance only. Archived used source audio and hashes are listed above."
+}

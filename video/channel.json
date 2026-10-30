@@ -1,0 +1,14 @@
+{
+  "name": "Luna Story Time",
+  "handle": "@LunaStoryTimeByImagile",
+  "channel_id": "UCjQzlYdsaZ5SGAORPidZ7PA",
+  "url": "https://www.youtube.com/@LunaStoryTimeByImagile",
+  "studio_url": "https://studio.youtube.com/channel/UCjQzlYdsaZ5SGAORPidZ7PA",
+  "audience": "made-for-kids",
+  "asset_root": "video/assets",
+  "book_root": "video/books",
+  "playlists": {
+    "castle-everstair": {"id": "PLRnve31twG4A", "title": "The Castle Everstair Stories | Read Along", "url": "https://www.youtube.com/playlist?list=PLRnve31twG4A"},
+    "ruby-and-the-dragon-bonds": {"id": "PLKacTZMLeYnM", "title": "Ruby and the Dragon Bonds | Read Along", "url": "https://www.youtube.com/playlist?list=PLKacTZMLeYnM"}
+  }
+}
