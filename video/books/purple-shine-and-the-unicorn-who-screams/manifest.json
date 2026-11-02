@@ -1,0 +1,195 @@
+{
+  "title": "Purple Shine and the Unicorn Who Screams",
+  "subtitle": "Book Five of the Castle Everstair stories",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "slug": "purple-shine-and-the-unicorn-who-screams",
+  "series": "castle-everstair",
+  "preview": false,
+  "durationSeconds": 758.042,
+  "sourceHashes": {
+    "book.json": "57b3bb41af4a9bf39d3b5252a28632a7276e993962ad21c9e417c99dcd56efb5",
+    "narration/timings.json": "80949644379e0394b2712ea0fe2b47c44495b614c27624ecedfbfd5b97894858",
+    "images/cover.webp": "e61627c60afaf06541dc405a87cfa5ce2a4334ec58bd59dbff04895ceb6525f3",
+    "images/01.webp": "94a2321a1f8d71c4c1317dbcb87a1eae60f7501b42035e81ee33f49bac2b5370",
+    "images/02.webp": "5d38551647c19e88ab3fa9f65eda9b889a6c90b75d5c88b0cb9808833f7e30a4",
+    "images/03.webp": "e43f0ed481a4fdedfaf30e65f98ca15167a90a4634beb6b1893c5baa15316d33",
+    "images/04.webp": "db7554246b31e0f5e214254302141c19cfda7c8e5336174a7a65341f7ce9a46d",
+    "images/05.webp": "a45b47910461081d7b16197bc70bdbfe39e84aae860b45e741c0263956482557",
+    "images/06.webp": "75005b8b0179cc750e446ae09e2329106503183c51b980c0e3009a48e21a37bf",
+    "images/07.webp": "57e50511c3017241099854102afbce57492f8a287384d269a53a67bd3d44ff85",
+    "images/08.webp": "0ef59292d9323a049f1657ef868068a764ef04337e743141e4ed6895ebfcd6a6",
+    "images/09.webp": "472622381906889c35b9882cc9db8bf27b4f51ae86a2979642642d6cd22b63f9",
+    "images/10.webp": "3cac9469d06d971c78dbac014826250cbcab958db1896f8ca6bc8ac75a119495",
+    "images/11.webp": "d16866bddc7ec4a586b5ca1a3c0a487031e10c09adbe8c20d0f65b3a698d1ee0",
+    "images/12.webp": "33b5e20a88c9bbda622b114d261a2fa63d25cd38fa7994c64894fd3af21605b9",
+    "images/13.webp": "72316d179331c2a99beee2aa108091ea63d7170bd671113ccaa573645ba4e9fb",
+    "images/14.webp": "534a9a1bfc5fa11bff984b78fb974e3204d83dbfc30260a276c100abe1450e30",
+    "images/15.webp": "d1cbe4f28995eb4cd669d2e3a5e430390afc5862797d7e1ca29f8818705765d1",
+    "images/16.webp": "472c758f232b66b2914fe190db365269d436d719334d0c68b0d21ab9119bfddb",
+    "narration/cover.mp3": "f1f1d97cb5d05a45447c38ff8573dc5cdcf74b2a1b260377a31882067f1f73a7",
+    "narration/01.mp3": "d815fcf59fdfd00902f6731a3aeab4908670779dbef782ecabdc0179c83e44ab",
+    "narration/02.mp3": "83371f5420b0613674ec46a017d78f5f35887911202e94d8f94fe21a7a09e1b8",
+    "narration/03.mp3": "0e5b49c1a635fb5ac031853ec5d7026058078c9b46da7a99f1b189420cef8307",
+    "narration/04.mp3": "f5b21e019f9574df4825e18b83d333e5485091df6240d8a24132e57dc71f7c89",
+    "narration/05.mp3": "bac4751aca33df310754a15c5f27e42bba95281c9002381881521b3e5bfbe79b",
+    "narration/06.mp3": "14cdf44ddcb03db2db3b0ededef0b749c8a67fa0a642005363f67099e9c3d7b2",
+    "narration/07.mp3": "9e27c94eeb65b178f01feeaa6e10a8b0b2f98507234582067437f0187c472407",
+    "narration/08.mp3": "e72f0a83a8642261674582143446ae48b7bfae135271ccfc2a4f24fbde6649fe",
+    "narration/09.mp3": "fd832f52feaa5d2260b3057315771e8541432ca0f22403621768f82a9063277d",
+    "narration/10.mp3": "70bf17ded048318c5d8fc4b39611d1594aebdd99b43691daaf45a190421302bd",
+    "narration/11.mp3": "f0375c69f40ef889b72de0f54b486bc70368d7f35a92ebefd6892a27c25dc3dc",
+    "narration/12.mp3": "8903a68155e55eb83337fb9aefdc6d43036b5c4e10f724ff4bd38175c6987a7f",
+    "narration/13.mp3": "aba41711e502c39c2278dbf89b14d48348c45fb3abf7cea745d35809455fe1ec",
+    "narration/14.mp3": "1e79cba556e1f79b5b8f96004bc799fc379144cbd8055ffcf53729a5791f55bb",
+    "narration/15.mp3": "09090ee3fd8fcdb0c97b63ecd32430310626b1a811c8447887ce8bbd7a5df62f",
+    "narration/16.mp3": "493c159051244757f9a5b8cb4c92c95bcc9136202c7f06e478f546119ef8a855"
+  },
+  "musicSha256": "e28752b97504ded02ceda2749ddefc4c0939ed3327d5e3a6f60c941f8ca3d392",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 11.625,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Purple Shine and the Unicorn Who Screams. Book Five of the Castle Everstair stories. Written with love by Luna and Sunny."
+    },
+    {
+      "page": "01",
+      "startSeconds": 11.625,
+      "durationSeconds": 36.167,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "Everyone comes from a somewhere. It's true.\nCottontail sailed from an island of somewheres.\nWinds slid down from a sky-colored one.\nEven the sisters came out of the tower\n(which counts, though nobody goes there on purpose).\n\nBut Moon and her sister were born with the moon —\nzero years old, and they liked it that way —\nand in four whole books, nobody asked,\nnot once, not even quietly:\nborn of whom?"
+    },
+    {
+      "page": "02",
+      "startSeconds": 47.792,
+      "durationSeconds": 39.375,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "One morning the sea made two circles of ripples,\nand up the wet steps, dripping, came strangers:\na cat, purple all over, purple as plums,\nand a dog, pink as morning, with sea in his fur.\n\nBoth had fairy wings, folded and fine.\nBoth had the tail of a mermaid. Both smiled.\n\"I'm Purple Shine,\" said the cat, with a bow.\n\"Pink Shine,\" woofed the dog.\nAnd then, very strangely: \"We're home.\""
+    },
+    {
+      "page": "03",
+      "startSeconds": 87.167,
+      "durationSeconds": 45.667,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "Now, strangers know nothing. That's how strangers work.\nBut these two knew things there's no way to know.\nThey knew the twins' hide-spot (third stair from nowhere).\nThey knew Baby Lady takes tea with the honey\nstirred nine times exactly — and never, never eight.\n\nWinds gave them his carefullest, hugest sniff.\n\"They smell far,\" he said. \"Not sea-far. Not sky-far.\nA far I can't point at.\"\nAnd Cottontail squinted her yellowest squint:\n\"Wings and a mermaid tail. Hmm.\nNow where have I seen that recipe before?\""
+    },
+    {
+      "page": "04",
+      "startSeconds": 132.833,
+      "durationSeconds": 43.333,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "That night, Purple Shine forgot to be careful.\nShe hummed. Just a hum, soft and low in the lamplight.\nAnd the hum was the twins' own lullaby. Theirs.\nThe one with the verse that they made up themselves —\nthe secret verse. Nobody knows it. Nobody.\n\nShe sang every word to the very last \"sleep.\"\nThen she saw the twins staring.\n\"...Lucky guess,\" said the cat.\nAnd she looked at them long, and too soft, and away. … But the song always knows its way home."
+    },
+    {
+      "page": "05",
+      "startSeconds": 176.167,
+      "durationSeconds": 38.0,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Baby Lady heard it first. Her ears stood up.\nA sound from the top of the top of all sounds,\nso high that it hurt like a light in your eyes.\n\nOut on the water, the waves pulled apart —\na road of bare seafloor from here to the dark —\nand down that bare road came a clip and a clop.\n\nAnd Purple Shine moved. Quick, like she'd practiced forever,\nshe stepped in front of the twins. Both of them.\nPink Shine stepped in front of her."
+    },
+    {
+      "page": "06",
+      "startSeconds": 214.167,
+      "durationSeconds": 39.167,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "She was black. All-over black, like a hole in the night:\nblack coat and black mane and black spiraling horn,\nwith eyes like two coins of cold silver.\nShe never did say what her name was.\n(Maybe she screamed it away, long ago.)\n\n\"Powers,\" she said, and her voice was a needle,\npitched higher than hearing would rather have gone.\n\"The moon-girl's. The pup's. Every shine in this castle.\nBring them to me — or I'll show you my scream.\""
+    },
+    {
+      "page": "07",
+      "startSeconds": 253.333,
+      "durationSeconds": 43.0,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "Nobody brought her anything. So.\n\nShe planted four hooves, and she opened her mouth,\nand the scream came out white — you could see it — in rings,\nand the rings wanted things to be far from each other:\nstones slid from stones; the foam flew off the sea.\n\nAnd the rings caught the Shines like two kites with cut strings —\npurple one way, pink the other — and gone.\nNot hurt. Never hurt. Just away. So away\nthat no calling, no howling, no whistling could reach."
+    },
+    {
+      "page": "08",
+      "startSeconds": 296.333,
+      "durationSeconds": 41.542,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "\"Scream for them, then,\" said the unicorn, sweetly.\n\"Scream till your voices wear down to a whisper.\nNobody is coming for them.\nAnd besides, little moonlings — you don't even know\nwho it is you've been losing, do you?\n\nThey came from tomorrow. They broke the way back.\nIt can't ever unclose. They knew, and they came.\nYour mama. Your papa. They traded a world for you.\nAnd now they are nowhere, calling your names —\n\nand every power you have, handed to me,\nis the price of your hearing them ever again.\""
+    },
+    {
+      "page": "09",
+      "startSeconds": 337.875,
+      "durationSeconds": 52.917,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "And oh — it clicked, like a key in a lock.\nThe lullaby. The tea. The stepping-in-front.\nThe wings and the mermaid tail — Baby Lady's own recipe —\n\"I said that!\" said Cottontail. \"I said recipe!\"\n\nMoon sat down on the step. All the powers in the world,\nand not one for a hole where your family was.\nHer mama. Her papa. One evening of having them.\n\nThen Baby Lady spoke, and she didn't speak big:\n\"We are zero years old. We are brand new at this.\nBut nobody loses our parents on birthday-week.\nUp, sister. We're going to go find them.\" … But the song always knows its way home."
+    },
+    {
+      "page": "10",
+      "startSeconds": 390.792,
+      "durationSeconds": 39.167,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "But how do you find what you cannot hear?\nYou sing. You sing what your family sings.\n\nSo the twins stood together on the very bottom step,\nand they sang the secret verse of their lullaby\nout into all of the quiet at once.\n\nAnd far in one faraway, something purple stopped crying.\nAnd far in another, something pink raised his ears.\nAnd between four hearts — daughter, daughter, mama, papa —\na thread pulled tight.\nAnd the thread began to glow."
+    },
+    {
+      "page": "11",
+      "startSeconds": 429.958,
+      "durationSeconds": 64.583,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "Moon's thread ran to Purple Shine; down it came everything —\nall that her mama was, meeting all that Moon was.\nAnd Baby Lady's ran to Pink Shine, just the same.\nAnd pop — on each twin's head — a crown. A purple crown.\n\nAnd gold poured over them, wingtip to tail-tip:\ngold wings! Gold tails! Every feather, every scale —\neverything gold but their necklaces,\nwhich stayed exactly as they were.\n(Some things are already exactly right.)\n\nAnd the world went loud with family. They could hear.\nA purple hum, west. A woolly bark, east.\nThey flew, and they found, and they fell on their parents —\nthe first hug that knew what a hug it was.\n\nCrowns can't fight, you know.\nBut crowns can find."
+    },
+    {
+      "page": "12",
+      "startSeconds": 494.542,
+      "durationSeconds": 43.458,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "\"How sweet,\" said the voice from the top of all voices.\n\"Found each other. Then I'll scream you apart again —\nfarther this time. Forever this time —\nunless somebody hands me those powers.\"\n\nAnd she opened her mouth, and the white rings came\nbigger than ever, and even the crowns\ndug in like anchors, and started to slide.\n\nBecause here's what a scream like that needs, to win.\nTwo things. Only two.\nEveryone apart. Everyone quiet. … But the song always knows its way home."
+    },
+    {
+      "page": "13",
+      "startSeconds": 538.0,
+      "durationSeconds": 41.833,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "And nobody planned what came next. That's the good part.\n\nCottontail came claws-first, hollering.\nWinds surfed in riding a shout of a wind.\nEvilest stomped up, already yelling,\nCheeblest came running, bows coming loose,\nand Beedlist came quietly, book to her chest.\n\nAnd the parents and twins stood up in the middle,\nand everyone grabbed onto everyone else.\n\n\"Apart isn't working,\" said Moon, \"exactly.\"\n\"So,\" said her sister. \"Nobody be that.\""
+    },
+    {
+      "page": "14",
+      "startSeconds": 579.833,
+      "durationSeconds": 59.833,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "It was Pink Shine who started it — one woolly note —\nand the lullaby rose with everybody in it:\nMoon high and clear, and her sister beneath her,\nthe jaguars roaring it, wildly off-key\n(off-key doesn't matter; together does),\nEvilest belting, Cheeblest sweet,\nand Beedlist — Beedlist held her book open\nto the words, and mouthed every single one.\n\nThen a voice joined in, soft as snowfall,\nfrom somewhere behind. And nobody turned.\nAnd one more voice, high and small,\nfrom nowhere that anyone looked.\n\nAnd the scream hit the song, and could not get in.\nA scream needs a quiet to tear at. An apart.\nAnd there wasn't any. There wasn't any at all."
+    },
+    {
+      "page": "15",
+      "startSeconds": 639.667,
+      "durationSeconds": 52.5,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "The scream went thin. Then the scream went thread.\nThen the scream was a kettle, far off. Then nothing.\nAnd the unicorn stood in the nothing she'd made,\nblack as a hole in the night. But smaller.\n\n\"You could sing too,\" offered Moon. \"There's room.\nThere's always room in a song this size.\"\n\nThe unicorn looked a long look at them all —\nat everyone holding on to everyone.\nThen she turned down the bare sea road, and was gone,\nand the water closed gently behind her.\n\nAnd far, far out, where the dark begins:\none note. Hummed. Badly.\nJust one."
+    },
+    {
+      "page": "16",
+      "startSeconds": 692.167,
+      "durationSeconds": 65.875,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "The birthday came two mornings later.\nOne birthday, two twins — that's the deal with twins —\nand they turned zero again, the way that they do,\nand nobody questioned the math.\n\n(The purple crowns had gone when the singing was done —\nfinding-crowns do that — and that was all right.)\n\nThe whole of everybody came. The table groaned.\n(Somebody drank from the stormy bowl early.\nNobody minded at all.)\n\n\"Our world is gone,\" said Purple Shine, softly.\n\"This one has soup,\" said Baby Lady. \"And us.\"\n\nAnd when it was time for the birthday song,\ntwo voices sang loudest of all — their first birthday\nof being right there. And the song, as you know —\nas you knew all along —\nwas the same song that won. … But the song always knows its way home."
+    }
+  ],
+  "archivedVideoSha256": "bd9f722bbbe0273a3d3496ac553e719913c4e80fa9bde93e445d629217912ffc",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "e28752b97504ded02ceda2749ddefc4c0939ed3327d5e3a6f60c941f8ca3d392"
+  }
+}

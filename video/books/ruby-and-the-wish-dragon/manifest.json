@@ -1,0 +1,195 @@
+{
+  "title": "Ruby and the Wish Dragon",
+  "subtitle": "Book Five of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "slug": "ruby-and-the-wish-dragon",
+  "series": "ruby-and-the-dragon-bonds",
+  "preview": false,
+  "durationSeconds": 555.5,
+  "sourceHashes": {
+    "book.json": "a359b60eceef57d7ec05c801c9d2442756c04c2b7779df6480bf69e841b2e020",
+    "narration/timings.json": "e70d0eb87b70b8daf656687ca42dc01cfbba04f875a09ff1dfab6dc4c8fb4439",
+    "images/cover.webp": "aed6c0de51aa8962ccbf34b70b2d65703860297f87808621f2e0df28beff56ae",
+    "images/01.webp": "23406d8f0c854d1f5d74c83996c24cbcabf6b02c78650740e3e5e876e2236e35",
+    "images/02.webp": "57b13aff0029118d4f505656f4746f2edf9214defae0fdc64091ca712c5c3a24",
+    "images/03.webp": "1af8530fbe8be08fe7ff3b5ff5334555346532c9bc140239f52e6e7a74d68367",
+    "images/04.webp": "e86ceedaf4c25c5d90344e8dd1844352697d391f51b40e9522ce01f6af21f263",
+    "images/05.webp": "4320b7a324659ee61682170ee40bf6c3a9b6d6aa30f5ed778672846650029d4c",
+    "images/06.webp": "5ad809d94af411cd7b52fa8415c9a00796c0cbacfdf3eb7f61ab4c84dded5668",
+    "images/07.webp": "a0b2f52565dda918a3f08a955e1b141a160f387e1940992ea82e0a71471d07ef",
+    "images/08.webp": "b4dc5b9cab94b80a81265c4bed6f406d6fd26f4ec8a6376fc166986e954d2286",
+    "images/09.webp": "226879f78e1b8b4de49e8fcfafa98477a3618650fe9609a59463682f54b579b7",
+    "images/10.webp": "2d9f8eb1229ef31d4ceefc9c59dc532314518ba79ea47b34fe70828f4fa15f44",
+    "images/11.webp": "9067b102eb88ee47a69424451388e48a01cc3058e458f48636a5f7f6318e47b6",
+    "images/12.webp": "b191833d334bf13405c5198875b89108e5fb8d816b692b11b84956a6bdcee8a2",
+    "images/13.webp": "e30a262e25f4af3bd91614e2cf14693ef0608f6b5a67d2709b434565d3b13f4e",
+    "images/14.webp": "52f5cb34a3935afe51781a72cc5486d12a201796c7968dfb1194929251773814",
+    "images/15.webp": "d4c35b0e60c38d23d9c023b0af8614f6ac65b48fb9e858b95bec46ca869658ce",
+    "images/16.webp": "75337b5d9a9e34c052f8219cba70d2fa1235738feb562c8a43d1169a1e68f9e4",
+    "narration/cover.mp3": "13e52a4a98981692afdf6a345f26e70aa4968e52daa2572d590a7afc1f00c606",
+    "narration/01.mp3": "1f42386f3412416850ac21e49dc15cc99c5c3b13e13731e089762c93e4e959c9",
+    "narration/02.mp3": "8c9138d59e96a0adada53bb968627ae81ef2f7c26883a28adc931571b32a210d",
+    "narration/03.mp3": "12c81a482d716426f65c3545320c949ee40488aef708fafce3d9a5471c402442",
+    "narration/04.mp3": "89286654fa9222bc73e58a0c4e20812164e24c4a615d81248a21b6ae6683593c",
+    "narration/05.mp3": "2238329fc1fcd63881e8acd77c4a06f77d003e864f8348995c524cc1b09389f5",
+    "narration/06.mp3": "59736cc20767f4e25e0ade10b91bb60b655e36648de1044e8eac6d112d512eed",
+    "narration/07.mp3": "3542cc3b764b1e8e765fb9f8ec27feda6bde0dd76ec37a6ff0d2f1a93c8e9756",
+    "narration/08.mp3": "41bdd08fcbb37d8e5c15e2ad287d35b6d06930c1a97374681d0269542503c7c7",
+    "narration/09.mp3": "a4c400c47f7e65070bb4deccec3ba166ea69af41c009946baca7b72cf4f313d3",
+    "narration/10.mp3": "c2ab9aea08f061336f16a58cfc5f08a7a5a5c6c2947511992cd8ffc4d8315dec",
+    "narration/11.mp3": "f3e6d4feecbf16ff98a0e230abc2322c75eb7334ab8be12f2104d0e43b9c702f",
+    "narration/12.mp3": "3ea60834e081c60d901aea6ca3bda521adacab3e18ef0901116715ef10f9d007",
+    "narration/13.mp3": "fc317bee16ac06cb745ae07e1afce211cf0654ae1a120b0aa1f61f4d3d85177e",
+    "narration/14.mp3": "85504b242059118c21345983873903ca840e114f437222cf355bde6f0e34c983",
+    "narration/15.mp3": "a30dab389da3abfbf8be2ba623e263365b48e77513835bce495fc4dd4fa22555",
+    "narration/16.mp3": "d605ba839e4ce6068b93ee4f8b45e4a00fcf798054aaf2735fa03da65628e9b4"
+  },
+  "musicSha256": "669367a9db6643f1a4d7f6cf63097920362561375dcfa67b0ad6a80e223b4b6c",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 10.583,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Ruby and the Wish Dragon. Book Five of Ruby and the Dragon Bonds. Written with love by Luna and Sunny."
+    },
+    {
+      "page": "01",
+      "startSeconds": 10.583,
+      "durationSeconds": 33.125,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "Ruby was fourteen days old, and the rain had just stopped.\nShe went splashing through puddles. Plip! Plop! Splish! Splop!\nHer six little dragons came splashing in too,\nwhen a rainbow swooped down, red and yellow and blue.\n\nIt curved over the meadow and touched down so near,\nand Ruby's mark tingled. Zing! \"There's an egg here!\""
+    },
+    {
+      "page": "02",
+      "startSeconds": 43.708,
+      "durationSeconds": 27.792,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "At the end of the rainbow, tucked deep in the grass,\nsat an egg that shone bright as a window of glass.\nIt was swirly with green. It was swirly with blue,\nwith a glitter of silver, and gold sparkles too.\n\nRuby picked it up gently. It hummed a sweet hum.\n\"Hello, little egg. Are you ready to come?\""
+    },
+    {
+      "page": "03",
+      "startSeconds": 71.5,
+      "durationSeconds": 36.5,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "Then a tink! Then a tink! Then a glittery POP!\nOut climbed a small dragon, with a wiggle and hop.\nHer back and her paws were all green-blue, like the sea.\nBut her underneath sparkled as bright as could be:\n\nsilver belly, silver neck, silver wings, silver tail,\nsilver under her paws, like a glittery trail.\nAnd down her back marched little spikes in a row,\ngold and silver and glittery, all aglow."
+    },
+    {
+      "page": "04",
+      "startSeconds": 108.0,
+      "durationSeconds": 29.208,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "\"Hello, Shinebright,\" said Ruby. Shinebright gave a bright grin,\nand she pressed her small nose to Ruby's palm. Zing!\n\nRuby's dress swirled to green and to blue, like the sea,\nwith a sash of bright silver, as sparkly as she.\nAnd her fingertips fizzed with a gold-silver light,\nlittle glittery sparkles that twinkled so bright."
+    },
+    {
+      "page": "05",
+      "startSeconds": 137.208,
+      "durationSeconds": 32.583,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Then Shinebright spoke up, like a tiny bell's chime:\n\"I'm a wish dragon, Ruby, so listen. It's time.\nI hatch holding two wishes. The first is for you.\nThe other I keep, if a wish goes askew.\n\nWishes are big, and they do what they say.\"\nRuby thought very hard. \"What's a good wish today?\" … Be careful what you wish for. Wishes come true!"
+    },
+    {
+      "page": "06",
+      "startSeconds": 169.792,
+      "durationSeconds": 32.875,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "Then a shadow swooped low, with a whoosh and a thrill:\nBlack Hole, carrying Noir and War over the hill!\nNoir smiled a sweet smile (Noir is never that sweet).\n\"Oh, a WISH dragon! Darling, how lovely! How neat!\n\nEvery wish needs its words. Say them loud, say them clear.\nStart with 'I wish,' darling. We're all listening here.\""
+    },
+    {
+      "page": "07",
+      "startSeconds": 202.667,
+      "durationSeconds": 37.042,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "Ruby didn't know tricks. So she stood tall, and she said,\n\"I wish...\" and she paused, with a thought in her head.\n\"...THAT ALL OF THE DRAGONS WERE OURS!\" Noir yelled fast.\nWar shouted it too. \"OURS! ALL OURS! OURS AT LAST!\"\n\nShinebright gasped. \"Oh no! Once a wish has begun,\nI must finish the wish. I'm so sorry. It's done.\""
+    },
+    {
+      "page": "08",
+      "startSeconds": 239.708,
+      "durationSeconds": 29.833,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "WHOOSH! went the wish, in a glittery whirl.\nUp went Flame! Up went Pearl! And the twins, in a twirl!\nUp went Luna and Leaf, though they tried to hold tight,\nand then Shinebright, tugged from Ruby's arms, out of sight.\n\nFrom the mountains and seas, from the clouds way up high,\nevery dragon there was went whooshing on by."
+    },
+    {
+      "page": "09",
+      "startSeconds": 269.542,
+      "durationSeconds": 28.083,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "Then the meadow went quiet. The rainbow was gone.\nRuby stood all alone on the wet, empty lawn.\n\"My dragons,\" she whispered. A tear trickled down.\nShe sat in the grass with a wobbly frown.\n\nBut deep in her heart, she could feel, faint and far,\nevery bond, like a thread, like a string to a star."
+    },
+    {
+      "page": "10",
+      "startSeconds": 297.625,
+      "durationSeconds": 31.958,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "At Noir's dark palace, the dragons came down:\non the roof, in the halls, on the stairs, all around.\nBig dragons, small dragons, striped, spotted, and bright,\nfluffy dragons, and feathery dragons in flight.\n\n\"ALL OURS!\" Noir cheered, and she twirled in her gown.\n\"ALL OURS!\" War cheered. \"We're the bosses in town!\""
+    },
+    {
+      "page": "11",
+      "startSeconds": 329.583,
+      "durationSeconds": 39.0,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "\"Play with me, dragons!\" War called. Not one dragon would play.\nThey all turned their backs. They all looked away.\n\"Love us!\" Noir ordered. \"We WISHED it! You're mine!\"\nBut Flame wouldn't glow, and Luna wouldn't shine.\n\nWar's chin gave a wobble. Her eyes filled with tears.\n\"They're OURS,\" she sniffed, \"but they won't even wiggle their ears.\" … Be careful what you wish for. Wishes come true!"
+    },
+    {
+      "page": "12",
+      "startSeconds": 368.583,
+      "durationSeconds": 41.25,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "Poor Black Hole was squished in the dragon-packed hall,\nwith a tail on his head and his nose to the wall.\nThen a fluffy-tailed dragon went swish! past his face,\nand the fluff tickled Black Hole's nose. Uh-oh. Brace!\n\n\"Ah... ah... AH-CHOO!\" Off spun Noir's crown, far away.\nWar's braid flew straight up. Every dragon went, \"Hey!\"\nAnd the sneeze shook out Shinebright's spare wish with a pop.\nIt zipped out the window and over the hilltop."
+    },
+    {
+      "page": "13",
+      "startSeconds": 409.833,
+      "durationSeconds": 31.333,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "Then over the hills, past the creek and the trees,\nfloated one little sparkle, as light as a breeze.\nIt landed in Ruby's palm, soft as a kiss.\n\"Shinebright's spare wish!\" Ruby gasped. \"Oh, look at this!\"\n\n\"I could wish them all MINE, every dragon, right here...\"\nThen she stopped. \"That's the same as Noir's wish. Oh dear.\""
+    },
+    {
+      "page": "14",
+      "startSeconds": 441.167,
+      "durationSeconds": 31.0,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "So Ruby thought hard. She thought all the way through.\nThen she whispered a wish that was careful and true:\n\"I wish every dragon could choose where to be...\neven if they fly far, and don't come back to me.\"\n\nAnd she opened her hand, and she let the wish go.\nIt went sparkling away, soft and golden and slow. … Be careful what you wish for. Wishes come true!"
+    },
+    {
+      "page": "15",
+      "startSeconds": 472.167,
+      "durationSeconds": 37.208,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "POP! went the sparkle in Noir's crowded hall,\nand the wish set them free, every dragon, big and small.\nCloud dragons flew home to the sky, way up high.\nSea dragons went splashing, with a happy goodbye.\n\nAnd seven small dragons? They knew where to be.\nThey zoomed over the hills, straight to Ruby. Whee!\nThen a heap of warm dragons came tumbling on top,\nwith nuzzles and giggles that just wouldn't stop."
+    },
+    {
+      "page": "16",
+      "startSeconds": 509.375,
+      "durationSeconds": 46.125,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "And far, far away, by their quiet, dark tower,\nNoir and War argued for hour after hour.\n\"It was YOUR wish!\" \"No, YOURS!\" \"You said it too fast!\"\n\"Well, YOU wanted them most!\" \"Well, YOU shouted it last!\"\nTheir feelings were hurt, and they both felt so blue.\nAnd Black Hole, between them, went... ah... ah... AH-CHOO!\n\nBack home, Ruby yawned, with her dragons all near,\nevery one of them there because they chose to be here. … Be careful what you wish for. Wishes come true!"
+    }
+  ],
+  "archivedVideoSha256": "8ee15b215944bf39be85b99b9d5325b6a3b14bf61c01064cbd6637444dfc3e36",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "669367a9db6643f1a4d7f6cf63097920362561375dcfa67b0ad6a80e223b4b6c"
+  }
+}

@@ -247,6 +247,71 @@
       "sha256": "a431b2eace452c33a0b2e61631181dc8c9ed65a932e8fb9d1f0f61a994093f11"
     },
     {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/captions.srt",
+      "bytes": 11377,
+      "sha256": "243bcf7f4f2eaee2250051cfecb6cea707fa5c9345e092b0629a437f09ab7bb6"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/manifest.json",
+      "bytes": 15697,
+      "sha256": "872d4650f23dbe61362f908ce27dfc067d016e3608fc52f514b4659f52ae6542"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/music-plan.json",
+      "bytes": 29177,
+      "sha256": "ffde6d91b6b76b679a7c7d64f5ff6c50b370cebecc540b6990d0df620250a6e6"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/music-sources/take-01-seed-941567060.mp3",
+      "bytes": 1600461,
+      "sha256": "237074d56554b65adb275902bf3fef32925023bd1559c8dd9bddf751a38c5b0d"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/music-sources/take-02-seed-941567187.mp3",
+      "bytes": 1611601,
+      "sha256": "479f2c3ac981e862a764022d3e82b97011e7f2082930e4e08b1994e54e7ef9a8"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/music-sources/take-03-seed-941567314.mp3",
+      "bytes": 1578664,
+      "sha256": "8079e85ad60260b6da6c93bc275b191433e705fed3f0ba96de109ef9bfc467aa"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/publishing.json",
+      "bytes": 375,
+      "sha256": "62cf23021aaa8eb9e69783c2b1e36e849b94bec78d63bce4ebaa526695892572"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/score.mp3",
+      "bytes": 14554656,
+      "sha256": "e28752b97504ded02ceda2749ddefc4c0939ed3327d5e3a6f60c941f8ca3d392"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/thumbnail-master.png",
+      "bytes": 3241385,
+      "sha256": "63680986c5a96b0c6b174c90440438ad1fc794815a86075f7c9ffe175ecbe86b"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/thumbnail-prompt.txt",
+      "bytes": 541,
+      "sha256": "34eb23ef60714e2e920b10d4b93494b55fbad449d541d364047681c992d3c4c7"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/thumbnail.jpg",
+      "bytes": 476196,
+      "sha256": "bfafbdeff9bb0cbf044d1182c4f45e9f6d84de8fd379c80b6963a70f5c253bff"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/video.mp4",
+      "bytes": 45764830,
+      "sha256": "bd9f722bbbe0273a3d3496ac553e719913c4e80fa9bde93e445d629217912ffc"
+    },
+    {
+      "path": "video/books/purple-shine-and-the-unicorn-who-screams/youtube-metadata.json",
+      "bytes": 1523,
+      "sha256": "4dbee4389e2c8cfe9349e7827c64d4d61029927b930d7a5cc1b014a892f6dcac"
+    },
+    {
       "path": "video/books/ruby-and-luna/captions.srt",
       "bytes": 6668,
       "sha256": "ac67a836a1a17ecfae36228a176fa96be2f299b2c6d812550d3276a7c3b13724"
@@ -435,6 +500,71 @@
       "path": "video/books/ruby-and-the-leafy-egg/youtube-metadata.json",
       "bytes": 1466,
       "sha256": "d1398a10ef6d4f164682ae9aeb51f0f4b60ed560b3a245d0f18a07fa4f952078"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/captions.srt",
+      "bytes": 7689,
+      "sha256": "ca9fe473bd2908b62e86785dde154b31902f31fcf1e3c7a148f06731eb6dfa5a"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/manifest.json",
+      "bytes": 13039,
+      "sha256": "690abd3a3b7d3ad4658edd3952deb7db5895b793444647e36a213282d2bd2938"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/music-plan.json",
+      "bytes": 18471,
+      "sha256": "55910e82b128aaaa27be3957f15f9597d63297a1cdcb5adb8a36d3eaabc236bc"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/music-sources/take-01-seed-484139290.mp3",
+      "bytes": 1669475,
+      "sha256": "915abacdcb4d550f089dff90ccf7cb9dc436f4ebd2bed6fd6e385e99ff4a0c52"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/music-sources/take-02-seed-484139417.mp3",
+      "bytes": 1711720,
+      "sha256": "44c2b0660052fd3e98e46b16a51e27ea71861112ca6dacd8e966aa5755824c79"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/music-sources/take-03-seed-484139544.mp3",
+      "bytes": 1787945,
+      "sha256": "65930fce956b2a10fce23eadd3dd7f624d7dd7910aadfcf86abba7a1f04339ae"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/publishing.json",
+      "bytes": 359,
+      "sha256": "f82eff65bb3fdac10a295d74c6a8daea530664d6179ccb75cfcce6686b87e503"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/score.mp3",
+      "bytes": 12181428,
+      "sha256": "669367a9db6643f1a4d7f6cf63097920362561375dcfa67b0ad6a80e223b4b6c"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/thumbnail-master.png",
+      "bytes": 3190029,
+      "sha256": "6dea7ea7a819e1006db5b5c720e55b2114e9911f70308731a2a63156fcb41f3f"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/thumbnail-prompt.txt",
+      "bytes": 533,
+      "sha256": "83db102cae6fbec5539431b7c48cc80b998f41c96c7b08f9b25268b95f68a5c8"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/thumbnail.jpg",
+      "bytes": 491383,
+      "sha256": "cd70af97b6c67330ebdfb14598eabf3bb7fa4412771104dd105f6c5a7d1632bf"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/video.mp4",
+      "bytes": 35052910,
+      "sha256": "8ee15b215944bf39be85b99b9d5325b6a3b14bf61c01064cbd6637444dfc3e36"
+    },
+    {
+      "path": "video/books/ruby-and-the-wish-dragon/youtube-metadata.json",
+      "bytes": 1464,
+      "sha256": "6cdb4209f50dba532848af3b1686b014adcd2aa4754fccb5cd007822aaeedfdc"
     },
     {
       "path": "video/books/ruby-sparks-and-crackle/captions.srt",

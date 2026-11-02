@@ -1,0 +1,510 @@
+{
+  "book": "ruby-and-the-wish-dragon",
+  "title": "Ruby and the Wish Dragon",
+  "series": "Ruby and the Dragon Bonds",
+  "series_id": "ruby-and-the-dragon-bonds",
+  "target_duration_s": 555.499998,
+  "duration_rule": "Each cover/page is narration duration + 0.8s, rounded up to a 24fps frame.",
+  "narration_pages": [
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/cover.mp3",
+      "duration_s": 9.744,
+      "hold_s": 0.839333,
+      "frame_total_s": 10.583333,
+      "start_s": 0.0,
+      "end_s": 10.583333,
+      "sha256": "13e52a4a98981692afdf6a345f26e70aa4968e52daa2572d590a7afc1f00c606"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/01.mp3",
+      "duration_s": 32.304,
+      "hold_s": 0.821,
+      "frame_total_s": 33.125,
+      "start_s": 10.583333,
+      "end_s": 43.708333,
+      "sha256": "1f42386f3412416850ac21e49dc15cc99c5c3b13e13731e089762c93e4e959c9"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/02.mp3",
+      "duration_s": 26.952,
+      "hold_s": 0.839667,
+      "frame_total_s": 27.791667,
+      "start_s": 43.708333,
+      "end_s": 71.5,
+      "sha256": "8c9138d59e96a0adada53bb968627ae81ef2f7c26883a28adc931571b32a210d"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/03.mp3",
+      "duration_s": 35.688,
+      "hold_s": 0.812,
+      "frame_total_s": 36.5,
+      "start_s": 71.5,
+      "end_s": 108.0,
+      "sha256": "12c81a482d716426f65c3545320c949ee40488aef708fafce3d9a5471c402442"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/04.mp3",
+      "duration_s": 28.368,
+      "hold_s": 0.840333,
+      "frame_total_s": 29.208333,
+      "start_s": 108.0,
+      "end_s": 137.208333,
+      "sha256": "89286654fa9222bc73e58a0c4e20812164e24c4a615d81248a21b6ae6683593c"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/05.mp3",
+      "duration_s": 31.776,
+      "hold_s": 0.807333,
+      "frame_total_s": 32.583333,
+      "start_s": 137.208333,
+      "end_s": 169.791667,
+      "sha256": "2238329fc1fcd63881e8acd77c4a06f77d003e864f8348995c524cc1b09389f5"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/06.mp3",
+      "duration_s": 32.04,
+      "hold_s": 0.835,
+      "frame_total_s": 32.875,
+      "start_s": 169.791667,
+      "end_s": 202.666667,
+      "sha256": "59736cc20767f4e25e0ade10b91bb60b655e36648de1044e8eac6d112d512eed"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/07.mp3",
+      "duration_s": 36.216,
+      "hold_s": 0.825667,
+      "frame_total_s": 37.041667,
+      "start_s": 202.666667,
+      "end_s": 239.708333,
+      "sha256": "3542cc3b764b1e8e765fb9f8ec27feda6bde0dd76ec37a6ff0d2f1a93c8e9756"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/08.mp3",
+      "duration_s": 29.016,
+      "hold_s": 0.817333,
+      "frame_total_s": 29.833333,
+      "start_s": 239.708333,
+      "end_s": 269.541667,
+      "sha256": "41bdd08fcbb37d8e5c15e2ad287d35b6d06930c1a97374681d0269542503c7c7"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/09.mp3",
+      "duration_s": 27.264,
+      "hold_s": 0.819333,
+      "frame_total_s": 28.083333,
+      "start_s": 269.541667,
+      "end_s": 297.625,
+      "sha256": "a4c400c47f7e65070bb4deccec3ba166ea69af41c009946baca7b72cf4f313d3"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/10.mp3",
+      "duration_s": 31.152,
+      "hold_s": 0.806333,
+      "frame_total_s": 31.958333,
+      "start_s": 297.625,
+      "end_s": 329.583333,
+      "sha256": "c2ab9aea08f061336f16a58cfc5f08a7a5a5c6c2947511992cd8ffc4d8315dec"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/11.mp3",
+      "duration_s": 38.184,
+      "hold_s": 0.816,
+      "frame_total_s": 39.0,
+      "start_s": 329.583333,
+      "end_s": 368.583333,
+      "sha256": "f3e6d4feecbf16ff98a0e230abc2322c75eb7334ab8be12f2104d0e43b9c702f"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/12.mp3",
+      "duration_s": 40.416,
+      "hold_s": 0.834,
+      "frame_total_s": 41.25,
+      "start_s": 368.583333,
+      "end_s": 409.833333,
+      "sha256": "3ea60834e081c60d901aea6ca3bda521adacab3e18ef0901116715ef10f9d007"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/13.mp3",
+      "duration_s": 30.504,
+      "hold_s": 0.829333,
+      "frame_total_s": 31.333333,
+      "start_s": 409.833333,
+      "end_s": 441.166667,
+      "sha256": "fc317bee16ac06cb745ae07e1afce211cf0654ae1a120b0aa1f61f4d3d85177e"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/14.mp3",
+      "duration_s": 30.192,
+      "hold_s": 0.808,
+      "frame_total_s": 31.0,
+      "start_s": 441.166667,
+      "end_s": 472.166667,
+      "sha256": "85504b242059118c21345983873903ca840e114f437222cf355bde6f0e34c983"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/15.mp3",
+      "duration_s": 36.384,
+      "hold_s": 0.824333,
+      "frame_total_s": 37.208333,
+      "start_s": 472.166667,
+      "end_s": 509.375,
+      "sha256": "a30dab389da3abfbf8be2ba623e263365b48e77513835bce495fc4dd4fa22555"
+    },
+    {
+      "file": "books/ruby-and-the-wish-dragon/narration/16.mp3",
+      "duration_s": 45.288,
+      "hold_s": 0.837,
+      "frame_total_s": 46.125,
+      "start_s": 509.375,
+      "end_s": 555.5,
+      "sha256": "d605ba839e4ce6068b93ee4f8b45e4a00fcf798054aaf2735fa03da65628e9b4"
+    }
+  ],
+  "selected_seed": 484139163,
+  "seed_base": 484139163,
+  "theme": {
+    "file": "C:\\Code\\luna-story-time\\video\\assets\\music\\ruby-and-the-dragon-bonds\\theme.mp3",
+    "sha256": "e1cdcd97a6a85a8de83598147b7e99af097d50a45e2ef2121dea3ca192974132",
+    "exists": true,
+    "use": "Same canonical recording reused at score start and end.",
+    "archived_asset": "video/assets/music/ruby-and-the-dragon-bonds/theme.mp3"
+  },
+  "backend": {
+    "name": "ACE-Step 1.5 via local ComfyUI",
+    "tools_directory": "C:\\Code\\claude-video-editor\\tools",
+    "paid_or_remote_fallback": false,
+    "device": {
+      "device": "cuda:0 AMD Radeon RX 9070 XT : native",
+      "type": "cuda",
+      "vram_total_gb": 17.1,
+      "vram_free_gb": 6.4,
+      "comfy_version": "0.33.1",
+      "torch": "2.9.1+rocm7.2.1"
+    }
+  },
+  "crossfade_s": 2.5,
+  "target_lufs": -20.0,
+  "peak_ceiling_dbfs": -1.5,
+  "score_out": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-02\\ruby\\score.mp3",
+  "plan_out": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-02\\ruby\\score.plan.json",
+  "provenance_note": "Three 55-second local arrangements provide clean source windows. The plan records every selected window and its repeat index; all joins use crossfades. The canonical theme is a separate local asset, not generated by this command.",
+  "seed_derivation": {
+    "mode": "stable_book_derived",
+    "configured_base_seed": 710,
+    "book_seed_offset": 484138453,
+    "selected_seed": 484139163,
+    "book_slug_sha256": "9cdb5dd5986046bb8847e1d245eac02d3995e67911eeefd740bea8fb1c19e6aa",
+    "rule": "configured base seed + first 30 slug-hash bits"
+  },
+  "takes": [
+    {
+      "take": 1,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-02\\ruby\\score.takes\\take-01-seed-484139290.mp3",
+      "file_name": "take-01-seed-484139290.mp3",
+      "sha256": "915abacdcb4d550f089dff90ccf7cb9dc436f4ebd2bed6fd6e385e99ff4a0c52",
+      "seed": 484139290,
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. Arrangement: Spare nylon guitar picking with a soft piano note; close and unhurried.. Around 84 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "gentle-picking",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          52.309
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 52.509292,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-01-seed-484139290.mp3",
+          "sha256": "915abacdcb4d550f089dff90ccf7cb9dc436f4ebd2bed6fd6e385e99ff4a0c52",
+          "seed": 484139290,
+          "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. Arrangement: Spare nylon guitar picking with a soft piano note; close and unhurried.. Around 84 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              52.309
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 52.509292,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-01-seed-484139290.mp3"
+    },
+    {
+      "take": 2,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-02\\ruby\\score.takes\\take-02-seed-484139417.mp3",
+      "file_name": "take-02-seed-484139417.mp3",
+      "sha256": "44c2b0660052fd3e98e46b16a51e27ea71861112ca6dacd8e966aa5755824c79",
+      "seed": 484139417,
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. Arrangement: Gentle guitar motion and subtle flute color, with room for a reader's voice.. Around 84 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "dragon-curiosity",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          51.59
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 51.79025,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-02-seed-484139417.mp3",
+          "sha256": "44c2b0660052fd3e98e46b16a51e27ea71861112ca6dacd8e966aa5755824c79",
+          "seed": 484139417,
+          "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. Arrangement: Gentle guitar motion and subtle flute color, with room for a reader's voice.. Around 84 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              51.59
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 51.79025,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-02-seed-484139417.mp3"
+    },
+    {
+      "take": 3,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-02\\ruby\\score.takes\\take-03-seed-484139544.mp3",
+      "file_name": "take-03-seed-484139544.mp3",
+      "sha256": "65930fce956b2a10fce23eadd3dd7f624d7dd7910aadfcf86abba7a1f04339ae",
+      "seed": 484139544,
+      "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. Arrangement: Conversational piano and guitar with mellow clarinet warmth, ending tenderly.. Around 84 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "warm-bond",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          49.699
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 49.899042,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-03-seed-484139544.mp3",
+          "sha256": "65930fce956b2a10fce23eadd3dd7f624d7dd7910aadfcf86abba7a1f04339ae",
+          "seed": 484139544,
+          "prompt": "Warm intimate children's story instrumental, gentle nylon-string guitar picking with soft felt piano and occasional mellow woodwind color, tender and curious, natural unhurried phrasing, welcoming and emotionally safe, roomy arrangement beneath spoken reading, no vocals, no drums, no jaunty folk bounce, no dramatic swells. Arrangement: Conversational piano and guitar with mellow clarinet warmth, ending tenderly.. Around 84 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              49.699
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 49.899042,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-03-seed-484139544.mp3"
+    }
+  ],
+  "arrangement": [
+    {
+      "kind": "theme",
+      "source": "video/assets/music/ruby-and-the-dragon-bonds/theme.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.0,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-484139290.mp3",
+      "take": 1,
+      "seed": 484139290,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-484139417.mp3",
+      "take": 2,
+      "seed": 484139417,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-484139544.mp3",
+      "take": 3,
+      "seed": 484139544,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-484139290.mp3",
+      "take": 1,
+      "seed": 484139290,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-484139417.mp3",
+      "take": 2,
+      "seed": 484139417,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-484139544.mp3",
+      "take": 3,
+      "seed": 484139544,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-484139290.mp3",
+      "take": 1,
+      "seed": 484139290,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-484139417.mp3",
+      "take": 2,
+      "seed": 484139417,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-484139544.mp3",
+      "take": 3,
+      "seed": 484139544,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-484139290.mp3",
+      "take": 1,
+      "seed": 484139290,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-484139417.mp3",
+      "take": 2,
+      "seed": 484139417,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-484139544.mp3",
+      "take": 3,
+      "seed": 484139544,
+      "start_s": 0.5,
+      "duration_s": 45.0,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-484139290.mp3",
+      "take": 1,
+      "seed": 484139290,
+      "start_s": 0.5,
+      "duration_s": 26.5,
+      "repeat_index": 4
+    },
+    {
+      "kind": "theme",
+      "source": "video/assets/music/ruby-and-the-dragon-bonds/theme.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.0,
+      "repeat_index": 1
+    }
+  ],
+  "repeat_policy": "Clean music windows are reused in catalog order until the target length is filled; repeats are recorded above.",
+  "actual_duration_s": 555.5,
+  "loudness_lufs": -20.0,
+  "peak_dbfs": -3.1,
+  "internal_silence_starts_s": [],
+  "score_sha256": "669367a9db6643f1a4d7f6cf63097920362561375dcfa67b0ad6a80e223b4b6c",
+  "archivedSourceFiles": [
+    {
+      "file": "music-sources/take-01-seed-484139290.mp3",
+      "sha256": "915abacdcb4d550f089dff90ccf7cb9dc436f4ebd2bed6fd6e385e99ff4a0c52"
+    },
+    {
+      "file": "music-sources/take-02-seed-484139417.mp3",
+      "sha256": "44c2b0660052fd3e98e46b16a51e27ea71861112ca6dacd8e966aa5755824c79"
+    },
+    {
+      "file": "music-sources/take-03-seed-484139544.mp3",
+      "sha256": "65930fce956b2a10fce23eadd3dd7f624d7dd7910aadfcf86abba7a1f04339ae"
+    }
+  ]
+}
