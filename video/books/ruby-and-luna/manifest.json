@@ -1,0 +1,196 @@
+{
+  "title": "Ruby and Luna",
+  "subtitle": "Book Three of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny",
+    "Mommy"
+  ],
+  "slug": "ruby-and-luna",
+  "series": "ruby-and-the-dragon-bonds",
+  "preview": false,
+  "durationSeconds": 505.958,
+  "sourceHashes": {
+    "book.json": "58c71d61c61c73140da071be0da6833f1e43860627b890f3bfb3eafac0a38e5d",
+    "narration/timings.json": "687650da8d58cde334dfc2e389ae3fca2403b5d8370c9a033a4b4b04580a7e56",
+    "images/cover.webp": "6b9a5a82473a086445992af92cf21e9324ac0403c4f9f4a5fb2a906ff5a325bc",
+    "images/01.webp": "32cb21a75aaad19bc07caade990bb5fcebd7ab04f397535ab2b53f5ae5791695",
+    "images/02.webp": "054b64f10609f54b115ea86a3707d89768aace6aa7720c6d809f70dac4e49a77",
+    "images/03.webp": "46db65d5106d3dda82904f3dab28ae8565d93befe70cac7cd1818ed4e8e52070",
+    "images/04.webp": "b571b453b71ca5d121d44171bb0fb5425ac561019ecd2404e257545440d057d8",
+    "images/05.webp": "12cbcb5c8ce47bd6ff986e79ba88b66318df0a0e8934db62f0eadaf20b42f33f",
+    "images/06.webp": "b7456c1d11fc89c51d230aaafc118af3f400350eeec513494bec05d9ada792c1",
+    "images/07.webp": "310e6bee6eb8910483d8b84e17271cf36d4243423ba658f182198d8fb64ab63e",
+    "images/08.webp": "6ea4fe3d395105bc79733b04170f07fb224c7504eeac21ffef300b896ffae13f",
+    "images/09.webp": "30388b375ad392bb98eb4aca8a3d4f7dbd2fa9bc3601d6aa60f9bf934c219b59",
+    "images/10.webp": "0a58511991e68b73ca31f8994325e3e8e6d26b5ecf7ef9edcda21532d4acc2ac",
+    "images/11.webp": "dde935e6b1c3c62025102d0fd4af5a44567a15579d2e116cfd89b9631f338666",
+    "images/12.webp": "b6d2c762724a9dc35ac1a6c31ed8af99d417dfa03050e7a3a41258d2df4da9e8",
+    "images/13.webp": "748d8bb4006e5c5d9132db159c713116b2a22f4f5293fd4aba5444a3e8329986",
+    "images/14.webp": "22f3c3bf7c8f6e3c33c5378fd08b6096a1170a8daf19711a789578b4897684d9",
+    "images/15.webp": "97262145450edb1b463afd2ee8e4dc257ee07705fcc007ead374a5c67294ba4e",
+    "images/16.webp": "046f57ff8f929a1628ae98c757769c2cb9e92f279ff98afb4d9bfceaa602c57d",
+    "narration/cover.mp3": "80ff0fbd0520e8fe9c7a225fd33b3bc09366b334deb95ad4694f83042c0525cc",
+    "narration/01.mp3": "67c47ae80b00de4c1cb1bcab877d44ecd72dac4e11da5d5d7c9e2c184b5608fb",
+    "narration/02.mp3": "7b8958ec8793037524534034ea559ac45b19721e57070673d3b69992f82d95aa",
+    "narration/03.mp3": "0943d9fce8489a810d9f3a4a0a53e5fc7b33d070ba16429b88ee8dfafb19186a",
+    "narration/04.mp3": "8e7317929bfbf2ae1ce60012f9c54c54b89bab0ba44259727fbfe4b0f22a409a",
+    "narration/05.mp3": "f4c94c2465abcc09ca42c9a692fce1bcae2874d6958d181eb5d0f4b109e45dfb",
+    "narration/06.mp3": "01291a4af8e8e4105033a2af60eaac79cfc7949ea56ff7090a6180623bdece30",
+    "narration/07.mp3": "54fbec087b4c01513619ede8dcc756c1016ca9c957e2e317f752e6e37d2ac16d",
+    "narration/08.mp3": "23776b39bb2e064081cff7031ad8c7636bebde423d2b37695306a7b4673e2dc5",
+    "narration/09.mp3": "f22be6634e8c0a45aeca6594005f3175c53a02615c0090d2bcdfd06f3140d370",
+    "narration/10.mp3": "807279a7dddb9eac8cd0767f6022f4009767a329ea3537ae2675a6f22787d1a0",
+    "narration/11.mp3": "8cb6eabf6b0a83ff5294df7e312c12076c835eb32ac3aaf625e92e44035f8922",
+    "narration/12.mp3": "ba2a5612302bf986a5f3eeea5702abc04f00c303d559679e0407155e505c3a3f",
+    "narration/13.mp3": "24a652595a3bb7bb3c7e7b45375b9ee1addb23576e0728a9589476da62953700",
+    "narration/14.mp3": "9103b3a94b627f17a47f0fadc84735745392460fb0b03bce9f485c6fbe4d8f5d",
+    "narration/15.mp3": "c8e5e9802d2d30235e703c806cd8ee941243e01875800a24a4a41737885a72ec",
+    "narration/16.mp3": "d4f7475cc44527490e795b86ff728769fe513d50d68caeefa1191d5359bad150"
+  },
+  "musicSha256": "0e60115e61e0bdfd2fbe8f4ce7dde34782fdcda939e0f31d5c14ff4875200e0b",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 11.0,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Ruby and Luna. Book Three of Ruby and the Dragon Bonds. Written with love by Luna, Sunny, and Mommy."
+    },
+    {
+      "page": "01",
+      "startSeconds": 11.0,
+      "durationSeconds": 30.0,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "Ruby was twelve days old. She had counted them all.\nThe full moon rose up, big and round as a ball.\nFlame toasted a marshmallow. Pearl blew a bubble.\nSparks and Crackle played chase and got into some trouble.\n\nThen WHOOSH! Something streaked down the sky, long and bright:\na shooting star, swooping, with sparkles of light."
+    },
+    {
+      "page": "02",
+      "startSeconds": 41.0,
+      "durationSeconds": 31.375,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "Ruby's silver mark tingled. It fizzed. It went zing!\nThe star swooped down lower. It carried a thing.\nIt skipped over the river, then hopped the stone wall.\nThen it slowed, and it glowed, and it stopped. That was all.\n\nTap, tap! came a knock on the big palace door.\nRuby ran down the hall, and then ran a bit more."
+    },
+    {
+      "page": "03",
+      "startSeconds": 72.375,
+      "durationSeconds": 31.292,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "On the step sat an egg. It was black, black as night,\nand speckled all over with stars, tiny and bright.\nThe shooting star twinkled, then faded away.\nThe egg hummed a soft hum, like it wanted to stay.\nRuby knelt. Her mark fizzed. \"Oh,\" she whispered. \"Hello.\"\nShe reached out her hands, oh so gentle, so slow..."
+    },
+    {
+      "page": "04",
+      "startSeconds": 103.667,
+      "durationSeconds": 33.958,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "Across the far hills, in her charcoal-dark tower,\nNoir saw the star fall. \"An egg! Dragon power!\"\nWar squinted. \"It's BLACK! Black is spooky! Black's mean!\nIt's the baddest, most rotten-est egg ever seen!\"\n\"Then it's ours,\" Noir decided. \"Black Hole, fly! Be quick!\"\nAnd they swooped through the night with a flap and a flick."
+    },
+    {
+      "page": "05",
+      "startSeconds": 137.625,
+      "durationSeconds": 19.583,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Ruby's fingers were close. Just a little bit more...\nwhen down swooped Black Hole, right in front of the door.\n\"Attack!\" shouted War, and she jumped off his back.\nShe bumped Ruby, WHUMP, into the cook's laundry stack."
+    },
+    {
+      "page": "06",
+      "startSeconds": 157.208,
+      "durationSeconds": 34.75,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "\"MINE!\" War grabbed. \"No, MINE!\" Noir grabbed. \"Can't you see?\nIt's as dark as my tower. It's dark just like me!\"\nBut the egg felt their hands, grabby, grumpy, and tight,\nand it shivered... then pushed out a ring of starlight.\nBWOMMM! Back slid Noir. Back slid War, on her bum,\nand the egg floated up with a hum, hum, hum."
+    },
+    {
+      "page": "07",
+      "startSeconds": 191.958,
+      "durationSeconds": 30.417,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "Ruby wriggled out with a sock on her shoe.\nThe egg drifted to her, as if it just knew.\nIt felt Ruby's heart, gentle, patient, and kind,\nand it glowed, warm and happy. It had made up its mind.\nThen it rang like a bell, a soft call, clear and high,\nand four little dragons looked up at the sky. … Look for the light, not the color."
+    },
+    {
+      "page": "08",
+      "startSeconds": 222.375,
+      "durationSeconds": 24.958,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "\"Black Hole!\" Noir snapped. \"Swirl it! Gobble it in!\"\nHis dark swirl went slurrrp with a whirl and a spin.\nThe egg tipped. The egg spun. It slid up through the air,\ntoward the swirl! Ruby gasped. \"Oh, egg, don't go there!\""
+    },
+    {
+      "page": "09",
+      "startSeconds": 247.333,
+      "durationSeconds": 34.667,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "Out raced Flame! Out raced Pearl! Out zoomed Sparks! Crackle, too!\nThey had heard the egg calling. They knew what to do.\nPearl blew a big bubble, bloop! round the egg, snug and sound.\nFlame puffed warm air under it. Up! Off the ground!\nLike a balloon on a breeze, the bubble rose high,\naway from the swirl, to the moon-silver sky."
+    },
+    {
+      "page": "10",
+      "startSeconds": 282.0,
+      "durationSeconds": 22.583,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "Sparks zipped round to the left. Crackle zipped round to the right:\ntwo zigzagging ribbons of crackly gold light.\nBlack Hole's head went around, and around, and around,\ntill, dizzy, his swirl fizzled. Pfft! He plopped on the ground."
+    },
+    {
+      "page": "11",
+      "startSeconds": 304.583,
+      "durationSeconds": 22.167,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "Down drifted the bubble, as soft as a sigh,\ninto Ruby's two arms, where it popped. Pip! Goodbye!\nThe full moon shone down. The egg wiggled. Tap, tap...\nThen a crick, then a crack, then a crickety-SNAP!"
+    },
+    {
+      "page": "12",
+      "startSeconds": 326.75,
+      "durationSeconds": 35.792,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "Out tumbled a dragon, as black as the sky,\nwith stars on her scales and two moon-silver eyes.\nShe yawned a big yawn, and then WHOOOM! Silver light\nfilled the garden, the palace, the hills, and the night!\n\"But she's BLACK!\" War gasped. \"Black things don't shine! Or do they?\"\n\"Hello, Luna,\" said Ruby. \"You're brighter than day.\" … Look for the light, not the color."
+    },
+    {
+      "page": "13",
+      "startSeconds": 362.542,
+      "durationSeconds": 29.208,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "Luna nuzzled her nose into Ruby's warm hand.\nZing! went Ruby's mark, and her dress swished so grand:\nmidnight black, sprinkled over with stars shining bright,\nwith a trim that glowed softly in moon-silver white.\nAnd her hands filled with moonbeams, as cool as a stream,\nsoft and silver and curling like ribbons in dreams."
+    },
+    {
+      "page": "14",
+      "startSeconds": 391.75,
+      "durationSeconds": 48.292,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "\"That light should be OURS!\" Noir snapped. \"Black Hole, GO!\"\nBlack Hole wobbled up, dizzy, his swirl spinning slow.\nRuby lifted her moonbeams. Luna lifted hers, too.\nThey rolled them together, and the moonbeams grew\ninto one round, glowing, enormous soft moon...\nand CRASH! Down it came, with a BOING and a BOOM!\nSQUISH! went Noir. SQUASH! went War. SQUOOSH! went Black Hole: flat\nas three pancakes, three pillows, three squashed welcome mats."
+    },
+    {
+      "page": "15",
+      "startSeconds": 440.042,
+      "durationSeconds": 30.708,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "The squishy moon popped into silvery dust,\nand it tickled Black Hole's nose, as tickly dust must.\n\"Ah...\" \"HOLD IT!\" squeaked War, still as flat as a sheet.\n\"Ah... ah... ACHOO!\" And it blew them right off their feet,\nover hills, past the river, back home to their tower:\nthree sneezy, squashed grumps in a moon-dusty shower."
+    },
+    {
+      "page": "16",
+      "startSeconds": 470.75,
+      "durationSeconds": 35.208,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "Back inside, Luna snuggled with Flame, Pearl, and the twins:\nfive dragons, one princess, one heap of sleepy grins.\nLuna glowed like a nightlight, all speckled with stars.\n\"Some folks see a color,\" yawned Ruby, \"not who you are.\nBut you're dark, and you shine. You're both, Luna. It's true.\"\nAnd Luna glowed brighter, the way good friends do. … Look for the light, not the color."
+    }
+  ],
+  "archivedVideoSha256": "a0f75bfd72720847575b9bb5b8b208ed73fa21d34a11fd60690a64637e6df5d4",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "0e60115e61e0bdfd2fbe8f4ce7dde34782fdcda939e0f31d5c14ff4875200e0b"
+  }
+}

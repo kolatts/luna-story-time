@@ -1,0 +1,196 @@
+{
+  "title": "Ruby and the Leafy Egg",
+  "subtitle": "Book Four of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny",
+    "Mommy"
+  ],
+  "slug": "ruby-and-the-leafy-egg",
+  "series": "ruby-and-the-dragon-bonds",
+  "preview": false,
+  "durationSeconds": 537.958,
+  "sourceHashes": {
+    "book.json": "270154774d920355278d2895abc8f1905f07df5a89c88e42a64ac472c9996e27",
+    "narration/timings.json": "9f572d841ed39b4189f93f543f666ff710db395b0ee05a867281443f0bfac2a4",
+    "images/cover.webp": "2f75b0c7203fc3ee74b36ea26271785f7f66737d514f68994263e6b64c469708",
+    "images/01.webp": "7ffed4c3c659499bf97f5ee01a79a1ff0995ab47d4f833edbf2ff733e17a8a41",
+    "images/02.webp": "d264cbcec66c9488cda04c7a140f1576677750757b6bfc37fa3386d44543991a",
+    "images/03.webp": "25215e4f41c4ae1eacd0421bbafd8484c3b95ca04d382eab6e7d0cf0c235237b",
+    "images/04.webp": "22f09dccd8416a26cd8cadaf82ed04f483ebeeaffd74a68a081adfb531ddfa6b",
+    "images/05.webp": "04ff22973d700e8a960305be531de4347196929e649348a0afe5bdb129b13da8",
+    "images/06.webp": "7065eeab06bd12bf5af155cc8d18dc4790b062a0b05387233de8aadc22a75757",
+    "images/07.webp": "1c6f34de07a0c76b9ab33dceff86ad0042623f1c040cd4557f3b7ace600e801e",
+    "images/08.webp": "3f5cc17a47f5139bce2dd3a6212c43af9d1d7d187be676ba33e105f09a83f500",
+    "images/09.webp": "845d6bf7e09752bb4c5f8448d6c40b7465c9bb4ff4f2fd18a3aa0e614b20270a",
+    "images/10.webp": "09957e6914a4a566813aa5e34fa97daed1d3737309f4dc926a38c549d9530cc0",
+    "images/11.webp": "51548d965ce547bc60ffe8399714ac8560c9edca995c558e0a150109b2cda490",
+    "images/12.webp": "8152a432cc77757be32abec2eef33bd9d84659300754da1493a5d1026c5922da",
+    "images/13.webp": "9d344208ad8e64c81dd2ae69827ec8ca1ee35cc546f65b189b89f26f1ed0417a",
+    "images/14.webp": "d511bb0e7c3e5a9b365f43b6316b8954d1c0d6bcc2d7505809d3b5bc474c2f33",
+    "images/15.webp": "50ba19de5469b0c1be223ce493714c76b0c51b4b17a44683a5b7cc09e53c0c0d",
+    "images/16.webp": "a712ae9dbf9edd598db308318d6badd447ab95e8bf9fab86500c86733bd9cadc",
+    "narration/cover.mp3": "0cfdaa7fa0e8b7d60896e38d957659e56c83fbc20cd3efa8cdd30797c1589420",
+    "narration/01.mp3": "dfdc9042ebe777cc5781e338cfc5ed8a2e1236dc5d5b994cfe52fa8c6440e28c",
+    "narration/02.mp3": "6be910ff07f110e729725dddb2fddaa98657420fcaf5b45dcefc106abd82413e",
+    "narration/03.mp3": "9e94a1fb9bacb2bf38952e5f0f12db6a213db04d0aeb5c19f5a73baeaa4a9321",
+    "narration/04.mp3": "5b6b4f267c04242bf27b6ec5cd0d61b870ad7f45abaa8701976ece56a7f4eb18",
+    "narration/05.mp3": "2888be9e6bef9805438dd9e8c6b3660ceb43d710d1500bb78dc6950fc14b22ab",
+    "narration/06.mp3": "e037210c7c330587f83096673ae9aae0cb3f935323fa235a589f27c2145a69cb",
+    "narration/07.mp3": "c4003b07cae6e32bf1bd2bd568d521fde37313826ba373d1b894228faf8e315e",
+    "narration/08.mp3": "1bf947ff6dee1501c1c25f3f3860b67a00e837bfdc6465d5984486f26ea2c59a",
+    "narration/09.mp3": "0259086562747098145d5518356f4b8aec51965969d2cd00c55c50b2bcb1b930",
+    "narration/10.mp3": "0fa107ee34d45d9a0589992a5e558e64d997305a149a80423aa13f658a675710",
+    "narration/11.mp3": "b98884f31d27ea51942a5baaf56482d90e30d2632a89cebbbf6e6d9700c3c0fb",
+    "narration/12.mp3": "efe9a9f2c716533ea3bcde55f1b5ea63060bcca85958d5945179cad57349a24a",
+    "narration/13.mp3": "4c7660346675d29c1417904045922c4565a1e0309a4c64be6a4fe69bbba5a179",
+    "narration/14.mp3": "ee65299436cff173cf21a43e1c8c4371c2d5dd552e3b36c36602c7834016de43",
+    "narration/15.mp3": "9a292f2fc18068f866b7b3e2be01486922e9096c002d127673856418ee3c6d35",
+    "narration/16.mp3": "08cd73a326378fe8bd8b1b38e9c34a5feaa032776c1fe375d3aed7813c17827a"
+  },
+  "musicSha256": "904acb0ba1947bd101e66965e2fc872730d6811d1e7f9f6be20144be82213032",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 11.333,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Ruby and the Leafy Egg. Book Four of Ruby and the Dragon Bonds. Written with love by Luna, Sunny, and Mommy."
+    },
+    {
+      "page": "01",
+      "startSeconds": 11.333,
+      "durationSeconds": 29.208,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "Ruby was thirteen days old. She had counted each one.\nShe was stacking up blocks in the warm morning sun.\nThen the teacups went rattle. The windows went hum.\nAnd the floor gave a rumble, like a big, bumpy drum.\n\nRUMBLE, RUMBLE! Her block tower tumbled and fell.\nSomething deep in the ground had a story to tell."
+    },
+    {
+      "page": "02",
+      "startSeconds": 40.542,
+      "durationSeconds": 42.75,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "Across the far hills, in her charcoal-dark tower,\nNoir rubbed her hands. \"There's an egg! Dragon power!\nIt's buried down deep, underneath our own floor.\nBlack Hole, gulp the stones! Gulp them up! Gulp some more!\"\n\nGULP! went the cellar. GLUG! went a wall.\nGULP! went the pillars that held up the hall.\nEvery gulp made a rumble. And deep down below,\na scared little egg shivered. The whole hill shook so!"
+    },
+    {
+      "page": "03",
+      "startSeconds": 83.292,
+      "durationSeconds": 31.917,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "The tower went wibble. The walls went a-wobble.\nDown tumbled the bricks with a bump and a bobble.\nNoir held up a doorway. War pushed on a wall.\n\"Stop GULPING!\" they shouted. \"You'll tumble it all!\"\nBlack Hole stopped, round and stuffed, with a BURP. But below,\nthe scared egg kept on shivering. The hill shook. Oh no!"
+    },
+    {
+      "page": "04",
+      "startSeconds": 115.208,
+      "durationSeconds": 28.208,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "The five little dragons pressed their toes to the ground.\nThey could feel it: a tremble, a hum, a deep sound.\nFlame tiptoed. Pearl tiptoed. The twins went zip-zip.\nLuna padded ahead with her nose to each dip.\nOver meadows and creeks, over hill after hill,\nthey followed the rumble, and it rumbled on still."
+    },
+    {
+      "page": "05",
+      "startSeconds": 143.417,
+      "durationSeconds": 32.458,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Under Noir's crumbly castle, a cave mouth yawned wide.\nRuby's silver mark tingled. Zing! \"There's an egg inside!\"\n\"GO AWAY!\" yelled War from the top of a wall.\n\"That egg is OURS!\" Noir snapped. \"We found it! That's all!\"\n\"Somebody's frightened,\" Ruby whispered, \"down there.\"\nShe held close to her dragons, and stepped in with care."
+    },
+    {
+      "page": "06",
+      "startSeconds": 175.875,
+      "durationSeconds": 32.292,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "It was dark in the cave. Drip! Drop! went the drips.\nLong roots dangled down like old wiggly fingertips.\nLuna glowed soft and silver. Flame puffed a warm light.\nEchoes whispered \"...ello... ...ello...\" left and right.\n\"I'm scared,\" Ruby whispered. \"But I'll go anyway.\"\nAnd her dragons stayed close, every step of the way."
+    },
+    {
+      "page": "07",
+      "startSeconds": 208.167,
+      "durationSeconds": 30.708,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "Then the dark gave a huff. And a puff. And a THUMP.\nAnd out loomed a monster, a great, hairy lump!\nHe was big as a haystack, all shaggy and brown,\nwith two glowing eyes, and a growl, and a frown.\n\"ROOOAAAR!\" went the monster, so loud that rocks rolled,\nand he swatted Ruby's crown off. Clink! went the gold."
+    },
+    {
+      "page": "08",
+      "startSeconds": 238.875,
+      "durationSeconds": 31.042,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "The dragons hid, trembling, tails tucked in tight.\nBut Ruby looked closer, by Luna's soft light.\nThen she saw why he roared. From the shaking, a rock\nhad dropped on his tail, and it held like a lock.\n\"He knocked off my crown, and that wasn't okay.\nBut he's hurting,\" said Ruby. \"Let's help anyway.\" … Give a hand, and give again."
+    },
+    {
+      "page": "09",
+      "startSeconds": 269.917,
+      "durationSeconds": 32.25,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "\"Heave!\" pushed Ruby. \"Ho!\" pushed five dragons. Then... ROLL!\nOff tumbled the rock with a bump down a hole.\nThe monster sat up. He gave back her crown with a sigh.\n\"I'm Grizzlemop. Sorry I roared,\" he said, shy.\n\"You helped me, though I was so grumpy and rough.\nThe egg is this way. It's been scared long enough.\""
+    },
+    {
+      "page": "10",
+      "startSeconds": 302.167,
+      "durationSeconds": 33.125,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "Down, down, through a tunnel, past roots, round a bend,\nwas a cave full of green at the tunnel's far end.\nAnd there, in a nest made of moss, soft and deep,\nsat an egg wearing leaves, much too scared to sleep.\nIt shivered. It shook. RUMBLE, RUMBLE went the ground.\nRuby hugged it up close. \"Shh. You're safe now. You're found.\""
+    },
+    {
+      "page": "11",
+      "startSeconds": 335.292,
+      "durationSeconds": 29.417,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "She hummed a soft hum, and she rocked it just so,\ntill its shivers grew smaller, and slower, and slow...\nThen a crick! Then a crack! Then a crinkly-leaf SNAP!\nOut tumbled a dragon, right into her lap.\nShe was green as a leaf, with two petal-pink eyes.\nAnd the shaking just STOPPED. What a quiet surprise!"
+    },
+    {
+      "page": "12",
+      "startSeconds": 364.708,
+      "durationSeconds": 30.542,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "\"Hello, Leaf,\" Ruby whispered. Leaf gave a green grin,\nand she pressed her small nose to Ruby's palm. Zing!\nRuby's dress swirled spring green, as fresh as new leaves,\nwith a hem of pink petals that swirled like a breeze,\nand from her fingertips, little vines curled and grew,\nwith wee flowers that opened, pink, yellow, and blue."
+    },
+    {
+      "page": "13",
+      "startSeconds": 395.25,
+      "durationSeconds": 32.792,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "Up, up, out they climbed, to the top of the hill.\nNoir's castle lay crumbled, all dusty and still.\n\"That's OUR egg!\" Noir snapped. \"Hand that dragon to me!\"\nBut Leaf hopped to Ruby, as snug as could be.\nNoir and War made this mess. They were grabby, it's true.\nRuby looked at the rubble... and knew what to do. … Give a hand, and give again."
+    },
+    {
+      "page": "14",
+      "startSeconds": 428.042,
+      "durationSeconds": 39.625,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "\"Black Hole swallowed your stones,\" Ruby said. \"They're in there.\"\nLeaf blew a gold puff of flower dust into the air.\nIt tickled Black Hole's nose. \"Ah...\" \"Don't!\" War said. \"Ah... ah...\"\n\"ACHOOOO!\" Out they flew! Stones and pillars! Ta-da!\nBack up flew the bricks and the stairs, block by block,\nto the walls and the tower. Clink! Clunk! Clonk! Clock!"
+    },
+    {
+      "page": "15",
+      "startSeconds": 467.667,
+      "durationSeconds": 34.75,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "But the stones wibbled. Wobbled. \"Oh, Leaf,\" Ruby said,\n\"can we help them hold tight?\" And Leaf nodded her head.\nUp sprang vines! Up sprang flowers, in every last crack,\nholding stone onto stone, side to side, front to back.\nGrizzlemop carried big stones. Pearl washed off the dust.\nFlame, the twins, and Luna glowed, as good helpers must."
+    },
+    {
+      "page": "16",
+      "startSeconds": 502.417,
+      "durationSeconds": 35.542,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "The castle stood tall, wrapped in flowers, brand new.\nNoir sniffed. \"Pink flowers? Not OUR color. Pooh.\"\nWar crossed her arms. \"And no thank-yous from me!\"\n\"That's okay,\" Ruby smiled. \"A gift's given free.\"\nGrizzlemop waved from his cave as the sun dipped down low,\nand home went six dragons, one princess, all aglow. … Give a hand, and give again."
+    }
+  ],
+  "archivedVideoSha256": "f4e62e4dde85832334139d8c36219d03ea8f69926ca7a0bd37df24112f8b3965",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "904acb0ba1947bd101e66965e2fc872730d6811d1e7f9f6be20144be82213032"
+  }
+}

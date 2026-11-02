@@ -1,0 +1,195 @@
+{
+  "title": "Cheeblest and the Sister of Storms",
+  "subtitle": "Book Three of the Castle Everstair stories",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "slug": "cheeblest-and-the-sister-of-storms",
+  "series": "castle-everstair",
+  "preview": false,
+  "durationSeconds": 850.583,
+  "sourceHashes": {
+    "book.json": "42548af9742b978e726fa29775ba925c74eec807ecc1b9b77f7cb96ae6f2960f",
+    "narration/timings.json": "dd58bf79ed05a579b070d0d728a0893137d5ab86057c145e1a8931ab88a77dcc",
+    "images/cover.webp": "03e2d0d87c4d6615907fae12e21c08447d8fabe6e9dfd676f5ff7003f77fe71e",
+    "images/01.webp": "185f4e806487147c8d04b3dacd5af62631d81c653ec6190a6b8acb844c71f2d8",
+    "images/02.webp": "a58b683cbc9e30ec6dfbb8c74b496ed7f1ce0257e7afa8ec42844c14e588d252",
+    "images/03.webp": "0b09ec19185c7bf990cf8f38800bdbdd1d89bc77b15f4885614b5be58b489bee",
+    "images/04.webp": "dfd64f086919f70529d25ba4f27dd6787af2d93dffd7feb29e7939f1134100d1",
+    "images/05.webp": "dde3a2ba6c2124691cb7e64f62d6edd5c037f7af8d4a47c688eef036714a9016",
+    "images/06.webp": "25ff6b729ee8086b5c890a8baa553f49155402aee6a8f1f6b84b589542ed1a63",
+    "images/07.webp": "2c621e5e643face8172fc59e85fd3b1809413e4b32ac5a2621a2838e0f4f7af8",
+    "images/08.webp": "e0e3cacced0119245725ecc6b4131588f42c49d7523fa46d17c929ec60867870",
+    "images/09.webp": "7641f2646ea27260687fe1f50bc7508ff78bb9f8beea6b4c53f0333e7a73b7c5",
+    "images/10.webp": "ebb89519c0f0df97bafe7907f7608bfa0d7e5f723ab6c8d3c216ee82e12a7bc0",
+    "images/11.webp": "f996bc67ae159962440c3f3181f3293ca71bc60841eb356f79d96fa8209d0d02",
+    "images/12.webp": "dedf591acfda914170211dae4d5dcfd02c45a53ebbd14dad481f1bc583596314",
+    "images/13.webp": "9408c8f9f0f3bca3e26e83aaccfc47e176ba02452f0105165e6dce354fd39b32",
+    "images/14.webp": "70f70e18d15d776a2a4de836b3569980cf02ce8be9795b72385b073a1203c828",
+    "images/15.webp": "a4f599f1815d5b9ea18eef6517a049bdc2b0d057b4670d454b6c53c977f4d6d5",
+    "images/16.webp": "9324a5422b5da0447e6c8db8a93559186375032a910cf66975eb1e15d6371ff6",
+    "narration/cover.mp3": "b06e9622dc355713346cc4813470cbebf68be6fd46e3fd0df6cef4d14e4ba4f2",
+    "narration/01.mp3": "8acc6e2a2fbf4197d1ee26e9c2469967ecd6dde789e2a82c2c3ae9dfc6fe7590",
+    "narration/02.mp3": "c7a45f102a5cf3ca10ff70c5f73600ab8c890c06fe187f975c1e96dfd1b9a800",
+    "narration/03.mp3": "1d7c0fbf88fed3651594674acc2ce7906fae344d343957c8f578e4900872ecd4",
+    "narration/04.mp3": "87a552cf7513d18138c670719651271eae8aff6a113aed1d047a7f51f701808e",
+    "narration/05.mp3": "4a9ec26336b490fb6f088b6130827a9bb9ea967fc940951cc5ee6025d389d819",
+    "narration/06.mp3": "55a8b321470c62505d064736911133289e2d131b67bd72701576862bd561ddc8",
+    "narration/07.mp3": "7c7182c4ba2934e9ea279adc4877636423829fba31ab788347d18e5c2bc37c20",
+    "narration/08.mp3": "b2c598e70622d80e44ab892f6921ce22f4f70e78fb0e92338a0ac40b412dfc12",
+    "narration/09.mp3": "3dfeef5442a93725e07f30492d99282b4bac3781945cdf299a9751ad3e6d1ef0",
+    "narration/10.mp3": "245e587e44368875697665bb5a0a5b798a2138a2154b20546c6029cc3a7a148f",
+    "narration/11.mp3": "510c886edda307d7f873fd005687a2ab57ce2ff101b9c0988cf51459b12e3d79",
+    "narration/12.mp3": "d985940d32d5dea07e10190370c1c4e16ce07e37a7f3609a5126b90a61c6e08b",
+    "narration/13.mp3": "649dc1802db91ed8a844f7dc8d40e4f467883f3a3ef27875bdbb835a7652f8b6",
+    "narration/14.mp3": "7a3ed3276065d8b9da4262fc3394afbc70381d3736e6f8325efd749dfaec01f1",
+    "narration/15.mp3": "8820c1ad038b356a1b316653ae3c287403666107e6b1be36e062ebf7340c61b0",
+    "narration/16.mp3": "2cd38764ba5b9ba3057f36e02a83fd6fe506b6a8255ebf5fc1e51289e4d14102"
+  },
+  "musicSha256": "68ba8363ea45f4bc926cf0af1b06ab35f6f432d4c071fbfcdacf10024c3508b5",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 11.208,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Cheeblest and the Sister of Storms. Book Three of the Castle Everstair stories. Written with love by Luna and Sunny."
+    },
+    {
+      "page": "01",
+      "startSeconds": 11.208,
+      "durationSeconds": 32.625,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "Nobody spoke when the summer was done.\nNobody spoke — not a single one.\nFor out on the water, as still as a stone,\nstood somebody masked, and she stood all alone.\n\nShe looked at them once through the holes in her mask.\nShe didn't want soup. She had nothing to ask.\nShe turned, and she walked on the sea like a floor,\nand the tower — their tower — swung open its door."
+    },
+    {
+      "page": "02",
+      "startSeconds": 43.833,
+      "durationSeconds": 35.375,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "By morning the tower was taller. It's true.\nAnd it hadn't asked anyone. Towers don't do\nthe things this one did: it had grown, overnight,\na crown of new doors at a dizzying height.\n\nAnd down on the sand stood the sisters, locked out —\nlocked out of the home they'd been scary about.\nEvilest hammered and hollered, \"IT'S ME!\"\nThe door didn't budge. It was waiting, you see."
+    },
+    {
+      "page": "03",
+      "startSeconds": 79.208,
+      "durationSeconds": 38.458,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "Across the wide water the friends saw it all:\nthe mask on the sea, and the tower grown tall.\n\"Who is she?\" asked Moon. Cottontail didn't know:\n\"I've sailed every somewhere a sailboat can go,\n\nand nobody, nowhere, wears masks on the sea.\"\nThen Cheeblest said, quietly, \"Listen to me.\nDoors don't open for strangers. It knew her. It did.\nI lived my whole life there —\n\nand it never swung open like that once for me.\""
+    },
+    {
+      "page": "04",
+      "startSeconds": 117.667,
+      "durationSeconds": 66.333,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "Inside, up a stairway as new as the day,\nthe sisters found halls that had not been that way,\nand there stood the masked one, so still and so tall,\nand her voice, when it came, was like snow. That was all.\n\n\"Sisters,\" she said. \"I'm your sister. I'm Shock.\nI was born in this tower. I'm older than talk.\nAnd nobody told you. Not once. Not a peep.\nI'm the secret this tower was built here to keep.\"\n\nAnd Evilest lit up spike after spike:\na BIGGER, more terrible sister! Her like!\nShe bowed till her crown nearly swept at the floor:\n\"Whatever you're planning — I'm yours. Tell me more.\"\n\nBut Beedlist said nothing. She stayed in the black.\nShe looked at the mask. And the mask looked back."
+    },
+    {
+      "page": "05",
+      "startSeconds": 184.0,
+      "durationSeconds": 56.5,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Then Shock climbed her tower and stood at the crown,\nand the sky went the grey of a storm sitting down,\nand she reached up and pinched, very gently, like thread —\nand a stone of the stair floated up from its bed.\n\nThen two stones. Then ten. Like puzzle-bits, slow,\nthey drifted up out of the place stones should go.\nAnd thin as an eyelash, far up past the blue,\na crack crossed the moon. And the crack was new.\n\n\"I'll stop,\" said the mask, in her snowfall voice,\n\"when you bring me the shines. All three. It's a choice.\nThis world came out wrong. I will take it apart,\nand build a new world in the shape of my heart.\""
+    },
+    {
+      "page": "06",
+      "startSeconds": 240.5,
+      "durationSeconds": 36.333,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "How do you fight with the weather? You don't.\nYou can ask it to stop, but it probably won't.\nThey watched their dear stair come undone, bit by bit,\nlike somebody slowly unbuttoning it.\n\nThe stones didn't fall. Nobody was hurt.\nThey rose, soft as bubbles, away from the dirt,\nand they hung in the sky, and they didn't make sound.\nAnd a quiet that's wrong is the loudest thing round. … Even storms were little once."
+    },
+    {
+      "page": "07",
+      "startSeconds": 276.833,
+      "durationSeconds": 47.167,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "Then the storm came for Cottontail's power. It pried.\nIt circled her, sniffing. It hunted. It tried.\nIt turned out her pockets — no pockets. It blew\nthrough her fur and her whiskers. No magic came through.\n\n\"I keep telling everyone,\" said the wet cat,\n\"there isn't a shine under this, under that.\nMy claws are just claws. They grew where they stay.\nYou can't take a thing that won't come away.\"\n\nAnd the storm went quite still, for it didn't know what\nto do with a something that couldn't be got."
+    },
+    {
+      "page": "08",
+      "startSeconds": 324.0,
+      "durationSeconds": 44.25,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "But Moon and her sister sat close on the stair,\nby the space where a step had gone off in the air,\nand they thought the same thought, and they thought it as one\n(they have never once argued — not ever, not yet):\n\"She can have every shine. She can have every sun.\nA world full of friends is the best you can get.\"\n\nSo they filled up their arms with their shimmer and glow\nand set off for the tower to give it away.\nAnd the storm, up above, watched them come. And you know\nthat a storm shouldn't smile. But it did, in its grey."
+    },
+    {
+      "page": "09",
+      "startSeconds": 368.25,
+      "durationSeconds": 58.708,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "Meanwhile the sisters, inside, on their own,\nwent poking through hallways the tower had grown,\npast a small dusty room where five little beds slept,\nall made, very neat, like a promise half-kept,\n\nto a door standing open a crack, silver-grey,\nwith the world Shock would build when this world went away:\nit was tidy. It shone. It was rowed. And it gleamed.\nAnd Evilest stopped. For she knew it. She'd dreamed:\n\na room full of crowns and a very tall chair,\nand nobody, nobody, nobody there.\nShe looked a long look. Then she said, very small,\n\"I don't think I want to be queen, after all.\" … Even storms were little once."
+    },
+    {
+      "page": "10",
+      "startSeconds": 426.958,
+      "durationSeconds": 59.917,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "They ran. Down the stairways, down two at a time,\nout the door, down the sand, to the edge of the brine,\nand stood in the path of the glow coming near.\n\"STOP,\" puffed out Evilest. \"Keep your shine here.\n\nShe's our sister. Our oldest. And nobody knew.\nNot us. Not our whole lives. I promise it's true.\nAnd I've seen the new world she would build when it's done —\nthere's nobody in it. Not us. Not anyone.\"\n\nAnd Beedlist, who never says anything, wrote\nthree small words in her book, and held up the note,\nand the three words were these, in her smallest black pen:\n\"SHE WON'T STOP.\" And the sea went flat again."
+    },
+    {
+      "page": "11",
+      "startSeconds": 486.875,
+      "durationSeconds": 47.917,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "Then Cheeblest walked forward, alone, up the sand,\npast sisters, past friends, holding nobody's hand,\nand she stood at the foot of the tower, head high,\nin her bows, very small, looking up at the sky,\n\nand she called to the mask at the top of it all:\n\"I know about towers! I lived in one too!\nYou hide till the hiding is all that you do!\n\nI had a small dream and I hid it away —\nand somebody looked at it anyway. SEE?\nMoon! Do the thing that you once did for me!\nDon't run! Don't give! Don't fight her! Just LOOK!\""
+    },
+    {
+      "page": "12",
+      "startSeconds": 534.792,
+      "durationSeconds": 46.0,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "So Moon set her armful of shine on the sand,\nand took Baby Lady's soft paw in her hand,\nand she closed her eyes gently, and looked the long way —\npast the mask, past the storm, past the grey, past the grey.\n\nAnd deep at the middle of all of that weather\nshe found one small dream, folded up like a letter,\nand the dream wasn't thunder, and it wasn't rain,\nand it wasn't a world crumbled small. It was plain:\n\nsomebody looking at her, and then —\nnot looking away. Just looking again. … Even storms were little once."
+    },
+    {
+      "page": "13",
+      "startSeconds": 580.792,
+      "durationSeconds": 58.208,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "And high on the tower, the storm lost its spin,\nand the stones hung as still as the night they were in.\n\"Stop looking at me,\" said the mask, low and thin.\nAnd Moon said, quite gently, \"I already did.\n\nI can't see your face, and I won't even try.\nBut I saw you. I saw you. You're not very hid.\"\n\nAnd Shock — who could crumble a world into sand —\ntook one step away, like a wave leaves the land,\nand stepped through a door that was suddenly there,\nand the door closed behind her. And storm became air.\n\nNot beaten. Not finished. Not sorry. Not done —\njust gone for tonight, like a storm. Or a sun."
+    },
+    {
+      "page": "14",
+      "startSeconds": 639.0,
+      "durationSeconds": 54.083,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "The stones settled home like slow flakes of snow,\neach back into place in the stair's even row —\nall but one step, near the ninety-ninth bend,\nthat never came down. There's a gap there, my friend.\nThey hop it. You'd hop it. It isn't so far.\nBut it's how they remember that somewhere, storms are.\n\nAnd the crack on the moon knitted shut, thin and slow,\nthe way that a scrape on your knee learns to go —\nthough on some very clear nights, you can find a faint line,\nlike the moon has a secret. (It does. It's fine.)\n\nAnd the tower shrank back to its everyday frown,\nand it kept one new door that it didn't take down."
+    },
+    {
+      "page": "15",
+      "startSeconds": 693.083,
+      "durationSeconds": 57.0,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "That night at the table there wasn't much room.\nTwo extras had followed them home through the gloom:\none girl with a crown, sitting cross-armed and proud,\nwho said that the soup was \"just fine\" — but quite loud;\n\none girl all in black, who said nothing at all,\nwho wrote in her book with her back to the wall,\none word at a time, very neat, in between\nsmall sips of her soup. (What it said, we've not seen.)\n\nAnd the bowl for the stormy one? Full. Set. Still there,\nwith its steam going up by the one empty chair.\nNobody talked of it. Everyone knew.\nSome bowls you keep setting. It's just what you do."
+    },
+    {
+      "page": "16",
+      "startSeconds": 750.083,
+      "durationSeconds": 100.5,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "And later, at bedtime, when lamps were all low,\nMoon looked from her window, out where the waves go,\nand there on the line where the sky meets the foam,\na little grey storm paced. It didn't come home.\n\nIt didn't come closer. It didn't quite go.\nIt walked the horizon, slow, to and fro,\nthe way you might pace at a door in the night\nwhen you almost could knock. When you can't. When you might.\n\nAnd Moon raised her hand to the glass. And it's true:\nshe waved at the storm. Like you do. Like you do.\nThe storm didn't wave back. (A storm has no hand.)\nBut it stopped its slow pacing, out there past the land,\n\nand it stayed, very still, all the rest of the night.\n\nAnd down in the warm room, asleep in her chair,\nthe jaguar was dreaming of salt and sea air,\nand out on the tip of one ordinary claw,\na tiny shine flickered that nobody saw.\n\nNot borrowed. Not gifted. Not stolen. Not new.\nIt grew there, the way that her claws had grown too.\n\nA shine of her own. Her very first one.\nIt was small. It was hers. It had only begun. … Even storms were little once."
+    }
+  ],
+  "archivedVideoSha256": "874870a86e878996d6311bc1e5bf5f4c067507e2ac8541ee7042fac3e8888969",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "68ba8363ea45f4bc926cf0af1b06ab35f6f432d4c071fbfcdacf10024c3508b5"
+  }
+}

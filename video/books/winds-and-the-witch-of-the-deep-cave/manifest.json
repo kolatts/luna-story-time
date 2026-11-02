@@ -1,0 +1,195 @@
+{
+  "title": "Winds and the Witch of the Deep Cave",
+  "subtitle": "Book Four of the Castle Everstair stories",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "slug": "winds-and-the-witch-of-the-deep-cave",
+  "series": "castle-everstair",
+  "preview": false,
+  "durationSeconds": 1306.75,
+  "sourceHashes": {
+    "book.json": "496dd5d3eae6eedef8e4fee6f09f77686eb95729aeade23b9d1cea2bfc6cc44d",
+    "narration/timings.json": "bf9059a33770b1cc2659d8b928bc54bd7c1c0ce54469b157c7b1f666ab566816",
+    "images/cover.webp": "c117218b549435bb2b7b608040e3115865d1f504ef1297dcc5ea47e6ddbd39ed",
+    "images/01.webp": "8e4471ad9851ee00b79ac7c878d2a547af89706b0ddaa63ead7ef04b1298f12a",
+    "images/02.webp": "e9d7b6736324c58e1a2f02449a5c1fb3a626a0f2bd7e32e7f49bb400c31f98fc",
+    "images/03.webp": "a4836ac257457fd46a4333785745a62cdfa0a1b7141be1c904c3a17e5c6e37a1",
+    "images/04.webp": "7c91fc5385da93784300d5dfcf847d57beea9f0be4a490c777b5d894e7c6bd39",
+    "images/05.webp": "02e3ff870cf5610db237718d6cb193667ef3950031408dc5816fd6d4b0adb7af",
+    "images/06.webp": "c35db19de4d1b85627a68c8bdfa095d7ed77aa41491b0c5841e182d6a85fd01c",
+    "images/07.webp": "f25e3395efc7f7a817a569dc980c358e9968ff15ba59532f3eb523f510e4a4c2",
+    "images/08.webp": "a9707f32a1401165561fe78da44cc8628107957809586a70c03855271953dd48",
+    "images/09.webp": "a6eb19ac5c406341e3ad7072d83c21346760a260ad3be08e490720c090d622b6",
+    "images/10.webp": "83c5bc0c822368fd5b1acfca6bdf8f13120ece2c306901b9ea4956e8f7d0f17d",
+    "images/11.webp": "bf0aa1d5580c34354f8db4636dd8a85fde42073ef9fa5e7f5b112b9bea3c72f6",
+    "images/12.webp": "de3ddf40305e101889b9134502ff556df779f8eb14d0142b8e38c185dcd09b92",
+    "images/13.webp": "5ff313265920dc58c9e6b340bb7c21d62a15c48bf9e20f137fbac3fb999ace34",
+    "images/14.webp": "89d737416828a88bcf4a2fe2a3889130963b12bb7c07ff8c7ca4d58d3b335763",
+    "images/15.webp": "21e53d5162621eb3a2e1592c4ff10d1b03a36b4585ae73cf7b6eddd371256894",
+    "images/16.webp": "870d6b4fa3155932099d52a40988068f6ba4d178000a132a063be65c8f5ecfed",
+    "narration/cover.mp3": "bac8b4cd685f4d2bd84cc530fa31f663712a22f74d982ff9bbf20be1cf0c4d1b",
+    "narration/01.mp3": "d3f5f4d1bb844c6929f69ad210965be20eb2660bde48b7e100d98777920b0b9b",
+    "narration/02.mp3": "d4e4ba004f4429fd6f37e77b4cd92d4f5dd67257a6e26e6323d0b1617303f245",
+    "narration/03.mp3": "edaf3a6341cacd5ef56540211750006e0f0b77f86ab94e82eb4553224f2d4613",
+    "narration/04.mp3": "facd430088529cfe011106a09354f68f1511926a23930709d36c41e707550780",
+    "narration/05.mp3": "156ecd5b8ff4a98e92df05b93fe23114e775f2fcdb781dab40f562139b086390",
+    "narration/06.mp3": "d384a80adcdf787509f653086b8ddcdfd8b114a39d44b71b37e8988e3cf75a51",
+    "narration/07.mp3": "1e2cb8be455681a84649d97441026118c5749dc95f6dc81ca46ea0bb1a9d7eb8",
+    "narration/08.mp3": "958001fbfb51d0aa068e7a539d1a3faebb422b38e749323fedecd7cfb0389f4b",
+    "narration/09.mp3": "3770a673452cada6c867bf6bc5fd83e83c8fd0245eac38d0f39910387679313b",
+    "narration/10.mp3": "b5e5099355bb55202c74a63559ecffc93faafbb554b0ea4a78a82783c20d7553",
+    "narration/11.mp3": "3c3e3c3b2554ab87dcf2d17d5b31a4af3e92646b118d769e5eae089375e80b71",
+    "narration/12.mp3": "d90577900ca0fbe5c34d1017707938fcf369bffd5c8651b3b18bd45307bd6450",
+    "narration/13.mp3": "b68d7dfd798663485e145c280543d5b3ee8cd6a3ccdb5b1a1c036390b9efd55f",
+    "narration/14.mp3": "a1e4d17cc1b498ee713f20a664abf528c62df67db3f290be30f9908a2b7b3a84",
+    "narration/15.mp3": "c17d388c3dd1aab5e677a7d51e1498159491ed078d1b0912bb57b44fcddd8e85",
+    "narration/16.mp3": "aee12138698ab52b9d9334d64c6ac45a2c5a20463478c494e266a32303b10ba1"
+  },
+  "musicSha256": "7deb912e70c478d03ab7d889e83c06246c7430c2922d839488bbe770411ed234",
+  "pages": [
+    {
+      "page": "cover",
+      "startSeconds": 0.0,
+      "durationSeconds": 11.083,
+      "image": "images/cover.webp",
+      "audio": "narration/cover.mp3",
+      "spokenText": "Winds and the Witch of the Deep Cave. Book Four of the Castle Everstair stories. Written with love by Luna and Sunny."
+    },
+    {
+      "page": "01",
+      "startSeconds": 11.083,
+      "durationSeconds": 56.375,
+      "image": "images/01.webp",
+      "audio": "narration/01.mp3",
+      "spokenText": "The stair goes up. You know about up.\nYou've climbed it with princess and jaguar and pup,\npast the gap near the ninety-ninth bend (you hop over),\npast the clouds, past the wind, past the last bit of blue.\n\nBut here is a question three books never asked\n(and questions, like puddles, can hide something vast):\nwhat's under the bottom step? Under. Below.\nNobody wondered. Not once. Would you know?\n\nFor under the bottom step, deeper than deep,\nlower down than the dark where the sea goes to sleep,\nthere's a cave. And it's old. And it's quiet. And listen:\nit's been there this whole entire time."
+    },
+    {
+      "page": "02",
+      "startSeconds": 67.458,
+      "durationSeconds": 53.667,
+      "image": "images/02.webp",
+      "audio": "narration/02.mp3",
+      "spokenText": "That autumn the grownups went quiet. All through.\nThe cook. The lamplighter. The guard-captain too.\nThey smiled and they nodded, and all that they said\nwas \"Yes, dear.\" \"That's fine, dear.\" \"Of course.\" \"Go ahead.\"\n\nNobody shooed anyone out of the kitchen.\nNobody grumped about sand on the floor.\nNobody hollered out \"Careful!\" or \"DON'T!\"\nThey didn't say don't anymore.\n\nAnd the kids saw it first, and the kids saw it only.\n(You can't tell a grownup a grownup's gone wrong\nwhen all that the grownup will answer is \"Yes, dear.\")\nSomething was missing. Something was gone."
+    },
+    {
+      "page": "03",
+      "startSeconds": 121.125,
+      "durationSeconds": 73.958,
+      "image": "images/03.webp",
+      "audio": "narration/03.mp3",
+      "spokenText": "They sent for the sisters. All three of them came.\nAnd Evilest tested the grownups. She stomped.\nShe hollered. She tracked in the mud of the shore.\n\"Yes, dear,\" said the grownups. \"That's fine, dear.\" \"Of course.\"\n\n(And here's a strange thing that she found on the way:\nwhen nobody stops you, it's lonely to play.)\n\nThen Cheeblest spoke up, and her voice was all small:\n\"When I was quite little, I heard the word aunt.\nI asked who she was. Just the once. That was all.\nAnd they went very still, and said, Don't. And I didn't.\nBut I can't stop remembering how they said don't —\nlike the word was a door they were leaning against.\"\n\nAnd Beedlist said nothing, the way that she does.\nBut she opened her book, and she wrote one small word,\nand she did a thing Beedlist has never once done:\nshe showed them the page.\n\nAnd the word was: BELOW."
+    },
+    {
+      "page": "04",
+      "startSeconds": 195.083,
+      "durationSeconds": 95.75,
+      "image": "images/04.webp",
+      "audio": "narration/04.mp3",
+      "spokenText": "\"If we're going below,\" said the cat with pink hair,\n\"then we need my best friend. He's the finder of air.\"\nAnd she climbed the tall rock where the seabirds all sit,\nand she whistled a whistle with wind inside it.\n\nAnd down through the clouds, on a slide made of breeze,\ncame a jaguar the grey-blue of faraway seas,\nwith rosettes like clouds and a tuft of blue hair\n(the same as her pink one — the sky's version — there),\n\nand he hollered the whole way down: \"COTTONTAIL!\"\nand she hollered up \"WINDS!\" and they bonked heads. Twice.\nShe sails on the water. He sails on the air.\nSince always, they've met at the one place they share:\n\nthe horizon — that line, thin as thread, far from land,\nwhere the sea and the sky lean their heads on each other —\nthe only place both of them ever can stand.\nHe's loud where she's dry. He's a friend like a brother.\n\nAnd Winds has no magic. No shine. Not a drop.\nWhat Winds has: a nose that can always smell OUT.\nYou can bury that jaguar. Blindfold him. Spin him.\nWherever the out is, the out is deep in him."
+    },
+    {
+      "page": "05",
+      "startSeconds": 290.833,
+      "durationSeconds": 63.083,
+      "image": "images/05.webp",
+      "audio": "narration/05.mp3",
+      "spokenText": "Four girls and a pup and two jaguars went down\nto the very first step, where the seafoam goes round,\nand Winds put his nose to the seam of the stone,\nand everyone hushed.\n\n\"There's air under this one,\" he said. \"Moving air.\nOld air. But moving. There's a somewhere down there.\"\nSo Cottontail hooked in one claw, like a key,\nand the bottom step opened.\n\nIt swung like the lid of a chest, and beneath it: stairs.\nA down-stair. A dark one. Steep, narrow, and old,\nwith no moon and no sea and no silver and gold,\nand away at the bottom, a little green glow,\na green that no garden would ever let grow.\n\nThe children held hands, and the jaguars went first.\nSome stairs you go up. This was one in reverse."
+    },
+    {
+      "page": "06",
+      "startSeconds": 353.917,
+      "durationSeconds": 102.833,
+      "image": "images/06.webp",
+      "audio": "narration/06.mp3",
+      "spokenText": "The down-stair went down for a very long time,\nand ended at last in a cave like a hall:\na cauldron, mid-bubble, all green in the black;\na broom, standing patient; a wand by the wall;\na spell book, spread open to spells.\n\nAnd her.\n\nShe was bent like a hook. She was hundred-and-five.\nNo cat and no crow and no helper. No friend.\nJust her and her four things, alone in the dark,\nfor years upon years upon years, with no end —\nand here is the sad part: she'd never once noticed.\n\nHer voice, when it came, came out deep and came slow,\nlike it had a long way to climb up from below.\nAnd her hair — her long hair — was as black as the pot,\nand when the green light came through it, it fell\nin a shape that hair shouldn't:\ntwo sockets. A jaw. A grin, made of hair.\nNot a real skull. It's only the way that it falls.\nBut it moved when she moved.\nWhich is worse.\n\n\"Hello,\" said the witch, and the cave said it after.\n\"I am your aunt Elysian. Family. True —\nfrom the side of the family nobody speaks of.\nCome closer. You look so unfinished. Come through.\""
+    },
+    {
+      "page": "07",
+      "startSeconds": 456.75,
+      "durationSeconds": 96.792,
+      "image": "images/07.webp",
+      "audio": "narration/07.mp3",
+      "spokenText": "\"The Zapping,\" she said, \"is a beautiful thing.\"\n(She stirred as she spoke. She was smiling. It's worse\nwhen they smile.) \"Ink and shadow and water, all mixed\nin a basin. You're dipped. And you rise. And you're finished.\nComplete. Not a thing left to fix or to chase.\nIt happened to me when I was in college,\nand ever since then, I've been done. I've been through.\nAnd everyone else is so sadly unfinished.\nI zap whom I can. It's a kindness I do.\"\n\nBut here's what is true, and she never was told:\non the day of her Zapping, a long time ago,\nsomebody filling her basin picked wrong —\ntwo jars on a shelf, and a hand in a hurry.\nNot wicked. Just wrong, the way socks can be wrong.\nNobody noticed. Nobody said.\n\nAnd some part of Elysian stopped at that basin,\nand stood there, and waited, and eighty years passed,\nand the rest of her aged, and the stopped part just stood there.\nShe thinks she was finished.\nShe froze. … But nobody picks how they started."
+    },
+    {
+      "page": "08",
+      "startSeconds": 553.542,
+      "durationSeconds": 81.083,
+      "image": "images/08.webp",
+      "audio": "narration/08.mp3",
+      "spokenText": "Then she opened her book to the heaviest page,\nand she lifted her wand, and she read, deep and slow,\nand the cauldron leaned hungry, and greener, and wide —\nand out of Moon, gently, like steam out of bread,\ncame the fire. The water. The gold-turning thread.\nThe growing. The mending. The swimming-like-silver.\nAnd out of her sister, the same, every shine,\nall swirling away in a long silver line,\n\ndown into the cauldron. And there, in the pot,\nthe powers went black. They went thick. They went ink.\n\n(All but the one that she couldn't brew out,\nthe one that was never inside Moon at all.\nIt lives in other people. You remember.\nEven a cauldron can't reach everyone.)\n\nNo almost. No rescue. No trick up a sleeve.\nThe witch won. She properly won.\nThe ink settled, thick, in the pot, like a night.\nAnd Elysian nodded, and warmed up her thumb."
+    },
+    {
+      "page": "09",
+      "startSeconds": 634.625,
+      "durationSeconds": 74.917,
+      "image": "images/09.webp",
+      "audio": "narration/09.mp3",
+      "spokenText": "She dipped in her thumb, to the knuckle. She lifted\nit, dripping with black that was blacker than black.\nShe was gentle. That's true. She was terribly gentle.\nShe painted one line on the pup. Just one line.\n\n\"There,\" said the witch, in her voice from the cellar.\n\"Finished. Now nothing can ever go wrong for her.\nNothing can ever go anything for her.\"\n\nAnd Baby Lady opened her eyes. And they'd changed.\nNot scary. Just flat. Like a pond with no wind in it.\nAnd Moon reached out for her paw, like always —\nthree books of always —\n\nand her sister looked at Moon's hand, and said, cold:\n\"You can stop looking at me now. I'm finished.\nFinished things don't need sisters.\"\n\nAnd of everything down in the dark of that cave —\nthe cauldron, the grin made of hair, all of it —\nthat was the worst thing.\nThat."
+    },
+    {
+      "page": "10",
+      "startSeconds": 709.542,
+      "durationSeconds": 79.583,
+      "image": "images/10.webp",
+      "audio": "narration/10.mp3",
+      "spokenText": "Then she turned to the jaguars, and readied her wand,\nand read the page slower, to get it just right,\nand the cauldron leaned hungry, and pulled at them, pulled —\n\nand nothing came out.\n\nFor down in a cave there's no sea and no sky:\nno water for her, and no weather for him.\nAnd you can't brew a shine out of somebody shineless.\nYou can't pour a power from claws or a nose.\nThe spell slid right off them, like rain off a sail.\n\nWell — one thing she found. In the cat. One small light,\ngrown out on the tip of one ordinary claw.\nShe pulled at it. Pulled. But a grown thing holds on.\nIt grew there, like whiskers. You can't pour a claw.\n\n\"Impossible,\" said the witch, slow, in the green.\n\"Everyone has something to take.\"\n\"Not us,\" said Cottontail, dry as the moon.\nAnd Winds, in the dark, started smiling. … But nobody picks how they started."
+    },
+    {
+      "page": "11",
+      "startSeconds": 789.125,
+      "durationSeconds": 66.292,
+      "image": "images/11.webp",
+      "audio": "narration/11.mp3",
+      "spokenText": "Now a cave is a box with the lid shut down tight.\nNo sea for a sailor. No sky. And no weather.\nBut Winds stood stone-still in the blackest of black,\nand his nose gave a twitch. Then a bigger one. Then —\n\nhis hugest sniff ever. And Winds started laughing.\n\n\"AIR!\" hollered Winds, and it rang round the walls.\n\"MOVING air! I can smell it! The night! The outside!\nThe weather! It's THERE!\" And he pointed his nose\nat the roof of the deep, where nobody looks.\n\nFor you can bury that jaguar. Blindfold him. Spin him.\nWherever the out is, the out is deep in him.\nAnd high in the roof was a crack, thin as eyelash,\nwhere one drop of rain, every year, had been knocking —\npolitely, forever — and no one had heard."
+    },
+    {
+      "page": "12",
+      "startSeconds": 855.417,
+      "durationSeconds": 82.0,
+      "image": "images/12.webp",
+      "audio": "narration/12.mp3",
+      "spokenText": "Cottontail climbed. It's the thing that she does.\nWet stone, straight up, in the dark, just because\nclaws are not magic. Claws are just claws.\n(You've heard that before. It was true then. It was.)\n\nShe reached the thin crack, and she hooked it, and pulled,\nwith Winds calling up through the dark, \"TO YOUR LEFT!\"\nand the crack became wider. And wider. And then —\n\nthe roof of the cave opened up like a window.\n\nAnd in came the night. The plain, ordinary night.\nPlain rain. And plain moonlight. Plain silver-blue air.\nThe moon leaned in over the hole for a look —\nthe moon with its faint little line, from before —\nand down came the rain into eighty years' dark,\nand the cave, for the first time in anyone's ever,\nhad weather.\n\nAnd here is a thing that the witch never learned,\nfor it isn't in spell books. It's plainer than they are:\nink is just ink.\nAnd rain washes ink."
+    },
+    {
+      "page": "13",
+      "startSeconds": 937.417,
+      "durationSeconds": 80.417,
+      "image": "images/13.webp",
+      "audio": "narration/13.mp3",
+      "spokenText": "The rain found the pup where she stood, flat and quiet,\nand washed at the one little line on her brow,\nand the ink let go, and slid off like a shadow,\nand her eyes filled back up, like a pool when the tide comes in.\n\nAnd the very first thing that she did — the first thing —\nwas argue with Moon. About nothing. About RAIN.\n\"You're dripping on me,\" she said. \"Move your wing over.\"\n\"It's raining on EVERYONE, Baby Lady.\"\n\"Well, your rain,\" she said, \"is the drippiest rain.\"\n\nAnd they argued! They argued! Their first one! Their EVER!\nThree books full of never — and there, in the wet,\nMoon laughed so hard that she cried, and the crying\ngot mixed with the rain till nobody could tell,\nand she hugged her wet sister, who grumbled, \"You're SOAKING,\"\nand hugged her right back, and grumbled some more.\n\nAnd that dumb little argument, there in the rain,\nwas the happiest thing in this book. It just was."
+    },
+    {
+      "page": "14",
+      "startSeconds": 1017.833,
+      "durationSeconds": 109.292,
+      "image": "images/14.webp",
+      "audio": "narration/14.mp3",
+      "spokenText": "Then Moon — being Moon — turned around to the witch,\nwho stood at the edge of the silver, in shadow,\njust out of the reach of the rain. And Moon said:\n\"It's only plain water. It isn't a magic.\nIt washes things off. Even old things. Even\neighty-year things.\nYou could stand in it too.\"\n\nAnd Elysian looked at the rain a long time.\nAnd the grin in her hair held terribly still.\n\nHere is why she said no. (I'll say this part softly.)\nIf she stood in the rain, and the wrong washed away,\nthen the wrong was just wrong. A mix-up. A spill.\nTwo jars on a shelf, and a hand in a hurry.\nNot a finishing. Never a finishing. Only\na thing that went wrong for a girl at a basin —\nand eighty years out is a long way to walk back.\n\n\"I am finished,\" she said, in her voice like the deep.\nAnd she gathered her wand and her book and her broom,\nand she stepped from the silver and into the black,\nwhere the rain hadn't reached, and would probably never,\nand the dark of that cave goes a long, long way down,\nand she knows every step.\n\nNot beaten. Not sorry. Not fixed. And not done.\nGone deeper.\nThat's all.\nLike a storm. Or a sun. … But nobody picks how they started."
+    },
+    {
+      "page": "15",
+      "startSeconds": 1127.125,
+      "durationSeconds": 105.0,
+      "image": "images/15.webp",
+      "audio": "narration/15.mp3",
+      "spokenText": "It rained all that night on the castle as well,\nand the grownups came out and stood still in the pour,\nand the quiet washed off them like ink. (It was ink.)\nBy breakfast the cook was out shooing the seagulls,\nthe guards were both grumping at mud on the stair,\nand nobody ever, in any book ever,\nwas gladder to hear it. So there.\n\nAnd that night, at the table (there's always a table;\nthere's always the soup, going round, going round),\nMoon stood on her chair, with her sister beside her,\nand they gave — to the jaguars — a gift. A forever one:\na great deal of power. To keep. Theirs. For good.\nNot borrowed, like once on the deep dark sea —\ngiven. On purpose. Freely. Out loud.\n\nAnd it settled right into them. Settled, and stayed.\nFor a thing that is given sits deeper than poured,\nand besides — in the cat, there was already a shine,\na small one, a grown one, her own, like a root,\nand the gift wrapped around it and held.\n\nAnd Winds stared down at his glowing paws.\n\"For ME?\" said the wind-cat. \"But all I did was SMELL!\"\nAnd Cottontail shrugged, with her spoon in her soup:\n\"Of course they did. Obviously.\nThat's what they're like.\""
+    },
+    {
+      "page": "16",
+      "startSeconds": 1232.125,
+      "durationSeconds": 74.625,
+      "image": "images/16.webp",
+      "audio": "narration/16.mp3",
+      "spokenText": "And the bowl?\n\nYou remember the bowl. By the chair. Set each evening,\nkept full for the stormy one, steam going up,\nuntouched every night since the end of the summer,\nthrough autumn, through witch-times, through everything. Well.\n\nNext morning the chair was pushed back. Just a little.\nThe spoon had been moved. And the bowl —\n\nthe bowl had been drunk from.\n\nNobody saw her. No door made a sound.\nNo wet mask, no grey cloak, no storm hanging round.\nThe window was latched and the lamps were all out.\nBut somebody came, in the quiet, alone,\nand sat at the table, and drank the warm soup,\nand left before morning could catch her.\n\nAnd nobody said very much at all.\nWhat is there to say? You already know.\n\nThey washed it.\nThey filled it.\nThey set it back down. … But nobody picks how they started."
+    }
+  ],
+  "archivedVideoSha256": "df6a913a1262064f7dd93e2f492c9df5859da786c45824ae982579bf5a0e3c6d",
+  "music": {
+    "score": "score.mp3",
+    "plan": "music-plan.json",
+    "sha256": "7deb912e70c478d03ab7d889e83c06246c7430c2922d839488bbe770411ed234"
+  }
+}

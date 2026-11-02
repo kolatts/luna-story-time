@@ -1,0 +1,985 @@
+{
+  "book": "winds-and-the-witch-of-the-deep-cave",
+  "title": "Winds and the Witch of the Deep Cave",
+  "series": "The Castle Everstair Stories",
+  "series_id": "castle-everstair",
+  "target_duration_s": 1306.75,
+  "duration_rule": "Each cover/page is narration duration + 0.8s, rounded up to a 24fps frame.",
+  "narration_pages": [
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/cover.mp3",
+      "duration_s": 10.248,
+      "hold_s": 0.835333,
+      "frame_total_s": 11.083333,
+      "start_s": 0.0,
+      "end_s": 11.083333,
+      "sha256": "bac8b4cd685f4d2bd84cc530fa31f663712a22f74d982ff9bbf20be1cf0c4d1b"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/01.mp3",
+      "duration_s": 55.536,
+      "hold_s": 0.839,
+      "frame_total_s": 56.375,
+      "start_s": 11.083333,
+      "end_s": 67.458333,
+      "sha256": "d3f5f4d1bb844c6929f69ad210965be20eb2660bde48b7e100d98777920b0b9b"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/02.mp3",
+      "duration_s": 52.848,
+      "hold_s": 0.818667,
+      "frame_total_s": 53.666667,
+      "start_s": 67.458333,
+      "end_s": 121.125,
+      "sha256": "d4e4ba004f4429fd6f37e77b4cd92d4f5dd67257a6e26e6323d0b1617303f245"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/03.mp3",
+      "duration_s": 73.152,
+      "hold_s": 0.806333,
+      "frame_total_s": 73.958333,
+      "start_s": 121.125,
+      "end_s": 195.083333,
+      "sha256": "edaf3a6341cacd5ef56540211750006e0f0b77f86ab94e82eb4553224f2d4613"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/04.mp3",
+      "duration_s": 94.944,
+      "hold_s": 0.806,
+      "frame_total_s": 95.75,
+      "start_s": 195.083333,
+      "end_s": 290.833333,
+      "sha256": "facd430088529cfe011106a09354f68f1511926a23930709d36c41e707550780"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/05.mp3",
+      "duration_s": 62.28,
+      "hold_s": 0.803333,
+      "frame_total_s": 63.083333,
+      "start_s": 290.833333,
+      "end_s": 353.916667,
+      "sha256": "156ecd5b8ff4a98e92df05b93fe23114e775f2fcdb781dab40f562139b086390"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/06.mp3",
+      "duration_s": 102.024,
+      "hold_s": 0.809333,
+      "frame_total_s": 102.833333,
+      "start_s": 353.916667,
+      "end_s": 456.75,
+      "sha256": "d384a80adcdf787509f653086b8ddcdfd8b114a39d44b71b37e8988e3cf75a51"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/07.mp3",
+      "duration_s": 95.952,
+      "hold_s": 0.839667,
+      "frame_total_s": 96.791667,
+      "start_s": 456.75,
+      "end_s": 553.541667,
+      "sha256": "1e2cb8be455681a84649d97441026118c5749dc95f6dc81ca46ea0bb1a9d7eb8"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/08.mp3",
+      "duration_s": 80.28,
+      "hold_s": 0.803333,
+      "frame_total_s": 81.083333,
+      "start_s": 553.541667,
+      "end_s": 634.625,
+      "sha256": "958001fbfb51d0aa068e7a539d1a3faebb422b38e749323fedecd7cfb0389f4b"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/09.mp3",
+      "duration_s": 74.088,
+      "hold_s": 0.828667,
+      "frame_total_s": 74.916667,
+      "start_s": 634.625,
+      "end_s": 709.541667,
+      "sha256": "3770a673452cada6c867bf6bc5fd83e83c8fd0245eac38d0f39910387679313b"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/10.mp3",
+      "duration_s": 78.768,
+      "hold_s": 0.815333,
+      "frame_total_s": 79.583333,
+      "start_s": 709.541667,
+      "end_s": 789.125,
+      "sha256": "b5e5099355bb55202c74a63559ecffc93faafbb554b0ea4a78a82783c20d7553"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/11.mp3",
+      "duration_s": 65.472,
+      "hold_s": 0.819667,
+      "frame_total_s": 66.291667,
+      "start_s": 789.125,
+      "end_s": 855.416667,
+      "sha256": "3c3e3c3b2554ab87dcf2d17d5b31a4af3e92646b118d769e5eae089375e80b71"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/12.mp3",
+      "duration_s": 81.168,
+      "hold_s": 0.832,
+      "frame_total_s": 82.0,
+      "start_s": 855.416667,
+      "end_s": 937.416667,
+      "sha256": "d90577900ca0fbe5c34d1017707938fcf369bffd5c8651b3b18bd45307bd6450"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/13.mp3",
+      "duration_s": 79.608,
+      "hold_s": 0.808667,
+      "frame_total_s": 80.416667,
+      "start_s": 937.416667,
+      "end_s": 1017.833333,
+      "sha256": "b68d7dfd798663485e145c280543d5b3ee8cd6a3ccdb5b1a1c036390b9efd55f"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/14.mp3",
+      "duration_s": 108.456,
+      "hold_s": 0.835667,
+      "frame_total_s": 109.291667,
+      "start_s": 1017.833333,
+      "end_s": 1127.125,
+      "sha256": "a1e4d17cc1b498ee713f20a664abf528c62df67db3f290be30f9908a2b7b3a84"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/15.mp3",
+      "duration_s": 104.16,
+      "hold_s": 0.84,
+      "frame_total_s": 105.0,
+      "start_s": 1127.125,
+      "end_s": 1232.125,
+      "sha256": "c17d388c3dd1aab5e677a7d51e1498159491ed078d1b0912bb57b44fcddd8e85"
+    },
+    {
+      "file": "books/winds-and-the-witch-of-the-deep-cave/narration/16.mp3",
+      "duration_s": 73.8,
+      "hold_s": 0.825,
+      "frame_total_s": 74.625,
+      "start_s": 1232.125,
+      "end_s": 1306.75,
+      "sha256": "aee12138698ab52b9d9334d64c6ac45a2c5a20463478c494e266a32303b10ba1"
+    }
+  ],
+  "selected_seed": 818566964,
+  "seed_base": 818566964,
+  "theme": {
+    "file": "C:\\Code\\luna-story-time\\video\\assets\\music\\castle-everstair\\theme.mp3",
+    "sha256": "125d8045ba33fbd0b6921710c355318c971f35c93e75c21f376597d48b072d12",
+    "exists": true,
+    "use": "Same canonical recording reused at score start and end.",
+    "archived_asset": "video/assets/music/castle-everstair/theme.mp3"
+  },
+  "backend": {
+    "name": "ACE-Step 1.5 via local ComfyUI",
+    "tools_directory": "C:\\Code\\claude-video-editor\\tools",
+    "paid_or_remote_fallback": false,
+    "device": {
+      "device": "cuda:0 AMD Radeon RX 9070 XT : native",
+      "type": "cuda",
+      "vram_total_gb": 17.1,
+      "vram_free_gb": 16.9,
+      "comfy_version": "0.33.1",
+      "torch": "2.9.1+rocm7.2.1"
+    }
+  },
+  "crossfade_s": 2.5,
+  "target_lufs": -20.0,
+  "peak_ceiling_dbfs": -1.5,
+  "score_out": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-01\\winds\\score.mp3",
+  "plan_out": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-01\\winds\\score.plan.json",
+  "provenance_note": "Three 55-second local arrangements provide clean source windows. The plan records every selected window and its repeat index; all joins use crossfades. The canonical theme is a separate local asset, not generated by this command.",
+  "seed_derivation": {
+    "mode": "stable_book_derived",
+    "configured_base_seed": 710,
+    "book_seed_offset": 818566254,
+    "selected_seed": 818566964,
+    "book_slug_sha256": "b0ca546eb1f7881c2d7d16081dbaaf0ae7a3b5f727b35e244e3934b6ded8886e",
+    "rule": "configured base seed + first 30 slug-hash bits"
+  },
+  "takes": [
+    {
+      "take": 1,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-01\\winds\\score.takes\\take-01-seed-818567091.mp3",
+      "file_name": "take-01-seed-818567091.mp3",
+      "sha256": "9dc25c0d442d807ee0029b0ddd52f904601329b3ddd6c21f875826b4ea721f27",
+      "seed": 818567091,
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Sparse felt piano and one soft string line; leave generous space around the piano.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "moonlit-open",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          19.325,
+          48.887
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 4.994229,
+          "event": "start"
+        },
+        {
+          "time_s": 6.353604,
+          "event": "end"
+        },
+        {
+          "time_s": 8.845229,
+          "event": "start"
+        },
+        {
+          "time_s": 9.497562,
+          "event": "end"
+        },
+        {
+          "time_s": 17.801854,
+          "event": "start"
+        },
+        {
+          "time_s": 19.12475,
+          "event": "end"
+        },
+        {
+          "time_s": 49.086917,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-01-seed-818567091.mp3",
+          "sha256": "9dc25c0d442d807ee0029b0ddd52f904601329b3ddd6c21f875826b4ea721f27",
+          "seed": 818567091,
+          "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Sparse felt piano and one soft string line; leave generous space around the piano.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              19.325,
+              48.887
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 4.994229,
+              "event": "start"
+            },
+            {
+              "time_s": 6.353604,
+              "event": "end"
+            },
+            {
+              "time_s": 8.845229,
+              "event": "start"
+            },
+            {
+              "time_s": 9.497562,
+              "event": "end"
+            },
+            {
+              "time_s": 17.801854,
+              "event": "start"
+            },
+            {
+              "time_s": 19.12475,
+              "event": "end"
+            },
+            {
+              "time_s": 49.086917,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-01-seed-818567091.mp3"
+    },
+    {
+      "take": 2,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-01\\winds\\score.takes\\take-02-seed-818567218.mp3",
+      "file_name": "take-02-seed-818567218.mp3",
+      "sha256": "be393e6c94876dd34bfcf0b772b65ea1f940ad1dd851f72a2f75f0e2f78b6f30",
+      "seed": 818567218,
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: A gentle piano figure with a warm cello undercurrent; the arrangement unfolds quietly.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "lantern-unfolding",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          13.208,
+          35.909
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 0.0,
+          "event": "start"
+        },
+        {
+          "time_s": 4.637,
+          "event": "end"
+        },
+        {
+          "time_s": 10.616604,
+          "event": "start"
+        },
+        {
+          "time_s": 11.809917,
+          "event": "end"
+        },
+        {
+          "time_s": 11.901771,
+          "event": "start"
+        },
+        {
+          "time_s": 13.007917,
+          "event": "end"
+        },
+        {
+          "time_s": 36.109333,
+          "event": "start"
+        },
+        {
+          "time_s": 38.738979,
+          "event": "end"
+        },
+        {
+          "time_s": 39.939125,
+          "event": "start"
+        },
+        {
+          "time_s": 42.649563,
+          "event": "end"
+        },
+        {
+          "time_s": 42.963146,
+          "event": "start"
+        },
+        {
+          "time_s": 43.612333,
+          "event": "end"
+        },
+        {
+          "time_s": 45.780042,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-02-seed-818567218.mp3",
+          "sha256": "be393e6c94876dd34bfcf0b772b65ea1f940ad1dd851f72a2f75f0e2f78b6f30",
+          "seed": 818567218,
+          "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: A gentle piano figure with a warm cello undercurrent; the arrangement unfolds quietly.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              13.208,
+              35.909
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 0.0,
+              "event": "start"
+            },
+            {
+              "time_s": 4.637,
+              "event": "end"
+            },
+            {
+              "time_s": 10.616604,
+              "event": "start"
+            },
+            {
+              "time_s": 11.809917,
+              "event": "end"
+            },
+            {
+              "time_s": 11.901771,
+              "event": "start"
+            },
+            {
+              "time_s": 13.007917,
+              "event": "end"
+            },
+            {
+              "time_s": 36.109333,
+              "event": "start"
+            },
+            {
+              "time_s": 38.738979,
+              "event": "end"
+            },
+            {
+              "time_s": 39.939125,
+              "event": "start"
+            },
+            {
+              "time_s": 42.649563,
+              "event": "end"
+            },
+            {
+              "time_s": 42.963146,
+              "event": "start"
+            },
+            {
+              "time_s": 43.612333,
+              "event": "end"
+            },
+            {
+              "time_s": 45.780042,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-02-seed-818567218.mp3"
+    },
+    {
+      "take": 3,
+      "file": "C:\\Users\\kolat\\Documents\\Codex\\2026-10-29\\look-at-c-code-luna-storytime\\outputs\\daily-2026-11-01\\winds\\score.takes\\take-03-seed-818567345.mp3",
+      "file_name": "take-03-seed-818567345.mp3",
+      "sha256": "84901e5a88ad9d6c281ed7ad9dc1dc904a79011b4bc37690ea84e3998a86da71",
+      "seed": 818567345,
+      "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Lightly hopeful piano and tender strings; settle into a soft, resolved close.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+      "arrangement": "tender-close",
+      "duration_s": 55.0,
+      "clean_windows": [
+        [
+          0.5,
+          36.729
+        ]
+      ],
+      "silence_events": [
+        {
+          "time_s": 36.928792,
+          "event": "start"
+        },
+        {
+          "time_s": 37.971083,
+          "event": "end"
+        },
+        {
+          "time_s": 48.319396,
+          "event": "start"
+        },
+        {
+          "time_s": 55.0,
+          "event": "end"
+        }
+      ],
+      "attempts": [
+        {
+          "file": "take-03-seed-818567345.mp3",
+          "sha256": "84901e5a88ad9d6c281ed7ad9dc1dc904a79011b4bc37690ea84e3998a86da71",
+          "seed": 818567345,
+          "prompt": "Tender magical storybook instrumental, intimate felt piano lead with soft sustained legato strings and a few delicate harp-like notes, warm moonlit wonder, gentle curiosity, slow graceful motion, lots of open space for a parent reading aloud, soft dynamics, no vocals, no percussion, no dramatic swells, no cartoon sparkle. Arrangement: Lightly hopeful piano and tender strings; settle into a soft, resolved close.. Around 76 BPM, instrumental. No vocals, no speech, no sound effects, no sudden fills, no key changes, no loud percussion.",
+          "duration_s": 55.0,
+          "clean_windows_s": [
+            [
+              0.5,
+              36.729
+            ]
+          ],
+          "silence_events": [
+            {
+              "time_s": 36.928792,
+              "event": "start"
+            },
+            {
+              "time_s": 37.971083,
+              "event": "end"
+            },
+            {
+              "time_s": 48.319396,
+              "event": "start"
+            },
+            {
+              "time_s": 55.0,
+              "event": "end"
+            }
+          ]
+        }
+      ],
+      "archived_file": "music-sources/take-03-seed-818567345.mp3"
+    }
+  ],
+  "arrangement": [
+    {
+      "kind": "theme",
+      "source": "video/assets/music/castle-everstair/theme.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.0,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 0
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 1
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 2
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 3
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 4
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 4
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 4
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 5
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 5
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 5
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 6
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 6
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 6
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 7
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 7
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 7
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 8
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 8
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 8
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 9
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 9
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 9
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 10
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 10
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 10
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 11
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 11
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 11
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 12
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 12
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 12
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 13
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 13
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 13
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 14
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 14
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 36.229,
+      "repeat_index": 14
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-01-seed-818567091.mp3",
+      "take": 1,
+      "seed": 818567091,
+      "start_s": 19.325,
+      "duration_s": 29.562,
+      "repeat_index": 15
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-02-seed-818567218.mp3",
+      "take": 2,
+      "seed": 818567218,
+      "start_s": 13.208,
+      "duration_s": 22.701,
+      "repeat_index": 15
+    },
+    {
+      "kind": "score",
+      "source": "music-sources/take-03-seed-818567345.mp3",
+      "take": 3,
+      "seed": 818567345,
+      "start_s": 0.5,
+      "duration_s": 25.607,
+      "repeat_index": 15
+    },
+    {
+      "kind": "theme",
+      "source": "video/assets/music/castle-everstair/theme.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.0,
+      "repeat_index": 1
+    }
+  ],
+  "repeat_policy": "Clean music windows are reused in catalog order until the target length is filled; repeats are recorded above.",
+  "actual_duration_s": 1306.75,
+  "loudness_lufs": -20.0,
+  "peak_dbfs": -1.6,
+  "internal_silence_starts_s": [],
+  "score_sha256": "7deb912e70c478d03ab7d889e83c06246c7430c2922d839488bbe770411ed234",
+  "archivedSourceFiles": [
+    {
+      "file": "music-sources/take-01-seed-818567091.mp3",
+      "sha256": "9dc25c0d442d807ee0029b0ddd52f904601329b3ddd6c21f875826b4ea721f27"
+    },
+    {
+      "file": "music-sources/take-02-seed-818567218.mp3",
+      "sha256": "be393e6c94876dd34bfcf0b772b65ea1f940ad1dd851f72a2f75f0e2f78b6f30"
+    },
+    {
+      "file": "music-sources/take-03-seed-818567345.mp3",
+      "sha256": "84901e5a88ad9d6c281ed7ad9dc1dc904a79011b4bc37690ea84e3998a86da71"
+    }
+  ]
+}

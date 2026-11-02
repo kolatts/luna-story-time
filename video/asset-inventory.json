@@ -1,5 +1,5 @@
 {
-  "description": "Luna channel and first four published story videos",
+  "description": "Luna channel and published story video library",
   "files": [
     {
       "path": "video/assets/brand/banner-master.png",
@@ -112,6 +112,71 @@
       "sha256": "7c49649f6ec1a9640de30d49577cefc3ecb201e5994be8e1839dc243cf40f47a"
     },
     {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/captions.srt",
+      "bytes": 12307,
+      "sha256": "80abd9d1b51b26d4fbd5400245ce75cdbfa02b4471cfc3074d1eaff4c991143e"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/manifest.json",
+      "bytes": 16535,
+      "sha256": "08900d5b425be0b80dcacc1d627375812876861d740196382cf09aecd8264d4d"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/music-plan.json",
+      "bytes": 30556,
+      "sha256": "a2e77f531b9ecc0792549ef1e419ccb3764b15b2d3bd08a70817d7705feb042c"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/music-sources/take-01-seed-233780291.mp3",
+      "bytes": 1791405,
+      "sha256": "4145258a596968c66f6bef9f5eef72720f4cf2a6835341d192198024ca62cd88"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/music-sources/take-02-seed-233780418.mp3",
+      "bytes": 1621393,
+      "sha256": "d78abd00099c161823f33ddb8b8fb7d72567eb68ef31659b905b7d0c72154d6b"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/music-sources/take-03-seed-233780545.mp3",
+      "bytes": 1722952,
+      "sha256": "6c0d72bf62345e4a25b26428677d57c3e4a0d6101fce574c876989f6e9d67055"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/publishing.json",
+      "bytes": 364,
+      "sha256": "4963acc4cf9faa23c8f1b5096aa6487d053a352ce87ced23bf4924d216f5e60e"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/score.mp3",
+      "bytes": 18561960,
+      "sha256": "68ba8363ea45f4bc926cf0af1b06ab35f6f432d4c071fbfcdacf10024c3508b5"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/thumbnail-master.png",
+      "bytes": 2587622,
+      "sha256": "5c567db74e7ccc2c042c6c7c252c45737e1b21bd2726f9b43efa16d766b04c1b"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/thumbnail-prompt.txt",
+      "bytes": 653,
+      "sha256": "a4db762dd16c68fd146756684402105ee23292235b9c0cbc19962a2e1f2beef6"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/thumbnail.jpg",
+      "bytes": 351565,
+      "sha256": "a962e0860a628ed86749881fedf4aad5ec56cc56dabfe4b456d0760eb6f14c4a"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/video.mp4",
+      "bytes": 49344256,
+      "sha256": "874870a86e878996d6311bc1e5bf5f4c067507e2ac8541ee7042fac3e8888969"
+    },
+    {
+      "path": "video/books/cheeblest-and-the-sister-of-storms/youtube-metadata.json",
+      "bytes": 1472,
+      "sha256": "afe9c1e939f1c8aa9ec1053dd307c00294af9929ef69ba79842e0877061dd043"
+    },
+    {
       "path": "video/books/princess-moon-and-the-nevershine-lantern/captions.srt",
       "bytes": 5826,
       "sha256": "6f4317a3af77ce3e05403e7923d9de30f11c0bb7ea577c80129fda93cfe55912"
@@ -182,6 +247,71 @@
       "sha256": "a431b2eace452c33a0b2e61631181dc8c9ed65a932e8fb9d1f0f61a994093f11"
     },
     {
+      "path": "video/books/ruby-and-luna/captions.srt",
+      "bytes": 6668,
+      "sha256": "ac67a836a1a17ecfae36228a176fa96be2f299b2c6d812550d3276a7c3b13724"
+    },
+    {
+      "path": "video/books/ruby-and-luna/manifest.json",
+      "bytes": 12293,
+      "sha256": "34aad7ce0cbc2d1fa7db799673854790051159a02133963c9edde1a6f070e76c"
+    },
+    {
+      "path": "video/books/ruby-and-luna/music-plan.json",
+      "bytes": 18970,
+      "sha256": "aaf6194e8c179a31d17fc069042bcde7f199888fe572d66a0ecea876a782d871"
+    },
+    {
+      "path": "video/books/ruby-and-luna/music-sources/take-01-seed-328149713.mp3",
+      "bytes": 1671299,
+      "sha256": "ecbd4c7538e95b35a3e8831eba26f86011b81c2aa62ccb4f20b5aa237f4078d6"
+    },
+    {
+      "path": "video/books/ruby-and-luna/music-sources/take-02-seed-328149840.mp3",
+      "bytes": 1682248,
+      "sha256": "53864bc49ccb889b5b5f68ca45b55accef63b5202556ed94b1622c2508e51a54"
+    },
+    {
+      "path": "video/books/ruby-and-luna/music-sources/take-03-seed-328149967.mp3",
+      "bytes": 1811849,
+      "sha256": "2326cb2395e741bf9a67d398b16cb1dfddade41c61b1552a89111ab97fa37ac7"
+    },
+    {
+      "path": "video/books/ruby-and-luna/publishing.json",
+      "bytes": 343,
+      "sha256": "1f51ef19f02687cc6d64c422c7892b2ae9f5028f1d05fc74054153f2b5f18897"
+    },
+    {
+      "path": "video/books/ruby-and-luna/score.mp3",
+      "bytes": 11040420,
+      "sha256": "0e60115e61e0bdfd2fbe8f4ce7dde34782fdcda939e0f31d5c14ff4875200e0b"
+    },
+    {
+      "path": "video/books/ruby-and-luna/thumbnail-master.png",
+      "bytes": 2689800,
+      "sha256": "c5b59a3ad58a5a14cb711fcf7aa809b92ff2bc0c21d632aad5cbdbff271af3a9"
+    },
+    {
+      "path": "video/books/ruby-and-luna/thumbnail-prompt.txt",
+      "bytes": 657,
+      "sha256": "6b0f5a1eea19654b668f7fe9c2d1fb614849d53fde81aad91391360b4127d4f9"
+    },
+    {
+      "path": "video/books/ruby-and-luna/thumbnail.jpg",
+      "bytes": 385225,
+      "sha256": "3cb98d5b746a9ed9a025fa164c4a99fbf0c30adc32cc57b7f8e9123431250a7b"
+    },
+    {
+      "path": "video/books/ruby-and-luna/video.mp4",
+      "bytes": 30660720,
+      "sha256": "a0f75bfd72720847575b9bb5b8b208ed73fa21d34a11fd60690a64637e6df5d4"
+    },
+    {
+      "path": "video/books/ruby-and-luna/youtube-metadata.json",
+      "bytes": 1419,
+      "sha256": "3ccf8884985692195ac03fbd61550f641299605aa011efb3b4d68b7a95806baf"
+    },
+    {
       "path": "video/books/ruby-and-the-egg-nobody-owned/captions.srt",
       "bytes": 7030,
       "sha256": "55524ef57fcc344da1f2611301c46ba8e2aede205bf483b9de35f1c5f303cc35"
@@ -240,6 +370,71 @@
       "path": "video/books/ruby-and-the-egg-nobody-owned/youtube-metadata.json",
       "bytes": 1297,
       "sha256": "cefe6c1987cadfaf09ffc219e9fb867880f8f383cc0742de50bf45802936a34e"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/captions.srt",
+      "bytes": 7101,
+      "sha256": "47f2a3aa9932feb2c18edb2b6a2b49ab83891cee44e79859e35fa41e9774ef60"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/manifest.json",
+      "bytes": 12681,
+      "sha256": "5424cae4ea8b1fefd56a983f85e79d6a7c48f2a65182171ee9f656ca1461c111"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/music-plan.json",
+      "bytes": 22586,
+      "sha256": "4d31e061b883e0d3244f6c3f8d790c03c63960729fa29bbe2346487e243beb67"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/music-sources/take-01-seed-617972735.mp3",
+      "bytes": 1653059,
+      "sha256": "316667f11659aa388a91478409d0de5364a9e161cc4b9e7d52fb21637925f78f"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/music-sources/take-02-seed-617972862.mp3",
+      "bytes": 1669864,
+      "sha256": "164e3e9fd09fc4b898cb98a52fb382a7b90535ed1bcfce0da527f8c5c1885803"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/music-sources/take-03-seed-617972989.mp3",
+      "bytes": 1748393,
+      "sha256": "ad49a41f4f7a5219c893f5ec360da17e0ffa2b7f7a6639577672ce7b96cc5306"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/publishing.json",
+      "bytes": 352,
+      "sha256": "4bed0520464a6b3fd016c92d859a250ff5bb3e53c34ec751db0b1a53c10a0a7a"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/score.mp3",
+      "bytes": 11139252,
+      "sha256": "904acb0ba1947bd101e66965e2fc872730d6811d1e7f9f6be20144be82213032"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/thumbnail-master.png",
+      "bytes": 3156635,
+      "sha256": "92c2b214ce0e3ff5ef9de5105e63b5bdbabc31b76d0d3093f475de6708116f71"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/thumbnail-prompt.txt",
+      "bytes": 483,
+      "sha256": "864312badc42eaa574023b73a2b77ee64c0edc79cfd74e213a8953d1078b15e7"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/thumbnail.jpg",
+      "bytes": 471567,
+      "sha256": "2b7e060afa850ef9ff9bd9f6cd1f1a5c624bef307c9d219ce798e940c094068b"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/video.mp4",
+      "bytes": 33567095,
+      "sha256": "f4e62e4dde85832334139d8c36219d03ea8f69926ca7a0bd37df24112f8b3965"
+    },
+    {
+      "path": "video/books/ruby-and-the-leafy-egg/youtube-metadata.json",
+      "bytes": 1466,
+      "sha256": "d1398a10ef6d4f164682ae9aeb51f0f4b60ed560b3a245d0f18a07fa4f952078"
     },
     {
       "path": "video/books/ruby-sparks-and-crackle/captions.srt",
@@ -305,6 +500,71 @@
       "path": "video/books/ruby-sparks-and-crackle/youtube-metadata.json",
       "bytes": 1484,
       "sha256": "587e459ed9d8f600bb1eacf42d6ff2d068823d312fc54055581ece3ff9950295"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/captions.srt",
+      "bytes": 19143,
+      "sha256": "156d14834b2c1418dbe2592afe57d781f828b8417beed6e75e2fd6d70a8e80e8"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/manifest.json",
+      "bytes": 21530,
+      "sha256": "a2b592d31194aa283146b834a975385633d212b25b93c923213b932d94654ef6"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/music-plan.json",
+      "bytes": 29706,
+      "sha256": "8a7666434e669958b7f36bda75299e495b4d91456fbb2dc09ec537055de03b89"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/music-sources/take-01-seed-818567091.mp3",
+      "bytes": 1696461,
+      "sha256": "9dc25c0d442d807ee0029b0ddd52f904601329b3ddd6c21f875826b4ea721f27"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/music-sources/take-02-seed-818567218.mp3",
+      "bytes": 1616881,
+      "sha256": "be393e6c94876dd34bfcf0b772b65ea1f940ad1dd851f72a2f75f0e2f78b6f30"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/music-sources/take-03-seed-818567345.mp3",
+      "bytes": 1598344,
+      "sha256": "84901e5a88ad9d6c281ed7ad9dc1dc904a79011b4bc37690ea84e3998a86da71"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/publishing.json",
+      "bytes": 366,
+      "sha256": "10b189fe6f98fe78dd114d421d2e6ba82b0a281709a90e753f11f998191daa20"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/score.mp3",
+      "bytes": 25416744,
+      "sha256": "7deb912e70c478d03ab7d889e83c06246c7430c2922d839488bbe770411ed234"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/thumbnail-master.png",
+      "bytes": 3107943,
+      "sha256": "8a02f513c8214cd571230e470522ff782ded98803225510235667daed443003a"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/thumbnail-prompt.txt",
+      "bytes": 489,
+      "sha256": "5d560e06d2748dee1b9643063856a77bb16f5c516ca0737671bff4a41f80b507"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/thumbnail.jpg",
+      "bytes": 426677,
+      "sha256": "be869e412dfec657d37258847eefcd66f3cf658dba8eb480399f28ad9d775fcc"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/video.mp4",
+      "bytes": 76721914,
+      "sha256": "df6a913a1262064f7dd93e2f492c9df5859da786c45824ae982579bf5a0e3c6d"
+    },
+    {
+      "path": "video/books/winds-and-the-witch-of-the-deep-cave/youtube-metadata.json",
+      "bytes": 1535,
+      "sha256": "0a865ce4a98346873024404f9aabe30d5bc0700970ba2977ea392b4a864835b3"
     },
     {
       "path": "video/channel.json",
