@@ -131,6 +131,13 @@
           "subtitle": "Book Six of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-and-lovee/images/cover.webp"
+        },
+        {
+          "slug": "ruby-and-the-dream-dragon",
+          "title": "Ruby and the Dream Dragon",
+          "subtitle": "Book Seven of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-and-the-dream-dragon/images/cover.webp"
         }
       ]
     }

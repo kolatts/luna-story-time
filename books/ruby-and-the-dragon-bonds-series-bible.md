@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six, sixteen in Book Seven).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -40,6 +40,12 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
     and a red hem; small warm pink heart-lights in Ruby's hands. Book Six. Lovee's accidental magic
     helps Ruby and Black Hole notice kindness already inside each other; it wears off before Black
     Hole chooses to catch her egg. Ruby keeps her new heart-lights cupped instead of enchanting anyone.
+  - Starry (dream, girl): Shinebright's sister. Shining gold dress with a glittering gold sash, soft
+    swirls of gold dream-dust in her hands. Book Seven. She hatched from the Dream Egg (swirled
+    sea-green and ocean-blue, sprinkled with pink glitter) that floated alone in the land of dreams.
+    Her magic is dreams: her wish can pull someone into a deep sleep, and her humming lullaby puts
+    grabby people to sleep. She bonded together with Shinebright: both sisters touched Ruby's palms at
+    once and everything went gold except Ruby's face and all their eyes.
 - **Grizzlemop** is a great big hairy cave monster who lives in the cave under Noir and War's
   palace. He roared at Ruby because a rock had pinned his tail; she freed him anyway, and he is a
   friend now.
@@ -91,6 +97,18 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    Noir loves her tower, and Black Hole loves little birds. He returns home with Noir and War;
    Ruby keeps his rose. Eight baby dragons stay with Ruby. Black Hole has shown a gentle side,
    not become permanently enchanted or permanently joined Ruby.
+7. *Ruby and the Dream Dragon*: refrain "Dreams are wishes from the heart." (Not the Cinderella song
+   title, on purpose.) Lonely Starry, still in her egg in the land of dreams, wishes someone would find
+   her, and the wish puts Ruby into a deep sleep; Shinebright follows her in ("A wish, once begun,
+   must be finished"). In the nightmare, the dragons are eggs again and dream-Noir and dream-War take
+   them; Ruby has no magic and feels powerless. Shinebright: "Start where you are," one step at a
+   time, and "Brave is the step that you take." Each brave step shrinks the dream-villains to teacup
+   size. Ruby gathers all six eggs, Shinebright finds the Dream Egg, Ruby touches it and wakes holding
+   it. Real Noir, War and Black Hole climb in to take it; Ruby says no, the dragons ring her, and the
+   egg's lullaby sends all three to sleep. Pearl's bubble and Flame's warm puff float them home.
+   Shinebright cuddles the egg and Starry hatches: Shinebright wished for a sister, Starry dreamed of
+   one. Ruby's dream changes from the big chair to keeping her dragons safe and happy ("A new dream is
+   a good dream"). Nine dragons.
 
 ## Open threads
 
@@ -142,6 +160,10 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    Golden eyes. Never red wings, never an entirely red or entirely pink tail.
 12. **Black Hole**: large-dog-sized, smaller than Ruby, charcoal scales with lavender highlights
    and violet wings. No star speckles or glitter on his body: those belong to Luna.
+13. **Starry**: identical to Shinebright except her eyes, which are bright PINK and full of glitter.
+   In any image with both sisters, name each one's eye color (Shinebright sea-green, Starry pink).
+   Book Seven spread 15 is the only image where Ruby's hair and dress go solid gold (her face, mark
+   and eyes stay their own); afterwards her hair is rainbow again and only the dress is gold.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region

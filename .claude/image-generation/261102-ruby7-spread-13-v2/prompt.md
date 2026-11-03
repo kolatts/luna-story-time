@@ -1,0 +1,21 @@
+---
+model: gpt-image-2
+size: 1024x1280
+quality: medium
+source: openai-api
+generated: 2026-11-02T16:55:55
+style_file: .claude/image-generation/style.md
+outputs:
+  - ruby7-spread-13-v2.png
+---
+
+Bright morning sky over green hills, seen from the open window of Ruby's lavender-stone bedroom. One big clear TRANSPARENT soap-like bubble floats away over the hills toward a distant charcoal-and-violet tower; inside it, and ONLY inside it, Noir, War and large-dog-sized Black Hole are curled up together fast asleep and snoring. At the open window Ruby, in normal PLUM tunic, holds the Dream Egg, a melon-sized egg swirled sea-green and ocean-blue and sprinkled all over with glittering PINK sparkles, and soft pink glitter sparkles shaped like little music notes drift from it toward the bubble. White-blue Pearl blows the bubble and red Flame puffs a harmless warm breeze under it. Noir, War and Black Hole each appear exactly once, only inside the bubble, never at the window. Funny and gentle. Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain. Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark. War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark. Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror. Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles. Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified.
+
+Style guidance (follow exactly):
+# Luna's Story Time — global art style
+
+Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image, no words, no letters, no captions.
+
+Palette: deep indigo night #1B1B3A (27,27,58), lavender stone #B7A7D4 (183,167,212), warm gold #E8C46A (232,196,106), rose pink #F2A9C4 (242,169,196), pearl blue-grey #D7E3F0 (215,227,240), dark plum ink #2A2140 (42,33,64).
+
+Mood: gentle, dreamy, cozy, safe for young children even in dramatic moments. Nothing gory, nothing truly frightening. Full-bleed composition with soft edges, room left for overlaid text near the edges.

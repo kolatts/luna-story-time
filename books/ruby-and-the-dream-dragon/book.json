@@ -1,0 +1,441 @@
+{
+  "series": "ruby-and-the-dragon-bonds",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "ruby-and-the-dream-dragon",
+  "bookNumber": 7,
+  "title": "Ruby and the Dream Dragon",
+  "subtitle": "Book Seven of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny",
+    "Mommy"
+  ],
+  "refrain": "Dreams are wishes from the heart.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#4FA3A5",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "shinebright",
+      "name": "Shinebright",
+      "sheet": "Shinebright: female baby wish dragon the size of a small puppy, rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns, large bright sea-green eyes with gold flecks, four little legs and one curled green-blue tail with a silver underside, sweet bright smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Gold-and-silver wish glitter only when specified."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "sheet": "Leaf: female baby earth dragon the size of a small puppy who looks like a leaf: rounded body of bright spring-GREEN scales with lighter yellow-green leaf-vein lines, a pale green belly, two leaf-shaped green wings with visible veins, a little frill of small green leaves around her neck, large petal-pink eyes, two tiny brown twig-like horns, four little legs and one curled green tail ending in a pointed leaf tip, sweet shy smile. Dragon, never a human, never a lizard, never a bug. Flowers, vines and gold flower dust only when specified."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    },
+    {
+      "id": "lovee",
+      "name": "Lovee",
+      "sheet": "Lovee: female baby love dragon the size of a small puppy, soft rose-PINK head, neck, back, upper body, legs, paw tops, two small PINK wings including PINK membranes, two tiny blunt pink horns, large warm golden eyes and a friendly rounded little snout; cherry-RED chest and belly, RED soles under all four paws; one curled tail PINK along the top and RED along the entire underside. Her upper surfaces are pink and lower surfaces red. Four small legs and two small pink wings. No red wings, no entirely red tail, no heart-shaped pupils. Dragon, never a human. Tiny warm pink heart lights only when specified."
+    },
+    {
+      "id": "starry",
+      "name": "Starry",
+      "sheet": "Starry: female baby dream dragon the size of a small puppy who looks just like her sister Shinebright except for her eyes: rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns; large bright PINK eyes full of tiny pink glitter sparkles (never green eyes); four little legs and one curled green-blue tail with a silver underside, sweet sleepy smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Soft pink dream glitter only when specified."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Dreamy night sky over Riverlight with soft rose-pink and gold clouds, generous open starry space across the upper third. Ruby in a shining GOLD tunic dress with a glittering gold sash sits on a soft pink cloud, smiling, holding a swirl of gold dream-dust in one hand. Beside her the two matching sister baby dragons: Shinebright with sea-green eyes and Starry with glittery PINK eyes, snuggled together on either side of her. Broken sea-green-and-blue eggshell with pink sparkles on the cloud. Exactly Ruby and these two dragons, no other characters.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Sixteen days old",
+      "text": "Ruby was sixteen days old, and the night\nwas velvet and sleepy, the stars twinkling bright.\nEight little dragons curled up on her bed,\nand Ruby yawned big as she laid down her head.\n\n\"I'll dream of the big chair,\" she said with a smile.\n\"I'll dream I'm grown up and I sit there a while.\"\nBut Shinebright looked up at the stars, and she sighed,\nand wished a small wish that she kept tucked inside.",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "velvet",
+          "definition": "soft and smooth, like a fuzzy blanket"
+        }
+      ],
+      "imagePrompt": "Cozy lavender-stone bedroom at night, warm golden lantern glow, big arched window full of twinkling stars. Ruby in her normal PLUM tunic dress lies on pillows yawning sleepily, crown on her head and silver mark visible. Exactly EIGHT puppy-sized baby dragons curl on the bed around her, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, and PINK-topped RED-bellied Lovee with pink wings. Shinebright sits apart on the windowsill gazing up at the stars with a small wistful sigh. No other people. Main subject in lower two thirds."
+    },
+    {
+      "number": 2,
+      "title": "A lonely little egg",
+      "text": "Far past the stars, where the sleepy dreams play,\na small egg was floating, alone, far away.\nIts shell swirled sea-green and blue, sprinkled with pink,\nand it glittered and glimmered with every soft blink.\n\nInside dreamed a dragon named Starry, so small,\nso lonely, she wished, \"Is there someone at all?\nCome find me!\" Her wish floated down like a beam,\nand it sprinkled on Ruby, just starting to dream.",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [],
+      "vocab": [
+        {
+          "word": "glimmered",
+          "definition": "shone with a soft, twinkly light"
+        }
+      ],
+      "imagePrompt": "Far beyond the stars, a gentle magical dreamland sky of deep indigo and soft rose-pink nebula clouds. One small egg floats all alone: the Dream Egg, a melon-sized egg swirled sea-green and ocean-blue and sprinkled all over with glittering PINK sparkles. Through its glowing shell we glimpse the faint curled silhouette of a tiny sleeping baby dragon. A soft stream of gold glitter drifts down from the egg toward a tiny faraway castle window far below. Lonely but sweet and peaceful. No characters visible except the egg. Egg in lower half of the frame.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 3,
+      "title": "Too deep to wake",
+      "text": "Ruby fell into sleep that was deep, deep, and deep.\nFlame tickled her toes, but she still was asleep.\nLovee kissed her cheek. Sparks and Crackle went zing!\nNot a wiggle. Not a peep. Not a stir. Not a thing.\n\n\"It's a wish,\" whispered Shinebright, \"that someone made true.\nA wish, once begun, must be finished. I'm coming too!\"\nShe curled up on Ruby's soft pillow, so near,\nand she shut her bright eyes, and she whispered, \"I'm here.\"",
+      "image": "images/03.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "sparks",
+        "crackle",
+        "shinebright",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "finished",
+          "definition": "all done, all the way to the end"
+        }
+      ],
+      "imagePrompt": "Lavender-stone bedroom at night, lantern glow. Ruby in normal PLUM tunic sleeps deeply and peacefully on her pillow, smiling softly, a few specks of gold glitter on her pillow. Red Flame tickles her toes; PINK-topped RED-bellied Lovee with pink wings kisses her cheek; the YELLOW baby dragon with silver eyes Sparks and the SILVER baby dragon with yellow eyes Crackle make tiny harmless gold sparkles. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, curls up on the pillow beside Ruby's head, eyes closing. Exactly Ruby and these five dragons. No other people."
+    },
+    {
+      "number": 4,
+      "title": "A bad dream",
+      "text": "In the dream, Riverlight was all shadowy gray.\nRuby's dragons curled up, and then, right away,\nthey were eggs once again: Flame and Pearl, Luna, Leaf,\nthe twins' Thunder Egg, and Lovee's. Oh, what grief!\n\nThen dream-Noir and dream-War swooped down with a sack.\n\"They're OURS now!\" They scooped every egg. \"No take-backs!\"\nAnd off to their tower they flew, tall and steep.\nOnly Shinebright stayed by her side in her sleep.",
+      "image": "images/04.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "shadowy",
+          "definition": "dim and dark, full of shadows"
+        }
+      ],
+      "imagePrompt": "Inside Ruby's dream: soft misty grey-lavender dreamland with gentle floating clouds, dreamy and gentle, never scary, clearly lit, a grey dream version of Riverlight palace courtyard. In the foreground Ruby in normal PLUM tunic stands with hands to her cheeks in shock; the baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, huddles at her feet. In the middle distance dream-Noir and dream-War, a little hazy at the edges, run off laughing with a lumpy cloth sack from which peek six dragon eggs: an ember-RED egg with orange flame swirls; a white egg streaked sky blue; the Thunder Egg, a round egg striped with lemon-yellow and silver zigzags; a glossy deep-black egg speckled with tiny silver-white stars; a mossy green egg covered with overlapping fresh green leaves; a pastel-pink egg decorated with simple red hearts. Large-dog-sized Black Hole flaps beside them toward a distant charcoal-and-violet tower. No baby dragons except Shinebright. Storybook drama, not frightening."
+    },
+    {
+      "number": 5,
+      "title": "Empty hands",
+      "text": "Ruby looked at her hands. They were empty and small.\nNo fire. No bubbles. No sparkles at all.\nHer dress was plain plum. Her knees wobbled. She cried,\n\"I can't do a thing! I've got nothing inside!\"\n\nShinebright nuzzled close. \"You still have your heart.\nYou're still Ruby. And that is the very best part.\"",
+      "image": "images/05.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "wobbled",
+          "definition": "shook from side to side"
+        }
+      ],
+      "imagePrompt": "Inside Ruby's dream: soft misty grey-lavender dreamland with gentle floating clouds, dreamy and gentle, never scary, clearly lit. Close tender scene: Ruby in plain PLUM tunic kneels, looking down sadly at her two open EMPTY human hands, a single tear on her cheek. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, nuzzles lovingly against Ruby's arm. Exactly Ruby and Shinebright. No magic in Ruby's hands. Gentle, comforting mood."
+    },
+    {
+      "number": 6,
+      "title": "One small step",
+      "text": "\"It's too much!\" Ruby sniffled. \"Too many! Too far!\"\n\"Don't do it all,\" Shinebright said. \"Start where you are.\nJust take one small step. Then another. Then one.\"\nSo Ruby stepped once, and a stone glowed like sun.\n\nShe stepped again. Two! And another stone shone.\nA path made of steps! She was not on her own.",
+      "image": "images/06.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "path",
+          "definition": "a little road you walk along"
+        }
+      ],
+      "imagePrompt": "Inside Ruby's dream: soft misty grey-lavender dreamland with gentle floating clouds, dreamy and gentle, never scary, clearly lit. Ruby in plain PLUM tunic takes one small determined step forward; under her golden boot a round stepping stone glows warm gold, and a second stone ahead glows too, starting a path of glowing stepping stones that winds up through the soft clouds toward a distant small violet tower. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, flutters encouragingly beside her. Exactly Ruby and Shinebright. Hopeful mood."
+    },
+    {
+      "number": 7,
+      "title": "The first egg",
+      "text": "High up on a gray cloud, an egg glowed bright red.\n\"Flame!\" Ruby climbed, one step, one step ahead.\nShe hugged the warm egg, and its glow filled the sky,\nand the gray turned to lavender, soft as a sigh.\n\n\"I'm still scared,\" Ruby whispered. \"My knees still go shake.\"\n\"That's okay,\" said Shinebright. \"Brave is the step that you take.\"",
+      "image": "images/07.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "brave",
+          "definition": "doing something even when you feel scared"
+        }
+      ],
+      "imagePrompt": "Ruby's dream: high on a soft grey cloud, Ruby in plain PLUM tunic hugs an ember-RED egg with orange flame swirls, which glows warmly. Around them the grey dream sky is turning soft lavender with the egg's warm glow. A trail of glowing gold stepping stones leads up to the cloud. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, hovers beside Ruby smiling. Exactly Ruby and Shinebright and the one egg.",
+      "effect": "starlight"
+    },
+    {
+      "number": 8,
+      "title": "Smaller and smaller",
+      "text": "\"Go AWAY!\" shrieked dream-Noir from up on her wall.\n\"You can't!\" shouted dream-War. \"You're too little and small!\"\nBut Ruby kept stepping. With each step she took,\nthose two shrank and shrank. Ruby leaned in to look.\n\nThey were small as two teacups! \"Squeak! Squeak!\" went their cries.\n\"When I face what I'm scared of, it shrinks down in size!\"",
+      "image": "images/08.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "shrank",
+          "definition": "got smaller and smaller"
+        }
+      ],
+      "imagePrompt": "Inside Ruby's dream: soft misty grey-lavender dreamland with gentle floating clouds, dreamy and gentle, never scary, clearly lit, on top of a dreamy violet castle wall. Comic scene: dream-Noir and dream-War have shrunk TINY, each only as big as a teacup, standing on the wall stamping and squeaking with tiny tantrums. Ruby in plain PLUM tunic, holding an ember-RED egg with orange flame swirls in one arm, leans down to look at them with a surprised giggle. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, laughs. Funny, not scary. Exactly these four characters."
+    },
+    {
+      "number": 9,
+      "title": "Every egg",
+      "text": "Pearl's egg in a puddle. Leaf's egg in a tree.\nThe fizzy-striped Thunder Egg, snug as could be.\nLuna's black starry egg on the tower's top stair,\nand Lovee's, pink with hearts, hidden under a chair.\n\nOne step at a time, Ruby found every one.\nSix eggs in her arms! And the gray dream was done.",
+      "image": "images/09.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "puddle",
+          "definition": "a little pool of water on the ground"
+        }
+      ],
+      "imagePrompt": "Ruby's dream, the grey mist lifting and lightening. Ruby in plain PLUM tunic happily carries an armful of SIX dragon eggs, each exactly once: an ember-RED egg with orange flame swirls; a white egg streaked sky blue; the Thunder Egg, a round egg striped with lemon-yellow and silver zigzags; a glossy deep-black egg speckled with tiny silver-white stars; a mossy green egg covered with overlapping fresh green leaves; a pastel-pink egg decorated with simple red hearts. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, helps balance the top egg. Behind them dream spots: a small puddle, a little tree, a winding tower staircase, a chair. Exactly Ruby and Shinebright. Proud joyful mood."
+    },
+    {
+      "number": 10,
+      "title": "One more egg",
+      "text": "The gray melted off, and the dream turned to pink,\nsoft clouds and gold stars, all aglow, all a-wink.\nThen Shinebright stopped short. \"Ruby, look! Over there!\"\nOne more egg was floating, alone, in the air.\n\nIt was swirled green and blue, sprinkled sparkly with pink.\n\"It looks just like ME,\" Shinebright whispered. \"I think...\"",
+      "image": "images/10.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright"
+      ],
+      "vocab": [
+        {
+          "word": "floating",
+          "definition": "resting in the air without falling"
+        }
+      ],
+      "imagePrompt": "Ruby's dream has turned soft rose-pink and gold: pink clouds and twinkling gold stars. Ruby in plain PLUM tunic with six eggs nestled safely in a soft cloud nest beside her, each exactly once: an ember-RED egg with orange flame swirls; a white egg streaked sky blue; the Thunder Egg, a round egg striped with lemon-yellow and silver zigzags; a glossy deep-black egg speckled with tiny silver-white stars; a mossy green egg covered with overlapping fresh green leaves; a pastel-pink egg decorated with simple red hearts. The baby GREEN-AND-BLUE wish dragon with a glittering silver belly, Shinebright, points with a wing, amazed, at one more egg floating alone in the air: the Dream Egg, a melon-sized egg swirled sea-green and ocean-blue and sprinkled all over with glittering PINK sparkles. Exactly Ruby and Shinebright. Wonder mood. Floating egg in the lower half of frame.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 11,
+      "title": "Awake",
+      "text": "Ruby reached out a hand, and she touched the soft shell...\nand she BLINKED, and woke up! She was home. All was well.\nAnd her arms were still holding the egg, warm and real!\nAnd all eight of her dragons, not eggs, gave a squeal!",
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "blinked",
+          "definition": "shut and opened your eyes very fast"
+        }
+      ],
+      "imagePrompt": "Lavender-stone bedroom at sunrise, warm golden morning light through the window. Ruby in normal PLUM tunic sits up in bed, wide awake and amazed, hugging the Dream Egg, a melon-sized egg swirled sea-green and ocean-blue and sprinkled all over with glittering PINK sparkles in her arms. Exactly EIGHT puppy-sized baby dragons pile joyfully around her, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, and PINK-topped RED-bellied Lovee with pink wings. No other people. Joyful reunion."
+    },
+    {
+      "number": 12,
+      "title": "A bang at the window",
+      "text": "Then BANG! went the shutters! In climbed Noir and War,\nand Black Hole squeezed after them onto the floor.\n\"We saw that egg glitter right past our tower!\nHand it over!\" Noir snapped. \"We want its new power!\"\n\nRuby's knees gave a wobble, the way they did then.\nBut she thought, \"One small step,\" and she stood up again.",
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "shutters",
+          "definition": "wooden doors that cover a window"
+        }
+      ],
+      "imagePrompt": "Lavender-stone bedroom, bright morning. The wooden window shutters are flung open; Noir climbs in reaching greedily, War right behind her pointing, and large-dog-sized Black Hole squeezes through after them. Ruby in normal PLUM tunic stands up from the bed holding the Dream Egg, a melon-sized egg swirled sea-green and ocean-blue and sprinkled all over with glittering PINK sparkles close, knees a little wobbly but her face brave. Black Hole is large-dog sized, his head BELOW Ruby's shoulder, never towering. Exactly Ruby, Noir, War and Black Hole; storybook drama, not frightening."
+    },
+    {
+      "number": 13,
+      "title": "A sleepy hum",
+      "text": "\"No,\" said Ruby, quite calm. And her dragons came too,\nin a ring all around her: red, pink, green, and blue.\n\"Gulp it!\" Noir ordered. Black Hole opened wide,\nbut the egg hummed a lullaby, sleepy inside.\n\nNoir yawned. War yawned. Black Hole yawned. Then all three\nwere snoring as loud as a snore-y can be!\nPearl bubbled the snorers. Flame warmed it until\nit floated them home, far away, over the hill.",
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole",
+        "pearl",
+        "flame"
+      ],
+      "vocab": [
+        {
+          "word": "lullaby",
+          "definition": "a soft, sleepy song for bedtime"
+        }
+      ],
+      "imagePrompt": "Bright morning sky over green hills, seen from the open window of Ruby's lavender-stone bedroom. One big clear TRANSPARENT soap-like bubble floats away over the hills toward a distant charcoal-and-violet tower; inside it, and ONLY inside it, Noir, War and large-dog-sized Black Hole are curled up together fast asleep and snoring. At the open window Ruby, in normal PLUM tunic, holds the Dream Egg, a melon-sized egg swirled sea-green and ocean-blue and sprinkled all over with glittering PINK sparkles, and soft pink glitter sparkles shaped like little music notes drift from it toward the bubble. White-blue Pearl blows the bubble and red Flame puffs a harmless warm breeze under it. Noir, War and Black Hole each appear exactly once, only inside the bubble, never at the window. Funny and gentle.",
+      "effect": "starlight"
+    },
+    {
+      "number": 14,
+      "title": "Starry",
+      "text": "Then Shinebright curled round the egg, cozy and tight,\nand it CRACKED! Out popped a dragon, glittering bright,\nwith sea-green and blue swirls and a silver tummy below,\nbut her eyes were bright PINK, with a glittery glow!\n\n\"I'm Starry,\" she peeped. Shinebright gasped, \"Sister? YOU?\nI wished for a sister each night, the whole night through!\"\n\"And I dreamed of a sister,\" said Starry, \"each night.\"\nSo the wish and the dream were the same, shining bright.",
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "sister",
+          "definition": "a girl in your family who grows up with you"
+        }
+      ],
+      "imagePrompt": "Big hatching scene on Ruby's bed in warm morning light. Broken eggshell swirled sea-green and blue with pink sparkles. Newborn Starry tumbles out: she looks just like Shinebright but her eyes are bright glittery PINK. Shinebright, with sea-green eyes, wraps her wings around her new sister in a joyful hug, both dragons nose to nose. Ruby in normal PLUM tunic kneels beside them, hands to her heart, delighted. Exactly Ruby and two baby dragons that match except for eye color.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 15,
+      "title": "All gold",
+      "text": "Then both little sisters, at just the same time,\ntouched their noses to Ruby's two palms. What a chime!\nAnd EVERYTHING turned GOLD! Gold as gold as could be,\nall but Ruby's own face, and the eyes of all three.\n\nThen the gold glow grew soft, and it settled, and stayed:\na dress of bright gold! And in Ruby's hands played\nsoft swirls of gold dream-dust, as light as a song.\n\"Nine dragons!\" sang Ruby. \"Right here we belong!\"",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "settled",
+          "definition": "came softly to rest"
+        }
+      ],
+      "imagePrompt": "Magical bonding moment in the bedroom. Shinebright and Starry, the two matching sister dragons, each press their nose to one of Ruby's two open palms at the same moment. Everything glows solid shining GOLD like warm gold leaf: Ruby's dress, hair, arms, hands and boots are all gold, and both baby dragons are all gold from horns to tail, EXCEPT Ruby's face, which keeps her warm brown skin and silver forehead mark, and except all their eyes: Ruby's golden eyes, Shinebright's sea-green eyes and Starry's glittery PINK eyes stay their own colors. Ruby's crown stays its usual small simple gold three-point shape. Radiant golden light fills the room. Exactly Ruby and the two sister dragons.",
+      "effect": "starlight"
+    },
+    {
+      "number": 16,
+      "title": "A new dream",
+      "text": "That night, nine small dragons curled up on the bed.\n\"Will you dream of the big chair?\" Starry asked. Ruby said,\n\"I used to. But now I dream something new:\nI dream you're all safe and all happy. It's true!\"\n\n\"Dreams change,\" Starry whispered, \"as you grow, day by day.\nA new dream is a good dream. It's okay. It's okay.\"\nThen Ruby yawned big, and nine dragons did too,\nand they dreamed the same dream, all the long night through.",
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "whispered",
+          "definition": "said very softly"
+        }
+      ],
+      "imagePrompt": "Cozy lavender-stone bedroom at night, warm golden lantern glow and starry window. Ruby now wears a shining GOLD tunic dress with a glittering gold sash and gold boots, rainbow hair back to normal, crown and silver mark visible; she lies on pillows, sleepy and happy, a few soft swirls of gold dream-dust in her hand. Exactly NINE puppy-sized baby dragons curl together around her, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, and PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes, snuggled next to her sister Shinebright. No other people. Main subject fills lower two thirds.",
+      "refrain": true,
+      "effect": "starlight",
+      "theEnd": "The End — of Ruby's seventh adventure."
+    }
+  ],
+  "questions": [
+    "In her dream, Ruby felt like she couldn't do anything. What helped her keep going?",
+    "When something feels too big, what is one small step you could take?",
+    "Shinebright wished for a sister, and Starry dreamed of one. What is a wish in your heart?",
+    "Ruby used to dream of the big chair, and now she dreams of keeping her dragons safe and happy. Has one of your dreams changed as you've grown?"
+  ],
+  "lookAndFind": "Find all six eggs in Ruby's dream. Can you spot which baby dragon has glittery pink eyes?",
+  "assetVersion": "ruby7-1"
+}
