@@ -138,6 +138,13 @@
           "subtitle": "Book Seven of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-and-the-dream-dragon/images/cover.webp"
+        },
+        {
+          "slug": "ruby-nola-and-marron",
+          "title": "Ruby, Nola and Marron",
+          "subtitle": "Book Eight of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-nola-and-marron/images/cover.webp"
         }
       ]
     }
