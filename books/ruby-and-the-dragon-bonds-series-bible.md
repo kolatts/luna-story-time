@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six, sixteen in Book Seven).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six, sixteen in Book Seven, seventeen in Book Eight).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -14,8 +14,9 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
   off-frame so far.
 - **Noir** (stepmother) and **War** (stepsister, about eight) live in their own kingdom across the
   far hills, in a charcoal-and-violet palace with a dark tower. They want Ruby's big chair and any
-  dragon they can keep. **Black Hole**, their dragon, swallows things into a purple-rimmed swirl and
-  sneezes them back out when tickled. A sneeze is how he's beaten every time so far.
+  dragon they can keep. **Black Hole** was their dragon through Book Seven: he swallows things into a
+  purple-rimmed swirl and sneezes them back out when tickled. A sneeze is how he was beaten every time
+  through Book Seven. In Book Eight he chose Ruby and bonded with her; Noir and War have no dragon now.
 - **The silver mark** on Ruby's forehead means she will lead Riverlight. It tingles when a dragon
   egg is ready, or nearly ready, nearby.
 - **Bonds**: a dragon chooses Ruby, presses its nose to her palm, and her dress transforms. The
@@ -46,6 +47,16 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
     Her magic is dreams: her wish can pull someone into a deep sleep, and her humming lullaby puts
     grabby people to sleep. She bonded together with Shinebright: both sisters touched Ruby's palms at
     once and everything went gold except Ruby's face and all their eyes.
+  - Nola and Marron (time and friendship, ONE two-headed girl dragon, ONE shared bond): dress split
+    half glittery silver, half glittery gold, sprinkled with tiny hourglasses and tiny pairs of hands
+    holding each other; silver time-sparkles in Ruby's left hand, a warm gold glow in her right. Book
+    Eight. Nola (silver, deep-blue eyes) is time: she can speed things up, and she likes to hurry.
+    Marron (gold, chestnut-brown eyes) is friendship: her gold glow makes any team that holds on
+    together stronger, and she likes to wait. They hatched from the Clock Egg (a silver egg and a gold
+    egg stuck together) inside the clock of Noir's tower. They count as one dragon with two heads.
+  - Black Hole (no longer Noir's): deep charcoal dress with a soft lavender shimmer and swirling violet
+    patterns at the skirt and hem; small soft violet swirls spin in Ruby's palms. Book Eight. He chose
+    Ruby freely ("I would rather hold on"); nothing enchanted him. He sleeps at the foot of her bed.
 - **Grizzlemop** is a great big hairy cave monster who lives in the cave under Noir and War's
   palace. He roared at Ruby because a rock had pinned his tail; she freed him anyway, and he is a
   friend now.
@@ -110,11 +121,25 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    one. Ruby's dream changes from the big chair to keeping her dragons safe and happy ("A new dream is
    a good dream"). Nine dragons.
 
+8. *Ruby, Nola and Marron* (written by Luna and Sunny, no Mommy this time): refrain "Two can do if they
+   work together." Seventeen-day-old Ruby's mark tingles toward Noir's palace, where the Clock Egg sits
+   behind the tower clock face, its two heads arguing (Nola: hurry; Marron: wait). Grizzlemop leads
+   Ruby and her nine dragons up the tower stairs. Noir whispers to split them ("one for you, one for
+   me"). Nola rushes the hatching alone: only her silver half pops out, she can't fly, and her magic
+   spins time wild (sun and moon zip past, War's braid grows down to the floor and STAYS long). Noir
+   holds out a sack; War hugs the gold shell. Ruby asks each what they want: both wanted to see the
+   world together. Everyone holds on in a ring, Marron's gold glow makes the team stronger, Nola
+   gently hatches Marron and reels her magic back in. They bond with Ruby. Noir orders Black Hole to
+   gulp them; he shuts his swirl, Marron's glow touches his nose, and he says "A dragon gets to choose
+   who he's with," then bonds with Ruby. Noir and War stomp down their stairs alone; as Ruby's bubble floats
+   away, War looks up from her window and almost waves. Theme (Tao Te Ching): opposites complete each other. Eleven dragons, twelve heads.
+
 ## Open threads
 
 - The cook's name and story.
 - Where dragon eggs come from, and how many more Ruby's mark will find.
-- What Noir does next. She has now lost six new-dragon encounters to Ruby (and every dragon in the world, for an
+- What Noir and War do without a dragon. War looked back and almost waved at the end of Book Eight.
+- What Noir does next. She has now lost seven new-dragon encounters to Ruby (and every dragon in the world, for an
   afternoon), and her castle is held up by Leaf's flowers.
 - War gasped "Black things don't shine! Or do they?" A seed of doubt, if a later book wants it.
 - Where the shooting star came from.
@@ -164,6 +189,16 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    In any image with both sisters, name each one's eye color (Shinebright sea-green, Starry pink).
    Book Seven spread 15 is the only image where Ruby's hair and dress go solid gold (her face, mark
    and eyes stay their own); afterwards her hair is rainbow again and only the dress is gold.
+
+14. **Nola and Marron**: ONE puppy-sized baby dragon with TWO heads on one rounded body, four legs, two
+   wings, one tail, split cleanly down the middle: glittery SILVER half with Nola's head (deep-blue
+   eyes, tiny silver horns), glittery GOLD half with Marron's head (chestnut-brown eyes, tiny gold
+   horns); tail tip half and half. No zigzag spikes, so she never reads as Sparks or Crackle. Always say
+   "exactly two heads on one body, never two separate dragons." Concept reference:
+   `books/nola-marron-reference.webp`. While half-hatched
+   (Book Eight spreads 6–10) only the silver head shows, and the gold half is still sealed in shell.
+15. **Black Hole after Book Eight**: same body as invariant 12, but his face is gentle (soft eyes, closed
+   smile). His sheet still says "mean ... smug grin", so every prompt must override the expression.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region

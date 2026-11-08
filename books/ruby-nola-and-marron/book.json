@@ -1,0 +1,523 @@
+{
+  "series": "ruby-and-the-dragon-bonds",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "ruby-nola-and-marron",
+  "bookNumber": 8,
+  "title": "Ruby, Nola and Marron",
+  "subtitle": "Book Eight of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "refrain": "Two can do if they work together.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#4FA3A5",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "nola-marron",
+      "name": "Nola and Marron",
+      "sheet": "Nola and Marron: ONE puppy-sized baby dragon with TWO HEADS on two short necks sharing ONE rounded body, four little legs, two wings and one curled tail. Both heads are girls. The dragon is split cleanly down the middle: one head and that half of the body, one wing and that half of the tail are glittery shimmering SILVER scales (Nola, the time dragon: large deep-blue eyes, two tiny silver horns, an eager excited expression); the other head and that half of the body, the other wing and that half of the tail are glittery shimmering GOLD scales (Marron, the friendship dragon: large warm chestnut-brown eyes, two tiny gold horns, a kind patient expression). The silver and gold meet in a neat line down the chest, belly and tail; the tail tip is half silver, half gold. Smooth glittery scales like frost and sunshine, soft and rounded, no zigzag spikes, no lightning, not metal armor. Exactly two heads on one body, never two separate dragons. Dragon, never a human, never a bird."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "sheet": "Leaf: female baby earth dragon the size of a small puppy who looks like a leaf: rounded body of bright spring-GREEN scales with lighter yellow-green leaf-vein lines, a pale green belly, two leaf-shaped green wings with visible veins, a little frill of small green leaves around her neck, large petal-pink eyes, two tiny brown twig-like horns, four little legs and one curled green tail ending in a pointed leaf tip, sweet shy smile. Dragon, never a human, never a lizard, never a bug. Flowers, vines and gold flower dust only when specified."
+    },
+    {
+      "id": "shinebright",
+      "name": "Shinebright",
+      "sheet": "Shinebright: female baby wish dragon the size of a small puppy, rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns, large bright sea-green eyes with gold flecks, four little legs and one curled green-blue tail with a silver underside, sweet bright smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Gold-and-silver wish glitter only when specified."
+    },
+    {
+      "id": "lovee",
+      "name": "Lovee",
+      "sheet": "Lovee: female baby love dragon the size of a small puppy, soft rose-PINK head, neck, back, upper body, legs, paw tops, two small PINK wings including PINK membranes, two tiny blunt pink horns, large warm golden eyes and a friendly rounded little snout; cherry-RED chest and belly, RED soles under all four paws; one curled tail PINK along the top and RED along the entire underside. Her upper surfaces are pink and lower surfaces red. Four small legs and two small pink wings. No red wings, no entirely red tail, no heart-shaped pupils. Dragon, never a human. Tiny warm pink heart lights only when specified."
+    },
+    {
+      "id": "starry",
+      "name": "Starry",
+      "sheet": "Starry: female baby dream dragon the size of a small puppy who looks just like her sister Shinebright except for her eyes: rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns; large bright PINK eyes full of tiny pink glitter sparkles (never green eyes); four little legs and one curled green-blue tail with a silver underside, sweet sleepy smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Soft pink dream glitter only when specified."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "grizzlemop",
+      "name": "Grizzlemop",
+      "sheet": "Grizzlemop: a great big hairy cave monster about as tall as a haystack, a round shaggy body completely covered in long tangled chestnut-brown fur like a giant mop, two big round glowing amber eyes peeking through the fur, a wide mouth with flat blunt teeth, big round fuzzy feet and fuzzy paws with no claws, a long shaggy tail. Storybook-silly and soft like a giant furry puppet, never gory: no sharp teeth, no claws, no horns, no drool."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Late golden afternoon on a stone balcony of a charcoal-and-violet clock tower, a giant round glowing clock face with simple tick marks only (no numbers, no letters) behind, generous open sky across the upper third. Ruby now wears her new bond dress instead of plum: a tunic dress split down the middle, one half glittery SILVER and the other half glittery GOLD, sprinkled all over with a pattern of tiny hourglasses and tiny pairs of hands holding each other, with soft golden boots. Ruby smiles, crown and silver forehead mark visible, and holds the two-headed baby dragon in her arms: one glittery SILVER head with deep-blue eyes and one glittery GOLD head with chestnut-brown eyes, nuzzling her cheeks. Soft silver sparkles and a warm gold glow drift around them, with bits of silver and gold eggshell on the balcony. Exactly Ruby and the two-headed dragon, no other characters.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Seventeen days old",
+      "text": "Ruby was seventeen days old today,\nand nine little dragons came tumbling to play.\nThey rolled down the hill where the buttercups grow,\nand they chased their own tails in a wiggly row.\n\nThen Ruby's mark tingled. She stood very still.\nTick... tock... came a sound from beyond the far hill.\n\"An egg!\" Ruby whispered. \"It's ready, I know.\nBut it's over at Noir's. Come, my dragons, let's go!\"",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "tingled",
+          "definition": "felt a tiny, fizzy prickle"
+        },
+        {
+          "word": "tumbling",
+          "definition": "rolling and falling over and over, just for fun"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green hill in Riverlight covered in yellow buttercups, blue sky. Ruby in her normal PLUM tunic dress stands still with one hand touching the silver mark on her forehead, looking toward faraway hills where a tall dark charcoal-and-violet tower with a big round clock face stands on the horizon. Around her exactly NINE puppy-sized baby dragons tumble and roll in the buttercups, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes. crown and silver forehead mark visible. No other people. Main subject in lower two thirds."
+    },
+    {
+      "number": 2,
+      "title": "The egg in the clock",
+      "text": "In Noir's dark tower, a big clock went TICK.\nBehind its round face, where the cobwebs hung thick,\nsat an egg made of two eggs, stuck tight, side by side:\none glittery silver, one gold. And inside...\n\ntwo voices were arguing! \"Hurry! Let's GO!\"\n\"No, wait!\" said the other. \"Not yet! Take it slow!\"\nNoir peeked in and grinned. \"War, come quickly and see!\nTwo who fight can be split: one for you, one for me!\"",
+      "image": "images/02.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "arguing",
+          "definition": "saying \"No, MY way!\" back and forth"
+        },
+        {
+          "word": "cobwebs",
+          "definition": "old dusty spider webs"
+        }
+      ],
+      "imagePrompt": "inside the clock room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together, with dusty cobwebs. On a stone ledge behind the clock face sits the Clock Egg: ONE double egg made of two big eggs fused tightly together side by side, one egg glittery SILVER and the other glittery GOLD, together about the size of a pumpkin, puffing tiny silver sparkles from the silver side and tiny gold sparkles from the gold side as if two voices are talking. Noir leans in through a little wooden door, grinning slyly at the egg, and War peeks over her shoulder, eager. Exactly Noir and War, no Ruby, no dragons, no other people."
+    },
+    {
+      "number": 3,
+      "title": "Grizzlemop's stairs",
+      "text": "Pearl blew a big bubble, and Ruby climbed in.\nFlame puffed it up high with a warm, toasty grin.\nThey floated past hilltops, the dragons in tow,\nto the cave under Noir's, where the tall flowers grow.\n\n\"Grizzlemop!\" Ruby called. Out he shuffled, all fluff.\n\"Can you take us up high to the clock?\" \"Sure enough!\"\nHe led them up stairs that went round, round, and round,\nand they tiptoed so softly, they made not a sound.",
+      "image": "images/03.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "shuffled",
+          "definition": "walked slowly, sliding your feet"
+        },
+        {
+          "word": "tiptoed",
+          "definition": "walked very quietly on the tips of your toes"
+        }
+      ],
+      "imagePrompt": "A winding spiral stone staircase inside a charcoal-and-violet stone tower, lit by warm daylight from narrow windows, flowering green vines holding the stones together. Grizzlemop the big shaggy chestnut-brown mop-haired monster leads the way upward, smiling, one fuzzy paw holding a finger to his lips for quiet. Ruby in her normal PLUM tunic dress tiptoes behind him, crown and silver forehead mark visible, and exactly NINE puppy-sized baby dragons tiptoe and flutter quietly behind her, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes. No other people. Main subject in lower two thirds."
+    },
+    {
+      "number": 4,
+      "title": "Nola and Marron",
+      "text": "At the top, gears were turning. A pendulum swung.\nAnd there sat the egg where the big tower bells hung.\n\"Hurry UP!\" said a voice from the silvery side.\n\"Not YET!\" said the gold side. And both of them sighed.\n\n\"I'm Nola,\" said Silver. \"I'm time, and I'm FAST!\nI can speed things right up! Let's hatch out at last!\"\n\"I'm Marron,\" said Gold. \"I'm for friendship. Let's stay\ntill we're BOTH good and ready. Then hatch the same day!\"",
+      "image": "images/04.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "pendulum",
+          "definition": "a weight that swings back and forth inside a clock"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. On a stone ledge sits the Clock Egg: ONE double egg made of two big eggs fused tightly together side by side, one egg glittery SILVER and the other glittery GOLD, together about the size of a pumpkin; the silver half glows bright and fizzy, the gold half glows warm and soft, with little silver and gold puffs above each half like two voices. Ruby in her normal PLUM tunic dress kneels beside it, listening with wide curious eyes, crown and silver forehead mark visible. Exactly NINE puppy-sized baby dragons peek around the gears, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes. Count them: exactly nine small dragons, only two of them green-and-blue (Shinebright and Starry), never three. No other people, no hatched dragon yet."
+    },
+    {
+      "number": 5,
+      "title": "Noir's whispers",
+      "text": "Then in swept Noir and War, with Black Hole trailing slow.\nNoir knelt by the egg, and she whispered down low,\n\"Nola, dear, she just slows you. Fly off on your own!\"\n\"Marron, dear, she's so bossy. You'd be better alone!\"\n\nWar grinned, \"I want GOLD!\" Black Hole stared at the floor.\nHe remembered a rose and a bench from before.\n\"Don't listen!\" cried Ruby. But Nola said, \"NOW!\nI'm hatching this minute! I'll show you just how!\"",
+      "image": "images/05.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "bossy",
+          "definition": "always telling others what to do"
+        },
+        {
+          "word": "remembered",
+          "definition": "thought about something from before"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. Noir kneels beside the Clock Egg: ONE double egg made of two big eggs fused tightly together side by side, one egg glittery SILVER and the other glittery GOLD, together about the size of a pumpkin, whispering slyly to it with a hand cupped by her mouth; War points greedily at the GOLD half. Black Hole stands a little behind them, NOT grinning, head low, looking down at the floor, unsure and thoughtful. Across the room Ruby in her normal PLUM tunic dress reaches out one hand, calling 'don't listen!', crown and silver forehead mark visible. The silver half of the egg glows bright and impatient. Main subject in lower two thirds. Exactly Ruby, Noir, War and Black Hole, no baby dragons in this picture."
+    },
+    {
+      "number": 6,
+      "title": "Half hatched",
+      "text": "She twirled up her magic, all silver and bright,\nand she sped up the hatching with all of her might.\nCRACK! Out popped a silver head, one wing, one leg...\nbut Marron's gold half was still stuck in the egg!\n\nShe flapped her one wing, and she tipped to one side,\nand she spun round and round. \"I can't steer!\" Nola cried.\nFrom inside the gold shell, Marron called, soft and small,\n\"Half a dragon can't fly. Not alone. Not at all.\"",
+      "image": "images/06.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "steer",
+          "definition": "make something go the way you want it to go"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. In the middle of the room, the half-hatched baby dragon: her glittery SILVER half has burst out of the silver eggshell (one silver baby dragon head with large deep-blue eyes and two tiny silver horns, one silver wing, one silver front leg), while the other half of her body is still sealed inside the unbroken glittery GOLD half of the egg joined at her side, so she looks like a silver baby dragon wearing half a gold egg. Only ONE head is visible, the silver one. She is tipping and spinning in a wobbly circle in the air with one silver wing flapping, a swirl of silver sparkle magic and bits of silver eggshell around her. Ruby in her normal PLUM tunic dress reaches up toward her, worried, crown and silver forehead mark visible. No other characters in this picture."
+    },
+    {
+      "number": 7,
+      "title": "Time goes wild",
+      "text": "And her magic ran wild! All the clock hands went WHIRR!\nEvery gear spun so fast that it turned to a blur.\nThe sun zipped up, down, and the moon zipped by fast.\nFlowers bloomed, drooped, and bloomed again, zooming past.\n\nWar's braid grew so long that it piled on the floor.\nBlack Hole's tail did a twirl, and then twelve twirls more!\n\"I can't stop it!\" cried Nola. \"It's too big for me!\"\nAnd the tall tower went wibble-wob, wobbly-wheee!",
+      "image": "images/07.webp",
+      "textPosition": "top",
+      "characters": [
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "blur",
+          "definition": "so fast you can't see it clearly"
+        },
+        {
+          "word": "wobbly",
+          "definition": "shaky, tipping from side to side"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); light flickers through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together, but time has gone wild: the clock face's hands are a spinning blur, gears whirl with motion streaks, and through the arched windows a sun and a round full moon both streak across the sky. Vines burst into flowers. In the middle spins the half-hatched baby dragon: her glittery SILVER half has burst out of the silver eggshell (one silver baby dragon head with large deep-blue eyes and two tiny silver horns, one silver wing, one silver front leg), while the other half of her body is still sealed inside the unbroken glittery GOLD half of the egg joined at her side, so she looks like a silver baby dragon wearing half a gold egg. Only ONE head is visible, the silver one, wrapped in a big wild whirl of silver sparkle magic. War stands with a funny surprised face as her black braid has grown super long and piles in big loops on the floor around her boots. Black Hole's tail twirls round and round in a dizzy spiral, his eyes swirly and dizzy. The whole room tilts playfully. Comic and safe, nobody hurt. No Ruby, no other characters in this picture.",
+      "effect": "vortex"
+    },
+    {
+      "number": 8,
+      "title": "Split them up",
+      "text": "\"Now's our chance!\" shouted Noir, and she held out her sack.\n\"Come to me, speedy Nola, and never look back!\"\nWar hugged the gold shell. \"This half's MINE! Hear me? MINE!\"\nInside, little Marron let out a sad whine.\n\nRuby stepped in between, and she knelt on the floor.\n\"Nola, why are you hurrying? What is it for?\nAnd Marron, why wait?\" Ruby asked, soft and kind.\n\"Tell me both what you want. Tell me what's on your mind.\"",
+      "image": "images/08.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "hurrying",
+          "definition": "going fast because you want to be quick"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. Noir holds open a soft black sack toward the half-hatched baby dragon: her glittery SILVER half has burst out of the silver eggshell (one silver baby dragon head with large deep-blue eyes and two tiny silver horns, one silver wing, one silver front leg), while the other half of her body is still sealed inside the unbroken glittery GOLD half of the egg joined at her side, so she looks like a silver baby dragon wearing half a gold egg. Only ONE head is visible, the silver one. War hugs the gold half of the egg tightly with a stubborn face, and one warm chestnut-brown eye peeks sadly out of a tiny crack in the gold shell. Ruby in her normal PLUM tunic dress kneels gently between them, speaking kindly to the little dragon, crown and silver forehead mark visible. Exactly Ruby, Noir, War and the half-hatched dragon, no other dragons."
+    },
+    {
+      "number": 9,
+      "title": "The same wish",
+      "text": "\"I wanted to see the whole world,\" Nola said,\n\"with Marron right next to me, head next to head!\"\n\"And I,\" whispered Marron, \"just wanted to wait,\nso we'd see it TOGETHER. I don't mind being late.\"\n\nRuby smiled. \"Then you both want the very same thing!\nFast and patient together can do anything.\nLike the sun and the moon, like the day and the night,\nyou are different, and that's what can make you just right.\"",
+      "image": "images/09.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "patient",
+          "definition": "happy to wait without fussing"
+        },
+        {
+          "word": "different",
+          "definition": "not the same"
+        }
+      ],
+      "imagePrompt": "Close, gentle scene inside the top room of Noir's charcoal-and-violet stone clock tower, light from an arched window where a sun and a round full moon hang side by side in the sky. Ruby in her normal PLUM tunic dress sits on the stone floor holding the half-hatched baby dragon: her glittery SILVER half has burst out of the silver eggshell (one silver baby dragon head with large deep-blue eyes and two tiny silver horns, one silver wing, one silver front leg), while the other half of her body is still sealed inside the unbroken glittery GOLD half of the egg joined at her side, so she looks like a silver baby dragon wearing half a gold egg. Only ONE head is visible, the silver one in her lap; the silver head turns lovingly toward the gold shell, where one warm chestnut-brown eye peeks out of a little crack, smiling. Ruby smiles warmly, crown and silver forehead mark visible. Soft, tender, hopeful mood. No other characters.",
+      "refrain": true
+    },
+    {
+      "number": 10,
+      "title": "Hold on together",
+      "text": "\"Everybody hold on!\" Ruby called. And they came:\nPearl and Luna and Leaf, Sparks and Crackle and Flame,\nShinebright, Starry, and Lovee, and big Grizzlemop too,\npaw in paw, tail in tail, in a ring that held true.\n\nThen Marron glowed gold, and the gold glow spread wide.\nEvery friend felt stronger with friends by their side.\n\"Now, Nola,\" said Marron, \"let's do it as two.\"\n\"Together,\" said Nola. \"I'm ready. Are you?\"",
+      "image": "images/10.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "grizzlemop",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "together",
+          "definition": "with each other"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. Everyone holds on in one big ring, paw in paw and tail in tail: Ruby in her normal PLUM tunic dress, crown and silver forehead mark visible, big shaggy chestnut-brown Grizzlemop, and exactly NINE puppy-sized baby dragons, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes. In the center of the ring floats the half-hatched baby dragon: her glittery SILVER half has burst out of the silver eggshell (one silver baby dragon head with large deep-blue eyes and two tiny silver horns, one silver wing, one silver front leg), while the other half of her body is still sealed inside the unbroken glittery GOLD half of the egg joined at her side, so she looks like a silver baby dragon wearing half a gold egg. Only ONE head is visible, the silver one, and a warm GOLD glow pours out of the gold shell and flows around the whole ring, making everyone shine. No Noir, no War, no other people.",
+      "refrain": true,
+      "effect": "bond"
+    },
+    {
+      "number": 11,
+      "title": "Just the right speed",
+      "text": "Nola sped up her magic, but gently this time:\njust the shell, just a little, as soft as a chime.\nCrick... crack... and out tumbled a gold head and wing,\nand a gold leg and paw! Then a hug! What a thing!\n\nThen she gathered her magic back in, strand by strand,\nlike a kite on a string floating home to her hand.\nThe sun settled. The gears slowed. The clock said, \"Tick... tock.\"\nBut War's braid stayed so long, it reached all the way round the block!",
+      "image": "images/11.webp",
+      "textPosition": "top",
+      "characters": [
+        "nola-marron",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "gathered",
+          "definition": "brought things back close together"
+        },
+        {
+          "word": "gently",
+          "definition": "softly and carefully"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. The gold half of the eggshell cracks open and Marron's GOLD head with warm chestnut-brown eyes pops out, completing the two-headed baby dragon; the silver head and the gold head nuzzle cheek to cheek, happy. Strands of silver sparkle magic float back toward the silver head like a kite string reeling home. The clock face is calm again. In the background War scowls, her black braid still comically super long, trailing past her boots across the floor. Bits of silver and gold eggshell on the floor. Exactly the two-headed dragon and War, no other characters."
+    },
+    {
+      "number": 12,
+      "title": "Two heads, one bond",
+      "text": "Two heads gave a nuzzle. One tail curled up tight.\n\"We hatched out TOGETHER!\" they cheered with delight.\nThen the silver nose pressed on Ruby's left hand,\nand the gold nose pressed right. Oh, the feeling was grand!\n\nHer dress shimmered half silver, half gold, bright and new,\nsprinkled with hourglasses and hands holding hands, too!\nSilver time-sparkles danced in her left hand, so light,\nand her right hand glowed gold. \"Ten dragons! What a sight!\"",
+      "image": "images/12.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "nola-marron",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "nuzzle",
+          "definition": "rub noses or cheeks softly, like a snuggle"
+        },
+        {
+          "word": "shimmered",
+          "definition": "sparkled and shined"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. Ruby holds out both hands: the two-headed baby dragon presses her SILVER nose to Ruby's left palm and her GOLD nose to Ruby's right palm at the same time. Ruby now wears her new bond dress instead of plum: a tunic dress split down the middle, one half glittery SILVER and the other half glittery GOLD, sprinkled all over with a pattern of tiny hourglasses and tiny pairs of hands holding each other, with soft golden boots. Soft silver sparkles dance in her left hand and a warm gold glow fills her right hand. Ruby beams, crown and silver forehead mark visible, rainbow hair. Exactly NINE puppy-sized baby dragons cheer around them, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes. No other people.",
+      "effect": "bond"
+    },
+    {
+      "number": 13,
+      "title": "Black Hole's choice",
+      "text": "\"Black Hole!\" shouted Noir. \"GULP that dragon up, quick!\"\nBlack Hole opened his swirl. Then he shut it. Click-click.\nHe looked at the ring, every paw holding tight,\nand one empty space, just his size, in the light.\n\nThen Marron's gold glow brushed his nose like a kiss.\n\"I have never,\" he whispered, \"felt something like this.\"\n\"You're OUR dragon!\" War shouted. Black Hole shook his head.\n\"A dragon gets to choose who he's with,\" he said.",
+      "image": "images/13.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "noir",
+        "war",
+        "nola-marron",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "choose",
+          "definition": "pick the one you want"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. Big Black Hole, the size of a large dog and much bigger than the baby dragons, stands on one side, his dark swirl magic closing up into a tiny puff of purple starlight; his eyes are wide and soft now, no grin, gentle and wondering, as a warm GOLD glow from the two-headed baby dragon touches his nose like a kiss. Behind him Noir points and shouts, furious, and War stamps her foot, her braid still very long. Black Hole stands OUTSIDE the ring, alone, not touching anyone, a little apart. Ruby now wears her new bond dress instead of plum: a tunic dress split down the middle, one half glittery SILVER and the other half glittery GOLD, sprinkled all over with a pattern of tiny hourglasses and tiny pairs of hands holding each other, with soft golden boots. Facing him, Ruby, crown and silver forehead mark visible, holds paws in a ring with the two-headed baby dragon (silver head and gold head) and exactly NINE puppy-sized baby dragons, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes; the ring has one clear empty gap just Black Hole's size, facing him. Noir and War stand behind Black Hole. No Grizzlemop, no other people.",
+      "effect": "vortex"
+    },
+    {
+      "number": 14,
+      "title": "Holding on",
+      "text": "He padded to Ruby and lowered his head,\nand he pressed his nose soft to her palm instead.\n\"I'm all done with grabbing,\" he rumbled. \"It's true.\nI would rather hold on. Can I hold on with you?\"\n\nThen her dress turned to charcoal with lavender shine,\nwith a violet hem twirling round, oh so fine!\nand in her two palms spun small swirls, soft and round.\n\"Eleven!\" laughed Ruby. \"Look what we have found!\"",
+      "image": "images/14.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "black-hole",
+        "nola-marron"
+      ],
+      "vocab": [
+        {
+          "word": "grabbing",
+          "definition": "snatching something quickly"
+        },
+        {
+          "word": "rumbled",
+          "definition": "said in a deep, low voice"
+        }
+      ],
+      "imagePrompt": "inside the top room of Noir's charcoal-and-violet stone clock tower: huge turning brass gears, a swinging pendulum, two big bronze bells, and the back of a giant round glowing clock face with simple tick marks only (no numbers, no numerals, no letters); bright sunny daylight glows through the clock face and arched windows, and Leaf's flowering green vines hold the old stones together. Black Hole lowers his head with a gentle closed-mouth smile and soft eyes, no grin, and presses his nose to Ruby's open palm. Ruby now wears a new bond dress instead of plum: deep charcoal with a soft lavender shimmer and swirling violet patterns around the skirt and hem, with soft golden boots. Small soft violet swirls spin in Ruby's palms like tiny whirlpools. Ruby smiles warmly up at him, crown and silver forehead mark visible, rainbow hair. The two-headed baby dragon (silver head and gold head) cheers beside her. Exactly Ruby, Black Hole and the two-headed dragon.",
+      "refrain": true,
+      "effect": "bond"
+    },
+    {
+      "number": 15,
+      "title": "Stomping home",
+      "text": "Noir stamped and War stomped down the stairs, round and round,\nwith no egg and no dragon, not one dragon found.\nWar's long braid went bump-bumping each step of the way,\nand the palace felt quiet and empty and gray.\n\nRuby's bubble rose high, and she waved from the sky.\nWar's hand started to wave... then she turned with a sigh.\n\"Someday,\" Ruby whispered, \"I hope that they'll find\nthere's room on a team for a heart that is kind.\"",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole",
+        "nola-marron"
+      ],
+      "vocab": [
+        {
+          "word": "stomped",
+          "definition": "walked with big, heavy, grumpy steps"
+        },
+        {
+          "word": "sigh",
+          "definition": "a long, slow, sad breath"
+        }
+      ],
+      "imagePrompt": "Late golden afternoon outside Noir's charcoal-and-violet palace with its tall clock tower, flowering vines on the stones. In the sky above, a big clear soap-like bubble floats away carrying Ruby in a deep charcoal dress with lavender shimmer and violet swirls, waving kindly, crown and silver forehead mark visible, with Black Hole and the two-headed baby dragon (silver head and gold head) flying beside the bubble and a few small baby dragons as tiny shapes behind. In a lower palace window, War leans on the sill looking up at the bubble with a small sad, wondering face, one hand half raised as if starting to wave, her black braid super long and hanging down over the sill. Behind her in the room Noir turns away grumpily, arms crossed. Main subject: War in the window and the bubble above."
+    },
+    {
+      "number": 16,
+      "title": "Home together",
+      "text": "Back home in Riverlight, at the end of the day,\neleven good dragons were tired from play.\n\"Let's race!\" Nola said. \"Let's stroll,\" Marron said.\nSo they strolled, then they raced, all the way up to bed!\n\nBlack Hole curled at the foot of the bed, warm and wide,\nand Ruby kissed heads, every one, side by side:\ntwelve heads on eleven good dragons! Then, deep\nin one great big cuddle, they all fell asleep.",
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "nola-marron",
+        "black-hole",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry"
+      ],
+      "vocab": [
+        {
+          "word": "cuddle",
+          "definition": "a big, cozy hug"
+        }
+      ],
+      "imagePrompt": "Cozy lavender-stone bedroom at night, warm golden lantern glow and starry window. Ruby now wears her new bond dress instead of plum: a tunic dress split down the middle, one half glittery SILVER and the other half glittery GOLD, sprinkled all over with a pattern of tiny hourglasses and tiny pairs of hands holding each other, with soft golden boots. Ruby lies on pillows, sleepy and happy, crown and silver forehead mark visible, rainbow hair. Curled around her, each exactly once: the two-headed baby dragon with one silver head and one gold head snuggled under her arm, and exactly NINE puppy-sized baby dragons: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes. Black Hole, bigger than the baby dragons, sleeps peacefully curled at the foot of the bed with a gentle smile. Count them: eleven dragons in all = the two-headed silver-and-gold dragon + nine small baby dragons + big Black Hole. Little Luna (small, black with silver stars) is a separate dragon from big Black Hole, and BOTH green-and-blue sisters Shinebright and Starry are there side by side. No other people.",
+      "refrain": true,
+      "effect": "starlight",
+      "theEnd": "The End — and eleven dragons, twelve heads, one big cuddle."
+    }
+  ],
+  "questions": [
+    "Nola loves to go fast, and Marron loves to wait. Are you more of a fast one or a waiting one?",
+    "Nola and Marron were arguing, but they both wanted the very same thing. Have you ever argued with someone and found out you wanted the same thing?",
+    "Who is someone very different from you who makes a great team with you?",
+    "Black Hole decided to stop grabbing and hold on with friends instead. What helped him choose?"
+  ],
+  "lookAndFind": "Find the tiny hourglasses on Ruby's new dress. Can you count all twelve heads on Ruby's eleven dragons?",
+  "assetVersion": "ruby8-1"
+}

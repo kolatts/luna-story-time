@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
-GENERATOR = Path.home() / '.claude/plugins/cache/kolatts-marketplace/imagile-dev-tools/1.1.0/skills/image-generation/scripts/generate_image.py'
+GENERATOR = Path.home() / '.claude/plugins/cache/imagile/imagile/3.1.4/skills/image-generation/scripts/generate_image.py'
 REFERENCE = Path('.claude/image-generation/261010-ruby-canon-reference/ruby-canon-reference.png')
 ROOT = Path('.claude/image-generation')
 
