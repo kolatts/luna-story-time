@@ -1,0 +1,555 @@
+{
+  "series": "ruby-and-the-dragon-bonds",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "ruby-war-noir-and-the-spirit-dragon",
+  "bookNumber": 9,
+  "title": "Ruby, War, Noir, and the Spirit Dragon",
+  "subtitle": "Book Nine of Ruby and the Dragon Bonds",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "refrain": "It's never too late to be kind.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#4FA3A5",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "sheet": "Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain."
+    },
+    {
+      "id": "giggles",
+      "name": "Giggles",
+      "sheet": "Giggles: female baby spirit dragon the size of a small puppy, with a little bit of every other dragon in her. Rounded body of smooth scales in clear RAINBOW bands running from nose to tail: red head, orange neck, yellow shoulders, green middle, blue hips and a violet tail. A pearl-white belly with ONE small cherry-red heart-shaped patch on her chest; two orange cheek frills; a little collar of small green leaves around her neck; a row of small zigzag spikes down her back alternating yellow and silver; two tiny horns, ONE gold and ONE silver; two small wings with violet membranes; her curled violet tail ends in a small round glowing silver tip; large sparkling glittery pink eyes with gold flecks; four little legs; a wide open-mouthed giggling smile. A soft rainbow glitter shimmer rims her outline. Exactly one head. Dragon, never a human, never a bird, never a unicorn. Tiny rainbow firework sparkles only when specified."
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "sheet": "Flame: female baby fire dragon the size of a small puppy, rounded red body, orange cheek frills and tiny orange wings, buttery yellow belly and short yellow horns, large amber eyes, four little legs and one curled red tail, playful snuggly expression. Dragon, never a human. Tiny friendly flame puffs only when specified."
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "sheet": "Pearl: female baby water dragon the size of a small puppy, pearl-white rounded body, sky-blue ears and wing membranes, blue back ridge and curled blue-tipped tail, large blue eyes, four tiny legs, clear transparent soap-like bubbles floating around her. Dragon, never a human. No fire, no colored opaque bubbles."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks",
+      "sheet": "Sparks: female baby lightning dragon the size of a small puppy, rounded body of bright lemon-YELLOW scales, shining SILVER eyes, tiny silver-edged wings, two short silver horns, a row of small silver zigzag spikes down her back, four little legs and one curled yellow tail ending in a silver zigzag tip, bouncy fizzy expression. She is the yellow twin with silver eyes. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "sheet": "Crackle: female baby lightning dragon the size of a small puppy, rounded body of shining SILVER scales, bright YELLOW eyes, tiny yellow-edged wings, two short yellow horns, a row of small yellow zigzag spikes down her back, four little legs and one curled silver tail ending in a yellow zigzag tip, cheeky crackly grin. She is the silver twin with yellow eyes: same shape as Sparks with the colors swapped. Dragon, never a human, never a bird. Tiny gold electric sparkles only when specified."
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "sheet": "Luna: female baby moon dragon the size of a small puppy, rounded body of deep glossy BLACK scales speckled all over with tiny twinkling silver-white stars like a night sky, a soft pale-silver belly, large glowing moon-silver eyes, tiny black wings with star-speckled silver edges, two short pearly-silver horns, four little legs and one curled black tail ending in a small round glowing silver tip, sweet sleepy expression. A faint silver moonlight glow rims her outline so she is always clearly visible against the night. Much smaller and rounder than Black Hole, no lavender highlights, no violet wings. Dragon, never a human, never a cat. Silver moonbeam magic only when specified."
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "sheet": "Leaf: female baby earth dragon the size of a small puppy who looks like a leaf: rounded body of bright spring-GREEN scales with lighter yellow-green leaf-vein lines, a pale green belly, two leaf-shaped green wings with visible veins, a little frill of small green leaves around her neck, large petal-pink eyes, two tiny brown twig-like horns, four little legs and one curled green tail ending in a pointed leaf tip, sweet shy smile. Dragon, never a human, never a lizard, never a bug. Flowers, vines and gold flower dust only when specified."
+    },
+    {
+      "id": "shinebright",
+      "name": "Shinebright",
+      "sheet": "Shinebright: female baby wish dragon the size of a small puppy, rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns, large bright sea-green eyes with gold flecks, four little legs and one curled green-blue tail with a silver underside, sweet bright smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Gold-and-silver wish glitter only when specified."
+    },
+    {
+      "id": "lovee",
+      "name": "Lovee",
+      "sheet": "Lovee: female baby love dragon the size of a small puppy, soft rose-PINK head, neck, back, upper body, legs, paw tops, two small PINK wings including PINK membranes, two tiny blunt pink horns, large warm golden eyes and a friendly rounded little snout; cherry-RED chest and belly, RED soles under all four paws; one curled tail PINK along the top and RED along the entire underside. Her upper surfaces are pink and lower surfaces red. Four small legs and two small pink wings. No red wings, no entirely red tail, no heart-shaped pupils. Dragon, never a human. Tiny warm pink heart lights only when specified."
+    },
+    {
+      "id": "starry",
+      "name": "Starry",
+      "sheet": "Starry: female baby dream dragon the size of a small puppy who looks just like her sister Shinebright except for her eyes: rounded body whose back, head, legs and the tops of her paws are swirled sea-GREEN and ocean-BLUE scales; glittering sparkly SILVER on her belly, the underside of her neck, the underside of her tail, her wing membranes and the pads under her paws; a row of small glittery spikes down her back from head to tail, alternating SILVER and GOLD; two tiny silver horns; large bright PINK eyes full of tiny pink glitter sparkles (never green eyes); four little legs and one curled green-blue tail with a silver underside, sweet sleepy smile. A soft glitter shimmer rims her outline. Dragon, never a human, never a fish, never a bird. Soft pink dream glitter only when specified."
+    },
+    {
+      "id": "nola-marron",
+      "name": "Nola and Marron",
+      "sheet": "Nola and Marron: ONE puppy-sized baby dragon with TWO HEADS on two short necks sharing ONE rounded body, four little legs, two wings and one curled tail. Both heads are girls. The dragon is split cleanly down the middle: one head and that half of the body, one wing and that half of the tail are glittery shimmering SILVER scales (Nola, the time dragon: large deep-blue eyes, two tiny silver horns, an eager excited expression); the other head and that half of the body, the other wing and that half of the tail are glittery shimmering GOLD scales (Marron, the friendship dragon: large warm chestnut-brown eyes, two tiny gold horns, a kind patient expression). The silver and gold meet in a neat line down the chest, belly and tail; the tail tip is half silver, half gold. Smooth glittery scales like frost and sunshine, soft and rounded, no zigzag spikes, no lightning, not metal armor. Exactly two heads on one body, never two separate dragons. Dragon, never a human, never a bird."
+    },
+    {
+      "id": "black-hole",
+      "name": "Black Hole",
+      "sheet": "Black Hole: mischievous mean black dragon, about the size of a large dog, rounded charcoal-black scales visibly highlighted lavender, violet wing membranes, small blunt horns, four legs, curled tail and narrowed violet eyes, smug toothy grin with small blunt teeth. Clearly visible against the background. His magic is a small dark circular swirl edged with purple starlight, a storybook vacuum for objects, never cosmic horror."
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "sheet": "Noir: adult human stepmother with cool pale skin, straight chin-length black hair, tall narrow silver crown, elegant charcoal gown with violet lining and long sleeves, stern calculating expression. Rounded storybook features, never monstrous. No dragon forehead mark."
+    },
+    {
+      "id": "war",
+      "name": "War",
+      "sheet": "War: human stepsister appearing eight years old, cool pale skin, black hair in a single high braid, dark burgundy tunic with silver belt, black boots, small angular silver tiara, stubborn scowling expression. No weapons, no dragon forehead mark."
+    },
+    {
+      "id": "grizzlemop",
+      "name": "Grizzlemop",
+      "sheet": "Grizzlemop: a great big hairy cave monster about as tall as a haystack, a round shaggy body completely covered in long tangled chestnut-brown fur like a giant mop, two big round glowing amber eyes peeking through the fur, a wide mouth with flat blunt teeth, big round fuzzy feet and fuzzy paws with no claws, a long shaggy tail. Storybook-silly and soft like a giant furry puppet, never gory: no sharp teeth, no claws, no horns, no drool."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Golden sunset on the green meadow lawn outside the lavender-stone castle of Riverlight, with generous open sky across the upper third where a few soft rainbow fireworks sparkle. Ruby now wears her new bond dress instead of plum: a patchwork tunic dress stitched together from ten bright patches, one from each of her earlier dresses: ember red; waterfall blue with pearl-white trim; lemon yellow next to shining silver; midnight black sprinkled with tiny silver stars; spring green with pink flower petals; swirled sea-green and ocean-blue; rose pink with a red heart; shining gold; glittery silver-and-gold with tiny hourglasses; and charcoal with violet swirls; with small rainbow firework bursts sparkling across the patches, and soft golden boots. Ruby stands in the middle, smiling, crown and silver forehead mark visible, holding Giggles in her arms; Giggles giggles with her mouth open. Standing close on one side of Ruby is War, smiling a shy happy smile, not scowling, her black braid comically super long and trailing on the grass; on the other side is Noir, smiling warmly, not stern. Each of them has a small glowing rainbow-colored heart-shaped light on her chest. Exactly Ruby, Giggles, War and Noir, no other characters.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Eighteen days old",
+      "text": "Ruby was eighteen days old. In the sun,\neleven good dragons came out for some fun.\n\"Everybody hold on!\" Ruby called. So they stood\npaw in paw, tail in tail, and oh, it felt good!\n\nThen her mark didn't tingle. It GLOWED, soft and warm,\nand up from the ring swirled a glittery storm:\nfire and bubbles and moonbeams and vines,\nsparkles and hearts in bright, wiggly lines!",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry",
+        "nola-marron",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "glowed",
+          "definition": "shone with a soft, warm light"
+        },
+        {
+          "word": "swirled",
+          "definition": "spun round and round"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. Ruby in her normal PLUM tunic dress stands in one big ring with her dragons, holding paws, paw in paw and tail in tail, the silver mark on her forehead glowing warm; crown and silver forehead mark visible. In the ring, each exactly once: exactly NINE puppy-sized baby dragons (red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes), plus the ONE two-headed baby dragon Nola and Marron (one glittery SILVER head with deep-blue eyes and one glittery GOLD head with chestnut-brown eyes on one body), plus big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean). From the dragons, ribbons of magic light swirl up into the air above the middle of the ring: a curl of warm fire, clear bubbles, gold sparks, silver moonbeams, green flowering vines, pink heart-lights and violet swirls, twisting together into one bright rainbow swirl. Count them: eleven dragons in all = nine small baby dragons + the two-headed silver-and-gold dragon + big Black Hole. Little Luna (puppy-sized, black with silver stars, moon-silver eyes) is a separate small dragon from big Black Hole, who is plain charcoal with NO star speckles and is no taller than Ruby. There are exactly TWO green-and-blue sister dragons, sitting side by side: Shinebright with sea-green eyes AND Starry with pink eyes. No egg yet. No other people. Main subject in lower two thirds.",
+      "effect": "bond"
+    },
+    {
+      "number": 2,
+      "title": "The egg nobody found",
+      "text": "The lights twirled together, up high in the air,\nand POP! In the middle, an egg was just THERE!\nNot found, and not taken, and nobody's prize.\nIt was made out of holding on. What a surprise!\n\nIt shone every color, like fireworks at night,\nand inside, someone giggled, \"Hee hee!\" with delight.\nOne giggle puffed fire. The next, bubbles flew!\n\"A spirit egg,\" Shinebright said, \"made from all of you!\"",
+      "image": "images/02.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "shinebright",
+        "flame",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "spirit",
+          "definition": "the happy, shining feeling inside you, and inside a team of friends"
+        },
+        {
+          "word": "prize",
+          "definition": "something you win and get to keep"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. Floating just above the grass in the middle, glowing brightly, is the Spirit Egg: one big egg the size of a pumpkin whose smooth shell is banded in soft rainbow colors (red, orange, yellow, green, blue, violet) and sprinkled with tiny glittering firework-burst sparkles, with a soft rainbow glow and little rainbow firework sparkles popping around it; one tiny puff of warm flame and a few clear soap bubbles pop out beside the egg like giggles. Ruby in her normal PLUM tunic dress kneels beside it with delighted wide eyes and open hands, crown and silver forehead mark visible. Beside her Shinebright points a paw at the egg, explaining; Flame and Pearl look on, amazed. Exactly Ruby, Shinebright, Flame and Pearl, no other characters, no hatched dragon.",
+      "effect": "starlight"
+    },
+    {
+      "number": 3,
+      "title": "Across the far hills",
+      "text": "Far over the hills, in a palace of gray,\nsat Noir and sat War, with no dragon to play.\n\"That Ruby is CRUEL!\" grumbled War. \"It's not fair!\nShe took EVERY dragon, and not one did she share!\"\n\n\"She took our Black Hole, too,\" sniffed Noir. \"And WE\nwere so NICE! We kept eggs in a chest, under key!\"\nThen a rainbow light flashed past the hills, far away.\n\"It's those BONDS of hers, War! We shall break them today!\"",
+      "image": "images/03.webp",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "cruel",
+          "definition": "very unkind, in a way that hurts someone"
+        },
+        {
+          "word": "bonds",
+          "definition": "special friendships that hold hearts together"
+        }
+      ],
+      "imagePrompt": "Bright daytime inside a gray, quiet, empty room of Noir's charcoal-and-gray stone palace, dull gray light, almost no color; flowering green vines hold the old stones together. Noir sits stiffly on a gray chair with her nose in the air, sniffing, and War sits slumped on the floor beside her with her arms crossed, grumbling; War's black braid is comically super long, lying in big loops across the floor. An empty dragon-sized cushion sits beside them. Through a big arched window behind them, far away over green hills, a bright rainbow-colored light flashes in the sky above a tiny distant lavender castle. Exactly Noir and War, no dragons, no Ruby, no other people."
+    },
+    {
+      "number": 4,
+      "title": "You are cruel!",
+      "text": "They walked the whole way, with no dragon to fly,\nover hill after hill, as the morning went by,\nand War's long, long braid dragged behind in the dew.\nThen they stomped through the gate. \"Ruby! We've come for YOU!\"\n\n\"You are CRUEL!\" shouted War. \"You took dragons galore!\"\n\"You took our Black Hole!\" Noir said. \"And you'll take more!\"\nRuby blinked. \"ME? Cruel?\" And she thought it all through.\n\"Dragons, DID I take you? Tell me true. Tell me true.\"",
+      "image": "images/04.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "noir",
+        "war",
+        "black-hole"
+      ],
+      "vocab": [
+        {
+          "word": "galore",
+          "definition": "lots and lots"
+        },
+        {
+          "word": "blinked",
+          "definition": "shut and opened your eyes very fast"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. Noir and War have just stomped in through the open gate: War points an angry accusing finger at Ruby, shouting, and Noir stands tall behind her with a soft empty black sack over her arm, also pointing; War's black braid is comically super long, many times her height, trailing along the grass behind her. Ruby in her normal PLUM tunic dress stands facing them, blinking in surprise with one hand on her own chest as if asking 'me?', crown and silver forehead mark visible. Beside Ruby stands big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean), calm. Behind Ruby the rainbow-banded Spirit Egg glows softly on the grass. Exactly Ruby, Noir, War and Black Hole, no other dragons in this picture."
+    },
+    {
+      "number": 5,
+      "title": "Pull!",
+      "text": "\"You never once took us!\" said Shinebright. \"We chose!\"\nAnd every head nodded, from horns down to nose.\n\"Those bonds MAKE them say it!\" snapped Noir. \"We shall break them!\nAnd once they are broken, we'll free them... and take them!\"\n\nWar looped her long braid round the ring like a rope.\nThey heaved and they hauled up the grassy green slope,\ntill paws slipped from paws, and tails slid out of tails,\nand the ring came apart with eleven small wails.",
+      "image": "images/05.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "war",
+        "noir",
+        "flame",
+        "pearl",
+        "luna",
+        "leaf",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "heaved",
+          "definition": "pulled as hard as you can"
+        },
+        {
+          "word": "chose",
+          "definition": "picked the one you wanted"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, on a grassy green slope. A comic tug-of-war: War has looped her super long black braid like a rope around a ring of baby dragons, and she and Noir lean back and pull hard on it together, heels dug into the grass, grumpy determined faces. The ring is being pulled apart: Ruby in her normal PLUM tunic dress, crown and silver forehead mark visible, and exactly five puppy-sized baby dragons (red Flame, white-blue Pearl, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf, and PINK-topped RED-bellied Lovee with pink wings) reach for each other's paws as they slide apart, surprised and upset but not hurt. In the middle of the broken ring sits the rainbow-banded Spirit Egg. Comic and safe, nobody hurt. No other people."
+    },
+    {
+      "number": 6,
+      "title": "A bond is not a rope",
+      "text": "But the bonds didn't break. Not a one. Not a thread.\n\"A bond's not a rope you can pull,\" Ruby said.\n\"It's a choosing. It's here.\" And she tapped on her heart.\n\"You can't break it by pulling two friends far apart.\"\n\nBut the egg! It stopped giggling. It pulled in its glow,\nand its shell shut up tight as a nut. \"Oh no! No!\"\nFlame warmed it. Pearl hummed. Nola tried a quick spell.\n\"It won't hatch near grabbing,\" said Shinebright. \"I can tell.\"",
+      "image": "images/06.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "ruby",
+        "flame",
+        "pearl",
+        "shinebright",
+        "nola-marron"
+      ],
+      "vocab": [
+        {
+          "word": "thread",
+          "definition": "a very thin string"
+        },
+        {
+          "word": "hummed",
+          "definition": "sang with your lips closed"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. Ruby in her normal PLUM tunic dress stands calmly with one hand tapping her own heart, speaking gently, crown and silver forehead mark visible. On the grass in front of her sits the Spirit Egg, one big pumpkin-sized egg with a rainbow-banded shell, now dim and quiet: its colors are pale and faded, with no glow and no sparkles, shut tight, not cracked. Flame breathes a tiny warm puff on it, Pearl hums beside it, and the two-headed baby dragon (silver head and gold head) twirls a little silver sparkle at it, all three worried. Shinebright sits close, looking at the egg thoughtfully. Exactly Ruby, Flame, Pearl, Shinebright and the two-headed dragon. No Noir, no War."
+    },
+    {
+      "number": 7,
+      "title": "A hard thing to say",
+      "text": "\"It's BROKEN!\" said Noir. \"Hand it here. We'll take care.\nWe've a nice iron chest. We will keep it safe there.\"\nThen somebody big padded in, soft and slow,\nand stood right in front of them. Black Hole said, \"No.\"\n\n\"I was your dragon,\" he rumbled, \"and so\nI know you. And there's something you two need to know.\nIt's a hard thing to hear. It is hard, and it's true.\nSo I'll say it as kindly as I can to you.\"",
+      "image": "images/07.webp",
+      "textPosition": "top",
+      "characters": [
+        "black-hole",
+        "noir",
+        "war",
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "rumbled",
+          "definition": "said in a deep, low voice"
+        },
+        {
+          "word": "kindly",
+          "definition": "in a gentle, caring way"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean) pads forward and stands firmly but gently between Noir and War on one side and Ruby on the other, facing Noir and War; he is calm, serious and kind, one paw raised a little as if saying 'no'. Noir reaches both hands greedily toward the egg; War stands beside her, War's black braid is comically super long, many times her height, trailing along the grass behind her. Behind Black Hole, Ruby in her normal PLUM tunic dress kneels and hugs the Spirit Egg, one big pumpkin-sized egg with a rainbow-banded shell, now dim and quiet: its colors are pale and faded, with no glow and no sparkles, shut tight, not cracked protectively; the egg is plain, with nothing on it (no crown, no tiara, no jewelry on the egg). Ruby's tiny gold crown stays on her own head and her silver forehead mark is visible. Black Hole is no taller than Ruby. Exactly Black Hole, Noir, War and Ruby, no baby dragons."
+    },
+    {
+      "number": 8,
+      "title": "The true thing",
+      "text": "\"Ruby never took dragons. Not me. Not a one.\nShe held out her hand. We could stay. We could run.\nShe asked what we wanted. She listened. She heard.\nYou never once asked me. Not one single word.\"\n\n\"That chest wasn't safe. It was dark. Pearl was scared.\nYou said, 'Gulp it!' and 'Grab it!' and nobody cared\nhow it felt for the eggs, or for me. That's unkind.\nIt was cruel. I was, too. But here's what I find:\"",
+      "image": "images/08.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "black-hole",
+        "pearl",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "listened",
+          "definition": "paid attention to what someone was saying"
+        },
+        {
+          "word": "unkind",
+          "definition": "not gentle or caring"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. Close, gentle scene: big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean) sits in the grass speaking softly and honestly to Noir and War, looking up at them with kind, sad eyes, one paw on his own chest. Little Pearl peeks out shyly from behind his front leg, a bit frightened. Noir and War stand listening, their angry faces just starting to turn unsure and surprised; War's black braid is comically super long, many times her height, trailing along the grass behind her. Exactly Black Hole, Pearl, Noir and War. No Ruby in this picture.",
+      "refrain": true
+    },
+    {
+      "number": 9,
+      "title": "Who is afraid?",
+      "text": "Noir opened her mouth, but no word tumbled out.\nWar looked at the dragons. And what were they about?\nThey were hiding from HER, behind Ruby, in a row,\npeeking out with big eyes, and all trembling so.\n\n\"They're scared,\" whispered War. \"Are they scared... of ME?\nBut I thought we were nice! And the cruel one was she!\"\nNoir looked at her sack, and she thought of the chest.\n\"All this time,\" she said softly, \"we thought we knew best.\"",
+      "image": "images/09.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "war",
+        "noir",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "lovee"
+      ],
+      "vocab": [
+        {
+          "word": "trembling",
+          "definition": "shaking because you are scared"
+        },
+        {
+          "word": "peeking",
+          "definition": "taking a quick little look"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background. War stands in the front, looking down at her own two open hands with a shocked, sad face, her eyes wide and her lip wobbling, not scowling; her super long braid lies dropped on the grass. Beside her Noir looks down at the soft empty black sack in her hands, her face no longer stern but troubled and ashamed. Across from them Ruby in her normal PLUM tunic dress stands with her arms spread protectively, crown and silver forehead mark visible, and hiding behind her in a row, peeking out with big frightened eyes and trembling, are exactly seven puppy-sized baby dragons, each exactly once: red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf, and PINK-topped RED-bellied Lovee with pink wings. No other people."
+    },
+    {
+      "number": 10,
+      "title": "Sorry",
+      "text": "War let go of her braid. Then she said, very small,\n\"I'm sorry for being so cruel to you all.\nI grabbed and I shouted. I never asked you.\nAnd Ruby, I called YOU the cruel one. Not true.\"\n\nNoir knelt in the grass, and she bowed her dark head.\n\"I'm sorry for being unkind,\" Noir said.\n\"For the chest, and the sacks, and each 'Gulp it!' and 'MINE!'\nAnd Black Hole, I bossed you about all the time.\"",
+      "image": "images/10.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "war",
+        "noir",
+        "ruby",
+        "black-hole",
+        "pearl"
+      ],
+      "vocab": [
+        {
+          "word": "sorry",
+          "definition": "what you say when you wish you hadn't hurt someone"
+        },
+        {
+          "word": "bossed",
+          "definition": "told someone what to do, over and over"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, soft late-afternoon golden light. War stands with her head bowed and her hands open at her sides, saying sorry, her face sad and sincere, not scowling; her super long braid lies dropped on the grass. Beside her Noir kneels in the grass with her head bowed and one hand on her heart, saying sorry, her face soft and sorrowful, not stern; her empty black sack lies dropped on the grass. Facing them, Ruby in her normal PLUM tunic dress listens with a gentle, serious face, crown and silver forehead mark visible; big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean) sits beside Ruby, and little Pearl peeks from behind Ruby's skirt. Tender, quiet mood. Exactly War, Noir, Ruby, Black Hole and Pearl."
+    },
+    {
+      "number": 11,
+      "title": "Forgiven",
+      "text": "It was quiet. Then Pearl, who'd been locked in that chest,\ntiptoed out, and she nuzzled Noir's hand. Then the rest\ncrept out, one by one, from the place where they hid.\n\"I forgive you,\" said Ruby. And she truly did.\n\n\"Saying sorry is brave. It was hard, and you tried.\nNow you get to start over. Come sit by my side.\"\nNobody was grabbing. Not a hand. Not a paw.\nAnd the egg gave a wiggle... a \"hee!\"... and a \"haw!\"",
+      "image": "images/11.webp",
+      "textPosition": "top",
+      "characters": [
+        "noir",
+        "pearl",
+        "ruby",
+        "war",
+        "flame",
+        "luna"
+      ],
+      "vocab": [
+        {
+          "word": "forgive",
+          "definition": "to stop being upset with someone who said sorry"
+        },
+        {
+          "word": "nuzzled",
+          "definition": "rubbed softly with a nose, like a snuggle"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, soft late-afternoon golden light. Noir kneels in the grass, and little Pearl stands in front of her nuzzling Noir's open hand; Noir looks down at Pearl with a surprised, tearful, gentle smile, not stern. Ruby in her normal PLUM tunic dress stands beside them smiling warmly with one hand on War's shoulder, crown and silver forehead mark visible; War smiles a small shy, relieved smile, not scowling; War's black braid is comically super long, many times her height, trailing along the grass behind her. Flame and the baby BLACK dragon speckled with silver stars Luna creep out from behind a bush toward them. On the grass beside Ruby the rainbow-banded Spirit Egg glows brightly again and wiggles, with a little rainbow sparkle popping above it. Exactly Noir, Pearl, Ruby, War, Flame and Luna.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 12,
+      "title": "Giggles",
+      "text": "CRACK! went the egg, with a rainbow KA-BOOM!\nFireworks fizzed up like flowers in bloom.\nOut tumbled a dragon, all rainbow, all bright,\nfrom her little red nose to her tail's silver light.\n\nShe had Flame's orange frills, and a heart on her chest\njust like Lovee's, and Leaf's leafy collar. The rest?\nOne horn gold, one horn silver, and violet wings, too!\n\"I'm Giggles!\" she giggled. \"I'm a bit of all of you!\"",
+      "image": "images/12.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "giggles",
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "fizzed",
+          "definition": "made lots of tiny, bubbly pops"
+        },
+        {
+          "word": "collar",
+          "definition": "a ring that goes around a neck"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, soft golden late-afternoon light. In the center, a rainbow-banded eggshell bursts open in a joyful burst of small rainbow firework sparkles like flowers, pieces of rainbow shell flying, and out tumbles Giggles in mid-air, laughing with her mouth wide open, wings spread. Below her Ruby in her normal PLUM tunic dress throws her arms up in delight, crown and silver forehead mark visible. Exactly Giggles and Ruby, no other characters. Giggles appears exactly once.",
+      "effect": "starlight"
+    },
+    {
+      "number": 13,
+      "title": "Every dress in one",
+      "text": "Giggles pressed her warm nose into Ruby's palm. POP!\nAnd her dress changed its colors from bottom to top:\na patch of each dress she had worn up till now,\nall stitched into one! And the dragons said, \"WOW!\"\n\nEmber red, river blue, starry black, leafy green,\npink with hearts, gold and silver, with violet between,\nand bright rainbow fireworks on every last one.\nIn her hands, tiny fireworks fizzed, just for fun!",
+      "image": "images/13.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "giggles"
+      ],
+      "vocab": [
+        {
+          "word": "patch",
+          "definition": "a small piece of cloth sewn onto something"
+        },
+        {
+          "word": "stitched",
+          "definition": "sewn together with thread"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, golden late-afternoon light. Ruby holds out her open palm and Giggles presses her little red nose into it. Ruby now wears her new bond dress instead of plum: a patchwork tunic dress stitched together from ten bright patches, one from each of her earlier dresses: ember red; waterfall blue with pearl-white trim; lemon yellow next to shining silver; midnight black sprinkled with tiny silver stars; spring green with pink flower petals; swirled sea-green and ocean-blue; rose pink with a red heart; shining gold; glittery silver-and-gold with tiny hourglasses; and charcoal with violet swirls; with small rainbow firework bursts sparkling across the patches, and soft golden boots. Tiny rainbow firework sparkles fizz above both of Ruby's hands. Ruby beams, crown and silver forehead mark visible, rainbow hair. Exactly Ruby and Giggles, no other characters.",
+      "effect": "bond"
+    },
+    {
+      "number": 14,
+      "title": "A spark for each",
+      "text": "Then Giggles looked over at Noir and at War,\nwho stood at the edge. \"Hee hee! There is more!\"\nShe giggled a giggle that nobody knew,\nand out floated two rainbow sparks, just for two.\n\nThey landed, as soft as a kiss, on each heart.\n\"They will glow when you're kind. That's a light for your start.\"\n\"Can we be your friends?\" War asked, quiet and slow.\n\"YES!\" Ruby laughed. \"There was always room. Now you know.\"",
+      "image": "images/14.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "giggles",
+        "noir",
+        "war",
+        "ruby"
+      ],
+      "vocab": [
+        {
+          "word": "sparks",
+          "definition": "tiny dots of bright light"
+        },
+        {
+          "word": "edge",
+          "definition": "the very outside part"
+        }
+      ],
+      "imagePrompt": "Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, golden sunset light. Giggles hovers in the air, giggling, and two small rainbow sparks have floated from her to Noir and War: a small glowing rainbow-colored heart-shaped light shines on Noir's chest and another on War's chest, over their hearts. Noir looks down at her heart-light in wonder with a soft, happy smile, not stern; War holds out one hand shyly toward Ruby with a hopeful smile, not scowling; War's black braid is comically super long, many times her height, trailing along the grass behind her. Ruby now wears her new bond dress instead of plum: a patchwork tunic dress stitched together from ten bright patches, one from each of her earlier dresses: ember red; waterfall blue with pearl-white trim; lemon yellow next to shining silver; midnight black sprinkled with tiny silver stars; spring green with pink flower petals; swirled sea-green and ocean-blue; rose pink with a red heart; shining gold; glittery silver-and-gold with tiny hourglasses; and charcoal with violet swirls; with small rainbow firework bursts sparkling across the patches, and soft golden boots. Ruby opens both arms wide to them, laughing with joy, crown and silver forehead mark visible. Exactly Giggles, Noir, War and Ruby.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 15,
+      "title": "Big enough",
+      "text": "That night, Giggles giggled her very best \"HEE!\"\nand rainbow fireworks went BOOM! One, two, three!\nBig Grizzlemop carried the big chair outside,\nand War's braid made a jump rope, a whole dragon wide!\n\nThen onto the big chair they piled, with a cheer:\ntwelve dragons, and Ruby, with War and Noir near.\n\"It was never too big,\" Ruby said with a grin.\n\"It was just big enough to fit everyone in!\"",
+      "image": "images/15.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "giggles",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry",
+        "nola-marron",
+        "black-hole",
+        "noir",
+        "war",
+        "grizzlemop"
+      ],
+      "vocab": [
+        {
+          "word": "piled",
+          "definition": "climbed on top of each other in a heap"
+        },
+        {
+          "word": "grin",
+          "definition": "a big, happy smile"
+        }
+      ],
+      "imagePrompt": "Night on the lawn outside the lavender-stone castle of Riverlight, warm golden lantern glow, and big rainbow fireworks bursting in the indigo sky. In the middle of the lawn stands the big chair: a huge, wide lavender-stone-and-gold throne with a plum cushion, much too big for one child. Piled happily all over it, each exactly once: Ruby in the middle, crown and silver forehead mark visible; War sitting beside Ruby, laughing, not scowling, a small rainbow heart-light glowing on her chest, her super long black braid hanging down off the chair across the grass; Noir perched on the arm of the chair, smiling warmly, not stern, a small rainbow heart-light glowing on her chest; Giggles on Ruby's lap, giggling up at the fireworks; exactly NINE puppy-sized baby dragons on the cushion, arms and back of the chair (red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes); the ONE two-headed baby dragon Nola and Marron (one glittery SILVER head with deep-blue eyes and one glittery GOLD head with chestnut-brown eyes on one body) on the top of the chair back; and big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean) curled at the foot of the chair. Big shaggy chestnut-brown Grizzlemop stands beside the chair, grinning. Ruby now wears her new bond dress instead of plum: a patchwork tunic dress stitched together from ten bright patches, one from each of her earlier dresses: ember red; waterfall blue with pearl-white trim; lemon yellow next to shining silver; midnight black sprinkled with tiny silver stars; spring green with pink flower petals; swirled sea-green and ocean-blue; rose pink with a red heart; shining gold; glittery silver-and-gold with tiny hourglasses; and charcoal with violet swirls; with small rainbow firework bursts sparkling across the patches, and soft golden boots. Count them: twelve dragons in all = rainbow Giggles + nine small baby dragons + the two-headed silver-and-gold dragon + big Black Hole. Little Luna (small, black with silver stars) is a separate dragon from big Black Hole, and BOTH green-and-blue sisters Shinebright and Starry are there. No other people.",
+      "effect": "starlight"
+    },
+    {
+      "number": 16,
+      "title": "One great big cuddle",
+      "text": "When the last sparkle faded, they yawned, every one.\n\"Please stay,\" Ruby said. \"We have only begun.\"\nNoir tucked a soft blanket round each sleepy head:\nthirteen heads on twelve dragons, two girls, in one bed!\n\nTwo heart-lights shone warm. And far off, through the night,\ntheir gray palace bloomed every color, all bright.\nThen, snuggled together, all cozy and deep,\nin one great big cuddle, they all fell asleep.",
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "ruby",
+        "giggles",
+        "flame",
+        "pearl",
+        "sparks",
+        "crackle",
+        "luna",
+        "leaf",
+        "shinebright",
+        "lovee",
+        "starry",
+        "nola-marron",
+        "black-hole",
+        "noir",
+        "war"
+      ],
+      "vocab": [
+        {
+          "word": "bloomed",
+          "definition": "opened up bright, like a flower"
+        },
+        {
+          "word": "cozy",
+          "definition": "warm, soft and snug"
+        }
+      ],
+      "imagePrompt": "Cozy lavender-stone bedroom at night, warm golden lantern glow. Through the big window, far away over dark hills, a small distant palace with a tall tower glows in every rainbow color. Ruby now wears her new bond dress instead of plum: a patchwork tunic dress stitched together from ten bright patches, one from each of her earlier dresses: ember red; waterfall blue with pearl-white trim; lemon yellow next to shining silver; midnight black sprinkled with tiny silver stars; spring green with pink flower petals; swirled sea-green and ocean-blue; rose pink with a red heart; shining gold; glittery silver-and-gold with tiny hourglasses; and charcoal with violet swirls; with small rainbow firework bursts sparkling across the patches, and soft golden boots. Ruby lies asleep on pillows in a big bed, happy, crown and silver forehead mark visible, rainbow hair; War sleeps beside her, peaceful and smiling, not scowling, a small rainbow heart-light glowing softly on her chest. Noir sits on the edge of the bed tucking a soft blanket around them with a gentle, loving smile, not stern, a small rainbow heart-light glowing softly on her chest. Curled all around on the bed asleep, each exactly once: rainbow Giggles snuggled under Ruby's arm; exactly NINE puppy-sized baby dragons (red Flame, white-blue Pearl, the YELLOW baby dragon with silver eyes Sparks, the SILVER baby dragon with yellow eyes Crackle, the baby BLACK dragon speckled with silver stars Luna, the slim upright baby GREEN leaf dragon Leaf with a jagged spiky leaf crest, the baby GREEN-AND-BLUE wish dragon with a glittering silver belly Shinebright with sea-green eyes, PINK-topped RED-bellied Lovee with pink wings, and Starry, who looks just like Shinebright but with glittery PINK eyes); the ONE two-headed baby dragon Nola and Marron (one glittery SILVER head with deep-blue eyes and one glittery GOLD head with chestnut-brown eyes on one body); and big Black Hole (the size of a large dog, smaller than Ruby, charcoal scales with lavender highlights and violet wings, with a gentle face: soft kind eyes and a closed-mouth smile, no grin, not mean) asleep at the foot of the bed. Count them: twelve dragons in all = rainbow Giggles + nine small baby dragons + the two-headed silver-and-gold dragon + big Black Hole. Little Luna (small, black with silver stars) is a separate dragon from big Black Hole, and BOTH green-and-blue sisters Shinebright and Starry are there. No other people.",
+      "refrain": true,
+      "effect": "starlight",
+      "theEnd": "The End — twelve dragons, thirteen heads, two new friends, and one big cuddle."
+    }
+  ],
+  "questions": [
+    "Noir and War thought they were the nice ones. Have you ever thought you were being nice, and then found out it didn't feel nice to somebody else?",
+    "Black Hole told them a hard, true thing as kindly as he could. Who tells you the truth in a kind way?",
+    "War and Noir said just what they were sorry for. What makes a sorry feel real to you?",
+    "Ruby forgave them, and the big chair turned out to be big enough for everyone. Who could you make room for?"
+  ],
+  "lookAndFind": "Giggles has a little bit of every dragon. Can you find Flame's orange frills, Lovee's red heart, and Luna's glowing tail on her?",
+  "assetVersion": "ruby9-1"
+}

@@ -145,6 +145,13 @@
           "subtitle": "Book Eight of Ruby and the Dragon Bonds",
           "ageRange": "4-8",
           "cover": "books/ruby-nola-and-marron/images/cover.webp"
+        },
+        {
+          "slug": "ruby-war-noir-and-the-spirit-dragon",
+          "title": "Ruby, War, Noir, and the Spirit Dragon",
+          "subtitle": "Book Nine of Ruby and the Dragon Bonds",
+          "ageRange": "4-8",
+          "cover": "books/ruby-war-noir-and-the-spirit-dragon/images/cover.webp"
         }
       ]
     }

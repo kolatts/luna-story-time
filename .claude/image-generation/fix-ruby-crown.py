@@ -4,7 +4,7 @@ Masked gpt-image edit with [page, reference] as inputs, then composite ONLY the 
 rectangle (feathered) back onto the original, so the rest of the page is untouched.
 Keep the box off Ruby's eyes: the model shifts faces a few px and leaves ghost eyes.
 
-Usage: uv run --with pillow python .claude/image-generation/fix-ruby-crown.py <page.png> <x0,y0,x1,y1> <slug> [--mark-only|--crown-only|--clear-noir]
+Usage: uv run --with pillow python .claude/image-generation/fix-ruby-crown.py <page.png> <x0,y0,x1,y1> <slug> [--mark-only|--crown-only|--clear-noir|--custom "<prompt>"]
 --clear-noir erases a forehead mark the model wrongly gave Noir (no reference image).
 Writes .claude/image-generation/<date>-<slug>/<slug>.png (raw edit) and <slug>-composite.png.
 """
@@ -43,6 +43,10 @@ if mode == '--clear-noir':
     prompt = ("In this storybook page, erase the small silver mark on the forehead of the black-haired woman with the tall silver "
               "crown, leaving plain smooth forehead skin that matches her face. Keep her eyes, eyebrows, hair, crown and everything "
               "else exactly unchanged, in the same soft watercolor and colored-pencil style. No text.")
+
+if mode == '--custom':  # any masked edit: fix-ruby-crown.py <png> <box> <slug> --custom "<prompt>"
+    inputs = [str(page)]
+    prompt = sys.argv[5] + ' Keep everything else exactly unchanged, in the same soft watercolor and colored-pencil style. No text.'
 
 original = Image.open(page).convert('RGBA')
 mask = Image.new('RGBA', original.size, (0, 0, 0, 255))
