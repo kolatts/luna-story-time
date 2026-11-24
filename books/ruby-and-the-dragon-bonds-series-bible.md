@@ -6,7 +6,7 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
 ## Canon
 
 - **Riverlight** is Ruby's kingdom. Ruby hatched from a pearly egg as a talking, walking girl. She
-  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six, sixteen in Book Seven, seventeen in Book Eight).
+  counts her age in days (zero in Book One, eight in Book Two, twelve in Book Three, thirteen in Book Four, fourteen in Book Five, fifteen in Book Six, sixteen in Book Seven, seventeen in Book Eight, eighteen in Book Nine).
 - **There is no king.** Ruby's papa passed away before Book One. This is backstory only and is
   **never said or shown on the page**; no book mentions the king. (Retcon, 2026-10-10: Book One
   spread 2 used to have "the king, her papa" speak; the cook speaks those lines now.)
@@ -17,6 +17,8 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
   dragon they can keep. **Black Hole** was their dragon through Book Seven: he swallows things into a
   purple-rimmed swirl and sneezes them back out when tickled. A sneeze is how he was beaten every time
   through Book Seven. In Book Eight he chose Ruby and bonded with her; Noir and War have no dragon now.
+  In Book Nine they learn they were the cruel ones, say sorry, and become Ruby's friends: each has a small
+  rainbow **heart-light** over her heart that glows when she is kind, and their palace blooms with color.
 - **The silver mark** on Ruby's forehead means she will lead Riverlight. It tingles when a dragon
   egg is ready, or nearly ready, nearby.
 - **Bonds**: a dragon chooses Ruby, presses its nose to her palm, and her dress transforms. The
@@ -57,6 +59,12 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
   - Black Hole (no longer Noir's): deep charcoal dress with a soft lavender shimmer and swirling violet
     patterns at the skirt and hem; small soft violet swirls spin in Ruby's palms. Book Eight. He chose
     Ruby freely ("I would rather hold on"); nothing enchanted him. He sleeps at the foot of her bed.
+  - Giggles (spirit, girl, talks and giggles): the LAST bond. Dress is every dress in one: a patchwork of
+    all ten earlier dresses with rainbow fireworks bursting over the patches; tiny rainbow fireworks fizz
+    in Ruby's hands. Book Nine. Nobody found her egg: the Spirit Egg was MADE when Ruby and all eleven
+    dragons held on in a ring and their magic swirled together. She is the spirit of all the bonds and
+    holds a bit of every dragon; each giggle wakes one of their powers (a fire giggle, a bubble giggle).
+    A spirit egg will not hatch near grabbing. Her special giggle gave Noir and War their heart-lights.
 - **Grizzlemop** is a great big hairy cave monster who lives in the cave under Noir and War's
   palace. He roared at Ruby because a rock had pinned his tail; she freed him anyway, and he is a
   friend now.
@@ -64,7 +72,9 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
   moonbeams into one soft glowing moon that BOINGs down and squashes the bad guys flat as pancakes
   (comic, nobody hurt). The real moon in the sky never moves. Luna stays black; she is never
   "revealed" as another color, because she is the proof that dark things can shine.
-- **The big chair** (the throne) is still too big. Ruby will grow into it when she's ready.
+- **The big chair** (the throne) was never too big: in Book Nine everyone piles on, and it is "just big
+  enough to fit everyone in."
+- **A bond is not a rope.** It cannot be pulled apart or broken from outside; it is a choosing (Book Nine).
 
 ## Books
 
@@ -134,14 +144,24 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    who he's with," then bonds with Ruby. Noir and War stomp down their stairs alone; as Ruby's bubble floats
    away, War looks up from her window and almost waves. Theme (Tao Te Ching): opposites complete each other. Eleven dragons, twelve heads.
 
+9. *Ruby, War, Noir, and the Spirit Dragon* (the finale; written by Luna and Sunny): refrain "It's never too
+   late to be kind." Eighteen-day-old Ruby and her eleven dragons hold on in a ring, and their magic makes the
+   rainbow Spirit Egg. Noir and War have always believed THEY were the nice ones ("we kept eggs in a chest,
+   under key!") and that Ruby was cruel: she took every dragon, and Black Hole too. They walk to Riverlight to
+   break the bonds, lasso the ring with War's long braid, and pull it apart. The bonds don't break, but the egg
+   shuts tight. Black Hole tells them the hard, true thing as kindly as he can: Ruby never took anyone, the
+   chest was dark, nobody asked, "It was cruel. I was, too." They see the dragons hiding from them. War: "I'm
+   sorry for being so cruel to you all." Noir: "I'm sorry for being unkind." Pearl nuzzles Noir's hand; Ruby
+   forgives them. With no one grabbing, Giggles hatches, bonds with Ruby, and gives Noir and War a rainbow
+   spark each. War asks, "Can we be your friends?" Fireworks party; everyone fits on the big chair; one big
+   cuddle with Noir tucking them in. Theme: we are each the hero of our own story; truth told with love, a
+   sorry that names the thing, and forgiveness. Twelve dragons, thirteen heads. **The series ends here.**
+
 ## Open threads
 
 - The cook's name and story.
 - Where dragon eggs come from, and how many more Ruby's mark will find.
-- What Noir and War do without a dragon. War looked back and almost waved at the end of Book Eight.
-- What Noir does next. She has now lost seven new-dragon encounters to Ruby (and every dragon in the world, for an
-  afternoon), and her castle is held up by Leaf's flowers.
-- War gasped "Black things don't shine! Or do they?" A seed of doubt, if a later book wants it.
+- (Closed in Book Nine: Noir and War's story, the big chair, and whether War ever waves.) War's braid is still long.
 - Where the shooting star came from.
 
 ## Art invariants (check every image as a SET)
@@ -199,6 +219,15 @@ Dreamed up by Luna; written by Luna, Sunny, and Mommy.
    (Book Eight spreads 6–10) only the silver head shows, and the gold half is still sealed in shell.
 15. **Black Hole after Book Eight**: same body as invariant 12, but his face is gentle (soft eyes, closed
    smile). His sheet still says "mean ... smug grin", so every prompt must override the expression.
+
+16. **Giggles**: puppy-sized; RAINBOW bands nose to tail (red head, orange neck, yellow shoulders, green
+   middle, blue hips, violet tail); pearl-white belly with ONE red heart on her chest; two orange cheek
+   frills; a collar of small green leaves; yellow-and-silver zigzag back spikes; ONE gold horn and ONE
+   silver horn; violet wings; a round glowing silver tail tip; glittery pink eyes with gold flecks. Exactly
+   one head. Reference: `books/giggles-reference.webp`.
+17. **Noir and War after Book Nine**: same clothes, but warm smiling faces and a small glowing rainbow
+   heart-shaped light on the chest. Their sheets still say "stern" and "scowling", so every prompt must
+   override the expression ("not stern", "not scowling"). War's braid is still super long.
 
 **Fixing drift:** for crown/mark drift, run a masked `--edit` with the page PNG plus the reference
 image as a second input, masked to the crown/forehead only, then composite just the masked region

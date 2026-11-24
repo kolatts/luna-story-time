@@ -1,0 +1,21 @@
+---
+model: gpt-image-2
+size: 1024x1280
+quality: medium
+source: openai-api
+generated: 2026-11-24T15:21:37
+style_file: .claude/image-generation/style.md
+outputs:
+  - ruby9-spread-12.png
+---
+
+Bright sunny daytime on a green meadow lawn just outside the lavender-stone castle of Riverlight, blue sky, buttercups and daisies, a low lavender-stone wall with an open gate in the background, soft golden late-afternoon light. In the center, a rainbow-banded eggshell bursts open in a joyful burst of small rainbow firework sparkles like flowers, pieces of rainbow shell flying, and out tumbles Giggles in mid-air, laughing with her mouth wide open, wings spread. Below her Ruby in her normal PLUM tunic dress throws her arms up in delight, crown and silver forehead mark visible. Exactly Giggles and Ruby, no other characters. Giggles appears exactly once. Giggles: female baby spirit dragon the size of a small puppy, with a little bit of every other dragon in her. Rounded body of smooth scales in clear RAINBOW bands running from nose to tail: red head, orange neck, yellow shoulders, green middle, blue hips and a violet tail. A pearl-white belly with ONE small cherry-red heart-shaped patch on her chest; two orange cheek frills; a little collar of small green leaves around her neck; a row of small zigzag spikes down her back alternating yellow and silver; two tiny horns, ONE gold and ONE silver; two small wings with violet membranes; her curled violet tail ends in a small round glowing silver tip; large sparkling glittery pink eyes with gold flecks; four little legs; a wide open-mouthed giggling smile. A soft rainbow glitter shimmer rims her outline. Exactly one head. Dragon, never a human, never a bird, never a unicorn. Tiny rainbow firework sparkles only when specified. Ruby: a small human girl with the proportions and appearance of a four-year-old child, warm brown skin, shoulder-length wavy rainbow hair with distinct red orange yellow green blue violet strands, shimmering golden eyes, a small flat silver birthmark shaped like an upright side-view dragon silhouette (head at top, curled tail at bottom) centered just above her eyebrows and about as tall as one of her eyes, never a jewel or tiara; a tiny simple gold crown with exactly three ball-tipped points and one small round ruby-red gem on the middle point, only about one third the width of her head, plum-purple tunic dress with gold trim, soft golden boots. She is magically newborn but walks and talks. Always fully human, two human arms and two human legs, no horns, no wings, no tail, no scales on skin. Her magical transformations change her dress and hand magic only; her rainbow hair, golden eyes and silver forehead mark remain.
+
+Style guidance (follow exactly):
+# Luna's Story Time — global art style
+
+Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image, no words, no letters, no captions.
+
+Palette: deep indigo night #1B1B3A (27,27,58), lavender stone #B7A7D4 (183,167,212), warm gold #E8C46A (232,196,106), rose pink #F2A9C4 (242,169,196), pearl blue-grey #D7E3F0 (215,227,240), dark plum ink #2A2140 (42,33,64).
+
+Mood: gentle, dreamy, cozy, safe for young children even in dramatic moments. Nothing gory, nothing truly frightening. Full-bleed composition with soft edges, room left for overlaid text near the edges.
