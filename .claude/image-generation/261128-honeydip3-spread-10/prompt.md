@@ -1,0 +1,23 @@
+---
+model: gpt-image-2
+size: 1024x1280
+quality: medium
+source: openai-api
+generated: 2026-11-28T11:17:28
+style_file: .claude/image-generation/style.md
+edited_from:
+  - .claude/image-generation/261128-honeydip-family-reference-v2/honeydip-family-reference-v2.png
+outputs:
+  - honeydip3-spread-10.png
+---
+
+Create a brand-new storybook illustration of the scene described below. The attached reference image is ONLY a character design guide, showing left to right the four children Hudson (tallest, green hoodie), Glyden (blue sweater, round glasses), Sun (yellow sweater, gap-toothed) and Petals (lavender dress, braid), and on the table Sparkle the white baby arctic fox, Honeydip the tiny pink elf, and Shiny the little reindeer. Match those character designs exactly, but do NOT copy the reference's room, table, composition or poses, and draw ONLY the characters the scene names. Scene: Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. All four children lean in close around a folded checked tea towel on the table, every one of them with both hands held behind their own back, listening hard, ears turned toward the towel. On the towel lies tiny Honeydip, pale GREY from hat to boots with no pink at all, still stiff like a little doll, but with her eyes open just a crack and her lips parted, whispering; a tiny curl of soft gold sparkle rises from her mouth like a breath. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people. Hudson: a ten-year-old boy, the tallest of the four children by a full head, warm brown skin, thick straight dark-brown hair falling across his forehead, dark brown eyes, a forest-green hoodie and dark jeans. Glyden: a six-year-old boy, warm brown skin, short tousled dark-brown hair, round dark-rimmed glasses, dark brown eyes, a blue knit sweater and dark trousers. Sun: a five-year-old boy, a little smaller than Glyden, warm brown skin, soft wavy dark-brown hair, dark brown eyes, a gap-toothed grin with one front tooth missing, a sunny yellow knit sweater and dark trousers. Petals: a girl who is almost four, the smallest of the four children, warm brown skin, long dark-brown hair in one side braid tied with a small lavender bow, a lavender flower clip in her hair, big dark brown eyes, a short-sleeved lavender dress. She never wears pink. Honeydip, in this picture ONLY, has lost all her color and her magic: she is a tiny girl Christmas elf about as tall as a milk carton, with pointed elf ears and two short braids, wearing a Christmas hat with a fluffy brim and pom-pom, a long-sleeved tunic dress with fluffy trim, striped stockings, curly-toed boots and gloves, but EVERYTHING about her is pale GREY, like a soft pencil drawing: grey hat, grey dress, grey stockings, grey boots, grey hair, grey face, no pink anywhere on her, no blush, no lipstick, no swirls on her gloves. She lies or sits completely stiff and still like a little cloth doll, eyes closed, peaceful, not hurt, not frightening.
+
+Style guidance (follow exactly):
+# Luna's Story Time — global art style
+
+Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image, no words, no letters, no captions.
+
+Palette: deep indigo night #1B1B3A (27,27,58), lavender stone #B7A7D4 (183,167,212), warm gold #E8C46A (232,196,106), rose pink #F2A9C4 (242,169,196), pearl blue-grey #D7E3F0 (215,227,240), dark plum ink #2A2140 (42,33,64).
+
+Mood: gentle, dreamy, cozy, safe for young children even in dramatic moments. Nothing gory, nothing truly frightening. Full-bleed composition with soft edges, room left for overlaid text near the edges.

@@ -1,0 +1,462 @@
+{
+  "series": "honeydips-christmas-mission",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "honeydip-and-the-dozen-donuts",
+  "bookNumber": 2,
+  "title": "Honeydip and the Dozen Donuts",
+  "subtitle": "Book Two of Honeydip's Christmas Mission",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "refrain": "A donut shared is twice as sweet.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#4FA3A5",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "honeydip",
+      "name": "Honeydip",
+      "sheet": "Honeydip: a tiny girl Christmas elf, only about as tall as a milk carton, small enough to sit inside a fruit bowl, with peachy skin, pointed elf ears, big warm brown eyes with long eyelashes, round rosy pink blush circles on her cheeks, pink lipstick, and honey-gold hair in two short braids tied with tiny pink bows. She wears a classic Christmas hat in PINK with a fluffy white brim and a white pom-pom; a PINK long-sleeved tunic dress with a fluffy white collar, cuffs and hem and a pink belt with a small gold buckle; pink-and-white striped stockings; pink curly-toed boots; and WHITE gloves printed with bold pink swirls (only the gloves have swirls). She is alive, lively and expressive, never a stiff doll unless the scene says so. Never a red suit, never a white pointed collar."
+    },
+    {
+      "id": "sparkle",
+      "name": "Sparkle",
+      "sheet": "Sparkle: a baby arctic fox, smaller than Honeydip, small enough to curl up in a cereal bowl, with very fluffy snow-white fur, glittery silver sparkles on her ear tips and on her big bushy tail, big ice-blue eyes, a tiny pink nose and rosy cheeks. An animal on four legs, no clothes."
+    },
+    {
+      "id": "shiny",
+      "name": "Shiny",
+      "sheet": "Shiny: a toy-sized young reindeer, a little taller than Honeydip at the antlers, with a caramel-brown coat, a fluffy cream chest, pale fawn spots on his back, small golden antlers that gleam softly, a pink collar with one round gold bell, a soft black nose (never red, never glowing), big brown eyes and a short fluffy tail. An animal on four legs."
+    },
+    {
+      "id": "hudson",
+      "name": "Hudson",
+      "sheet": "Hudson: a ten-year-old boy, the tallest of the four children by a full head, warm brown skin, thick straight dark-brown hair falling across his forehead, dark brown eyes, a forest-green hoodie and dark jeans."
+    },
+    {
+      "id": "glyden",
+      "name": "Glyden",
+      "sheet": "Glyden: a six-year-old boy, warm brown skin, short tousled dark-brown hair, round dark-rimmed glasses, dark brown eyes, a blue knit sweater and dark trousers."
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "sheet": "Sun: a five-year-old boy, a little smaller than Glyden, warm brown skin, soft wavy dark-brown hair, dark brown eyes, a gap-toothed grin with one front tooth missing, a sunny yellow knit sweater and dark trousers."
+    },
+    {
+      "id": "petals",
+      "name": "Petals",
+      "sheet": "Petals: a girl who is almost four, the smallest of the four children, warm brown skin, long dark-brown hair in one side braid tied with a small lavender bow, a lavender flower clip in her hair, big dark brown eyes, a short-sleeved lavender dress. She never wears pink."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. Generous open space across the upper third of the picture (a plain cream wall and a window with falling snow). On the table a big open pastry box with a pink ribbon, holding EXACTLY twelve donuts in two rows, six in the top row and six in the bottom row (6 + 6 = 12, no more): donuts of many kinds: white-frosted, pink-frosted with rainbow sprinkles, sugar-dusted, chocolate-topped, with one special honey-dipped donut that shines golden among them. Tiny Honeydip stands on the edge of the box presenting the donuts with a proud sweep of her swirly-gloved hand. Behind the table the four children lean in with huge hungry smiles: Hudson and little Petals both have their eyes fixed on the golden donut. Shiny the little reindeer and Sparkle the white baby fox peek over the table edge. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Five mornings",
+      "text": "For five days, every morning, they counted to ten,\nand they found her, and cheered her, and found her again:\nin a boot, in a drawer, in the snow-globe's small town,\nin the piano (which played when she tried to climb down).\n\nAnd each night, in her notebook, the GOOD side grew long.\nAnd the BAD side stayed empty. \"I can't have been wrong!\"\nsaid the elf. \"They are perfect! Job two is all done.\nSo tomorrow,\" she said, \"is for job number one.\"",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "honeydip",
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "empty",
+          "definition": "with nothing inside"
+        },
+        {
+          "word": "cheered",
+          "definition": "shouted happy sounds, like \"Hooray!\""
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room. Bright cheerful winter morning daylight. An upright piano with its top lid propped open; tiny Honeydip is climbing out of the top of the piano with one foot stepping on the keys, caught and laughing, little music notes of gold sparkle floating up. The four children stand around the piano pointing up at her and cheering, having just found her. A snow globe and a winter boot sit on the piano top. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+      "effect": "starlight"
+    },
+    {
+      "number": 2,
+      "title": "Twelve donuts",
+      "text": "She was up before sunrise. She worked through the dark,\nwith a whisk, and a spoon, and a small magic spark.\nAnd there on the table, when morning came creeping,\nsat a box, tied with ribbon, and Sparkle (still sleeping).\n\nTwelve North Pole donuts! Twelve rings in a row!\nSome frosted like rooftops in new-fallen snow,\nsome sprinkled, some sugared, some chocolate-topped,\nand one honey-dipped, golden. (At that one, hearts stopped.)",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [
+        "honeydip",
+        "sparkle",
+        "shiny"
+      ],
+      "vocab": [
+        {
+          "word": "whisk",
+          "definition": "a kitchen tool for mixing things up fast"
+        },
+        {
+          "word": "ribbon",
+          "definition": "a long, pretty strip for tying a bow"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen just before sunrise, soft blue dawn light at the window and one warm lamp. On the kitchen table sits a big open pastry box with a pink ribbon, holding a dozen donuts of many kinds: white-frosted, pink-frosted with rainbow sprinkles, sugar-dusted, chocolate-topped, in two neat rows of six, and in the middle of the box one special honey-dipped donut that shines golden. Tiny Honeydip stands proudly on the table beside the box with flour on her nose and a tiny whisk in her hand, a few gold magic sparkles around the donuts. Sparkle the white baby fox sleeps curled against the box, and Shiny the little reindeer sniffs the air with interest. No children and no people in this picture. IMPORTANT: The box holds EXACTLY twelve donuts: two rows, six donuts in the top row and six donuts in the bottom row, no third row. Count them: 6 + 6 = 12. Shiny the reindeer is small, only a little taller than the elf.",
+      "effect": "starlight"
+    },
+    {
+      "number": 3,
+      "title": "Three each",
+      "text": "\"DONUTS!\" The kitchen was all socks and cheer.\nSun held his up. \"It's got a HOLE in it! Here!\"\n\"They ALL do,\" said Honeydip. \"Sun, don't you know it?\nEvery donut has a hole in it. That's what makes it a donut.\"\n\nThen Glyden, who's six, and is quick with a sum,\ncounted twelve on his fingers (and used Petals's thumb).\n\"Twelve donuts, four kids. That is three each. No more.\"\nAnd that should have been that. But here's what's in store...",
+      "image": "images/03.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "sun",
+        "glyden",
+        "petals",
+        "hudson",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "sum",
+          "definition": "what you get when you add numbers up"
+        },
+        {
+          "word": "hole",
+          "definition": "an empty space in the middle of something"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. The four children crowd happily around a big open pastry box of donuts of many kinds: white-frosted, pink-frosted with rainbow sprinkles, sugar-dusted, chocolate-topped. Sun holds one sprinkled donut up to his face and peeks through its hole with one eye, grinning his gap-toothed grin. Glyden counts on his fingers, borrowing little Petals's thumb to finish the count, and Petals giggles. Hudson reaches eagerly toward the box. Tiny Honeydip sits on the rim of the fruit bowl, swinging her legs, pleased with herself. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people. IMPORTANT: Tiny Honeydip sits on the rim of a WOODEN fruit bowl at the far end of the table, with clear empty table all around her; no child's hand is anywhere near her. Everyone wears socks, no shoes."
+    },
+    {
+      "number": 4,
+      "title": "Biggest and littlest",
+      "text": "\"I'm the BIGGEST,\" said Hudson. \"I'm ten. So that's why\nI need more. I need five. I'm a much bigger guy.\"\n\"I'm the LITTLEST,\" said Petals. \"I've growing to do!\nSo I need the most. More than him. More than you.\"\n\nNow, you may have heard this, right where you are sitting,\nin your very own kitchen: the biggest-and-littling.\nIt has gone on for years. It has never been won.\nAnd it wasn't won then. It had only begun.",
+      "image": "images/04.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "petals",
+        "glyden",
+        "sun"
+      ],
+      "vocab": [
+        {
+          "word": "growing",
+          "definition": "getting bigger, a little every day"
+        },
+        {
+          "word": "begun",
+          "definition": "started"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. A funny face-off across the open box of donuts: tall Hudson stands on one side with his arms folded and his chin up, and tiny Petals stands on a kitchen chair on the other side with her fists on her hips and her chin up, so that she is nearly as tall as he is, both stubborn. Between them in the box, one special honey-dipped donut that shines golden sits among the other donuts. Behind them Glyden and Sun look at each other and roll their eyes. No elf, no fox, no reindeer in this picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 5,
+      "title": "Mine",
+      "text": "For they both saw the gold one. They both made a dive.\n\"That one's MINE! I am ten!\" \"It is MINE! I am... five!\"\n(She is not. She is three.) And they pulled, left and right,\nand the honey-dipped donut stretched out, long and tight.\n\n\"Stop!\" shouted Glyden. \"There's plenty!\" cried Sun.\nBut nobody listens when grabbing's begun.\nThe box tipped. The ribbon flew. Sprinkles went wide.\nAnd the elf on the fruit bowl just watched, open-eyed.",
+      "image": "images/05.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "petals",
+        "glyden",
+        "sun",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "dive",
+          "definition": "a fast jump toward something"
+        },
+        {
+          "word": "plenty",
+          "definition": "more than enough for everyone"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. A comic tug-of-war: Hudson and little Petals each grip one side of the same golden honey-dipped donut and pull, so the donut stretches long between them like taffy, both with scrunched determined faces. The pastry box is tipping over, donuts sliding, a pink ribbon and rainbow sprinkles flying through the air. Glyden holds up both hands shouting stop, and Sun points at all the other donuts. On the rim of the fruit bowl, tiny Honeydip watches with wide shocked eyes and both gloved hands on her cheeks. Comic, nobody hurt. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 6,
+      "title": "Splat",
+      "text": "Then SNAP went the donut. And up, through the air,\nwent one half, and it landed in Sun's wavy hair.\nThe other half, spinning, came down with a SPLAT,\nand a white streak of fox took good care of that.\n\nThere was glaze on the ceiling. There was glaze on a chair.\nThere was glaze on a reindeer, who simply stood there\nand sighed. And the kitchen went quiet and small.\nAnd a brother and sister both looked at the wall.",
+      "image": "images/06.webp",
+      "textPosition": "top",
+      "characters": [
+        "sun",
+        "sparkle",
+        "shiny",
+        "hudson",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "glaze",
+          "definition": "the shiny, sugary coat on a donut"
+        },
+        {
+          "word": "ceiling",
+          "definition": "the top of a room, way up over your head"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen. Bright cheerful winter morning daylight. The funny, quiet moment after a mess. Sun stands blinking with half a golden glazed donut stuck on top of his wavy hair. Sparkle the white baby fox dashes away across the floor with the other half of the donut in her mouth, a white blur. Shiny the little reindeer stands very still on the table with a big drip of shiny glaze on his back, eyes closed, sighing. Blobs of glaze drip from the ceiling lamp and a chair. Hudson and little Petals stand apart with their empty sticky hands at their sides, each staring away at a different wall, ashamed. Exactly Sun, Hudson and Petals, plus the fox and the reindeer; no Glyden and no elf in this picture. No other people. IMPORTANT: The golden donut has snapped into two C-shaped HALVES: one half-ring (a C shape, not a full ring) sits on Sun's hair, and the fox carries the other half-ring (a C shape, not a full ring) in her mouth. No whole golden donut anywhere. The fox and the reindeer are TINY toy-sized creatures: Sparkle is smaller than Hudson's shoe, and Shiny, standing on the table, is no taller than a coffee mug and a half, far smaller than little Petals's head."
+    },
+    {
+      "number": 7,
+      "title": "The pencil",
+      "text": "Now Honeydip's pencil came out, and it stopped.\nIt hovered. It wobbled. It very near dropped.\n\"I LIKE them,\" she whispered. \"I don't want to write it.\"\nBut a scoop is a scoop, and you cannot un-sight it.\n\nSo under the BAD, in that column so clean,\nshe made two small marks. They were small. They were seen.\nFor Hudson looked up, just as kids sometimes do,\nat the wrong time exactly. And Hudson saw two.",
+      "image": "images/07.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "honeydip",
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "hovered",
+          "definition": "stayed in the air without landing"
+        },
+        {
+          "word": "wobbled",
+          "definition": "shook a little from side to side"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen. Bright cheerful winter morning daylight. Close view on the rim of the fruit bowl: tiny Honeydip sits with her small pink hardback notebook (a little bound book, no spiral rings), the Scoop Book, open to two columns: a tiny gold star drawn at the top of the left column and a tiny grey rain cloud drawn at the top of the right column, with small pencil tally marks and no writing, no letters on her knees; there are many tally marks under the gold star, and she is sadly, reluctantly drawing exactly two small tally marks under the grey cloud, biting her lip, her eyebrows worried. In the background, tall Hudson has turned his head and is looking straight at the notebook, his face falling as he sees what she is marking. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Exactly Honeydip and Hudson, no other characters. IMPORTANT: Only Honeydip and Hudson are in this picture: no fox, no reindeer, nothing else sitting in the bowl. Honeydip is tiny, no taller than a banana, sitting on the rim of a WOODEN fruit bowl; Hudson's head is many times bigger than her whole body. Exactly two tally marks under the grey cloud."
+    },
+    {
+      "number": 8,
+      "title": "All mine, then",
+      "text": "Something dropped in his tummy, like a stone down a well.\nIt should have come out as \"I'm sorry.\" Oh, well.\nIt came out as \"FINE!\" and it came out as \"MINE!\"\nand he scooped up a pile of them: eight, in a line.\n\nHe stomped up the stairs with his arms piled high,\nand he sat on the top step, with nobody by.\nThree kids in the kitchen. Three donuts. One each.\nAnd a brother upstairs, who was just out of reach.",
+      "image": "images/08.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "scooped",
+          "definition": "picked up a whole lot in one go"
+        },
+        {
+          "word": "stomped",
+          "definition": "walked with loud, heavy, grumpy steps"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen with the wooden staircase. Bright cheerful winter morning daylight. Hudson stomps up the stairs with his back half turned, hugging a tall wobbly stack of donuts in both arms, his face red and scowling. Down at the kitchen table Glyden, Sun and little Petals sit and watch him go, each with exactly one donut on a small plate in front of them, looking surprised and a little sad. The pastry box on the table is nearly empty. No elf, no fox, no reindeer in this picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 9,
+      "title": "The pile",
+      "text": "Now here is a thing about eight donuts, stacked:\nthey look very fine. That's a true donut fact.\nHe bit into chocolate. He bit into pink.\nHe bit into sugar. And what do you think?\n\nThey didn't taste like anything. None of them. None.\nNot the frosted. Not the sprinkled. He had technically won.\nHe had eight of the donuts. Each one was all his.\nAnd that is how quiet a top stair is.",
+      "image": "images/09.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "stacked",
+          "definition": "piled up, one on top of another"
+        },
+        {
+          "word": "quiet",
+          "definition": "with hardly any sound at all"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the top of the wooden staircase, a dim quiet upstairs landing with a small window showing grey snowy sky. Hudson sits all alone on the top step with a big pile of donuts on his knees and beside him, one donut in his hand with a single bite taken out of it. He is not enjoying it: he chews slowly and stares at nothing, glum and lonely. The long empty staircase stretches down below him. Exactly Hudson, alone, no other characters. IMPORTANT: It is daytime: the small window shows pale grey daylight and snow, not night. Hudson sits on the very TOP step: behind him is a flat landing floor and a wall, with NO more steps going up. Beside him is a small stack of exactly eight donuts, no more."
+    },
+    {
+      "number": 10,
+      "title": "Petals goes first",
+      "text": "Down below, Petals looked at her one, on her plate:\npink frosting, and sprinkles (she counted them: eight).\nShe looked up the stairs. Then she slid off her chair,\nand she climbed, with her donut held high in the air.\n\nIt's a long way to climb when your legs are so small.\nOne step. And one more. With one hand on the wall.\n\"You look sad,\" Petals said, and she held out her treat.\n\"Have mine.\" It was licked, but still mostly complete.",
+      "image": "images/10.webp",
+      "textPosition": "top",
+      "characters": [
+        "petals",
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "frosting",
+          "definition": "the sweet, creamy topping on a treat"
+        },
+        {
+          "word": "climb",
+          "definition": "go up, step by step"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the wooden staircase seen from the side. Bright cheerful winter morning daylight. Little Petals climbs the stairs all by herself, one hand flat on the wall for balance and the other holding one pink-frosted sprinkled donut up high like a treasure, her face serious and kind. At the top of the stairs sits Hudson with his pile of donuts, looking down at her in surprise. The stairs look very big and she looks very small. Exactly Petals and Hudson, no other characters."
+    },
+    {
+      "number": 11,
+      "title": "Half",
+      "text": "Now what do you do, with a pile on your knees,\nwhen the littlest one says, \"Have mine, if you please\"?\nHudson looked at his eight. Hudson looked at her one.\nAnd his ears went all hot, and the stone came undone.\n\n\"I can't take your donut.\" He broke his in two.\n\"Here. Half is for me, and the big half's for you.\"\nAnd they sat on the top step, two halves and one whole,\nand it tasted like something. Right down to the hole.",
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "half",
+          "definition": "one of two pieces that make a whole thing"
+        },
+        {
+          "word": "whole",
+          "definition": "all of something, with no part missing"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the top of the wooden staircase, now with warm golden light coming through the small window. Hudson and little Petals sit side by side on the top step, shoulder to shoulder. Hudson has broken a chocolate donut in two and is handing the bigger half to Petals with a soft, sorry smile; Petals beams up at him, her own pink sprinkled donut safe in her lap. The pile of donuts sits forgotten beside them. Tender and warm. Exactly Hudson and Petals, no other characters. IMPORTANT: It is daytime, golden afternoon sun, not night. They sit on the very TOP step of the staircase: behind them is a flat upstairs landing and a wall, no steps going up behind them, no Christmas tree nearby; the stairs go DOWN in front of them. Hudson holds TWO separate pieces of one chocolate donut, one piece in each hand, and holds the bigger piece out to Petals.",
+      "refrain": true,
+      "effect": "bond"
+    },
+    {
+      "number": 12,
+      "title": "Round and round",
+      "text": "Then down came the pile, and oh, what a sight!\nHudson gave two to Glyden. \"No, YOU take a bite!\"\nsaid Glyden, and gave them to Sun, who said, \"Here!\"\nand gave one to Petals, and one to the deer.\n\n(Shiny wore his on an antler. He'd say\nit was not on purpose. It stayed there all day.)\nAnd Sparkle crept back, with some glaze on her chin,\nand the half she had borrowed. She nudged it back in.",
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals",
+        "shiny",
+        "sparkle",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "antler",
+          "definition": "one of the branchy horns on a reindeer's head"
+        },
+        {
+          "word": "nudged",
+          "definition": "gave a soft little push"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. A joyful, silly scene of everybody giving donuts to everybody: Hudson hands two donuts to Glyden, Glyden passes one on to Sun, and Sun holds one out to little Petals, all four laughing. On the table, Shiny the little reindeer stands proudly with a pink-frosted donut hooked over one golden antler like a hat, and Sparkle the white baby fox, glaze on her chin, nudges a half-eaten piece of golden donut back into the pastry box with her nose, looking sorry. Tiny Honeydip claps from the rim of the fruit bowl. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+      "effect": "starlight"
+    },
+    {
+      "number": 13,
+      "title": "The last one",
+      "text": "When the giving was done, Glyden counted once more.\n\"We each got LESS donut than we had before,\nand it feels like MORE donut. That sum isn't right.\"\n\"It's a North Pole sum,\" said the elf, with delight.\n\nAnd one was left over. \"You have it.\" \"No, you!\"\nFour kids, and one donut, and no one would chew.\nSo they put it beside a cold cup, on a plate,\nfor someone who'd said \"Coffee\". (That someone was late.)",
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "glyden",
+        "hudson",
+        "sun",
+        "petals",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "counted",
+          "definition": "said the numbers, one, two, three, to find how many"
+        },
+        {
+          "word": "giving",
+          "definition": "handing something of yours to someone else"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen counter. Bright cheerful winter morning daylight. The four children stand on tiptoe in a row at the kitchen counter and, all together, carefully set down a small plate holding one last white-frosted donut next to a mug of coffee that has gone cold, as a present for a grown-up who is not there. Glyden scratches his head, puzzling over his sums; Hudson steadies the plate; Sun and Petals grin. Tiny Honeydip stands on the counter beside the mug, hands clasped, charmed. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people. IMPORTANT: Tiny Honeydip stands on the counter on the FAR side of the coffee mug, behind it, away from the children, with clear empty counter between her and every child's hand. Her braids hang on her own shoulders and touch no one.",
+      "refrain": true
+    },
+    {
+      "number": 14,
+      "title": "A scoop is a scoop",
+      "text": "That night, the elf wrote, and she wrote, and she wrote.\nThe GOOD side ran down to the foot of the note:\none mark for each half, and each \"Here!\" and \"No, you!\"\nShe ran out of room, so she drew them small, too.\n\nThen she looked at the BAD side. Two marks. There they sat.\nHer pencil had an eraser. She looked hard at that.\nBut Santa said columns. And Santa said true.\nSo she left them. It wasn't what she'd wished to do.",
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "eraser",
+          "definition": "the soft end of a pencil that rubs marks away"
+        },
+        {
+          "word": "columns",
+          "definition": "rows that go up and down, side by side"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows. Cozy evening, warm golden lamplight and glowing tree lights, dark blue snowy night at the window. On a wooden windowsill, snow falling outside the dark window. Tiny Honeydip sits cross-legged with her small pink hardback notebook (a little bound book, no spiral rings), the Scoop Book, open to two columns: a tiny gold star drawn at the top of the left column and a tiny grey rain cloud drawn at the top of the right column, with small pencil tally marks and no writing, no letters open in front of her: the column under the gold star is crowded full of tally marks from top to bottom, and the column under the grey cloud has exactly two small tally marks. She holds her pencil upside down, with its pink eraser end hovering just above those two marks, looking at them with a torn, wistful face. Exactly Honeydip, alone. No children and no people in this picture. IMPORTANT: Under the grey cloud there are EXACTLY two tally marks, two short pencil strokes, no more. She holds the pencil upside down with its pink eraser tip pointing DOWN, hovering just above those two marks; the pencil's sharp point is up in the air."
+    },
+    {
+      "number": 15,
+      "title": "Over their heads",
+      "text": "Downstairs, by the tree, in the last of the light,\nfour kids told the glaze-on-the-ceiling tale right\nfrom the start, and they laughed till they fell in a heap.\n(There is still glaze up there. It is there now, to keep.)\n\nBut Hudson, mid-laugh, with a smile on his face,\nlooked over their heads, to a high, quiet place,\nwhere a small pink notebook lay shut, on a sill.\nTwo marks. He could see them. He's seeing them still.",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "heap",
+          "definition": "a big, messy pile"
+        },
+        {
+          "word": "sill",
+          "definition": "the little ledge at the bottom of a window"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room by the Christmas tree. Cozy evening, warm golden lamplight and glowing tree lights, dark blue snowy night at the window. Glyden, Sun and little Petals roll on the rug in a laughing heap, Sun pointing up at the ceiling. Hudson sits with them, still smiling, but his eyes have drifted up and away over their heads toward a high windowsill in the background, where a small closed pink notebook lies with a tiny pencil beside it. His smile is fading into worry. No elf, no fox, no reindeer in this picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people. IMPORTANT: The closed pink notebook lies on a high windowsill in the upper RIGHT corner of the picture. Hudson sits at the left of the heap with his head turned to the right and his eyes looking up at the notebook, directly at it. Every shoe and foot clearly belongs to one of the four children."
+    },
+    {
+      "number": 16,
+      "title": "Nineteen sleeps",
+      "text": "\"Nineteen sleeps,\" said the elf, on the sill, in the gloom.\n\"That went well!\" Shiny looked at the glaze on the room.\nAnd Sparkle, still sticky, said nothing at all.\nAnd one boy lay awake, with his face to the wall.\n\nBut the box was all empty. And every last bite\nhad been given by somebody else. So tonight,\nif there's someone beside you, and something to eat:",
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "honeydip",
+        "shiny",
+        "sparkle"
+      ],
+      "vocab": [
+        {
+          "word": "sticky",
+          "definition": "gooey, so that things cling to you"
+        },
+        {
+          "word": "awake",
+          "definition": "not asleep"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the children's bedroom at night, soft moonlight and one small night-light, snow at the window. In the nearest bed Hudson lies awake under his quilt in forest-green pajamas, on his side, facing the wall, his eyes wide open and worried. On the windowsill behind him sit the three tiny friends: Honeydip chatting cheerfully with her arms spread, Shiny the little reindeer looking at her with a doubtful face, and Sparkle the white baby fox licking glaze off her own paw. An empty pastry box with a pink ribbon sits on the floor. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. Exactly one child, Hudson; no other children, no other people.",
+      "refrain": true,
+      "effect": "starlight",
+      "theEnd": "The End — for today. Nineteen sleeps to go."
+    }
+  ],
+  "questions": [
+    "Hudson said the biggest should get the most, and Petals said the littlest should. What do you think is fair?",
+    "Hudson had the biggest pile, and it didn't taste like anything. Why do you think that was?",
+    "Petals gave her only donut away first. Who goes first at being kind in your house?",
+    "Honeydip could have rubbed out the two marks, and she didn't. Grown-ups, would you have?"
+  ],
+  "lookAndFind": "Glaze went everywhere! Can you find it on the ceiling, on a chair, and on a reindeer? And where did the last donut end up?",
+  "assetVersion": "honeydip2-1"
+}

@@ -1,0 +1,469 @@
+{
+  "series": "honeydips-christmas-mission",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "honeydip-and-the-trouble-in-the-trash",
+  "bookNumber": 3,
+  "title": "Honeydip and the Trouble in the Trash",
+  "subtitle": "Book Three of Honeydip's Christmas Mission",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "refrain": "Kindness brings the color back.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#4FA3A5",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "honeydip",
+      "name": "Honeydip",
+      "sheet": "Honeydip: a tiny girl Christmas elf, only about as tall as a milk carton, small enough to sit inside a fruit bowl, with peachy skin, pointed elf ears, big warm brown eyes with long eyelashes, round rosy pink blush circles on her cheeks, pink lipstick, and honey-gold hair in two short braids tied with tiny pink bows. She wears a classic Christmas hat in PINK with a fluffy white brim and a white pom-pom; a PINK long-sleeved tunic dress with a fluffy white collar, cuffs and hem and a pink belt with a small gold buckle; pink-and-white striped stockings; pink curly-toed boots; and WHITE gloves printed with bold pink swirls (only the gloves have swirls). She is alive, lively and expressive, never a stiff doll unless the scene says so. Never a red suit, never a white pointed collar."
+    },
+    {
+      "id": "sparkle",
+      "name": "Sparkle",
+      "sheet": "Sparkle: a baby arctic fox, smaller than Honeydip, small enough to curl up in a cereal bowl, with very fluffy snow-white fur, glittery silver sparkles on her ear tips and on her big bushy tail, big ice-blue eyes, a tiny pink nose and rosy cheeks. An animal on four legs, no clothes."
+    },
+    {
+      "id": "shiny",
+      "name": "Shiny",
+      "sheet": "Shiny: a toy-sized young reindeer, a little taller than Honeydip at the antlers, with a caramel-brown coat, a fluffy cream chest, pale fawn spots on his back, small golden antlers that gleam softly, a pink collar with one round gold bell, a soft black nose (never red, never glowing), big brown eyes and a short fluffy tail. An animal on four legs."
+    },
+    {
+      "id": "hudson",
+      "name": "Hudson",
+      "sheet": "Hudson: a ten-year-old boy, the tallest of the four children by a full head, warm brown skin, thick straight dark-brown hair falling across his forehead, dark brown eyes, a forest-green hoodie and dark jeans."
+    },
+    {
+      "id": "glyden",
+      "name": "Glyden",
+      "sheet": "Glyden: a six-year-old boy, warm brown skin, short tousled dark-brown hair, round dark-rimmed glasses, dark brown eyes, a blue knit sweater and dark trousers."
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "sheet": "Sun: a five-year-old boy, a little smaller than Glyden, warm brown skin, soft wavy dark-brown hair, dark brown eyes, a gap-toothed grin with one front tooth missing, a sunny yellow knit sweater and dark trousers."
+    },
+    {
+      "id": "petals",
+      "name": "Petals",
+      "sheet": "Petals: a girl who is almost four, the smallest of the four children, warm brown skin, long dark-brown hair in one side braid tied with a small lavender bow, a lavender flower clip in her hair, big dark brown eyes, a short-sleeved lavender dress. She never wears pink."
+    },
+    {
+      "id": "mr-bell",
+      "name": "Mr. Bell",
+      "sheet": "Mr. Bell: a gentle old man, the next-door neighbor, warm brown skin, a round kind face, a short white beard, thin soft white hair combed across the top of his head (not bald) and grey-white eyebrows, small gold-rimmed glasses, a mustard-yellow cardigan over a checked shirt, brown trousers and slippers. Slow and kind, a little lonely, a soft shy smile."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen. Bright cheerful winter morning daylight. Generous open space across the upper third of the picture (a plain cream wall and a window with falling snow). In the lower middle stands a clean white kitchen trash can with its lid propped open, and peeking up over its rim with a cheeky grin and a banana peel on top of her pink hat is tiny Honeydip, fully pink, waving one white swirly-gloved hand. Sparkle the white baby fox sniffs at the can and Shiny the little reindeer rings his gold bell beside it. Around the can the four children crouch and stare in surprise, hands on their knees: Hudson looks sheepish, and Sun holds a soup ladle. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Halfway there",
+      "text": "By the middle of December, the snow was knee-deep,\nand the tree had more glitter, and Sun lost more sleep,\nand the game was still on: in the oven mitt! There!\nIn the mailbox! The bread box! The big comfy chair!\n\nBut Hudson looked slower. And Hudson looked less.\nHe would say, \"You go on,\" and you'd never quite guess\nhe was looking, instead, with a frown, at a book.\nTwo marks, under BAD. He just couldn't not look.",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "glyden",
+        "sun",
+        "petals",
+        "honeydip",
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "glitter",
+          "definition": "tiny shiny specks that sparkle"
+        },
+        {
+          "word": "frown",
+          "definition": "a worried or grumpy look, with your eyebrows down"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen. Bright cheerful winter morning daylight, deep snow outside the window. In the foreground Glyden, Sun and little Petals cheer and point at a quilted oven mitt hanging on a hook, where tiny Honeydip pops out of the mitt laughing, found. In the background, apart from the others, Hudson leans against the doorframe with his hands in his hoodie pocket, not joining in, frowning toward a windowsill where a small closed pink notebook lies. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 2,
+      "title": "A stone in a well",
+      "text": "Now a worry's a thing that can grow in the night.\nIt went: \"I was bad. And she wrote it. That's right.\nSo I'm on the BAD list. So there'll be no sled.\"\n(A red one. The fast kind. He'd asked for it. Red.)\n\n\"So who needs a sled? And who needs a tree?\nAnd elf games are baby games. Too small for me.\"\nAnd then, to his cereal, quiet and small:\n\"I don't even like Christmas anymore. At all.\"",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "sled",
+          "definition": "a board with runners for sliding over snow"
+        },
+        {
+          "word": "cereal",
+          "definition": "crunchy breakfast food you eat in a bowl with milk"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen table. Grey, dim winter morning light. Hudson sits alone at the table, slumped, chin on one fist, stirring a bowl of cereal with a spoon and glaring gloomily into it. Above his head floats a soft dreamy thought bubble showing a shiny red wooden sled with a ribbon on it, fading and breaking apart at the edges. Behind him the Christmas tree twinkles, ignored. Exactly Hudson, alone, no other characters."
+    },
+    {
+      "number": 3,
+      "title": "Everybody asleep",
+      "text": "That night, the whole house was as still as a stone.\nThree kids were asleep. Hudson lay there, alone\nwith his thoughts, which were loud. And the fox and the deer\nwere asleep in a slipper, with no one to hear.\n\nSo nobody saw him creep down, stair by stair,\nto the kitchen. A night-light. And look who was there:\non the counter, with pencil and notebook and all,\nsat the elf, writing something. So pink. And so small.",
+      "image": "images/03.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "creep",
+          "definition": "walk very slowly and quietly"
+        },
+        {
+          "word": "counter",
+          "definition": "the long flat top in a kitchen where food is made"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen at night, dark blue shadows, one small warm night-light glowing on the counter and moonlight on the snow outside the window. On the kitchen counter, in the pool of warm light, tiny Honeydip sits happily writing in her small pink notebook with a pencil, humming, her back half turned, bright pink and unaware. In the dark doorway at the bottom of the stairs stands Hudson in forest-green pajamas, watching her with an angry, hurt frown and clenched fists. A clear distance between them. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Exactly Hudson and Honeydip, no other characters."
+    },
+    {
+      "number": 4,
+      "title": "The grab",
+      "text": "\"You're writing MORE bad things!\" He didn't think twice.\nHe didn't think once. And it wasn't nice.\nHe snatched her right up in his bare, angry hand,\nto throw her away. That was all that he planned.\n\nBut the moment he touched her, before she could speak,\nthe pink left her hat. Then the pink left her cheek.\nThe pink left her dress, and her boots, and was gone.\nAnd she lay, like a small, quiet doll, grey as dawn.",
+      "image": "images/04.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "snatched",
+          "definition": "grabbed something very fast"
+        },
+        {
+          "word": "doll",
+          "definition": "a toy that looks like a little person"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen at night, one small warm night-light. Hudson, in forest-green pajamas, stands holding out his open palm and staring down at it in sudden shock, his mouth open, his anger gone. Lying flat on his open palm is tiny Honeydip, who has just turned grey: Honeydip is completely pale GREY from hat to boots, with no pink at all, stiff and still like a little doll with her eyes closed (peaceful, not hurt). Rising off her into the dark air is a drifting cloud of pink sparkle dust, her color floating away. Her small pink notebook and pencil lie dropped on the counter. Quiet and sad, not violent, not scary. Exactly Hudson and Honeydip, no other characters."
+    },
+    {
+      "number": 5,
+      "title": "The lid",
+      "text": "Now Hudson stood frozen. His heart gave a jump.\nAnd the anger went out of him, all in one lump.\n\"I didn't... I only... wake UP!\" But she lay\njust as still as before. And as grey. And as grey.\n\nThere was nobody watching. There was no one to tell.\nThere's a place for a thing that has not gone too well.\nThe trash can. The lid. And he shut it up tight,\nand he ran up the stairs, and he lay there all night.",
+      "image": "images/05.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "frozen",
+          "definition": "so surprised or scared that you cannot move"
+        },
+        {
+          "word": "lid",
+          "definition": "the top that closes a box or a can"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen at night, one small warm night-light, long blue shadows. Hudson, in forest-green pajamas, crouches beside a clean white kitchen trash can with a step pedal and gently lowers its lid with both hands, looking back over his shoulder with wide, frightened, guilty eyes. The elf is NOT visible (she is inside the can). The small pink notebook and pencil lie on the counter above. An orange peel on the floor. Exactly Hudson, alone, no other characters, no elf visible."
+    },
+    {
+      "number": 6,
+      "title": "Nobody hiding",
+      "text": "\"...eight, nine, TEN!\" In the morning, three kids opened eyes.\n\"Ready or not!\" And they looked, high and wise,\ntogether, the way that they'd learned how to do:\nin the teapot, the flour, the left winter shoe.\n\nNo hat. And no pom-pom. No giggle. No clue.\n\"She's GOOD today,\" Glyden said. \"Too good,\" Sun said, too.\nAnd Hudson sat stirring his cereal round.\n\"I'm too big for that game,\" he said, eyes on the ground.",
+      "image": "images/06.webp",
+      "textPosition": "top",
+      "characters": [
+        "glyden",
+        "sun",
+        "petals",
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "clue",
+          "definition": "a little hint that helps you find something"
+        },
+        {
+          "word": "stirring",
+          "definition": "mixing round and round with a spoon"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen. Bright cheerful winter morning daylight. Glyden, Sun and little Petals search together as a team: Glyden holds up the lid of a round blue teapot and peers inside, Sun shakes out a winter boot, and Petals looks under a tea towel, all three puzzled. At the kitchen table behind them Hudson sits hunched over a bowl of cereal, stirring it and staring down, not looking at anyone, guilty. In the corner of the kitchen stands a clean white trash can with its lid shut. No elf, no fox, no reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 7,
+      "title": "A sniff and a bell",
+      "text": "Then Sparkle woke up, and her nose gave a twitch.\nShe sniffed at the floor. She sniffed at a switch.\nShe sniffed to the trash can. She sat. And she cried,\na thin little fox cry. And Shiny, beside,\n\nrang his bell at the lid. Rang it loud. Rang it long.\n\"The TRASH?\" Glyden said. \"But that's wrong. That's all wrong.\"\nHe lifted the lid. And beneath an old peel\nlay the elf, grey all over, from hat-tip to heel.",
+      "image": "images/07.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "sparkle",
+        "shiny",
+        "glyden",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "twitch",
+          "definition": "a tiny, quick wiggle"
+        },
+        {
+          "word": "sniffed",
+          "definition": "smelled with quick little breaths"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen. Bright cheerful winter morning daylight. Glyden holds open the lid of a clean white kitchen trash can and looks down into it with a shocked face. Inside, resting on clean crumpled paper beside one orange peel, lies tiny Honeydip: Honeydip is completely pale GREY from hat to boots, with no pink at all, stiff and still like a little doll with her eyes closed (peaceful, not hurt). Her face is calm, with a small gentle closed-mouth smile, no tears and no marks under her eyes, like a sleeping doll. On the floor in front of the can, Sparkle the white baby fox sits with her ears down, whimpering (no big tears), and Shiny the little reindeer, who is small, only as tall as the trash can's foot pedal is from the floor to Glyden's knee, stands with his head lifted, ringing his gold bell. Gentle and sad, not dirty, not scary. Exactly one child, Glyden, plus the fox, the reindeer and the grey elf. No other people."
+    },
+    {
+      "number": 8,
+      "title": "Mitts and a ladle",
+      "text": "\"Don't touch her!\" said Glyden. \"Remember the rule!\"\nSo Sun got the soup ladle. Sun's nobody's fool.\nAnd Glyden wore oven mitts, one on each fist,\nand Petals brought a tea towel. (Nothing was missed.)\n\nThey scooped her, they lifted, they laid her down flat\non the towel, on the table. And that, friends, was that.\nNo pink. And no wave. And no twirl. Not a peep.\nAnd Petals's hands, behind Petals, squeezed deep.",
+      "image": "images/08.webp",
+      "textPosition": "top",
+      "characters": [
+        "sun",
+        "glyden",
+        "petals",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "ladle",
+          "definition": "a big deep spoon for scooping soup"
+        },
+        {
+          "word": "towel",
+          "definition": "a soft cloth for drying things"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. A careful, serious little rescue: Sun holds a big silver soup ladle in both hands and gently lowers tiny Honeydip, who lies in the bowl of the ladle, onto a clean folded checked tea towel on the table; Honeydip is completely pale GREY from hat to boots, with no pink at all, stiff and still like a little doll with her eyes closed (peaceful, not hurt). Glyden, wearing a big quilted oven mitt on each hand, steadies the edge of the towel. Little Petals stands close with both of her hands squeezed tight behind her own back, looking at the elf with huge worried eyes. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture: only the ladle, the mitts and the towel touch her. Exactly three children: Sun, Glyden and Petals. No Hudson, no other people."
+    },
+    {
+      "number": 9,
+      "title": "It was me",
+      "text": "There are sentences heavy as stones in a sack.\nThere are some you can't say, and then can't take back\nthe not-saying. Hudson stood up from his chair.\n\"It was me.\" And the words hung right there, in the air.\n\n\"I grabbed her. I touched her. I shut her in there.\nAnd I let you all look for her. Everywhere.\"\nHis brothers just stared. And nobody yelled.\nAnd Petals said, \"Oh.\" And took his hand, and held.",
+      "image": "images/09.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "petals",
+        "glyden",
+        "sun",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "sentences",
+          "definition": "groups of words that say a whole thought"
+        },
+        {
+          "word": "stared",
+          "definition": "looked for a long time without looking away"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. Hudson stands with his head bowed and his shoulders down, telling the truth, eyes shut tight, one fist at his side. Little Petals stands beside him holding his HAND, his open hand clasped in both of her small hands, hand in hand (not his arm), looking up at him kindly. Glyden and Sun stare at him from across the table, surprised and quiet, not angry. On the table between them, on a folded checked tea towel, lies tiny Honeydip with her arms straight at her sides (hands NOT folded on her chest), with a small gentle closed-mouth smile: Honeydip is completely pale GREY from hat to boots, with no pink at all, stiff and still like a little doll with her eyes closed (peaceful, not hurt). Beside the towel sit Sparkle the white baby fox and Shiny the little reindeer, both small, keeping watch. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 10,
+      "title": "A whisper",
+      "text": "Then a sound, like a mouse in a mitten, came through.\nThe elf's mouth was moving! One whisper. Then two.\nThey all leaned in close (hands behind them, of course).\n\"Kind... ness...\" she breathed, in a voice small and hoarse.\n\n\"For you?\" Glyden asked. \"No.\" \"For Santa?\" \"No. No.\"\n\"Then who?\" But her whisper was all out of go.\n\"Out... side,\" was the last of it. One tiny grin.\n\"Somebody outside,\" said Sun. \"Where to begin?\"",
+      "image": "images/10.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "whisper",
+          "definition": "a very soft, quiet way of talking"
+        },
+        {
+          "word": "hoarse",
+          "definition": "scratchy and rough, like a sore throat"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at the kitchen table. Bright cheerful winter morning daylight. All four children lean in close around a folded checked tea towel on the table, every one of them with both hands held behind their own back, listening hard, ears turned toward the towel. On the towel lies tiny Honeydip, pale GREY from hat to boots with no pink at all, still lying stiff like a little doll with her arms at her sides, but her eyes are HALF OPEN, sleepy and soft, looking up at the children, and her mouth is open in a small round 'o', whispering; a tiny curl of soft gold sparkle rises from her mouth like a breath. Beside the towel sit Sparkle the white baby fox and Shiny the little reindeer, both small, ears pricked. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 11,
+      "title": "Two chairs",
+      "text": "And Hudson, who'd looked at one book for a week,\nlooked out of the window. And started to speak.\n\"There's Mr. Bell, next door, with two window chairs.\nAnd he sits in his own. And there's no one in theirs.\"\n\nSo they packed up four donuts, store-bought, on a plate,\nand with mitts tucked the elf in a basket. \"Sit straight,\"\nsaid Petals, to her. And then out the four go,\nwith a fox and a reindeer, through knee-deep new snow.",
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals",
+        "sparkle",
+        "shiny",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "basket",
+          "definition": "a carrier woven out of thin sticks, with a handle"
+        },
+        {
+          "word": "tucked",
+          "definition": "put somewhere snug and safe"
+        }
+      ],
+      "imagePrompt": "Bright snowy winter day outdoors, deep fresh snow, blue sky. The four children walk in a line through knee-deep snow across a front yard toward the small neat house next door, which has a snowy porch and a big front window. The children wear winter coats and woolly hats in their own colors over their usual clothes: Hudson forest green, Glyden blue (with his round glasses), Sun sunny yellow, Petals lavender. Hudson leads, carrying a plate of four donuts covered with a cloth; Glyden carries a small wicker basket lined with a red knitted mitten by its handle, and tucked inside the basket, only her grey hat and grey face showing, sits tiny Honeydip, pale GREY with no pink at all, still as a doll. Sun and little Petals follow, Petals lifting her knees high. Sparkle the white baby fox bounds through the snow beside them and Shiny the little reindeer trots ahead. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 12,
+      "title": "Mr. Bell",
+      "text": "Knock, knock. And a shuffle. A click. And a face\nwith a white beard, and eyebrows all over the place.\n\"Well,\" said Mr. Bell. \"Well, well. Four at my door.\"\n\"We brought donuts,\" said Hudson. And looked at the floor.\n\nInside, on a hook, hung one coat. Only one.\nTwo cups by the sink. And a kettle. The sun\ncame in thin through the curtains. \"Come in, then,\" he said.\n\"I'd only have talked to the radio instead.\"",
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "mr-bell",
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "shuffle",
+          "definition": "a slow, sliding kind of walk"
+        },
+        {
+          "word": "kettle",
+          "definition": "a pot with a spout for boiling water for tea"
+        }
+      ],
+      "imagePrompt": "The open front door of a small neat house, seen from inside its hallway, snowy bright daylight outside. Mr. Bell stands holding the door open, surprised and slowly starting to smile, his glasses pushed up on top of his head and his white eyebrows bushy. On the snowy doorstep stand the four children. The children wear winter coats and woolly hats in their own colors over their usual clothes: Hudson forest green, Glyden blue (with his round glasses), Sun sunny yellow, Petals lavender. Hudson holds out a plate of four donuts and looks shyly at the floor; Glyden holds a small wicker basket lined with a red knitted mitten (the elf is tucked down inside and not visible). In the hallway beside the door there is a row of coat hooks with exactly ONE coat hanging on it and all the other hooks empty. Exactly five people: Mr. Bell and the four children (tall Hudson, Glyden with round glasses, Sun, little Petals), each exactly once. No fox, no reindeer visible."
+    },
+    {
+      "number": 13,
+      "title": "The other chair",
+      "text": "So Hudson dug out the whole walk with a spade.\nAnd Glyden found glasses that someone mislaid.\n(On his head. Mr. Bell's. It is always the head.)\nAnd Sun fixed the lights that had tangled instead.\n\nAnd Petals climbed into the second big chair,\nand listened. A long while since someone sat there.\nAnd down in the basket, where nobody spied,\na pom-pom turned pink. Just the tip. Just one side.",
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "mr-bell",
+        "petals",
+        "glyden",
+        "sun",
+        "hudson",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "spade",
+          "definition": "a tool for digging, like a small shovel"
+        },
+        {
+          "word": "tangled",
+          "definition": "twisted up in a messy knot"
+        }
+      ],
+      "imagePrompt": "Inside Mr. Bell's small, tidy, old-fashioned living room next door: faded wallpaper, a radio on a side table, thin winter sunlight through lace curtains, and TWO matching armchairs side by side at the window. Mr. Bell sits in one armchair, telling a story with his hands, laughing, his glasses back on his nose; little Petals sits in the other armchair, far too big for her, her feet sticking straight out, listening with her whole face. Glyden stands beside Mr. Bell, proud. On the rug, Sun untangles a long string of colored Christmas lights. Through the big window behind them, outside in the snow, Hudson in his green winter coat shovels the front path with a spade. In the bottom corner of the picture, on a side table, sits a small wicker basket lined with a red knitted mitten; the elf is tucked down inside it so that ONLY the pointed top of her hat sticks up over the basket rim (her face and body are hidden inside). The hat is pale grey, but the round fluffy pom-pom at its tip is bright hot PINK, the only pink thing in the basket, with one tiny pink sparkle beside it. Exactly five people: Mr. Bell and the four children, each exactly once. No fox, no reindeer visible. IMPORTANT: Mr. Bell has thin soft white hair across the top of his head (he is NOT bald) and grey-white eyebrows, with his gold-rimmed glasses on his nose.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 14,
+      "title": "Back comes the pink",
+      "text": "Not one of them thought about pink. Not a bit.\nSun thought about lights, and which bulb wasn't lit.\nAnd Hudson thought only of snow, and his toes.\nBut down in the basket, the pink slowly rose.\n\nThe shoveling pinked up the whole of her hat.\nThe lights did her cheeks. Then the glasses, at that,\ndid one glove: the swirls curled back in, like the frost.\nThen she yawned, as if nothing had ever been lost.",
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "honeydip",
+        "sparkle",
+        "shiny"
+      ],
+      "vocab": [
+        {
+          "word": "bulb",
+          "definition": "the little glass part of a light that glows"
+        },
+        {
+          "word": "frost",
+          "definition": "the thin, sparkly ice on a cold morning"
+        }
+      ],
+      "imagePrompt": "Close view of a small wicker basket lined with a red knitted mitten sitting on a side table in a warm old-fashioned living room with faded flowered wallpaper (no stone walls), blinking colored Christmas lights reflected softly behind it. Tiny Honeydip sits up inside the basket, halfway back to herself: her hat is PINK again with its white brim and pom-pom, her cheeks have their round rosy blush again, and one glove shows bold pink swirls, but her dress, her stockings, her boots and her other glove are still pale grey, and ALL of her hair, fringe and both braids, is still pale GREY (not blonde, not gold). Her eyes are open, sleepy and surprised, and she is yawning and stretching her arms, pink sparkle dust swirling back into her. Sparkle the white baby fox and Shiny the little reindeer peer over the basket rim at her, overjoyed. No children and no people in this picture.",
+      "refrain": true,
+      "effect": "starlight"
+    },
+    {
+      "number": 15,
+      "title": "The sorry",
+      "text": "At home, in the dusk, Hudson knelt by the chair\nwhere the basket was sitting. She still had, right there,\non her dress, one grey patch, like the last bit of night.\n\"I'm sorry I grabbed you. That wasn't all right.\n\nI'm sorry I threw you away, and I hid.\nI'm sorry.\" And that was the last thing he did\nbefore the grey went. She sat up. She was PINK.\n\"Accepted,\" said Honeydip. \"Now. Let me think...\"",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "honeydip",
+        "petals",
+        "glyden",
+        "sun"
+      ],
+      "vocab": [
+        {
+          "word": "dusk",
+          "definition": "the end of the day, when the sky gets dim"
+        },
+        {
+          "word": "knelt",
+          "definition": "got down on your knees"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room. Cozy evening, warm golden lamplight and glowing tree lights, dark blue snowy night at the window. Hudson kneels on the rug in front of a wooden chair, his hands flat on his own knees, his face honest and sorry. Standing up in a small wicker basket lined with a red knitted mitten on the seat of the chair is tiny Honeydip, fully PINK again from hat to boots with her white swirly gloves, bright and alive, a burst of pink and gold sparkles around her, smiling warmly down at him with one hand on her heart. Behind Hudson, Glyden, Sun and little Petals watch with happy, relieved faces, Petals clapping. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+      "effect": "bond"
+    },
+    {
+      "number": 16,
+      "title": "Eleven sleeps",
+      "text": "\"...the trash can is TAKEN. I've hidden there now.\nDon't look there again.\" And she gave a small bow,\nand was gone, in a blink, to a new hiding spot.\nAnd four kids, together, yelled, \"Ready or not!\"\n\nThat night, in her notebook, she counted, and frowned.\nBoth sides were the same, from the top to the ground.\nAnd nobody mentioned it. She shut the book tight.\n\"Eleven more sleeps,\" said the elf. \"Well. Good night.\"",
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "honeydip",
+        "shiny",
+        "sparkle"
+      ],
+      "vocab": [
+        {
+          "word": "bow",
+          "definition": "bending forward to say thank you"
+        },
+        {
+          "word": "frowned",
+          "definition": "made a worried face, with your eyebrows down"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows. Cozy evening, warm golden lamplight and glowing tree lights, dark blue snowy night at the window. On a wooden windowsill, snow falling outside the dark window, a string of fairy lights. Tiny Honeydip, fully pink again, sits holding her small pink hardback notebook (a little bound book, no spiral rings), the Scoop Book, open to two columns: a tiny gold star drawn at the top of the left column and a tiny grey rain cloud drawn at the top of the right column, with small pencil tally marks and no writing, no letters: now BOTH columns are equally full of tally marks from top to bottom, exactly the same length. She looks from one column to the other with a puzzled, thoughtful frown, tapping her pencil on her chin. Beside her Shiny the little reindeer dozes and Sparkle the white baby fox sleeps curled against her. No children and no people in this picture.",
+      "refrain": true,
+      "effect": "starlight",
+      "theEnd": "The End — for today. Eleven sleeps to go."
+    }
+  ],
+  "questions": [
+    "Hudson thought he was already on the bad list, so he stopped trying. Have you ever felt like that?",
+    "When Hudson said, \"It was me,\" nobody yelled, and Petals held his hand. What helps you tell the truth?",
+    "Honeydip's color came back when the kids helped Mr. Bell. Who near you might like a visit?",
+    "Hudson's sorry said exactly what he was sorry for. Grown-ups, when did someone last say sorry to you like that?"
+  ],
+  "lookAndFind": "At Mr. Bell's house, can you find the one coat on its hook and the two chairs at the window? And watch Honeydip's pom-pom: when does it turn pink?",
+  "assetVersion": "honeydip3-1"
+}

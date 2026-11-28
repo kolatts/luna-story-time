@@ -1,0 +1,23 @@
+---
+model: gpt-image-2
+size: 1024x1280
+quality: medium
+source: openai-api
+generated: 2026-11-28T11:36:09
+style_file: .claude/image-generation/style.md
+edited_from:
+  - .claude/image-generation/261128-honeydip-family-reference-v2/honeydip-family-reference-v2.png
+outputs:
+  - honeydip2-spread-14-v2.png
+---
+
+Create a brand-new storybook illustration of the scene described below. The attached reference image is ONLY a character design guide, showing left to right the four children Hudson (tallest, green hoodie), Glyden (blue sweater, round glasses), Sun (yellow sweater, gap-toothed) and Petals (lavender dress, braid), and on the table Sparkle the white baby arctic fox, Honeydip the tiny pink elf, and Shiny the little reindeer. Match those character designs exactly, but do NOT copy the reference's room, table, composition or poses, and draw ONLY the characters the scene names. Scene: Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows. Cozy evening, warm golden lamplight and glowing tree lights, dark blue snowy night at the window. On a wooden windowsill, snow falling outside the dark window. Tiny Honeydip sits cross-legged with her small pink hardback notebook (a little bound book, no spiral rings), the Scoop Book, open to two columns: a tiny gold star drawn at the top of the left column and a tiny grey rain cloud drawn at the top of the right column, with small pencil tally marks and no writing, no letters open in front of her: the column under the gold star is crowded full of tally marks from top to bottom, and the column under the grey cloud has exactly two small tally marks. She holds her pencil upside down, with its pink eraser end hovering just above those two marks, looking at them with a torn, wistful face. Exactly Honeydip, alone. No children and no people in this picture. IMPORTANT: Under the grey cloud there are EXACTLY two tally marks, two short pencil strokes, no more. She holds the pencil upside down with its pink eraser tip pointing DOWN, hovering just above those two marks; the pencil's sharp point is up in the air. Honeydip: a tiny girl Christmas elf, only about as tall as a milk carton, small enough to sit inside a fruit bowl, with peachy skin, pointed elf ears, big warm brown eyes with long eyelashes, round rosy pink blush circles on her cheeks, pink lipstick, and honey-gold hair in two short braids tied with tiny pink bows. She wears a classic Christmas hat in PINK with a fluffy white brim and a white pom-pom; a PINK long-sleeved tunic dress with a fluffy white collar, cuffs and hem and a pink belt with a small gold buckle; pink-and-white striped stockings; pink curly-toed boots; and WHITE gloves printed with bold pink swirls (only the gloves have swirls). She is alive, lively and expressive, never a stiff doll unless the scene says so. Never a red suit, never a white pointed collar.
+
+Style guidance (follow exactly):
+# Luna's Story Time — global art style
+
+Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight against deep indigo night, lavender and pearl-grey stone, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image, no words, no letters, no captions.
+
+Palette: deep indigo night #1B1B3A (27,27,58), lavender stone #B7A7D4 (183,167,212), warm gold #E8C46A (232,196,106), rose pink #F2A9C4 (242,169,196), pearl blue-grey #D7E3F0 (215,227,240), dark plum ink #2A2140 (42,33,64).
+
+Mood: gentle, dreamy, cozy, safe for young children even in dramatic moments. Nothing gory, nothing truly frightening. Full-bleed composition with soft edges, room left for overlaid text near the edges.

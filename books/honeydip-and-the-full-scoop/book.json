@@ -1,0 +1,466 @@
+{
+  "series": "honeydips-christmas-mission",
+  "ageRange": "4-8",
+  "styleString": "Painterly children's storybook illustration, soft watercolor and colored-pencil texture, visible brushwork, warm golden lamplight, generous sparkle and stardust trails, big expressive eyes, gentle rounded shapes, no harsh lines, no photorealism, no text in image.",
+  "slug": "honeydip-and-the-full-scoop",
+  "bookNumber": 4,
+  "title": "Honeydip and the Full Scoop",
+  "subtitle": "Book Four of Honeydip's Christmas Mission",
+  "authors": [
+    "Luna",
+    "Sunny"
+  ],
+  "refrain": "Christmas is a gift, not a prize.",
+  "palette": {
+    "night": "#1B1B3A",
+    "stone": "#B7A7D4",
+    "gold": "#E8C46A",
+    "hair": "#F2A9C4",
+    "scale": "#4FA3A5",
+    "ink": "#2A2140"
+  },
+  "characters": [
+    {
+      "id": "honeydip",
+      "name": "Honeydip",
+      "sheet": "Honeydip: a tiny girl Christmas elf, only about as tall as a milk carton, small enough to sit inside a fruit bowl, with peachy skin, pointed elf ears, big warm brown eyes with long eyelashes, round rosy pink blush circles on her cheeks, pink lipstick, and honey-gold hair in two short braids tied with tiny pink bows. She wears a classic Christmas hat in PINK with a fluffy white brim and a white pom-pom; a PINK long-sleeved tunic dress with a fluffy white collar, cuffs and hem and a pink belt with a small gold buckle; pink-and-white striped stockings; pink curly-toed boots; and WHITE gloves printed with bold pink swirls (only the gloves have swirls). She is alive, lively and expressive, never a stiff doll unless the scene says so. Never a red suit, never a white pointed collar."
+    },
+    {
+      "id": "sparkle",
+      "name": "Sparkle",
+      "sheet": "Sparkle: a baby arctic fox, smaller than Honeydip, small enough to curl up in a cereal bowl, with very fluffy snow-white fur, glittery silver sparkles on her ear tips and on her big bushy tail, big ice-blue eyes, a tiny pink nose and rosy cheeks. An animal on four legs, no clothes."
+    },
+    {
+      "id": "shiny",
+      "name": "Shiny",
+      "sheet": "Shiny: a toy-sized young reindeer, a little taller than Honeydip at the antlers, with a caramel-brown coat, a fluffy cream chest, pale fawn spots on his back, small golden antlers that gleam softly, a pink collar with one round gold bell, a soft black nose (never red, never glowing), big brown eyes and a short fluffy tail. An animal on four legs."
+    },
+    {
+      "id": "hudson",
+      "name": "Hudson",
+      "sheet": "Hudson: a ten-year-old boy, the tallest of the four children by a full head, warm brown skin, thick straight dark-brown hair falling across his forehead, dark brown eyes, a forest-green hoodie and dark jeans."
+    },
+    {
+      "id": "glyden",
+      "name": "Glyden",
+      "sheet": "Glyden: a six-year-old boy, warm brown skin, short tousled dark-brown hair, round dark-rimmed glasses, dark brown eyes, a blue knit sweater and dark trousers."
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "sheet": "Sun: a five-year-old boy, a little smaller than Glyden, warm brown skin, soft wavy dark-brown hair, dark brown eyes, a gap-toothed grin with one front tooth missing, a sunny yellow knit sweater and dark trousers."
+    },
+    {
+      "id": "petals",
+      "name": "Petals",
+      "sheet": "Petals: a girl who is almost four, the smallest of the four children, warm brown skin, long dark-brown hair in one side braid tied with a small lavender bow, a lavender flower clip in her hair, big dark brown eyes, a short-sleeved lavender dress. She never wears pink."
+    },
+    {
+      "id": "santa",
+      "name": "Santa",
+      "sheet": "Santa: a big, warm, jolly grandfatherly man with rosy cheeks, twinkling kind eyes, a huge fluffy white beard, small round gold-rimmed glasses low on his nose, bare hands with no gloves, a red suit with white fur trim, a wide black belt and black boots. Gentle and laughing, never stern."
+    }
+  ],
+  "cover": {
+    "image": "images/cover.webp",
+    "imagePrompt": "Inside Santa's great hall at the North Pole: warm timber beams, glowing lanterns, garlands, shelves of toys, a big cozy red armchair, snow at tall frosted windows. Generous open space across the upper third of the picture (warm timber beams hung with garlands and glowing lanterns). In the lower middle, tiny Honeydip stands on a wooden footstool, proudly holding her small pink notebook up high over her head with both hands, with a brave, happy grin. Beside her stand Shiny the little reindeer and Sparkle the white baby fox. Behind her, large and warm, Santa leans forward in his big red armchair, smiling down at her with twinkling eyes. No children, no other elves.",
+    "effect": "starlight"
+  },
+  "spreads": [
+    {
+      "number": 1,
+      "title": "Two sleeps to go",
+      "text": "With two sleeps to go, before anyone woke,\nbefore the sun rose, before anyone spoke,\nthere was Hudson, in slippers, with dish soap and broom,\nbeing GOOD, very loudly, all over the room.\n\nHe made every bed. (There were people inside.)\nHe washed every dish, and the clean ones beside.\nHe counted out loud, so the elf wouldn't miss:\n\"That's SEVEN! That's EIGHT! Did you write it? Write THIS!\"",
+      "image": "images/01.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "slippers",
+          "definition": "soft, cozy shoes for wearing indoors"
+        },
+        {
+          "word": "broom",
+          "definition": "a brush on a long stick for sweeping the floor"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen very early, soft blue dawn light at the window and one warm lamp. Hudson, in forest-green pajamas and slippers, sweeps the floor furiously with a big broom in one hand while holding up a soapy clean plate in the other, calling out proudly, eager and frantic. A tall wobbly tower of freshly washed dishes stands on the counter, soap bubbles floating. On the counter tiny Honeydip, just woken, sits up in a teacup bed with a tiny blanket, rubbing one eye, baffled. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Exactly Hudson and Honeydip, no other characters."
+    },
+    {
+      "number": 2,
+      "title": "Forty good things",
+      "text": "He folded the socks. He folded the cat.\n(There isn't a cat. He'd have folded it flat.)\nHe watered the tree. He said \"please\" to the door.\nHe dusted his brothers. He counted some more.\n\nBy lunchtime his list had gone right down the page,\nand his arms were like noodles. He looked twice his age.\nHe had forty good things. And he felt, when he'd done,\nnot a bit any better than back at thing one.",
+      "image": "images/02.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun"
+      ],
+      "vocab": [
+        {
+          "word": "folded",
+          "definition": "bent something over neatly, like a shirt or a sock"
+        },
+        {
+          "word": "noodles",
+          "definition": "long, soft, floppy pasta"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room. Bright cheerful winter morning daylight. A funny scene: Hudson, looking worn out with droopy eyes and messy hair, dusts the top of Glyden's head with a big fluffy feather duster while Glyden sits on the sofa trying to read a picture book, annoyed; Sun, next to Glyden, already has a puff of dust on his nose and is giggling. Around them are towers of neatly folded socks and a watering can beside the Christmas tree. A long paper list of pencil tally marks (no letters, no writing) trails from Hudson's pocket down to the floor. Exactly three boys: Hudson, Glyden and Sun. No elf, no fox, no reindeer, no Petals, no other people."
+    },
+    {
+      "number": 3,
+      "title": "It doesn't work that way",
+      "text": "\"How many?\" he asked her. \"How many till I'm\non the GOOD side for certain? I'm all out of time.\"\nAnd Honeydip gently laid down her sharp lead.\n\"It doesn't work that way,\" with a shake of her head.\n\n\"Then how DOES it work?\" And the elf, who knew lots,\nwho knew twenty-four excellent elf hiding spots,\nfound she didn't know that. Santa said, \"Columns: two.\"\nAnd both hers were full. And she hadn't a clue.",
+      "image": "images/03.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "gently",
+          "definition": "in a soft, kind way"
+        },
+        {
+          "word": "certain",
+          "definition": "very, very sure"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the kitchen table. Bright cheerful winter morning daylight. Hudson sits slumped with his chin on his folded arms on the table, tired and anxious, looking up at tiny Honeydip, who sits on the rim of the fruit bowl in front of him. She has laid her pencil down and looks at her small pink hardback notebook (a little bound book, no spiral rings), the Scoop Book, open to two columns: a tiny gold star drawn at the top of the left column and a tiny grey rain cloud drawn at the top of the right column, with small pencil tally marks and no writing, no letters lying open beside her, in which BOTH columns are full of tally marks to the very bottom and exactly the same length; she scratches her head under her hat, kind but stumped. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Exactly Hudson and Honeydip, no other characters."
+    },
+    {
+      "number": 4,
+      "title": "A seat saved",
+      "text": "Hudson fell fast asleep in the laundry, mid-fold,\nwith a sock on his ear. He was ten. He looked old.\nAnd Petals came by, and she covered his feet\nwith a towel. And at supper, she saved him a seat.\n\nShe did that a lot. She had done it all year.\nShe'd say, \"That one's Hudson's,\" and pat it. \"Right here.\"\nNobody had asked her. Nobody knew why.\nSome nights he sat in it. Some nights he walked by.",
+      "image": "images/04.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "laundry",
+          "definition": "clothes that are being washed, dried or folded"
+        },
+        {
+          "word": "supper",
+          "definition": "the meal you eat in the evening"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, a cozy laundry corner in warm late-afternoon light. Hudson has fallen fast asleep sitting in a big wicker laundry basket full of soft clean clothes, his head tipped back, mouth open, one sock draped over his ear, a half-folded shirt in his lap. Little Petals stands on tiptoe beside the basket, carefully spreading a striped towel over his feet like a blanket, her face serious and tender. Exactly Hudson and Petals, no other characters.",
+      "effect": "bond"
+    },
+    {
+      "number": 5,
+      "title": "The last hiding place",
+      "text": "On the morning of Christmas Eve, soft fell the snow,\nand they counted to ten for the last time. \"Let's go!\"\nNot the teapot, the mailbox, the piano, the bread.\n\"She has run out of places,\" said Glyden. He said\n\nit too soon. For up high, where a star ought to be,\non the tippy-top branch of the big Christmas tree,\nstood the elf, arms out wide, shining pink in the light.\n\"Found by four,\" Petals said. And they were. And she's right.",
+      "image": "images/05.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "honeydip",
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "branch",
+          "definition": "an arm of a tree"
+        },
+        {
+          "word": "shining",
+          "definition": "giving off bright light"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room. Bright cheerful winter morning daylight, snow falling softly outside. A tall Christmas tree fills the picture, and at its very top, exactly where the star would be, stands tiny Honeydip with her arms and legs spread wide like a star, glowing pink and gold, beaming. At the foot of the tree the four children stand close together looking up and pointing, all four at once, delighted: little Petals rides on Hudson's shoulders. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. No fox or reindeer visible. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+      "effect": "starlight"
+    },
+    {
+      "number": 6,
+      "title": "The goodbye",
+      "text": "Then it was time. Before Santa's sleigh flies,\nan elf must report, and say all her goodbyes.\nFour kids at the window stood up in a row,\nwith eight hands behind them. That's hard. You would know.\n\nAnd Hudson hung back, by the wall, in the shade,\ntill Petals took hold of his sleeve, unafraid,\nand tugged him up front, where the window was clear.\nThen she blew one small kiss. And it got there, from here.",
+      "image": "images/06.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals",
+        "honeydip",
+        "sparkle",
+        "shiny"
+      ],
+      "vocab": [
+        {
+          "word": "report",
+          "definition": "tell someone everything you found out"
+        },
+        {
+          "word": "sleeve",
+          "definition": "the part of a shirt that covers your arm"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, at a big living-room window. Cozy evening, warm golden lamplight and glowing tree lights, dark blue snowy night at the window, Christmas Eve, snow falling. On the windowsill, ready to leave, tiny Honeydip sits on the back of Shiny the little reindeer with Sparkle the white baby fox on her lap and her pink notebook under her arm, turning to wave goodbye with one white swirly-gloved hand, smiling but misty-eyed. Facing her stand the four children in a row, each keeping one hand behind their back: Glyden and Sun wave; little Petals holds Hudson by the sleeve of his hoodie, having pulled him to the front, and blows a kiss with her free hand; Hudson gives a small shy wave. A tiny pink heart-shaped sparkle floats through the air from Petals toward the elf. Scale: Honeydip, Sparkle and Shiny are TINY, toy-sized, far smaller than the children; Honeydip is only as tall as a milk carton, about as tall as a child's forearm is long. No child's hand or skin touches Honeydip anywhere in the picture. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people. IMPORTANT: Hudson and Petals stand side by side at the FRONT of the group, the two children nearest the window and the elf. Petals's hand visibly grips the sleeve of Hudson's green hoodie at his wrist. Glyden and Sun stand just behind them. Honeydip has her small pink notebook tucked under her arm.",
+      "effect": "starlight"
+    },
+    {
+      "number": 7,
+      "title": "North",
+      "text": "Up, up, through the snow, went a reindeer, a fox,\nand an elf, with a notebook as heavy as rocks.\nPast the last chimney smoke, past the clouds, past the cold,\nwhere the sky hangs in ribbons of green and of gold.\n\nShe practiced. \"Sir. Hudson is bad. He is... good.\nHe is... both? There's no column for 'both'. And there should.\"\nShiny flew on. He had no advice.\n(He has flown many elves. They all practice it twice.)",
+      "image": "images/07.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "honeydip",
+        "sparkle",
+        "shiny"
+      ],
+      "vocab": [
+        {
+          "word": "chimney",
+          "definition": "the tall pipe on a roof that lets smoke out"
+        },
+        {
+          "word": "practiced",
+          "definition": "tried something over and over to get it right"
+        }
+      ],
+      "imagePrompt": "Night sky high above the clouds, with glowing ribbons of green and gold northern lights and many stars. Shiny the little reindeer gallops through the air trailing gold sparkles, drawn large and clear, with Honeydip riding on his back and Sparkle the white baby fox asleep on her lap. Honeydip holds her small pink notebook open in both hands and frowns at it, worried, talking to herself. Far below, tiny snowy rooftops with chimney smoke. No sleigh. No children and no people in this picture.",
+      "effect": "starlight"
+    },
+    {
+      "number": 8,
+      "title": "The line",
+      "text": "At the Pole, there's a hall with a very long line\nof elves holding notebooks, all tidy and fine.\n\"All good,\" said the first. \"Mostly good,\" said the next.\n\"One biter,\" said one. Santa nodded, unvexed.\n\nThen: \"Honeydip!\" Up to the big chair she went,\nwith her hat on quite straight, and her knees slightly bent.\nAnd Santa leaned down, and his eyes had a shine.\n\"Well? Four kids. What's the scoop? Is it good? Is it fine?\"",
+      "image": "images/08.webp",
+      "textPosition": "top",
+      "characters": [
+        "santa",
+        "honeydip"
+      ],
+      "vocab": [
+        {
+          "word": "tidy",
+          "definition": "neat, with everything in its place"
+        },
+        {
+          "word": "nodded",
+          "definition": "moved your head up and down to say yes"
+        }
+      ],
+      "imagePrompt": "Inside Santa's great hall at the North Pole: warm timber beams, glowing lanterns, garlands, shelves of toys, a big cozy red armchair, snow at tall frosted windows. Santa sits in the big red armchair, leaning down with a kind, twinkling smile and his hands on his knees. On a little wooden footstool in front of him stands tiny Honeydip, very small beside him, clutching her pink notebook to her chest, standing up straight, nervous, knees a little bent. Behind her, a long line of waiting elves winds away across the hall: several other tiny elves in GREEN and RED outfits (none of them in pink) hold small tidy notebooks; they are background characters. Honeydip is the only one in pink. No children. IMPORTANT: Santa wears small round gold-rimmed glasses and has bare hands. Honeydip is TINY next to him, no taller than his hand is long, and her notebook has a pink cover. Each background elf has exactly two hands."
+    },
+    {
+      "number": 9,
+      "title": "Both sides",
+      "text": "She opened her book. And she started to read.\n\"They shared every donut. They fought. They agreed.\nOne grabbed me. One fetched me a ladle. One said,\n'It was me.' One saved seats. One gave hers up instead.\n\nThey went to a neighbor's. They shoveled. They sat.\nThey grabbed, and they shouted. They glazed Shiny. That's that.\"\nShe read the GOOD side. Then she read all the BAD.\nThey were just the same length. It was all that she had.",
+      "image": "images/09.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "honeydip",
+        "santa",
+        "shiny",
+        "sparkle"
+      ],
+      "vocab": [
+        {
+          "word": "ladle",
+          "definition": "a big deep spoon for scooping soup"
+        },
+        {
+          "word": "shoveled",
+          "definition": "scooped snow out of the way"
+        }
+      ],
+      "imagePrompt": "Inside Santa's great hall at the North Pole: warm timber beams, glowing lanterns, garlands, shelves of toys, a big cozy red armchair, snow at tall frosted windows. Close view: tiny Honeydip stands on a wooden footstool reading aloud from her small pink hardback notebook (a little bound book, no spiral rings), the Scoop Book, open to two columns: a tiny gold star drawn at the top of the left column and a tiny grey rain cloud drawn at the top of the right column, with small pencil tally marks and no writing, no letters, held open wide in both hands toward the viewer so both columns show: BOTH are packed with tally marks from top to bottom and are exactly the same length. She looks troubled, one finger running down the page. Behind her, Santa listens closely from his big red armchair, chin in his hand, eyes warm. At the foot of the stool Shiny the little reindeer and Sparkle the white baby fox wait, watching her. No children, no other elves in this picture. IMPORTANT: Honeydip is TINY next to Santa: she is no taller than Santa's hand is long, shorter than his boot, and her whole body is smaller than his beard. The footstool she stands on is small and low. Her notebook has a pink cover."
+    },
+    {
+      "number": 10,
+      "title": "Rip",
+      "text": "Then Honeydip did what no elf's ever done.\nShe took hold of the page. And she tore it. In one.\nRip! Right down the middle. A gasp filled the hall.\n\"There aren't two columns. There's one. That is all.\"\n\n\"Every donut has a hole in it. That's what makes it a donut.\nThey're BOTH, sir. They're kids. And I thought you should know it.\nThey fight, and they mend, and say sorry, and then\nthey save seats. That's the full scoop. I'd write it again.\"",
+      "image": "images/10.webp",
+      "textPosition": "top",
+      "characters": [
+        "honeydip",
+        "santa"
+      ],
+      "vocab": [
+        {
+          "word": "gasp",
+          "definition": "a quick, loud breath in, when you are surprised"
+        },
+        {
+          "word": "tore",
+          "definition": "pulled paper apart into pieces"
+        }
+      ],
+      "imagePrompt": "Inside Santa's great hall at the North Pole: warm timber beams, glowing lanterns, garlands, shelves of toys, a big cozy red armchair, snow at tall frosted windows. The big moment: tiny Honeydip stands tall on the wooden footstool, chin up, brave, and tears one page of her notebook right down the middle with both hands, the two halves of the page flying apart with a little burst of pink and gold sparkles; each torn half shows only pencil tally marks, no letters. Behind her, Santa in his big red armchair throws his head back, starting to laugh with delight. In the background several other tiny elves in GREEN and RED outfits (none of them in pink) hold small tidy notebooks; they are background characters, gasping with their hands over their mouths. Honeydip is the only one in pink. No children. IMPORTANT: Honeydip is TINY next to Santa: no taller than Santa's hand is long, shorter than his boot. No fox and no reindeer in this picture. In the background there are exactly THREE other elves, small and far away, in green and red, each with exactly two arms and two hands, both hands pressed over their own mouth; they hold nothing.",
+      "effect": "starlight"
+    },
+    {
+      "number": 11,
+      "title": "Santa laughs",
+      "text": "And Santa? He laughed. From his boots to his hat.\n\"I've waited all year for an elf to say that!\nI never kept score. Not one mark. Not one day.\nI can't give a present for points, anyway.\"\n\n\"Then why did you send me?\" \"So someone would know\nwho counts thumbs, who hears bells, who saves seats, who dug snow.\"\n\"And the columns?\" \"Oh, those,\" Santa said, with a wink.\n\"Elves do like a form. It gives them time to think.\"",
+      "image": "images/11.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "santa",
+        "honeydip",
+        "shiny",
+        "sparkle"
+      ],
+      "vocab": [
+        {
+          "word": "wink",
+          "definition": "shutting one eye quickly, like a friendly secret"
+        },
+        {
+          "word": "form",
+          "definition": "a paper with blanks to fill in"
+        }
+      ],
+      "imagePrompt": "Inside Santa's great hall at the North Pole: warm timber beams, glowing lanterns, garlands, shelves of toys, a big cozy red armchair, snow at tall frosted windows. Santa has scooped tiny Honeydip up to stand on the palm of his big white-gloved hand at the level of his face, and he winks at her, laughing warmly, his cheeks rosy. Honeydip stands on his palm with her hands on her hips, half laughing and half amazed. The two torn halves of the notebook page flutter down like confetti. At Santa's boots, Shiny the little reindeer rings his gold bell and Sparkle the white baby fox jumps for joy. (Santa is a grown-up, not a child, so he may hold her.) No children, no other elves in this picture. IMPORTANT: Santa wears small round gold-rimmed glasses and has bare hands, no gloves. His red coat is whole and clean, with no scraps, patches or tears on it. Exactly two torn half-pages flutter in the air beside them, each showing pencil tally marks.",
+      "refrain": true,
+      "effect": "bond"
+    },
+    {
+      "number": 12,
+      "title": "Christmas morning",
+      "text": "On Christmas morning, before the first light,\nbefore any ribbon or paper in sight,\nfour kids, in one quilt, at the top of the stair,\nwere not doing anything. All four were there.\n\nFor a minute, nobody ran for the tree.\nThere was Glyden, and Sun, and one small sleepy she,\nand Hudson. All squished. And you'd miss it, you know,\nif you blinked. It's a minute. It's quick. Then you go.",
+      "image": "images/12.webp",
+      "textPosition": "top",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "ribbon",
+          "definition": "a long, pretty strip for tying a bow"
+        },
+        {
+          "word": "squished",
+          "definition": "squeezed in close together"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the top of the wooden staircase in the dim blue light just before dawn, with a warm golden glow of Christmas tree lights coming up from downstairs. The four children sit squished together in one sleepy, happy heap on the top step, shoulder to shoulder, wrapped in one shared quilt: Glyden leaning on Hudson, Sun yawning with his gap-toothed mouth, little Petals half asleep in Hudson's lap. The children wear cozy pajamas in their own colors instead of their usual clothes: Hudson forest green, Glyden blue (still wearing his round glasses), Sun sunny yellow, Petals lavender. No presents visible yet. No elf, no fox, no reindeer. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+      "effect": "starlight"
+    },
+    {
+      "number": 13,
+      "title": "Not for Hudson",
+      "text": "Then down! To the tree! There were boxes and bows!\nAnd Hudson read tags. \"This is Sun's. And this goes\nto Glyden. And Petals, here's yours.\" He was quick.\nHe was helpful. He smiled. It's a very old trick.\n\nHe handed out seven. He handed out ten.\nHe straightened the pile, and then straightened again.\nHe was sure. He had forty-one reasons he knew.\nHe did not check behind the tree. Guess who did. Guess who.",
+      "image": "images/13.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "sun",
+        "glyden",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "tags",
+          "definition": "little labels that say who a present is for"
+        },
+        {
+          "word": "trick",
+          "definition": "a clever way of doing something"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room on Christmas morning, golden light, the Christmas tree with wrapped presents beneath it. The children wear cozy pajamas in their own colors instead of their usual clothes: Hudson forest green, Glyden blue (still wearing his round glasses), Sun sunny yellow, Petals lavender. Hudson kneels by the tree busily handing a wrapped present to Sun with one hand and another to Glyden with the other, wearing a brave, too-bright smile and not looking at the tree. Sun and Glyden hug their presents happily. Behind the tree, little Petals crawls on hands and knees, only her back half and feet showing, reaching toward one very long, large parcel wrapped in green paper with a red ribbon that is hidden behind the tree. The gift tags are plain, with no writing. No elf, no fox, no reindeer. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people."
+    },
+    {
+      "number": 14,
+      "title": "You don't earn a present",
+      "text": "She dragged it out, backwards. So long! And so wide!\nWith a tag, and an H, and a ribbon, red, tied.\n\"That's not mine,\" Hudson said. \"I was bad. Look, I grabbed.\nI threw. I was mean. And the donuts, I nabbed.\n\nI did not earn that.\" And then Petals, who's three\n(who is four, nearly four, any day, as you see),\nsaid, \"It's a PRESENT, silly.\" And rolled both her eyes.",
+      "image": "images/14.webp",
+      "textPosition": "top",
+      "characters": [
+        "petals",
+        "hudson"
+      ],
+      "vocab": [
+        {
+          "word": "dragged",
+          "definition": "pulled something heavy along the floor"
+        },
+        {
+          "word": "earn",
+          "definition": "get something by working for it"
+        }
+      ],
+      "imagePrompt": "Inside a cozy family home (an ordinary house, NOT a castle, no stone walls): wooden floors, soft rugs, cream walls, a Christmas tree with warm fairy lights, snow outside the windows, the living room on Christmas morning, golden light, beside the Christmas tree. Little Petals, in lavender pajamas, has dragged out a very long, large parcel wrapped in green paper with a big red ribbon, much longer than she is tall, and stands with one hand on it and the other on her hip, rolling her eyes with a big-sister look even though she is the smallest. Hudson, in forest-green pajamas, stands in front of the parcel with both hands held up as if to say 'not for me', his face astonished and about to cry happy tears. The gift tag is plain, with no writing. Exactly Petals and Hudson, no other characters. IMPORTANT: Hudson wears matching forest-green pajamas printed with small gold stars, top and bottoms (not a hoodie, not plaid). Petals wears lavender long-sleeved pajamas.",
+      "refrain": true,
+      "effect": "bond"
+    },
+    {
+      "number": 15,
+      "title": "The fast kind, for four",
+      "text": "A sled. It was red. It was just what he'd said:\nthe fast kind, for one, with a rope at its head.\nAnd Hudson looked at it. And then, with a grin:\n\"It fits four if we squish. Come on. Everyone in.\"\n\nAnd under the tree, in a box tied with pink,\nwere donuts. Thirteen. With a note, in pink ink:\n\"One more than you need. So there's always, you see,\none to give to somebody. Love, Honeydip. (Me.)\"",
+      "image": "images/15.webp",
+      "textPosition": "bottom",
+      "characters": [
+        "hudson",
+        "glyden",
+        "sun",
+        "petals"
+      ],
+      "vocab": [
+        {
+          "word": "sled",
+          "definition": "a board with runners for sliding over snow"
+        },
+        {
+          "word": "grin",
+          "definition": "a big, happy smile"
+        }
+      ],
+      "imagePrompt": "Bright sunny Christmas morning outdoors on a snowy hill beside the family's house, blue sky, sparkling snow. All four children ride squished together on ONE sled, a shiny bright-red wooden sled with a rope at the front, built for one, whooshing down the hill and laughing: little Petals at the very front, then Sun, then Glyden holding his glasses on, and Hudson at the back with his arms around all of them, grinning wider than anyone. They wear winter coats and woolly hats in their own colors over their pajamas: Hudson forest green, Glyden blue, Sun sunny yellow, Petals lavender. Snow sprays up behind the sled. No elf, no fox, no reindeer. Count them: exactly four children (tall Hudson in green, Glyden in blue with round glasses, gap-toothed Sun in yellow, little Petals in lavender with one braid), each exactly once. No other children, no adults, no other people.",
+      "effect": "starlight"
+    },
+    {
+      "number": 16,
+      "title": "The thirteenth donut",
+      "text": "So the thirteenth went next door, on a plate, through the snow,\nto a house with two chairs. And he came back in tow,\nMr. Bell, for his dinner. He brought his own chair.\n(They had plenty. No one said so. They set it right there.)\n\nAnd far in the north, with a notebook, brand-new,\nwith no columns at all (Santa said that would do),\nsat an elf, drawing four little faces. And when\nshe was done, she wrote, \"Last of November. Again.\"",
+      "image": "images/16.webp",
+      "textPosition": "top",
+      "characters": [
+        "honeydip",
+        "sparkle",
+        "shiny"
+      ],
+      "vocab": [
+        {
+          "word": "plate",
+          "definition": "a flat dish you put food on"
+        },
+        {
+          "word": "faces",
+          "definition": "the fronts of heads, with eyes, a nose and a mouth"
+        }
+      ],
+      "imagePrompt": "A cozy little elf-sized room at the North Pole at night: a tiny wooden desk at a round frosted window with green and gold northern lights outside, a glowing lantern, a tiny bed made from a teacup. Tiny Honeydip sits at the desk with a brand-new notebook open in front of her, drawing with a pencil: on the page are four simple smiling children's faces drawn in pencil in a row (one tall with a hoodie, one with round glasses, one with a gap-toothed grin, one small with a braid), and no columns, no tally marks, no letters. She smiles softly at the drawing, chin on one hand. On the desk beside her sits a snow globe holding a tiny house and a tiny red sled, and one pink-frosted donut on a plate. Shiny the little reindeer sleeps on the rug and Sparkle the white baby fox sleeps curled in a mitten. No children and no people in this picture.",
+      "refrain": true,
+      "effect": "starlight",
+      "theEnd": "The End — until the last night of next November."
+    }
+  ],
+  "questions": [
+    "Hudson did forty good things and did not feel any better. Why do you think that was?",
+    "Honeydip tore the page in half and said the kids were both. What do you think she meant?",
+    "Petals said, \"It's a present, silly.\" What is the difference between a present and a prize?",
+    "Petals saves Hudson a seat and never keeps score. Grown-ups, who saved a seat for you?"
+  ],
+  "lookAndFind": "Find the sled built for one with four kids on it. Then look at Honeydip's new notebook: whose faces did she draw?",
+  "assetVersion": "honeydip4-1"
+}

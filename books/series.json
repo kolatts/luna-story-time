@@ -154,6 +154,41 @@
           "cover": "books/ruby-war-noir-and-the-spirit-dragon/images/cover.webp"
         }
       ]
+    },
+    {
+      "id": "honeydips-christmas-mission",
+      "name": "Honeydip's Christmas Mission",
+      "description": "A tiny pink elf, four kids, one rule, and what Christmas is really for.",
+      "books": [
+        {
+          "slug": "honeydip-and-the-house-of-four",
+          "title": "Honeydip and the House of Four",
+          "subtitle": "Book One of Honeydip's Christmas Mission",
+          "ageRange": "4-8",
+          "cover": "books/honeydip-and-the-house-of-four/images/cover.webp"
+        },
+        {
+          "slug": "honeydip-and-the-dozen-donuts",
+          "title": "Honeydip and the Dozen Donuts",
+          "subtitle": "Book Two of Honeydip's Christmas Mission",
+          "ageRange": "4-8",
+          "cover": "books/honeydip-and-the-dozen-donuts/images/cover.webp"
+        },
+        {
+          "slug": "honeydip-and-the-trouble-in-the-trash",
+          "title": "Honeydip and the Trouble in the Trash",
+          "subtitle": "Book Three of Honeydip's Christmas Mission",
+          "ageRange": "4-8",
+          "cover": "books/honeydip-and-the-trouble-in-the-trash/images/cover.webp"
+        },
+        {
+          "slug": "honeydip-and-the-full-scoop",
+          "title": "Honeydip and the Full Scoop",
+          "subtitle": "Book Four of Honeydip's Christmas Mission",
+          "ageRange": "4-8",
+          "cover": "books/honeydip-and-the-full-scoop/images/cover.webp"
+        }
+      ]
     }
   ]
 }
