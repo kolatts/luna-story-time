@@ -1,8 +1,8 @@
 # Honeydip's Christmas Mission — series bible
 
 Read this before writing or illustrating any Honeydip book. It outranks per-book prompts.
-Planned and built 2026-11-28 with Sunny. Four books, ending at Christmas. All four are built
-(text, art, narration). Each book's verse, vocab and picture prompts live in ONE spec file,
+Planned, built and published 2026-11-28 with Sunny. Four books, ending at Christmas. All four are
+live (text, art, narration). Each book's verse, vocab and picture prompts live in ONE spec file,
 `.claude/image-generation/honeydip/bookN.py`; `build-honeydip.py N` writes `manuscript.md`,
 `book.json` and the prompt files from it, so edit the spec, never the outputs.
 
@@ -10,16 +10,13 @@ Format follows *Ruby and the Dragon Bonds*: 16 spreads plus a cover per book, rh
 one refrain per book stored in the top-level `refrain` field, sparkle words, four questions, a
 look-and-find, Ana narration. Ages 4–8. Build each one with the `add-story` skill.
 
-## Release schedule
+## Release
 
-One book a week, so the story unfolds alongside the real countdown.
-
-| Book | Goes live | Story days |
-|---|---|---|
-| One | about Nov 30 | the last night of November and the first morning of December |
-| Two | about Dec 7 | the first week of December |
-| Three | about Dec 14 | the middle of December |
-| Four | about Dec 21 | Dec 23, Christmas Eve, Christmas morning |
+All four books went live together on 2026-11-28 (commit 7d5e238, GitHub Pages). The first plan was
+one a week through December; Sunny chose to publish the finished series at once. The story days
+still run across the month: Book One is the last night of November and the first morning of
+December, Book Two the first week, Book Three the middle of December, Book Four December 23 to
+Christmas morning.
 
 ## Canon
 

@@ -260,7 +260,7 @@
     {
       "number": 9,
       "title": "The pile",
-      "text": "Now here is a thing about eight donuts, stacked:\nthey look very fine. That's a true donut fact.\nHe bit into chocolate. He bit into pink.\nHe bit into sugar. And what do you think?\n\nThey didn't taste like anything. None of them. None.\nNot the frosted. Not the sprinkled. He had technically won.\nHe had eight of the donuts. Each one was all his.\nAnd that is how quiet a top stair is.",
+      "text": "Now here is a thing about eight donuts, stacked:\nthey look very fine. That's a true donut fact.\nHe bit into chocolate. He bit into pink.\nHe bit into sugar. And what do you think?\n\nThey all tasted like nothing. Not one of them. None.\nNot the frosted, the sprinkled. He'd technically won.\nHe had eight of the donuts. Each one was all his.\nAnd that is how quiet a top stair is.",
       "image": "images/09.webp",
       "textPosition": "bottom",
       "characters": [
@@ -458,5 +458,5 @@
     "Honeydip could have rubbed out the two marks, and she didn't. Grown-ups, would you have?"
   ],
   "lookAndFind": "Glaze went everywhere! Can you find it on the ceiling, on a chair, and on a reindeer? And where did the last donut end up?",
-  "assetVersion": "honeydip2-1"
+  "assetVersion": "honeydip2-2"
 }

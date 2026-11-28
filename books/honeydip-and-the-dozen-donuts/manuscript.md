@@ -108,8 +108,8 @@ they look very fine. That's a true donut fact.
 He bit into chocolate. He bit into pink.
 He bit into sugar. And what do you think?
 
-They didn't taste like anything. None of them. None.
-Not the frosted. Not the sprinkled. He had technically won.
+They all tasted like nothing. Not one of them. None.
+Not the frosted, the sprinkled. He'd technically won.
 He had eight of the donuts. Each one was all his.
 And that is how quiet a top stair is.
 

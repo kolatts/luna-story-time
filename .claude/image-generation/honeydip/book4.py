@@ -54,11 +54,11 @@ not a bit any better than back at thing one.
      """"How many?" he asked her. "How many till I'm
 on the GOOD side for certain? I'm all out of time."
 And Honeydip gently laid down her sharp lead.
-"It doesn't work that way," with a shake of her head.
+"It doesn't work that way," she finally said.
 
 "Then how DOES it work?" And the elf, who knew lots,
 who knew twenty-four excellent elf hiding spots,
-found she didn't know that. Santa said, "Columns: two."
+found she didn't know that. Santa's columns were two.
 And both hers were full. And she hadn't a clue.
 """,
      'bottom', ['hudson', 'honeydip'],
@@ -200,7 +200,7 @@ Rip! Right down the middle. A gasp filled the hall.
 "Every donut has a hole in it. That's what makes it a donut.
 They're BOTH, sir. They're kids. And I thought you should know it.
 They fight, and they mend, and say sorry, and then
-they save seats. That's the full scoop. I'd write it again."
+they save seats. That's the full scoop. I'd say it again."
 """,
      'top', ['honeydip', 'santa'],
      [('gasp', 'a quick, loud breath in, when you are surprised'), ('tore', 'pulled paper apart into pieces')],
@@ -218,9 +218,9 @@ I never kept score. Not one mark. Not one day.
 I can't give a present for points, anyway."
 
 "Then why did you send me?" "So someone would know
-who counts thumbs, who hears bells, who saves seats, who dug snow."
+who counts thumbs, who hears bells, who saves seats, who digs snow."
 "And the columns?" "Oh, those," Santa said, with a wink.
-"Elves do like a form. It gives them time to think."
+"Elves do like a form. And it helps them to think."
 """,
      'bottom', ['santa', 'honeydip', 'shiny', 'sparkle'],
      [('wink', 'shutting one eye quickly, like a friendly secret'), ('form', 'a paper with blanks to fill in')],
@@ -260,8 +260,8 @@ He was helpful. He smiled. It's a very old trick.
 
 He handed out seven. He handed out ten.
 He straightened the pile, and then straightened again.
-He was sure. He had forty-one reasons he knew.
-He did not check behind the tree. Guess who did. Guess who.
+He was sure there'd be nothing. He knew what he knew.
+He'd not checked round the tree. But guess who did. Guess who.
 """,
      'bottom', ['hudson', 'sun', 'glyden', 'petals'],
      [('tags', 'little labels that say who a present is for'), ('trick', 'a clever way of doing something')],
@@ -315,10 +315,10 @@ one to give to somebody. Love, Honeydip. (Me.)"
      'starlight'),
 
     ("The thirteenth donut",
-     """So the thirteenth went next door, on a plate, through the snow,
+     """The thirteenth went next door, on a plate, through the snow,
 to a house with two chairs. And he came back in tow,
 Mr. Bell, for his dinner. He brought his own chair.
-(They had plenty. No one said so. They set it right there.)
+(They had chairs. No one said so. They set it right there.)
 
 And far in the north, with a notebook, brand-new,
 with no columns at all (Santa said that would do),

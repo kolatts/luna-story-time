@@ -62,7 +62,7 @@ sat the elf, writing something. So pink. And so small.
      None),
 
     ("The grab",
-     """"You're writing MORE bad things!" He didn't think twice.
+     """"You're writing more BAD things!" He didn't think twice.
 He didn't think once. And it wasn't nice.
 He snatched her right up in his bare, angry hand,
 to throw her away. That was all that he planned.
@@ -147,10 +147,10 @@ There are some you can't say, and then can't take back
 the not-saying. Hudson stood up from his chair.
 "It was me." And the words hung right there, in the air.
 
-"I grabbed her. I touched her. I shut her in there.
-And I let you all look for her. Everywhere."
+"I grabbed her. I touched her. I shut down the lid.
+And I let you all look for her. That's what I did."
 His brothers just stared. And nobody yelled.
-And Petals said, "Oh." And took his hand, and held.
+And Petals said, "Oh." Took his hand. And she held.
 """,
      'bottom', ['hudson', 'petals', 'glyden', 'sun', 'honeydip'],
      [('sentences', 'groups of words that say a whole thought'), ('stared', 'looked for a long time without looking away')],
@@ -176,7 +176,7 @@ They all leaned in close (hands behind them, of course).
     ("Two chairs",
      """And Hudson, who'd looked at one book for a week,
 looked out of the window. And started to speak.
-"There's Mr. Bell, next door, with two window chairs.
+"Next door, Mr. Bell has two big window chairs.
 And he sits in his own. And there's no one in theirs."
 
 So they packed up four donuts, store-bought, on a plate,

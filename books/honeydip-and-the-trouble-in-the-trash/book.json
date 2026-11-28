@@ -138,7 +138,7 @@
     {
       "number": 4,
       "title": "The grab",
-      "text": "\"You're writing MORE bad things!\" He didn't think twice.\nHe didn't think once. And it wasn't nice.\nHe snatched her right up in his bare, angry hand,\nto throw her away. That was all that he planned.\n\nBut the moment he touched her, before she could speak,\nthe pink left her hat. Then the pink left her cheek.\nThe pink left her dress, and her boots, and was gone.\nAnd she lay, like a small, quiet doll, grey as dawn.",
+      "text": "\"You're writing more BAD things!\" He didn't think twice.\nHe didn't think once. And it wasn't nice.\nHe snatched her right up in his bare, angry hand,\nto throw her away. That was all that he planned.\n\nBut the moment he touched her, before she could speak,\nthe pink left her hat. Then the pink left her cheek.\nThe pink left her dress, and her boots, and was gone.\nAnd she lay, like a small, quiet doll, grey as dawn.",
       "image": "images/04.webp",
       "textPosition": "top",
       "characters": [
@@ -253,7 +253,7 @@
     {
       "number": 9,
       "title": "It was me",
-      "text": "There are sentences heavy as stones in a sack.\nThere are some you can't say, and then can't take back\nthe not-saying. Hudson stood up from his chair.\n\"It was me.\" And the words hung right there, in the air.\n\n\"I grabbed her. I touched her. I shut her in there.\nAnd I let you all look for her. Everywhere.\"\nHis brothers just stared. And nobody yelled.\nAnd Petals said, \"Oh.\" And took his hand, and held.",
+      "text": "There are sentences heavy as stones in a sack.\nThere are some you can't say, and then can't take back\nthe not-saying. Hudson stood up from his chair.\n\"It was me.\" And the words hung right there, in the air.\n\n\"I grabbed her. I touched her. I shut down the lid.\nAnd I let you all look for her. That's what I did.\"\nHis brothers just stared. And nobody yelled.\nAnd Petals said, \"Oh.\" Took his hand. And she held.",
       "image": "images/09.webp",
       "textPosition": "bottom",
       "characters": [
@@ -303,7 +303,7 @@
     {
       "number": 11,
       "title": "Two chairs",
-      "text": "And Hudson, who'd looked at one book for a week,\nlooked out of the window. And started to speak.\n\"There's Mr. Bell, next door, with two window chairs.\nAnd he sits in his own. And there's no one in theirs.\"\n\nSo they packed up four donuts, store-bought, on a plate,\nand with mitts tucked the elf in a basket. \"Sit straight,\"\nsaid Petals, to her. And then out the four go,\nwith a fox and a reindeer, through knee-deep new snow.",
+      "text": "And Hudson, who'd looked at one book for a week,\nlooked out of the window. And started to speak.\n\"Next door, Mr. Bell has two big window chairs.\nAnd he sits in his own. And there's no one in theirs.\"\n\nSo they packed up four donuts, store-bought, on a plate,\nand with mitts tucked the elf in a basket. \"Sit straight,\"\nsaid Petals, to her. And then out the four go,\nwith a fox and a reindeer, through knee-deep new snow.",
       "image": "images/11.webp",
       "textPosition": "bottom",
       "characters": [
@@ -465,5 +465,5 @@
     "Hudson's sorry said exactly what he was sorry for. Grown-ups, when did someone last say sorry to you like that?"
   ],
   "lookAndFind": "At Mr. Bell's house, can you find the one coat on its hook and the two chairs at the window? And watch Honeydip's pom-pom: when does it turn pink?",
-  "assetVersion": "honeydip3-1"
+  "assetVersion": "honeydip3-2"
 }

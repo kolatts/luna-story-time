@@ -115,7 +115,7 @@
     {
       "number": 3,
       "title": "It doesn't work that way",
-      "text": "\"How many?\" he asked her. \"How many till I'm\non the GOOD side for certain? I'm all out of time.\"\nAnd Honeydip gently laid down her sharp lead.\n\"It doesn't work that way,\" with a shake of her head.\n\n\"Then how DOES it work?\" And the elf, who knew lots,\nwho knew twenty-four excellent elf hiding spots,\nfound she didn't know that. Santa said, \"Columns: two.\"\nAnd both hers were full. And she hadn't a clue.",
+      "text": "\"How many?\" he asked her. \"How many till I'm\non the GOOD side for certain? I'm all out of time.\"\nAnd Honeydip gently laid down her sharp lead.\n\"It doesn't work that way,\" she finally said.\n\n\"Then how DOES it work?\" And the elf, who knew lots,\nwho knew twenty-four excellent elf hiding spots,\nfound she didn't know that. Santa's columns were two.\nAnd both hers were full. And she hadn't a clue.",
       "image": "images/03.webp",
       "textPosition": "bottom",
       "characters": [
@@ -284,7 +284,7 @@
     {
       "number": 10,
       "title": "Rip",
-      "text": "Then Honeydip did what no elf's ever done.\nShe took hold of the page. And she tore it. In one.\nRip! Right down the middle. A gasp filled the hall.\n\"There aren't two columns. There's one. That is all.\"\n\n\"Every donut has a hole in it. That's what makes it a donut.\nThey're BOTH, sir. They're kids. And I thought you should know it.\nThey fight, and they mend, and say sorry, and then\nthey save seats. That's the full scoop. I'd write it again.\"",
+      "text": "Then Honeydip did what no elf's ever done.\nShe took hold of the page. And she tore it. In one.\nRip! Right down the middle. A gasp filled the hall.\n\"There aren't two columns. There's one. That is all.\"\n\n\"Every donut has a hole in it. That's what makes it a donut.\nThey're BOTH, sir. They're kids. And I thought you should know it.\nThey fight, and they mend, and say sorry, and then\nthey save seats. That's the full scoop. I'd say it again.\"",
       "image": "images/10.webp",
       "textPosition": "top",
       "characters": [
@@ -307,7 +307,7 @@
     {
       "number": 11,
       "title": "Santa laughs",
-      "text": "And Santa? He laughed. From his boots to his hat.\n\"I've waited all year for an elf to say that!\nI never kept score. Not one mark. Not one day.\nI can't give a present for points, anyway.\"\n\n\"Then why did you send me?\" \"So someone would know\nwho counts thumbs, who hears bells, who saves seats, who dug snow.\"\n\"And the columns?\" \"Oh, those,\" Santa said, with a wink.\n\"Elves do like a form. It gives them time to think.\"",
+      "text": "And Santa? He laughed. From his boots to his hat.\n\"I've waited all year for an elf to say that!\nI never kept score. Not one mark. Not one day.\nI can't give a present for points, anyway.\"\n\n\"Then why did you send me?\" \"So someone would know\nwho counts thumbs, who hears bells, who saves seats, who digs snow.\"\n\"And the columns?\" \"Oh, those,\" Santa said, with a wink.\n\"Elves do like a form. And it helps them to think.\"",
       "image": "images/11.webp",
       "textPosition": "bottom",
       "characters": [
@@ -358,7 +358,7 @@
     {
       "number": 13,
       "title": "Not for Hudson",
-      "text": "Then down! To the tree! There were boxes and bows!\nAnd Hudson read tags. \"This is Sun's. And this goes\nto Glyden. And Petals, here's yours.\" He was quick.\nHe was helpful. He smiled. It's a very old trick.\n\nHe handed out seven. He handed out ten.\nHe straightened the pile, and then straightened again.\nHe was sure. He had forty-one reasons he knew.\nHe did not check behind the tree. Guess who did. Guess who.",
+      "text": "Then down! To the tree! There were boxes and bows!\nAnd Hudson read tags. \"This is Sun's. And this goes\nto Glyden. And Petals, here's yours.\" He was quick.\nHe was helpful. He smiled. It's a very old trick.\n\nHe handed out seven. He handed out ten.\nHe straightened the pile, and then straightened again.\nHe was sure there'd be nothing. He knew what he knew.\nHe'd not checked round the tree. But guess who did. Guess who.",
       "image": "images/13.webp",
       "textPosition": "bottom",
       "characters": [
@@ -431,7 +431,7 @@
     {
       "number": 16,
       "title": "The thirteenth donut",
-      "text": "So the thirteenth went next door, on a plate, through the snow,\nto a house with two chairs. And he came back in tow,\nMr. Bell, for his dinner. He brought his own chair.\n(They had plenty. No one said so. They set it right there.)\n\nAnd far in the north, with a notebook, brand-new,\nwith no columns at all (Santa said that would do),\nsat an elf, drawing four little faces. And when\nshe was done, she wrote, \"Last of November. Again.\"",
+      "text": "The thirteenth went next door, on a plate, through the snow,\nto a house with two chairs. And he came back in tow,\nMr. Bell, for his dinner. He brought his own chair.\n(They had chairs. No one said so. They set it right there.)\n\nAnd far in the north, with a notebook, brand-new,\nwith no columns at all (Santa said that would do),\nsat an elf, drawing four little faces. And when\nshe was done, she wrote, \"Last of November. Again.\"",
       "image": "images/16.webp",
       "textPosition": "top",
       "characters": [
@@ -462,5 +462,5 @@
     "Petals saves Hudson a seat and never keeps score. Grown-ups, who saved a seat for you?"
   ],
   "lookAndFind": "Find the sled built for one with four kids on it. Then look at Honeydip's new notebook: whose faces did she draw?",
-  "assetVersion": "honeydip4-1"
+  "assetVersion": "honeydip4-2"
 }

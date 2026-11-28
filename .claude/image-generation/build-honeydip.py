@@ -72,7 +72,7 @@ def build(n):
         'characters': [{'id': c, 'name': C.NAMES[c], 'sheet': C.SHEETS[c]} for c in order],
         'cover': {'image': 'images/cover.webp', 'imagePrompt': book['cover_prompt'], 'effect': book['cover_effect']},
         'spreads': spreads, 'questions': book['questions'], 'lookAndFind': book['look_and_find'],
-        'assetVersion': f'honeydip{n}-1',
+        'assetVersion': f'honeydip{n}-2',
     }
     (book_dir / 'book.json').write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     (book_dir / 'manuscript.md').write_text('\n'.join(ms), encoding='utf-8')
